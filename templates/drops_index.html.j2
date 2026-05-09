@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Every Trump UFO Drop Tracked | PURSUE Disclosure Timeline | {{ site_name }}</title>
+<meta name="description" content="Every drop the Trump administration releases under the PURSUE UAP disclosure program, tracked in chronological order. Subscribe for instant alerts on the next drop.">
+<link rel="canonical" href="{{ site_url }}/drops/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Every Trump UFO Drop Tracked">
+<meta property="og:description" content="Chronological tracker of the Trump administration's PURSUE UAP disclosure drops.">
+<meta property="og:image" content="../og-cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  .drops-page{max-width:980px;margin:0 auto;padding:80px 24px}
+  h1{font-size:clamp(40px,5vw,60px);background:linear-gradient(180deg,#fff,#52b4ff);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+  .drops-lede{font-size:18px;color:#a8b8cc;margin-bottom:48px}
+  .drop-row{display:flex;gap:24px;background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.18);border-radius:10px;padding:28px;margin-bottom:18px;align-items:center;text-decoration:none;color:inherit;transition:all .2s;flex-wrap:wrap}
+  .drop-row:hover{border-color:#52b4ff;transform:translateY(-3px);box-shadow:0 12px 40px rgba(82,180,255,.18)}
+  .drop-num{font-family:'JetBrains Mono',monospace;font-size:48px;font-weight:700;color:#ff5757;line-height:1;min-width:80px;text-align:center}
+  .drop-body{flex:1;min-width:280px}
+  .drop-body h2{color:#fff;font-size:22px;margin-bottom:6px}
+  .drop-body .when{font-family:'JetBrains Mono',monospace;font-size:11px;color:#7a92b0;letter-spacing:1px;margin-bottom:10px;text-transform:uppercase}
+  .drop-body .summary{color:#dfe6ef;font-size:15px;line-height:1.6}
+  .drop-stats-mini{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1px}
+  .drop-stats-mini span{background:rgba(82,180,255,.08);padding:4px 10px;border-radius:3px}
+  .next-drop{background:linear-gradient(120deg,rgba(82,255,180,.06),rgba(82,180,255,.06));border:1px dashed rgba(82,255,180,.3);padding:32px;border-radius:10px;margin-top:32px;text-align:center}
+  .next-drop h3{color:#52ffb4;font-size:20px;margin-bottom:10px;letter-spacing:.05em}
+  .next-drop p{color:#a8b8cc;font-size:15px;margin-bottom:14px}
+</style>
+</head>
+<body>
+<div class="starfield"></div><div class="grid-bg"></div>
+
+<main class="drops-page">
+  <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="../../index.html" style="color:inherit;text-decoration:none">← PURSUE Tracker</a></p>
+  <h1>Every Trump UFO Drop, Tracked</h1>
+  <p class="drops-lede">The Trump administration's PURSUE program releases declassified UAP files on a rolling basis. We index every drop within hours.</p>
+
+  {% for d in drops %}
+  <a class="drop-row" href="{{ d.date }}-drop-{{ '%02d'|format(d.number) }}.html">
+    <div class="drop-num">{{ '%02d'|format(d.number) }}</div>
+    <div class="drop-body">
+      <div class="when">{{ d.date }} · {{ d.agencies | join(' · ') }}</div>
+      <h2>{{ d.title }}</h2>
+      <p class="summary">{{ d.summary }}</p>
+      <div class="drop-stats-mini">
+        <span>{{ d.file_count }} files</span>
+        <span>{{ d.video_count }} videos</span>
+        <span>{{ d.doc_count }} docs</span>
+        <span>{{ d.image_count }} images</span>
+        <span>{{ d.redacted_count }} redacted</span>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+
+  <div class="next-drop">
+    <h3>NEXT DROP — Monitoring</h3>
+    <p>{{ expected_next.note or "We poll war.gov/UFO daily for new files. Subscribers get an alert within minutes of a new drop landing." }}</p>
+    <p style="margin-top:16px"><a href="../../index.html#subscribe" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border:1px solid #52b4ff;padding:10px 22px;border-radius:6px;display:inline-block">Subscribe for next-drop alerts</a></p>
+  </div>
+</main>
+
+<footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
+  <p><a href="../../index.html" style="color:#52b4ff">PURSUE Tracker home</a> · <a href="../verdict.html" style="color:#52b4ff">The honest verdict</a> · <a href="../top-10.html" style="color:#52b4ff">Top 10</a> · <a href="../press.html" style="color:#52b4ff">Press kit</a></p>
+</footer>
+</body>
+</html>

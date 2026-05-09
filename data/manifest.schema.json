@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PURSUE File Manifest",
+  "type": "object",
+  "required": ["generated_at", "rubric_version", "files"],
+  "properties": {
+    "generated_at": { "type": "string", "format": "date-time" },
+    "rubric_version": { "type": "string" },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "category", "agency", "type", "source_url"],
+        "properties": {
+          "id": { "type": "string", "description": "URL-safe slug, unique" },
+          "title": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": ["apollo", "fbi", "military", "state", "composite", "other"]
+          },
+          "agency": {
+            "type": "string",
+            "enum": ["NASA", "FBI", "DoD", "STATE", "OTHER"]
+          },
+          "type": {
+            "type": "string",
+            "enum": ["pdf", "video", "image"]
+          },
+          "date_event": { "type": ["string", "null"] },
+          "date_released": { "type": ["string", "null"] },
+          "source_url": { "type": "string", "format": "uri" },
+          "local_path": { "type": ["string", "null"] },
+          "size_bytes": { "type": ["integer", "null"] },
+          "sha256": { "type": ["string", "null"] },
+          "redacted": { "type": "boolean", "default": false },
+          "summary": { "type": ["string", "null"] },
+          "score": {
+            "type": ["object", "null"],
+            "properties": {
+              "value": { "type": "integer", "minimum": 0, "maximum": 100 },
+              "components": { "type": "object" },
+              "rubric_version": { "type": "string" }
+            }
+          },
+          "extracted": {
+            "type": "object",
+            "properties": {
+              "text_path": { "type": ["string", "null"] },
+              "transcript_path": { "type": ["string", "null"] },
+              "thumbnail_path": { "type": ["string", "null"] }
+            }
+          },
+          "geo": {
+            "type": ["object", "null"],
+            "properties": {
+              "lat": { "type": ["number", "null"] },
+              "lng": { "type": ["number", "null"] },
+              "place": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+_scratch/
+downloads/
+extracted/
+generated/
+data/manifest.json
+data/url-list.txt
+*.log
+.DS_Store

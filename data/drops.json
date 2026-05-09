@@ -1,0 +1,39 @@
+{
+  "_note": "Source of truth for every PURSUE drop the Trump administration releases. Append to `drops` array as new drops arrive. The drops tracker page reads this; subscribers get RSS/email notifications when new entries land.",
+  "drops": [
+    {
+      "id": "drop-01-2026-05-08",
+      "number": 1,
+      "date": "2026-05-08",
+      "title": "Drop 01 - The Foundation Release",
+      "summary": "First public batch of the Trump administration's PURSUE program. 162 files spanning the FBI, Department of Defense, NASA, and State Department - including FBI Case 62-HQ-83894 (1947-1968), Apollo 12 and 17 lunar imagery, military encounter footage from the Mediterranean to the Indo-Pacific, and four decades of State Department cables.",
+      "agencies": ["FBI", "DoD", "NASA", "STATE"],
+      "file_count": 162,
+      "video_count": 28,
+      "doc_count": 120,
+      "image_count": 14,
+      "redacted_count": 108,
+      "headline_files": [
+        "greece-2023-right-angle-turn",
+        "western-us-eye-of-sauron-orb",
+        "mediterranean-triangle-25000ft",
+        "indo-pacific-2024-football-object",
+        "fbi-case-62-hq-83894",
+        "apollo-17-triangular-formation"
+      ],
+      "press_coverage": [
+        {"outlet": "CBS News",   "url": "https://www.cbsnews.com/news/pentagon-begins-release-ufo-files/"},
+        {"outlet": "CNN",        "url": "https://www.cnn.com/2026/05/08/politics/ufo-files-pentagon-release-aliens"},
+        {"outlet": "NBC News",   "url": "https://www.nbcnews.com/science/ufos-and-anomalous-phenomena/ufo-uap-files-pentagon-release-trump-rcna344204"},
+        {"outlet": "TechCrunch", "url": "https://techcrunch.com/2026/05/08/pentagon-releases-ufo-files-on-new-website/"},
+        {"outlet": "ABC News",   "url": "https://abcnews.com/Politics/pentagon-begins-release-decades-unresolved-ufo-files/story?id=132780534"},
+        {"outlet": "Fox News",   "url": "https://www.foxnews.com/politics/trump-admin-releases-highly-anticipatedfiles-documents-ufos-extraterrestrial-life"}
+      ],
+      "status": "live"
+    }
+  ],
+  "expected_next": {
+    "status": "monitoring",
+    "note": "Department of War has stated additional files will be added on a rolling basis. This tracker polls war.gov/UFO daily for new content."
+  }
+}

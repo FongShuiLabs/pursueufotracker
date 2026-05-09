@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do Aliens Exist? The Honest Answer From the PURSUE Files | {{ site_name }}</title>
+<meta name="description" content="The honest answer to what the Pentagon's UAP disclosure does and does not prove. {{ stats.total }} files reviewed. No spin. Cite-able.">
+<link rel="canonical" href="{{ site_url }}/verdict.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do Aliens Exist? The Honest Answer.">
+<meta property="og:description" content="What {{ stats.total }} declassified Pentagon UAP files actually prove and don't prove.">
+<meta property="og:image" content="og-cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Do Aliens Exist? The Honest Answer.">
+<meta name="twitter:description" content="What {{ stats.total }} Pentagon UAP files actually prove.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in qa %}
+    {
+      "@type": "Question",
+      "name": {{ item.q | tojson }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ item.body | tojson }} }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<style>
+  .verdict-page{max-width:820px;margin:0 auto;padding:80px 24px}
+  .verdict-page h1{font-size:clamp(36px,6vw,68px);background:linear-gradient(180deg,#fff,#52b4ff);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.02em;margin-bottom:16px}
+  .verdict-lede{font-size:20px;color:#a8b8cc;margin-bottom:48px}
+  .qa-block{background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.18);border-radius:10px;padding:32px;margin-bottom:24px}
+  .qa-block h2{font-size:24px;color:#52b4ff;margin-bottom:16px;letter-spacing:.01em}
+  .qa-block p{color:#dfe6ef;margin-bottom:14px;font-size:17px;line-height:1.7}
+  .qa-block ul{margin:14px 0 14px 24px;color:#dfe6ef}
+  .qa-block li{margin-bottom:8px;font-size:16px;line-height:1.6}
+  .qa-block strong{color:#fff}
+  .stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin:32px 0 56px}
+  .stat-tile{background:rgba(82,180,255,.04);border:1px solid rgba(82,180,255,.15);padding:18px;border-radius:8px;text-align:center}
+  .stat-tile .n{font-family:'JetBrains Mono',monospace;font-size:28px;color:#52b4ff;font-weight:700}
+  .stat-tile .l{font-size:11px;letter-spacing:1.5px;color:#7a92b0;text-transform:uppercase;margin-top:4px}
+  .share-bar{display:flex;gap:10px;flex-wrap:wrap;margin-top:48px;padding-top:32px;border-top:1px solid rgba(82,180,255,.15)}
+  .share-bar a{padding:10px 18px;border:1px solid rgba(82,180,255,.3);color:#52b4ff;text-decoration:none;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+  .share-bar a:hover{background:#52b4ff;color:#04060d}
+</style>
+</head>
+<body>
+<div class="starfield"></div><div class="grid-bg"></div>
+
+<main class="verdict-page">
+  <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="../index.html" style="color:inherit;text-decoration:none">← PURSUE Index</a></p>
+  <h1>Do Aliens Exist?</h1>
+  <p class="verdict-lede">The honest answer, from {{ stats.total }} declassified Pentagon files.</p>
+
+  <div class="stats-row">
+    <div class="stat-tile"><div class="n">{{ stats.total }}</div><div class="l">Total Files</div></div>
+    <div class="stat-tile"><div class="n">{{ stats.videos }}</div><div class="l">Videos</div></div>
+    <div class="stat-tile"><div class="n">{{ stats.pdfs }}</div><div class="l">Documents</div></div>
+    <div class="stat-tile"><div class="n">{{ stats.images }}</div><div class="l">Images</div></div>
+    <div class="stat-tile"><div class="n">{{ stats.redacted }}</div><div class="l">Redacted</div></div>
+    <div class="stat-tile"><div class="n">{{ stats.high_score }}</div><div class="l">High Anomaly</div></div>
+  </div>
+
+  {% for item in qa %}
+  <div class="qa-block">
+    <h2>{{ item.q }}</h2>
+    {{ item.body_html | safe }}
+  </div>
+  {% endfor %}
+
+  <div class="share-bar">
+    <a href="https://twitter.com/intent/tweet?text=Do%20aliens%20exist%3F%20The%20honest%20answer%20from%20the%20Pentagon%27s%20PURSUE%20release%3A%20{{ site_url }}/verdict.html" target="_blank" rel="noopener">Share on X</a>
+    <a href="https://bsky.app/intent/compose?text=The%20honest%20answer%20from%20the%20Pentagon%27s%20PURSUE%20release%3A%20{{ site_url }}/verdict.html" target="_blank" rel="noopener">Share on Bluesky</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site_url }}/verdict.html" target="_blank" rel="noopener">Share on Facebook</a>
+    <a href="https://reddit.com/submit?url={{ site_url }}/verdict.html&title=Do%20aliens%20exist%3F%20The%20honest%20answer%20from%20the%20PURSUE%20release" target="_blank" rel="noopener">Post to Reddit</a>
+  </div>
+</main>
+
+<footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
+  <p><a href="../index.html" style="color:#52b4ff">Back to index</a> · <a href="top-10.html" style="color:#52b4ff">Top 10 most anomalous</a> · <a href="press.html" style="color:#52b4ff">Press kit</a></p>
+</footer>
+</body>
+</html>

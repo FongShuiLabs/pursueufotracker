@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top 10 Most Anomalous Files in the Pentagon's UFO Release | {{ site_name }}</title>
+<meta name="description" content="The 10 most anomalous files from the Pentagon's PURSUE UAP disclosure, ranked by evidentiary weight. Full transcripts, HD downloads, sources verified.">
+<link rel="canonical" href="{{ site_url }}/top-10.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Top 10 Most Anomalous Files in the Pentagon's UFO Release">
+<meta property="og:description" content="Ranked by evidentiary weight. Honest scoring, transparent methodology.">
+<meta property="og:image" content="og-cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="../styles.css">
+<style>
+  .top-page{max-width:980px;margin:0 auto;padding:80px 24px}
+  .top-page h1{font-size:clamp(36px,5vw,60px);background:linear-gradient(180deg,#fff,#52b4ff);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.02em;margin-bottom:14px}
+  .top-page .lede{font-size:18px;color:#a8b8cc;margin-bottom:48px}
+  .rank-card{display:flex;gap:24px;background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.18);border-radius:10px;padding:28px;margin-bottom:18px;align-items:center;transition:all .2s}
+  .rank-card:hover{border-color:#52b4ff;transform:translateY(-3px);box-shadow:0 12px 40px rgba(82,180,255,.18)}
+  .rank-num{font-family:'JetBrains Mono',monospace;font-size:64px;font-weight:700;color:#52b4ff;line-height:1;min-width:80px;text-align:center}
+  .rank-body{flex:1}
+  .rank-body h2{color:#fff;font-size:22px;margin-bottom:8px}
+  .rank-body h2 a{color:inherit;text-decoration:none}
+  .rank-body h2 a:hover{color:#52b4ff}
+  .rank-meta{font-family:'JetBrains Mono',monospace;font-size:11px;color:#7a92b0;letter-spacing:1px;margin-bottom:10px;text-transform:uppercase}
+  .rank-tldr{color:#dfe6ef;font-size:15px;line-height:1.6}
+  .rank-score{flex-shrink:0}
+</style>
+</head>
+<body>
+<div class="starfield"></div><div class="grid-bg"></div>
+
+<main class="top-page">
+  <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="../index.html" style="color:inherit;text-decoration:none">← PURSUE Index</a></p>
+  <h1>The 10 Most Anomalous Files</h1>
+  <p class="lede">Ranked by Anomalousness Index. Methodology transparent. Source files verified. <a href="verdict.html" style="color:#52b4ff">What this score does and doesn't mean.</a></p>
+
+  {% for f in items %}
+  <div class="rank-card">
+    <div class="rank-num">{{ loop.index }}</div>
+    <div class="rank-body">
+      <div class="rank-meta">{{ f.agency }} · {{ f.category }} · {{ f.date_event or f.date_released }}</div>
+      <h2><a href="files/{{ f.id }}.html">{{ f.title }}</a></h2>
+      <p class="rank-tldr">{{ (f.audience or {}).tldr or f.summary or "" }}</p>
+    </div>
+    <div class="rank-score">
+      <div class="score" style="--s:{{ (f.score or {}).value or 0 }};width:80px;height:80px"><span style="font-size:20px">{{ (f.score or {}).value or '–' }}</span></div>
+    </div>
+  </div>
+  {% endfor %}
+
+</main>
+
+<footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
+  <p><a href="../index.html" style="color:#52b4ff">All 162 files</a> · <a href="verdict.html" style="color:#52b4ff">The honest verdict</a> · <a href="press.html" style="color:#52b4ff">Press kit</a></p>
+</footer>
+</body>
+</html>
