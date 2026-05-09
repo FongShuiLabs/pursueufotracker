@@ -12,7 +12,7 @@ import sys
 import time
 
 from . import (
-    parse_inputs, download, hash_files,
+    parse_inputs, parse_csv, download, download_from_manifest, hash_files,
     extract_pdf, thumbnail, transcribe, score, summarize,
     build_search, gen_og, build_site,
     build_verdict, build_top10, build_press_kit, build_api, build_drops,
@@ -20,9 +20,11 @@ from . import (
 )
 
 STAGES = [
-    ("parse-inputs",   parse_inputs.parse_all),
-    ("download",       download.run),
-    ("hash",           hash_files.run),
+    ("parse-inputs",       parse_inputs.parse_all),
+    ("parse-csv",          parse_csv.run),
+    ("download",           download.run),
+    ("download-manifest",  download_from_manifest.run),
+    ("hash",               hash_files.run),
     ("extract-pdf",    extract_pdf.run),
     ("thumbnails",     thumbnail.run),
     ("transcribe",     transcribe.run),
