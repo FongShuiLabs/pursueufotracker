@@ -1,0 +1,93 @@
+{
+  "id": "nasa-uap-vm1-apollo-12-1969",
+  "title": "NASA-UAP-VM1, Apollo 12, 1969",
+  "category": "apollo",
+  "agency": "NASA",
+  "type": "image",
+  "date_event": "1969",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm1-apollo-12-1969.jpg",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 2526206,
+  "sha256": "7f1c6a3220d6c59013fbc04f0011867ee5caf77f439fb6ecc6f7e80b0232ea55",
+  "redacted": false,
+  "summary": "This archival photograph depicts the lunar surface as viewed from the landing site of Apollo 12. This image features a highlighted area of interest slightly to the right of the vertical axis of the frame, above the horizon, in which unidentified phenomena are visible. This image has been modified from its original state to assist viewers in identifying specific areas of interest. These highlights are provided for contextual purposes only. Such alterations do not constitute an analytical judgment, investigative conclusion, or factual determination regarding the nature or significance of the subject matter.",
+  "score": {
+    "value": 65,
+    "components": {
+      "sensor_quality": "photographic",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "photographic",
+        "value": 55,
+        "weight": 0.25,
+        "contribution": 13.75
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/nasa-uap-vm1-apollo-12-1969.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Moon"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/nasa-uap-vm1-apollo-12-1969.jpg",
+  "csv_raw_title": "NASA-UAP-VM1, Apollo 12, 1969",
+  "audience": {
+    "tldr": "NASA mission record from a crewed lunar mission depicting a UAP encounter (1969) over Moon.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 1969.",
+      "Reported location: Moon."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 65/100. Top drivers: witness credibility (astronaut), sensor quality (photographic)."
+  }
+}

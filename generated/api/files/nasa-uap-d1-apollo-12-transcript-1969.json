@@ -1,0 +1,103 @@
+{
+  "id": "nasa-uap-d1-apollo-12-transcript-1969",
+  "title": "NASA-UAP-D1, Apollo 12 Transcript, 1969",
+  "category": "apollo",
+  "agency": "NASA",
+  "type": "pdf",
+  "date_event": "1969",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d1-apollo-12-transcript-1969.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 1030644,
+  "sha256": "ab911622b7d4203d9d54914f03d1662cf561b7f943afe9d17f9617cfaea06585",
+  "redacted": false,
+  "summary": "Apollo 12 was the fourth crewed U.S. mission to the Moon and the second to land astronauts on the lunar surface. This document is an excerpt from the Apollo 12 Technical Air-to-Ground Voice Transcription, November 1969, highlighting two periods in which astronauts reported observing unidentified phenomenon: a one hour period on the fifth day, and a two minute period on the sixth day. These transcripts contain contemporaneous observations by the flight crew reacting to unidentified phenomenon.•\tDay 05, Hour 19, Minute 14, Second 58 through Day 05, Hour 20, Minute 12, Second 14:o\tAt 05:19:27:25, the pilot of the Lunar Module (LMP-LM), Astronaut Alan L. Bean, described observing particles and flashes of light “sailing off in space” via the onboard Alignment Optical Telescope (AOT). He characterized these phenomenon as “escaping the Moon.”•\tDay 06, Hour 00, Minute 21, Second 42 through Day 06, Hour 00, Minute 23, Second 33:o\tMission Commander, Charles “Pete” Conrad, described observing floating debris outside the lunar module, which had been illuminated by the module’s onboard tracking light. At 06:00:21:51, Conrad assessed that the tracking light had burnt out because he could no longer see the debris from the module.",
+  "score": {
+    "value": 59,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/nasa-uap-d1-apollo-12-transcript-1969.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/nasa-uap-d1-apollo-12-transcript-1969.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Moon"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/nasa-uap-d1-apollo-12-transcript-1969.jpg",
+  "csv_raw_title": "NASA-UAP-D1, Apollo 12 Transcript, 1969",
+  "audience": {
+    "tldr": "NASA mission record from a crewed lunar mission documenting a UAP encounter (1969) over Moon.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 1969.",
+      "Reported location: Moon."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 59/100. Top drivers: witness credibility (astronaut), corroboration (single_witness_instrument).",
+    "keywords": [
+      "houston",
+      "roger",
+      "intrepid",
+      "just",
+      "clipper",
+      "page",
+      "okay",
+      "have"
+    ]
+  }
+}

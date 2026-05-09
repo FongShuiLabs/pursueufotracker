@@ -1,0 +1,97 @@
+{
+  "id": "unresolved-uap-report-syria-october-2024",
+  "title": "Unresolved UAP Report, Syria, October 2024",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": null,
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 699734,
+  "sha256": "59afbcb87c7c9c15ad7aebf85ea3a2acb0728aa724c4eb84a9e1c412e10982d7",
+  "redacted": true,
+  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of five seconds of video footage from a full-motion video (FMV) camera aboard a U.S. military platform in 2024. An accompanying mission report, DoW-UAP-D32, described the UAP as consisting of a “misshapen and uneven ball of white light,” and reported that a “light/glare halo effect” occurred at the top of the FMV feed.Video Description:00:00-00:01: An indistinctly shaped multi-colored area moves from right to left across the top edge of the sensor display within the first second of the video.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-syria-october-2024.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Syria"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006076/DOD_111688970.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR31, Unresolved UAP Report, Syria, October 2024",
+  "dvids_video_id": "1006076",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688970/DOD_111688970-1920x1080-9000k.mp4",
+  "duration": 5,
+  "dvids_page_url": "https://www.dvidshub.net/video/1006076/dow-uap-pr31-unresolved-uap-report-syria-october-2024",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Syria.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: Syria.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
+}

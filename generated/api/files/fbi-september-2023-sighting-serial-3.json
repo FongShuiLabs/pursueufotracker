@@ -1,0 +1,103 @@
+{
+  "id": "fbi-september-2023-sighting-serial-3",
+  "title": "FBI September 2023 Sighting - Serial 3",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": "9/1/23",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/serial 5 redacted_redacted.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 227126,
+  "sha256": "c38d267441b19350df557d9f3bfbd689fb5ba0619366373a7b9e6f8dce84bb8c",
+  "redacted": true,
+  "summary": "This is an FBI 302 interview conducted with a US citizen regarding their first-hand account of a UAP encounter at a US test site.  USPER described an object \"metallic bronze in color.\"",
+  "score": {
+    "value": 55,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/fbi-september-2023-sighting-serial-3.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/fbi-september-2023-sighting-serial-3.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "United States"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/serial 5 redacted_redacted.jpg",
+  "csv_raw_title": "FBI September 2023 Sighting - Serial 3",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (9/1/23) over United States.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated 9/1/23.",
+      "Reported location: United States."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 55/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "september",
+      "continuation",
+      "thought",
+      "light",
+      "have",
+      "meteor",
+      "coming"
+    ]
+  }
+}

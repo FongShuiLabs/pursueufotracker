@@ -1,0 +1,96 @@
+{
+  "id": "341-110448-records-relating-to-the-collection-and-dissemination-of-intelligence-",
+  "title": "341_110448_Records_Relating_to_the_Collection_and_Dissemination_of_Intelligence_1948-1955-TS_CONT_No.2_2-5300-2-5399",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "11/8/48",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/341_110448_records_relating_to_the_collection_and_dissemination_of_intelligence_1948-1955-ts_cont_no.2_2-5300-2-5399.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 9888054,
+  "sha256": "45b2fdb6c919cd8ed9c4406f4d60c7add073669dff5a5497595d4ecf08d72073",
+  "redacted": false,
+  "summary": "An Air Force intelligence report from November 1948 relating to unidentified flying objects and flying saucers.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/341-110448-records-relating-to-the-collection-and-dissemination-of-intelligence-.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/341-110448-records-relating-to-the-collection-and-dissemination-of-intelligence-.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Netherlands"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/341_110448_records_relating_to_the_collection_and_dissemination_of_intelligence_1948-1955-ts_cont_no.2_2-5300-2-5399.jpg",
+  "csv_raw_title": "341_110448_Records_Relating_to_the_Collection_and_Dissemination_of_Intelligence_1948-1955-TS_CONT_No.2_2-5300-2-5399",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (11/8/48) over Netherlands.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 11/8/48.",
+      "Reported location: Netherlands."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page"
+    ]
+  }
+}

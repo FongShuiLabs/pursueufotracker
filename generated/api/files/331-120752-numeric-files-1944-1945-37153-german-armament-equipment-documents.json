@@ -1,0 +1,96 @@
+{
+  "id": "331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents",
+  "title": "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "3/18/45",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/331_120752_numeric_files_1944–1945_37153_german_armament_equipment_documents.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 15892720,
+  "sha256": "cc709f89f3f3de832ee3979817a3c716727dd03c2f4fe26a545f1904b29fd467",
+  "redacted": false,
+  "summary": "This file contains SHAEF messages and memorandums related to \"night phenomena (foofighters),\" flak rockets, unidentified cylindrical objects, and blinking lights. The documents include multiple references to the observations of the 415th Night Fighter Squadron.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Germany"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/331_120752_numeric_files_1944–1945_37153_german_armament_equipment_documents.jpg",
+  "csv_raw_title": "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (3/18/45) over Germany.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 3/18/45.",
+      "Reported location: Germany."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page"
+    ]
+  }
+}

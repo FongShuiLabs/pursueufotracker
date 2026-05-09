@@ -1,0 +1,97 @@
+{
+  "id": "unresolved-uap-report-arabian-gulf-2020-4",
+  "title": "Unresolved UAP Report, Arabian Gulf, 2020",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": null,
+  "date_released": "2026-05-08",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 116787147,
+  "sha256": "ea6b86de5ec070a789e515456fb7ed2ef0bfbe536b30025117ef47cefa59c503",
+  "redacted": true,
+  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of one minute and 34 seconds of video footage from an infrared sensor aboard a U.S. military platform in 2020. The reporter did not provide any oral or written description of the observation.Video Description:00:01: An area of contrast enters the sensor field-of-view from the bottom third of the left side of the screen.00:02-01:34: The sensor pans from left to right, tracking the area of contrast and keeping it generally centered within the field-of-view.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-arabian-gulf-2020-4.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Arabian Gulf"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006094/DOD_111689083.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR41, Unresolved UAP Report, Middle East, 2020",
+  "dvids_video_id": "1006094",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689083/DOD_111689083.mp4",
+  "duration": 94,
+  "dvids_page_url": "https://www.dvidshub.net/video/1006094/dow-uap-pr41-unresolved-uap-report-middle-east-2020",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Arabian Gulf.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: Arabian Gulf.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
+}

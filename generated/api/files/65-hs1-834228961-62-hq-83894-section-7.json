@@ -1,0 +1,95 @@
+{
+  "id": "65-hs1-834228961-62-hq-83894-section-7",
+  "title": "65_HS1-834228961_62-HQ-83894_Section_7",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": null,
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_7.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 62687106,
+  "sha256": "d1cc1285f2af2229df0f6a50dae11e72b943d94e95fb7effb34ba3433c12d82e",
+  "redacted": false,
+  "summary": "The FBI's 62-HQ-83894 case file includes investigative records, eyewitness testimonies, and public reports concerning Unidentified Flying Objects and flying discs documented between June 1947 and July 1968. The records include high-profile incident accounts, photographic evidence from sites like Oak Ridge, TN, and technical proposals regarding potential propulsion systems. Additional topics include convention programs, researcher accounts, and extensive media coverage from the period.  This file is partially posted on FBI vault with more redactions and some pages missing.  Included here is the complete case file with several newly declassified pages and only minor redactions.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/65-hs1-834228961-62-hq-83894-section-7.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/65-hs1-834228961-62-hq-83894-section-7.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/65_hs1-834228961_62-hq-83894_section_7.jpg",
+  "csv_raw_title": "65_HS1-834228961_62-HQ-83894_Section_7",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Document references: page."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page"
+    ]
+  }
+}

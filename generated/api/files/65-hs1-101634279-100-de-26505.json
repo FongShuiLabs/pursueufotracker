@@ -1,0 +1,96 @@
+{
+  "id": "65-hs1-101634279-100-de-26505",
+  "title": "65_HS1-101634279_100-DE-26505",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": "11/7/57",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-101634279_100-de-26505.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 12990300,
+  "sha256": "d71c2f57a9f173b56220eb6a7f5b867a6d0ed296a0c997cd4997e26fc895f29b",
+  "redacted": true,
+  "summary": "An FBI report from 1957 detailing the interview with Wladyslaw Krasuski, who recounted seeing a large, circular, vertically-rising vehicle in 1944 Germany near a German military compound.",
+  "score": {
+    "value": 55,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/65-hs1-101634279-100-de-26505.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/65-hs1-101634279-100-de-26505.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Germany"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/65_hs1-101634279_100-de-26505.jpg",
+  "csv_raw_title": "65_HS1-101634279_100-DE-26505",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (11/7/57) over Germany.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated 11/7/57.",
+      "Reported location: Germany."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 55/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page"
+    ]
+  }
+}

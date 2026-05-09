@@ -1,0 +1,103 @@
+{
+  "id": "dow-uap-d49-launch-summary-vandenberg-afb-2000",
+  "title": "DOW-UAP-D49, Launch Summary, Vandenberg AFB, 2000",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "2/3/00",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d49-launch-summary-february-2000.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 9090715,
+  "sha256": "0dd7855ac3c69e39a9752c53fe6ba3e851d617e28adfcbf07c3ec93907877cf7",
+  "redacted": false,
+  "summary": "This report summarizes the historical record of launches occurring at Vandenberg Air Force Base between 1958 and 2000.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d49-launch-summary-vandenberg-afb-2000.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d49-launch-summary-vandenberg-afb-2000.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d49-launch-summary-february-2000.jpg",
+  "csv_raw_title": "DOW-UAP-D49, Launch Summary, Vandenberg AFB, 2000",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (2/3/00).",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2/3/00.",
+      "Document references: afsc, space, minuteman, agena, glory."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "afsc",
+      "space",
+      "minuteman",
+      "agena",
+      "glory",
+      "trip",
+      "atlas",
+      "phase"
+    ]
+  }
+}

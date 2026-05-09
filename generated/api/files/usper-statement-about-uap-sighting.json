@@ -1,0 +1,103 @@
+{
+  "id": "usper-statement-about-uap-sighting",
+  "title": "USPER Statement about UAP Sighting",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": "Late 2025",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/usper-statement-redacted.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 786792,
+  "sha256": "63deae172b2bd4923696ed097c0c25d1286f116be1efb313d14c0630ac0a1786",
+  "redacted": true,
+  "summary": "This is an FBI 302 interview conducted with a senior US intelligence official regarding his first-hand account of a UAP encounter at a US military facility. USPER relayed to FBI agents that he and other federal and state personnel conducted searches to where orbs had been previously seen.  After searching the area with a helicopter, they found a “super-hot” orb hovering over the ground.  The orb is reported to have travelled for 20 miles at a speed too fast for the helicopter in pursuit.  An additional “swarm” of lights were seen moving in all directions.  A total of four or five additional orbs were seen shortly thereafter for a short time, flaring up and then down.  This pattern of four or five orbs flaring up, then down continued over the next thirty minutes across the area.",
+  "score": {
+    "value": 55,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/usper-statement-about-uap-sighting.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/usper-statement-about-uap-sighting.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "United States"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/usper-statement-redacted.jpg",
+  "csv_raw_title": "USPER Statement about UAP Sighting",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (Late 2025) over United States.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated Late 2025.",
+      "Reported location: United States."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 55/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "call",
+      "sign",
+      "hours",
+      "name",
+      "orbs",
+      "approximately",
+      "witness",
+      "site"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "dow-uap-d48-department-of-the-air-force-report-1996",
+  "title": "DOW-UAP-D48, Department of the Air Force Report, 1996",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "9/10/96",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d48-report-september-1996.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 22495083,
+  "sha256": "0dc72877cdf9cc3a1645c3c9d282928922b00e8fd9ffd7b1daf66f46c72b2071",
+  "redacted": false,
+  "summary": "This report describes the Modeling of Unlikely Space-Booster Failures in Risk Calculations, documenting historical launch failure modes and recommending corrective actions to address them using novel modelling techniques.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d48-department-of-the-air-force-report-1996.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d48-department-of-the-air-force-report-1996.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d48-report-september-1996.jpg",
+  "csv_raw_title": "DOW-UAP-D48, Department of the Air Force Report, 1996",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (9/10/96).",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 9/10/96.",
+      "Document references: flight, mode, response, seconds, phase."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "flight",
+      "mode",
+      "response",
+      "seconds",
+      "phase",
+      "failure",
+      "vehicle",
+      "launch"
+    ]
+  }
+}

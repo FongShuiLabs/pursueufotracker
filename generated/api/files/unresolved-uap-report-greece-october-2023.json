@@ -1,0 +1,97 @@
+{
+  "id": "unresolved-uap-report-greece-october-2023",
+  "title": "Unresolved UAP Report, Greece, October 2023",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": null,
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 198248609,
+  "sha256": "34eb85ab42bb6ce5d376c02fd2db4eee0211864ed3bcd8a8247a08fe0da8c99e",
+  "redacted": true,
+  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of two minutes and 57 seconds of video footage from an infrared sensor aboard a U.S. military platform in 2023. An accompanying mission report, DoW-UAP-D33, described the UAP as flying near the surface of the ocean and making multiple “90-degree turns” at approximately 80 miles per hour.Video Description:00:04: An area of contrast enters the sensor field-of-view from the bottom left quarter of the screen.00:07-00:19: The area of contrast moves back and forth horizontally across the field-of-view as the sensor pans to track it.00:20-01:00: The area of contrast remains generally centered within the sensor field-of-view.01:00-02:01: The sensor designates the area of contrast with a blue reticle, synchronizing its motion with the area of contrast’s relative position.02:02-02:21: The sensor engages a contrast filter to better differentiate the area of contrast from the background.02:22: The area of contrast becomes indistinguishable against the background, and the reticle drops its lock.02:27-02:57: After losing lock, the sensor rapidly cycles zoom levels and contrast thresholds.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-greece-october-2023.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Greece"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006080/DOD_111689011.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR34, Unresolved UAP Report, Greece, October 2023",
+  "dvids_video_id": "1006080",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689011/DOD_111689011.mp4",
+  "duration": 177,
+  "dvids_page_url": "https://www.dvidshub.net/video/1006080/dow-uap-pr34-unresolved-uap-report-greece-october-2023",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Greece.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: Greece.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
+}

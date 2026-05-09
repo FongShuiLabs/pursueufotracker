@@ -1,0 +1,97 @@
+{
+  "id": "unresolved-uap-report-arabian-gulf-2020-3",
+  "title": "Unresolved UAP Report, Arabian Gulf, 2020",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": null,
+  "date_released": "2026-05-08",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 29392078,
+  "sha256": "e91f12de19cadaa3af6c324bc3caa83af2ce47c80fefbceeb5e038f5c1866dac",
+  "redacted": true,
+  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of one minute and three seconds of video footage from an infrared sensor aboard a U.S. military platform in 2020. The original reporter digitally altered the imagery by pausing the video playback and adding a white line encircling an area of interest at timestamp 00:10, annotated with the phrase “U/I SMALL THERMAL SIGNATURE.” AARO did not edit the originally reported material, and this media is presented as received.Video Description:00:00-00:09: An area of contrast brightens within the sensor field-of-view, becoming increasingly distinct against the background.00:10-00:14: Playback pauses to display a white line encircling an area of interest, annotated with the phrase “U/I SMALL THERMAL SIGNATURE.”00:15-01:03: Playback resumes, with the sensor panning to track the area of contrast against the background, generally maintaining the area of contrast’s position within the top third of the display area. During this period, the sensor cycles through several contrast and zoom settings.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-arabian-gulf-2020-3.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Arabian Gulf"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006093/DOD_111689082.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR40, Unresolved UAP Report, Middle East, 2020",
+  "dvids_video_id": "1006093",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689082/DOD_111689082.mp4",
+  "duration": 63,
+  "dvids_page_url": "https://www.dvidshub.net/video/1006093/dow-uap-pr40-unresolved-uap-report-middle-east-2020",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Arabian Gulf.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: Arabian Gulf.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "dow-uap-d50-email-correspondence-indopacom-april-2025",
+  "title": "DOW-UAP-D50, Email Correspondence, INDOPACOM, April 2025",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "4/10/2025-4/11/2025",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d50-email-correspondence-indopacom-april-2025.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 312451,
+  "sha256": "10c11e9bf4d6686159da48e3d9388e7d3afe4ae8b1e79725ec6c63ccc491e537",
+  "redacted": true,
+  "summary": "This document is email correspondence describing the content of a mission report and requesting clarification on its content.All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "score": {
+    "value": 53,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d50-email-correspondence-indopacom-april-2025.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d50-email-correspondence-indopacom-april-2025.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d50-email-correspondence-indopacom-april-2025.jpg",
+  "csv_raw_title": "DOW-UAP-D50, Email Correspondence, INDOPACOM, April 2025",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (4/10/2025-4/11/2025).",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 4/10/2025-4/11/2025.",
+      "Portions of the document are redacted."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "unclassified",
+      "level",
+      "classification",
+      "secret",
+      "noforn",
+      "page",
+      "indopacom",
+      "hello"
+    ]
+  }
+}

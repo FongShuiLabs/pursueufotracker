@@ -1,0 +1,96 @@
+{
+  "id": "fbi-september-2023-sighting-composite-sketch",
+  "title": "FBI September 2023 Sighting - Composite Sketch",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": "9/1/23",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/2024-04-30-composite-sketch.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 109275,
+  "sha256": "7768268e837325333be0ea00ce5c00f571de3190e0c390f33e098f183cbf19a5",
+  "redacted": false,
+  "summary": "Actual site photo with FBI Lab rendered graphic overlay depicting corroborating eyewitness reports from September 2023 of an apparent ellipsoid bronze metallic object materializing out of a bright light in the sky, 130-195 feet in length, and disappearing instantaneously.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/fbi-september-2023-sighting-composite-sketch.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/fbi-september-2023-sighting-composite-sketch.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "United States"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/2024-04-30-composite-sketch.jpg",
+  "csv_raw_title": "FBI September 2023 Sighting - Composite Sketch",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (9/1/23) over United States.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated 9/1/23.",
+      "Reported location: United States."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page"
+    ]
+  }
+}

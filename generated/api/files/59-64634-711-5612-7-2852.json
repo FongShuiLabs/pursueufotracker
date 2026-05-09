@@ -1,0 +1,96 @@
+{
+  "id": "59-64634-711-5612-7-2852",
+  "title": "59_64634_711.5612[7-2852",
+  "category": "state",
+  "agency": "STATE",
+  "type": "pdf",
+  "date_event": "7/18/52",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/59_214434_sp_16_7.18.1963.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 1598931,
+  "sha256": "aba3ec3b8ef0240364308cf046ccbfcd252c5a5d7ef470d696b72c1f41b2502d",
+  "redacted": false,
+  "summary": "This two page memorandum, dated July 18, 1952, relates to increased reports of unidentified flying objects (UFOs). Included in the record are possible explanations of increased sightings, such as technological improvements, historical records of UFOs, and U.S. Air Force opinions on UFOs.",
+  "score": {
+    "value": 50,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/59-64634-711-5612-7-2852.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/59-64634-711-5612-7-2852.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/59_214434_sp_16_7.18.1963.jpg",
+  "csv_raw_title": "59_64634_711.5612[7-2852",
+  "audience": {
+    "tldr": "State Department diplomatic cable from an overseas diplomatic post documenting a UAP encounter (7/18/52).",
+    "what_we_know": [
+      "Document originates from STATE.",
+      "Encounter dated 7/18/52.",
+      "Document references: page."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 50/100. Top drivers: corroboration (single_witness_instrument), witness credibility (civilian_credentialed).",
+    "keywords": [
+      "page"
+    ]
+  }
+}
