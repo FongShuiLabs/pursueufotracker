@@ -47,6 +47,22 @@ SITE_DESCRIPTION = (
     "the Anomalousness Index, and verified against war.gov. Rolling release."
 )
 
+# ---------- Monetization toggles (see MONETIZE.md for the roadmap) ----------
+# Set these as you progress through the monetization phases.
+
+# Day 1 - safe to enable today:
+AMAZON_AFFILIATE_TAG = ""              # e.g. "pursueufo-20"; empty = sidebar hidden
+BUY_ME_COFFEE_USERNAME = ""            # e.g. "anthonyfong"; empty = donate link hidden
+PATREON_USERNAME = ""                  # e.g. "pursueufotracker"; empty = hidden
+
+# Day 7+ - apply, then enable when approved:
+ENABLE_ADS = False                     # master switch; False = no ad markup at all
+ADSENSE_CLIENT_ID = ""                 # e.g. "ca-pub-1234567890123456"
+AD_NETWORK = "adsense"                 # adsense | ezoic | mediavine | raptive
+
+# Day 90+ - paid tier:
+PAID_TIER_URL = ""                     # e.g. buttondown paid tier URL
+
 # Network
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "

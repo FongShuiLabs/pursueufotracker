@@ -19,6 +19,8 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from .config import (
     MANIFEST_PATH, ROOT, GEN_FILES, GEN_TIMELINE, GEN_MAP, GEN_FEED,
     TEMPLATES_DIR, SITE_NAME, SITE_URL, SITE_DESCRIPTION, ensure_dirs,
+    AMAZON_AFFILIATE_TAG, BUY_ME_COFFEE_USERNAME, PATREON_USERNAME,
+    ENABLE_ADS, ADSENSE_CLIENT_ID,
 )
 
 
@@ -51,6 +53,11 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
             "site_name": SITE_NAME,
             "site_url": SITE_URL,
             "og_card": f"../og-cards/{f['id']}.png",
+            "amazon_tag": AMAZON_AFFILIATE_TAG,
+            "buy_me_coffee": BUY_ME_COFFEE_USERNAME,
+            "patreon_user": PATREON_USERNAME,
+            "enable_ads": ENABLE_ADS,
+            "adsense_client_id": ADSENSE_CLIENT_ID,
         }
         out.write_text(tpl.render(**ctx), encoding="utf-8")
 

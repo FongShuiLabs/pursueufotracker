@@ -123,6 +123,9 @@
   <p style="font-size:17px;color:#dfe6ef;line-height:1.7;margin:24px 0">{{ f.summary }}</p>
   {% endif %}
 
+  {% set slot_id = "1234567890" %}{% set ad_format = "auto" %}
+  {% include "partials/ad_slot.html.j2" %}
+
   {% if f.score and f.score.detail %}
   <div class="score-block">
     <h2>Anomalousness Index: {{ f.score.value }}/100</h2>
@@ -148,6 +151,9 @@
       .then(t => document.getElementById("transcript-target").textContent = t);
   </script>
   {% endif %}
+
+  {% include "partials/affiliate_sidebar.html.j2" %}
+  {% include "partials/support_footer.html.j2" %}
 
   <div style="margin-top:48px">
     <h3 style="color:#fff;margin-bottom:12px">Verification</h3>

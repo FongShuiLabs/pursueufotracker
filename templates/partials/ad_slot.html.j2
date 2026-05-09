@@ -1,0 +1,15 @@
+{# Reusable ad slot. Renders nothing when ENABLE_ADS is False.
+   Usage: {% include "partials/ad_slot.html.j2" with context %}
+          (pass slot_id and format from caller) #}
+{% if enable_ads and adsense_client_id %}
+<div class="ad-slot" data-slot="{{ slot_id }}" style="margin:32px auto;max-width:728px;text-align:center">
+  <p style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#7a92b0;letter-spacing:1.5px;margin-bottom:6px">SPONSORED</p>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ adsense_client_id }}"
+       data-ad-slot="{{ slot_id }}"
+       data-ad-format="{{ ad_format | default('auto') }}"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+{% endif %}

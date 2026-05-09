@@ -1,0 +1,15 @@
+{# Support the site - donations + Patreon. Renders only if either is set. #}
+{% if buy_me_coffee or patreon_user %}
+<section class="support-bar" style="max-width:760px;margin:48px auto 0;padding:24px;background:linear-gradient(120deg,rgba(82,255,180,.06),rgba(82,180,255,.06));border:1px solid rgba(82,255,180,.2);border-radius:10px;text-align:center">
+  <h3 style="color:#52ffb4;font-size:18px;margin-bottom:10px;letter-spacing:.05em">Support PURSUE UFO Tracker</h3>
+  <p style="color:#a8b8cc;font-size:14px;margin-bottom:16px">No paywall, ever. Reader-supported. If the archive is useful to you, fuel the next drop indexing.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+    {% if buy_me_coffee %}
+    <a href="https://buymeacoffee.com/{{ buy_me_coffee }}" target="_blank" rel="noopener" style="background:#FFDD00;color:#000;padding:10px 22px;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:1px;text-decoration:none;text-transform:uppercase">☕ Buy Me a Coffee</a>
+    {% endif %}
+    {% if patreon_user %}
+    <a href="https://patreon.com/{{ patreon_user }}" target="_blank" rel="noopener" style="background:#FF424D;color:#fff;padding:10px 22px;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:1px;text-decoration:none;text-transform:uppercase">Become a Patron</a>
+    {% endif %}
+  </div>
+</section>
+{% endif %}

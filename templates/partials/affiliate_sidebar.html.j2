@@ -1,0 +1,29 @@
+{# Amazon Associates book recommendations. Renders only if AMAZON_AFFILIATE_TAG is set. #}
+{% if amazon_tag %}
+<aside class="affiliate-sidebar" style="background:rgba(82,180,255,.04);border:1px solid rgba(82,180,255,.15);padding:24px;border-radius:10px;margin:32px 0">
+  <h3 style="color:#52b4ff;font-size:16px;margin-bottom:16px;letter-spacing:.05em">📚 Recommended reading on UAP disclosure</h3>
+  <ul style="list-style:none;padding:0;margin:0">
+    <li style="margin-bottom:12px">
+      <a href="https://www.amazon.com/dp/0063232936?tag={{ amazon_tag }}" target="_blank" rel="noopener sponsored" style="color:#dfe6ef;text-decoration:none">
+        <strong style="color:#fff">Imminent</strong> &mdash; Luis Elizondo (former AATIP director)
+      </a>
+    </li>
+    <li style="margin-bottom:12px">
+      <a href="https://www.amazon.com/dp/0190692871?tag={{ amazon_tag }}" target="_blank" rel="noopener sponsored" style="color:#dfe6ef;text-decoration:none">
+        <strong style="color:#fff">American Cosmic</strong> &mdash; Diana Pasulka (UNC religion professor)
+      </a>
+    </li>
+    <li style="margin-bottom:12px">
+      <a href="https://www.amazon.com/dp/0063385244?tag={{ amazon_tag }}" target="_blank" rel="noopener sponsored" style="color:#dfe6ef;text-decoration:none">
+        <strong style="color:#fff">In Plain Sight</strong> &mdash; Ross Coulthart (NewsNation)
+      </a>
+    </li>
+    <li style="margin-bottom:12px">
+      <a href="https://www.amazon.com/dp/1879823551?tag={{ amazon_tag }}" target="_blank" rel="noopener sponsored" style="color:#dfe6ef;text-decoration:none">
+        <strong style="color:#fff">UFOs and the National Security State</strong> &mdash; Richard Dolan
+      </a>
+    </li>
+  </ul>
+  <p style="font-size:10px;color:#7a92b0;margin-top:16px;font-family:'JetBrains Mono',monospace;letter-spacing:.5px">PURSUE UFO Tracker is an Amazon Associate. Purchases support the archive at no extra cost to you.</p>
+</aside>
+{% endif %}
