@@ -58,6 +58,26 @@ we don't editorialize the documents themselves. The Anomalousness Index
 is our editorial scoring of evidentiary weight, with transparent methodology
 - not a claim on the underlying files.
 
+## Q: Did you use AI for the analysis?
+
+Yes, and we want to be specific about what the AI did and didn't do.
+
+**What the AI did:**
+- Applied our human-designed scoring rubric to each file's metadata. The rubric defines six components (sensor quality, witness credibility, corroboration, kinematic anomaly, mundane-explanation availability, official disposition) with human-set weights. The AI picked which rubric value best matched each file based on publicly reported descriptions of the file.
+- Generated audience-friendly summaries (TL;DR / What we know / What we don't know) from the structured metadata.
+- For videos: generated transcripts using OpenAI's Whisper model.
+- For PDFs: extracted searchable text using pdfplumber.
+
+**What the AI did NOT do:**
+- Did not analyze the underlying files for "alien content" or extraterrestrial markers. That's not what these scores measure and not what AI is capable of.
+- Did not editorialize the documents. The files are mirrored as the U.S. government released them.
+- Did not generate the rubric weights or the editorial position. Those are human-set and visible at /data/scoring-rubric.json.
+- Did not produce a "% chance aliens exist" number. No AI can do that honestly. We refuse to publish one.
+
+**Why disclose this:** other AI-analysis sites don't disclose, then get caught and lose credibility. We tell you upfront. The rubric is open JSON. Every score is reproducible. If you disagree with how a specific file was scored, edit the rubric and recompute — the math is identical.
+
+**Models used:** Claude (Anthropic) for rubric application and summaries. OpenAI Whisper for video transcription. pdfplumber (open-source) for PDF text extraction.
+
 ## Q: Why is this site here?
 
 Because war.gov's interface is a flat list, and 162 files deserve search,

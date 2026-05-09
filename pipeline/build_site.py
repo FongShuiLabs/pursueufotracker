@@ -50,7 +50,7 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
             "size_human": size_h,
             "site_name": SITE_NAME,
             "site_url": SITE_URL,
-            "og_card": f"../generated/og-cards/{f['id']}.png",
+            "og_card": f"../og-cards/{f['id']}.png",
         }
         out.write_text(tpl.render(**ctx), encoding="utf-8")
 

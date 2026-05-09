@@ -60,7 +60,7 @@
 <div class="starfield"></div><div class="grid-bg"></div>
 
 <main class="file-page">
-  <div class="breadcrumb"><a href="../index.html">PURSUE Index</a> &nbsp;/&nbsp; {{ f.category | upper }} &nbsp;/&nbsp; {{ f.id }}</div>
+  <div class="breadcrumb"><a href="../../index.html">PURSUE Tracker</a> &nbsp;/&nbsp; {{ f.category | upper }} &nbsp;/&nbsp; {{ f.id }}</div>
 
   <div class="file-head">
     <h1>{{ f.title }}</h1>
@@ -70,25 +70,39 @@
   </div>
 
   <div class="viewer">
-    {% if f.type == 'pdf' %}
-      <iframe src="../{{ f.local_path }}" title="{{ f.title }}"></iframe>
-    {% elif f.type == 'video' %}
-      <video controls
-        {% if f.extracted and f.extracted.thumbnail_path %}poster="../{{ f.extracted.thumbnail_path }}"{% endif %}
-      >
-        <source src="../{{ f.local_path }}" type="video/mp4">
-        {% if f.extracted and f.extracted.transcript_path %}
-        <track default kind="subtitles" srclang="en" src="../{{ f.extracted.transcript_path }}" label="English">
-        {% endif %}
-      </video>
-    {% elif f.type == 'image' %}
-      <img src="../{{ f.local_path }}" alt="{{ f.title }}">
+    {% if f.local_path %}
+      {% if f.type == 'pdf' %}
+        <iframe src="../../{{ f.local_path }}" title="{{ f.title }}"></iframe>
+      {% elif f.type == 'video' %}
+        <video controls
+          {% if f.extracted and f.extracted.thumbnail_path %}poster="../../{{ f.extracted.thumbnail_path }}"{% endif %}
+        >
+          <source src="../../{{ f.local_path }}" type="video/mp4">
+          {% if f.extracted and f.extracted.transcript_path %}
+          <track default kind="subtitles" srclang="en" src="../../{{ f.extracted.transcript_path }}" label="English">
+          {% endif %}
+        </video>
+      {% elif f.type == 'image' %}
+        <img src="../../{{ f.local_path }}" alt="{{ f.title }}">
+      {% endif %}
+    {% else %}
+      <div style="padding:48px;text-align:center;color:#a8b8cc">
+        <p style="font-size:18px;margin-bottom:14px">📡 Mirroring in progress</p>
+        <p style="font-size:14px;margin-bottom:24px">This file is indexed; the HD mirror is being prepared. Original is on war.gov:</p>
+        <a href="{{ f.source_url }}" target="_blank" rel="noopener" style="background:#52b4ff;color:#04060d;padding:14px 28px;border-radius:6px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block">View on war.gov ↗</a>
+      </div>
     {% endif %}
   </div>
 
-  <a class="download" href="../{{ f.local_path }}" download>
+  {% if f.local_path %}
+  <a class="download" href="../../{{ f.local_path }}" download>
     ⬇ Download HD ({{ size_human }})
   </a>
+  {% else %}
+  <a class="download" href="{{ f.source_url }}" target="_blank" rel="noopener">
+    ⬇ Download from war.gov ↗
+  </a>
+  {% endif %}
 
   <div class="meta-grid">
     <div class="meta-item"><div class="k">Agency</div><div class="v">{{ f.agency }}</div></div>
@@ -112,7 +126,8 @@
   {% if f.score and f.score.detail %}
   <div class="score-block">
     <h2>Anomalousness Index: {{ f.score.value }}/100</h2>
-    <p style="color:#a8b8cc;margin-bottom:20px">Evidentiary weight that this encounter remains unexplained after conventional analysis. Not a probability of extraterrestrial origin.</p>
+    <p style="color:#a8b8cc;margin-bottom:12px">Evidentiary weight that this encounter remains unexplained after conventional analysis. Not a probability of extraterrestrial origin.</p>
+    <p style="display:inline-block;background:rgba(82,255,180,.08);border:1px solid rgba(82,255,180,.3);color:#52ffb4;padding:6px 12px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;margin-bottom:20px">🤖 AI-ASSISTED SCORING · <a href="../../generated/verdict.html#ai" style="color:inherit;text-decoration:underline">methodology</a></p>
     {% for cname, c in f.score.detail.items() %}
     <div class="score-row">
       <span class="name">{{ cname.replace('_',' ') }} <small style="opacity:.6">({{ c.choice }})</small></span>
@@ -128,7 +143,7 @@
     <div class="transcript" id="transcript-target">Loading transcript...</div>
   </details>
   <script>
-    fetch("../{{ f.extracted.transcript_path }}")
+    fetch("../../{{ f.extracted.transcript_path }}")
       .then(r => r.text())
       .then(t => document.getElementById("transcript-target").textContent = t);
   </script>
@@ -137,13 +152,13 @@
   <div style="margin-top:48px">
     <h3 style="color:#fff;margin-bottom:12px">Verification</h3>
     <p style="color:#a8b8cc;font-size:13px;margin-bottom:8px">SHA-256:</p>
-    <div class="hash">{{ f.sha256 or '(not yet hashed)' }}</div>
+    <div class="hash">{{ f.sha256 or '(awaiting HD mirror)' }}</div>
     <p style="color:#a8b8cc;font-size:13px;margin-top:16px">Source: <a href="{{ f.source_url }}" target="_blank" rel="noopener" style="color:#52b4ff">{{ f.source_url }}</a></p>
   </div>
 </main>
 
 <footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
-  <p>Independent index. Not affiliated with the U.S. Department of War. <a href="../index.html" style="color:#52b4ff">Back to index</a></p>
+  <p>Independent tracker. Not affiliated with the U.S. Department of War. <a href="../../index.html" style="color:#52b4ff">Back to tracker</a></p>
 </footer>
 </body>
-</htm
+</html>
