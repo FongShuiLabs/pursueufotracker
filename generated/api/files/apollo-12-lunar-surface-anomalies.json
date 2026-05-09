@@ -1,0 +1,91 @@
+{
+  "id": "apollo-12-lunar-surface-anomalies",
+  "title": "Apollo 12 Lunar Surface Anomalies",
+  "category": "apollo",
+  "agency": "NASA",
+  "type": "image",
+  "date_event": "1969",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/UFO/",
+  "pending_verification": true,
+  "local_path": null,
+  "size_bytes": null,
+  "sha256": null,
+  "redacted": false,
+  "summary": "Photographic frames from Apollo 12 showing unexplained reflective objects and lighting on the lunar surface. Reviewed by NASA but not resolved to a conventional source.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "photographic",
+      "witness_credibility": "astronaut",
+      "corroboration": "multi_witness_single_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "photographic",
+        "value": 55,
+        "weight": 0.25,
+        "contribution": 13.75
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "multi_witness_single_instrument",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Lunar surface"
+  },
+  "audience": {
+    "tldr": "NASA mission record from a crewed lunar mission depicting a UAP encounter (1969) over Lunar surface.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 1969.",
+      "Reported location: Lunar surface."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: witness credibility (astronaut), corroboration (multi_witness_single_instrument)."
+  }
+}

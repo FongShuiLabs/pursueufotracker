@@ -1,0 +1,119 @@
+[
+  {
+    "id": "roswell-1947-hexagonal-object",
+    "title": "Roswell, NM 1947 - Hexagonal Object",
+    "date": "1947-07",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 50,
+    "url": "files/roswell-1947-hexagonal-object.html"
+  },
+  {
+    "id": "fbi-case-62-hq-83894",
+    "title": "FBI Case File 62-HQ-83894 (1947-1968)",
+    "date": "1947-1968",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 53,
+    "url": "files/fbi-case-62-hq-83894.html"
+  },
+  {
+    "id": "apollo-12-lunar-surface-anomalies",
+    "title": "Apollo 12 Lunar Surface Anomalies",
+    "date": "1969",
+    "category": "apollo",
+    "agency": "NASA",
+    "score": 66,
+    "url": "files/apollo-12-lunar-surface-anomalies.html"
+  },
+  {
+    "id": "apollo-17-triangular-formation",
+    "title": "Apollo 17 - Triangular Formation",
+    "date": "1972-12",
+    "category": "apollo",
+    "agency": "NASA",
+    "score": 72,
+    "url": "files/apollo-17-triangular-formation.html"
+  },
+  {
+    "id": "schmitt-lunar-flash-grimaldi-crater",
+    "title": "Schmitt Lunar Flash - Grimaldi Crater",
+    "date": "1972-12",
+    "category": "apollo",
+    "agency": "NASA",
+    "score": 44,
+    "url": "files/schmitt-lunar-flash-grimaldi-crater.html"
+  },
+  {
+    "id": "state-cables-1985-2025-six-posts",
+    "title": "State Department Cables 1985-2025 - Six Diplomatic Posts",
+    "date": "1985-2025",
+    "category": "state",
+    "agency": "STATE",
+    "score": 42,
+    "url": "files/state-cables-1985-2025-six-posts.html"
+  },
+  {
+    "id": "tajikistan-1994-panam-fl410",
+    "title": "Tajikistan 1994 - PanAm Crew at FL410",
+    "date": "1994",
+    "category": "state",
+    "agency": "STATE",
+    "score": 68,
+    "url": "files/tajikistan-1994-panam-fl410.html"
+  },
+  {
+    "id": "mediterranean-triangle-25000ft",
+    "title": "Mediterranean Triangular UAP at 25,000 ft",
+    "date": "2020-2026",
+    "category": "military",
+    "agency": "DoD",
+    "score": 78,
+    "url": "files/mediterranean-triangle-25000ft.html"
+  },
+  {
+    "id": "greece-2023-right-angle-turn",
+    "title": "Greece 2023 - 90 Degree Turn at 80 mph",
+    "date": "2023",
+    "category": "military",
+    "agency": "DoD",
+    "score": 86,
+    "url": "files/greece-2023-right-angle-turn.html"
+  },
+  {
+    "id": "western-us-eye-of-sauron-orb",
+    "title": "Western US - Eye of Sauron Orb Encounter",
+    "date": "2023",
+    "category": "military",
+    "agency": "FBI",
+    "score": 85,
+    "url": "files/western-us-eye-of-sauron-orb.html"
+  },
+  {
+    "id": "indo-pacific-2024-football-object",
+    "title": "Indo-Pacific 2024 - Football-Shaped Object",
+    "date": "2024",
+    "category": "military",
+    "agency": "DoD",
+    "score": 74,
+    "url": "files/indo-pacific-2024-football-object.html"
+  },
+  {
+    "id": "syria-2024-twin-orange-translucent",
+    "title": "Syria 2024 - Twin Orange Translucent Areas",
+    "date": "2024",
+    "category": "military",
+    "agency": "DoD",
+    "score": 60,
+    "url": "files/syria-2024-twin-orange-translucent.html"
+  },
+  {
+    "id": "fbi-composite-ellipsoid-bronze",
+    "title": "FBI Composite Sketch - Ellipsoid Bronze Object",
+    "date": "2026-05-08",
+    "category": "composite",
+    "agency": "FBI",
+    "score": 33,
+    "url": "files/fbi-composite-ellipsoid-bronze.html"
+  }
+]

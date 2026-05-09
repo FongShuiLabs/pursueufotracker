@@ -1,0 +1,91 @@
+{
+  "id": "syria-2024-twin-orange-translucent",
+  "title": "Syria 2024 - Twin Orange Translucent Areas",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2024",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/UFO/",
+  "pending_verification": true,
+  "local_path": null,
+  "size_bytes": null,
+  "sha256": null,
+  "redacted": false,
+  "summary": "Two semi-transparent orange luminous areas observed over the Syrian theater. Plausible atmospheric or pyrotechnic explanations exist but were not formally adjudicated.",
+  "score": {
+    "value": 60,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "multi_witness_no_instrument",
+      "kinematic_anomaly": "unusual_but_explainable",
+      "mundane_explanation_available": "plausible_mundane",
+      "official_disposition": "partial_resolution"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "multi_witness_no_instrument",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "kinematic_anomaly": {
+        "choice": "unusual_but_explainable",
+        "value": 40,
+        "weight": 0.15,
+        "contribution": 6.0
+      },
+      "mundane_explanation_available": {
+        "choice": "plausible_mundane",
+        "value": 40,
+        "weight": 0.1,
+        "contribution": 4.0
+      },
+      "official_disposition": {
+        "choice": "partial_resolution",
+        "value": 40,
+        "weight": 0.1,
+        "contribution": 4.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": 35.0,
+    "lng": 38.0,
+    "place": "Syrian theater"
+  },
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2024) over Syrian theater.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2024.",
+      "Reported location: Syrian theater."
+    ],
+    "what_we_dont": [
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation (drone, balloon, atmospheric, sensor artifact) plausibly fits the description.",
+    "score_sentence": "Anomalousness Index 60/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
+}

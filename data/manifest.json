@@ -1,0 +1,1190 @@
+{
+  "generated_at": "2026-05-09T00:00:00Z",
+  "rubric_version": "1.0",
+  "_note": "Seed manifest built from CBS/CNN/NBC reporting on the 2026-05-08 PURSUE release. source_url values are placeholders pointing to the war.gov index until direct file URLs are obtained; the `pending_verification` flag tracks this.",
+  "files": [
+    {
+      "id": "apollo-12-lunar-surface-anomalies",
+      "title": "Apollo 12 Lunar Surface Anomalies",
+      "category": "apollo",
+      "agency": "NASA",
+      "type": "image",
+      "date_event": "1969",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": false,
+      "summary": "Photographic frames from Apollo 12 showing unexplained reflective objects and lighting on the lunar surface. Reviewed by NASA but not resolved to a conventional source.",
+      "score": {
+        "value": 66,
+        "components": {
+          "sensor_quality": "photographic",
+          "witness_credibility": "astronaut",
+          "corroboration": "multi_witness_single_instrument",
+          "kinematic_anomaly": "no_kinematic_data",
+          "mundane_explanation_available": "weak_mundane_candidate",
+          "official_disposition": "unresolved_no_review"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "photographic",
+            "value": 55,
+            "weight": 0.25,
+            "contribution": 13.75
+          },
+          "witness_credibility": {
+            "choice": "astronaut",
+            "value": 95,
+            "weight": 0.2,
+            "contribution": 19.0
+          },
+          "corroboration": {
+            "choice": "multi_witness_single_instrument",
+            "value": 80,
+            "weight": 0.2,
+            "contribution": 16.0
+          },
+          "kinematic_anomaly": {
+            "choice": "no_kinematic_data",
+            "value": 30,
+            "weight": 0.15,
+            "contribution": 4.5
+          },
+          "mundane_explanation_available": {
+            "choice": "weak_mundane_candidate",
+            "value": 70,
+            "weight": 0.1,
+            "contribution": 7.0
+          },
+          "official_disposition": {
+            "choice": "unresolved_no_review",
+            "value": 60,
+            "weight": 0.1,
+            "contribution": 6.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": null,
+        "lng": null,
+        "place": "Lunar surface"
+      },
+      "audience": {
+        "tldr": "NASA mission record from a crewed lunar mission depicting a UAP encounter (1969) over Lunar surface.",
+        "what_we_know": [
+          "Document originates from NASA.",
+          "Encounter dated 1969.",
+          "Reported location: Lunar surface."
+        ],
+        "what_we_dont": [
+          "No kinematic data (speed, altitude, maneuver) is attached.",
+          "No official conclusion has been issued classifying the object as conventional.",
+          "Independent corroboration from non-government sources has not been confirmed."
+        ],
+        "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+        "score_sentence": "Anomalousness Index 66/100. Top drivers: witness credibility (astronaut), corroboration (multi_witness_single_instrument)."
+      }
+    },
+    {
+      "id": "apollo-17-triangular-formation",
+      "title": "Apollo 17 - Triangular Formation",
+      "category": "apollo",
+      "agency": "NASA",
+      "type": "image",
+      "date_event": "1972-12",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": false,
+      "summary": "Frame depicting three dots in a triangular formation in the lunar sky. No atmospheric or stellar explanation has been advanced in the released file.",
+      "score": {
+        "value": 72,
+        "components": {
+          "sensor_quality": "photographic",
+          "witness_credibility": "astronaut",
+          "corroboration": "multi_witness_single_instrument",
+          "kinematic_anomaly": "no_kinematic_data",
+          "mundane_explanation_available": "no_plausible_mundane",
+          "official_disposition": "open_after_review"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "photographic",
+            "value": 55,
+            "weight": 0.25,
+            "contribution": 13.75
+          },
+          "witness_credibility": {
+            "choice": "astronaut",
+            "value": 95,
+            "weight": 0.2,
+            "contribution": 19.0
+          },
+          "corroboration": {
+            "choice": "multi_witness_single_instrument",
+            "value": 80,
+            "weight": 0.2,
+            "contribution": 16.0
+          },
+          "kinematic_anomaly": {
+            "choice": "no_kinematic_data",
+            "value": 30,
+            "weight": 0.15,
+            "contribution": 4.5
+          },
+          "mundane_explanation_available": {
+            "choice": "no_plausible_mundane",
+            "value": 100,
+            "weight": 0.1,
+            "contribution": 10.0
+          },
+          "official_disposition": {
+            "choice": "open_after_review",
+            "value": 90,
+            "weight": 0.1,
+            "contribution": 9.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": null,
+        "lng": null,
+        "place": "Lunar sky"
+      },
+      "audience": {
+        "tldr": "NASA mission record from a crewed lunar mission depicting a UAP encounter (1972-12) over Lunar sky.",
+        "what_we_know": [
+          "Document originates from NASA.",
+          "Encounter dated 1972-12.",
+          "Reported location: Lunar sky."
+        ],
+        "what_we_dont": [
+          "No kinematic data (speed, altitude, maneuver) is attached.",
+          "No official conclusion has been issued classifying the object as conventional.",
+          "Independent corroboration from non-government sources has not been confirmed."
+        ],
+        "mundane_candidate": "None has been formally offered.",
+        "score_sentence": "Anomalousness Index 72/100. Top drivers: witness credibility (astronaut), corroboration (multi_witness_single_instrument)."
+      }
+    },
+    {
+      "id": "schmitt-lunar-flash-grimaldi-crater",
+      "title": "Schmitt Lunar Flash - Grimaldi Crater",
+      "category": "apollo",
+      "agency": "NASA",
+      "type": "pdf",
+      "date_event": "1972-12",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": false,
+      "summary": "Astronaut Harrison Schmitt report of a lunar surface flash near Grimaldi crater. Possible meteoroid impact - candidate explanation exists but never formally closed.",
+      "score": {
+        "value": 44,
+        "components": {
+          "sensor_quality": "eyewitness_only",
+          "witness_credibility": "astronaut",
+          "corroboration": "single_witness_only",
+          "kinematic_anomaly": "no_kinematic_data",
+          "mundane_explanation_available": "plausible_mundane",
+          "official_disposition": "partial_resolution"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "eyewitness_only",
+            "value": 30,
+            "weight": 0.25,
+            "contribution": 7.5
+          },
+          "witness_credibility": {
+            "choice": "astronaut",
+            "value": 95,
+            "weight": 0.2,
+            "contribution": 19.0
+          },
+          "corroboration": {
+            "choice": "single_witness_only",
+            "value": 25,
+            "weight": 0.2,
+            "contribution": 5.0
+          },
+          "kinematic_anomaly": {
+            "choice": "no_kinematic_data",
+            "value": 30,
+            "weight": 0.15,
+            "contribution": 4.5
+          },
+          "mundane_explanation_available": {
+            "choice": "plausible_mundane",
+            "value": 40,
+            "weight": 0.1,
+            "contribution": 4.0
+          },
+          "official_disposition": {
+            "choice": "partial_resolution",
+            "value": 40,
+            "weight": 0.1,
+            "contribution": 4.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": null,
+        "lng": null,
+        "place": "Grimaldi Crater, Lunar surface"
+      },
+      "audience": {
+        "tldr": "NASA mission record from a crewed lunar mission documenting a UAP encounter (1972-12) over Grimaldi Crater, Lunar surface.",
+        "what_we_know": [
+          "Document originates from NASA.",
+          "Encounter dated 1972-12.",
+          "Reported location: Grimaldi Crater, Lunar surface."
+        ],
+        "what_we_dont": [
+          "No kinematic data (speed, altitude, maneuver) is attached.",
+          "No official conclusion has been issued classifying the object as conventional.",
+          "Independent corroboration from non-government sources has not been confirmed."
+        ],
+        "mundane_candidate": "A conventional explanation (drone, balloon, atmospheric, sensor artifact) plausibly fits the description.",
+        "score_sentence": "Anomalousness Index 44/100. Top drivers: witness credibility (astronaut), sensor quality (eyewitness_only)."
+      }
+    },
+    {
+      "id": "fbi-case-62-hq-83894",
+      "title": "FBI Case File 62-HQ-83894 (1947-1968)",
+      "category": "fbi",
+      "agency": "FBI",
+      "type": "pdf",
+      "date_event": "1947-1968",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": true,
+      "summary": "FBI headquarters master file aggregating 18 separate UAP-related incidents across two decades, including Roswell-era field office reporting.",
+      "score": {
+        "value": 53,
+        "components": {
+          "sensor_quality": "eyewitness_only",
+          "witness_credibility": "federal_agent",
+          "corroboration": "multi_witness_no_instrument",
+          "kinematic_anomaly": "no_kinematic_data",
+          "mundane_explanation_available": "weak_mundane_candidate",
+          "official_disposition": "unresolved_no_review"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "eyewitness_only",
+            "value": 30,
+            "weight": 0.25,
+            "contribution": 7.5
+          },
+          "witness_credibility": {
+            "choice": "federal_agent",
+            "value": 90,
+            "weight": 0.2,
+            "contribution": 18.0
+          },
+          "corroboration": {
+            "choice": "multi_witness_no_instrument",
+            "value": 50,
+            "weight": 0.2,
+            "contribution": 10.0
+          },
+          "kinematic_anomaly": {
+            "choice": "no_kinematic_data",
+            "value": 30,
+            "weight": 0.15,
+            "contribution": 4.5
+          },
+          "mundane_explanation_available": {
+            "choice": "weak_mundane_candidate",
+            "value": 70,
+            "weight": 0.1,
+            "contribution": 7.0
+          },
+          "official_disposition": {
+            "choice": "unresolved_no_review",
+            "value": 60,
+            "weight": 0.1,
+            "contribution": 6.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": null,
+        "lng": null,
+        "place": "United States, multiple locations"
+      },
+      "audience": {
+        "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (1947-1968) over United States, multiple locations.",
+        "what_we_know": [
+          "Document originates from FBI.",
+          "Encounter dated 1947-1968.",
+          "Reported location: United States, multiple locations."
+        ],
+        "what_we_dont": [
+          "Redacted portions may contain identifying or technical detail.",
+          "No kinematic data (speed, altitude, maneuver) is attached.",
+          "No official conclusion has been issued classifying the object as conventional."
+        ],
+        "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+        "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (federal_agent), corroboration (multi_witness_no_instrument)."
+      }
+    },
+    {
+      "id": "roswell-1947-hexagonal-object",
+      "title": "Roswell, NM 1947 - Hexagonal Object",
+      "category": "fbi",
+      "agency": "FBI",
+      "type": "pdf",
+      "date_event": "1947-07",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": true,
+      "summary": "FBI Dallas field office memo to headquarters describing a recovered hexagonal object suspended from a balloon-like structure. Long the subject of public speculation; now in the official record.",
+      "score": {
+        "value": 50,
+        "components": {
+          "sensor_quality": "eyewitness_only",
+          "witness_credibility": "federal_agent",
+          "corroboration": "single_witness_instrument",
+          "kinematic_anomaly": "no_kinematic_data",
+          "mundane_explanation_available": "plausible_mundane",
+          "official_disposition": "partial_resolution"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "eyewitness_only",
+            "value": 30,
+            "weight": 0.25,
+            "contribution": 7.5
+          },
+          "witness_credibility": {
+            "choice": "federal_agent",
+            "value": 90,
+            "weight": 0.2,
+            "contribution": 18.0
+          },
+          "corroboration": {
+            "choice": "single_witness_instrument",
+            "value": 60,
+            "weight": 0.2,
+            "contribution": 12.0
+          },
+          "kinematic_anomaly": {
+            "choice": "no_kinematic_data",
+            "value": 30,
+            "weight": 0.15,
+            "contribution": 4.5
+          },
+          "mundane_explanation_available": {
+            "choice": "plausible_mundane",
+            "value": 40,
+            "weight": 0.1,
+            "contribution": 4.0
+          },
+          "official_disposition": {
+            "choice": "partial_resolution",
+            "value": 40,
+            "weight": 0.1,
+            "contribution": 4.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": 33.3943,
+        "lng": -104.523,
+        "place": "Roswell, New Mexico"
+      },
+      "audience": {
+        "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (1947-07) over Roswell, New Mexico.",
+        "what_we_know": [
+          "Document originates from FBI.",
+          "Encounter dated 1947-07.",
+          "Reported location: Roswell, New Mexico."
+        ],
+        "what_we_dont": [
+          "Redacted portions may contain identifying or technical detail.",
+          "No kinematic data (speed, altitude, maneuver) is attached.",
+          "No official conclusion has been issued classifying the object as conventional."
+        ],
+        "mundane_candidate": "A conventional explanation (drone, balloon, atmospheric, sensor artifact) plausibly fits the description.",
+        "score_sentence": "Anomalousness Index 50/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument)."
+      }
+    },
+    {
+      "id": "mediterranean-triangle-25000ft",
+      "title": "Mediterranean Triangular UAP at 25,000 ft",
+      "category": "military",
+      "agency": "DoD",
+      "type": "video",
+      "date_event": "2020-2026",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": false,
+      "summary": "Triangular metallic object recorded at 25,000 feet over the Mediterranean. Sensor capture; flight characteristics not matched to known platforms.",
+      "score": {
+        "value": 78,
+        "components": {
+          "sensor_quality": "single_sensor_military",
+          "witness_credibility": "military_personnel",
+          "corroboration": "multi_witness_single_instrument",
+          "kinematic_anomaly": "edge_of_envelope",
+          "mundane_explanation_available": "weak_mundane_candidate",
+          "official_disposition": "open_after_review"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "single_sensor_military",
+            "value": 80,
+            "weight": 0.25,
+            "contribution": 20.0
+          },
+          "witness_credibility": {
+            "choice": "military_personnel",
+            "value": 80,
+            "weight": 0.2,
+            "contribution": 16.0
+          },
+          "corroboration": {
+            "choice": "multi_witness_single_instrument",
+            "value": 80,
+            "weight": 0.2,
+            "contribution": 16.0
+          },
+          "kinematic_anomaly": {
+            "choice": "edge_of_envelope",
+            "value": 70,
+            "weight": 0.15,
+            "contribution": 10.5
+          },
+          "mundane_explanation_available": {
+            "choice": "weak_mundane_candidate",
+            "value": 70,
+            "weight": 0.1,
+            "contribution": 7.0
+          },
+          "official_disposition": {
+            "choice": "open_after_review",
+            "value": 90,
+            "weight": 0.1,
+            "contribution": 9.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": 35.0,
+        "lng": 18.0,
+        "place": "Mediterranean Sea"
+      },
+      "audience": {
+        "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2020-2026) over Mediterranean Sea.",
+        "what_we_know": [
+          "Document originates from DoD.",
+          "Encounter dated 2020-2026.",
+          "Reported location: Mediterranean Sea."
+        ],
+        "what_we_dont": [
+          "No official conclusion has been issued classifying the object as conventional.",
+          "Independent corroboration from non-government sources has not been confirmed.",
+          "Independent corroboration from non-government sources has not been confirmed."
+        ],
+        "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+        "score_sentence": "Anomalousness Index 78/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+      }
+    },
+    {
+      "id": "greece-2023-right-angle-turn",
+      "title": "Greece 2023 - 90 Degree Turn at 80 mph",
+      "category": "military",
+      "agency": "DoD",
+      "type": "video",
+      "date_event": "2023",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": false,
+      "summary": "Object executing a 90 degree turn at approximately 80 mph - a maneuver inconsistent with known fixed-wing or rotary aircraft inertial limits.",
+      "score": {
+        "value": 86,
+        "components": {
+          "sensor_quality": "single_sensor_military",
+          "witness_credibility": "military_personnel",
+          "corroboration": "multi_witness_single_instrument",
+          "kinematic_anomaly": "physically_impossible_for_known_craft",
+          "mundane_explanation_available": "no_plausible_mundane",
+          "official_disposition": "open_after_review"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "single_sensor_military",
+            "value": 80,
+            "weight": 0.25,
+            "contribution": 20.0
+          },
+          "witness_credibility": {
+            "choice": "military_personnel",
+            "value": 80,
+            "weight": 0.2,
+            "contribution": 16.0
+          },
+          "corroboration": {
+            "choice": "multi_witness_single_instrument",
+            "value": 80,
+            "weight": 0.2,
+            "contribution": 16.0
+          },
+          "kinematic_anomaly": {
+            "choice": "physically_impossible_for_known_craft",
+            "value": 100,
+            "weight": 0.15,
+            "contribution": 15.0
+          },
+          "mundane_explanation_available": {
+            "choice": "no_plausible_mundane",
+            "value": 100,
+            "weight": 0.1,
+            "contribution": 10.0
+          },
+          "official_disposition": {
+            "choice": "open_after_review",
+            "value": 90,
+            "weight": 0.1,
+            "contribution": 9.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": 39.0742,
+        "lng": 21.8243,
+        "place": "Greek airspace"
+      },
+      "audience": {
+        "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2023) over Greek airspace.",
+        "what_we_know": [
+          "Document originates from DoD.",
+          "Encounter dated 2023.",
+          "Reported location: Greek airspace."
+        ],
+        "what_we_dont": [
+          "No official conclusion has been issued classifying the object as conventional.",
+          "Independent corroboration from non-government sources has not been confirmed.",
+          "Independent corroboration from non-government sources has not been confirmed."
+        ],
+        "mundane_candidate": "None has been formally offered.",
+        "score_sentence": "Anomalousness Index 86/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+      }
+    },
+    {
+      "id": "indo-pacific-2024-football-object",
+      "title": "Indo-Pacific 2024 - Football-Shaped Object",
+      "category": "military",
+      "agency": "DoD",
+      "type": "video",
+      "date_event": "2024",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": false,
+      "summary": "Football-shaped object captured in Indo-Pacific airspace. Sensor data preserved; no conventional aircraft signature attached in the released file.",
+      "score": {
+        "value": 74,
+        "components": {
+          "sensor_quality": "single_sensor_military",
+          "witness_credibility": "military_personnel",
+          "corroboration": "single_witness_instrument",
+          "kinematic_anomaly": "edge_of_envelope",
+          "mundane_explanation_available": "weak_mundane_candidate",
+          "official_disposition": "open_after_review"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "single_sensor_military",
+            "value": 80,
+            "weight": 0.25,
+            "contribution": 20.0
+          },
+          "witness_credibility": {
+            "choice": "military_personnel",
+            "value": 80,
+            "weight": 0.2,
+            "contribution": 16.0
+          },
+          "corroboration": {
+            "choice": "single_witness_instrument",
+            "value": 60,
+            "weight": 0.2,
+            "contribution": 12.0
+          },
+          "kinematic_anomaly": {
+            "choice": "edge_of_envelope",
+            "value": 70,
+            "weight": 0.15,
+            "contribution": 10.5
+          },
+          "mundane_explanation_available": {
+            "choice": "weak_mundane_candidate",
+            "value": 70,
+            "weight": 0.1,
+            "contribution": 7.0
+          },
+          "official_disposition": {
+            "choice": "open_after_review",
+            "value": 90,
+            "weight": 0.1,
+            "contribution": 9.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": 0.0,
+        "lng": 130.0,
+        "place": "Indo-Pacific theater"
+      },
+      "audience": {
+        "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2024) over Indo-Pacific theater.",
+        "what_we_know": [
+          "Document originates from DoD.",
+          "Encounter dated 2024.",
+          "Reported location: Indo-Pacific theater."
+        ],
+        "what_we_dont": [
+          "No official conclusion has been issued classifying the object as conventional.",
+          "Independent corroboration from non-government sources has not been confirmed.",
+          "Independent corroboration from non-government sources has not been confirmed."
+        ],
+        "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+        "score_sentence": "Anomalousness Index 74/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+      }
+    },
+    {
+      "id": "syria-2024-twin-orange-translucent",
+      "title": "Syria 2024 - Twin Orange Translucent Areas",
+      "category": "military",
+      "agency": "DoD",
+      "type": "video",
+      "date_event": "2024",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": false,
+      "summary": "Two semi-transparent orange luminous areas observed over the Syrian theater. Plausible atmospheric or pyrotechnic explanations exist but were not formally adjudicated.",
+      "score": {
+        "value": 60,
+        "components": {
+          "sensor_quality": "single_sensor_military",
+          "witness_credibility": "military_personnel",
+          "corroboration": "multi_witness_no_instrument",
+          "kinematic_anomaly": "unusual_but_explainable",
+          "mundane_explanation_available": "plausible_mundane",
+          "official_disposition": "partial_resolution"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "single_sensor_military",
+            "value": 80,
+            "weight": 0.25,
+            "contribution": 20.0
+          },
+          "witness_credibility": {
+            "choice": "military_personnel",
+            "value": 80,
+            "weight": 0.2,
+            "contribution": 16.0
+          },
+          "corroboration": {
+            "choice": "multi_witness_no_instrument",
+            "value": 50,
+            "weight": 0.2,
+            "contribution": 10.0
+          },
+          "kinematic_anomaly": {
+            "choice": "unusual_but_explainable",
+            "value": 40,
+            "weight": 0.15,
+            "contribution": 6.0
+          },
+          "mundane_explanation_available": {
+            "choice": "plausible_mundane",
+            "value": 40,
+            "weight": 0.1,
+            "contribution": 4.0
+          },
+          "official_disposition": {
+            "choice": "partial_resolution",
+            "value": 40,
+            "weight": 0.1,
+            "contribution": 4.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": 35.0,
+        "lng": 38.0,
+        "place": "Syrian theater"
+      },
+      "audience": {
+        "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2024) over Syrian theater.",
+        "what_we_know": [
+          "Document originates from DoD.",
+          "Encounter dated 2024.",
+          "Reported location: Syrian theater."
+        ],
+        "what_we_dont": [
+          "No official conclusion has been issued classifying the object as conventional.",
+          "Independent corroboration from non-government sources has not been confirmed.",
+          "Independent corroboration from non-government sources has not been confirmed."
+        ],
+        "mundane_candidate": "A conventional explanation (drone, balloon, atmospheric, sensor artifact) plausibly fits the description.",
+        "score_sentence": "Anomalousness Index 60/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+      }
+    },
+    {
+      "id": "western-us-eye-of-sauron-orb",
+      "title": "Western US - Eye of Sauron Orb Encounter",
+      "category": "military",
+      "agency": "FBI",
+      "type": "video",
+      "date_event": "2023",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": false,
+      "summary": "Federal agents reporting an Eye-of-Sauron-styled orb, plus orange orbs reportedly emitting smaller red orbs. Multi-witness federal personnel observation with imagery.",
+      "score": {
+        "value": 85,
+        "components": {
+          "sensor_quality": "single_sensor_military",
+          "witness_credibility": "federal_agent",
+          "corroboration": "multi_witness_single_instrument",
+          "kinematic_anomaly": "physically_impossible_for_known_craft",
+          "mundane_explanation_available": "weak_mundane_candidate",
+          "official_disposition": "open_after_review"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "single_sensor_military",
+            "value": 80,
+            "weight": 0.25,
+            "contribution": 20.0
+          },
+          "witness_credibility": {
+            "choice": "federal_agent",
+            "value": 90,
+            "weight": 0.2,
+            "contribution": 18.0
+          },
+          "corroboration": {
+            "choice": "multi_witness_single_instrument",
+            "value": 80,
+            "weight": 0.2,
+            "contribution": 16.0
+          },
+          "kinematic_anomaly": {
+            "choice": "physically_impossible_for_known_craft",
+            "value": 100,
+            "weight": 0.15,
+            "contribution": 15.0
+          },
+          "mundane_explanation_available": {
+            "choice": "weak_mundane_candidate",
+            "value": 70,
+            "weight": 0.1,
+            "contribution": 7.0
+          },
+          "official_disposition": {
+            "choice": "open_after_review",
+            "value": 90,
+            "weight": 0.1,
+            "contribution": 9.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": 39.5,
+        "lng": -111.5,
+        "place": "Western United States"
+      },
+      "audience": {
+        "tldr": "FBI investigative document from a military encounter report showing footage of a UAP encounter (2023) over Western United States.",
+        "what_we_know": [
+          "Document originates from FBI.",
+          "Encounter dated 2023.",
+          "Reported location: Western United States."
+        ],
+        "what_we_dont": [
+          "No official conclusion has been issued classifying the object as conventional.",
+          "Independent corroboration from non-government sources has not been confirmed.",
+          "Independent corroboration from non-government sources has not been confirmed."
+        ],
+        "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+        "score_sentence": "Anomalousness Index 85/100. Top drivers: sensor quality (single_sensor_military), witness credibility (federal_agent)."
+      }
+    },
+    {
+      "id": "tajikistan-1994-panam-fl410",
+      "title": "Tajikistan 1994 - PanAm Crew at FL410",
+      "category": "state",
+      "agency": "STATE",
+      "type": "pdf",
+      "date_event": "1994",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": true,
+      "summary": "State Department cable documenting a PanAm commercial crew witnessing a high-altitude maneuvering object at 41,000 feet. Trained-aviator multi-witness sighting.",
+      "score": {
+        "value": 68,
+        "components": {
+          "sensor_quality": "civilian_aviation",
+          "witness_credibility": "trained_aviator",
+          "corroboration": "multi_witness_no_instrument",
+          "kinematic_anomaly": "edge_of_envelope",
+          "mundane_explanation_available": "weak_mundane_candidate",
+          "official_disposition": "unresolved_no_review"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "civilian_aviation",
+            "value": 65,
+            "weight": 0.25,
+            "contribution": 16.25
+          },
+          "witness_credibility": {
+            "choice": "trained_aviator",
+            "value": 90,
+            "weight": 0.2,
+            "contribution": 18.0
+          },
+          "corroboration": {
+            "choice": "multi_witness_no_instrument",
+            "value": 50,
+            "weight": 0.2,
+            "contribution": 10.0
+          },
+          "kinematic_anomaly": {
+            "choice": "edge_of_envelope",
+            "value": 70,
+            "weight": 0.15,
+            "contribution": 10.5
+          },
+          "mundane_explanation_available": {
+            "choice": "weak_mundane_candidate",
+            "value": 70,
+            "weight": 0.1,
+            "contribution": 7.0
+          },
+          "official_disposition": {
+            "choice": "unresolved_no_review",
+            "value": 60,
+            "weight": 0.1,
+            "contribution": 6.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": 38.5358,
+        "lng": 68.7791,
+        "place": "Tajik airspace"
+      },
+      "audience": {
+        "tldr": "State Department diplomatic cable from an overseas diplomatic post documenting a UAP encounter (1994) over Tajik airspace.",
+        "what_we_know": [
+          "Document originates from STATE.",
+          "Encounter dated 1994.",
+          "Reported location: Tajik airspace."
+        ],
+        "what_we_dont": [
+          "Redacted portions may contain identifying or technical detail.",
+          "No official conclusion has been issued classifying the object as conventional.",
+          "Independent corroboration from non-government sources has not been confirmed."
+        ],
+        "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+        "score_sentence": "Anomalousness Index 68/100. Top drivers: witness credibility (trained_aviator), sensor quality (civilian_aviation)."
+      }
+    },
+    {
+      "id": "state-cables-1985-2025-six-posts",
+      "title": "State Department Cables 1985-2025 - Six Diplomatic Posts",
+      "category": "state",
+      "agency": "STATE",
+      "type": "pdf",
+      "date_event": "1985-2025",
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": true,
+      "summary": "State Department cable traffic from six embassies/consulates (Papua New Guinea, Kazakhstan, Turkmenistan, Georgia, Mexico, Tajikistan) reporting UAP encounters across four decades.",
+      "score": {
+        "value": 42,
+        "components": {
+          "sensor_quality": "eyewitness_only",
+          "witness_credibility": "civilian_credentialed",
+          "corroboration": "multi_witness_no_instrument",
+          "kinematic_anomaly": "no_kinematic_data",
+          "mundane_explanation_available": "plausible_mundane",
+          "official_disposition": "unresolved_no_review"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "eyewitness_only",
+            "value": 30,
+            "weight": 0.25,
+            "contribution": 7.5
+          },
+          "witness_credibility": {
+            "choice": "civilian_credentialed",
+            "value": 50,
+            "weight": 0.2,
+            "contribution": 10.0
+          },
+          "corroboration": {
+            "choice": "multi_witness_no_instrument",
+            "value": 50,
+            "weight": 0.2,
+            "contribution": 10.0
+          },
+          "kinematic_anomaly": {
+            "choice": "no_kinematic_data",
+            "value": 30,
+            "weight": 0.15,
+            "contribution": 4.5
+          },
+          "mundane_explanation_available": {
+            "choice": "plausible_mundane",
+            "value": 40,
+            "weight": 0.1,
+            "contribution": 4.0
+          },
+          "official_disposition": {
+            "choice": "unresolved_no_review",
+            "value": 60,
+            "weight": 0.1,
+            "contribution": 6.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": null,
+        "lng": null,
+        "place": "Multiple overseas posts"
+      },
+      "audience": {
+        "tldr": "State Department diplomatic cable from an overseas diplomatic post documenting a UAP encounter (1985-2025) over Multiple overseas posts.",
+        "what_we_know": [
+          "Document originates from STATE.",
+          "Encounter dated 1985-2025.",
+          "Reported location: Multiple overseas posts."
+        ],
+        "what_we_dont": [
+          "Redacted portions may contain identifying or technical detail.",
+          "No kinematic data (speed, altitude, maneuver) is attached.",
+          "No official conclusion has been issued classifying the object as conventional."
+        ],
+        "mundane_candidate": "A conventional explanation (drone, balloon, atmospheric, sensor artifact) plausibly fits the description.",
+        "score_sentence": "Anomalousness Index 42/100. Top drivers: witness credibility (civilian_credentialed), corroboration (multi_witness_no_instrument)."
+      }
+    },
+    {
+      "id": "fbi-composite-ellipsoid-bronze",
+      "title": "FBI Composite Sketch - Ellipsoid Bronze Object",
+      "category": "composite",
+      "agency": "FBI",
+      "type": "image",
+      "date_event": null,
+      "date_released": "2026-05-08",
+      "source_url": "https://www.war.gov/UFO/",
+      "pending_verification": true,
+      "local_path": null,
+      "size_bytes": null,
+      "sha256": null,
+      "redacted": false,
+      "summary": "FBI composite drawing of a bronze metallic ellipsoid object reported at 130-195 feet in length. Witness-derived; no sensor corroboration in the released packet.",
+      "score": {
+        "value": 33,
+        "components": {
+          "sensor_quality": "sketch_only",
+          "witness_credibility": "civilian_credentialed",
+          "corroboration": "single_witness_only",
+          "kinematic_anomaly": "no_kinematic_data",
+          "mundane_explanation_available": "plausible_mundane",
+          "official_disposition": "unresolved_no_review"
+        },
+        "detail": {
+          "sensor_quality": {
+            "choice": "sketch_only",
+            "value": 15,
+            "weight": 0.25,
+            "contribution": 3.75
+          },
+          "witness_credibility": {
+            "choice": "civilian_credentialed",
+            "value": 50,
+            "weight": 0.2,
+            "contribution": 10.0
+          },
+          "corroboration": {
+            "choice": "single_witness_only",
+            "value": 25,
+            "weight": 0.2,
+            "contribution": 5.0
+          },
+          "kinematic_anomaly": {
+            "choice": "no_kinematic_data",
+            "value": 30,
+            "weight": 0.15,
+            "contribution": 4.5
+          },
+          "mundane_explanation_available": {
+            "choice": "plausible_mundane",
+            "value": 40,
+            "weight": 0.1,
+            "contribution": 4.0
+          },
+          "official_disposition": {
+            "choice": "unresolved_no_review",
+            "value": 60,
+            "weight": 0.1,
+            "contribution": 6.0
+          }
+        },
+        "rubric_version": "1.0"
+      },
+      "extracted": {
+        "text_path": null,
+        "transcript_path": null,
+        "thumbnail_path": null
+      },
+      "geo": {
+        "lat": null,
+        "lng": null,
+        "place": null
+      },
+      "audience": {
+        "tldr": "FBI investigative document based on a witness reconstruction depicting a UAP encounter.",
+        "what_we_know": [
+          "Document originates from FBI.",
+          "Photographic capture preserved in the original release.",
+          "Released as part of the PURSUE disclosure batch on May 8, 2026."
+        ],
+        "what_we_dont": [
+          "Exact date of the encounter is not specified in the released file.",
+          "Specific geographic coordinates are not disclosed.",
+          "No kinematic data (speed, altitude, maneuver) is attached."
+        ],
+        "mundane_candidate": "A conventional explanation (drone, balloon, atmospheric, sensor artifact) plausibly fits the description.",
+        "score_sentence": "Anomalousness Index 33/100. Top drivers: witness credibility (civilian_credentialed), official disposition (unresolved_no_review)."
+      }
+    }
+  ]
+}

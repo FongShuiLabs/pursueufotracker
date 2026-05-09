@@ -1,0 +1,11 @@
+/sitemap.xml /sitemap.xml 200
+/robots.txt /robots.txt 200
+/feed /generated/feed.xml 301
+/rss /generated/feed.xml 301
+/api /generated/api/files.json 301
+/api/files /generated/api/files.json 301
+/verdict /generated/verdict.html 301
+/top10 /generated/top-10.html 301
+/top-10 /generated/top-10.html 301
+/press /generated/press.html 301
+/drops /generated/drops/index.html 301

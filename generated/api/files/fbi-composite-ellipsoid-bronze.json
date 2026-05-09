@@ -1,0 +1,91 @@
+{
+  "id": "fbi-composite-ellipsoid-bronze",
+  "title": "FBI Composite Sketch - Ellipsoid Bronze Object",
+  "category": "composite",
+  "agency": "FBI",
+  "type": "image",
+  "date_event": null,
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/UFO/",
+  "pending_verification": true,
+  "local_path": null,
+  "size_bytes": null,
+  "sha256": null,
+  "redacted": false,
+  "summary": "FBI composite drawing of a bronze metallic ellipsoid object reported at 130-195 feet in length. Witness-derived; no sensor corroboration in the released packet.",
+  "score": {
+    "value": 33,
+    "components": {
+      "sensor_quality": "sketch_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "single_witness_only",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "plausible_mundane",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "sketch_only",
+        "value": 15,
+        "weight": 0.25,
+        "contribution": 3.75
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "single_witness_only",
+        "value": 25,
+        "weight": 0.2,
+        "contribution": 5.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "plausible_mundane",
+        "value": 40,
+        "weight": 0.1,
+        "contribution": 4.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "audience": {
+    "tldr": "FBI investigative document based on a witness reconstruction depicting a UAP encounter.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Photographic capture preserved in the original release.",
+      "Released as part of the PURSUE disclosure batch on May 8, 2026."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation (drone, balloon, atmospheric, sensor artifact) plausibly fits the description.",
+    "score_sentence": "Anomalousness Index 33/100. Top drivers: witness credibility (civilian_credentialed), official disposition (unresolved_no_review)."
+  }
+}

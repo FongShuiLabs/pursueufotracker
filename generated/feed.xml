@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>PURSUE UFO Tracker</title>
+    <link>https://pursueufotracker.com</link>
+    <description>The independent tracker for the Trump administration's PURSUE UAP disclosure program. Every file from every drop, indexed, scored on the Anomalousness Index, and verified against war.gov. Rolling release.</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 May 2026 18:52:58 +0000</lastBuildDate>
+    <item>
+      <title>FBI Composite Sketch - Ellipsoid Bronze Object</title>
+      <link>https://pursueufotracker.com/files/fbi-composite-ellipsoid-bronze.html</link>
+      <description>FBI composite drawing of a bronze metallic ellipsoid object reported at 130-195 feet in length. Witness-derived; no sensor corroboration in the released packet.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/fbi-composite-ellipsoid-bronze.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>State Department Cables 1985-2025 - Six Diplomatic Posts</title>
+      <link>https://pursueufotracker.com/files/state-cables-1985-2025-six-posts.html</link>
+      <description>State Department cable traffic from six embassies/consulates (Papua New Guinea, Kazakhstan, Turkmenistan, Georgia, Mexico, Tajikistan) reporting UAP encounters across four decades.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/state-cables-1985-2025-six-posts.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Tajikistan 1994 - PanAm Crew at FL410</title>
+      <link>https://pursueufotracker.com/files/tajikistan-1994-panam-fl410.html</link>
+      <description>State Department cable documenting a PanAm commercial crew witnessing a high-altitude maneuvering object at 41,000 feet. Trained-aviator multi-witness sighting.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/tajikistan-1994-panam-fl410.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Western US - Eye of Sauron Orb Encounter</title>
+      <link>https://pursueufotracker.com/files/western-us-eye-of-sauron-orb.html</link>
+      <description>Federal agents reporting an Eye-of-Sauron-styled orb, plus orange orbs reportedly emitting smaller red orbs. Multi-witness federal personnel observation with imagery.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/western-us-eye-of-sauron-orb.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Syria 2024 - Twin Orange Translucent Areas</title>
+      <link>https://pursueufotracker.com/files/syria-2024-twin-orange-translucent.html</link>
+      <description>Two semi-transparent orange luminous areas observed over the Syrian theater. Plausible atmospheric or pyrotechnic explanations exist but were not formally adjudicated.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/syria-2024-twin-orange-translucent.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Indo-Pacific 2024 - Football-Shaped Object</title>
+      <link>https://pursueufotracker.com/files/indo-pacific-2024-football-object.html</link>
+      <description>Football-shaped object captured in Indo-Pacific airspace. Sensor data preserved; no conventional aircraft signature attached in the released file.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/indo-pacific-2024-football-object.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Greece 2023 - 90 Degree Turn at 80 mph</title>
+      <link>https://pursueufotracker.com/files/greece-2023-right-angle-turn.html</link>
+      <description>Object executing a 90 degree turn at approximately 80 mph - a maneuver inconsistent with known fixed-wing or rotary aircraft inertial limits.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/greece-2023-right-angle-turn.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mediterranean Triangular UAP at 25,000 ft</title>
+      <link>https://pursueufotracker.com/files/mediterranean-triangle-25000ft.html</link>
+      <description>Triangular metallic object recorded at 25,000 feet over the Mediterranean. Sensor capture; flight characteristics not matched to known platforms.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/mediterranean-triangle-25000ft.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Roswell, NM 1947 - Hexagonal Object</title>
+      <link>https://pursueufotracker.com/files/roswell-1947-hexagonal-object.html</link>
+      <description>FBI Dallas field office memo to headquarters describing a recovered hexagonal object suspended from a balloon-like structure. Long the subject of public speculation; now in the official record.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/roswell-1947-hexagonal-object.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>FBI Case File 62-HQ-83894 (1947-1968)</title>
+      <link>https://pursueufotracker.com/files/fbi-case-62-hq-83894.html</link>
+      <description>FBI headquarters master file aggregating 18 separate UAP-related incidents across two decades, including Roswell-era field office reporting.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/fbi-case-62-hq-83894.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Schmitt Lunar Flash - Grimaldi Crater</title>
+      <link>https://pursueufotracker.com/files/schmitt-lunar-flash-grimaldi-crater.html</link>
+      <description>Astronaut Harrison Schmitt report of a lunar surface flash near Grimaldi crater. Possible meteoroid impact - candidate explanation exists but never formally closed.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/schmitt-lunar-flash-grimaldi-crater.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Apollo 17 - Triangular Formation</title>
+      <link>https://pursueufotracker.com/files/apollo-17-triangular-formation.html</link>
+      <description>Frame depicting three dots in a triangular formation in the lunar sky. No atmospheric or stellar explanation has been advanced in the released file.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/apollo-17-triangular-formation.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Apollo 12 Lunar Surface Anomalies</title>
+      <link>https://pursueufotracker.com/files/apollo-12-lunar-surface-anomalies.html</link>
+      <description>Photographic frames from Apollo 12 showing unexplained reflective objects and lighting on the lunar surface. Reviewed by NASA but not resolved to a conventional source.</description>
+      <guid isPermaLink="false">https://pursueufotracker.com/files/apollo-12-lunar-surface-anomalies.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

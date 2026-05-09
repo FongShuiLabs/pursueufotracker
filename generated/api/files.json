@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "generated_at": "2026-05-09T00:00:00Z",
+  "count": 13,
+  "files": [
+    {
+      "id": "apollo-12-lunar-surface-anomalies",
+      "title": "Apollo 12 Lunar Surface Anomalies",
+      "agency": "NASA",
+      "category": "apollo",
+      "type": "image",
+      "date_event": "1969",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/apollo-12-lunar-surface-anomalies.html",
+      "detail_api": "https://pursueufotracker.com/api/files/apollo-12-lunar-surface-anomalies.json"
+    },
+    {
+      "id": "apollo-17-triangular-formation",
+      "title": "Apollo 17 - Triangular Formation",
+      "agency": "NASA",
+      "category": "apollo",
+      "type": "image",
+      "date_event": "1972-12",
+      "score": 72,
+      "url": "https://pursueufotracker.com/files/apollo-17-triangular-formation.html",
+      "detail_api": "https://pursueufotracker.com/api/files/apollo-17-triangular-formation.json"
+    },
+    {
+      "id": "schmitt-lunar-flash-grimaldi-crater",
+      "title": "Schmitt Lunar Flash - Grimaldi Crater",
+      "agency": "NASA",
+      "category": "apollo",
+      "type": "pdf",
+      "date_event": "1972-12",
+      "score": 44,
+      "url": "https://pursueufotracker.com/files/schmitt-lunar-flash-grimaldi-crater.html",
+      "detail_api": "https://pursueufotracker.com/api/files/schmitt-lunar-flash-grimaldi-crater.json"
+    },
+    {
+      "id": "fbi-case-62-hq-83894",
+      "title": "FBI Case File 62-HQ-83894 (1947-1968)",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "1947-1968",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/fbi-case-62-hq-83894.html",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-case-62-hq-83894.json"
+    },
+    {
+      "id": "roswell-1947-hexagonal-object",
+      "title": "Roswell, NM 1947 - Hexagonal Object",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "1947-07",
+      "score": 50,
+      "url": "https://pursueufotracker.com/files/roswell-1947-hexagonal-object.html",
+      "detail_api": "https://pursueufotracker.com/api/files/roswell-1947-hexagonal-object.json"
+    },
+    {
+      "id": "mediterranean-triangle-25000ft",
+      "title": "Mediterranean Triangular UAP at 25,000 ft",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2020-2026",
+      "score": 78,
+      "url": "https://pursueufotracker.com/files/mediterranean-triangle-25000ft.html",
+      "detail_api": "https://pursueufotracker.com/api/files/mediterranean-triangle-25000ft.json"
+    },
+    {
+      "id": "greece-2023-right-angle-turn",
+      "title": "Greece 2023 - 90 Degree Turn at 80 mph",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2023",
+      "score": 86,
+      "url": "https://pursueufotracker.com/files/greece-2023-right-angle-turn.html",
+      "detail_api": "https://pursueufotracker.com/api/files/greece-2023-right-angle-turn.json"
+    },
+    {
+      "id": "indo-pacific-2024-football-object",
+      "title": "Indo-Pacific 2024 - Football-Shaped Object",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2024",
+      "score": 74,
+      "url": "https://pursueufotracker.com/files/indo-pacific-2024-football-object.html",
+      "detail_api": "https://pursueufotracker.com/api/files/indo-pacific-2024-football-object.json"
+    },
+    {
+      "id": "syria-2024-twin-orange-translucent",
+      "title": "Syria 2024 - Twin Orange Translucent Areas",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2024",
+      "score": 60,
+      "url": "https://pursueufotracker.com/files/syria-2024-twin-orange-translucent.html",
+      "detail_api": "https://pursueufotracker.com/api/files/syria-2024-twin-orange-translucent.json"
+    },
+    {
+      "id": "western-us-eye-of-sauron-orb",
+      "title": "Western US - Eye of Sauron Orb Encounter",
+      "agency": "FBI",
+      "category": "military",
+      "type": "video",
+      "date_event": "2023",
+      "score": 85,
+      "url": "https://pursueufotracker.com/files/western-us-eye-of-sauron-orb.html",
+      "detail_api": "https://pursueufotracker.com/api/files/western-us-eye-of-sauron-orb.json"
+    },
+    {
+      "id": "tajikistan-1994-panam-fl410",
+      "title": "Tajikistan 1994 - PanAm Crew at FL410",
+      "agency": "STATE",
+      "category": "state",
+      "type": "pdf",
+      "date_event": "1994",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/tajikistan-1994-panam-fl410.html",
+      "detail_api": "https://pursueufotracker.com/api/files/tajikistan-1994-panam-fl410.json"
+    },
+    {
+      "id": "state-cables-1985-2025-six-posts",
+      "title": "State Department Cables 1985-2025 - Six Diplomatic Posts",
+      "agency": "STATE",
+      "category": "state",
+      "type": "pdf",
+      "date_event": "1985-2025",
+      "score": 42,
+      "url": "https://pursueufotracker.com/files/state-cables-1985-2025-six-posts.html",
+      "detail_api": "https://pursueufotracker.com/api/files/state-cables-1985-2025-six-posts.json"
+    },
+    {
+      "id": "fbi-composite-ellipsoid-bronze",
+      "title": "FBI Composite Sketch - Ellipsoid Bronze Object",
+      "agency": "FBI",
+      "category": "composite",
+      "type": "image",
+      "date_event": null,
+      "score": 33,
+      "url": "https://pursueufotracker.com/files/fbi-composite-ellipsoid-bronze.html",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-composite-ellipsoid-bronze.json"
+    }
+  ]
+}

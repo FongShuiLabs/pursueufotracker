@@ -1,0 +1,91 @@
+{
+  "id": "schmitt-lunar-flash-grimaldi-crater",
+  "title": "Schmitt Lunar Flash - Grimaldi Crater",
+  "category": "apollo",
+  "agency": "NASA",
+  "type": "pdf",
+  "date_event": "1972-12",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/UFO/",
+  "pending_verification": true,
+  "local_path": null,
+  "size_bytes": null,
+  "sha256": null,
+  "redacted": false,
+  "summary": "Astronaut Harrison Schmitt report of a lunar surface flash near Grimaldi crater. Possible meteoroid impact - candidate explanation exists but never formally closed.",
+  "score": {
+    "value": 44,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_only",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "plausible_mundane",
+      "official_disposition": "partial_resolution"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_only",
+        "value": 25,
+        "weight": 0.2,
+        "contribution": 5.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "plausible_mundane",
+        "value": 40,
+        "weight": 0.1,
+        "contribution": 4.0
+      },
+      "official_disposition": {
+        "choice": "partial_resolution",
+        "value": 40,
+        "weight": 0.1,
+        "contribution": 4.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Grimaldi Crater, Lunar surface"
+  },
+  "audience": {
+    "tldr": "NASA mission record from a crewed lunar mission documenting a UAP encounter (1972-12) over Grimaldi Crater, Lunar surface.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 1972-12.",
+      "Reported location: Grimaldi Crater, Lunar surface."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation (drone, balloon, atmospheric, sensor artifact) plausibly fits the description.",
+    "score_sentence": "Anomalousness Index 44/100. Top drivers: witness credibility (astronaut), sensor quality (eyewitness_only)."
+  }
+}

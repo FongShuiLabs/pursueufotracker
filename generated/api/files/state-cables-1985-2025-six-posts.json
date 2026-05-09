@@ -1,0 +1,91 @@
+{
+  "id": "state-cables-1985-2025-six-posts",
+  "title": "State Department Cables 1985-2025 - Six Diplomatic Posts",
+  "category": "state",
+  "agency": "STATE",
+  "type": "pdf",
+  "date_event": "1985-2025",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/UFO/",
+  "pending_verification": true,
+  "local_path": null,
+  "size_bytes": null,
+  "sha256": null,
+  "redacted": true,
+  "summary": "State Department cable traffic from six embassies/consulates (Papua New Guinea, Kazakhstan, Turkmenistan, Georgia, Mexico, Tajikistan) reporting UAP encounters across four decades.",
+  "score": {
+    "value": 42,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "multi_witness_no_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "plausible_mundane",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "multi_witness_no_instrument",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "plausible_mundane",
+        "value": 40,
+        "weight": 0.1,
+        "contribution": 4.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Multiple overseas posts"
+  },
+  "audience": {
+    "tldr": "State Department diplomatic cable from an overseas diplomatic post documenting a UAP encounter (1985-2025) over Multiple overseas posts.",
+    "what_we_know": [
+      "Document originates from STATE.",
+      "Encounter dated 1985-2025.",
+      "Reported location: Multiple overseas posts."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation (drone, balloon, atmospheric, sensor artifact) plausibly fits the description.",
+    "score_sentence": "Anomalousness Index 42/100. Top drivers: witness credibility (civilian_credentialed), corroboration (multi_witness_no_instrument)."
+  }
+}

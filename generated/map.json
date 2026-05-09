@@ -1,0 +1,65 @@
+[
+  {
+    "id": "roswell-1947-hexagonal-object",
+    "title": "Roswell, NM 1947 - Hexagonal Object",
+    "lat": 33.3943,
+    "lng": -104.523,
+    "place": "Roswell, New Mexico",
+    "score": 50,
+    "url": "files/roswell-1947-hexagonal-object.html"
+  },
+  {
+    "id": "mediterranean-triangle-25000ft",
+    "title": "Mediterranean Triangular UAP at 25,000 ft",
+    "lat": 35.0,
+    "lng": 18.0,
+    "place": "Mediterranean Sea",
+    "score": 78,
+    "url": "files/mediterranean-triangle-25000ft.html"
+  },
+  {
+    "id": "greece-2023-right-angle-turn",
+    "title": "Greece 2023 - 90 Degree Turn at 80 mph",
+    "lat": 39.0742,
+    "lng": 21.8243,
+    "place": "Greek airspace",
+    "score": 86,
+    "url": "files/greece-2023-right-angle-turn.html"
+  },
+  {
+    "id": "indo-pacific-2024-football-object",
+    "title": "Indo-Pacific 2024 - Football-Shaped Object",
+    "lat": 0.0,
+    "lng": 130.0,
+    "place": "Indo-Pacific theater",
+    "score": 74,
+    "url": "files/indo-pacific-2024-football-object.html"
+  },
+  {
+    "id": "syria-2024-twin-orange-translucent",
+    "title": "Syria 2024 - Twin Orange Translucent Areas",
+    "lat": 35.0,
+    "lng": 38.0,
+    "place": "Syrian theater",
+    "score": 60,
+    "url": "files/syria-2024-twin-orange-translucent.html"
+  },
+  {
+    "id": "western-us-eye-of-sauron-orb",
+    "title": "Western US - Eye of Sauron Orb Encounter",
+    "lat": 39.5,
+    "lng": -111.5,
+    "place": "Western United States",
+    "score": 85,
+    "url": "files/western-us-eye-of-sauron-orb.html"
+  },
+  {
+    "id": "tajikistan-1994-panam-fl410",
+    "title": "Tajikistan 1994 - PanAm Crew at FL410",
+    "lat": 38.5358,
+    "lng": 68.7791,
+    "place": "Tajik airspace",
+    "score": 68,
+    "url": "files/tajikistan-1994-panam-fl410.html"
+  }
+]

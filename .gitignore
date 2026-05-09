@@ -1,3 +1,4 @@
+# Local-only inputs and large binaries
 __pycache__/
 *.pyc
 .venv/
@@ -5,8 +6,10 @@ venv/
 _scratch/
 downloads/
 extracted/
-generated/
-data/manifest.json
 data/url-list.txt
 *.log
 .DS_Store
+
+# generated/ and data/manifest.json are COMMITTED so Cloudflare Pages
+# can serve them as static files without running the pipeline at deploy time.
+# When the pipeline regenerates them, commit + push triggers a redeploy.
