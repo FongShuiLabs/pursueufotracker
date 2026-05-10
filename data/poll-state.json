@@ -1,8 +1,8 @@
 {
-  "last_polled_at": "2026-05-10T16:42:17Z",
-  "last_change_at": "2026-05-08T00:00:00Z",
+  "last_polled_at": "2026-05-10T17:48:45Z",
+  "last_change_at": "2026-05-10T17:48:45Z",
   "csv_sha256": "596cc1881aa97d2fa49a45edab14d60802616e73ce125d286120e00d967cafa2",
-  "html_sha256": "34de4876052b7639e09a06965bb975a34aa327f6e44c02f835b9c97e40bc1761",
+  "html_sha256": "5340a552782f88c2ecc1afb3d33014a52fd2601a22a0ff0a6e2fe6d426e6db33",
   "row_count": 161,
   "history": [
     {
@@ -13,6 +13,14 @@
       "delta": 161,
       "trigger": "initial",
       "note": "Drop 01 - 161 file entries"
+    },
+    {
+      "at": "2026-05-10T17:48:45Z",
+      "html_sha256": "5340a552782f88c2ecc1afb3d33014a52fd2601a22a0ff0a6e2fe6d426e6db33",
+      "csv_sha256": "596cc1881aa97d2fa49a45edab14d60802616e73ce125d286120e00d967cafa2",
+      "row_count": 161,
+      "delta": 0,
+      "trigger": "html"
     }
   ]
 }
