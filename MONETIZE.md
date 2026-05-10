@@ -2,6 +2,43 @@
 
 Phased approach. Trust is the moat — don't burn it for early ad revenue.
 
+## Live infrastructure (already shipped)
+
+Three things are already wired into the site. None are *active* yet — each is one config swap away.
+
+### 1. AdSense — three slots, gated by single config flag
+
+Slots are reserved at:
+- Top of homepage (under the Top 5 strip, above the grid) — leaderboard
+- Inside the file grid (between cards) — native fluid
+- Above the footer — leaderboard
+
+To activate (after AdSense approval):
+1. Open [index.html](index.html), find `window.ADSENSE_PUB_ID = '';`, set it to your publisher ID (looks like `'ca-pub-1234567890123456'`).
+2. Edit [ads.txt](ads.txt) — uncomment the line and replace `PUB-XXXXXXXXXXXXXXXX` with the same publisher ID.
+3. In your AdSense dashboard, create three ad units. Replace the placeholder slot IDs (`1111111111`, `2222222222`, `3333333333`) in [index.html](index.html) with the real ones.
+4. Push. Ads go live within ~30 min of AdSense crawl.
+
+**Until step 1 is done, zero scripts load. No layout impact, no payload cost.**
+
+### 2. Amazon Associates affiliate strip — five books, live now
+
+Strip lives at the bottom of the homepage between the grid and footer ("Essential UFO Reading"). Five hand-picked, high-conversion books (Elizondo, Coulthart, Loeb, Kean, Pasulka).
+
+To activate (instant approval typically):
+1. Apply: https://affiliate-program.amazon.com (5 min, free).
+2. Get your tracking tag (e.g. `pursuefiles-20`).
+3. In [index.html](index.html), find/replace `tag=YOURTAG` → `tag=pursuefiles-20` (5 occurrences).
+4. Push.
+
+Realistic earnings: $20–200/mo at 10K monthly sessions, $200–2K/mo at 100K. Must make 3 sales in first 180 days to keep the account.
+
+### 3. RSS + GitHub Watch — free liveness, no ads but builds the audience
+
+The subscribe bar promotes both. Free distribution channels that compound — these become the email list base when we wire an ESP.
+
+---
+
 ## Day 1 (today, no traffic required)
 
 ### Amazon Associates affiliate

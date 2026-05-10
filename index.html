@@ -14,7 +14,8 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Trump UFO Files Tracker - Every PURSUE Drop, Ranked">
 <meta property="og:description" content="The Trump administration's PURSUE UAP disclosures, indexed and ranked. Rolling-release tracker. Subscribe for new drop alerts.">
-<meta property="og:image" content="og-cover.svg">
+<meta property="og:image" content="https://pursueufotracker.com/og-cover.svg">
+<meta name="twitter:image" content="https://pursueufotracker.com/og-cover.svg">
 <meta property="og:url" content="https://pursueufotracker.com/">
 
 <!-- Twitter -->
@@ -61,10 +62,29 @@
 ]
 </script>
 
+<!-- ============================================================
+     ADSENSE — disabled until you set window.ADSENSE_PUB_ID below.
+     To activate:
+       1. Apply at adsense.google.com, get publisher ID (ca-pub-XXXXXXXXXXXXXXXX)
+       2. Set window.ADSENSE_PUB_ID = 'ca-pub-YOURID' below
+       3. Update ads.txt with the same publisher ID
+       4. Re-deploy. Slots are already wired throughout the page.
+     ============================================================ -->
+<script>window.ADSENSE_PUB_ID = '';</script>
+<script>
+if (window.ADSENSE_PUB_ID) {
+  const s = document.createElement('script');
+  s.async = true;
+  s.crossOrigin = 'anonymous';
+  s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + window.ADSENSE_PUB_ID;
+  document.head.appendChild(s);
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -77,20 +97,20 @@
     <span class="date-stamp">TRACKING SINCE 08 MAY 2026 · ROLLING RELEASE</span>
   </div>
   <h1>P U R S U E<span class="hero-sub">Trump Administration · Presidential Unsealings &amp; Reporting System for UAP Encounters</span></h1>
-  <p class="hero-lede">The independent tracker of every UFO file the Trump administration declassifies through PURSUE. Drop 1 dropped May 8 - 162 files. More files release on a rolling basis. We index, score, and verify each one within hours of release.</p>
+  <p class="hero-lede">The independent tracker of every UFO file the Trump administration declassifies through PURSUE. Drop 1 dropped May 8 - 161 files. More files release on a rolling basis. We index, score, and verify each one within hours of release.</p>
 
   <div class="drop-banner">
     <div class="drop-tag">DROP 01</div>
     <div class="drop-info">
-      <strong>May 8, 2026</strong> · 162 files · FBI, DoD, NASA, State Department
+      <strong>May 8, 2026</strong> · 161 files · FBI, DoD, NASA, State Department
       <span class="drop-status">LIVE · Indexed</span>
     </div>
     <a href="generated/drops/2026-05-08-drop-01.html" class="drop-link">View drop →</a>
   </div>
 
   <div class="hero-stats">
-    <div><span class="stat-num">162</span><span class="stat-label">Files</span></div>
-    <div><span class="stat-num">120</span><span class="stat-label">Documents</span></div>
+    <div><span class="stat-num">161</span><span class="stat-label">Files</span></div>
+    <div><span class="stat-num">119</span><span class="stat-label">Documents</span></div>
     <div><span class="stat-num">28</span><span class="stat-label">Videos</span></div>
     <div><span class="stat-num">14</span><span class="stat-label">Images</span></div>
     <div><span class="stat-num">108</span><span class="stat-label">Redacted</span></div>
@@ -99,11 +119,12 @@
 
   <div class="subscribe-bar">
     <p class="subscribe-prompt"><strong>Get alerted the moment Trump's next UFO drop lands.</strong></p>
-    <form class="subscribe-form" action="https://buttondown.email/api/emails/embed-subscribe/CHANGEME" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/CHANGEME', 'popupwindow')">
-      <input type="email" name="email" placeholder="your@email.com" required>
-      <button type="submit">Alert me</button>
-    </form>
-    <p class="subscribe-fineprint">No spam. Just an email per drop. <a href="generated/feed.xml">RSS</a> · <a href="generated/verdict.html">The honest verdict</a> · <a href="generated/top-10.html">Top 10 most anomalous</a> · <a href="generated/press.html">Press kit</a></p>
+    <p style="color:#dfe6ef;margin:8px 0 16px;font-size:15px">Two free options — both update within hours of any new war.gov release:</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-items:center">
+      <a href="/generated/feed.xml" class="btn btn-primary" style="display:inline-block">📡 Subscribe via RSS</a>
+      <a href="https://github.com/anthonyfong100/ufo-disclosure-site/subscription" target="_blank" rel="noopener" class="btn btn-ghost" style="display:inline-block">🔔 Watch on GitHub</a>
+    </div>
+    <p class="subscribe-fineprint" style="margin-top:14px">No spam. Email signup launching soon. <a href="/generated/verdict.html">The honest verdict</a> · <a href="/generated/top-10.html">Top 10 most anomalous</a> · <a href="/generated/press.html">Press kit</a></p>
   </div>
 
   <div class="hero-cta">
@@ -141,6 +162,68 @@
   </div>
   <p style="text-align:center;color:#a8b8cc;font-size:14px;margin-top:32px">28 video files (with full transcripts) · 119 PDFs (full-text searchable) · 14 images · 108 partially redacted</p>
 </section>
+
+<section class="top-anomalous" style="max-width:1100px;margin:60px auto 40px;padding:32px 24px;background:linear-gradient(180deg,rgba(82,255,180,.06),rgba(82,180,255,.03));border-radius:14px;border:1px solid rgba(82,255,180,.25)">
+  <div style="text-align:center;margin-bottom:28px">
+    <p style="display:inline-block;background:rgba(82,255,180,.15);color:#52ffb4;padding:6px 14px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;margin-bottom:12px">🎯 AI-RANKED · TOP 5 MOST ANOMALOUS</p>
+    <h2 style="font-size:clamp(26px,3vw,36px);color:#fff;margin:0 0 10px;letter-spacing:.01em">If you only read 5 files, read these.</h2>
+    <p style="color:#a8b8cc;font-size:15px;max-width:680px;margin:0 auto;line-height:1.6">Highest-scoring files on our <a href="data/scoring-rubric.json" style="color:#52ffb4">open Anomalousness Index</a>. Not "probability of aliens" — that number is unknowable. These are the encounters where the evidence is strongest that the U.S. government cannot explain what was observed.</p>
+  </div>
+  <ol style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;counter-reset:rank">
+    <li style="counter-increment:rank"><a href="generated/files/nasa-uap-d3a-gemini-7-audio-excerpt-1965.html" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,255,180,.2);border-radius:8px;text-decoration:none;height:100%">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#52ffb4;font-weight:700">#1</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52ffb4;background:rgba(82,255,180,.1);padding:4px 8px;border-radius:3px">SCORE 72</span>
+      </div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">Gemini 7 — Astronaut Frank Borman's UAP sighting</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">NASA · 1965 · Low Earth Orbit. Astronaut-witness, on official voice loop.</p>
+    </a></li>
+    <li style="counter-increment:rank"><a href="generated/files/unresolved-uap-report-greece-january-2024.html" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,255,180,.2);border-radius:8px;text-decoration:none;height:100%">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#52ffb4;font-weight:700">#2</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52ffb4;background:rgba(82,255,180,.1);padding:4px 8px;border-radius:3px">SCORE 66</span>
+      </div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">Greece, January 2024 — diamond-shape, SWIR-only object</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">DoD · ~499 mph · only visible on Short-Wave Infrared sensor.</p>
+    </a></li>
+    <li style="counter-increment:rank"><a href="generated/files/unresolved-uap-report-united-arab-emirates-october-2023-2.html" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,255,180,.2);border-radius:8px;text-decoration:none;height:100%">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#52ffb4;font-weight:700">#3</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52ffb4;background:rgba(82,255,180,.1);padding:4px 8px;border-radius:3px">SCORE 66</span>
+      </div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">UAE, October 2023 — 4 min 57 sec of IR tracking</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">DoD · longest unresolved IR sequence in Drop 01.</p>
+    </a></li>
+    <li style="counter-increment:rank"><a href="generated/files/unresolved-uap-report-syria-july-2022.html" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,255,180,.2);border-radius:8px;text-decoration:none;height:100%">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#52ffb4;font-weight:700">#4</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52ffb4;background:rgba(82,255,180,.1);padding:4px 8px;border-radius:3px">SCORE 66</span>
+      </div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">Syria, July 2022 — dual-sensor IR + EO capture</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">DoD · multi-sensor military, 14 sec of unresolved footage.</p>
+    </a></li>
+    <li style="counter-increment:rank"><a href="generated/files/nasa-uap-vm6-apollo-17-1972.html" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,255,180,.2);border-radius:8px;text-decoration:none;height:100%">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:24px;color:#52ffb4;font-weight:700">#5</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52ffb4;background:rgba(82,255,180,.1);padding:4px 8px;border-radius:3px">SCORE 65</span>
+      </div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">Apollo 17, 1972 — 3 dots, triangular formation, lunar surface</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">NASA · open DOW investigation under PURSUE.</p>
+    </a></li>
+  </ol>
+  <p style="text-align:center;margin-top:24px"><a href="generated/top-10.html" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1px;text-decoration:none">SEE THE FULL TOP 10 →</a></p>
+</section>
+
+<!-- AD SLOT 1: top-of-page leaderboard. Loads only if ADSENSE_PUB_ID is set. -->
+<div class="ad-slot ad-leaderboard" style="max-width:1100px;margin:0 auto 40px;padding:0 24px;text-align:center;min-height:0">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client=""
+       data-ad-slot="1111111111"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>if(window.ADSENSE_PUB_ID){const i=document.currentScript.previousElementSibling;i.dataset.adClient=window.ADSENSE_PUB_ID;(adsbygoogle=window.adsbygoogle||[]).push({});}</script>
+</div>
 
 <nav class="filter-bar" aria-label="Category filter">
   <button class="chip active" data-filter="all">All Files</button>
@@ -394,8 +477,69 @@
     <p>This document is a U.S. Department of State diplomatic cable from the U.S. Embassy in Port Moresby, Papua New Guinea to USCINCPAC (United States Indo-Pacific Command) at Honolulu, HI on January 28, 1985. The cable reports that the U.S. Embassy to Papua New Guinea received an inqu</p>
   </a></article>
 
+  <!-- AD SLOT 2: in-grid native. Loads only if ADSENSE_PUB_ID is set. -->
+  <div class="ad-slot ad-in-grid" style="grid-column:1/-1;text-align:center;padding:8px 0">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client=""
+         data-ad-slot="2222222222"
+         data-ad-format="fluid"
+         data-ad-layout-key="-fb+5w+4e-db+86"></ins>
+    <script>if(window.ADSENSE_PUB_ID){const i=document.currentScript.previousElementSibling;i.dataset.adClient=window.ADSENSE_PUB_ID;(adsbygoogle=window.adsbygoogle||[]).push({});}</script>
+  </div>
+
   <div style="grid-column:1/-1;text-align:center;padding:40px"><a href="generated/drops/2026-05-08-drop-01.html" style="display:inline-block;padding:16px 36px;background:#52b4ff;color:#04060d;text-decoration:none;border-radius:8px;font-family:JetBrains Mono,monospace;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase">View all 161 files in Drop 01 →</a></div>
 </main>
+
+<!-- AFFILIATE: Essential UFO reading. Earns from day 1 (Amazon Associates) -->
+<!-- To activate: apply at affiliate-program.amazon.com, get tag (e.g. pursuefiles-20),
+     replace YOURTAG below in 5 places. -->
+<section class="affiliate-strip" style="max-width:1100px;margin:60px auto;padding:48px 24px;background:rgba(82,180,255,.04);border-radius:14px;border:1px solid rgba(82,180,255,.15)">
+  <div style="text-align:center;margin-bottom:32px">
+    <p style="display:inline-block;background:rgba(82,180,255,.15);color:#52b4ff;padding:6px 14px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;margin-bottom:10px">📚 ESSENTIAL UFO READING</p>
+    <h2 style="font-size:clamp(24px,2.5vw,32px);color:#fff;margin:0 0 8px">If these files made you curious, start here.</h2>
+    <p style="color:#a8b8cc;font-size:14px;max-width:680px;margin:0 auto">Five books written by people inside the disclosure story or with direct sources. Affiliate links — we earn a small commission, the price you pay is unchanged.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px">
+    <a href="https://www.amazon.com/dp/0063348063?tag=YOURTAG" target="_blank" rel="noopener sponsored" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1px;margin-bottom:8px">2024 · ELIZONDO</div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">Imminent</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">Former AATIP director's first-person account of running the Pentagon's UAP program.</p>
+    </a>
+    <a href="https://www.amazon.com/dp/0063269546?tag=YOURTAG" target="_blank" rel="noopener sponsored" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1px;margin-bottom:8px">2021 · COULTHART</div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">In Plain Sight</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">Investigative journalism on the U.S. UAP cover-up and the Wilson-Davis memo.</p>
+    </a>
+    <a href="https://www.amazon.com/dp/035827814X?tag=YOURTAG" target="_blank" rel="noopener sponsored" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1px;margin-bottom:8px">2021 · LOEB</div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">Extraterrestrial</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">Harvard astrophysicist's case that 'Oumuamua was alien technology.</p>
+    </a>
+    <a href="https://www.amazon.com/dp/0307717089?tag=YOURTAG" target="_blank" rel="noopener sponsored" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1px;margin-bottom:8px">2010 · KEAN</div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">UFOs: Generals, Pilots, Officials</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">On-the-record testimony from over 40 government and military insiders.</p>
+    </a>
+    <a href="https://www.amazon.com/dp/1640094946?tag=YOURTAG" target="_blank" rel="noopener sponsored" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1px;margin-bottom:8px">2019 · PASULKA</div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">American Cosmic</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">UNC religious studies prof on the cultural mechanics of the UFO phenomenon.</p>
+    </a>
+  </div>
+  <p style="text-align:center;color:#7a92b0;font-size:11px;margin-top:24px;font-family:'JetBrains Mono',monospace;letter-spacing:.5px">As an Amazon Associate this site earns from qualifying purchases.</p>
+</section>
+
+<!-- AD SLOT 3: footer leaderboard. Loads only if ADSENSE_PUB_ID is set. -->
+<div class="ad-slot ad-footer" style="max-width:1100px;margin:0 auto 40px;padding:0 24px;text-align:center">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client=""
+       data-ad-slot="3333333333"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>if(window.ADSENSE_PUB_ID){const i=document.currentScript.previousElementSibling;i.dataset.adClient=window.ADSENSE_PUB_ID;(adsbygoogle=window.adsbygoogle||[]).push({});}</script>
+</div>
 
 <section id="methodology" class="methodology">
   <p style="display:inline-block;background:rgba(82,255,180,.08);border:1px solid rgba(82,255,180,.3);color:#52ffb4;padding:8px 16px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;margin-bottom:20px">🤖 AI-ASSISTED · TRANSPARENT RUBRIC · REPRODUCIBLE</p>
@@ -467,7 +611,7 @@
 
   <details style="background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.15);border-radius:8px;padding:20px 24px;margin-bottom:14px">
     <summary style="color:#fff;font-size:18px;font-weight:600;cursor:pointer">Will more files be released?</summary>
-    <p style="color:#dfe6ef;margin-top:14px;line-height:1.7"><strong>Yes.</strong> The Department of War has stated PURSUE is a rolling-release program, with additional drops planned. This site polls war.gov daily and indexes new files within hours. Subscribe to alerts via the form at the top of the homepage, or follow our <a href="generated/feed.xml" style="color:#52b4ff">RSS feed</a>.</p>
+    <p style="color:#dfe6ef;margin-top:14px;line-height:1.7"><strong>Yes.</strong> The Department of War has stated PURSUE is a rolling-release program, with additional drops planned. This site polls the official war.gov UAP CSV every 30 minutes during U.S. weekday business hours and hourly off-hours via an automated GitHub Action. New drops trigger an indexing run within hours of release. Subscribe via the form at the top of the homepage, or follow our <a href="generated/feed.xml" style="color:#52b4ff">RSS feed</a>.</p>
   </details>
 
   <details style="background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.15);border-radius:8px;padding:20px 24px;margin-bottom:14px">
@@ -518,9 +662,20 @@
   <p><strong>Source of record:</strong> <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener">war.gov/UFO</a> · U.S. Department of War · PURSUE program</p>
   <p><strong>Reporting consulted:</strong> CBS News, CNN, NBC News, TechCrunch, NewsNation, Fox News, ABC News (May 8, 2026 coverage)</p>
   <p>This is an independent index. Not affiliated with the Department of War, the FBI, NASA, the State Department, or any U.S. government entity. All underlying documents are public-domain U.S. Government works.</p>
-  <p class="tiny">Last indexed: May 8, 2026</p>
+  <p class="tiny">Last indexed: May 8, 2026 · <span id="last-polled">checking war.gov…</span></p>
 </footer>
+<script>
+fetch('/data/poll-state.json').then(r => r.json()).then(s => {
+  const el = document.getElementById('last-polled');
+  if (!el) return;
+  if (!s.last_polled_at) { el.textContent = 'Auto-poll initializing'; return; }
+  const t = new Date(s.last_polled_at);
+  const mins = Math.max(0, Math.round((Date.now() - t) / 60000));
+  const human = mins < 60 ? `${mins} min ago` : mins < 1440 ? `${Math.round(mins/60)} h ago` : `${Math.round(mins/1440)} d ago`;
+  el.textContent = `war.gov last polled ${human} (${s.row_count} files tracked)`;
+}).catch(() => {});
+</script>
 
-<script src="filter.js"></script>
+<script src="/filter.js"></script>
 </body>
 </html>

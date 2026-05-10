@@ -1,0 +1,15 @@
+{
+  "last_polled_at": null,
+  "last_change_at": "2026-05-08T00:00:00Z",
+  "csv_sha256": null,
+  "row_count": 161,
+  "history": [
+    {
+      "at": "2026-05-08T00:00:00Z",
+      "sha256": null,
+      "row_count": 161,
+      "delta": 161,
+      "note": "Drop 01 — initial seed (162 rows in CSV including header; 161 file entries)"
+    }
+  ]
+}

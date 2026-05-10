@@ -1,0 +1,11 @@
+# ads.txt for pursueufotracker.com
+# Authorized digital sellers - https://iabtechlab.com/ads-txt/
+#
+# To activate Google AdSense:
+#   1. Apply at https://adsense.google.com (need a few weeks of traffic first - they prefer 50+ uniques/day)
+#   2. After approval, replace PUB-XXXXXXXXXXXXXXXX below with your publisher ID
+#   3. Uncomment the AdSense line
+#
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#
+# Future: Mediavine (50k sessions/mo) or Raptive (100k pageviews/mo) lines added on approval.
