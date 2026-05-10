@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /_scratch/
 
-Sitemap: /sitemap.xml
+Sitemap: https://pursueufotracker.com/sitemap.xml
+
