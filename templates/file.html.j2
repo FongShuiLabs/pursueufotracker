@@ -69,34 +69,38 @@
     {% endif %}
   </div>
 
+  {% set serve_url = f.mirror_url or (f.local_path and '../../' ~ f.local_path) %}
+  {% set thumb_url = f.thumbnail_url or (f.extracted and f.extracted.thumbnail_path and '../../' ~ f.extracted.thumbnail_path) %}
+  {% set caption_url = f.caption_vtt_url or (f.extracted and f.extracted.transcript_path and '../../' ~ f.extracted.transcript_path) %}
+
   <div class="viewer">
-    {% if f.local_path %}
+    {% if serve_url %}
       {% if f.type == 'pdf' %}
-        <iframe src="../../{{ f.local_path }}" title="{{ f.title }}"></iframe>
+        <iframe src="{{ serve_url }}" title="{{ f.title }}"></iframe>
       {% elif f.type == 'video' %}
-        <video controls
-          {% if f.extracted and f.extracted.thumbnail_path %}poster="../../{{ f.extracted.thumbnail_path }}"{% endif %}
+        <video controls preload="metadata"
+          {% if thumb_url %}poster="{{ thumb_url }}"{% endif %}
         >
-          <source src="../../{{ f.local_path }}" type="video/mp4">
-          {% if f.extracted and f.extracted.transcript_path %}
-          <track default kind="subtitles" srclang="en" src="../../{{ f.extracted.transcript_path }}" label="English">
+          <source src="{{ serve_url }}" type="video/mp4">
+          {% if caption_url %}
+          <track default kind="subtitles" srclang="en" src="{{ caption_url }}" label="English">
           {% endif %}
         </video>
       {% elif f.type == 'image' %}
-        <img src="../../{{ f.local_path }}" alt="{{ f.title }}">
+        <img src="{{ serve_url }}" alt="{{ f.title }}" loading="lazy">
       {% endif %}
     {% else %}
       <div style="padding:48px;text-align:center;color:#a8b8cc">
         <p style="font-size:18px;margin-bottom:14px">📡 Mirroring in progress</p>
-        <p style="font-size:14px;margin-bottom:24px">This file is indexed; the HD mirror is being prepared. Original is on war.gov:</p>
+        <p style="font-size:14px;margin-bottom:24px">This file is indexed; the HD mirror is being prepared. Direct from war.gov:</p>
         <a href="{{ f.source_url }}" target="_blank" rel="noopener" style="background:#52b4ff;color:#04060d;padding:14px 28px;border-radius:6px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block">View on war.gov ↗</a>
       </div>
     {% endif %}
   </div>
 
-  {% if f.local_path %}
-  <a class="download" href="../../{{ f.local_path }}" download>
-    ⬇ Download HD ({{ size_human }})
+  {% if serve_url %}
+  <a class="download" href="{{ serve_url }}" download>
+    ⬇ Download HD{% if size_human %} ({{ size_human }}){% endif %}
   </a>
   {% else %}
   <a class="download" href="{{ f.source_url }}" target="_blank" rel="noopener">
