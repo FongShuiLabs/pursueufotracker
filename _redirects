@@ -2,6 +2,7 @@
 /robots.txt /robots.txt 200
 /feed /generated/feed.xml 301
 /rss /generated/feed.xml 301
+/files/* /generated/files/:splat 200
 /api /generated/api/files.json 301
 /api/files /generated/api/files.json 301
 /verdict /generated/verdict.html 301
