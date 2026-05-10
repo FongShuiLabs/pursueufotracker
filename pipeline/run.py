@@ -16,7 +16,7 @@ from . import (
     extract_pdf, thumbnail, transcribe, score, summarize,
     build_search, gen_og, build_site,
     build_verdict, build_top10, build_press_kit, build_api, build_drops,
-    translate, clip_generator, validate,
+    translate, clip_generator, validate, index_now,
 )
 
 STAGES = [
@@ -40,6 +40,7 @@ STAGES = [
     ("build-drops",    build_drops.run),
     ("translate",      translate.run),       # no-op without DEEPL_API_KEY
     ("clips",          clip_generator.run),  # no-op without ffmpeg
+    ("index-now",      index_now.run),       # ping Bing/Yandex/Naver/Seznam
 ]
 NAMES = [n for n, _ in STAGES]
 
