@@ -152,11 +152,31 @@ def _build_feed(manifest: dict) -> None:
 def _build_sitemap(manifest: dict) -> None:
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    parts.append(f"<url><loc>{SITE_URL}/</loc><priority>1.0</priority></url>")
+    # Homepage
+    parts.append(f"<url><loc>{SITE_URL}/</loc><priority>1.0</priority><changefreq>daily</changefreq></url>")
+    # High-value editorial pages
+    for path, prio, freq in [
+        ("/generated/verdict.html", "0.95", "weekly"),
+        ("/generated/top-10.html", "0.95", "weekly"),
+        ("/generated/press.html", "0.85", "monthly"),
+        ("/generated/drops/index.html", "0.9", "weekly"),
+    ]:
+        parts.append(f"<url><loc>{SITE_URL}{path}</loc><priority>{prio}</priority><changefreq>{freq}</changefreq></url>")
+    # Drop detail pages
+    drop_dir = ROOT / "generated" / "drops"
+    if drop_dir.exists():
+        for drop_html in sorted(drop_dir.glob("*.html")):
+            if drop_html.name == "index.html":
+                continue
+            parts.append(
+                f"<url><loc>{SITE_URL}/generated/drops/{html.escape(drop_html.name)}</loc>"
+                f"<priority>0.85</priority><changefreq>monthly</changefreq></url>"
+            )
+    # File detail pages
     for f in manifest["files"]:
         parts.append(
             f"<url><loc>{SITE_URL}/files/{html.escape(f['id'])}.html</loc>"
-            f"<priority>0.8</priority></url>"
+            f"<priority>0.8</priority><changefreq>monthly</changefreq></url>"
         )
     parts.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(parts), encoding="utf-8")
