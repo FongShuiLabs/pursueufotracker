@@ -62,6 +62,25 @@
 ]
 </script>
 
+<!-- ============================================================
+     ADSENSE — disabled until you set window.ADSENSE_PUB_ID below.
+     To activate:
+       1. Apply at adsense.google.com, get publisher ID (ca-pub-XXXXXXXXXXXXXXXX)
+       2. Set window.ADSENSE_PUB_ID = 'ca-pub-YOURID' below
+       3. Update ads.txt with the same publisher ID
+       4. Re-deploy. Slots are already wired throughout the page.
+     ============================================================ -->
+<script>window.ADSENSE_PUB_ID = '';</script>
+<script>
+if (window.ADSENSE_PUB_ID) {
+  const s = document.createElement('script');
+  s.async = true;
+  s.crossOrigin = 'anonymous';
+  s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + window.ADSENSE_PUB_ID;
+  document.head.appendChild(s);
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -194,6 +213,17 @@
   </ol>
   <p style="text-align:center;margin-top:24px"><a href="generated/top-10.html" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1px;text-decoration:none">SEE THE FULL TOP 10 →</a></p>
 </section>
+
+<!-- AD SLOT 1: top-of-page leaderboard. Loads only if ADSENSE_PUB_ID is set. -->
+<div class="ad-slot ad-leaderboard" style="max-width:1100px;margin:0 auto 40px;padding:0 24px;text-align:center;min-height:0">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client=""
+       data-ad-slot="1111111111"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>if(window.ADSENSE_PUB_ID){const i=document.currentScript.previousElementSibling;i.dataset.adClient=window.ADSENSE_PUB_ID;(adsbygoogle=window.adsbygoogle||[]).push({});}</script>
+</div>
 
 <nav class="filter-bar" aria-label="Category filter">
   <button class="chip active" data-filter="all">All Files</button>
@@ -447,8 +477,69 @@
     <p>This document is a U.S. Department of State diplomatic cable from the U.S. Embassy in Port Moresby, Papua New Guinea to USCINCPAC (United States Indo-Pacific Command) at Honolulu, HI on January 28, 1985. The cable reports that the U.S. Embassy to Papua New Guinea received an inqu</p>
   </a></article>
 
+  <!-- AD SLOT 2: in-grid native. Loads only if ADSENSE_PUB_ID is set. -->
+  <div class="ad-slot ad-in-grid" style="grid-column:1/-1;text-align:center;padding:8px 0">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client=""
+         data-ad-slot="2222222222"
+         data-ad-format="fluid"
+         data-ad-layout-key="-fb+5w+4e-db+86"></ins>
+    <script>if(window.ADSENSE_PUB_ID){const i=document.currentScript.previousElementSibling;i.dataset.adClient=window.ADSENSE_PUB_ID;(adsbygoogle=window.adsbygoogle||[]).push({});}</script>
+  </div>
+
   <div style="grid-column:1/-1;text-align:center;padding:40px"><a href="generated/drops/2026-05-08-drop-01.html" style="display:inline-block;padding:16px 36px;background:#52b4ff;color:#04060d;text-decoration:none;border-radius:8px;font-family:JetBrains Mono,monospace;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase">View all 161 files in Drop 01 →</a></div>
 </main>
+
+<!-- AFFILIATE: Essential UFO reading. Earns from day 1 (Amazon Associates) -->
+<!-- To activate: apply at affiliate-program.amazon.com, get tag (e.g. pursuefiles-20),
+     replace YOURTAG below in 5 places. -->
+<section class="affiliate-strip" style="max-width:1100px;margin:60px auto;padding:48px 24px;background:rgba(82,180,255,.04);border-radius:14px;border:1px solid rgba(82,180,255,.15)">
+  <div style="text-align:center;margin-bottom:32px">
+    <p style="display:inline-block;background:rgba(82,180,255,.15);color:#52b4ff;padding:6px 14px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;margin-bottom:10px">📚 ESSENTIAL UFO READING</p>
+    <h2 style="font-size:clamp(24px,2.5vw,32px);color:#fff;margin:0 0 8px">If these files made you curious, start here.</h2>
+    <p style="color:#a8b8cc;font-size:14px;max-width:680px;margin:0 auto">Five books written by people inside the disclosure story or with direct sources. Affiliate links — we earn a small commission, the price you pay is unchanged.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px">
+    <a href="https://www.amazon.com/dp/0063348063?tag=YOURTAG" target="_blank" rel="noopener sponsored" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1px;margin-bottom:8px">2024 · ELIZONDO</div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">Imminent</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">Former AATIP director's first-person account of running the Pentagon's UAP program.</p>
+    </a>
+    <a href="https://www.amazon.com/dp/0063269546?tag=YOURTAG" target="_blank" rel="noopener sponsored" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1px;margin-bottom:8px">2021 · COULTHART</div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">In Plain Sight</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">Investigative journalism on the U.S. UAP cover-up and the Wilson-Davis memo.</p>
+    </a>
+    <a href="https://www.amazon.com/dp/035827814X?tag=YOURTAG" target="_blank" rel="noopener sponsored" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1px;margin-bottom:8px">2021 · LOEB</div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">Extraterrestrial</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">Harvard astrophysicist's case that 'Oumuamua was alien technology.</p>
+    </a>
+    <a href="https://www.amazon.com/dp/0307717089?tag=YOURTAG" target="_blank" rel="noopener sponsored" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1px;margin-bottom:8px">2010 · KEAN</div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">UFOs: Generals, Pilots, Officials</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">On-the-record testimony from over 40 government and military insiders.</p>
+    </a>
+    <a href="https://www.amazon.com/dp/1640094946?tag=YOURTAG" target="_blank" rel="noopener sponsored" style="display:block;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1px;margin-bottom:8px">2019 · PASULKA</div>
+      <h3 style="color:#fff;font-size:15px;margin:0 0 6px;line-height:1.35">American Cosmic</h3>
+      <p style="color:#a8b8cc;font-size:12px;margin:0;line-height:1.5">UNC religious studies prof on the cultural mechanics of the UFO phenomenon.</p>
+    </a>
+  </div>
+  <p style="text-align:center;color:#7a92b0;font-size:11px;margin-top:24px;font-family:'JetBrains Mono',monospace;letter-spacing:.5px">As an Amazon Associate this site earns from qualifying purchases.</p>
+</section>
+
+<!-- AD SLOT 3: footer leaderboard. Loads only if ADSENSE_PUB_ID is set. -->
+<div class="ad-slot ad-footer" style="max-width:1100px;margin:0 auto 40px;padding:0 24px;text-align:center">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client=""
+       data-ad-slot="3333333333"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>if(window.ADSENSE_PUB_ID){const i=document.currentScript.previousElementSibling;i.dataset.adClient=window.ADSENSE_PUB_ID;(adsbygoogle=window.adsbygoogle||[]).push({});}</script>
+</div>
 
 <section id="methodology" class="methodology">
   <p style="display:inline-block;background:rgba(82,255,180,.08);border:1px solid rgba(82,255,180,.3);color:#52ffb4;padding:8px 16px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;margin-bottom:20px">🤖 AI-ASSISTED · TRANSPARENT RUBRIC · REPRODUCIBLE</p>
