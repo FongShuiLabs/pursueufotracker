@@ -147,11 +147,28 @@ def main() -> int:
 
     state["last_polled_at"] = _now_iso()
 
+    # Authority hierarchy:
+    # 1. If we got the CSV, it's authoritative. The HTML envelope contains
+    #    per-request CSRF tokens and CDN-edge variation that we can't fully
+    #    normalize, so HTML hash drift between runs is normal noise.
+    # 2. If CSV is blocked (war.gov edge sometimes 403s), fall back to HTML
+    #    hash as the only available signal.
     html_changed = prev_html_hash != new_hash
     csv_changed = csv_hash is not None and prev_csv_hash != csv_hash
+    csv_available = csv_hash is not None
 
-    if not html_changed and not csv_changed:
-        print(f"NO CHANGE")
+    if csv_available:
+        triggered = csv_changed
+        reason = "csv" if csv_changed else None
+    else:
+        triggered = html_changed
+        reason = "html-fallback" if html_changed else None
+
+    if not triggered:
+        print(f"NO CHANGE (csv_available={csv_available}, html_drift_ignored={html_changed})")
+        # Still update the html_sha256 so future runs compare against the latest
+        # observed envelope (avoids accumulating drift).
+        state["html_sha256"] = new_hash
         _save_state(state)
         return 0
 
@@ -165,7 +182,6 @@ def main() -> int:
     if csv_rows is not None:
         state["row_count"] = csv_rows
     state["last_change_at"] = _now_iso()
-    reason = "csv" if csv_changed else "html"
     state["history"] = (state.get("history") or [])[-19:] + [{
         "at": state["last_change_at"],
         "html_sha256": new_hash,
