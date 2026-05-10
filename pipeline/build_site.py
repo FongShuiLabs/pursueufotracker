@@ -42,9 +42,36 @@ def _build_env() -> Environment:
     )
 
 
+def _related_files(f: dict, all_files: list[dict], limit: int = 6) -> list[dict]:
+    """Pick files in the same category as f, ranked by score desc, excluding self.
+    Falls back to same agency if category is too small."""
+    cat = f.get("category")
+    agency = f.get("agency")
+    fid = f.get("id")
+    same_cat = [g for g in all_files if g.get("category") == cat and g.get("id") != fid]
+    if len(same_cat) < limit:
+        same_agency = [g for g in all_files
+                       if g.get("agency") == agency
+                       and g.get("id") != fid
+                       and g.get("id") not in {x["id"] for x in same_cat}]
+        same_cat += same_agency
+    same_cat.sort(key=lambda g: (g.get("score") or {}).get("value") or 0, reverse=True)
+    return [
+        {
+            "id": g["id"],
+            "title": g.get("title") or g["id"],
+            "agency": g.get("agency"),
+            "type": g.get("type"),
+            "score": g.get("score"),
+        }
+        for g in same_cat[:limit]
+    ]
+
+
 def _render_file_pages(env: Environment, manifest: dict) -> None:
     tpl = env.get_template("file.html.j2")
-    for f in manifest["files"]:
+    all_files = manifest["files"]
+    for f in all_files:
         out = GEN_FILES / f"{f['id']}.html"
         size_h = _human_size(f.get("size_bytes"))
         ctx = {
@@ -58,6 +85,7 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
             "patreon_user": PATREON_USERNAME,
             "enable_ads": ENABLE_ADS,
             "adsense_client_id": ADSENSE_CLIENT_ID,
+            "related_files": _related_files(f, all_files),
         }
         out.write_text(tpl.render(**ctx), encoding="utf-8")
 

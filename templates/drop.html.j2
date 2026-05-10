@@ -10,8 +10,9 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{ drop.title }} - Trump PURSUE Drop {{ '%02d'|format(drop.number) }}">
 <meta property="og:description" content="{{ drop.summary[:200] }}">
-<meta property="og:image" content="../og-cover.svg">
+<meta property="og:image" content="{{ site_url }}/og-cover.svg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site_url }}/og-cover.svg">
 
 <script type="application/ld+json">
 {
@@ -24,7 +25,7 @@
 }
 </script>
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="/styles.css">
 <style>
   .drop-page{max-width:980px;margin:0 auto;padding:80px 24px}
   .drop-page h1{font-size:clamp(36px,5vw,60px);color:#fff;margin-bottom:14px}
