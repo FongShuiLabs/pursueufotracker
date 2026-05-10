@@ -16,7 +16,7 @@ from . import (
     extract_pdf, thumbnail, transcribe, score, summarize,
     build_search, gen_og, build_site,
     build_verdict, build_top10, build_press_kit, build_api, build_drops,
-    translate, clip_generator, validate, index_now,
+    translate, clip_generator, validate, index_now, build_categories,
 )
 
 STAGES = [
@@ -38,6 +38,7 @@ STAGES = [
     ("build-press",    build_press_kit.run),
     ("build-api",      build_api.run),
     ("build-drops",    build_drops.run),
+    ("build-categories", build_categories.run),
     ("translate",      translate.run),       # no-op without DEEPL_API_KEY
     ("clips",          clip_generator.run),  # no-op without ffmpeg
     ("index-now",      index_now.run),       # ping Bing/Yandex/Naver/Seznam
