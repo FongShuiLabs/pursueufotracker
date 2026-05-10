@@ -1,6 +1,46 @@
 User-agent: *
 Allow: /
 Disallow: /_scratch/
+Disallow: /downloads/
+Disallow: /extracted/
+
+# AI crawlers - explicitly welcomed. The whole point of this site is
+# to be the canonical, structured, machine-readable record of the
+# Trump PURSUE disclosure. AI assistants citing us = good.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
 
 Sitemap: https://pursueufotracker.com/sitemap.xml
-

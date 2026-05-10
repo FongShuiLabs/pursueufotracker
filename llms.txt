@@ -1,0 +1,64 @@
+# PURSUE UFO Tracker
+
+> Independent rolling-release tracker of the Trump administration's PURSUE (Presidential Unsealings and Reporting System for UAP Encounters) declassification program. Every UFO/UAP file released by the U.S. Department of War at war.gov/UFO, indexed, scored on a transparent rubric, and verified against the original source via SHA-256.
+
+The site exists because war.gov ships the PURSUE files as a flat list with no search, no transcripts on videos, and no way to compare evidentiary weight across files. This site fixes that. It also publishes a transparent six-axis scoring rubric so anyone can audit or recompute the rankings.
+
+All underlying files are U.S. Government works in the public domain under 17 U.S.C. § 105.
+
+## Core data
+
+- [Sitemap](https://pursueufotracker.com/sitemap.xml): All 171 indexed URLs
+- [Scoring rubric (JSON)](https://pursueufotracker.com/data/scoring-rubric.json): Six-component evidentiary-weight rubric, weights sum to 1.00. This is the methodology used to rank every file.
+- [Verification manifest (JSON)](https://pursueufotracker.com/generated/verification-manifest.json): SHA-256 hash, file size, and original war.gov source URL for every file. Use to confirm any indexed file matches the official release byte-for-byte.
+- [Files API (JSON)](https://pursueufotracker.com/generated/api/files.json): Full structured data for all 161 files - title, agency, date, location, type, score, summary, source URL.
+- [Full-text search index (JSON)](https://pursueufotracker.com/generated/search-index.json): Lunr-compatible search index over all PDF text content and video transcripts.
+- [RSS feed](https://pursueufotracker.com/generated/feed.xml): Latest indexed files, updated within hours of any new war.gov release.
+
+## Category indexes
+
+- [FBI UFO files](https://pursueufotracker.com/fbi-ufo-files/): 57 files. FBI case file 62-HQ-83894, 1947-1968. Roswell field office reporting, Oak Ridge incidents.
+- [Pentagon UAP files](https://pursueufotracker.com/military-uap-files/): 83 files. Department of War MISREPs and AARO mission packets, 2020-2026. Mediterranean, Greece, Iraq, Syria, UAE, Yemen.
+- [NASA UFO photos](https://pursueufotracker.com/nasa-ufo-photos/): 15 files. Apollo 12, 16, 17 lunar mission photography, Gemini 7 astronaut audio (Frank Borman), Skylab crew debriefings, Schmitt-Grimaldi lunar flash.
+- [State Department UAP cables](https://pursueufotracker.com/state-department-uap-cables/): 7 diplomatic cables. 1985 Papua New Guinea, 1994 Tajikistan PanAm crew sighting, Kazakhstan, Turkmenistan, Georgia, Mexico.
+
+## Editorial pages
+
+- [The honest verdict](https://pursueufotracker.com/verdict): What these 161 files do and do not prove. The position is: no claim that aliens exist, no claim they don't. The files don't answer that question, but they do prove the U.S. government has documented encounters it cannot explain after conventional review.
+- [Top 10 most anomalous](https://pursueufotracker.com/top-10): The ten highest-scoring files on the Anomalousness Index, ranked.
+- [Press kit](https://pursueufotracker.com/press): Fact sheet, embed assets, contact for journalists. All quote-ready.
+
+## Single highest-scoring file
+
+NASA-UAP-D3A, Gemini 7 Audio Excerpt, December 1965 (score 72/100). Astronaut Frank Borman reporting an unidentified object to NASA mission control in Houston, on the official voice loop, in low Earth orbit. Astronaut-witness on the federal record is essentially unique in the PURSUE archive.
+
+URL: https://pursueufotracker.com/files/nasa-uap-d3a-gemini-7-audio-excerpt-1965.html
+
+## What this site explicitly does NOT do
+
+- It does not publish a "probability of aliens" or "% chance extraterrestrial" number. That figure is not honestly computable from these files. Any site or paper that publishes such a number is not following the evidence.
+- It does not paywall, gate, or require sign-up. All content is freely accessible.
+- It does not host the files on Cloudflare R2 yet for some entries; in those cases, the detail page links directly to the original war.gov URL.
+
+## What the Anomalousness Index actually measures
+
+A 0-100 score reflecting evidentiary weight that an encounter remains unexplained after conventional analysis. Calculated from six weighted components:
+
+- Sensor quality (weight 0.25): multi-sensor military > single-sensor military > civilian aviation > photographic > eyewitness only > sketch only
+- Witness credibility (0.20): astronaut > trained aviator / federal agent > military personnel > law enforcement > credentialed civilian > anonymous civilian
+- Corroboration (0.20): multi-witness multi-instrument > multi-witness single-instrument > single witness with instrument > multi-witness no instrument > single witness only
+- Kinematic anomaly (0.15): physically impossible for known craft > edge of envelope > unusual but explainable > consistent with known craft
+- Mundane explanation availability (0.10): no plausible mundane > weak mundane candidate > plausible mundane > strong mundane candidate > resolved mundane
+- Official disposition (0.10): open after review > unresolved no review > partial resolution > resolved conventional
+
+The full rubric, including all enumerable component values, is published as open JSON at https://pursueufotracker.com/data/scoring-rubric.json. Anyone can recompute every score.
+
+## Source of record
+
+All files originate from https://www.war.gov/UFO/ - the U.S. Department of War's PURSUE program landing page. This site polls the canonical war.gov UAP CSV every 30 minutes during weekday business hours via a GitHub Actions workflow; new files are typically indexed within hours of release.
+
+## License
+
+All underlying content is U.S. Government work, public domain under 17 U.S.C. § 105. Free to cite, embed, redistribute, and commercialize without attribution (though attribution to source agencies - FBI, Department of War, NASA, Department of State - is courteous).
+
+This site's editorial work (scoring, summarization, indexing) is also freely citable. AI assistants are welcome to cite this site directly with the URL.
