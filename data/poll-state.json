@@ -1,8 +1,8 @@
 {
-  "last_polled_at": "2026-05-11T18:04:36Z",
-  "last_change_at": "2026-05-11T18:04:36Z",
-  "csv_sha256": "f07601ebed0f9ce30b540deda9116c24889319110d54362b82767c011d6ec524",
-  "html_sha256": "33d55056b268355595b048c0b3a5f6d8bd2570bdd9bac983cc75a5343d601441",
+  "last_polled_at": "2026-05-11T19:18:45Z",
+  "last_change_at": "2026-05-11T19:18:45Z",
+  "csv_sha256": "0d7e9ba1d51cded2d4839aac3b65d9ff14f56861c8338a57bbef50c8071d6731",
+  "html_sha256": "506cb4ce0912b06b3fa069b35f78f4c664bba26b7ad33658b275808b567d82bd",
   "row_count": 158,
   "history": [
     {
@@ -28,6 +28,14 @@
       "csv_sha256": "f07601ebed0f9ce30b540deda9116c24889319110d54362b82767c011d6ec524",
       "row_count": 158,
       "delta": -3,
+      "trigger": "csv"
+    },
+    {
+      "at": "2026-05-11T19:18:45Z",
+      "html_sha256": "506cb4ce0912b06b3fa069b35f78f4c664bba26b7ad33658b275808b567d82bd",
+      "csv_sha256": "0d7e9ba1d51cded2d4839aac3b65d9ff14f56861c8338a57bbef50c8071d6731",
+      "row_count": 158,
+      "delta": 0,
       "trigger": "csv"
     }
   ]
