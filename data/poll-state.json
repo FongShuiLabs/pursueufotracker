@@ -1,9 +1,9 @@
 {
-  "last_polled_at": "2026-05-11T10:49:48Z",
-  "last_change_at": "2026-05-10T17:48:45Z",
-  "csv_sha256": "596cc1881aa97d2fa49a45edab14d60802616e73ce125d286120e00d967cafa2",
-  "html_sha256": "859f26396531791203953f01fd2279b3b7b04d8b6a1e60067fec86443b92768b",
-  "row_count": 161,
+  "last_polled_at": "2026-05-11T18:04:36Z",
+  "last_change_at": "2026-05-11T18:04:36Z",
+  "csv_sha256": "f07601ebed0f9ce30b540deda9116c24889319110d54362b82767c011d6ec524",
+  "html_sha256": "33d55056b268355595b048c0b3a5f6d8bd2570bdd9bac983cc75a5343d601441",
+  "row_count": 158,
   "history": [
     {
       "at": "2026-05-08T00:00:00Z",
@@ -21,6 +21,14 @@
       "row_count": 161,
       "delta": 0,
       "trigger": "html"
+    },
+    {
+      "at": "2026-05-11T18:04:36Z",
+      "html_sha256": "33d55056b268355595b048c0b3a5f6d8bd2570bdd9bac983cc75a5343d601441",
+      "csv_sha256": "f07601ebed0f9ce30b540deda9116c24889319110d54362b82767c011d6ec524",
+      "row_count": 158,
+      "delta": -3,
+      "trigger": "csv"
     }
   ]
 }
