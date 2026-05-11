@@ -160,6 +160,7 @@ def _build_sitemap(manifest: dict) -> None:
         ("/generated/top-10.html", "0.95", "weekly"),
         ("/generated/press.html", "0.85", "monthly"),
         ("/generated/drops/index.html", "0.9", "weekly"),
+        ("/revisions", "0.9", "weekly"),
         ("/fbi-ufo-files/", "0.9", "weekly"),
         ("/military-uap-files/", "0.9", "weekly"),
         ("/nasa-ufo-photos/", "0.9", "weekly"),

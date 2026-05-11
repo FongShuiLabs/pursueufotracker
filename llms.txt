@@ -27,6 +27,11 @@ All underlying files are U.S. Government works in the public domain under 17 U.S
 - [The honest verdict](https://pursueufotracker.com/verdict): What these 161 files do and do not prove. The position is: no claim that aliens exist, no claim they don't. The files don't answer that question, but they do prove the U.S. government has documented encounters it cannot explain after conventional review.
 - [Top 10 most anomalous](https://pursueufotracker.com/top-10): The ten highest-scoring files on the Anomalousness Index, ranked.
 - [Press kit](https://pursueufotracker.com/press): Fact sheet, embed assets, contact for journalists. All quote-ready.
+- [War.gov revisions log](https://pursueufotracker.com/revisions): On May 11, 2026, war.gov silently revised the canonical PURSUE list from 161 files to 158: 28 files renamed with DOW-UAP-PR## prefixes, 5 removed, 3 added, 6 Arabian Gulf 2020 entries consolidated under Middle East 2020. Full diff documented. Our auto-poller detected the change within hours.
+
+## File count clarification
+
+The original PURSUE Drop 01 on May 8, 2026 contained 161 files. As of May 11, 2026, war.gov lists 158 files (net delta -3 after renames). Both counts are correct for their respective snapshots. This site preserves all 161 original URLs for citation stability while documenting the war.gov revision diff at /revisions.
 
 ## Single highest-scoring file
 

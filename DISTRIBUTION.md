@@ -2,6 +2,18 @@
 
 Pre-drafted material for the launch push. Everything is sized to its channel and uses the angle that's already differentiating: open AI scoring + open rubric + public-domain files. The "tens-to-hundreds of thousands per month" revenue target needs traffic; this is the traffic plan.
 
+## NEW ANGLE (updated 5/11/26): war.gov is editing the list in real time
+
+On May 11, 2026, war.gov silently revised the canonical PURSUE file list from 161 to 158: 28 renamed with DOW-UAP-PR## prefixes, 5 removed, 3 added, 6 "Arabian Gulf" entries consolidated under "Middle East". Our automated poller caught it within hours and opened GitHub issues #2 and #3 documenting the deltas.
+
+This is now the LAUNCH STORY:
+- "I built an automated tracker that detected war.gov silently editing the PURSUE list — here's the full diff"
+- It's a stronger story than "here's another UFO index"
+- Journalists especially will pick this up: news.gov editing public records IS the story
+- Full change log lives at https://pursueufotracker.com/revisions
+
+Use the revisions URL prominently in EVERY post below.
+
 **Execute in this order** for compounding effect:
 
 1. Day 1 (Tue-Thu, 9am ET): Reddit r/UFOs self-post (single biggest first-week lever)
@@ -20,12 +32,14 @@ Pre-drafted material for the launch push. Everything is sized to its channel and
 **Best time:** Tue-Thu, 9-10am ET (catches the daily peak)
 **Type:** Text post (NOT a link post - mods auto-remove most link posts; text post with link in comments survives)
 
-### Title (pick one)
-> I had Claude AI score all 161 Trump PURSUE files on six evidentiary axes. Here are the 5 most anomalous, with the open rubric.
+### Title (pick one - first one is the strongest now that we have the war.gov-edits angle)
+> My automated tracker just caught war.gov silently editing the Trump UFO release. 161 files became 158 overnight. Here's the full diff.
+
+> War.gov quietly revised the PURSUE UFO release on May 11. My auto-poller caught it. 5 files removed, 3 added, 28 renamed.
+
+> I had Claude AI score all 161 Trump PURSUE files. Then war.gov edited the list. Both versions are still indexed here.
 
 > All 161 files from the May 8 PURSUE drop, ranked by AI on a transparent rubric (no "% chance aliens" nonsense)
-
-> AI-ranked Trump UFO files: the open methodology, and the 5 that score highest
 
 ### Body
 
