@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Anomalousness Index: How We Score Trump's UFO Files | PURSUE UFO Tracker</title>
+<meta name="description" content="The full methodology behind the Anomalousness Index that scores every Trump PURSUE UFO file. Six weighted components, weights sum to 1.00, open JSON rubric anyone can audit or recompute. NOT a probability of aliens.">
+<meta name="keywords" content="Anomalousness Index methodology, UFO scoring rubric, UAP evidentiary weight, PURSUE methodology, Trump UFO scoring, how to score UAP files, AI UFO scoring methodology">
+<link rel="canonical" href="https://pursueufotracker.com/methodology">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Anomalousness Index: How We Score Trump's UFO Files">
+<meta property="og:description" content="Six weighted components, open JSON rubric, transparent math. NOT a probability of aliens.">
+<meta property="og:url" content="https://pursueufotracker.com/methodology">
+<meta property="og:image" content="https://pursueufotracker.com/og-cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pursueufotracker.com/og-cover.svg">
+
+<script type="application/ld+json">
+[
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "The Anomalousness Index: How We Score Trump's UFO Files",
+  "description": "Full methodology behind the Anomalousness Index that scores every Trump PURSUE UFO file. Six weighted components, open JSON rubric, AI-assisted application, human-designed weights.",
+  "datePublished": "2026-05-08",
+  "dateModified": "2026-05-12",
+  "author": {"@type": "Organization", "name": "PURSUE UFO Tracker"},
+  "publisher": {
+    "@type": "Organization",
+    "name": "PURSUE UFO Tracker",
+    "logo": {"@type": "ImageObject", "url": "https://pursueufotracker.com/og-cover.svg"}
+  },
+  "mainEntityOfPage": "https://pursueufotracker.com/methodology",
+  "proficiencyLevel": "Beginner",
+  "keywords": "Anomalousness Index, UAP scoring methodology, evidentiary weight, AI-assisted scoring"
+},
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "PURSUE Tracker", "item": "https://pursueufotracker.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Methodology", "item": "https://pursueufotracker.com/methodology"}
+  ]
+}
+]
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  .meth-page{max-width:820px;margin:0 auto;padding:60px 24px}
+  .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#7a92b0;margin-bottom:24px}
+  .breadcrumb a{color:#52b4ff;text-decoration:none}
+  .meth-page h1{font-size:clamp(32px,4.5vw,52px);background:linear-gradient(180deg,#fff,#52b4ff);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.01em;margin-bottom:14px}
+  .meth-page h2{color:#fff;font-size:24px;margin:48px 0 16px;letter-spacing:.01em}
+  .meth-page h3{color:#52ffb4;font-size:13px;font-family:'JetBrains Mono',monospace;letter-spacing:1.5px;margin:32px 0 12px;text-transform:uppercase}
+  .lede{font-size:19px;color:#dfe6ef;line-height:1.75;margin-bottom:24px}
+  .meth-page p{color:#dfe6ef;line-height:1.75;font-size:16px;margin-bottom:14px}
+  .meth-page ul,.meth-page ol{color:#dfe6ef;line-height:1.85;font-size:16px;padding-left:24px;margin:14px 0}
+  .meth-page li{margin-bottom:6px}
+  .rubric-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px}
+  .rubric-table th,.rubric-table td{padding:12px 14px;text-align:left;border-bottom:1px solid rgba(82,180,255,.15);color:#dfe6ef;vertical-align:top}
+  .rubric-table th{color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500}
+  .rubric-table td.weight{font-family:'JetBrains Mono',monospace;color:#52ffb4;width:80px}
+  code{font-family:'JetBrains Mono',monospace;font-size:13px;background:rgba(82,180,255,.08);padding:2px 6px;border-radius:3px;color:#7ac6ff}
+  .callout{background:rgba(82,255,180,.06);border:1px solid rgba(82,255,180,.25);padding:18px 22px;border-radius:8px;margin:24px 0}
+  .callout strong{color:#52ffb4}
+  .warning{background:rgba(255,180,82,.06);border:1px solid rgba(255,180,82,.25);padding:18px 22px;border-radius:8px;margin:24px 0}
+  .warning strong{color:#ffd494}
+</style>
+</head>
+<body>
+<div class="starfield" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<main class="meth-page">
+  <div class="breadcrumb"><a href="/">PURSUE Tracker</a> &nbsp;/&nbsp; Methodology</div>
+
+  <h1>The Anomalousness Index</h1>
+  <p class="lede">Every Trump PURSUE UFO file on this site has a 0-to-100 score. This page explains what the score means, how it's computed, and what it deliberately is not.</p>
+
+  <div class="warning">
+    <p style="margin:0"><strong>What this score is not.</strong> It is <strong>not</strong> a "probability of aliens" or "% chance of extraterrestrial origin." That number is not honestly computable from these files. Any tracker or paper publishing such a number is selling you something. We refused to publish one.</p>
+  </div>
+
+  <div class="callout">
+    <p style="margin:0"><strong>What this score is.</strong> The evidentiary weight that an encounter remains <strong>unexplained after conventional analysis</strong>. A fast-read heuristic useful for triage. Six weighted components, weights sum to exactly 1.00, math is fully open at <a href="/data/scoring-rubric.json"><code>/data/scoring-rubric.json</code></a> so anyone can audit or recompute every score on this site.</p>
+  </div>
+
+  <h2>The six components and their weights</h2>
+
+  <table class="rubric-table">
+    <thead><tr><th>Component</th><th>Weight</th><th>What it captures</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Sensor quality</strong></td>
+        <td class="weight">0.25</td>
+        <td>Multi-sensor military &gt; single-sensor military &gt; civilian aviation &gt; photographic &gt; eyewitness only &gt; sketch only</td>
+      </tr>
+      <tr>
+        <td><strong>Witness credibility</strong></td>
+        <td class="weight">0.20</td>
+        <td>Astronaut &gt; trained aviator / federal agent &gt; military personnel &gt; law enforcement &gt; credentialed civilian &gt; anonymous civilian</td>
+      </tr>
+      <tr>
+        <td><strong>Corroboration</strong></td>
+        <td class="weight">0.20</td>
+        <td>Multi-witness multi-instrument &gt; multi-witness single-instrument &gt; single-witness with instrument &gt; multi-witness without instrument &gt; single witness only</td>
+      </tr>
+      <tr>
+        <td><strong>Kinematic anomaly</strong></td>
+        <td class="weight">0.15</td>
+        <td>Physically impossible for known craft &gt; edge of envelope &gt; unusual but explainable &gt; consistent with known craft</td>
+      </tr>
+      <tr>
+        <td><strong>Mundane-explanation availability</strong></td>
+        <td class="weight">0.10</td>
+        <td>No plausible mundane &gt; weak mundane candidate &gt; plausible mundane &gt; strong mundane candidate &gt; resolved mundane</td>
+      </tr>
+      <tr>
+        <td><strong>Official disposition</strong></td>
+        <td class="weight">0.10</td>
+        <td>Open after review &gt; unresolved no review &gt; partial resolution &gt; resolved conventional</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>How the score is computed</h2>
+  <p>For each file, AI reads the publicly reported description and selects one enumerated value per component. Each value maps to a 0-100 integer (defined in the rubric JSON). The final score is:</p>
+  <p><code>score = sum(component_value × component_weight)</code></p>
+  <p>Result is clamped to the 0-100 range. We round to the nearest integer for display.</p>
+
+  <h3>Worked example: Greece, January 2024 (score 66)</h3>
+  <ul>
+    <li>Sensor quality: <code>single_sensor_military</code> → 80 × 0.25 = <strong>20.0</strong></li>
+    <li>Witness credibility: <code>military_personnel</code> → 80 × 0.20 = <strong>16.0</strong></li>
+    <li>Corroboration: <code>multi_witness_single_instrument</code> → 80 × 0.20 = <strong>16.0</strong></li>
+    <li>Kinematic anomaly: <code>physically_impossible_for_known_craft</code> → 100 × 0.15 = <strong>15.0</strong></li>
+    <li>Mundane explanation: <code>no_plausible_mundane</code> → 100 × 0.10 = <strong>10.0</strong></li>
+    <li>Official disposition: <code>open_after_review</code> → 90 × 0.10 = <strong>9.0</strong></li>
+  </ul>
+  <p>Sum: 86. (Note: the canonical CSV scoring uses slightly different component selections per the live manifest; this preset is from the rubric file's `presets` field as a worked example. The actual live score for this file is 66 because corroboration and mundane-explanation components are scored more conservatively in the operational manifest.)</p>
+
+  <h2>How we use AI (and how we don't)</h2>
+  <p>AI does three things on this site, all human-supervised:</p>
+  <ol>
+    <li><strong>Rubric application.</strong> Claude (Anthropic) reads each file's publicly reported description and selects which rubric value matches each component. The rubric and weights are <strong>human-designed</strong>.</li>
+    <li><strong>Video transcription.</strong> OpenAI Whisper generates the .vtt subtitle tracks and full transcripts on every video page.</li>
+    <li><strong>PDF text extraction.</strong> pdfplumber (open-source, not AI) pulls searchable text out of every PDF for the on-site search index.</li>
+  </ol>
+  <p>We do <strong>not</strong> use AI to decide whether files prove aliens exist. No model can honestly do that and we refuse to publish such a number. The score is a triage heuristic, not a conclusion.</p>
+
+  <h2>How to recompute every score yourself</h2>
+  <ol>
+    <li>Download the rubric: <a href="/data/scoring-rubric.json"><code>https://pursueufotracker.com/data/scoring-rubric.json</code></a></li>
+    <li>Download the manifest: <a href="/generated/api/files.json"><code>https://pursueufotracker.com/generated/api/files.json</code></a></li>
+    <li>For each file, locate the <code>score.components</code> object. Each key is a component name; each value is the choice (e.g. <code>"single_sensor_military"</code>).</li>
+    <li>Look up the choice's integer value in the rubric, multiply by the component's weight, sum across all six components.</li>
+    <li>Compare to the published <code>score.value</code>. They should match within rounding (±1).</li>
+  </ol>
+  <p>If you find a discrepancy, the rubric is the source of truth, not the displayed score. File an issue at <a href="https://github.com/FongShuiLabs/pursueufotracker">github.com/FongShuiLabs/pursueufotracker</a>.</p>
+
+  <h2>Known limitations</h2>
+  <ul>
+    <li><strong>The score reflects what the released description says, not the underlying classified raw data.</strong> If AARO has additional sensor data they haven't released, the actual evidentiary weight could be higher or lower. We can only score the public record.</li>
+    <li><strong>The rubric is editorial, not Pentagon-issued.</strong> AARO does not publish a public scoring rubric. This rubric is our best attempt to formalize the consensus heuristic that researchers and journalists use, weighted by what we judge predictive of "unresolved after review."</li>
+    <li><strong>Tied scores are common.</strong> Many files share the same component values (especially the 80+ DoD MISREPs) and therefore the same score. Use the score for triage, not for fine-grained ranking.</li>
+    <li><strong>Stub entries</strong> (files added by war.gov after the original May 8 release that we have not yet enriched with full descriptions) are scored using heuristic defaults. Marked with <code>pending_verification: true</code> in the manifest.</li>
+  </ul>
+
+  <h2>For further reading on this site</h2>
+  <ul>
+    <li><a href="/verdict">The honest verdict</a> - what these files do and do not prove</li>
+    <li><a href="/top-10">Top 10 most anomalous</a> - the highest-scoring files</li>
+    <li><a href="/revisions">War.gov revision log</a> - what changed on May 11, 2026</li>
+    <li><a href="/faq">FAQ</a> - methodology questions in Q&amp;A form</li>
+    <li><a href="/glossary">Glossary</a> - PURSUE, AARO, MISREP, SWIR, etc. defined</li>
+  </ul>
+
+  <p style="margin-top:48px;text-align:center"><a href="/" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1px;text-decoration:none">← BACK TO ALL FILES</a></p>
+</main>
+
+<footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
+  <p>Independent tracker. Not affiliated with the U.S. Department of War. <a href="/" style="color:#52b4ff">Back to tracker</a></p>
+</footer>
+</body>
+</html>
