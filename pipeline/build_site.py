@@ -100,7 +100,7 @@ def _build_timeline(manifest: dict) -> None:
             "category": f.get("category"),
             "agency": f.get("agency"),
             "score": (f.get("score") or {}).get("value"),
-            "url": f"files/{f['id']}.html",
+            "url": f"/files/{f['id']}",
         })
     items.sort(key=lambda x: x["date"] or "")
     GEN_TIMELINE.write_text(json.dumps(items, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -117,7 +117,7 @@ def _build_map(manifest: dict) -> None:
                 "lat": g["lat"], "lng": g["lng"],
                 "place": g.get("place"),
                 "score": (f.get("score") or {}).get("value"),
-                "url": f"files/{f['id']}.html",
+                "url": f"/files/{f['id']}",
             })
     GEN_MAP.write_text(json.dumps(pts, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -136,9 +136,9 @@ def _build_feed(manifest: dict) -> None:
     fg.language("en")
     for f in sorted(manifest["files"], key=lambda x: x.get("date_released") or "", reverse=True)[:50]:
         fe = fg.add_entry()
-        fe.id(f"{SITE_URL}/files/{f['id']}.html")
+        fe.id(f"{SITE_URL}/files/{f['id']}")
         fe.title(f.get("title") or f["id"])
-        fe.link(href=f"{SITE_URL}/files/{f['id']}.html")
+        fe.link(href=f"{SITE_URL}/files/{f['id']}")
         fe.description(f.get("summary") or f.get("title") or "")
         d = f.get("date_released") or "2026-05-08"
         try:
@@ -180,7 +180,7 @@ def _build_sitemap(manifest: dict) -> None:
     # File detail pages
     for f in manifest["files"]:
         parts.append(
-            f"<url><loc>{SITE_URL}/files/{html.escape(f['id'])}.html</loc>"
+            f"<url><loc>{SITE_URL}/files/{html.escape(f['id'])}</loc>"
             f"<priority>0.8</priority><changefreq>monthly</changefreq></url>"
         )
     parts.append("</urlset>")

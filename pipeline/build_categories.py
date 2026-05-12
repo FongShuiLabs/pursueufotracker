@@ -123,7 +123,7 @@ def _file_card_html(f: dict) -> str:
     )
     summary = _html.escape((f.get("summary") or "")[:200])
     return (
-        f'<a class="cat-card" href="/files/{fid}.html">'
+        f'<a class="cat-card" href="/files/{fid}">'
         f'<div class="cat-card-head"><span class="cat-tag">{agency} · {ftype}</span>{score_html}</div>'
         f'<h3>{title}</h3>'
         f'<p>{summary}</p>'
@@ -151,7 +151,7 @@ def _page_html(cat: dict, files: list[dict]) -> str:
             {
                 "@type": "ListItem",
                 "position": i + 1,
-                "url": f"{SITE_URL}/files/{f['id']}.html",
+                "url": f"{SITE_URL}/files/{f['id']}",
                 "name": f.get("title") or f["id"],
             }
             for i, f in enumerate(files[:50])

@@ -34,7 +34,7 @@ def run() -> None:
                 "type": f.get("type"),
                 "date_event": f.get("date_event"),
                 "score": (f.get("score") or {}).get("value"),
-                "url": f"https://pursueufotracker.com/files/{f['id']}.html",
+                "url": f"https://pursueufotracker.com/files/{f['id']}",
                 "detail_api": f"https://pursueufotracker.com/api/files/{f['id']}.json",
             }
             for f in manifest["files"]

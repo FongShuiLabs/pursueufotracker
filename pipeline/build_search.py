@@ -50,7 +50,7 @@ def run() -> None:
             "agency": f.get("agency"),
             "category": f.get("category"),
             "score": (f.get("score") or {}).get("value"),
-            "url": f"files/{f['id']}.html",
+            "url": f"/files/{f['id']}",
         }
 
     idx = lunr(ref="id", fields=("title", "body"), documents=docs)
