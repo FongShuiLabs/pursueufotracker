@@ -62,6 +62,49 @@
 },
 {
   "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PURSUE UFO Tracker",
+  "alternateName": "Trump UFO Files Tracker",
+  "url": "https://pursueufotracker.com/",
+  "description": "Independent rolling-release tracker for the Trump administration's PURSUE UAP disclosure program. Every file from every drop, ranked by Anomalousness Index.",
+  "publisher": {"@type": "Organization", "name": "PURSUE UFO Tracker"},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://pursueufotracker.com/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+},
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PURSUE UFO Tracker",
+  "url": "https://pursueufotracker.com/",
+  "logo": "https://pursueufotracker.com/og-cover.svg",
+  "description": "Independent tracker of the Trump administration's Presidential Unsealings and Reporting System for UAP Encounters (PURSUE) disclosure program.",
+  "sameAs": [
+    "https://github.com/FongShuiLabs/pursueufotracker"
+  ]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top 5 Most Anomalous Trump PURSUE UFO Files",
+  "description": "The five files with the highest Anomalousness Index scores from the May 8, 2026 PURSUE UAP disclosure.",
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "url": "https://pursueufotracker.com/files/nasa-uap-d3a-gemini-7-audio-excerpt-1965", "name": "Gemini 7 - Astronaut Frank Borman's UAP sighting (Score 72)"},
+    {"@type": "ListItem", "position": 2, "url": "https://pursueufotracker.com/files/unresolved-uap-report-greece-january-2024", "name": "Greece, January 2024 - SWIR-only diamond-shaped object (Score 66)"},
+    {"@type": "ListItem", "position": 3, "url": "https://pursueufotracker.com/files/unresolved-uap-report-united-arab-emirates-october-2023-2", "name": "UAE, October 2023 - 4 min 57 sec IR tracking (Score 66)"},
+    {"@type": "ListItem", "position": 4, "url": "https://pursueufotracker.com/files/unresolved-uap-report-syria-july-2022", "name": "Syria, July 2022 - dual-sensor IR + EO capture (Score 66)"},
+    {"@type": "ListItem", "position": 5, "url": "https://pursueufotracker.com/files/nasa-uap-vm6-apollo-17-1972", "name": "Apollo 17, 1972 - triangular formation on lunar surface (Score 65)"}
+  ]
+},
+{
+  "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "How to verify a Trump PURSUE UFO file matches war.gov byte-for-byte",
   "description": "Independent journalists and researchers can confirm any file indexed on this site matches the original war.gov release using SHA-256 hashing. Takes about 30 seconds per file.",
@@ -118,8 +161,11 @@ if (window.ADSENSE_PUB_ID) {
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://media.defense.gov">
+<link rel="dns-prefetch" href="https://www.war.gov">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<link rel="alternate" type="application/rss+xml" title="PURSUE UFO Tracker RSS" href="/generated/feed.xml">
 </head>
 <body>
 
