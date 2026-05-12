@@ -11,6 +11,7 @@ Uses Jinja2 templates from templates/. Per-file pages embed:
 from __future__ import annotations
 import html
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -68,6 +69,26 @@ def _related_files(f: dict, all_files: list[dict], limit: int = 6) -> list[dict]
     ]
 
 
+_YEAR_RE = re.compile(r'\b(19|20)\d{2}\b')
+
+
+def _event_year(f: dict) -> str:
+    """Extract the encounter year for SEO keywords. Order:
+    1. 4-digit year in title (e.g. '..., 1965' or 'October 2023')
+    2. 4-digit year in id slug
+    3. date_event if it parses as YYYY-MM-DD
+    4. Empty string
+    """
+    for s in (f.get("title", ""), f.get("id", "")):
+        m = _YEAR_RE.search(s or "")
+        if m:
+            return m.group(0)
+    de = f.get("date_event") or ""
+    if len(de) >= 4 and de[:4].isdigit():
+        return de[:4]
+    return ""
+
+
 def _render_file_pages(env: Environment, manifest: dict) -> None:
     tpl = env.get_template("file.html.j2")
     all_files = manifest["files"]
@@ -77,6 +98,7 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
         ctx = {
             "f": f,
             "size_human": size_h,
+            "event_year": _event_year(f),
             "site_name": SITE_NAME,
             "site_url": SITE_URL,
             "og_card": f"../og-cards/{f['id']}.png",
@@ -214,6 +236,7 @@ def _build_sitemap(manifest: dict) -> None:
         ("/generated/drops/index.html", "0.9", "weekly"),
         ("/revisions", "0.9", "weekly"),
         ("/faq", "0.85", "monthly"),
+        ("/glossary", "0.85", "monthly"),
         ("/fbi-ufo-files/", "0.9", "weekly"),
         ("/military-uap-files/", "0.9", "weekly"),
         ("/nasa-ufo-photos/", "0.9", "weekly"),

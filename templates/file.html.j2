@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ f.title }} | {{ site_name }}</title>
 <meta name="description" content="{{ f.summary or f.title }} - {{ f.agency }} - PURSUE disclosure file.">
+{% set place = (f.geo and f.geo.place) or '' %}
+<meta name="keywords" content="{{ f.title }}, {{ f.agency }} UFO, {{ f.agency }} UAP, {% if event_year %}{{ event_year }} UFO sighting, {% endif %}{% if place %}{{ place }} UAP, {% endif %}PURSUE {{ f.agency }}, war.gov UFO, Trump UFO{% if event_year %} {{ event_year }}{% endif %}, declassified UAP, AARO file, {{ f.type }} UAP, Anomalousness Index">
 {# Canonical points to extension-less URL - Cloudflare Pages serves it 200 direct
    while /files/X.html 308-redirects. Avoids canonical-on-redirect SEO loss. #}
 {% set canonical_url = site_url ~ '/files/' ~ f.id %}
