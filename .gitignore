@@ -13,3 +13,4 @@ data/url-list.txt
 # generated/ and data/manifest.json are COMMITTED so Cloudflare Pages
 # can serve them as static files without running the pipeline at deploy time.
 # When the pipeline regenerates them, commit + push triggers a redeploy.
+.claude/
