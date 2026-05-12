@@ -149,6 +149,58 @@ def _build_feed(manifest: dict) -> None:
     fg.rss_file(str(GEN_FEED), pretty=True)
 
 
+def _build_video_sitemap(manifest: dict) -> None:
+    """Google Video Search ingests video sitemaps separately. Each <video>
+    block needs: thumbnail, title, description, content_loc OR player_loc,
+    duration optional. Files are submitted alongside the main sitemap.
+    """
+    parts = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+             'xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">']
+    n = 0
+    for f in manifest["files"]:
+        if f.get("type") != "video":
+            continue
+        fid = f["id"]
+        page = f"{SITE_URL}/files/{html.escape(fid)}"
+        thumb = f"{SITE_URL}/generated/og-cards/{html.escape(fid)}.png"
+        title = html.escape((f.get("title") or fid)[:100])
+        # Video description must be 5-2048 chars
+        desc = (f.get("summary") or f.get("title") or fid)
+        desc = html.escape(desc[:2000])
+        if len(desc) < 5:
+            desc = title
+        content_loc = f.get("video_url") or f.get("mirror_url") or f.get("source_url") or ""
+        pub_date = (f.get("date_released") or "2026-05-08") + "T00:00:00Z"
+        parts.append(f"<url><loc>{page}</loc>")
+        parts.append("<video:video>")
+        parts.append(f"<video:thumbnail_loc>{thumb}</video:thumbnail_loc>")
+        parts.append(f"<video:title>{title}</video:title>")
+        parts.append(f"<video:description>{desc}</video:description>")
+        if content_loc:
+            parts.append(f"<video:content_loc>{html.escape(content_loc)}</video:content_loc>")
+        parts.append(f"<video:player_loc>{page}</video:player_loc>")
+        parts.append(f"<video:publication_date>{pub_date}</video:publication_date>")
+        parts.append(f"<video:family_friendly>yes</video:family_friendly>")
+        parts.append(f"<video:requires_subscription>no</video:requires_subscription>")
+        parts.append("</video:video>")
+        parts.append("</url>")
+        n += 1
+    parts.append("</urlset>")
+    (ROOT / "video-sitemap.xml").write_text("\n".join(parts), encoding="utf-8")
+    print(f"  video sitemap: {n} video entries")
+
+
+def _build_sitemap_index() -> None:
+    """Sitemap index lets us submit one URL that points to both sitemaps."""
+    parts = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+             f"<sitemap><loc>{SITE_URL}/sitemap.xml</loc></sitemap>",
+             f"<sitemap><loc>{SITE_URL}/video-sitemap.xml</loc></sitemap>",
+             "</sitemapindex>"]
+    (ROOT / "sitemap-index.xml").write_text("\n".join(parts), encoding="utf-8")
+
+
 def _build_sitemap(manifest: dict) -> None:
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -161,6 +213,7 @@ def _build_sitemap(manifest: dict) -> None:
         ("/generated/press.html", "0.85", "monthly"),
         ("/generated/drops/index.html", "0.9", "weekly"),
         ("/revisions", "0.9", "weekly"),
+        ("/faq", "0.85", "monthly"),
         ("/fbi-ufo-files/", "0.9", "weekly"),
         ("/military-uap-files/", "0.9", "weekly"),
         ("/nasa-ufo-photos/", "0.9", "weekly"),
@@ -202,6 +255,8 @@ def run() -> None:
     _build_map(manifest)
     _build_feed(manifest)
     _build_sitemap(manifest)
+    _build_video_sitemap(manifest)
+    _build_sitemap_index()
     print(f"  built site: {len(manifest['files'])} pages + RSS + sitemap + timeline + map")
 
 

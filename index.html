@@ -59,6 +59,40 @@
   "datePublished": "2026-05-08",
   "license": "https://www.usa.gov/government-works",
   "keywords": "Trump UFO files, PURSUE, UAP disclosure, war.gov UFO, declassified UFO, Pentagon UFO, rolling release"
+},
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to verify a Trump PURSUE UFO file matches war.gov byte-for-byte",
+  "description": "Independent journalists and researchers can confirm any file indexed on this site matches the original war.gov release using SHA-256 hashing. Takes about 30 seconds per file.",
+  "totalTime": "PT30S",
+  "supply": [
+    {"@type": "HowToSupply", "name": "A computer (any OS)"},
+    {"@type": "HowToSupply", "name": "The file downloaded from war.gov/UFO/"}
+  ],
+  "tool": [
+    {"@type": "HowToTool", "name": "PowerShell (Windows), shasum (macOS/Linux), or sha256sum (Linux)"}
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Re-download the file from war.gov",
+      "text": "Visit https://www.war.gov/UFO/ and download the file in question directly from the official source."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Compute the SHA-256 hash locally",
+      "text": "Windows PowerShell: Get-FileHash file.pdf -Algorithm SHA256. macOS or Linux: shasum -a 256 file.pdf. The command prints a 64-character hex string."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Compare against our published hash",
+      "text": "Every file detail page on this site shows its SHA-256 hash in the Verification section. The full manifest is at https://pursueufotracker.com/generated/verification-manifest.json. The hashes should match exactly. If they don't, contact us - that would mean either war.gov updated the file or our mirror is stale."
+    }
+  ]
 }
 ]
 </script>

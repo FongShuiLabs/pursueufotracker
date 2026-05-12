@@ -43,4 +43,6 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
+Sitemap: https://pursueufotracker.com/sitemap-index.xml
 Sitemap: https://pursueufotracker.com/sitemap.xml
+Sitemap: https://pursueufotracker.com/video-sitemap.xml
