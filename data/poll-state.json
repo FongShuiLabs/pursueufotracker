@@ -1,8 +1,8 @@
 {
-  "last_polled_at": "2026-05-12T08:15:19Z",
-  "last_change_at": "2026-05-11T19:18:45Z",
+  "last_polled_at": "2026-05-12T17:21:42Z",
+  "last_change_at": "2026-05-12T17:21:42Z",
   "csv_sha256": "0d7e9ba1d51cded2d4839aac3b65d9ff14f56861c8338a57bbef50c8071d6731",
-  "html_sha256": "0010565e698e61960273eb0ff8b1d8908291b2a6bdc993e9090e75f9563b44e5",
+  "html_sha256": "3ed46948bba993e82231471e244fd56eaac6125471e3c831edf8e2cc8cde3f34",
   "row_count": 158,
   "history": [
     {
@@ -37,6 +37,14 @@
       "row_count": 158,
       "delta": 0,
       "trigger": "csv"
+    },
+    {
+      "at": "2026-05-12T17:21:42Z",
+      "html_sha256": "3ed46948bba993e82231471e244fd56eaac6125471e3c831edf8e2cc8cde3f34",
+      "csv_sha256": null,
+      "row_count": null,
+      "delta": 0,
+      "trigger": "html-fallback"
     }
   ]
 }
