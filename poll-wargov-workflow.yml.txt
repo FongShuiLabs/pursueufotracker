@@ -1,9 +1,10 @@
 name: Poll war.gov for new PURSUE drops
 
 # Polls the official war.gov UAP CSV every 30 minutes during US weekday business
-# hours (when historical drops have happened) and hourly otherwise. Opens an
-# issue when a new drop is detected; commits the updated state file on every
-# successful poll.
+# hours and hourly otherwise. Opens an issue when the CSV actually changes
+# (CSV hash diff), or when CSV has been unreachable for 12 consecutive polls
+# (~6 hours of cron coverage). HTML envelope hash is NOT used as a change
+# signal because the page's CSRF tokens churn every fetch.
 
 on:
   schedule:
@@ -37,7 +38,11 @@ jobs:
           cache: 'pip'
 
       - name: Install poller deps
-        run: pip install curl_cffi
+        run: |
+          pip install curl_cffi playwright
+          # Install Chromium only (not all browsers) to keep the install fast
+          # and small. With-deps ensures Akamai-targeted libs (fonts, etc.).
+          python -m playwright install --with-deps chromium
 
       - name: Poll war.gov
         id: poll
@@ -45,7 +50,7 @@ jobs:
         run: python -m pipeline.poll_wargov
 
       - name: Commit poll state
-        if: steps.poll.outcome == 'success' || steps.poll.outputs.new_drop == 'true'
+        if: steps.poll.outcome == 'success' || steps.poll.outputs.new_drop == 'true' || steps.poll.outputs.csv_stuck == 'true'
         run: |
           git config user.name "pursueufotracker-bot"
           git config user.email "bot@pursueufotracker.com"
@@ -54,7 +59,9 @@ jobs:
             echo "No state change to commit."
           else
             if [ "${{ steps.poll.outputs.new_drop }}" = "true" ]; then
-              git commit -m "[NEW DROP] war.gov CSV changed: ${{ steps.poll.outputs.row_count }} rows (${{ steps.poll.outputs.delta }} delta)"
+              git commit -m "[NEW DROP] war.gov CSV changed: ${{ steps.poll.outputs.row_count }} rows (${{ steps.poll.outputs.delta }} delta) via ${{ steps.poll.outputs.source }}"
+            elif [ "${{ steps.poll.outputs.csv_stuck }}" = "true" ]; then
+              git commit -m "poll: csv unreachable for ${{ steps.poll.outputs.consecutive_failures }} consecutive polls"
             else
               git commit -m "poll: war.gov unchanged ($(date -u +%FT%TZ))"
             fi
@@ -69,12 +76,14 @@ jobs:
             const rowCount = '${{ steps.poll.outputs.row_count }}';
             const delta = '${{ steps.poll.outputs.delta }}';
             const sha = '${{ steps.poll.outputs.sha256 }}';
+            const source = '${{ steps.poll.outputs.source }}';
             const body = [
               '## war.gov uap-csv.csv has changed',
               '',
               `- New row count: **${rowCount}**`,
               `- Delta: **${delta}**`,
               `- New CSV SHA-256: \`${sha}\``,
+              `- Fetched via: \`${source}\``,
               `- Detected: ${new Date().toISOString()}`,
               '',
               '### Next steps',
@@ -93,8 +102,43 @@ jobs:
               labels: ['new-drop', 'automated'],
             });
 
+      - name: Open CSV-unreachable issue (one-time)
+        if: steps.poll.outputs.csv_stuck == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const failures = '${{ steps.poll.outputs.consecutive_failures }}';
+            const body = [
+              '## war.gov CSV unreachable',
+              '',
+              `The poller has failed to fetch \`uap-csv.csv\` on **${failures} consecutive polls** (~6 hours).`,
+              '',
+              'Both fetch paths returned blocked or empty responses:',
+              '- `curl_cffi` with chrome120/119/116/edge101 impersonation',
+              '- Headless Playwright Chromium with realistic Chrome fingerprint',
+              '',
+              'This is likely Akamai bot detection on war.gov\'s edge tightening',
+              'against the GitHub Actions runner IP pool. Possible remediations:',
+              '',
+              '1. Add a residential proxy step (Bright Data, ScrapingBee)',
+              '2. Run the poller from a different IP (Azure runner, DigitalOcean)',
+              '3. Wait it out (Akamai reputation scores decay)',
+              '',
+              'No further alerts will be opened until CSV is reachable again.',
+              'Once reachable, the failure counter resets.',
+              '',
+              'Triggered automatically by `.github/workflows/poll-wargov.yml`.',
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[STUCK] war.gov CSV unreachable for ${failures} consecutive polls`,
+              body,
+              labels: ['csv-stuck', 'automated', 'investigate'],
+            });
+
       - name: Fail if poll errored
-        if: steps.poll.outcome == 'failure' && steps.poll.outputs.new_drop != 'true'
+        if: steps.poll.outcome == 'failure' && steps.poll.outputs.new_drop != 'true' && steps.poll.outputs.csv_stuck != 'true'
         run: |
           echo "::error::Poll script failed (network/parse error). Investigate logs above."
           exit 1

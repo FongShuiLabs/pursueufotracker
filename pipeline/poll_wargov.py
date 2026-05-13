@@ -1,26 +1,40 @@
-"""War.gov PURSUE poller.
+"""War.gov PURSUE poller (durable, CSV-only authority).
 
-Polls https://www.war.gov/UFO/ (the public landing page that lists all PURSUE
-release links) and hashes the embedded file-link list. If the list changes,
-it's a strong signal a new drop has dropped. We tried the canonical CSV
-endpoint first but war.gov blocks that path at the edge with HTTP 403; the
-HTML landing page is the next-most-canonical signal and is reachable.
+Architecture:
+  PRIMARY signal: the canonical uap-csv.csv at war.gov.
+  Fetch path 1: curl_cffi with TLS-impersonated Chrome (fast, cheap).
+  Fetch path 2: Playwright with real headless Chromium (slower but bypasses
+                Akamai bot detection that sometimes blocks path 1).
+  If either path succeeds, the CSV is authoritative.
+
+  NO HTML-envelope fallback. The /UFO/ HTML page is a JS shell whose hash
+  changes constantly (CSRF tokens, CDN edge variation) without any actual
+  data change. Using it as a change-detection signal causes false-positive
+  NEW DROP alerts every few hours.
+
+  When CSV is unreachable on BOTH paths, the poll exits success-no-change.
+  A "consecutive_csv_failures" counter in state tracks this. After 12
+  consecutive failures (~6 hours of cron coverage), the workflow opens
+  ONE "csv-unreachable" issue for human intervention. Subsequent failures
+  do not spam more issues until a successful poll resets the counter.
 
 Behavior:
-  - Fetches the /UFO/ page via curl_cffi (TLS-fingerprinted Chrome).
-  - Extracts all anchor hrefs that match the war.gov/medialink/ufo/ pattern.
-  - Hashes the sorted, deduped list of file URLs.
-  - Compares against data/poll-state.json.
-  - If changed: saves the HTML, updates state, exits 10 (NEW DROP).
-  - Else: updates last_polled_at, exits 0.
+  - Fetches CSV via curl_cffi (5 impersonation profiles, session warmup
+    against /UFO/ first).
+  - If all curl_cffi attempts fail, falls back to Playwright (headless
+    Chromium, real Chrome fingerprint, real DOM rendering).
+  - If CSV obtained: hash + row-count, diff against state, decide.
+  - If CSV not obtained: increment failure counter, set new_drop=false,
+    return 0. After 12 failures, set csv_stuck=true (workflow opens a
+    one-time stuck issue).
 
 Run locally:
     python -m pipeline.poll_wargov
 
 Exit codes:
-    0  - polled successfully, no change
-    10 - NEW DROP detected (file list changed)
-    1  - poll failed (network, parse, etc.)
+    0  - polled successfully, no NEW DROP fired (whether CSV reached or not)
+    10 - NEW DROP detected (CSV hash changed)
+    1  - poll script error (network, parse, etc.)
 """
 from __future__ import annotations
 import hashlib
@@ -35,22 +49,19 @@ from curl_cffi import requests
 
 ROOT = Path(__file__).resolve().parent.parent
 LANDING_URL = "https://www.war.gov/UFO/"
+CSV_URL = "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv"
 STATE_PATH = ROOT / "data" / "poll-state.json"
-HTML_OUT = ROOT / "_scratch" / "war-gov-ufo-latest.html"
+CSV_OUT = ROOT / "_scratch" / "uap-csv.csv"
 
-# Don't send a custom User-Agent - curl_cffi's impersonate=chromeXXX sets the
-# browser-matching UA. Custom UAs like 'pursueufotracker-poller' get blacklisted
-# at the war.gov edge, defeating the whole TLS-fingerprint impersonation.
+# After this many consecutive failed CSV fetches, surface a stuck-state issue.
+# Bot fires roughly every 30 min weekdays / hourly off-hours, so 12 ~= 6 hours.
+STUCK_THRESHOLD = 12
+
 HEADERS = {
     "Referer": "https://www.google.com/",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
 }
-
-LINK_PATTERN = re.compile(
-    r'href=["\']([^"\']*medialink/ufo/[^"\']+\.(?:pdf|jpg|jpeg|png|mp4|webm|csv))["\']',
-    re.IGNORECASE,
-)
 
 
 def _now_iso() -> str:
@@ -63,8 +74,10 @@ def _load_state() -> dict:
     return {
         "last_polled_at": None,
         "last_change_at": None,
-        "links_sha256": None,
+        "csv_sha256": None,
         "row_count": 0,
+        "consecutive_csv_failures": 0,
+        "csv_stuck_alerted": False,
         "history": [],
     }
 
@@ -74,132 +87,180 @@ def _save_state(state: dict) -> None:
     STATE_PATH.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
 
 
-def _fetch_landing_html() -> str | None:
-    """Fetch war.gov/UFO/ HTML via TLS-impersonated client. Returns text or None."""
-    last_err = None
+def _csv_row_count(csv_text: str) -> int:
+    """Count records (not lines - descriptions have embedded newlines in quoted cells)."""
+    import csv as _csv, io as _io
+    reader = _csv.reader(_io.StringIO(csv_text))
+    return max(0, sum(1 for _ in reader) - 1)
+
+
+def _fetch_csv_curlcffi() -> tuple[bytes, str] | None:
+    """Fetch CSV via curl_cffi with TLS-impersonated Chrome. Returns (bytes, profile)
+    on success, None if all profiles blocked."""
     for profile in ("chrome120", "chrome119", "chrome116", "edge101"):
         try:
-            r = requests.get(LANDING_URL, headers=HEADERS, impersonate=profile, timeout=30)
-            if r.status_code == 200 and len(r.content) > 5000:
-                print(f"  fetched via {profile}: {len(r.content)} bytes")
-                return r.text
-            last_err = f"HTTP {r.status_code} ({len(r.content)} bytes)"
-            print(f"  {profile}: {last_err}, trying next")
-        except Exception as e:
-            last_err = str(e)
-            print(f"  {profile}: {last_err[:80]}")
-    print(f"FAIL: all profiles rejected. Last error: {last_err}", file=sys.stderr)
+            s = requests.Session()
+            warm = s.get(LANDING_URL, impersonate=profile, timeout=20)
+            if warm.status_code != 200:
+                continue
+            r = s.get(CSV_URL, headers={"Referer": LANDING_URL},
+                      impersonate=profile, timeout=25)
+            if r.status_code == 200 and len(r.content) > 1000:
+                return r.content, f"curl_cffi:{profile}"
+        except Exception:
+            continue
     return None
 
 
-def _normalize_html(html: str) -> str:
-    """Strip volatile bits (cache-busters, build IDs, csrf nonces) so the hash
-    only changes when meaningful page content changes."""
-    h = html
-    h = re.sub(r'\?cdv=\d+', '', h)              # cache-buster query
-    h = re.sub(r'name="__RequestVerificationToken"\s+value="[^"]+"', 'name="__RequestVerificationToken" value=""', h)
-    h = re.sub(r'<input[^>]*name="ScrollTop"[^>]*>', '', h)
-    h = re.sub(r'<input[^>]*name="__dnnVariable"[^>]*>', '', h)  # DNN per-request token
-    h = re.sub(r'\s+', ' ', h)                   # whitespace-collapse
-    return h
+def _fetch_csv_playwright() -> tuple[bytes, str] | None:
+    """Fetch CSV via headless Chromium. Uses real Chrome fingerprint and same-context
+    cookie warmup so Akamai's bot detection sees a 'real' browser session. Slower
+    (~10-15s per attempt) but bypasses the regimes that block curl_cffi."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        return None
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                headless=True,
+                args=[
+                    "--disable-blink-features=AutomationControlled",
+                    "--no-sandbox",
+                    "--disable-dev-shm-usage",
+                ],
+            )
+            ctx = browser.new_context(
+                user_agent=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                            "AppleWebKit/537.36 (KHTML, like Gecko) "
+                            "Chrome/120.0.0.0 Safari/537.36"),
+                viewport={"width": 1920, "height": 1080},
+                locale="en-US",
+                timezone_id="America/New_York",
+            )
+            ctx.add_init_script(
+                "Object.defineProperty(navigator, 'webdriver', "
+                "{get: () => undefined})"
+            )
+            page = ctx.new_page()
+            try:
+                page.goto(LANDING_URL, wait_until="domcontentloaded", timeout=45000)
+            except Exception:
+                pass  # tolerate timeout; we just want cookies set
+            # Now fetch the CSV in the same browser context, which carries cookies
+            # and shares the realistic-Chrome TLS handshake.
+            resp = page.request.get(CSV_URL, headers={"Referer": LANDING_URL})
+            body = resp.body() if resp.ok else None
+            browser.close()
+            if body and len(body) > 1000:
+                return body, "playwright:chromium"
+    except Exception as e:
+        print(f"  playwright path failed: {str(e)[:140]}", file=sys.stderr)
+    return None
 
 
-def _try_fetch_csv() -> tuple[int | None, str | None]:
-    """Best-effort secondary signal. Returns (row_count, sha256) or (None, None)
-    if blocked. From GH Actions IPs this often succeeds even when local doesn't."""
-    csv_url = "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv"
-    for profile in ("chrome120", "chrome119"):
-        try:
-            s = requests.Session()
-            warm = s.get(LANDING_URL, impersonate=profile, timeout=15)
-            if warm.status_code != 200:
-                continue
-            r = s.get(csv_url, headers={"Referer": LANDING_URL},
-                      impersonate=profile, timeout=20)
-            if r.status_code == 200 and len(r.content) > 1000:
-                # Use csv module - simple line-counting overcounts because file
-                # descriptions contain embedded newlines inside quoted cells.
-                import csv as _csv, io as _io
-                reader = _csv.reader(_io.StringIO(r.text))
-                rows = max(0, sum(1 for _ in reader) - 1)
-                return rows, hashlib.sha256(r.content).hexdigest()
-        except Exception:
-            continue
-    return None, None
+def _fetch_csv() -> tuple[bytes, str] | None:
+    """Try curl_cffi first (fast), fall back to Playwright (slow but resilient).
+    Returns (csv_bytes, source_label) on success, None if both fail."""
+    print(f"[{_now_iso()}] fetching {CSV_URL}")
+    result = _fetch_csv_curlcffi()
+    if result:
+        print(f"  obtained via {result[1]} ({len(result[0])} bytes)")
+        return result
+    print("  curl_cffi paths all blocked, trying Playwright headless Chromium...")
+    result = _fetch_csv_playwright()
+    if result:
+        print(f"  obtained via {result[1]} ({len(result[0])} bytes)")
+        return result
+    print("  ALL FETCH PATHS BLOCKED")
+    return None
+
+
+def _emit_gh_output(**kwargs) -> None:
+    gh_out = os.environ.get("GITHUB_OUTPUT")
+    if not gh_out:
+        return
+    with open(gh_out, "a", encoding="utf-8") as f:
+        for k, v in kwargs.items():
+            f.write(f"{k}={v}\n")
 
 
 def main() -> int:
-    print(f"[{_now_iso()}] polling {LANDING_URL}")
-    html = _fetch_landing_html()
-    if html is None:
-        return 1
-
-    normalized = _normalize_html(html)
-    new_hash = hashlib.sha256(normalized.encode("utf-8", errors="replace")).hexdigest()
-    csv_rows, csv_hash = _try_fetch_csv()
-    new_count = csv_rows if csv_rows is not None else 0
-    print(f"  html_hash={new_hash[:12]} csv_rows={csv_rows} csv_hash={csv_hash[:12] if csv_hash else 'BLOCKED'}")
-
     state = _load_state()
-    prev_html_hash = state.get("html_sha256") or state.get("links_sha256")
-    prev_csv_hash = state.get("csv_sha256")
-    prev_count = state.get("row_count", 0)
-
     state["last_polled_at"] = _now_iso()
+    prev_failures = state.get("consecutive_csv_failures", 0)
+    already_alerted = state.get("csv_stuck_alerted", False)
 
-    # Authority hierarchy:
-    # 1. If we got the CSV, it's authoritative. The HTML envelope contains
-    #    per-request CSRF tokens and CDN-edge variation that we can't fully
-    #    normalize, so HTML hash drift between runs is normal noise.
-    # 2. If CSV is blocked (war.gov edge sometimes 403s), fall back to HTML
-    #    hash as the only available signal.
-    html_changed = prev_html_hash != new_hash
-    csv_changed = csv_hash is not None and prev_csv_hash != csv_hash
-    csv_available = csv_hash is not None
+    result = _fetch_csv()
 
-    if csv_available:
-        triggered = csv_changed
-        reason = "csv" if csv_changed else None
-    else:
-        triggered = html_changed
-        reason = "html-fallback" if html_changed else None
-
-    if not triggered:
-        print(f"NO CHANGE (csv_available={csv_available}, html_drift_ignored={html_changed})")
-        # Still update the html_sha256 so future runs compare against the latest
-        # observed envelope (avoids accumulating drift).
-        state["html_sha256"] = new_hash
+    if result is None:
+        # CSV unreachable on all paths. Increment failure counter, do not fire
+        # NEW DROP. If we cross the threshold and haven't alerted yet, signal
+        # the workflow to open a one-time 'csv unreachable' issue.
+        new_failures = prev_failures + 1
+        state["consecutive_csv_failures"] = new_failures
+        should_alert = (not already_alerted) and new_failures >= STUCK_THRESHOLD
+        if should_alert:
+            state["csv_stuck_alerted"] = True
+            print(f"CSV STUCK: {new_failures} consecutive failures - emitting alert")
+            _emit_gh_output(
+                csv_stuck="true",
+                consecutive_failures=str(new_failures),
+            )
+        else:
+            print(f"csv unreachable; consecutive_failures={new_failures} "
+                  f"(threshold {STUCK_THRESHOLD}, already_alerted={already_alerted})")
         _save_state(state)
         return 0
 
-    HTML_OUT.parent.mkdir(parents=True, exist_ok=True)
-    HTML_OUT.write_text(html, encoding="utf-8")
+    csv_bytes, source = result
+    new_hash = hashlib.sha256(csv_bytes).hexdigest()
 
-    delta = new_count - prev_count if csv_rows is not None else 0
-    state["html_sha256"] = new_hash
-    if csv_hash:
-        state["csv_sha256"] = csv_hash
-    if csv_rows is not None:
-        state["row_count"] = csv_rows
+    try:
+        new_count = _csv_row_count(csv_bytes.decode("utf-8-sig", errors="replace"))
+    except Exception as e:
+        print(f"FAIL: csv parse error: {e}", file=sys.stderr)
+        return 1
+
+    prev_hash = state.get("csv_sha256")
+    prev_count = state.get("row_count", 0)
+
+    # Successful fetch resets the failure counter and clears any prior alert
+    if prev_failures or already_alerted:
+        print(f"  csv reachable again - resetting failure counter "
+              f"(was {prev_failures}, alerted={already_alerted})")
+    state["consecutive_csv_failures"] = 0
+    state["csv_stuck_alerted"] = False
+
+    if prev_hash == new_hash:
+        print(f"NO CHANGE: rows={new_count} hash={new_hash[:12]}")
+        _save_state(state)
+        return 0
+
+    # NEW DROP - CSV content has actually changed
+    CSV_OUT.parent.mkdir(parents=True, exist_ok=True)
+    CSV_OUT.write_bytes(csv_bytes)
+    delta = new_count - (prev_count or 0)
+    state["csv_sha256"] = new_hash
+    state["row_count"] = new_count
     state["last_change_at"] = _now_iso()
     state["history"] = (state.get("history") or [])[-19:] + [{
         "at": state["last_change_at"],
-        "html_sha256": new_hash,
-        "csv_sha256": csv_hash,
-        "row_count": csv_rows,
+        "csv_sha256": new_hash,
+        "row_count": new_count,
         "delta": delta,
-        "trigger": reason,
+        "trigger": "csv",
+        "source": source,
     }]
     _save_state(state)
-
-    print(f"NEW DROP ({reason}): html={new_hash[:12]} csv_rows={csv_rows} delta={delta:+d}")
-    gh_out = os.environ.get("GITHUB_OUTPUT")
-    if gh_out:
-        with open(gh_out, "a", encoding="utf-8") as f:
-            f.write(f"new_drop=true\n")
-            f.write(f"row_count={new_count}\n")
-            f.write(f"delta={delta}\n")
-            f.write(f"sha256={new_hash}\n")
+    print(f"NEW DROP via {source}: rows={new_count} delta={delta:+d} hash={new_hash[:12]}")
+    _emit_gh_output(
+        new_drop="true",
+        row_count=str(new_count),
+        delta=str(delta),
+        sha256=new_hash,
+        source=source,
+    )
     return 10
 
 
