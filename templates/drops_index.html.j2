@@ -38,12 +38,12 @@
 <div class="starfield"></div><div class="grid-bg"></div>
 
 <main class="drops-page">
-  <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="../../index.html" style="color:inherit;text-decoration:none">← PURSUE Tracker</a></p>
+  <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="/" style="color:inherit;text-decoration:none">← PURSUE Tracker</a></p>
   <h1>Every Trump UFO Drop, Tracked</h1>
   <p class="drops-lede">The Trump administration's PURSUE program releases declassified UAP files on a rolling basis. We index every drop within hours.</p>
 
   {% for d in drops %}
-  <a class="drop-row" href="{{ d.date }}-drop-{{ '%02d'|format(d.number) }}.html">
+  <a class="drop-row" href="/generated/drops/{{ d.date }}-drop-{{ '%02d'|format(d.number) }}">
     <div class="drop-num">{{ '%02d'|format(d.number) }}</div>
     <div class="drop-body">
       <div class="when">{{ d.date }} · {{ d.agencies | join(' · ') }}</div>
@@ -63,12 +63,12 @@
   <div class="next-drop">
     <h3>NEXT DROP — Monitoring</h3>
     <p>{{ expected_next.note or "We poll war.gov/UFO daily for new files. Subscribers get an alert within minutes of a new drop landing." }}</p>
-    <p style="margin-top:16px"><a href="../../index.html#subscribe" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border:1px solid #52b4ff;padding:10px 22px;border-radius:6px;display:inline-block">Subscribe for next-drop alerts</a></p>
+    <p style="margin-top:16px"><a href="/#subscribe" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border:1px solid #52b4ff;padding:10px 22px;border-radius:6px;display:inline-block">Subscribe for next-drop alerts</a></p>
   </div>
 </main>
 
 <footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
-  <p><a href="../../index.html" style="color:#52b4ff">PURSUE Tracker home</a> · <a href="../verdict.html" style="color:#52b4ff">The honest verdict</a> · <a href="../top-10.html" style="color:#52b4ff">Top 10</a> · <a href="../press.html" style="color:#52b4ff">Press kit</a></p>
+  <p><a href="/" style="color:#52b4ff">PURSUE Tracker home</a> · <a href="/verdict" style="color:#52b4ff">The honest verdict</a> · <a href="/top-10" style="color:#52b4ff">Top 10</a> · <a href="/press" style="color:#52b4ff">Press kit</a></p>
 </footer>
 </body>
 </html>

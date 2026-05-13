@@ -5,12 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ drop.title }} - Trump PURSUE Drop {{ "%02d"|format(drop.number) }} | {{ site_name }}</title>
 <meta name="description" content="{{ drop.summary[:160] }}">
-<link rel="canonical" href="{{ site_url }}/drops/{{ drop.date }}-drop-{{ '%02d'|format(drop.number) }}.html">
+{% set drop_url = site_url ~ '/generated/drops/' ~ drop.date ~ '-drop-' ~ '%02d'|format(drop.number) %}
+<link rel="canonical" href="{{ drop_url }}">
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{ drop.title }} - Trump PURSUE Drop {{ '%02d'|format(drop.number) }}">
 <meta property="og:description" content="{{ drop.summary[:200] }}">
 <meta property="og:image" content="{{ site_url }}/og-cover.svg">
+<meta property="og:url" content="{{ drop_url }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{{ site_url }}/og-cover.svg">
 
@@ -53,7 +55,7 @@
 <div class="starfield"></div><div class="grid-bg"></div>
 
 <main class="drop-page">
-  <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="../../index.html" style="color:inherit;text-decoration:none">← PURSUE Tracker</a> &nbsp;/&nbsp; <a href="index.html" style="color:inherit;text-decoration:none">All drops</a></p>
+  <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="/" style="color:inherit;text-decoration:none">← PURSUE Tracker</a> &nbsp;/&nbsp; <a href="/generated/drops/" style="color:inherit;text-decoration:none">All drops</a></p>
 
   <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#ff5757;margin-bottom:8px">DROP {{ '%02d'|format(drop.number) }} · {{ drop.date }}</p>
   <h1>{{ drop.title }}</h1>
@@ -70,7 +72,7 @@
 
   <h2>Headline files</h2>
   {% for f in headline %}
-  <a class="headline-card" href="../files/{{ f.id }}.html">
+  <a class="headline-card" href="/files/{{ f.id }}">
     <div class="body">
       <div class="meta">{{ f.agency }} · {{ f.category }} · {{ f.date_event or f.date_released }}</div>
       <h3>{{ f.title }}</h3>
@@ -89,15 +91,62 @@
     {% endfor %}
   </ul>
 
+  {% set share_title = 'Trump PURSUE Drop ' ~ '%02d'|format(drop.number) ~ ': ' ~ drop.title %}
   <div class="share">
-    <a href="https://twitter.com/intent/tweet?text=Trump%20PURSUE%20Drop%20{{ '%02d'|format(drop.number) }}%3A%20{{ drop.title|urlencode }}%20-%20{{ site_url }}/drops/{{ drop.date }}-drop-{{ '%02d'|format(drop.number) }}.html" target="_blank" rel="noopener">Share on X</a>
-    <a href="https://reddit.com/submit?url={{ site_url }}/drops/{{ drop.date }}-drop-{{ '%02d'|format(drop.number) }}.html&title=Trump%20PURSUE%20Drop%20{{ '%02d'|format(drop.number) }}%3A%20{{ drop.title|urlencode }}" target="_blank" rel="noopener">Post to Reddit</a>
-    <a href="https://news.ycombinator.com/submitlink?u={{ site_url }}/drops/{{ drop.date }}-drop-{{ '%02d'|format(drop.number) }}.html&t={{ drop.title|urlencode }}" target="_blank" rel="noopener">Post to HN</a>
+    <a onclick="window.plausible&&plausible('Share',{props:{channel:'x',surface:'drop'}})" href="https://twitter.com/intent/tweet?text={{ share_title|urlencode }}%20-%20{{ drop_url|urlencode }}" target="_blank" rel="noopener">Share on X</a>
+    <a onclick="window.plausible&&plausible('Share',{props:{channel:'reddit',surface:'drop'}})" href="https://reddit.com/submit?url={{ drop_url|urlencode }}&title={{ share_title|urlencode }}" target="_blank" rel="noopener">Post to Reddit</a>
+    <a onclick="window.plausible&&plausible('Share',{props:{channel:'hn',surface:'drop'}})" href="https://news.ycombinator.com/submitlink?u={{ drop_url|urlencode }}&t={{ share_title|urlencode }}" target="_blank" rel="noopener">Post to HN</a>
   </div>
 </main>
 
+<section style="max-width:1100px;margin:40px auto 60px;padding:32px 24px;background:rgba(82,180,255,.04);border-radius:14px;border:1px solid rgba(82,180,255,.15)">
+  <p style="display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#52b4ff;margin-bottom:18px">MORE FROM THIS TRACKER</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+    <a href="/" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">HOMEPAGE</div>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">All 164 indexed files</strong>
+      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">Searchable, filterable, score-ranked.</span>
+    </a>
+    <a href="/top-10" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">CURATED</div>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">Top 10 most anomalous</strong>
+      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">Gemini 7 audio, Greece SWIR, Apollo 17, more.</span>
+    </a>
+    <a href="/verdict" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">EDITORIAL</div>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">The honest verdict</strong>
+      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">What these files do and do not prove.</span>
+    </a>
+    <a href="/methodology" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">METHODOLOGY</div>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">How we score every file</strong>
+      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">Six-axis rubric, open JSON, worked examples.</span>
+    </a>
+    <a href="/revisions" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">CHANGE LOG</div>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">War.gov revisions</strong>
+      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">What changed on May 11, 2026. Full diff.</span>
+    </a>
+    <a href="/fbi-ufo-files/" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">CATEGORY</div>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">FBI files (57)</strong>
+      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">Bureau case file 62-HQ-83894. 1947 to 1968.</span>
+    </a>
+    <a href="/military-uap-files/" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">CATEGORY</div>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">Pentagon UAP (86)</strong>
+      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">AARO Mission Reports. 2020 to 2026.</span>
+    </a>
+    <a href="/faq" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">REFERENCE</div>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">FAQ + glossary</strong>
+      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">PURSUE explained, AARO, MISREP, SWIR defined.</span>
+    </a>
+  </div>
+</section>
+
 <footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
-  <p><a href="../../index.html" style="color:#52b4ff">PURSUE Tracker home</a> · <a href="index.html" style="color:#52b4ff">All drops</a> · <a href="../verdict.html" style="color:#52b4ff">The honest verdict</a></p>
+  <p><a href="/" style="color:#52b4ff">PURSUE Tracker home</a> · <a href="/generated/drops/" style="color:#52b4ff">All drops</a> · <a href="/verdict" style="color:#52b4ff">The honest verdict</a> · <a href="/methodology" style="color:#52b4ff">Methodology</a></p>
 </footer>
 </body>
 </html>

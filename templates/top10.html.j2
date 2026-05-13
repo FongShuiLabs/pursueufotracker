@@ -36,7 +36,7 @@
 <div class="starfield"></div><div class="grid-bg"></div>
 
 <main class="top-page">
-  <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="../index.html" style="color:inherit;text-decoration:none">← PURSUE Index</a></p>
+  <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="/" style="color:inherit;text-decoration:none">← PURSUE Tracker</a> &nbsp;/&nbsp; Top 10</p>
   <h1>The 10 Most Anomalous Files</h1>
   <p class="lede">Ranked by Anomalousness Index. Methodology transparent. Source files verified. <a href="verdict.html" style="color:#52b4ff">What this score does and doesn't mean.</a></p>
 
@@ -45,7 +45,7 @@
     <div class="rank-num">{{ loop.index }}</div>
     <div class="rank-body">
       <div class="rank-meta">{{ f.agency }} · {{ f.category }} · {{ f.date_event or f.date_released }}</div>
-      <h2><a href="files/{{ f.id }}.html">{{ f.title }}</a></h2>
+      <h2><a href="/files/{{ f.id }}">{{ f.title }}</a></h2>
       <p class="rank-tldr">{{ (f.audience or {}).tldr or f.summary or "" }}</p>
     </div>
     <div class="rank-score">
@@ -57,7 +57,7 @@
 </main>
 
 <footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
-  <p><a href="../index.html" style="color:#52b4ff">All 162 files</a> · <a href="verdict.html" style="color:#52b4ff">The honest verdict</a> · <a href="press.html" style="color:#52b4ff">Press kit</a></p>
+  <p><a href="/" style="color:#52b4ff">All 164 files</a> · <a href="/verdict" style="color:#52b4ff">The honest verdict</a> · <a href="/methodology" style="color:#52b4ff">Methodology</a> · <a href="/revisions" style="color:#52b4ff">Revisions</a> · <a href="/faq" style="color:#52b4ff">FAQ</a> · <a href="/glossary" style="color:#52b4ff">Glossary</a> · <a href="/press" style="color:#52b4ff">Press kit</a></p>
 </footer>
 </body>
 </html>
