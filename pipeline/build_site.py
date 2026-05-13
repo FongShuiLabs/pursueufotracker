@@ -169,6 +169,24 @@ def _build_feed(manifest: dict) -> None:
             dt = datetime.now(timezone.utc)
         fe.published(dt)
     fg.rss_file(str(GEN_FEED), pretty=True)
+    # Inject the XSL stylesheet PI so browsers render the feed as a friendly
+    # subscribe page. RSS readers ignore the PI and parse the XML normally.
+    feed_text = GEN_FEED.read_text(encoding="utf-8")
+    if "<?xml-stylesheet" not in feed_text:
+        feed_text = feed_text.replace(
+            "<?xml version='1.0' encoding='UTF-8'?>",
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<?xml-stylesheet type="text/xsl" href="/generated/feed.xsl"?>',
+            1,
+        )
+        # feedgen sometimes uses double quotes already
+        feed_text = feed_text.replace(
+            '<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet'
+            ' type="text/xsl" href="/generated/feed.xsl"?>'
+            '\n<?xml-stylesheet type="text/xsl" href="/generated/feed.xsl"?>',
+            '<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/xsl" href="/generated/feed.xsl"?>',
+        )
+        GEN_FEED.write_text(feed_text, encoding="utf-8")
 
 
 def _build_video_sitemap(manifest: dict) -> None:

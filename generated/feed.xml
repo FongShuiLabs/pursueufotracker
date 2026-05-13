@@ -1,4 +1,5 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/generated/feed.xsl"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>PURSUE UFO Tracker</title>
@@ -7,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 13 May 2026 20:53:54 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 22:40:20 +0000</lastBuildDate>
     <item>
       <title>DOW-UAP-D3, Mission Report, Arabian Gulf, 2020</title>
       <link>https://pursueufotracker.com/files/dow-uap-d3-mission-report-arabian-gulf-2020</link>
