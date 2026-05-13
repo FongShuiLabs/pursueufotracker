@@ -7,7 +7,7 @@ Pre-drafted material for the launch push. Everything is sized to its channel and
 On May 11, 2026, war.gov silently revised the canonical PURSUE file list from 161 to 158: 28 renamed with DOW-UAP-PR## prefixes, 5 removed, 3 added, 6 "Arabian Gulf" entries consolidated under "Middle East". Our automated poller caught it within hours and opened GitHub issues #2 and #3 documenting the deltas.
 
 This is now the LAUNCH STORY:
-- "I built an automated tracker that detected war.gov silently editing the PURSUE list — here's the full diff"
+- "I built an automated tracker that detected war.gov silently editing the PURSUE list - here's the full diff"
 - It's a stronger story than "here's another UFO index"
 - Journalists especially will pick this up: news.gov editing public records IS the story
 - Full change log lives at https://pursueufotracker.com/revisions
@@ -44,7 +44,13 @@ Use the revisions URL prominently in EVERY post below.
 ### Body
 
 ```
-I built an independent tracker for the PURSUE disclosure (war.gov/UFO) because I wanted one place to read the files instead of clicking through 161 thumbnails on a flat list. While I was at it, I had Claude AI apply a six-factor rubric to every file and rank them by what I'm calling the Anomalousness Index — NOT "probability of aliens" (anyone publishing that number is selling you something), but evidentiary weight that the encounter remains unexplained after conventional analysis.
+On May 11, war.gov silently revised the canonical PURSUE file list. 161 files became 158. They renamed 28 with new DOW-UAP-PR## prefixes, removed 5, added 3, and quietly consolidated all 6 "Arabian Gulf 2020" entries under "Middle East 2020".
+
+My automated tracker (which polls war.gov every 30 min during weekday business hours via a public GitHub Action) caught it within hours. Full diff with what they renamed, what they removed, and what they added:
+
+https://pursueufotracker.com/revisions
+
+For context on what this tracker actually is: I built it for the May 8 PURSUE drop (war.gov/UFO) because the official interface is a flat list of 161 thumbnails with no search, no filtering, no transcripts on the videos. While I was at it, I had Claude AI apply a six-factor rubric to every file and rank them by what I'm calling the Anomalousness Index - NOT "probability of aliens" (anyone publishing that number is selling you something), but evidentiary weight that the encounter remains unexplained after conventional analysis.
 
 The rubric is open JSON, anyone can audit or recompute it:
 https://pursueufotracker.com/data/scoring-rubric.json
@@ -59,19 +65,19 @@ Six components, weights sum to 1.00:
 
 Top 5 by score (read these first):
 
-1. **NASA-UAP-D3A, Gemini 7 Audio, 1965** — score 72
+1. **NASA-UAP-D3A, Gemini 7 Audio, 1965** - score 72
    Frank Borman reporting unidentified object to mission control in low Earth orbit, on the official NASA voice loop. Astronaut-witness on the official record is essentially unique in this archive.
 
-2. **Greece, January 2024 — diamond-shaped UAP, SWIR only** — score 66
+2. **Greece, January 2024 - diamond-shaped UAP, SWIR only** - score 66
    U.S. military operator tracked an object at ~499 mph that was only visible on the Short-Wave Infrared sensor and invisible in EO/IR. The kinematic profile doesn't fit any known craft.
 
-3. **UAE, October 2023 — 4 min 57 sec IR sequence** — score 66
+3. **UAE, October 2023 - 4 min 57 sec IR sequence** - score 66
    Longest unresolved IR tracking sequence in Drop 01. Multi-sensor platform.
 
-4. **Syria, July 2022 — dual-sensor IR + EO** — score 66
+4. **Syria, July 2022 - dual-sensor IR + EO** - score 66
    14 seconds of footage with both infrared and electro-optical capture - the multi-sensor confirmation that makes single-sensor explanations harder to sustain.
 
-5. **Apollo 17, December 1972 — 3 dots, triangular formation on lunar surface** — score 65
+5. **Apollo 17, December 1972 - 3 dots, triangular formation on lunar surface** - score 65
    Open Department of War investigation under PURSUE.
 
 What this tracker does NOT do:
@@ -87,15 +93,17 @@ What it does do:
 
 Site: https://pursueufotracker.com
 Top 10 page: https://pursueufotracker.com/top-10
+Methodology (full scoring walkthrough): https://pursueufotracker.com/methodology
 The honest verdict on what these files prove: https://pursueufotracker.com/verdict
+War.gov revision diff (the story): https://pursueufotracker.com/revisions
 
-Happy to AMA on the methodology - the rubric is the only thing I think is actually interesting here.
+Happy to AMA on the methodology, the war.gov diff, or anything else.
 ```
 
 ### After posting
 - Reply to top 3-5 comments within the first hour (signals engagement to the algorithm)
 - Pin a comment with the methodology link
-- Do NOT delete and repost if it doesn't take off — let it ride; mods notice repost behavior
+- Do NOT delete and repost if it doesn't take off - let it ride; mods notice repost behavior
 
 ---
 
@@ -119,7 +127,7 @@ Author here. Some quick notes on the build:
 
 - Pipeline is Python: curl_cffi for fetching (war.gov's CF rules reject most non-browser TLS fingerprints), pdfplumber for PDF text extraction, OpenAI Whisper for the video transcripts, Claude (Anthropic SDK) for applying the scoring rubric to each file's description, Jinja2 for rendering, Cloudflare Pages for static hosting.
 
-- The Anomalousness Index is six weighted components, all human-designed, weights sum to 1.00. Rubric lives as open JSON at https://pursueufotracker.com/data/scoring-rubric.json — anyone can recompute every score. I deliberately did NOT publish a "% chance aliens" number; that number is not honestly computable from these files.
+- The Anomalousness Index is six weighted components, all human-designed, weights sum to 1.00. Rubric lives as open JSON at https://pursueufotracker.com/data/scoring-rubric.json - anyone can recompute every score. I deliberately did NOT publish a "% chance aliens" number; that number is not honestly computable from these files.
 
 - GitHub Action polls the canonical war.gov UAP CSV every 30 minutes during weekday business hours; when the hash changes, it opens an issue. Cloudflare auto-deploys when I push.
 
@@ -161,14 +169,14 @@ Happy to answer questions on the pipeline, the rubric, or why I made specific sc
 > Open JSON. Anyone can recompute every score: pursueufotracker.com/data/scoring-rubric.json
 
 ### Tweet 3
-> #1 — NASA-UAP-D3A, Gemini 7 Audio, 1965. Score 72.
+> #1 - NASA-UAP-D3A, Gemini 7 Audio, 1965. Score 72.
 >
 > Astronaut Frank Borman reports an unidentified object to Houston mission control. On the official NASA voice loop. Astronaut-witness on the federal record is essentially unique in the archive.
 >
 > [link to the file page]
 
 ### Tweet 4
-> #2 — Greece, January 2024. Score 66.
+> #2 - Greece, January 2024. Score 66.
 >
 > Military operator tracked a diamond-shaped UAP at ~499 mph. Object was ONLY visible on the Short-Wave Infrared (SWIR) sensor. Invisible to EO and IR.
 >
@@ -177,21 +185,21 @@ Happy to answer questions on the pipeline, the rubric, or why I made specific sc
 > [link]
 
 ### Tweet 5
-> #3 — UAE, October 2023. Score 66.
+> #3 - UAE, October 2023. Score 66.
 >
 > 4 minutes 57 seconds of unresolved infrared tracking. Longest IR sequence in Drop 01. Multi-sensor military platform.
 >
 > [link]
 
 ### Tweet 6
-> #4 — Syria, July 2022. Score 66.
+> #4 - Syria, July 2022. Score 66.
 >
 > Dual-sensor: infrared AND electro-optical, simultaneously. Multi-sensor capture is what closes off the easy single-sensor-artifact explanation.
 >
 > [link]
 
 ### Tweet 7
-> #5 — Apollo 17, December 1972. Score 65.
+> #5 - Apollo 17, December 1972. Score 65.
 >
 > Three dots in triangular formation, lower right quadrant of the lunar surface. Currently an open Department of War investigation under PURSUE.
 >
@@ -208,7 +216,7 @@ Happy to answer questions on the pipeline, the rubric, or why I made specific sc
 >
 > https://pursueufotracker.com
 >
-> Tag @ross_coulthart @LueElizondo @TheDebrief — methodology feedback welcome.
+> Tag @ross_coulthart @LueElizondo @TheDebrief - methodology feedback welcome.
 
 ---
 
@@ -228,11 +236,11 @@ I built an independent tracker for the PURSUE disclosure that does what war.gov/
 The scoring rubric is published as open JSON - six components, weights sum to 1.00. NOT a "probability of aliens" number; that number isn't honestly computable from these files and I refused to publish one. It's evidentiary weight that the encounter remains unexplained after conventional analysis.
 
 Top 5 by score:
-1. NASA-UAP-D3A, Gemini 7 Audio, 1965 (Frank Borman) — 72
-2. Greece, January 2024, SWIR-only diamond — 66
-3. UAE, October 2023, 4:57 IR sequence — 66
-4. Syria, July 2022, dual-sensor IR+EO — 66
-5. Apollo 17, December 1972, lunar surface dots — 65
+1. NASA-UAP-D3A, Gemini 7 Audio, 1965 (Frank Borman) - 72
+2. Greece, January 2024, SWIR-only diamond - 66
+3. UAE, October 2023, 4:57 IR sequence - 66
+4. Syria, July 2022, dual-sensor IR+EO - 66
+5. Apollo 17, December 1972, lunar surface dots - 65
 
 Site: https://pursueufotracker.com
 Press kit (free embed assets, fact sheet, contact): https://pursueufotracker.com/press
@@ -253,9 +261,9 @@ Hi George,
 
 Built an independent index for the PURSUE drop that surfaces what war.gov's flat list hides. Two things you might care about:
 
-1. NASA-UAP-D3A — Frank Borman, Gemini 7, December 1965. Astronaut-on-the-record audio of an unidentified object in low Earth orbit, on the official NASA voice loop. This is the highest-scoring file in the archive on a six-axis rubric I published openly.
+1. NASA-UAP-D3A - Frank Borman, Gemini 7, December 1965. Astronaut-on-the-record audio of an unidentified object in low Earth orbit, on the official NASA voice loop. This is the highest-scoring file in the archive on a six-axis rubric I published openly.
 
-2. Greece, January 2024 — SWIR-only diamond-shaped object tracked at ~499 mph, invisible to standard IR and EO. The classified sensor capture pattern is the kind of detail that's hard to spin as a balloon.
+2. Greece, January 2024 - SWIR-only diamond-shaped object tracked at ~499 mph, invisible to standard IR and EO. The classified sensor capture pattern is the kind of detail that's hard to spin as a balloon.
 
 Site: https://pursueufotracker.com
 Open rubric: https://pursueufotracker.com/data/scoring-rubric.json
