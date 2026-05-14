@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API & Data Endpoints | PURSUE UFO Tracker</title>
+<meta name="description" content="Open JSON endpoints for the Trump PURSUE UFO file archive. Bulk download, per-file metadata, verification hashes, scoring rubric, search index, RSS feed. CC0 / public domain.">
+<meta name="keywords" content="UFO API, PURSUE API, UAP data API, war.gov data, UFO JSON API, declassified UFO data download">
+<link rel="canonical" href="https://pursueufotracker.com/api">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="API & Data Endpoints - PURSUE UFO Tracker">
+<meta property="og:description" content="Open JSON endpoints for journalists and researchers. Bulk download, SHA-256 verification, scoring rubric, search index.">
+<meta property="og:url" content="https://pursueufotracker.com/api">
+<meta property="og:image" content="https://pursueufotracker.com/og-cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pursueufotracker.com/og-cover.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "API & Data Endpoints",
+  "description": "Open JSON endpoints for the Trump PURSUE UFO file archive.",
+  "datePublished": "2026-05-14",
+  "author": {"@type": "Organization", "name": "PURSUE UFO Tracker"},
+  "publisher": {"@type": "Organization", "name": "PURSUE UFO Tracker", "logo": {"@type": "ImageObject", "url": "https://pursueufotracker.com/og-cover.svg"}},
+  "proficiencyLevel": "Beginner",
+  "mainEntityOfPage": "https://pursueufotracker.com/api"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-ZDj9MJVwqhPZChU5a2Hhx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<style>
+  .api-page{max-width:920px;margin:0 auto;padding:60px 24px}
+  .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#7a92b0;margin-bottom:24px}
+  .breadcrumb a{color:#52b4ff;text-decoration:none}
+  h1{font-size:clamp(32px,4.5vw,52px);background:linear-gradient(180deg,#fff,#52b4ff);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+  .lede{font-size:17px;color:#dfe6ef;line-height:1.7;margin-bottom:24px}
+  h2{color:#fff;font-size:24px;margin:42px 0 14px}
+  h3{color:#52ffb4;font-size:12px;font-family:'JetBrains Mono',monospace;letter-spacing:1.5px;margin:28px 0 10px;text-transform:uppercase}
+  p{color:#dfe6ef;line-height:1.7;font-size:16px;margin-bottom:14px}
+  .endpoint{background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.18);border-radius:10px;padding:22px 24px;margin-bottom:14px}
+  .endpoint .url{display:block;font-family:'JetBrains Mono',monospace;font-size:13px;color:#52ffb4;background:rgba(82,255,180,.04);padding:10px 14px;border-radius:5px;margin:8px 0 12px;word-break:break-all;border:1px solid rgba(82,255,180,.15)}
+  .endpoint .url a{color:inherit;text-decoration:none}
+  .endpoint .desc{color:#dfe6ef;font-size:14px;line-height:1.6;margin-bottom:10px}
+  .endpoint .meta{display:flex;gap:14px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:10px;color:#7a92b0;letter-spacing:1px;text-transform:uppercase}
+  .endpoint .meta strong{color:#52b4ff}
+  code{font-family:'JetBrains Mono',monospace;font-size:13px;background:rgba(82,180,255,.08);padding:2px 6px;border-radius:3px;color:#7ac6ff}
+  pre{background:rgba(0,0,0,.4);border:1px solid rgba(82,180,255,.15);border-radius:6px;padding:14px 16px;overflow-x:auto;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.55;color:#c0cad8;margin:14px 0}
+  pre code{background:none;padding:0;color:inherit;font-size:inherit}
+  .note{background:rgba(82,255,180,.06);border:1px solid rgba(82,255,180,.25);padding:14px 18px;border-radius:8px;margin:20px 0;font-size:14px;color:#dfe6ef;line-height:1.6}
+  .note strong{color:#52ffb4}
+</style>
+</head>
+<body>
+<div class="starfield" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<main class="api-page">
+  <div class="breadcrumb"><a href="/">PURSUE Tracker</a> &nbsp;/&nbsp; API &amp; Data Endpoints</div>
+  <h1>API &amp; Data Endpoints</h1>
+  <p class="lede">Open JSON endpoints, public-domain underlying files, no auth, no rate limits, no scraping required. Built for journalists, researchers, and anyone who wants to ingest the Trump PURSUE UFO archive into their own pipeline.</p>
+
+  <div class="note">
+    <strong>License:</strong> All endpoints below serve metadata about U.S. Government public-domain files (17 U.S.C. § 105). The metadata itself (scores, summaries, organization) is editorial work on this site and is freely citable. Underlying files remain public domain. <strong>Attribution to source agencies (FBI, DoD, NASA, State) is courteous; attribution to this site is appreciated but not required.</strong>
+  </div>
+
+  <h2>Core endpoints</h2>
+
+  <div class="endpoint">
+    <h3>Files index</h3>
+    <span class="url"><a href="/generated/api/files.json" target="_blank" rel="noopener">https://pursueufotracker.com/generated/api/files.json</a></span>
+    <p class="desc">All 164 files with title, agency, category, type, score, canonical page URL, and a pointer to the per-file detail endpoint. Use this as your starting point.</p>
+    <p class="meta"><strong>Format:</strong> JSON &middot; <strong>Size:</strong> ~50 KB &middot; <strong>Updates:</strong> on every rebuild</p>
+  </div>
+
+  <div class="endpoint">
+    <h3>Per-file detail</h3>
+    <span class="url">https://pursueufotracker.com/generated/api/files/&lt;id&gt;.json</span>
+    <p class="desc">Full metadata for one file: title, agency, dates, source URL, SHA-256, size, summary, full score components and contributions, video URL + caption tracks (for video files), thumbnail URL.</p>
+    <p class="meta"><strong>Format:</strong> JSON &middot; <strong>Count:</strong> 164 endpoints &middot; <strong>IDs from:</strong> files.json</p>
+  </div>
+
+  <div class="endpoint">
+    <h3>Verification manifest (SHA-256 + war.gov source URLs)</h3>
+    <span class="url"><a href="/generated/verification-manifest.json" target="_blank" rel="noopener">https://pursueufotracker.com/generated/verification-manifest.json</a></span>
+    <p class="desc">For each file: id, title, SHA-256 hash, size in bytes, and the original war.gov source URL. Use this to verify any file mirrored on this site matches the canonical war.gov asset byte-for-byte.</p>
+    <p class="meta"><strong>Format:</strong> JSON &middot; <strong>Use case:</strong> journalistic fact-check, archive integrity</p>
+  </div>
+
+  <div class="endpoint">
+    <h3>Scoring rubric</h3>
+    <span class="url"><a href="/data/scoring-rubric.json" target="_blank" rel="noopener">https://pursueufotracker.com/data/scoring-rubric.json</a></span>
+    <p class="desc">The six-component Anomalousness Index rubric: weights, value scales, presets. Weights sum to exactly 1.00. Anyone can recompute every score on this site by combining a file's <code>score.components</code> values with this rubric. The math is auditable.</p>
+    <p class="meta"><strong>Format:</strong> JSON &middot; <strong>Version:</strong> 1.0 &middot; <strong>See also:</strong> <a href="/methodology" style="color:#52b4ff">methodology walkthrough</a></p>
+  </div>
+
+  <div class="endpoint">
+    <h3>Timeline data</h3>
+    <span class="url"><a href="/generated/timeline.json" target="_blank" rel="noopener">https://pursueufotracker.com/generated/timeline.json</a></span>
+    <p class="desc">Chronological ordering of all 164 files with event dates. Useful for date-keyed visualizations or filtering.</p>
+    <p class="meta"><strong>Format:</strong> JSON array &middot; <strong>Range:</strong> 1947 to 2026</p>
+  </div>
+
+  <div class="endpoint">
+    <h3>Search index (Lunr-compatible)</h3>
+    <span class="url"><a href="/generated/search-index.json" target="_blank" rel="noopener">https://pursueufotracker.com/generated/search-index.json</a></span>
+    <p class="desc">Prebuilt Lunr.js search index over titles, summaries, full PDF text, and Whisper-generated video transcripts. Hydrate client-side with <a href="https://lunrjs.com/" target="_blank" rel="noopener" style="color:#52b4ff">Lunr.js</a> to add full-text search to your own UI.</p>
+    <p class="meta"><strong>Format:</strong> Lunr JSON &middot; <strong>Size:</strong> ~1.5 MB &middot; <strong>See</strong> our <a href="/search" style="color:#52b4ff">search demo</a></p>
+  </div>
+
+  <div class="endpoint">
+    <h3>RSS feed</h3>
+    <span class="url"><a href="/generated/feed.xml" target="_blank" rel="noopener">https://pursueufotracker.com/generated/feed.xml</a></span>
+    <p class="desc">RSS 2.0. One item per file, sorted by release date. Polls war.gov every 30 min (weekday business hours), so new drops appear in the feed within hours. Includes a styled XSL view if opened directly in a browser.</p>
+    <p class="meta"><strong>Format:</strong> RSS 2.0 &middot; <strong>Standard:</strong> rssboard.org</p>
+  </div>
+
+  <div class="endpoint">
+    <h3>Sitemaps</h3>
+    <span class="url"><a href="/sitemap-index.xml" target="_blank" rel="noopener">https://pursueufotracker.com/sitemap-index.xml</a></span>
+    <p class="desc">XML sitemap index. Points to the main sitemap (~180 URLs: homepage, editorial pages, category landing pages, all 164 file pages) and the video sitemap (30 video files with Google Video Search metadata).</p>
+    <p class="meta"><strong>Format:</strong> sitemap.xml standard &middot; <strong>Child sitemaps:</strong> <a href="/sitemap.xml" style="color:#52b4ff">main</a>, <a href="/video-sitemap.xml" style="color:#52b4ff">video</a></p>
+  </div>
+
+  <h2>Quick recipes</h2>
+
+  <h3>List all files (curl + jq)</h3>
+<pre><code>curl -s https://pursueufotracker.com/generated/api/files.json \
+  | jq '.files[] | {id, title, agency, score, url}'</code></pre>
+
+  <h3>Get the top 10 by score</h3>
+<pre><code>curl -s https://pursueufotracker.com/generated/api/files.json \
+  | jq '.files | sort_by(.score) | reverse | .[0:10]'</code></pre>
+
+  <h3>Verify a file against war.gov</h3>
+<pre><code># 1. Get the SHA-256 from our manifest
+curl -s https://pursueufotracker.com/generated/verification-manifest.json \
+  | jq '.[] | select(.id == "fbi-photo-a1") | .sha256'
+
+# 2. Download the file from war.gov
+curl -O https://www.war.gov/medialink/ufo/release_1/fbi-photo-a1.png
+
+# 3. Hash it locally and compare
+sha256sum fbi-photo-a1.png
+# Windows PowerShell: Get-FileHash fbi-photo-a1.png -Algorithm SHA256</code></pre>
+
+  <h3>Recompute a file's score from the open rubric</h3>
+<pre><code>// JavaScript / Node
+const rubric = await fetch('https://pursueufotracker.com/data/scoring-rubric.json').then(r =&gt; r.json());
+const file = await fetch('https://pursueufotracker.com/generated/api/files/nasa-uap-d3a-gemini-7-audio-excerpt-1965.json').then(r =&gt; r.json());
+
+const score = Object.entries(file.score.components).reduce((sum, [k, choice]) =&gt; {
+  const comp = rubric.components[k];
+  return sum + comp.scale[choice] * comp.weight;
+}, 0);
+
+console.log('Recomputed score:', Math.round(score), '/ Published score:', file.score.value);
+// Recomputed score: 72 / Published score: 72</code></pre>
+
+  <h3>Subscribe to new-drop alerts (RSS)</h3>
+<pre><code># Any RSS reader. Examples:
+# Feedly:    https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fpursueufotracker.com%2Fgenerated%2Ffeed.xml
+# Inoreader: https://www.inoreader.com/?add_feed=https%3A%2F%2Fpursueufotracker.com%2Fgenerated%2Ffeed.xml
+# Or visit the feed directly: https://pursueufotracker.com/generated/feed.xml</code></pre>
+
+  <h2>Stability &amp; SLAs</h2>
+
+  <p>This is a personal-budget project, not an enterprise API. That said:</p>
+  <ul style="color:#dfe6ef;line-height:1.85;font-size:16px;padding-left:24px">
+    <li><strong>No rate limits</strong> on these endpoints. Cloudflare handles bandwidth.</li>
+    <li><strong>No auth required.</strong> No API keys, no signups.</li>
+    <li><strong>Schema may change.</strong> Open an issue if you depend on a field and want a heads-up before breaking changes. <a href="https://github.com/FongShuiLabs/pursueufotracker/issues" target="_blank" rel="noopener" style="color:#52b4ff">GitHub issues</a></li>
+    <li><strong>If you build something cool</strong> with these endpoints, tell me. I'd like to feature it on the <a href="/press" style="color:#52b4ff">press page</a>.</li>
+  </ul>
+
+  <div class="note">
+    <strong>For journalists:</strong> if you need a custom data export, a bulk SHA-256 verification report, or anything not covered above, email through the <a href="/press" style="color:#52b4ff">press kit</a>. Turnaround is usually under 24 hours for press inquiries.
+  </div>
+
+  <p style="margin-top:48px;text-align:center"><a href="/" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1px;text-decoration:none">← BACK TO ALL FILES</a></p>
+</main>
+
+<footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
+  <p><a href="/" style="color:#52b4ff">PURSUE Tracker home</a> &middot; <a href="/methodology" style="color:#52b4ff">Methodology</a> &middot; <a href="/press" style="color:#52b4ff">Press kit</a> &middot; <a href="/revisions" style="color:#52b4ff">Revisions</a> &middot; <a href="https://github.com/FongShuiLabs/pursueufotracker" target="_blank" rel="noopener" style="color:#52b4ff">GitHub</a></p>
+</footer>
+</body>
+</html>

@@ -165,6 +165,17 @@
   </a>
   {% endif %}
 
+  {% if f.id == 'nasa-uap-d3a-gemini-7-audio-excerpt-1965' %}
+  <a href="/borman-incident" style="display:flex;gap:14px;align-items:center;margin-top:18px;padding:16px 20px;background:linear-gradient(135deg,rgba(82,255,180,.1),rgba(82,180,255,.06));border:1px solid rgba(82,255,180,.3);border-radius:8px;text-decoration:none">
+    <span style="font-size:22px">📖</span>
+    <span style="flex:1">
+      <strong style="color:#fff;display:block;font-size:15px;margin-bottom:2px">Deep dive: The Borman Incident</strong>
+      <span style="color:#a8b8cc;font-size:13px">Why this 6-minute audio scored 72 - the highest in the archive</span>
+    </span>
+    <span style="color:#52ffb4;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px">READ →</span>
+  </a>
+  {% endif %}
+
   {# Share strip - one of the biggest organic distribution levers #}
   {% set share_url = canonical_url %}
   {% set share_title = f.title ~ ' (Anomalousness Index: ' ~ ((f.score and f.score.value) or 'see methodology') ~ '/100) - PURSUE UFO Tracker' %}

@@ -3,8 +3,10 @@
 /feed /generated/feed.xml 301
 /rss /generated/feed.xml 301
 /files/* /generated/files/:splat 200
-/api /generated/api/files.json 301
+/api /generated/api.html 200
+/api/ /generated/api.html 200
 /api/files /generated/api/files.json 301
+/api/files.json /generated/api/files.json 301
 /verdict /generated/verdict.html 200
 /verdict/ /generated/verdict.html 200
 /top10 /generated/top-10.html 200
@@ -28,6 +30,8 @@
 /timeline/ /generated/timeline.html 200
 /random /generated/random.html 200
 /random/ /generated/random.html 200
+/borman-incident /generated/borman-incident.html 200
+/borman-incident/ /generated/borman-incident.html 200
 /fbi-ufo-files/ /generated/categories/fbi-ufo-files.html 200
 /fbi-ufo-files /generated/categories/fbi-ufo-files.html 200
 /military-uap-files/ /generated/categories/military-uap-files.html 200

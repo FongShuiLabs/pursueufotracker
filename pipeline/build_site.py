@@ -258,6 +258,8 @@ def _build_sitemap(manifest: dict) -> None:
         ("/methodology", "0.9", "monthly"),
         ("/search", "0.85", "weekly"),
         ("/timeline", "0.85", "weekly"),
+        ("/borman-incident", "0.9", "monthly"),
+        ("/api", "0.8", "monthly"),
         ("/fbi-ufo-files/", "0.9", "weekly"),
         ("/military-uap-files/", "0.9", "weekly"),
         ("/nasa-ufo-photos/", "0.9", "weekly"),
