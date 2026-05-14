@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random PURSUE UFO File | PURSUE UFO Tracker</title>
+<meta name="description" content="Random file picker - jumps you to a random Trump PURSUE UAP file. Refresh for another.">
+<link rel="canonical" href="https://pursueufotracker.com/random">
+<meta name="robots" content="noindex,follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-ZDj9MJVwqhPZChU5a2Hhx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<style>
+  .rand-page{max-width:560px;margin:0 auto;padding:120px 24px 60px;text-align:center}
+  .rand-page h1{font-size:clamp(28px,4vw,42px);background:linear-gradient(180deg,#fff,#52b4ff);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:18px}
+  .rand-page .lede{font-size:16px;color:#dfe6ef;line-height:1.7;margin-bottom:28px}
+  .spinner{display:inline-block;width:42px;height:42px;border:3px solid rgba(82,180,255,.2);border-top-color:#52b4ff;border-radius:50%;animation:spin .8s linear infinite;margin:18px 0}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .fallback{display:none;padding:18px 24px;background:rgba(82,180,255,.06);border:1px solid rgba(82,180,255,.25);border-radius:8px;margin:24px auto;max-width:420px}
+  .fallback a{color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1px;text-decoration:none}
+  .meta{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#7a92b0}
+</style>
+</head>
+<body>
+<div class="starfield" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<main class="rand-page">
+  <h1>Random file</h1>
+  <p class="lede">Picking one of 164 PURSUE UFO files for you...</p>
+  <div class="spinner" id="spin"></div>
+  <p class="meta" id="status">Loading index...</p>
+  <noscript>
+    <div class="fallback" style="display:block">
+      <p style="color:#dfe6ef;margin-bottom:14px">Random picker needs JavaScript. Try one of these directly:</p>
+      <p><a href="/top-10">Top 10 most anomalous</a> &middot; <a href="/files/nasa-uap-d3a-gemini-7-audio-excerpt-1965">#1 file (Gemini 7)</a> &middot; <a href="/">All files</a></p>
+    </div>
+  </noscript>
+  <div class="fallback" id="fallback">
+    <p style="color:#dfe6ef;margin-bottom:14px">Random picker couldn't load. Try one of these:</p>
+    <p><a href="/top-10">Top 10</a> &middot; <a href="/">All files</a> &middot; <a href="/search">Search</a></p>
+  </div>
+</main>
+
+<script>
+(function(){
+  var $status = document.getElementById('status');
+  var $spin = document.getElementById('spin');
+  var $fb = document.getElementById('fallback');
+  fetch('/generated/timeline.json')
+    .then(function(r){return r.json()})
+    .then(function(data){
+      if (!data || !data.length) throw new Error('empty timeline');
+      var pick = data[Math.floor(Math.random() * data.length)];
+      if (!pick.url) throw new Error('no url on pick');
+      $status.textContent = 'Redirecting to: ' + (pick.title || pick.id);
+      if (window.plausible) plausible('RandomPick', {props: {id: pick.id || ''}});
+      // tiny delay so users see something happened
+      setTimeout(function(){ location.replace(pick.url); }, 350);
+    })
+    .catch(function(e){
+      $spin.style.display = 'none';
+      $status.textContent = 'Could not load: ' + e.message;
+      $fb.style.display = 'block';
+    });
+})();
+</script>
+</body>
+</html>
