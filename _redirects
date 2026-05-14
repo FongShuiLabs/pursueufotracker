@@ -14,8 +14,8 @@
 /top-10/ /generated/top-10 200
 /press /generated/press 200
 /press/ /generated/press 200
-/drops /generated/drops/index 200
-/drops/ /generated/drops/index 200
+/drops /generated/drops/ 200
+/drops/ /generated/drops/ 200
 /revisions /generated/revisions 200
 /revisions/ /generated/revisions 200
 /faq /generated/faq 200
