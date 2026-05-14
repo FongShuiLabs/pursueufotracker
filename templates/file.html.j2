@@ -162,8 +162,13 @@
     {% else %}
       <div style="padding:48px;text-align:center;color:#a8b8cc">
         <p style="font-size:18px;margin-bottom:14px">📡 Mirroring in progress</p>
+        {% if f.source_url %}
         <p style="font-size:14px;margin-bottom:24px">This file is indexed; the HD mirror is being prepared. Direct from war.gov:</p>
         <a href="{{ f.source_url }}" target="_blank" rel="noopener" style="background:#52b4ff;color:#04060d;padding:14px 28px;border-radius:6px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block">View on war.gov ↗</a>
+        {% else %}
+        <p style="font-size:14px;margin-bottom:8px">This file was added by war.gov's May 11 revision. Description and source URL are pending re-sync.</p>
+        <p style="font-size:13px"><a href="https://www.war.gov/UFO/" target="_blank" rel="noopener" style="color:#52b4ff">Browse war.gov/UFO directly ↗</a> &middot; <a href="/revisions" style="color:#52b4ff">Read the revision log</a></p>
+        {% endif %}
       </div>
     {% endif %}
   </div>
@@ -285,7 +290,7 @@
       </a>
       {% endfor %}
     </div>
-    <p style="text-align:center;margin-top:18px"><a href="../../index.html" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1px;text-decoration:none">BROWSE ALL 161 FILES →</a></p>
+    <p style="text-align:center;margin-top:18px"><a href="/" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1px;text-decoration:none">BROWSE ALL 164 FILES →</a></p>
   </section>
   {% endif %}
 
@@ -293,12 +298,16 @@
     <h3 style="color:#fff;margin-bottom:12px">Verification</h3>
     <p style="color:#a8b8cc;font-size:13px;margin-bottom:8px">SHA-256:</p>
     <div class="hash">{{ f.sha256 or '(awaiting HD mirror)' }}</div>
-    <p style="color:#a8b8cc;font-size:13px;margin-top:16px">Source: <a href="{{ f.source_url }}" target="_blank" rel="noopener" style="color:#52b4ff">{{ f.source_url }}</a></p>
+    {% if f.source_url %}
+    <p style="color:#a8b8cc;font-size:13px;margin-top:16px">Source: <a href="{{ f.source_url }}" target="_blank" rel="noopener" style="color:#52b4ff;word-break:break-all">{{ f.source_url }}</a></p>
+    {% else %}
+    <p style="color:#a8b8cc;font-size:13px;margin-top:16px">Source: war.gov/UFO (specific URL pending re-sync after the <a href="/revisions" style="color:#52b4ff">May 11 revision</a>)</p>
+    {% endif %}
   </div>
 </main>
 
 <footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
-  <p>Independent tracker. Not affiliated with the U.S. Department of War. <a href="../../index.html" style="color:#52b4ff">Back to tracker</a></p>
+  <p>Independent tracker. Not affiliated with the U.S. Department of War. <a href="/" style="color:#52b4ff">Back to tracker</a></p>
 </footer>
 </body>
 </html>
