@@ -236,11 +236,12 @@ def _page_html(cat: dict, files: list[dict]) -> str:
   <p class="cat-lede">{cat['intro']}</p>
   <p class="cat-lede">Files below are sorted by <a href="/data/scoring-rubric.json" style="color:#52b4ff">Anomalousness Index</a> (highest evidentiary weight first). Each links to a full detail page with viewer, transcript (for videos), SHA-256 verification, and source link to war.gov.</p>
 
+  <h2 class="sr-only">All files in {cat['h1']}</h2>
   <div class="cat-grid">
 {cards}
   </div>
 
-  <a class="cat-back" href="/">← BACK TO ALL 161 FILES</a>
+  <a class="cat-back" href="/">← BACK TO ALL 164 FILES</a>
 </main>
 
 <footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
