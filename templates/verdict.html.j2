@@ -20,6 +20,10 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", ".lede", "h2", "p.tldr"]
+  },
   "mainEntity": [
     {% for item in qa %}
     {

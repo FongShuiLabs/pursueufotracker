@@ -4,7 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ f.title }} | {{ site_name }}</title>
-<meta name="description" content="{{ f.summary or f.title }} - {{ f.agency }} - PURSUE disclosure file.">
+{% set _desc_score = (f.score and f.score.value) %}
+{% set _desc_loc = (f.geo and f.geo.place) %}
+{% set _desc_summ = (f.summary or '') | trim %}
+{% set _first_sentence = (_desc_summ.split('.')[0] | trim) if _desc_summ else '' %}
+{% set _desc_parts = [] %}
+{% if _desc_score %}{% set _ = _desc_parts.append('Score ' ~ _desc_score ~ '/100 on the Anomalousness Index.') %}{% endif %}
+{% if f.agency %}{% set _ = _desc_parts.append(f.agency ~ ' ' ~ (f.type or 'file') ~ '.') %}{% endif %}
+{% if _desc_loc %}{% set _ = _desc_parts.append('Location: ' ~ _desc_loc ~ '.') %}{% endif %}
+{% if f.date_event and f.date_event != 'date n/a' %}{% set _ = _desc_parts.append('Event date: ' ~ f.date_event ~ '.') %}{% endif %}
+{% if _first_sentence and _first_sentence|length < 110 %}{% set _ = _desc_parts.append(_first_sentence ~ '.') %}{% endif %}
+{% set _ = _desc_parts.append('Indexed and SHA-256 verified against war.gov.') %}
+<meta name="description" content="{{ _desc_parts | join(' ') | truncate(160, killwords=true) }}">
 {% set place = (f.geo and f.geo.place) or '' %}
 <meta name="keywords" content="{{ f.title }}, {{ f.agency }} UFO, {{ f.agency }} UAP, {% if event_year %}{{ event_year }} UFO sighting, {% endif %}{% if place %}{{ place }} UAP, {% endif %}PURSUE {{ f.agency }}, war.gov UFO, Trump UFO{% if event_year %} {{ event_year }}{% endif %}, declassified UAP, AARO file, {{ f.type }} UAP, Anomalousness Index">
 {# Canonical points to extension-less URL - Cloudflare Pages serves it 200 direct
@@ -12,6 +23,8 @@
 {% set canonical_url = site_url ~ '/files/' ~ f.id %}
 {% set og_image_abs = site_url ~ '/generated/og-cards/' ~ f.id ~ '.png' %}
 <link rel="canonical" href="{{ canonical_url }}">
+{% if series_prev %}<link rel="prev" href="{{ site_url }}/files/{{ series_prev.id }}">{% endif %}
+{% if series_next %}<link rel="next" href="{{ site_url }}/files/{{ series_next.id }}">{% endif %}
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{ f.title }}">
@@ -133,7 +146,7 @@
   <div class="viewer">
     {% if serve_url %}
       {% if f.type == 'pdf' %}
-        <iframe src="{{ serve_url }}" title="{{ f.title }}"></iframe>
+        <iframe src="{{ serve_url }}" title="{{ f.title }}" loading="lazy" referrerpolicy="no-referrer"></iframe>
       {% elif f.type == 'video' %}
         <video controls preload="metadata"
           {% if thumb_url %}poster="{{ thumb_url }}"{% endif %}
@@ -239,6 +252,23 @@
 
   {% include "partials/affiliate_sidebar.html.j2" %}
   {% include "partials/support_footer.html.j2" %}
+
+  {% if series_prev or series_next %}
+  <nav aria-label="File series navigation" style="display:flex;gap:12px;justify-content:space-between;margin:40px 0;padding:18px 22px;background:rgba(82,180,255,.04);border:1px solid rgba(82,180,255,.15);border-radius:8px">
+    {% if series_prev %}
+    <a href="/files/{{ series_prev.id }}" rel="prev" style="display:flex;align-items:center;gap:10px;color:#dfe6ef;text-decoration:none;font-size:14px;flex:1">
+      <span style="font-family:'JetBrains Mono',monospace;color:#52b4ff;font-size:13px">◀ PREVIOUS</span>
+      <span style="color:#a8b8cc">{{ series_prev.title[:60] }}{% if series_prev.title|length > 60 %}...{% endif %}</span>
+    </a>
+    {% else %}<span></span>{% endif %}
+    {% if series_next %}
+    <a href="/files/{{ series_next.id }}" rel="next" style="display:flex;align-items:center;gap:10px;color:#dfe6ef;text-decoration:none;font-size:14px;flex:1;justify-content:flex-end">
+      <span style="color:#a8b8cc;text-align:right">{{ series_next.title[:60] }}{% if series_next.title|length > 60 %}...{% endif %}</span>
+      <span style="font-family:'JetBrains Mono',monospace;color:#52b4ff;font-size:13px">NEXT ▶</span>
+    </a>
+    {% else %}<span></span>{% endif %}
+  </nav>
+  {% endif %}
 
   {% if related_files %}
   <section style="margin:48px 0;padding:32px;background:rgba(82,180,255,.04);border:1px solid rgba(82,180,255,.15);border-radius:10px">

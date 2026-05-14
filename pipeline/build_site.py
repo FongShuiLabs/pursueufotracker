@@ -43,6 +43,33 @@ def _build_env() -> Environment:
     )
 
 
+_SERIES_RE = re.compile(r"^(.+?)[-_]section[-_]?(\d+)$", re.IGNORECASE)
+
+
+def _series_neighbors(f: dict, all_files: list[dict]) -> tuple[dict | None, dict | None]:
+    """If this file is part of a paginated series (e.g. FBI 62-HQ-83894-section-N),
+    return (prev, next) file dicts for rel=prev/next link tags. Else (None, None)."""
+    m = _SERIES_RE.match(f.get("id", ""))
+    if not m:
+        return None, None
+    base, num_str = m.group(1), m.group(2)
+    try:
+        num = int(num_str)
+    except ValueError:
+        return None, None
+    by_section = {}
+    for g in all_files:
+        gm = _SERIES_RE.match(g.get("id", ""))
+        if gm and gm.group(1) == base:
+            try:
+                by_section[int(gm.group(2))] = g
+            except ValueError:
+                continue
+    prev_f = by_section.get(num - 1) if (num - 1) in by_section else None
+    next_f = by_section.get(num + 1) if (num + 1) in by_section else None
+    return prev_f, next_f
+
+
 def _related_files(f: dict, all_files: list[dict], limit: int = 6) -> list[dict]:
     """Pick files in the same category as f, ranked by score desc, excluding self.
     Falls back to same agency if category is too small."""
@@ -95,6 +122,7 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
     for f in all_files:
         out = GEN_FILES / f"{f['id']}.html"
         size_h = _human_size(f.get("size_bytes"))
+        prev_f, next_f = _series_neighbors(f, all_files)
         ctx = {
             "f": f,
             "size_human": size_h,
@@ -108,6 +136,8 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
             "enable_ads": ENABLE_ADS,
             "adsense_client_id": ADSENSE_CLIENT_ID,
             "related_files": _related_files(f, all_files),
+            "series_prev": prev_f,
+            "series_next": next_f,
         }
         out.write_text(tpl.render(**ctx), encoding="utf-8")
 
@@ -233,20 +263,23 @@ def _build_video_sitemap(manifest: dict) -> None:
 
 def _build_sitemap_index() -> None:
     """Sitemap index lets us submit one URL that points to both sitemaps."""
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-             f"<sitemap><loc>{SITE_URL}/sitemap.xml</loc></sitemap>",
-             f"<sitemap><loc>{SITE_URL}/video-sitemap.xml</loc></sitemap>",
+             f"<sitemap><loc>{SITE_URL}/sitemap.xml</loc><lastmod>{today}</lastmod></sitemap>",
+             f"<sitemap><loc>{SITE_URL}/video-sitemap.xml</loc><lastmod>{today}</lastmod></sitemap>",
              "</sitemapindex>"]
     (ROOT / "sitemap-index.xml").write_text("\n".join(parts), encoding="utf-8")
 
 
 def _build_sitemap(manifest: dict) -> None:
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    # Homepage
-    parts.append(f"<url><loc>{SITE_URL}/</loc><priority>1.0</priority><changefreq>daily</changefreq></url>")
-    # High-value editorial pages
+    # Homepage - lastmod = today (rebuilt frequently)
+    parts.append(f"<url><loc>{SITE_URL}/</loc><lastmod>{today}</lastmod>"
+                 f"<priority>1.0</priority><changefreq>daily</changefreq></url>")
+    # High-value editorial pages - lastmod = today (rebuilt with site)
     for path, prio, freq in [
         ("/generated/verdict.html", "0.95", "weekly"),
         ("/generated/top-10.html", "0.95", "weekly"),
@@ -265,21 +298,28 @@ def _build_sitemap(manifest: dict) -> None:
         ("/nasa-ufo-photos/", "0.9", "weekly"),
         ("/state-department-uap-cables/", "0.9", "weekly"),
     ]:
-        parts.append(f"<url><loc>{SITE_URL}{path}</loc><priority>{prio}</priority><changefreq>{freq}</changefreq></url>")
-    # Drop detail pages
+        parts.append(f"<url><loc>{SITE_URL}{path}</loc><lastmod>{today}</lastmod>"
+                     f"<priority>{prio}</priority><changefreq>{freq}</changefreq></url>")
+    # Drop detail pages - lastmod = drop date
     drop_dir = ROOT / "generated" / "drops"
     if drop_dir.exists():
         for drop_html in sorted(drop_dir.glob("*.html")):
             if drop_html.name == "index.html":
                 continue
+            # Extract date from filename like 2026-05-08-drop-01.html
+            m = re.match(r"(\d{4}-\d{2}-\d{2})", drop_html.name)
+            lastmod = m.group(1) if m else today
             parts.append(
                 f"<url><loc>{SITE_URL}/generated/drops/{html.escape(drop_html.name)}</loc>"
+                f"<lastmod>{lastmod}</lastmod>"
                 f"<priority>0.85</priority><changefreq>monthly</changefreq></url>"
             )
-    # File detail pages
+    # File detail pages - lastmod = date_released (or today if missing)
     for f in manifest["files"]:
+        lastmod = f.get("date_released") or today
         parts.append(
             f"<url><loc>{SITE_URL}/files/{html.escape(f['id'])}</loc>"
+            f"<lastmod>{lastmod}</lastmod>"
             f"<priority>0.8</priority><changefreq>monthly</changefreq></url>"
         )
     parts.append("</urlset>")
