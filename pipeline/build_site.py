@@ -279,12 +279,15 @@ def _build_sitemap(manifest: dict) -> None:
     # Homepage - lastmod = today (rebuilt frequently)
     parts.append(f"<url><loc>{SITE_URL}/</loc><lastmod>{today}</lastmod>"
                  f"<priority>1.0</priority><changefreq>daily</changefreq></url>")
-    # High-value editorial pages - lastmod = today (rebuilt with site)
+    # High-value editorial pages - lastmod = today (rebuilt with site).
+    # ALL URLs are extension-less canonical forms that serve 200 direct
+    # (no redirect chains). The /pretty alias and /generated/X both serve
+    # the same content; we choose the pretty form in the sitemap.
     for path, prio, freq in [
-        ("/generated/verdict.html", "0.95", "weekly"),
-        ("/generated/top-10.html", "0.95", "weekly"),
-        ("/generated/press.html", "0.85", "monthly"),
-        ("/generated/drops/index.html", "0.9", "weekly"),
+        ("/verdict", "0.95", "weekly"),
+        ("/top-10", "0.95", "weekly"),
+        ("/press", "0.85", "monthly"),
+        ("/drops", "0.9", "weekly"),
         ("/revisions", "0.9", "weekly"),
         ("/faq", "0.85", "monthly"),
         ("/glossary", "0.85", "monthly"),
@@ -300,17 +303,17 @@ def _build_sitemap(manifest: dict) -> None:
     ]:
         parts.append(f"<url><loc>{SITE_URL}{path}</loc><lastmod>{today}</lastmod>"
                      f"<priority>{prio}</priority><changefreq>{freq}</changefreq></url>")
-    # Drop detail pages - lastmod = drop date
+    # Drop detail pages - lastmod = drop date. Extension-less canonical.
     drop_dir = ROOT / "generated" / "drops"
     if drop_dir.exists():
         for drop_html in sorted(drop_dir.glob("*.html")):
             if drop_html.name == "index.html":
                 continue
-            # Extract date from filename like 2026-05-08-drop-01.html
+            stem = drop_html.stem  # filename without .html
             m = re.match(r"(\d{4}-\d{2}-\d{2})", drop_html.name)
             lastmod = m.group(1) if m else today
             parts.append(
-                f"<url><loc>{SITE_URL}/generated/drops/{html.escape(drop_html.name)}</loc>"
+                f"<url><loc>{SITE_URL}/generated/drops/{html.escape(stem)}</loc>"
                 f"<lastmod>{lastmod}</lastmod>"
                 f"<priority>0.85</priority><changefreq>monthly</changefreq></url>"
             )
