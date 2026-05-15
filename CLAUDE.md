@@ -4,7 +4,8 @@
 
 ## Always read first
 
-**Before doing anything on this project, read `.claude/accounts.md`** (local-only, gitignored). It lists which email / account / key owns which service (GitHub, Bing Webmaster, Cloudflare, IndexNow, AdSense, etc.) so you don't ask Anthony the same questions twice.
+1. **`.claude/accounts.md`** (local-only, gitignored). Account inventory: which email / account / key owns which service (GitHub, Bing Webmaster, Cloudflare, IndexNow, Plausible, GSC, etc.) so you don't ask Anthony the same questions twice.
+2. **`INCOME_PLAN.md` top section** — locked launch deadlines (as of 2026-05-15). If any deadline has slipped >24 hours without explicit reschedule, surface it to Anthony at session start.
 
 If `.claude/accounts.md` doesn't exist on this machine, ask Anthony to recreate it from the most recent session that had it.
 

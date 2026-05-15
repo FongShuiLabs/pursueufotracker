@@ -1,6 +1,70 @@
 # Income Plan for pursueufotracker.com
 
-Honest, sequenced, with realistic dollar ranges. The site is in technically excellent shape — the bottleneck is now traffic and activation.
+> **LAUNCH DEADLINES LOCKED 2026-05-15.** See section directly below. Future Claude sessions: ping Anthony if any deadline slips by >24 hours without explicit reschedule.
+
+---
+
+## 🔒 Launch deadlines (locked 2026-05-15, Fri)
+
+Today: Fri **2026-05-15**. Drop 02 expected ~**2026-06-07** (23 days out). Need 7-14 days of signals accumulating BEFORE Drop 02 surge for Google ranking authority to compound. Hard launch by Mon May 18.
+
+### Pre-launch (this weekend)
+
+| Date | Action | Who | Status |
+|---|---|---|---|
+| **Sat May 16 EOD** | Substack signup at `pursueufotracker.substack.com`. Send URL to Claude. | Anthony | ⏳ |
+| **Sat May 16 EOD** | Amazon Associates apply at https://affiliate-program.amazon.com. Send tag. | Anthony | ⏳ |
+| **Sun May 17 EOD** | PAT workflow scope updated (see Option B at https://github.com/settings/tokens). Tell Claude when done. | Anthony | ⏳ |
+| **Sun May 17 evening** | Wire Substack form + Amazon tag, push, IndexNow ping. Push workflow YAML. Pre-launch verify. | Claude | ⏳ |
+
+### Launch day (Mon May 18) - the big lever
+
+| Time (ET) | Action | Who | Status |
+|---|---|---|---|
+| **9-10 AM** | **Reddit r/UFOs primary launch** (title + body in [DISTRIBUTION.md](DISTRIBUTION.md)). Post type: text post NOT link post. | Anthony | ⏳ |
+| **9-11 AM** | Reply to first wave of Reddit comments within 1 hour. Pin methodology link. | Anthony | ⏳ |
+| **11 AM** | Hacker News "Show HN" submission + post anchor comment immediately ([DISTRIBUTION.md](DISTRIBUTION.md)) | Anthony | ⏳ |
+| **noon** | X 8-tweet thread. Tag @ross_coulthart @LueElizondo @TheDebrief at tweet 8. | Anthony | ⏳ |
+| **1 PM** | Send 4 journalist pitch emails: Coulthart, Knapp, Bender/McMillan, Sprague. Templates ready. | Anthony | ⏳ |
+| **All day** | Claude monitors Plausible + watches for deploy/comment bugs. Real-time bug-fix on standby. | Claude | ⏳ |
+
+### Amplification (Tue May 19 - Fri May 22)
+
+| Date | Action | Who | Status |
+|---|---|---|---|
+| Tue-Fri | Reply to Reddit/HN comments within 1 hour during US morning + afternoon. | Anthony | ⏳ |
+| **Wed May 20** | Staggered post: r/aliens (DIFFERENT title, see DISTRIBUTION.md variants) | Anthony | ⏳ |
+| **Fri May 22** | Staggered post: r/HighStrangeness (different title) | Anthony | ⏳ |
+
+### Pre-Drop-02 (week of May 25 / week of Jun 1)
+
+| Date | Action | Who | Status |
+|---|---|---|---|
+| **Wed May 27** | Staggered post: r/UFOscience (more technical angle) | Anthony | ⏳ |
+| **Wed Jun 3** | Pre-Drop-02 X/Reddit reminder: "Drop 02 expected in 4 days, here's how we'll catch it" | Anthony | ⏳ |
+| Week of Jun 1 | Claude pre-drafts Drop 02 reaction post template | Claude | ⏳ |
+
+### Drop 02 event (real-time, ~Jun 7)
+
+| Trigger | Action | Who |
+|---|---|---|
+| Auto-poller fires `[NEW DROP]` issue | Anthony pulls latest, runs `python -m pipeline.run all` | Anthony |
+| Pipeline finishes | Anthony pushes; Cloudflare auto-deploys | Anthony |
+| Site reflects Drop 02 | Anthony posts Reddit/X reaction within 4 hours of war.gov release | Anthony |
+| Same day | Send "Drop 02 indexed, here's what changed" email to journalist list | Anthony |
+
+### Hard vs soft
+
+- **HARD (non-negotiable):** Substack by Sat 5/16, Reddit launch by Mon 5/18
+- **SOFT (still high value):** Amazon tag, PAT scope, X thread
+
+### Reschedule rule
+
+Any deadline slip > 24 hours without explicit reschedule = future Claude session asks Anthony why and what the new date is. No silent drift.
+
+---
+
+Honest, sequenced, with realistic dollar ranges. The site is in technically excellent shape; the bottleneck is now traffic and activation.
 
 **Current state** as of 2026-05-14:
 - 18 Google search clicks in 5 days, pre-launch
