@@ -1,5 +1,5 @@
 {
-  "last_polled_at": "2026-05-16T11:33:29Z",
+  "last_polled_at": "2026-05-16T15:39:03Z",
   "last_change_at": "2026-05-12T23:19:37Z",
   "csv_sha256": "0d7e9ba1d51cded2d4839aac3b65d9ff14f56861c8338a57bbef50c8071d6731",
   "html_sha256": "a27473e9160833bd88d9f8c2e2dbe08ca305e15d908f16bbb20a51e0e45eaf8b",
@@ -63,6 +63,6 @@
       "trigger": "html-fallback"
     }
   ],
-  "consecutive_csv_failures": 16,
+  "consecutive_csv_failures": 17,
   "csv_stuck_alerted": true
 }
