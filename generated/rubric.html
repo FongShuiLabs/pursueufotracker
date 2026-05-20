@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Anomalousness Index Rubric (Open JSON, Human-Readable) | PURSUE UFO Tracker</title>
+<meta name="description" content="The full open scoring rubric used by PURSUE UFO Tracker. Six weighted components, every enumerated value, exact integer score for each, worked examples. NOT a probability of aliens.">
+<meta name="keywords" content="UFO scoring rubric, Anomalousness Index, UAP evidentiary weight, PURSUE methodology, open JSON rubric, UFO file scoring">
+<link rel="canonical" href="https://pursueufotracker.com/rubric">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Anomalousness Index Rubric: Open, Auditable, Recomputable">
+<meta property="og:description" content="Six weighted components. Every value enumerated. Worked examples. NOT a probability of aliens.">
+<meta property="og:url" content="https://pursueufotracker.com/rubric">
+<meta property="og:image" content="https://pursueufotracker.com/og-cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pursueufotracker.com/og-cover.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "The Anomalousness Index Rubric",
+  "description": "Open six-component scoring rubric for the Trump PURSUE UFO files.",
+  "datePublished": "2026-05-08",
+  "dateModified": "2026-05-20",
+  "author": {"@type": "Organization", "name": "PURSUE UFO Tracker"},
+  "publisher": {"@type": "Organization", "name": "PURSUE UFO Tracker", "logo": {"@type": "ImageObject", "url": "https://pursueufotracker.com/og-cover.svg"}},
+  "mainEntityOfPage": "https://pursueufotracker.com/rubric"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-ZDj9MJVwqhPZChU5a2Hhx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<style>
+  .rub-page{max-width:920px;margin:0 auto;padding:60px 24px}
+  .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#7a92b0;margin-bottom:24px}
+  .breadcrumb a{color:#52b4ff;text-decoration:none}
+  .rub-page h1{font-size:clamp(32px,4.5vw,52px);background:linear-gradient(180deg,#fff,#52b4ff);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.01em;margin-bottom:14px}
+  .lede{font-size:18px;color:#dfe6ef;line-height:1.75;margin-bottom:20px}
+  .raw-link{display:inline-block;padding:10px 18px;background:rgba(82,180,255,.08);border:1px solid rgba(82,180,255,.3);border-radius:6px;color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.5px;text-decoration:none;margin:8px 8px 24px 0}
+  .raw-link:hover{background:#52b4ff;color:#04060d}
+  .warning{background:rgba(255,180,82,.06);border:1px solid rgba(255,180,82,.25);padding:16px 20px;border-radius:8px;margin:20px 0 36px}
+  .warning strong{color:#ffd494}
+  .comp{margin:40px 0;padding:24px;background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.15);border-radius:10px}
+  .comp-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;flex-wrap:wrap;gap:10px}
+  .comp-head h2{color:#fff;font-size:22px;margin:0}
+  .weight-pill{font-family:'JetBrains Mono',monospace;font-size:12px;color:#52ffb4;background:rgba(82,255,180,.1);padding:5px 12px;border-radius:4px;letter-spacing:1px;border:1px solid rgba(82,255,180,.3)}
+  .comp-key{font-family:'JetBrains Mono',monospace;font-size:12px;color:#7a92b0;margin:0 0 14px}
+  .comp-key code{color:#7ac6ff;background:rgba(82,180,255,.08);padding:2px 6px;border-radius:3px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid rgba(82,180,255,.12);vertical-align:top}
+  th{color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:500}
+  td{color:#dfe6ef}
+  td code{font-family:'JetBrains Mono',monospace;font-size:12px;color:#7ac6ff;background:rgba(82,180,255,.06);padding:2px 6px;border-radius:3px}
+  td.v{font-family:'JetBrains Mono',monospace;color:#52ffb4;text-align:right;font-weight:700}
+  th.v{text-align:right}
+  .preset{margin:24px 0;padding:20px 24px;background:rgba(82,255,180,.04);border:1px solid rgba(82,255,180,.2);border-radius:8px}
+  .preset h3{color:#52ffb4;font-size:17px;margin:0 0 12px;font-family:'Space Grotesk',sans-serif}
+  .preset .total td{border-bottom:none;padding-top:14px;border-top:2px solid rgba(82,255,180,.3)}
+</style>
+</head>
+<body>
+<div class="starfield" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<main class="rub-page">
+  <div class="breadcrumb"><a href="/">PURSUE Tracker</a> &nbsp;/&nbsp; The Rubric</div>
+  <h1>The Anomalousness Index Rubric</h1>
+  <p class="lede">Open. Auditable. Recomputable. Six weighted components, every enumerated value listed, exact integer score for each. The math is fully visible.</p>
+
+  <a class="raw-link" href="/data/scoring-rubric.json" target="_blank" rel="noopener">View raw JSON</a>
+  <a class="raw-link" href="/methodology">Methodology walkthrough</a>
+
+  <div class="warning">
+    <strong>What this rubric is NOT.</strong> It is not a probability of extraterrestrial origin. That number is not honestly computable from these files. Anyone publishing such a number is selling you something. The rubric reflects evidentiary weight that an encounter remains <em>unexplained after conventional analysis</em>.
+  </div>
+
+  <p style="color:#a8b8cc;font-size:14px;line-height:1.7">Formula: <code style="background:rgba(82,180,255,.08);padding:3px 8px;border-radius:3px;color:#7ac6ff">score = sum(component_value &times; component_weight)</code>, clamped to 0-100. Weights sum to 1.00.</p>
+
+  <h2 style="color:#fff;font-size:24px;margin:48px 0 0">The six components</h2>
+
+  <section class="comp">
+    <div class="comp-head">
+      <h2>Sensor quality</h2>
+      <span class="weight-pill">Weight 0.25</span>
+    </div>
+    <p class="comp-key">JSON key: <code>sensor_quality</code></p>
+    <table>
+      <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
+      <tbody>
+        <tr><td>Multi-sensor military</td><td><code>multi_sensor_military</code></td><td class="v">100</td></tr>
+        <tr><td>Single-sensor military</td><td><code>single_sensor_military</code></td><td class="v">80</td></tr>
+        <tr><td>Civilian aviation</td><td><code>civilian_aviation</code></td><td class="v">65</td></tr>
+        <tr><td>Photographic</td><td><code>photographic</code></td><td class="v">55</td></tr>
+        <tr><td>Eyewitness only</td><td><code>eyewitness_only</code></td><td class="v">30</td></tr>
+        <tr><td>Sketch only</td><td><code>sketch_only</code></td><td class="v">15</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="comp">
+    <div class="comp-head">
+      <h2>Witness credibility</h2>
+      <span class="weight-pill">Weight 0.2</span>
+    </div>
+    <p class="comp-key">JSON key: <code>witness_credibility</code></p>
+    <table>
+      <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
+      <tbody>
+        <tr><td>Astronaut</td><td><code>astronaut</code></td><td class="v">95</td></tr>
+        <tr><td>Trained aviator</td><td><code>trained_aviator</code></td><td class="v">90</td></tr>
+        <tr><td>Federal agent</td><td><code>federal_agent</code></td><td class="v">90</td></tr>
+        <tr><td>Military personnel</td><td><code>military_personnel</code></td><td class="v">80</td></tr>
+        <tr><td>Law enforcement</td><td><code>law_enforcement</code></td><td class="v">70</td></tr>
+        <tr><td>Credentialed civilian</td><td><code>civilian_credentialed</code></td><td class="v">50</td></tr>
+        <tr><td>Anonymous civilian</td><td><code>civilian_anonymous</code></td><td class="v">25</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="comp">
+    <div class="comp-head">
+      <h2>Corroboration</h2>
+      <span class="weight-pill">Weight 0.2</span>
+    </div>
+    <p class="comp-key">JSON key: <code>corroboration</code></p>
+    <table>
+      <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
+      <tbody>
+        <tr><td>Multi-witness, multi-instrument</td><td><code>multi_witness_multi_instrument</code></td><td class="v">100</td></tr>
+        <tr><td>Multi-witness, single-instrument</td><td><code>multi_witness_single_instrument</code></td><td class="v">80</td></tr>
+        <tr><td>Single witness with instrument</td><td><code>single_witness_instrument</code></td><td class="v">60</td></tr>
+        <tr><td>Multi-witness, no instrument</td><td><code>multi_witness_no_instrument</code></td><td class="v">50</td></tr>
+        <tr><td>Single witness only</td><td><code>single_witness_only</code></td><td class="v">25</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="comp">
+    <div class="comp-head">
+      <h2>Kinematic anomaly</h2>
+      <span class="weight-pill">Weight 0.15</span>
+    </div>
+    <p class="comp-key">JSON key: <code>kinematic_anomaly</code></p>
+    <table>
+      <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
+      <tbody>
+        <tr><td>Physically impossible for known craft</td><td><code>physically_impossible_for_known_craft</code></td><td class="v">100</td></tr>
+        <tr><td>Edge of envelope</td><td><code>edge_of_envelope</code></td><td class="v">70</td></tr>
+        <tr><td>Unusual but explainable</td><td><code>unusual_but_explainable</code></td><td class="v">40</td></tr>
+        <tr><td>No kinematic data</td><td><code>no_kinematic_data</code></td><td class="v">30</td></tr>
+        <tr><td>Consistent with known craft</td><td><code>consistent_with_known_craft</code></td><td class="v">10</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="comp">
+    <div class="comp-head">
+      <h2>Mundane explanation availability</h2>
+      <span class="weight-pill">Weight 0.1</span>
+    </div>
+    <p class="comp-key">JSON key: <code>mundane_explanation_available</code></p>
+    <table>
+      <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
+      <tbody>
+        <tr><td>No plausible mundane</td><td><code>no_plausible_mundane</code></td><td class="v">100</td></tr>
+        <tr><td>Weak mundane candidate</td><td><code>weak_mundane_candidate</code></td><td class="v">70</td></tr>
+        <tr><td>Plausible mundane</td><td><code>plausible_mundane</code></td><td class="v">40</td></tr>
+        <tr><td>Strong mundane candidate</td><td><code>strong_mundane_candidate</code></td><td class="v">15</td></tr>
+        <tr><td>Resolved mundane</td><td><code>resolved_mundane</code></td><td class="v">0</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="comp">
+    <div class="comp-head">
+      <h2>Official disposition</h2>
+      <span class="weight-pill">Weight 0.1</span>
+    </div>
+    <p class="comp-key">JSON key: <code>official_disposition</code></p>
+    <table>
+      <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
+      <tbody>
+        <tr><td>Open after review</td><td><code>open_after_review</code></td><td class="v">90</td></tr>
+        <tr><td>Unresolved, no review</td><td><code>unresolved_no_review</code></td><td class="v">60</td></tr>
+        <tr><td>Partial resolution</td><td><code>partial_resolution</code></td><td class="v">40</td></tr>
+        <tr><td>Resolved conventional</td><td><code>resolved_conventional</code></td><td class="v">5</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <h2 style="color:#fff;font-size:24px;margin:48px 0 0">Worked examples (from <code>presets</code>)</h2>
+  <p style="color:#a8b8cc;font-size:14px;margin:14px 0 0">These are example computations from the rubric's <code>presets</code> field. Useful for sanity-checking your own implementation against ours.</p>
+
+  <section class="preset">
+    <h3>Worked example: apollo 12 lunar anomalies</h3>
+    <table>
+      <thead><tr><th>Component</th><th>Choice</th><th class="v">Score contribution</th></tr></thead>
+      <tbody>
+        <tr><td>Sensor quality</td><td>Photographic</td><td class="v">55 &times; 0.25 = <strong>13.75</strong></td></tr>
+        <tr><td>Witness credibility</td><td>Astronaut</td><td class="v">95 &times; 0.2 = <strong>19.0</strong></td></tr>
+        <tr><td>Corroboration</td><td>Multi-witness, single-instrument</td><td class="v">80 &times; 0.2 = <strong>16.0</strong></td></tr>
+        <tr><td>Kinematic anomaly</td><td>No kinematic data</td><td class="v">30 &times; 0.15 = <strong>4.5</strong></td></tr>
+        <tr><td>Mundane explanation availability</td><td>Weak mundane candidate</td><td class="v">70 &times; 0.1 = <strong>7.0</strong></td></tr>
+        <tr><td>Official disposition</td><td>Unresolved, no review</td><td class="v">60 &times; 0.1 = <strong>6.0</strong></td></tr>
+        <tr class="total"><td colspan="2"><strong>Total</strong></td><td class="v"><strong>66</strong></td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="preset">
+    <h3>Worked example: greece 2023 right angle</h3>
+    <table>
+      <thead><tr><th>Component</th><th>Choice</th><th class="v">Score contribution</th></tr></thead>
+      <tbody>
+        <tr><td>Sensor quality</td><td>Single-sensor military</td><td class="v">80 &times; 0.25 = <strong>20.0</strong></td></tr>
+        <tr><td>Witness credibility</td><td>Military personnel</td><td class="v">80 &times; 0.2 = <strong>16.0</strong></td></tr>
+        <tr><td>Corroboration</td><td>Multi-witness, single-instrument</td><td class="v">80 &times; 0.2 = <strong>16.0</strong></td></tr>
+        <tr><td>Kinematic anomaly</td><td>Physically impossible for known craft</td><td class="v">100 &times; 0.15 = <strong>15.0</strong></td></tr>
+        <tr><td>Mundane explanation availability</td><td>No plausible mundane</td><td class="v">100 &times; 0.1 = <strong>10.0</strong></td></tr>
+        <tr><td>Official disposition</td><td>Open after review</td><td class="v">90 &times; 0.1 = <strong>9.0</strong></td></tr>
+        <tr class="total"><td colspan="2"><strong>Total</strong></td><td class="v"><strong>86</strong></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <h2 style="color:#fff;font-size:24px;margin:48px 0 14px">Recompute every score yourself</h2>
+  <p style="color:#dfe6ef;line-height:1.7">Every file's <code>score.components</code> object lists the choice for each component. Apply the rubric above. Multiply, sum, round. Compare to the published <code>score.value</code>. They will match within rounding error. If they don't, the rubric is the source of truth, not the displayed value.</p>
+  <ol style="color:#dfe6ef;line-height:1.85;font-size:15px">
+    <li>Download the rubric: <a href="/data/scoring-rubric.json" style="color:#52b4ff">/data/scoring-rubric.json</a></li>
+    <li>Download the manifest: <a href="/generated/api/files.json" style="color:#52b4ff">/generated/api/files.json</a></li>
+    <li>For each file, look up the <code>score.components</code> values</li>
+    <li>Multiply each by the weight, sum across all six</li>
+    <li>Compare to <code>score.value</code></li>
+  </ol>
+
+  <p style="margin-top:48px;text-align:center"><a href="/" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1px;text-decoration:none">&larr; BACK TO ALL FILES</a></p>
+</main>
+
+<footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
+  <p><a href="/" style="color:#52b4ff">PURSUE Tracker home</a> &middot; <a href="/methodology" style="color:#52b4ff">Methodology</a> &middot; <a href="/top-10" style="color:#52b4ff">Top 10</a> &middot; <a href="/data/scoring-rubric.json" style="color:#52b4ff">Raw JSON</a></p>
+</footer>
+</body>
+</html>
