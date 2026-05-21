@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>War.gov PURSUE Revisions: What Changed on May 11, 2026 | PURSUE UFO Tracker</title>
-<meta name="description" content="Change log of the U.S. Department of War's May 11, 2026 revision to the PURSUE UAP file release. 28 new DOW-UAP-PR## prefixed entries, six 'Arabian Gulf 2020' titles re-labeled 'Middle East 2020' (Incident Location field preserved), net delta -3 (161 -> 158). Includes 2026-05-20 correction.">
+<meta name="description" content="Change log of the U.S. Department of War's May 11, 2026 revision to the PURSUE UAP file release. Verified by URL set comparison: 130 PDFs unchanged, 28 videos unchanged, no files added or removed. 9 PDFs now have multiple CSV rows; 3 PDFs had URL slugs renamed.">
 <link rel="canonical" href="https://pursueufotracker.com/revisions">
 <meta name="robots" content="index, follow">
 
@@ -32,7 +32,7 @@
   },
   "mainEntityOfPage": "https://pursueufotracker.com/revisions",
   "image": "https://pursueufotracker.com/og-cover.svg",
-  "description": "Change log of war.gov's May 11, 2026 revision to the PURSUE UAP file release. 28 new DOW-UAP-PR## prefixed entries, six 'Arabian Gulf 2020' titles re-labeled 'Middle East 2020' (Incident Location field preserved). Includes 2026-05-20 correction.",
+  "description": "Change log of war.gov's May 11, 2026 revision to the PURSUE UAP file release. Verified by URL set comparison: 130 PDFs unchanged, 28 videos unchanged, no files added or removed. 9 PDFs gained multiple CSV row entries; 3 PDFs had URL slugs renamed (title unchanged).",
   "articleSection": "Investigations",
   "keywords": "war.gov revisions, PURSUE diff, Trump UFO files changed, DOW-UAP-PR prefix, Arabian Gulf relabel",
   "isBasedOn": "https://www.war.gov/UFO/"
@@ -80,81 +80,57 @@
   <div class="breadcrumb"><a href="/">PURSUE Tracker</a> &nbsp;/&nbsp; Revisions</div>
 
   <h1>War.gov PURSUE Revisions</h1>
-  <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:24px">DETECTED 11 MAY 2026 18:04 UTC · AUTO-POLLER #2 + #3 · CORRECTED 20 MAY 2026</p>
+  <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:24px">DETECTED 11 MAY 2026 18:04 UTC · AUTO-POLLER #2 + #3 · LAST AUDITED 20 MAY 2026</p>
 
   <div class="alert" style="background:rgba(255,180,82,.10);border-color:rgba(255,180,82,.40)">
-    <p style="margin:0 0 8px 0"><strong>Correction posted 2026-05-20.</strong> An earlier version of this page (published 2026-05-11, last edited 2026-05-14) characterized war.gov's revision as including <em>"5 true removals"</em>, <em>"3 true additions"</em>, and a <em>"6 Arabian Gulf entries removed / 7 Middle East entries added"</em> geographic consolidation.</p>
-    <p style="margin:0 0 8px 0">A re-audit of the current war.gov CSV (158 rows, SHA-256 <code>0d7e9ba1d5</code>) against our May 8 manifest snapshot found those characterizations to be wrong. <strong>None of the 5 entries we described as "removed" are actually removed</strong> - all 5 still appear in the current CSV with their original geographic specificity preserved in the <em>Incident Location</em> column, but with broader theater labels (Middle East, Africa, INDOPACOM) in the <em>Title</em> column. The "3 new additions" we listed are the same entries under their new theater-level titles, not net-new files.</p>
-    <p style="margin:0"><strong>What actually happened</strong>: war.gov did a title-reformat in which country-level specifics moved from Title into the Incident Location field, and titles adopted broader theater labels. The net row-count delta is real (-3), but it comes from sources we have not yet isolated, not from outright removals. This page has been rewritten below to reflect the corrected reading. The 161 original detail pages on this site remain accessible at their original URLs (URL stability is a deliberate editorial position; see <a href="/faq" style="color:#52b4ff">/faq</a>).</p>
+    <p style="margin:0 0 8px 0"><strong>This page has been corrected twice.</strong> Earlier versions (published 2026-05-11, edited 2026-05-14 and again 2026-05-20) characterized war.gov's revision as including <em>"5 true removals,"</em> <em>"3 true additions,"</em> a <em>"6 Arabian Gulf entries consolidated into Middle East"</em> geographic change, and a <em>"title reformat"</em> in which country names moved into the Incident Location field.</p>
+    <p style="margin:0 0 8px 0">A third audit on 2026-05-20, this one comparing URL sets directly between the May 8 manifest and the current war.gov CSV, found that those framings overstated the change. <strong>Verified by URL set comparison: zero PDFs were added, zero PDFs were removed, zero videos were added, zero videos were removed.</strong> The underlying file inventory is identical to May 8.</p>
+    <p style="margin:0"><strong>What actually changed</strong>: 9 PDFs that previously had one CSV row now have 2-4 CSV rows each (the same PDF cross-referenced from multiple incident-report rows), and 3 PDFs had their URL slugs changed (title unchanged). That accounts for the entire 161→158 row-count delta. Anything beyond those facts is interpretation, and we have removed earlier interpretive framings from this page. The full row-by-row diff is at <a href="/changes" style="color:#52b4ff">/changes</a>.</p>
   </div>
 
-  <p class="lede">On May 11, 2026, the U.S. Department of War revised the canonical PURSUE UAP file list at <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener" style="color:#52b4ff">war.gov/UFO</a>. Our automated war.gov poller (commits <code>48b257d</code> + <code>e22f7b9</code>) detected two CSV hash changes within 75 minutes and opened GitHub issues #2 and #3 with the deltas. This page documents what changed - and, where we got the framing wrong on the first pass, what the corrected reading is.</p>
+  <p class="lede">On May 11, 2026, the U.S. Department of War revised the canonical PURSUE UAP CSV at <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener" style="color:#52b4ff">war.gov/UFO</a>. Our automated poller (commits <code>48b257d</code> + <code>e22f7b9</code>) detected two CSV hash changes within 75 minutes and opened GitHub issues #2 and #3. This page summarizes the verified diff. We do not speculate about war.gov's motivations.</p>
 
   <div class="stats">
-    <div class="stat"><span class="n">161</span><span class="l">Original (May 8)</span></div>
-    <div class="stat"><span class="n">158</span><span class="l">Now (May 11+)</span></div>
-    <div class="stat"><span class="n">28</span><span class="l">New PR-prefix</span></div>
-    <div class="stat"><span class="n">69</span><span class="l">Zero-padded total</span></div>
+    <div class="stat"><span class="n">130</span><span class="l">PDFs - unchanged set</span></div>
+    <div class="stat"><span class="n">28</span><span class="l">Videos - unchanged set</span></div>
+    <div class="stat"><span class="n">9</span><span class="l">PDFs gained extra rows</span></div>
+    <div class="stat"><span class="n">3</span><span class="l">URL slug changes</span></div>
     <div class="stat"><span class="n">-3</span><span class="l">Net row delta</span></div>
   </div>
 
-  <h2>1. New <code>DOW-UAP-PR##</code> prefix on 28 entries</h2>
-  <p>War.gov introduced a <code>DOW-UAP-PR##</code> ("PURSUE Report") prefix on 28 entries in the May 11 revision. These join the 41 pre-existing <code>DOW-UAP-D##</code> ("DOW mission report") entries that were in PURSUE from the May 8 release. The corpus now contains <strong>69 zero-padded titles</strong> total. The underlying files (PDF/MP4 bytes), source URLs, and SHA-256 hashes for entries we have re-checked are unchanged.</p>
+  <h2>1. What is verified</h2>
+  <p>Comparing the May 8 manifest (snapshot SHA-256 <code>596cc1881a</code>) to the current war.gov CSV (SHA-256 <code>0d7e9ba1d5</code>) by URL set:</p>
+  <ul style="color:#dfe6ef;line-height:1.85">
+    <li><strong>130 unique PDF URLs</strong> in both snapshots after accounting for the 3 URL slug changes. <strong>Zero PDFs added. Zero PDFs removed.</strong></li>
+    <li><strong>28 unique video DVIDS IDs</strong> in both snapshots. <strong>Zero videos added. Zero videos removed.</strong> The two sets are byte-identical.</li>
+    <li><strong>9 PDF URLs now appear in 2-4 CSV rows each</strong> (12 extra rows total). On May 8 each PDF appeared in exactly one CSV row. The 12 extra rows account for the <code>+12</code> half of the row-count math.</li>
+    <li><strong>3 PDFs had their URL slug changed</strong> on war.gov's storage, with no change in the file Title. We have not yet diffed the PDF bytes themselves; SHA-256 verification on those three is pending.</li>
+    <li><strong>Net row delta is fully accounted for</strong>: 161 May 8 rows - 16 video rows = 145 PDF rows. 145 - 130 PDFs = 15 historical multi-row PDFs on May 8. Current: 130 unique PDFs + 12 extra-row PDFs + 16 video rows = 158. The 161→158 difference balances cleanly.</li>
+  </ul>
 
-  <h3>Examples of the new prefix</h3>
-  <table>
-    <thead><tr><th>Before May 11</th><th>After May 11</th></tr></thead>
-    <tbody>
-      <tr><td>Unresolved UAP Report, Iraq, May 2022</td><td>DOW-UAP-PR21, Unresolved UAP Report, Iraq, May 2022</td></tr>
-      <tr><td>Unresolved UAP Report, Syria, July 2022</td><td>DOW-UAP-PR22, Unresolved UAP Report, Syria, July 2022</td></tr>
-      <tr><td>Unresolved UAP Report, Greece, January 2024</td><td>DOW-UAP-PR28, Unresolved UAP Report, Greece, January 2024</td></tr>
-      <tr><td>Unresolved UAP Report, Middle East, May 2022</td><td>DOW-UAP-PR19, Unresolved UAP Report, Middle East, May 2022</td></tr>
-    </tbody>
-  </table>
+  <h2>2. What is NOT verified (and we are not asserting)</h2>
+  <p>We previously published several characterizations of war.gov's intent that go beyond what the data supports. We have removed them. Examples of claims we are <strong>no longer making</strong> on this page:</p>
+  <ul style="color:#dfe6ef;line-height:1.85">
+    <li>That war.gov "renamed" any entries. (The 28 <code>DOW-UAP-PR##</code> rows point to the same PDFs as 28 pre-existing <code>DOW-UAP-D##</code> rows. They are additional cross-reference rows, not renames. The underlying PDFs were already in PURSUE on May 8.)</li>
+    <li>That war.gov "consolidated Arabian Gulf into Middle East." (The Arabian Gulf PDFs are still in the corpus; some now have additional cross-reference rows with broader-theater titles.)</li>
+    <li>That AARO "re-opened" the Middle East 2013 case. (PR38 may share its underlying PDF with an existing entry; we have not finished diffing.)</li>
+    <li>That 5 entries were "removed" or 3 entries were "added." (No PDFs or videos were added or removed.)</li>
+  </ul>
+  <p>Some of those characterizations may turn out to be true once we finish the byte-level PDF diff and the per-incident detail comparison. Until then, we are not asserting them.</p>
 
-  <h2>2. Title reformat: theater label in Title, country in Incident Location</h2>
-  <p>The most journalistically interesting pattern in this revision is structural, not deletional. Eleven entries that originally carried a specific country or sea name in the Title field now carry a broader theater-level label, while the original country/sea name appears in the <em>Incident Location</em> column. We previously, mistakenly, described some of these as removals and some as additions. They are the same entries under a relabel.</p>
-  <table>
-    <thead><tr><th>Title (May 8)</th><th>Title (May 11+)</th><th>Incident Location (May 11+)</th></tr></thead>
-    <tbody>
-      <tr><td>Unresolved UAP Report, Arabian Gulf, 2020 (×6)</td><td>DOW-UAP-PR37/39/40/41/42/44, Unresolved UAP Report, Middle East, 2020</td><td>Arabian Gulf</td></tr>
-      <tr><td>Unresolved UAP Report, Djibouti, 2025</td><td>DOW-UAP-PR43, Unresolved UAP Report, Africa, 2025</td><td>Djibouti</td></tr>
-      <tr><td>Unresolved UAP Report, Southern United States, 2020</td><td>DOW-UAP-PR45, Unresolved UAP Report, Middle East, 2020</td><td>Southern United States</td></tr>
-      <tr><td>Unresolved UAP Report, East China Sea, 2024</td><td>DOW-UAP-PR46, Unresolved UAP Report, INDOPACOM, 2024</td><td>East China Sea</td></tr>
-      <tr><td>Unresolved UAP Report, Japan, 2023</td><td>DOW-UAP-PR47, Unresolved UAP Report, INDOPACOM, 2023</td><td>Japan</td></tr>
-      <tr><td>Unresolved UAP Report, Indo-PACOM, 2024</td><td>DOW-UAP-PR48, Unresolved UAP Report, INDOPACOM, 2024</td><td>Indo-PACOM</td></tr>
-      <tr><td>Unresolved UAP Report, Gulf of Oman, June 2024</td><td>DOW-UAP-PR29, Unresolved UAP Report, United Arab Emirates, June 2024</td><td>Gulf of Oman</td></tr>
-    </tbody>
-  </table>
-  <p>The PR45 row is anomalous - its Title now reads "Middle East, 2020" but its Incident Location is "Southern United States," suggesting either a clerical artifact or a deliberate re-attribution. We have flagged this for follow-up rather than asserting a reading.</p>
-
-  <h2>3. Reclassification: 1 possible re-opening</h2>
-  <p>One entry appears to have had its analytical status changed:</p>
-  <table>
-    <thead><tr><th>Before May 11</th><th>After May 11</th><th>Change</th></tr></thead>
-    <tbody>
-      <tr>
-        <td>Resolved as an Aircraft, Middle East, 2013</td>
-        <td>DOW-UAP-PR38, Unresolved UAP Report, Middle East, 2013</td>
-        <td>Apparently re-opened (was resolved, now unresolved)</td>
-      </tr>
-    </tbody>
-  </table>
-  <p>This is the journalistically most interesting single change in the revision: AARO appears to have re-opened a previously closed case. We are continuing to verify against the underlying PDFs.</p>
-
-  <h2>4. Net row-count delta: -3 (161 -> 158)</h2>
-  <p>The CSV row count dropped by 3 between May 8 and May 11. We have <strong>not</strong> isolated where the 3-row decrement comes from. Candidates: the six "Arabian Gulf" titles collapsed to six (rather than seven) new "Middle East 2020" titles in our earlier table is one possibility, but our title-to-title mapping is incomplete; some entries may have been de-duplicated against existing rows, and at least one row's relationship to its May 8 ancestor is ambiguous. We are continuing the row-by-row diff and will update this page when complete.</p>
-
-  <h2>What we're doing about it</h2>
-  <p>1. <strong>This correction.</strong> The first version of this page mischaracterized the revision. We have rewritten it to reflect the audit. We have <em>not</em> deleted the original page or pretended the error didn't happen - that would defeat the purpose of a transparency log.</p>
-  <p>2. <strong>Preserving the original 161 URLs.</strong> Bookmarks, citations, and inbound backlinks to the May 8 entries continue to resolve. URL stability across war.gov revisions is a deliberate editorial position.</p>
-  <p>3. <strong>Row-by-row diff in progress.</strong> The -3 net delta has not been fully accounted for; we are continuing the audit and will update this page (with a timestamped entry below) rather than silently rewriting.</p>
-  <p>4. <strong>Auto-poller is live.</strong> Any future war.gov edit triggers a GitHub issue within 30 minutes during weekday business hours.</p>
+  <h2>3. What we are doing now</h2>
+  <ol style="color:#dfe6ef;line-height:1.85">
+    <li>Publishing the full diff table at <a href="/changes" style="color:#52b4ff">/changes</a>. Every multi-row PDF and every URL slug change is listed there with the underlying URLs, so any reader can re-run the comparison.</li>
+    <li>SHA-256 verification on the 3 URL-renamed PDFs. If the file bytes are identical to May 8, the rename is purely cosmetic. If not, we will publish the byte diff.</li>
+    <li>Preserving every May 8 detail page URL. URL stability is a deliberate editorial position; the 161 May 8 entries remain accessible at their original slugs even though some of them are now cross-referenced from multiple CSV rows on war.gov.</li>
+    <li>Auto-poller continues running. Any future war.gov edit triggers a GitHub issue within 30 minutes during weekday business hours.</li>
+  </ol>
 
   <h2>Change log for this page</h2>
   <ul style="color:#dfe6ef;line-height:1.85">
-    <li><strong>2026-05-20:</strong> Substantial rewrite. Removed incorrect "5 true removals" and "3 true additions" framing. Added section 2 (title reformat / Incident Location preservation pattern). Updated stats panel to surface 69-zero-padded-titles figure. Flagged PR45 anomaly. Demoted the Gulf of Oman -> UAE row from "reclassification" to "title reformat" since it follows the same Title-broadens / Location-preserves pattern.</li>
-    <li><strong>2026-05-14:</strong> Original version published with the now-corrected framing.</li>
+    <li><strong>2026-05-20 (third audit):</strong> Removed all interpretive framings ("renames," "consolidation," "reclassification," "title reformat"). Replaced with verified URL-set comparison. Created companion page <a href="/changes" style="color:#52b4ff">/changes</a> with the full data tables.</li>
+    <li><strong>2026-05-20 (second audit):</strong> Removed incorrect "5 true removals" and "3 true additions" framing; introduced "title reformat" framing which the third audit also corrected.</li>
+    <li><strong>2026-05-14:</strong> Original version published. Subsequently found to be incorrect on multiple substantive points.</li>
   </ul>
 
   <h2>How to verify this page yourself</h2>

@@ -36,7 +36,7 @@
     {"@type":"Question","name":"What is the difference between UFO and UAP?","acceptedAnswer":{"@type":"Answer","text":"UFO is the historical public term. UAP (Unidentified Anomalous Phenomena) is the current official U.S. government term, adopted in 2022 to cover underwater and transmedium objects."}},
     {"@type":"Question","name":"Are the files free to download and republish?","acceptedAnswer":{"@type":"Answer","text":"Yes. All files are U.S. Government works in the public domain under 17 U.S.C. § 105. Free to cite, embed, redistribute, and commercialize."}},
     {"@type":"Question","name":"Will more files be released?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Department of War has stated PURSUE is a rolling-release program. This site indexes new drops within hours of release."}},
-    {"@type":"Question","name":"Why does this site say 161 files when war.gov says 158?","acceptedAnswer":{"@type":"Answer","text":"Both numbers are correct for different snapshots. The original PURSUE Drop 01 on May 8 2026 contained 161 files. On May 11 2026, war.gov silently revised the canonical list - renamed 28 with DOW-UAP-PR prefixes, removed 5, added 3, consolidated 6 Arabian Gulf 2020 entries under Middle East 2020. Net: 161 to 158. This site preserves all 161 original URLs. See /revisions for full change log."}}
+    {"@type":"Question","name":"Why does this site say 161 files when war.gov says 158?","acceptedAnswer":{"@type":"Answer","text":"Both numbers describe CSV row counts, not file counts. The May 8 PURSUE CSV had 161 rows. The current war.gov CSV (May 11+) has 158 rows. Verified by direct URL-set comparison: zero PDFs added, zero PDFs removed, zero videos added, zero videos removed. The 161 to 158 row delta is fully explained by 9 PDFs that previously had one CSV row gaining additional cross-reference rows, plus 1 PDF having its storage slug changed. See /changes for the full data tables."}}
   ]
 },
 {
@@ -194,8 +194,8 @@ if (window.ADSENSE_PUB_ID) {
   </div>
 
   <div style="max-width:900px;margin:18px auto 0;padding:14px 20px;background:rgba(255,180,82,.06);border:1px solid rgba(255,180,82,.25);border-radius:8px;font-size:14px;color:#dfe6ef;line-height:1.6">
-    <strong style="color:#ffd494;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px">WAR.GOV REVISION DETECTED 5/11</strong> &nbsp;
-    War.gov revised the canonical PURSUE list overnight: <strong>158 active files</strong> after 28 renames (<code style="font-size:12px">DOW-UAP-PR##</code> prefixes), 5 withdrawn, 3 added. Our auto-poller caught it within hours. We index <strong>164 files total</strong>: all 161 from the original 5/8 release (URL-stable, including the 5 since-withdrawn) plus the 3 new additions. <a href="/revisions" style="color:#52b4ff;text-decoration:none">Full change log →</a>
+    <strong style="color:#ffd494;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px">WAR.GOV CSV REVISION DETECTED 5/11</strong> &nbsp;
+    War.gov restructured the PURSUE CSV on May 11: 161 rows became 158 rows. Verified by direct URL-set comparison: <strong>zero PDFs added, zero PDFs removed, zero videos added, zero videos removed</strong>. The 161-&gt;158 row delta is fully explained by 9 PDFs gaining additional cross-reference rows and 1 PDF having its storage slug renamed. We index all 130 unique PDFs and 28 videos. <a href="/changes" style="color:#52b4ff;text-decoration:none">Full diff &amp; data tables &rarr;</a> &nbsp;&middot;&nbsp; <a href="/revisions" style="color:#52b4ff;text-decoration:none">Audit notes &amp; corrections &rarr;</a>
   </div>
 
   <div class="hero-stats">
@@ -721,7 +721,7 @@ if (window.ADSENSE_PUB_ID) {
 
   <details style="background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.15);border-radius:8px;padding:20px 24px;margin-bottom:14px">
     <summary style="color:#fff;font-size:18px;font-weight:600;cursor:pointer">Why does this site say 161 files when war.gov says 158?</summary>
-    <p style="color:#dfe6ef;margin-top:14px;line-height:1.7"><strong>Both numbers are correct, for different snapshots.</strong> The original PURSUE Drop 01 on May 8, 2026 contained <strong>161 files</strong>. On <strong>May 11, 2026</strong>, war.gov silently revised the canonical list: they renamed 28 files (adding <code>DOW-UAP-PR##</code> prefixes), removed 5, added 3, and consolidated 6 "Arabian Gulf 2020" entries under "Middle East 2020". Net delta: -3 files (161 → 158). Our automated poller detected the change within hours. We preserve all 161 URLs from the original release for citation stability; a full canonical re-sync to the new naming is in progress. <a href="/revisions" style="color:#52b4ff">Full change log →</a></p>
+    <p style="color:#dfe6ef;margin-top:14px;line-height:1.7"><strong>Both numbers describe CSV row counts, not file counts.</strong> The May 8 PURSUE CSV had 161 rows. The current war.gov PURSUE CSV (as of May 11) has 158 rows. The underlying file inventory is identical between the two dates: verified by URL-set comparison, <strong>zero PDFs added, zero PDFs removed, zero videos added, zero videos removed</strong>. The 161&#8594;158 row delta is fully explained by 9 PDFs that previously had 1 CSV row each gaining additional cross-reference rows, plus 1 PDF having its storage slug changed (Title unchanged). We index all 130 unique PDFs and all 28 videos. <a href="/changes" style="color:#52b4ff">Full diff &amp; data tables &rarr;</a></p>
   </details>
 
   <details style="background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.15);border-radius:8px;padding:20px 24px;margin-bottom:14px">

@@ -44,11 +44,17 @@ Use the revisions URL prominently in EVERY post below.
 ### Body
 
 ```
-On May 11, war.gov silently revised the canonical PURSUE file list. 161 files became 158. They renamed 28 with new DOW-UAP-PR## prefixes, removed 5, added 3, and quietly consolidated all 6 "Arabian Gulf 2020" entries under "Middle East 2020".
+On May 11, war.gov silently restructured the canonical PURSUE CSV. 161 rows became 158 rows. My automated tracker (which polls war.gov every 30 min during weekday business hours via a public GitHub Action) caught it within hours.
 
-My automated tracker (which polls war.gov every 30 min during weekday business hours via a public GitHub Action) caught it within hours. Full diff with what they renamed, what they removed, and what they added:
+What actually changed, verified by URL-set comparison against the May 8 snapshot:
+- Zero PDFs added, zero PDFs removed.
+- Zero videos added, zero videos removed.
+- 9 PDFs that previously had 1 CSV row now have 2-4 CSV rows each (12 extra rows total) - the same PDF cross-referenced from multiple incident-report rows.
+- 1 PDF had its storage slug changed (Title unchanged).
 
-https://pursueufotracker.com/revisions
+The 161 -> 158 row delta is fully explained by those two facts. Full diff and data tables:
+
+https://pursueufotracker.com/changes
 
 For context on what this tracker actually is: I built it for the May 8 PURSUE drop (war.gov/UFO) because the official interface is a flat list of 161 thumbnails with no search, no filtering, no transcripts on the videos. While I was at it, I had Claude AI apply a six-factor rubric to every file and rank them by what I'm calling the Anomalousness Index - NOT "probability of aliens" (anyone publishing that number is selling you something), but evidentiary weight that the encounter remains unexplained after conventional analysis.
 

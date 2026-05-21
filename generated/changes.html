@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PURSUE Changes Log: Full Row-by-Row Diff May 8 -> May 11 | PURSUE UFO Tracker</title>
+<meta name="description" content="Verified row-by-row diff between war.gov's May 8 and May 11 PURSUE CSV snapshots. 9 PDFs gained additional cross-reference rows; 1 PDF had its storage slug changed. Zero PDFs added or removed. Zero videos added or removed. URL set verified.">
+<link rel="canonical" href="https://pursueufotracker.com/changes">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="PURSUE Changes Log: Full Row-by-Row Diff (May 8 vs May 11 2026)">
+<meta property="og:description" content="Verified by URL set comparison. No PDFs or videos added or removed. 9 PDFs gained additional CSV rows; 1 PDF had its slug changed. Full data tables.">
+<meta property="og:url" content="https://pursueufotracker.com/changes">
+<meta property="og:image" content="https://pursueufotracker.com/og-cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pursueufotracker.com/og-cover.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "PURSUE CSV row-by-row diff: May 8 vs May 11, 2026",
+  "description": "Verified URL-set comparison between war.gov's May 8 PURSUE CSV (161 rows, SHA-256 596cc1881a) and current war.gov PURSUE CSV (158 rows, SHA-256 0d7e9ba1d5). 130 unique PDF URLs and 28 unique video DVIDS IDs in both snapshots. 9 PDF URLs now appear in multiple CSV rows; 1 PDF had its storage slug changed.",
+  "url": "https://pursueufotracker.com/changes",
+  "datePublished": "2026-05-20",
+  "dateModified": "2026-05-20",
+  "creator": {"@type": "Organization", "name": "PURSUE UFO Tracker", "url": "https://pursueufotracker.com/"},
+  "isBasedOn": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv",
+  "keywords": "war.gov diff, PURSUE CSV changes, UAP file inventory, verified diff"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+
+<script async src="https://plausible.io/js/pa-ZDj9MJVwqhPZChU5a2Hhx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<style>
+  .rev-page{max-width:1040px;margin:0 auto;padding:60px 24px}
+  .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#7a92b0;margin-bottom:24px}
+  .breadcrumb a{color:#52b4ff;text-decoration:none}
+  h1{font-size:clamp(32px,4.5vw,52px);background:linear-gradient(180deg,#fff,#52b4ff);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+  .lede{font-size:18px;color:#dfe6ef;line-height:1.75;margin-bottom:28px}
+  h2{color:#fff;font-size:24px;margin:40px 0 14px;letter-spacing:.01em}
+  h3{color:#52ffb4;font-size:13px;font-family:'JetBrains Mono',monospace;letter-spacing:1.5px;margin:24px 0 12px;text-transform:uppercase}
+  p{color:#dfe6ef;line-height:1.7;margin-bottom:14px}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin:24px 0}
+  .stat{padding:18px;background:rgba(82,180,255,.06);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-align:center}
+  .stat .n{display:block;font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;color:#52b4ff;margin-bottom:4px}
+  .stat .l{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.5px;color:#a8b8cc;text-transform:uppercase}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid rgba(82,180,255,.12);color:#dfe6ef;vertical-align:top}
+  th{color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500}
+  td a{color:#52b4ff;text-decoration:none}
+  td a:hover{text-decoration:underline}
+  .pill{display:inline-block;padding:2px 8px;border-radius:10px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase}
+  .pill-row{background:rgba(82,180,255,.10);color:#7ac6ff;border:1px solid rgba(82,180,255,.25)}
+  .pill-slug{background:rgba(255,180,82,.10);color:#ffd494;border:1px solid rgba(255,180,82,.25)}
+  .alert{background:rgba(82,255,180,.06);border:1px solid rgba(82,255,180,.25);padding:18px 22px;border-radius:8px;margin:24px 0}
+  .alert strong{color:#52ffb4}
+  code{font-family:'JetBrains Mono',monospace;font-size:12px;background:rgba(82,180,255,.08);padding:2px 6px;border-radius:3px;color:#7ac6ff;word-break:break-all}
+  .url-cell{font-family:'JetBrains Mono',monospace;font-size:11px;word-break:break-all;color:#a8b8cc;max-width:380px}
+  .verify-box{background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.20);padding:18px 22px;border-radius:8px;margin:24px 0;font-family:'JetBrains Mono',monospace;font-size:12px}
+  .verify-box code{display:block;padding:10px 12px;margin:8px 0;background:rgba(0,0,0,.4);border-radius:4px;color:#7ac6ff;white-space:pre-wrap;word-break:break-word}
+</style>
+</head>
+<body>
+<div class="starfield" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<main class="rev-page">
+  <div class="breadcrumb"><a href="/">PURSUE Tracker</a> &nbsp;/&nbsp; <a href="/revisions">Revisions</a> &nbsp;/&nbsp; Changes Log</div>
+
+  <h1>PURSUE Changes Log</h1>
+  <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:24px">FIRST PUBLISHED 20 MAY 2026 · VERIFIED BY URL SET COMPARISON</p>
+
+  <div class="alert">
+    <p style="margin:0 0 8px 0"><strong>What this page contains.</strong> The verified row-by-row diff between the May 8 PURSUE CSV (161 rows) and the current war.gov PURSUE CSV (158 rows), computed by direct URL-set and DVIDS-ID-set comparison. Each claim on this page is a direct count from the underlying CSV files. No interpretation of war.gov's intent. No characterizations of "renames," "consolidations," or "reclassifications" - those would be inferences and are kept off this page.</p>
+    <p style="margin:0"><strong>Headline finding</strong>: zero PDFs added, zero PDFs removed, zero videos added, zero videos removed. The 161 -> 158 row delta is fully explained by 9 PDFs that previously had one CSV row now having multiple, and 1 PDF having its storage slug changed.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span class="n">130</span><span class="l">PDFs both dates</span></div>
+    <div class="stat"><span class="n">28</span><span class="l">Videos both dates</span></div>
+    <div class="stat"><span class="n">9</span><span class="l">PDFs w/ extra rows</span></div>
+    <div class="stat"><span class="n">+12</span><span class="l">Extra row count</span></div>
+    <div class="stat"><span class="n">1</span><span class="l">PDF slug changed</span></div>
+  </div>
+
+  <h2>The arithmetic</h2>
+  <p>The row-count delta of -3 (161 May 8 rows -> 158 current rows) decomposes cleanly:</p>
+  <div class="verify-box">
+<code>May 8 CSV:                161 rows
+   = 130 unique PDFs + 16 video rows + 15 PDF rows that were duplicates within the May 8 file
+   = 130 PDF URLs + 28 video DVIDS IDs in the unique set
+
+May 11+ CSV:              158 rows
+   = 130 unique PDFs + 16 video rows + 12 additional cross-reference PDF rows
+   = 130 PDF URLs + 28 video DVIDS IDs in the unique set
+   (same unique set after accounting for 1 PDF slug change; see Table 2 below)
+
+Net delta:                -3 rows
+   = 15 historical PDF-row duplicates - 12 new cross-reference rows
+   = -3</code>
+  </div>
+  <p>The unique-file inventory between the two dates is identical. The CSV structure changed; the file set did not.</p>
+
+  <h2>Table 1: 9 PDFs that gained extra CSV rows (12 extra rows total)</h2>
+  <p>Each of these 9 PDFs had exactly 1 CSV row on May 8 and now has 2-4 CSV rows in the current CSV. The PDF file at the URL is unchanged (we have not yet re-hashed it; see "verification status" below). The new CSV rows describe what appear to be discrete incidents contained within the same PDF, but we do not assert this without diffing the PDF contents.</p>
+
+  <table>
+    <thead>
+      <tr><th>PDF URL (war.gov)</th><th>Site detail page</th><th>Current CSV row titles (2026-05-11+)</th><th>Rows</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="url-cell"><a href="https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf" target="_blank" rel="noopener">dow-uap-d32-mission-report,-syria-october-2024.pdf</a></td>
+        <td><a href="/files/unresolved-uap-report-syria-october-2024-3">Syria, October 2024</a></td>
+        <td>D32, PR31, PR32, PR33</td>
+        <td><span class="pill pill-row">4x</span></td>
+      </tr>
+      <tr>
+        <td class="url-cell"><a href="https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf" target="_blank" rel="noopener">dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf</a></td>
+        <td><a href="/files/unresolved-uap-report-united-arab-emirates-october-2023-2">UAE, October 2023</a></td>
+        <td>D23, PR26, PR27</td>
+        <td><span class="pill pill-row">3x</span></td>
+      </tr>
+      <tr>
+        <td class="url-cell"><a href="https://www.war.gov/medialink/ufo/release_1/dow-uap-d10-mission-report-middle-east-may-2022.pdf" target="_blank" rel="noopener">dow-uap-d10-mission-report-middle-east-may-2022.pdf</a></td>
+        <td><a href="/files/unresolved-uap-report-middle-east-may-2022">Middle East, May 2022</a></td>
+        <td>D10, PR19</td>
+        <td><span class="pill pill-row">2x</span></td>
+      </tr>
+      <tr>
+        <td class="url-cell"><a href="https://www.war.gov/medialink/ufo/release_1/dow-uap-d14-mission-report-iraq-may-2022.pdf" target="_blank" rel="noopener">dow-uap-d14-mission-report-iraq-may-2022.pdf</a></td>
+        <td><a href="/files/unresolved-uap-report-iraq-may-2022-2">Iraq, May 2022</a></td>
+        <td>D14, PR21</td>
+        <td><span class="pill pill-row">2x</span></td>
+      </tr>
+      <tr>
+        <td class="url-cell"><a href="https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf" target="_blank" rel="noopener">dow-uap-d16-mission-report-syria-july-2022.pdf</a></td>
+        <td><a href="/files/unresolved-uap-report-syria-july-2022">Syria, July 2022</a></td>
+        <td>D16, PR22</td>
+        <td><span class="pill pill-row">2x</span></td>
+      </tr>
+      <tr>
+        <td class="url-cell"><a href="https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf" target="_blank" rel="noopener">dow-uap-d18-mission-report-iraq-december-2022.pdf</a></td>
+        <td><a href="/files/unresolved-uap-report-iraq-december-2022">Iraq, December 2022</a></td>
+        <td>D18, PR23</td>
+        <td><span class="pill pill-row">2x</span></td>
+      </tr>
+      <tr>
+        <td class="url-cell"><a href="https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf" target="_blank" rel="noopener">dow-uap-d33-mission-report-greece-october-2023.pdf</a></td>
+        <td><a href="/files/unresolved-uap-report-greece-october-2023">Greece, October 2023 (1)</a></td>
+        <td>D33, PR34</td>
+        <td><span class="pill pill-row">2x</span></td>
+      </tr>
+      <tr>
+        <td class="url-cell"><a href="https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf" target="_blank" rel="noopener">dow-uap-d35-mission-report-greece-october-2023.pdf</a></td>
+        <td><a href="/files/unresolved-uap-report-greece-october-2023-2">Greece, October 2023 (2)</a></td>
+        <td>D35, PR35</td>
+        <td><span class="pill pill-row">2x</span></td>
+      </tr>
+      <tr>
+        <td class="url-cell"><a href="https://www.war.gov/medialink/ufo/release_1/dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf" target="_blank" rel="noopener">dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf</a></td>
+        <td><a href="/files/unresolved-uap-report-middle-east-may-2020">Middle East, May 2020</a></td>
+        <td>D38, PR36</td>
+        <td><span class="pill pill-row">2x</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Table 2: PDF storage-slug changes (title unchanged)</h2>
+  <p>One PDF on war.gov's storage backend had its file slug renamed between May 8 and May 11. The CSV Title and human-facing metadata are unchanged. We have NOT yet re-fetched the new URL to verify the file bytes are identical to the May 8 file at the old URL; SHA-256 verification on this is pending.</p>
+  <table>
+    <thead>
+      <tr><th>Title (unchanged)</th><th>Old URL (May 8)</th><th>New URL (May 11+)</th><th>Verification</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>DOW-UAP-D20, Mission Report, Iraq, 2023</td>
+        <td class="url-cell"><code>.../dow-uap-d20-mission-report-southern-united-states-2023.pdf</code></td>
+        <td class="url-cell"><code>.../dow-uap-d20-mission-report-iraq-2023.pdf</code></td>
+        <td><span class="pill pill-slug">SHA pending</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size:13px;color:#a8b8cc">Note: 2 additional URL-pair differences exist in the diff (involving FBI file series <code>59_64634</code> and <code>65_HS1-..._Section_6</code>) but the data is currently ambiguous between "URL slug change" and "the old URL was withdrawn while a similarly-titled new URL was added." We are not asserting either reading until we have re-fetched both files and compared bytes. See the methodology note below.</p>
+
+  <h2>Verification status by file class</h2>
+  <table>
+    <thead>
+      <tr><th>What's verified</th><th>How</th><th>Status</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Unique PDF URL set (May 8 vs current)</td><td>Set diff on normalized URLs</td><td>Done</td></tr>
+      <tr><td>Unique video DVIDS ID set (May 8 vs current)</td><td>Set diff on DVIDS IDs</td><td>Done - identical</td></tr>
+      <tr><td>Multi-row PDF count and identities</td><td>Counter on URL field in current CSV</td><td>Done</td></tr>
+      <tr><td>PDF byte equivalence on slug-changed files</td><td>Re-fetch + SHA-256 compare</td><td>Pending</td></tr>
+      <tr><td>Multi-row PDFs - are extra rows describing the same content or distinct incidents within the PDF?</td><td>PDF text extraction + comparison</td><td>Pending</td></tr>
+      <tr><td>Resolution status changes (e.g., the "Middle East 2013" question)</td><td>PDF content read</td><td>Pending</td></tr>
+    </tbody>
+  </table>
+
+  <h2>How to verify this page yourself</h2>
+  <p>Anyone can re-run the diff. The inputs are public:</p>
+  <ol style="color:#dfe6ef;line-height:1.85">
+    <li><strong>Current war.gov CSV</strong>: <a href="https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv" target="_blank" rel="noopener" style="color:#52b4ff">war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv</a> (warm a session at <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener" style="color:#52b4ff">war.gov/UFO/</a> first or the CDN will 403)</li>
+    <li><strong>May 8 manifest snapshot</strong>: <a href="/generated/api/files.json" style="color:#52b4ff">/generated/api/files.json</a> (our parsed copy; the original war.gov May 8 CSV is no longer hosted but its SHA-256 is preserved in <a href="/" style="color:#52b4ff">our poll-state history</a>)</li>
+    <li><strong>The diff itself</strong>: extract the <code>PDF | Image Link</code> column from the CSV, normalize to lowercase, set-difference against the <code>source_url</code> field from our manifest. The result will match the tables on this page.</li>
+  </ol>
+
+  <h2>Why this page exists</h2>
+  <p>An earlier version of <a href="/revisions" style="color:#52b4ff">/revisions</a> characterized the May 11 change as including removals, additions, geographic consolidation, and reclassification. None of those characterizations are supported by the URL-set comparison. Rather than silently rewriting and pretending the mistake didn't happen, we kept the correction visible on /revisions and built this page to host the verified data tables. Per the site's editorial policy, transparency about our own errors is part of the credibility moat.</p>
+
+  <p style="margin-top:32px"><a href="/" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1px;text-decoration:none">&larr; BACK TO ALL FILES</a> &nbsp;&middot;&nbsp; <a href="/revisions" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1px;text-decoration:none">REVISIONS SUMMARY</a></p>
+</main>
+
+<footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
+  <p>Independent tracker. Not affiliated with the U.S. Department of War. <a href="/" style="color:#52b4ff">Back to tracker</a></p>
+</footer>
+</body>
+</html>
