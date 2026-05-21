@@ -2,7 +2,19 @@
 /robots.txt /robots.txt 200
 /feed /generated/feed.xml 301
 /rss /generated/feed.xml 301
+# Stub-page consolidation: 3 entries created in error during the May 14 audit
+# turned out to be CSV cross-references to existing canonical entries (same DVIDS
+# ID / same PDF URL). Redirect to the canonical entry. Per /changes audit on 2026-05-21.
+/files/dow-uap-pr20-unresolved-uap-report-kuwait-may-2022 /files/unresolved-uap-report-iraq-may-2022 301
+/files/dow-uap-pr43-unresolved-uap-report-africa-2025 /files/unresolved-uap-report-djibouti-2025 301
+/files/dow-uap-pr47-unresolved-uap-report-indopacom-2023 /files/unresolved-uap-report-japan-2023 301
+# Belt-and-suspenders: catch internal relative links that bypass /files/ rewrite
+/generated/files/dow-uap-pr20-unresolved-uap-report-kuwait-may-2022 /files/unresolved-uap-report-iraq-may-2022 301
+/generated/files/dow-uap-pr43-unresolved-uap-report-africa-2025 /files/unresolved-uap-report-djibouti-2025 301
+/generated/files/dow-uap-pr47-unresolved-uap-report-indopacom-2023 /files/unresolved-uap-report-japan-2023 301
 /files/* /generated/files/:splat 200
+/changes /generated/changes 200
+/changes/ /generated/changes 200
 /api /generated/api 200
 /api/ /generated/api 200
 /api/files /generated/api/files.json 301
