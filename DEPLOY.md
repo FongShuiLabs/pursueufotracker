@@ -18,7 +18,7 @@ The whole site is static. Every option below works.
 
 2. **GitHub repo.** Push the project:
    ```powershell
-   cd C:\Users\Anthony\Desktop\ufo-disclosure-site
+   cd C:\Users\<your-username>\Desktop\ufo-disclosure-site
    git init
    git add .
    git commit -m "Initial commit - Trump PURSUE Tracker"

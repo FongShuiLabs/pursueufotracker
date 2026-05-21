@@ -1,6 +1,6 @@
 # /verdict/ stance file
 
-Anthony-editable. Drives the `/verdict/` page. Honest answer to the question
+Operator-editable. Drives the `/verdict/` page. Honest answer to the question
 the audience is actually asking. Tone: direct, confident, no hedging-padding,
 no sensationalism. Cites into specific files where possible.
 

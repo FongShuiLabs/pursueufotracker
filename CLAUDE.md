@@ -4,10 +4,10 @@
 
 ## Always read first
 
-1. **`.claude/accounts.md`** (local-only, gitignored). Account inventory: which email / account / key owns which service (GitHub, Bing Webmaster, Cloudflare, IndexNow, Plausible, GSC, etc.) so you don't ask Anthony the same questions twice.
-2. **`INCOME_PLAN.md` top section** — locked launch deadlines (as of 2026-05-15). If any deadline has slipped >24 hours without explicit reschedule, surface it to Anthony at session start.
+1. **`.claude/accounts.md`** (local-only, gitignored). Account inventory: which email / account / key owns which service (GitHub, Bing Webmaster, Cloudflare, IndexNow, Plausible, GSC, etc.) so you don't ask the operator the same questions twice.
+2. **`INCOME_PLAN.md` top section** — locked launch deadlines (as of 2026-05-15). If any deadline has slipped >24 hours without explicit reschedule, surface it to the operator at session start.
 
-If `.claude/accounts.md` doesn't exist on this machine, ask Anthony to recreate it from the most recent session that had it.
+If `.claude/accounts.md` doesn't exist on this machine, ask the operator to recreate it from the most recent session that had it.
 
 ## Project quick facts
 
@@ -29,9 +29,9 @@ If `.claude/accounts.md` doesn't exist on this machine, ask Anthony to recreate 
 
 ## Hard rules that apply on this project specifically
 
-These are in addition to Anthony's global rules in `~/.claude/CLAUDE.md`:
+These are in addition to the operator's global rules in `~/.claude/CLAUDE.md`:
 
-1. **Never delete a file page** without explicit Anthony approval, even if war.gov withdraws the underlying file. URL stability across war.gov revisions is a deliberate editorial position (see `/revisions` page).
+1. **Never delete a file page** without explicit the operator approval, even if war.gov withdraws the underlying file. URL stability across war.gov revisions is a deliberate editorial position (see `/revisions` page).
 2. **Never publish a "% chance aliens" or equivalent probability of extraterrestrial origin number.** The scoring rubric is evidentiary-weight only. This refusal is part of the credibility moat.
 3. **Never edit `data/poll-state.json` locally and commit.** That file is owned by the bot. Touching it causes false-positive change detection on the next bot run.
 4. **War.gov edge requires curl_cffi `chrome120` impersonation + session warmup** against `/UFO/` before fetching the CSV. Custom user-agents get blacklisted. See `pipeline/poll_wargov.py` for working pattern.
@@ -42,6 +42,6 @@ These are in addition to Anthony's global rules in `~/.claude/CLAUDE.md`:
 
 ## Default voice
 
-- No em dashes (Anthony's global rule). Use ` - ` (space-hyphen-space) or restructure.
+- No em dashes (the operator's global rule). Use ` - ` (space-hyphen-space) or restructure.
 - Honest framing, not hype. The site's whole position is "we refuse to oversell."
-- Direct, file-path-citing answers. Don't infer site state from memory; grep / read the file first (also Anthony's global rule).
+- Direct, file-path-citing answers. Don't infer site state from memory; grep / read the file first (also the operator's global rule).

@@ -102,7 +102,7 @@ Free, no paywall, no signup. CC0 metadata. Cite freely.
 The Trump administration is signaling rolling releases. The tracker auto-indexes within hours of each new drop. Happy to add you to the press list for advance notification when Drop 2 lands - reply with "add me" if useful.
 
 Best,
-[Anthony]
+[Operator]
 ```
 
 **Targets (research recent bylines on each before sending):**
@@ -141,7 +141,7 @@ Drop 2 is expected on a rolling basis - happy to give you advance notice when it
 No reciprocal ask. Public-domain docs should be accessible. If the tracker saves you 20 minutes editing one video, that's worth it.
 
 Best,
-[Anthony]
+[Operator]
 ```
 
 **Targets:**

@@ -4,7 +4,7 @@ Includes:
 - Fact sheet (counts, agencies, date ranges)
 - Embed code snippets (iframe, link previews)
 - Brand assets (logo, OG images)
-- Contact line (Anthony fills in)
+- Contact line (operator fills in)
 - SHA-256 manifest for verification
 - Suggested questions / talking points
 """

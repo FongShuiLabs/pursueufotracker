@@ -6,7 +6,7 @@ Creates a single tarball containing:
 - data/manifest.json (the full 161-file metadata)
 - _scratch/uap-csv.csv (the source CSV from war.gov)
 
-Output: C:\\Users\\Anthony\\Backups\\pursueufotracker-YYYY-MM-DD-HHMMSS.tar.gz
+Output: <home>/Backups/pursueufotracker-YYYY-MM-DD-HHMMSS.tar.gz
 
 Run anytime to snapshot. Safe to re-run; each run is a separate dated file.
 Suggested cadence: after each new PURSUE drop is downloaded.
@@ -23,7 +23,7 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BACKUP_ROOT = Path("C:/Users/Anthony/Backups")
+BACKUP_ROOT = Path.home() / "Backups"
 
 INCLUDE = [
     "downloads",

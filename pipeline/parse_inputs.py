@@ -1,6 +1,6 @@
 """Stage 0: parse _scratch/* (saved HTML, HAR, raw text) -> data/url-list.txt.
 
-Accepts whatever Anthony drops in _scratch/:
+Accepts whatever the operator drops in _scratch/:
 - *.html, *.htm, *.mhtml         -> BeautifulSoup link extraction
 - *.har                          -> JSON parse, pull request URLs
 - *.txt                          -> regex extract URLs

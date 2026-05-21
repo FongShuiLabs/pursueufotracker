@@ -4,7 +4,7 @@
 
 ---
 
-## 🔥 TOMORROW (2026-05-10) — Anthony to do
+## 🔥 TOMORROW (2026-05-10) — the operator to do
 
 ### 1. Bing Webmaster Tools (5 min)
 

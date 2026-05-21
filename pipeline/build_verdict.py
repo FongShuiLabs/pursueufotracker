@@ -1,6 +1,6 @@
 """Stage 9.1: render /verdict/ - the honest answer page.
 
-Reads data/verdict-stance.md (Anthony-editable Q&A markdown) and renders to
+Reads data/verdict-stance.md (operator-editable Q&A markdown) and renders to
 generated/verdict.html. Auto-injects a few stats from the manifest (file
 counts, redaction count) so numbers stay in sync.
 """

@@ -18,7 +18,7 @@ The push from local was rejected because the stored Personal Access Token doesn'
 1. https://github.com/settings/tokens → edit the PAT used by your local git → check the **workflow** scope → save
 2. Update your stored credential:
    ```powershell
-   git -C 'C:\Users\Anthony\Desktop\ufo-disclosure-site' credential reject https://github.com
+   git -C 'C:\Users\<your-username>\Desktop\ufo-disclosure-site' credential reject https://github.com
    ```
    Next git operation prompts for the new PAT. Or use `git config credential.helper manager-core` and re-auth.
 3. Then I (or you) can push the workflow file normally.
