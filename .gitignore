@@ -10,6 +10,15 @@ data/url-list.txt
 *.log
 .DS_Store
 
+# Secrets: never commit. Loaded by pipeline/plausible_stats.py and related scripts.
+.env
+.env.*
+!.env.example
+
+# Analytics snapshots: local-only by default. Move out of gitignore later
+# if/when we decide a public stats page would help (currently no — see CLAUDE.md).
+data/analytics/
+
 # generated/ and data/manifest.json are COMMITTED so Cloudflare Pages
 # can serve them as static files without running the pipeline at deploy time.
 # When the pipeline regenerates them, commit + push triggers a redeploy.
