@@ -39,6 +39,23 @@ body{
   to{background-position:1200px 1200px}
 }
 
+/* ===== Accessibility / performance: reduce work on weak devices ===== */
+/* Honor OS-level reduced motion preference (iOS Accessibility, Android, etc.)
+   and disable the drift animation entirely. */
+@media (prefers-reduced-motion: reduce){
+  .starfield{ animation: none; }
+}
+/* Mobile: skip the 8-layer radial-gradient starfield and the masked grid overlay.
+   Solid dark background only. This is the perf gain that matters on older
+   Android devices (reported via r/UFOs by a Moto G Power user 2026-05-21). */
+@media (max-width: 768px){
+  .starfield{
+    background: #04060d;
+    animation: none;
+  }
+  .grid-bg{ display: none; }
+}
+
 /* ===== Hero ===== */
 .hero{
   max-width:1200px;
