@@ -165,9 +165,12 @@
         {% if f.source_url %}
         <p style="font-size:14px;margin-bottom:24px">This file is indexed; the HD mirror is being prepared. Direct from war.gov:</p>
         <a href="{{ f.source_url }}" target="_blank" rel="noopener" style="background:#52b4ff;color:#04060d;padding:14px 28px;border-radius:6px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block">View on war.gov ↗</a>
+        {% elif f.dvids_page_url %}
+        <p style="font-size:14px;margin-bottom:24px">This file is indexed; the HD mirror is being prepared. Direct from DVIDS:</p>
+        <a href="{{ f.dvids_page_url }}" target="_blank" rel="noopener" style="background:#52b4ff;color:#04060d;padding:14px 28px;border-radius:6px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;display:inline-block">View on DVIDS ↗</a>
         {% else %}
-        <p style="font-size:14px;margin-bottom:8px">This file was added by war.gov's May 11 revision. Description and source URL are pending re-sync.</p>
-        <p style="font-size:13px"><a href="https://www.war.gov/UFO/" target="_blank" rel="noopener" style="color:#52b4ff">Browse war.gov/UFO directly ↗</a> &middot; <a href="/revisions" style="color:#52b4ff">Read the revision log</a></p>
+        <p style="font-size:14px;margin-bottom:8px">HD mirror is being prepared.</p>
+        <p style="font-size:13px"><a href="https://www.war.gov/UFO/" target="_blank" rel="noopener" style="color:#52b4ff">Browse war.gov/UFO directly ↗</a></p>
         {% endif %}
       </div>
     {% endif %}
@@ -300,8 +303,13 @@
     <div class="hash">{{ f.sha256 or '(awaiting HD mirror)' }}</div>
     {% if f.source_url %}
     <p style="color:#a8b8cc;font-size:13px;margin-top:16px">Source: <a href="{{ f.source_url }}" target="_blank" rel="noopener" style="color:#52b4ff;word-break:break-all">{{ f.source_url }}</a></p>
+    {% elif f.dvids_page_url %}
+    <p style="color:#a8b8cc;font-size:13px;margin-top:16px">Source (DVIDS): <a href="{{ f.dvids_page_url }}" target="_blank" rel="noopener" style="color:#52b4ff;word-break:break-all">{{ f.dvids_page_url }}</a></p>
+    {% if f.video_url %}
+    <p style="color:#a8b8cc;font-size:13px;margin-top:8px">Direct video file: <a href="{{ f.video_url }}" target="_blank" rel="noopener" style="color:#52b4ff;word-break:break-all">{{ f.video_url }}</a></p>
+    {% endif %}
     {% else %}
-    <p style="color:#a8b8cc;font-size:13px;margin-top:16px">Source: war.gov/UFO (specific URL pending re-sync after the <a href="/revisions" style="color:#52b4ff">May 11 revision</a>)</p>
+    <p style="color:#a8b8cc;font-size:13px;margin-top:16px">Source: <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener" style="color:#52b4ff">war.gov/UFO</a> (specific URL not in current manifest; if the file is video-type the DVIDS page is the canonical source)</p>
     {% endif %}
   </div>
 </main>
