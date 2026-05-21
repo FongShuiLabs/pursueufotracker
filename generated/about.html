@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | PURSUE UFO Tracker</title>
+<meta name="description" content="Who built PURSUE UFO Tracker, why, and what the site refuses to do. Solo project by Anthony Fong. Open source pipeline, public auto-poller, transparent methodology, no claims about extraterrestrial origin.">
+<link rel="canonical" href="https://pursueufotracker.com/about">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="About PURSUE UFO Tracker">
+<meta property="og:description" content="The story behind the site, by the person who built it.">
+<meta property="og:url" content="https://pursueufotracker.com/about">
+<meta property="og:image" content="https://pursueufotracker.com/og-cover.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About PURSUE UFO Tracker",
+  "url": "https://pursueufotracker.com/about",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "PURSUE UFO Tracker",
+    "url": "https://pursueufotracker.com/",
+    "founder": {"@type": "Person", "name": "Anthony Fong"},
+    "foundingDate": "2026-05-08",
+    "description": "Independent tracker indexing the U.S. Department of War's PURSUE UAP disclosures."
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+
+<script async src="https://plausible.io/js/pa-ZDj9MJVwqhPZChU5a2Hhx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<style>
+  .doc-page{max-width:780px;margin:0 auto;padding:60px 24px}
+  .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#7a92b0;margin-bottom:24px}
+  .breadcrumb a{color:#52b4ff;text-decoration:none}
+  h1{font-size:clamp(32px,4.5vw,52px);background:linear-gradient(180deg,#fff,#52b4ff);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+  .lede{font-size:18px;color:#dfe6ef;line-height:1.75;margin-bottom:28px}
+  h2{color:#fff;font-size:22px;margin:40px 0 14px;letter-spacing:.01em}
+  h3{color:#52ffb4;font-size:13px;font-family:'JetBrains Mono',monospace;letter-spacing:1.5px;margin:24px 0 12px;text-transform:uppercase}
+  p,li{color:#dfe6ef;line-height:1.75;margin-bottom:14px}
+  ul{padding-left:20px;margin-bottom:14px}
+  a{color:#52b4ff}
+  .callout{background:rgba(82,180,255,.06);border:1px solid rgba(82,180,255,.18);padding:18px 22px;border-radius:8px;margin:24px 0}
+  .warning{background:rgba(255,180,82,.06);border:1px solid rgba(255,180,82,.25);padding:18px 22px;border-radius:8px;margin:24px 0}
+  .warning strong{color:#ffd494}
+  code{font-family:'JetBrains Mono',monospace;font-size:12px;background:rgba(82,180,255,.08);padding:2px 6px;border-radius:3px;color:#7ac6ff}
+</style>
+</head>
+<body>
+<div class="starfield" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<main class="doc-page">
+  <div class="breadcrumb"><a href="/">PURSUE Tracker</a> &nbsp;/&nbsp; About</div>
+
+  <h1>About</h1>
+
+  <p class="lede">PURSUE UFO Tracker is a solo project. I built it because the official war.gov interface for the PURSUE disclosures is a flat list of thumbnails with no search, no filters, and no transcripts on the videos. That seemed like a fixable problem.</p>
+
+  <h2>Who runs it</h2>
+  <p>Anthony Fong. I'm an attorney, not a journalist and not a defense industry insider. The site is one person plus a Python pipeline plus a public GitHub Action that polls war.gov every 30 minutes during US weekday business hours and hourly the rest of the time. There is no team. There is no funding. There is no affiliation with the U.S. Department of War, the Department of Defense, AARO, or any other government agency.</p>
+
+  <h2>Why the site exists</h2>
+  <p>On May 8, 2026, the U.S. Department of War published the first batch of files under the Presidential Unsealing and Reporting System for UAP Encounters (PURSUE). The official landing page at <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener">war.gov/UFO</a> is a useful-enough thumbnail wall, but if you wanted to search across the 161 files, filter by agency or geography, read transcripts of the 28 videos, or know within hours when war.gov made silent edits to the canonical list, you were on your own.</p>
+  <p>So this site indexes all of that. It SHA-256 hashes every mirrored file so the bytes can be verified against war.gov's CDN. It transcribes the videos (well: it will, once that pipeline stage finishes for all 28). It applies a six-factor scoring rubric called the <a href="/methodology">Anomalousness Index</a> to every file so you can quickly find the entries most likely to be evidentiarily interesting. And it logs every revision war.gov makes after the fact, with the original URLs preserved for citation stability.</p>
+
+  <h2>How it's built</h2>
+  <ul>
+    <li><strong>Static site</strong> served by Cloudflare Pages. No backend server, no database, no API key required to browse.</li>
+    <li><strong>Python pipeline</strong> (pdfplumber, openai-whisper, Jinja2, curl_cffi). Open source, runs locally, full pipeline documented at <a href="https://github.com/FongShuiLabs/pursueufotracker/blob/main/PIPELINE.md" target="_blank" rel="noopener">PIPELINE.md</a>.</li>
+    <li><strong>Auto-poller</strong> as a GitHub Action that hits the war.gov CSV every 30 min on weekdays and hourly off-hours. When the CSV changes, the bot commits the new state and opens a public issue. The audit log on <a href="/revisions">/revisions</a> is the human-readable consequence.</li>
+    <li><strong>Privacy-first analytics</strong> via Plausible (no cookies, no PII). See <a href="/privacy">/privacy</a>.</li>
+    <li><strong>Open source</strong> at <a href="https://github.com/FongShuiLabs/pursueufotracker" target="_blank" rel="noopener">github.com/FongShuiLabs/pursueufotracker</a>. Anyone can fork, audit, or recompute every number on the site.</li>
+  </ul>
+
+  <div class="warning">
+    <p style="margin:0"><strong>What this site refuses to do.</strong> It does not publish a "probability of extraterrestrial origin" number, ever. The Anomalousness Index measures evidentiary weight that an encounter remains unexplained after conventional analysis. That is a fundamentally different question from "is this aliens." Anyone publishing the latter number is, in my view, the actual disinformation vector. We mirror, score on a transparent rubric, and let you read the underlying files.</p>
+  </div>
+
+  <h2>What we got wrong and corrected</h2>
+  <p>I published a wrong characterization of war.gov's May 11 revision on May 14, then a slightly-less-wrong characterization on May 20, before settling on a verified version on May 21 after a reader on r/UFOs (u/Narrow_Market45) pointed out the original framing. The audit chain with all three versions visible is at <a href="/revisions">/revisions</a>, and the verified diff is at <a href="/changes">/changes</a>. I think keeping the corrections visible is more useful than silently rewriting and pretending the mistakes did not happen.</p>
+
+  <h2>The editorial position</h2>
+  <ul>
+    <li><strong>URL stability.</strong> No detail page URL is deleted, even if war.gov withdraws the underlying file. Bookmarks, citations, and inbound backlinks continue to resolve. Withdrawals get a banner; deletions do not happen.</li>
+    <li><strong>Transparent methodology over confident-sounding numbers.</strong> The scoring rubric is open JSON. Argue with specific components. The whole point is that anyone can recompute or replace it.</li>
+    <li><strong>Corrections live forever.</strong> If we publish a wrong claim and have to correct it, the correction is dated and the original framing is preserved alongside. The credibility cost of a quietly-edited page is higher than the cost of an honest mea culpa.</li>
+    <li><strong>No oversell.</strong> We refuse to call any of this "proof of aliens" because the underlying data does not support that claim. We also refuse to call it "definitely mundane" because the underlying data does not support that either. The honest position is "unexplained after conventional analysis," and that is what the rubric measures.</li>
+  </ul>
+
+  <div class="callout">
+    <p style="margin:0"><strong>If you find a factual error</strong> on the site (a misread of the CSV, a broken hash, a score component you can argue against), email <a href="mailto:anthony.fong.esq@gmail.com">anthony.fong.esq@gmail.com</a>. Documented corrections are added with a dated entry rather than silent edits. See <a href="/revisions">/revisions</a> for the standard.</p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Press, corrections, technical questions, or general note: <a href="/contact">contact page</a>.</p>
+
+  <p style="margin-top:48px"><a href="/" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:1px;text-decoration:none">&larr; BACK TO TRACKER</a></p>
+</main>
+
+<footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
+  <p>Independent tracker. Not affiliated with the U.S. Department of War. <a href="/" style="color:#52b4ff">Back to tracker</a></p>
+</footer>
+</body>
+</html>

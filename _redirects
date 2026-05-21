@@ -15,6 +15,12 @@
 /files/* /generated/files/:splat 200
 /changes /generated/changes 200
 /changes/ /generated/changes 200
+/privacy /generated/privacy 200
+/privacy/ /generated/privacy 200
+/about /generated/about 200
+/about/ /generated/about 200
+/contact /generated/contact 200
+/contact/ /generated/contact 200
 /api /generated/api 200
 /api/ /generated/api 200
 /api/files /generated/api/files.json 301
