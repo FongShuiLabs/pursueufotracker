@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated_at": "2026-05-11T22:30:00Z",
-  "count": 164,
+  "count": 161,
   "files": [
     {
       "id": "65-hs1-834228961-62-hq-83894-section-10",
@@ -1773,39 +1773,6 @@
       "score": 56,
       "url": "https://pursueufotracker.com/files/western-us-event",
       "detail_api": "https://pursueufotracker.com/api/files/western-us-event.json"
-    },
-    {
-      "id": "dow-uap-pr20-unresolved-uap-report-kuwait-may-2022",
-      "title": "DOW-UAP-PR20, Unresolved UAP Report, Kuwait, May 2022",
-      "agency": "DoD",
-      "category": "military",
-      "type": "pdf",
-      "date_event": null,
-      "score": 64,
-      "url": "https://pursueufotracker.com/files/dow-uap-pr20-unresolved-uap-report-kuwait-may-2022",
-      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr20-unresolved-uap-report-kuwait-may-2022.json"
-    },
-    {
-      "id": "dow-uap-pr43-unresolved-uap-report-africa-2025",
-      "title": "DOW-UAP-PR43, Unresolved UAP Report, Africa, 2025",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 70,
-      "url": "https://pursueufotracker.com/files/dow-uap-pr43-unresolved-uap-report-africa-2025",
-      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr43-unresolved-uap-report-africa-2025.json"
-    },
-    {
-      "id": "dow-uap-pr47-unresolved-uap-report-indopacom-2023",
-      "title": "DOW-UAP-PR47, Unresolved UAP Report, INDOPACOM, 2023",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 70,
-      "url": "https://pursueufotracker.com/files/dow-uap-pr47-unresolved-uap-report-indopacom-2023",
-      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr47-unresolved-uap-report-indopacom-2023.json"
     }
   ]
 }
