@@ -195,6 +195,9 @@ def _page_html(cat: dict, files: list[dict]) -> str:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<!-- Google AdSense ownership verification + Auto Ads (pub-7264251466939264, activated 2026-05-22) -->
+<meta name="google-adsense-account" content="ca-pub-7264251466939264">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7264251466939264" crossorigin="anonymous"></script>
 <!-- Privacy-friendly analytics by Plausible -->
 <script async src="https://plausible.io/js/pa-ZDj9MJVwqhPZChU5a2Hhx.js"></script>
 <script>
@@ -241,7 +244,7 @@ def _page_html(cat: dict, files: list[dict]) -> str:
 {cards}
   </div>
 
-  <a class="cat-back" href="/">← BACK TO ALL 164 FILES</a>
+  <a class="cat-back" href="/">← BACK TO ALL 161 FILES</a>
 </main>
 
 <footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">

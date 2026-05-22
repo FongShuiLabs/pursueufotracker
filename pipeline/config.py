@@ -56,8 +56,15 @@ BUY_ME_COFFEE_USERNAME = ""            # e.g. "anthonyfong"; empty = donate link
 PATREON_USERNAME = ""                  # e.g. "pursueufotracker"; empty = hidden
 
 # Day 7+ - apply, then enable when approved:
-ENABLE_ADS = False                     # master switch; False = no ad markup at all
-ADSENSE_CLIENT_ID = ""                 # e.g. "ca-pub-1234567890123456"
+# Activated 2026-05-22 via shared AdSense account pub-7264251466939264.
+# Auto Ads script + ownership meta tag live in `templates/partials/analytics.html.j2`
+# (and the three direct-pasted static pages: index.html, 404.html, plus
+# `pipeline/build_categories.py`). ENABLE_ADS stays False because the manual
+# ad_slot.html.j2 partials still reference placeholder slot IDs
+# (1111111111, 2222222222, 3333333333) and would render broken slots if turned on.
+# Auto Ads in <head> handles serving without needing the manual partials.
+ENABLE_ADS = False                     # manual ad slots; False until real slot IDs replace placeholders
+ADSENSE_CLIENT_ID = "ca-pub-7264251466939264"
 AD_NETWORK = "adsense"                 # adsense | ezoic | mediavine | raptive
 
 # Day 90+ - paid tier:

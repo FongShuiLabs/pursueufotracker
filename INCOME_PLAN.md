@@ -97,7 +97,7 @@ These are sitting at 0 because they need an account/tag. Each takes ~5 min of yo
 - Apply: https://affiliate-program.amazon.com (~5 min, near-instant approval)
 - Get your tag (e.g. `pursuefiles-20`)
 - Tell me; I'll find/replace `YOURTAG` → `pursuefiles-20` in the 5 places in `index.html` + set `AMAZON_AFFILIATE_TAG` in `pipeline/config.py`
-- Affiliate strip on homepage + sidebar on all 164 file pages goes live
+- Affiliate strip on homepage + sidebar on all 161 file pages goes live
 - Books selected to match audience: Elizondo, Coulthart, Loeb, Kean, Pasulka
 - **Expected:** $20–200/mo at 10K sessions; $200–2K at 100K
 - **Risk:** must make 3 sales in first 180 days to keep account

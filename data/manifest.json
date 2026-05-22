@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-05-11T22:30:00Z",
   "rubric_version": "1.0",
-  "_note": "Real 162-entry manifest parsed from war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv on 2026-05-09. Video URLs sourced from DVIDS public API. | 2026-05-11: appended 3 stub entries for war.gov-added files (Kuwait, Africa 2025, INDOPACOM 2023). Total now 164 indexed (war.gov canonical: 158).",
+  "_note": "Real 162-entry manifest parsed from war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv on 2026-05-09. Video URLs sourced from DVIDS public API. | 2026-05-11: appended 3 stub entries for war.gov-added files (Kuwait, Africa 2025, INDOPACOM 2023), total briefly 164. | 2026-05-21: stub cleanup brought total to 161 indexed entries (war.gov canonical: 158).",
   "files": [
     {
       "id": "65-hs1-834228961-62-hq-83894-section-10",

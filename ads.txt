@@ -1,11 +1,7 @@
 # ads.txt for pursueufotracker.com
 # Authorized digital sellers - https://iabtechlab.com/ads-txt/
-#
-# To activate Google AdSense:
-#   1. Apply at https://adsense.google.com (need a few weeks of traffic first - they prefer 50+ uniques/day)
-#   2. After approval, replace PUB-XXXXXXXXXXXXXXXX below with your publisher ID
-#   3. Uncomment the AdSense line
-#
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
-#
-# Future: Mediavine (50k sessions/mo) or Raptive (100k pageviews/mo) lines added on approval.
+# Google AdSense - pub-7264251466939264, activated 2026-05-22
+# (Account ownership: Fong Shui Labs LLC payee; site added under shared AdSense account
+# also serving glp1cost.org. See .claude/accounts.md for full chain of ownership.)
+
+google.com, pub-7264251466939264, DIRECT, f08c47fec0942fa0

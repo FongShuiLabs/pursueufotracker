@@ -32,7 +32,7 @@ def run() -> None:
     if not src_dir.exists():
         print("  (no source pages to translate)")
         return
-    # Implementation note: DeepL pricing is per character. For the full 162 pages
+    # Implementation note: DeepL pricing is per character. For the full 161 pages
     # x 6 langs, expect ~5M chars total = ~$25/month on the Pro plan, or free
     # under the 500K-char Free plan if you only translate the index + verdict +
     # top-10 + 10 highest-anomaly file pages (recommended for cost).

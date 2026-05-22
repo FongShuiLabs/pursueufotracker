@@ -6,7 +6,7 @@ Pre-drafted launch material. Use as-is or edit. Honesty over hype on every chann
 
 ## X / Bluesky launch thread
 
-> 1/ The Trump administration is releasing declassified UFO files on a rolling basis under PURSUE. Drop 1 on May 8 was 162 files: FBI, DoD, NASA, State.
+> 1/ The Trump administration is releasing declassified UFO files on a rolling basis under PURSUE. Drop 1 on May 8 was 161 files: FBI, DoD, NASA, State.
 >
 > I built the tracker that indexes every one. Searchable, scored, transcripts. Free.
 >
@@ -40,7 +40,7 @@ Pre-drafted launch material. Use as-is or edit. Honesty over hype on every chann
 >
 > **Body:**
 >
-> All 162 files from the May 8 drop are indexed at [yourdomain.com]. Every video has a Whisper transcript. Every PDF is full-text searchable. Every file links back to war.gov with a SHA-256 hash for verification.
+> All 161 files from the May 8 drop are indexed at [yourdomain.com]. Every video has a Whisper transcript. Every PDF is full-text searchable. Every file links back to war.gov with a SHA-256 hash for verification.
 >
 > I scored each file on what I'm calling the **Anomalousness Index** - 0-100 reflecting evidentiary weight that the encounter remains unexplained after conventional analysis. **It is not a "% chance aliens"** - nobody can honestly produce that number. The rubric is open JSON; you can recompute every score yourself.
 >
@@ -62,7 +62,7 @@ Pre-drafted launch material. Use as-is or edit. Honesty over hype on every chann
 >
 > **Body (first comment):**
 >
-> Hi HN - I built this over the weekend after the Pentagon launched war.gov/UFO with 162 declassified UAP files.
+> Hi HN - I built this over the weekend after the Pentagon launched war.gov/UFO with 161 declassified UAP files.
 >
 > The official site has no search, no transcripts, no per-file context. This mirror adds:
 >
@@ -91,7 +91,7 @@ Saw your [SPECIFIC piece - e.g., "Greece 2023 piece in The Debrief"]. Wanted to 
 [yourdomain.com]
 
 What's there:
-- All 162 files from the May 8 PURSUE release, indexed and ranked
+- All 161 files from the May 8 PURSUE release, indexed and ranked
 - Whisper transcripts on every video (full-text searchable)
 - SHA-256 hash on every file - your fact-checker can verify integrity vs. war.gov
 - JSON API + verification manifest at /press.html
@@ -190,11 +190,11 @@ A formatted version of this lives in [generated/press.html](generated/press.html
 
 > **For immediate release - May 9, 2026**
 >
-> **Independent tracker indexes Trump administration's first PURSUE UFO drop, 162 files searchable in minutes**
+> **Independent tracker indexes Trump administration's first PURSUE UFO drop, 161 files searchable in minutes**
 >
 > An independent project has launched a free, searchable mirror of the Department of War's PURSUE (Presidential Unsealings and Reporting System for UAP Encounters) UFO disclosure program. Every file from the May 8 release is now categorized, transcribed, scored on a transparent evidentiary-weight rubric, and verified by SHA-256 hash against the war.gov original.
 >
-> "The Pentagon's interface is a flat list," said the site's founder. "162 declassified files deserve search, transcripts, and per-file context. Public-domain documents should be as accessible as possible."
+> "The Pentagon's interface is a flat list," said the site's founder. "161 declassified files deserve search, transcripts, and per-file context. Public-domain documents should be as accessible as possible."
 >
 > The tracker uses an Anomalousness Index - a 0-100 score reflecting evidentiary weight that an encounter remains unexplained after conventional analysis. "It is explicitly not a probability of extraterrestrial origin," the founder added. "Nobody can honestly produce that number, and any site claiming to is selling something. We score evidentiary weight; readers draw their own conclusions."
 >

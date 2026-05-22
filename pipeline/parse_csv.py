@@ -1,4 +1,4 @@
-"""Stage 0.5: parse the war.gov uap-csv.csv into a full 162-entry manifest.
+"""Stage 0.5: parse the war.gov uap-csv.csv into a full manifest (~161 entries).
 
 Reads _scratch/uap-csv.csv (downloaded from
 https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv via curl_cffi).
@@ -11,7 +11,7 @@ For each row:
 - Default-scores using rubric heuristics based on type + agency
 - Writes audience.* fields from the CSV description
 
-Replaces the prior hand-curated 13-entry manifest with the real 162-entry one.
+Replaces the prior hand-curated 13-entry manifest with the real ~161-entry one.
 The hand-curated scoring components are PRESERVED for files whose IDs match.
 """
 from __future__ import annotations
@@ -221,7 +221,7 @@ def run() -> None:
     manifest = {
         "generated_at": "2026-05-09T20:00:00Z",
         "rubric_version": "1.0",
-        "_note": "Real 162-entry manifest parsed from war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv on 2026-05-09. Video URLs sourced from DVIDS public API.",
+        "_note": "Real manifest parsed from war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv. Video URLs sourced from DVIDS public API.",
         "files": files,
     }
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
