@@ -29,7 +29,7 @@
     "cssSelector": ["h1", ".lede", ".callout p", ".warning p", "h2", "h3"]
   },
   "datePublished": "2026-05-08",
-  "dateModified": "2026-05-12",
+  "dateModified": "2026-05-23",
   "author": {"@type": "Organization", "name": "PURSUE UFO Tracker"},
   "publisher": {
     "@type": "Organization",
@@ -39,6 +39,51 @@
   "mainEntityOfPage": "https://pursueufotracker.com/methodology",
   "proficiencyLevel": "Beginner",
   "keywords": "Anomalousness Index, UAP scoring methodology, evidentiary weight, AI-assisted scoring"
+},
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to recompute every Anomalousness Index score yourself",
+  "description": "Step-by-step instructions for independently verifying any Anomalousness Index score on PURSUE UFO Tracker using the open rubric and manifest.",
+  "totalTime": "PT10M",
+  "tool": [
+    {"@type": "HowToTool", "name": "Web browser"},
+    {"@type": "HowToTool", "name": "JSON viewer (e.g. jq, Python json module, browser dev tools)"}
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Download the rubric",
+      "text": "Fetch the open scoring rubric at https://pursueufotracker.com/data/scoring-rubric.json. This file defines every component, weight, and enumerated value used to score files.",
+      "url": "https://pursueufotracker.com/data/scoring-rubric.json"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Download the manifest",
+      "text": "Fetch the file manifest at https://pursueufotracker.com/generated/api/files.json. This contains the score components selected for each file.",
+      "url": "https://pursueufotracker.com/generated/api/files.json"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Look up each component value",
+      "text": "For each file, locate the score.components object. Each key is a component name (sensor_quality, witness_credibility, corroboration, kinematic_anomaly, mundane_explanation_available, official_disposition). Each value is the chosen enumerated string."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Compute the weighted sum",
+      "text": "For each component, look up the integer value (0-100) assigned to the chosen enumerated string in the rubric, multiply by the component weight, sum across all six components."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Compare to published score",
+      "text": "Your computed score should match the published score.value within rounding (within 1 point). If you find a discrepancy, the rubric file is the source of truth, not the displayed score."
+    }
+  ]
 },
 {
   "@context": "https://schema.org",
