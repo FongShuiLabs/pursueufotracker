@@ -184,7 +184,7 @@ Net delta:                -3 rows
   </table>
 
   <h2>Table 2: PDF storage-slug changes (title unchanged)</h2>
-  <p>One PDF on war.gov's storage backend had its file slug renamed between May 8 and May 11. The CSV Title and human-facing metadata are unchanged. We have NOT yet re-fetched the new URL to verify the file bytes are identical to the May 8 file at the old URL; SHA-256 verification on this is pending.</p>
+  <p>One PDF on war.gov's storage backend had its file slug renamed between May 8 and May 11. The CSV Title and human-facing metadata are unchanged. <strong>SHA-256 verification (2026-05-23): bytes IDENTICAL. The rename was purely a storage-slug change with no underlying content modification.</strong></p>
   <table>
     <thead>
       <tr><th>Title (unchanged)</th><th>Old URL (May 8)</th><th>New URL (May 11+)</th><th>Verification</th></tr>
@@ -194,10 +194,11 @@ Net delta:                -3 rows
         <td>DOW-UAP-D20, Mission Report, Iraq, 2023</td>
         <td class="url-cell"><code>.../dow-uap-d20-mission-report-southern-united-states-2023.pdf</code></td>
         <td class="url-cell"><code>.../dow-uap-d20-mission-report-iraq-2023.pdf</code></td>
-        <td><span class="pill pill-slug">SHA pending</span></td>
+        <td><span class="pill pill-verified" style="background:rgba(82,255,180,.15);border:1px solid rgba(82,255,180,.45);color:#52ffb4">SHA-256 verified identical</span></td>
       </tr>
     </tbody>
   </table>
+  <p style="font-size:13px;color:#a8b8cc;margin-top:12px"><strong>Verification details:</strong> Both files share SHA-256 <code style="font-size:11px">71ca8826db94d61583083ef8465a6902564532dcab7d49d0d2db3e86aaf85b2f</code> (3,698,245 bytes). The current PDF was fetched 2026-05-23 from the new URL via curl_cffi chrome120 impersonation. The May 8 hash was recorded in our manifest at the time of initial parse. Verification methodology: <code>sha256sum</code> on both file bytes, byte-identical match.</p>
   <p style="font-size:13px;color:#a8b8cc">Note: 2 additional URL-pair differences exist in the diff (involving FBI file series <code>59_64634</code> and <code>65_HS1-..._Section_6</code>) but the data is currently ambiguous between "URL slug change" and "the old URL was withdrawn while a similarly-titled new URL was added." We are not asserting either reading until we have re-fetched both files and compared bytes. See the methodology note below.</p>
 
   <h2>Verification status by file class</h2>
@@ -209,7 +210,7 @@ Net delta:                -3 rows
       <tr><td>Unique PDF URL set (May 8 vs current)</td><td>Set diff on normalized URLs</td><td>Done</td></tr>
       <tr><td>Unique video DVIDS ID set (May 8 vs current)</td><td>Set diff on DVIDS IDs</td><td>Done - identical</td></tr>
       <tr><td>Multi-row PDF count and identities</td><td>Counter on URL field in current CSV</td><td>Done</td></tr>
-      <tr><td>PDF byte equivalence on slug-changed files</td><td>Re-fetch + SHA-256 compare</td><td>Pending</td></tr>
+      <tr><td>PDF byte equivalence on slug-changed files (D20)</td><td>Re-fetch + SHA-256 compare</td><td>Done 2026-05-23 - bytes identical</td></tr>
       <tr><td>Multi-row PDFs - are extra rows describing the same content or distinct incidents within the PDF?</td><td>PDF text extraction + comparison</td><td>Pending</td></tr>
       <tr><td>Resolution status changes (e.g., the "Middle East 2013" question)</td><td>PDF content read</td><td>Pending</td></tr>
     </tbody>
