@@ -75,7 +75,7 @@
     {
       "@type": "Question",
       "name": "Why does this site say 161 files when war.gov says 158?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Both numbers are correct, for different snapshots. The original PURSUE Drop 01 on May 8, 2026 contained 161 files. On May 11, 2026, war.gov silently revised the canonical list: 28 files renamed with DOW-UAP-PR## prefixes, 5 removed, 3 added, and 6 'Arabian Gulf 2020' entries consolidated under 'Middle East 2020'. Net delta: -3 files. We preserve all 161 original URLs for citation stability and have added the 3 new entries as stubs. Total indexed: 164. Full change log at /revisions."}
+      "acceptedAnswer": {"@type": "Answer", "text": "Both numbers are correct, for different snapshots. The original PURSUE Drop 01 on May 8, 2026 contained 161 unique files (119 PDFs, 28 videos, 14 images). On May 11, 2026, war.gov restructured how the canonical CSV represents the file inventory. Verified differences: zero PDFs added or removed, zero videos added or removed, 9 PDFs gained additional CSV row entries (multi-row representations of the same underlying file), and 1 PDF had its storage slug renamed. Net row delta -3 (161 to 158 CSV rows) reflects multi-row aggregation, not file removals. We preserve all 161 original file URLs for citation stability. Total indexed: 161. Full verified diff at /changes."}
     },
     {
       "@type": "Question",
@@ -195,9 +195,10 @@
 
   <details><summary>Why does this site say 161 files when war.gov says 158?</summary>
     <p><strong>Both numbers are correct, for different snapshots.</strong></p>
-    <p>The original PURSUE Drop 01 on May 8, 2026 contained <strong>161 files</strong>. On May 11, 2026, war.gov silently revised the canonical list. Net delta: -3 files (161 → 158).</p>
-    <p>We preserve all 161 original URLs for citation stability and have added the 3 new entries as stubs. <strong>Total currently indexed: 164.</strong></p>
-    <p><a href="/revisions">Full change log →</a></p>
+    <p>The original PURSUE Drop 01 on May 8, 2026 contained <strong>161 unique files</strong> (119 PDFs, 28 videos, 14 images). On May 11, 2026, war.gov restructured how the canonical CSV represents the file inventory.</p>
+    <p><strong>Verified differences:</strong> zero PDFs added or removed, zero videos added or removed, 9 PDFs gained additional CSV row entries (multi-row representations of the same underlying file), and 1 PDF had its storage slug renamed.</p>
+    <p>Net row delta of -3 (161 → 158 CSV rows) reflects multi-row aggregation, not file removals. We preserve all 161 original file URLs for citation stability. <strong>Total indexed: 161.</strong></p>
+    <p><a href="/changes">Full verified diff with data tables →</a></p>
   </details>
 
   <details><summary>Who runs this site?</summary>

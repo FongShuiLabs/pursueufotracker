@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UAP Timeline: 80 Years of Government UFO Records | PURSUE UFO Tracker</title>
-<meta name="description" content="Chronological timeline of every UAP encounter in the Trump PURSUE disclosure: 1947 Roswell-era FBI records through 2026 AARO mission reports. 164 files plotted by date.">
+<meta name="description" content="Chronological timeline of every UAP encounter in the Trump PURSUE disclosure: 1947 Roswell-era FBI records through 2026 AARO mission reports. 161 files plotted by date.">
 <meta name="keywords" content="UFO timeline, UAP timeline, Trump UFO chronology, PURSUE timeline, when did UFO sightings happen, government UFO history">
 <link rel="canonical" href="https://pursueufotracker.com/timeline">
 <meta name="robots" content="index, follow">
@@ -22,7 +22,7 @@
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "UAP Timeline",
-  "description": "Chronological view of 164 Trump PURSUE UAP files from 1947 to 2026.",
+  "description": "Chronological view of 161 Trump PURSUE UAP files from 1947 to 2026.",
   "url": "https://pursueufotracker.com/timeline"
 }
 </script>
@@ -83,7 +83,7 @@
   <p class="lede">Every encounter in the Trump PURSUE disclosure plotted chronologically. The earliest entry: FBI investigations of 1947 sightings. The most recent: AARO Mission Reports from 2026. Click any entry to read the full file.</p>
 
   <div class="stats-row" id="statsRow">
-    <span><strong>164</strong> total files</span>
+    <span><strong>161</strong> total files</span>
     <span><strong id="dateRange">Loading...</strong></span>
     <span><strong id="decadeCount">-</strong> decades represented</span>
   </div>
@@ -115,8 +115,17 @@
   var allEntries = [];
   var currentAgency = '';
 
-  // Parse YY -> YYYY using 50/49 cutoff (matches Python's datetime behavior).
-  function expandYear(yy){ yy = parseInt(yy, 10); if (isNaN(yy)) return null; return yy < 50 ? 2000 + yy : 1900 + yy; }
+  // Parse YY -> YYYY using a self-adjusting cutoff: any 2-digit year > current
+  // (last two digits) is treated as previous century. PURSUE has no future-dated
+  // files, so this never mis-assigns. Replaces the previous fixed 50/49 cutoff
+  // that incorrectly mapped '48 to 2048 (caught by u/Dizzy_Campaign_8880's
+  // bug report on r/UFOs 2026-05-21).
+  function expandYear(yy){
+    yy = parseInt(yy, 10);
+    if (isNaN(yy)) return null;
+    var currentYY = new Date().getFullYear() % 100;
+    return yy <= currentYY ? 2000 + yy : 1900 + yy;
+  }
 
   // Extract a 4-digit year from any of: 'M/D/YY', 'M/D/YYYY', 'Late YYYY', 'YYYY', etc.
   function extractYear(s){
