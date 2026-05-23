@@ -1,7 +1,4 @@
 # ads.txt for pursueufotracker.com
 # Authorized digital sellers - https://iabtechlab.com/ads-txt/
-# Google AdSense - pub-7264251466939264, activated 2026-05-22
-# (Account ownership: Fong Shui Labs LLC payee; site added under shared AdSense account
-# also serving glp1cost.org. See .claude/accounts.md for full chain of ownership.)
 
 google.com, pub-7264251466939264, DIRECT, f08c47fec0942fa0
