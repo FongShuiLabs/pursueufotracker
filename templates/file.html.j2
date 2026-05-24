@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ f.title }} | {{ site_name }}</title>
+<title>{{ seo_title }} | {{ site_name }}</title>
 {% set _desc_score = (f.score and f.score.value) %}
 {% set _desc_loc = (f.geo and f.geo.place) %}
 {% set _desc_summ = (f.summary or '') | trim %}
@@ -27,7 +27,7 @@
 {% if series_next %}<link rel="next" href="{{ site_url }}/files/{{ series_next.id }}">{% endif %}
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="{{ f.title }}">
+<meta property="og:title" content="{{ seo_title }}">
 <meta property="og:description" content="{{ f.summary or f.title }}">
 <meta property="og:image" content="{{ og_image_abs }}">
 <meta property="og:image:width" content="1200">
@@ -38,7 +38,7 @@
 <meta property="article:section" content="{{ f.agency }}">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ f.title }}">
+<meta name="twitter:title" content="{{ seo_title }}">
 <meta name="twitter:description" content="{{ f.summary or f.title }}">
 <meta name="twitter:image" content="{{ og_image_abs }}">
 
@@ -47,8 +47,8 @@
   {
     "@context": "https://schema.org",
     "@type": "{% if f.type == 'video' %}VideoObject{% elif f.type == 'image' %}ImageObject{% else %}Article{% endif %}",
-    "headline": {{ f.title | tojson }},
-    "name": {{ f.title | tojson }},
+    "headline": {{ seo_title | tojson }},
+    "name": {{ seo_title | tojson }},
     "description": {{ (f.summary or f.title) | tojson }},
     {% if f.type == 'video' %}"thumbnailUrl": {{ og_image_abs | tojson }},
     "contentUrl": {{ (f.video_url or f.source_url) | tojson }},
@@ -80,7 +80,7 @@
   {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    "name": {{ f.title | tojson }},
+    "name": {{ seo_title | tojson }},
     "creator": { "@type": "GovernmentOrganization", "name": "{{ f.agency }}" },
     "url": {{ canonical_url | tojson }},
     "datePublished": "{{ f.date_released }}",
@@ -92,7 +92,7 @@
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "PURSUE Tracker", "item": "{{ site_url }}/" },
       { "@type": "ListItem", "position": 2, "name": "{{ f.agency }}", "item": "{{ site_url }}/#{{ f.category }}" },
-      { "@type": "ListItem", "position": 3, "name": {{ f.title | tojson }}, "item": {{ canonical_url | tojson }} }
+      { "@type": "ListItem", "position": 3, "name": {{ seo_title | tojson }}, "item": {{ canonical_url | tojson }} }
     ]
   }
 ]

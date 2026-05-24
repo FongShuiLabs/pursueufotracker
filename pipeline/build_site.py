@@ -116,15 +116,48 @@ def _event_year(f: dict) -> str:
     return ""
 
 
+def _seo_titles_map(all_files: list[dict]) -> dict[str, str]:
+    """Build {file_id: differentiated_title} for SEO uniqueness.
+
+    When multiple files share the same CSV Title (multi-row PDFs where the
+    same underlying file gets multiple CSV row representations), all share
+    the same title text. That creates duplicate <title> tags across multiple
+    URLs, which is a real SEO problem (Google treats duplicate-title pages
+    as competing for the same ranking).
+
+    Fix: group files by title; within each duplicate group, append
+    "(record N)" where N is the order of appearance in the manifest (1-indexed).
+    When a title is unique, leave it alone. This avoids the trap of trying
+    to extract a "record number" from the slug (which would mis-extract years
+    like 2023, 2024 from slugs that don't actually have a record suffix).
+    """
+    from collections import defaultdict
+    title_groups: dict[str, list[str]] = defaultdict(list)
+    for f in all_files:
+        title_groups[f.get("title", "")].append(f["id"])
+
+    seo = {}
+    for title, ids in title_groups.items():
+        if len(ids) <= 1:
+            seo[ids[0]] = title
+            continue
+        # Multi-file group: number by manifest order of appearance
+        for n, fid in enumerate(ids, start=1):
+            seo[fid] = f"{title} (record {n})"
+    return seo
+
+
 def _render_file_pages(env: Environment, manifest: dict) -> None:
     tpl = env.get_template("file.html.j2")
     all_files = manifest["files"]
+    seo_titles = _seo_titles_map(all_files)
     for f in all_files:
         out = GEN_FILES / f"{f['id']}.html"
         size_h = _human_size(f.get("size_bytes"))
         prev_f, next_f = _series_neighbors(f, all_files)
         ctx = {
             "f": f,
+            "seo_title": seo_titles[f["id"]],
             "size_human": size_h,
             "event_year": _event_year(f),
             "site_name": SITE_NAME,
