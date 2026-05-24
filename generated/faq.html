@@ -35,7 +35,7 @@
     {
       "@type": "Question",
       "name": "When did the Trump administration release the UFO files?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Drop 01 went live on May 8, 2026, with 161 files at war.gov/UFO. Additional drops release on a rolling basis. On May 11, 2026, war.gov revised the canonical list to 158 files (28 renamed with DOW-UAP-PR## prefixes, 5 removed, 3 added). Our automated war.gov poller detected the change within hours and documented the full diff at /revisions."}
+      "acceptedAnswer": {"@type": "Answer", "text": "Drop 01 went live on May 8, 2026, with 161 files at war.gov/UFO. Additional drops release on a rolling basis. On May 11, 2026, war.gov restructured the canonical CSV from 161 rows to 158 rows. Verified by URL-set comparison: zero PDFs added or removed, zero videos added or removed. 9 PDFs gained additional CSV row entries (multi-row representations of the same underlying file), and 1 PDF had its storage slug renamed. Our automated war.gov poller detected the change within hours and the full verified diff is at /changes."}
     },
     {
       "@type": "Question",
@@ -96,6 +96,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "PURSUE Tracker", "item": "https://pursueufotracker.com/"},
+    {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://pursueufotracker.com/faq"}
+  ]
+}
+</script>
 <!-- Google AdSense ownership verification + Auto Ads (pub-7264251466939264, activated 2026-05-22) -->
 <meta name="google-adsense-account" content="ca-pub-7264251466939264">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7264251466939264" crossorigin="anonymous"></script>
@@ -135,7 +145,7 @@
 
   <details><summary>When did the Trump administration release the UFO files?</summary>
     <p><strong>Drop 01 went live on May 8, 2026, with 161 files</strong> at war.gov/UFO. Additional drops are planned on a rolling basis.</p>
-    <p>On <strong>May 11, 2026</strong>, war.gov silently revised the canonical list: 28 files renamed with DOW-UAP-PR## prefixes, 5 removed, 3 added, and 6 "Arabian Gulf 2020" entries consolidated under "Middle East 2020". Net: 158 files. Our automated war.gov poller detected the change within hours. See <a href="/revisions">the full revision log</a>.</p>
+    <p>On <strong>May 11, 2026</strong>, war.gov restructured the canonical CSV from 161 rows to 158 rows. <strong>Verified by URL-set comparison:</strong> zero PDFs added or removed, zero videos added or removed. 9 PDFs gained additional CSV row entries (multi-row representations of the same underlying file), and 1 PDF had its storage slug renamed. Our automated war.gov poller detected the change within hours. Full verified diff with data tables: <a href="/changes">/changes</a>. (See also <a href="/revisions">/revisions</a> for the timestamped corrections history of how we got to the verified version.)</p>
   </details>
 
   <details><summary>Do these files prove aliens exist?</summary>
