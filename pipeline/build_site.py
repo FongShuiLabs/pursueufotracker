@@ -351,7 +351,7 @@ def _build_sitemap(manifest: dict) -> None:
             m = re.match(r"(\d{4}-\d{2}-\d{2})", drop_html.name)
             lastmod = m.group(1) if m else today
             parts.append(
-                f"<url><loc>{SITE_URL}/generated/drops/{html.escape(stem)}</loc>"
+                f"<url><loc>{SITE_URL}/drops/{html.escape(stem)}</loc>"
                 f"<lastmod>{lastmod}</lastmod>"
                 f"<priority>0.85</priority><changefreq>monthly</changefreq></url>"
             )

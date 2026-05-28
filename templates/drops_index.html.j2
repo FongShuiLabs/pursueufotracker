@@ -43,7 +43,7 @@
   <p class="drops-lede">The Trump administration's PURSUE program releases declassified UAP files on a rolling basis. We index every drop within hours.</p>
 
   {% for d in drops %}
-  <a class="drop-row" href="/generated/drops/{{ d.date }}-drop-{{ '%02d'|format(d.number) }}">
+  <a class="drop-row" href="/drops/{{ d.date }}-drop-{{ '%02d'|format(d.number) }}">
     <div class="drop-num">{{ '%02d'|format(d.number) }}</div>
     <div class="drop-body">
       <div class="when">{{ d.date }} · {{ d.agencies | join(' · ') }}</div>

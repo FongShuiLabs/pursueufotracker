@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ drop.title }} - Trump PURSUE Drop {{ "%02d"|format(drop.number) }} | {{ site_name }}</title>
 <meta name="description" content="{{ drop.summary[:160] }}">
-{% set drop_url = site_url ~ '/generated/drops/' ~ drop.date ~ '-drop-' ~ '%02d'|format(drop.number) %}
+{% set drop_url = site_url ~ '/drops/' ~ drop.date ~ '-drop-' ~ '%02d'|format(drop.number) %}
 <link rel="canonical" href="{{ drop_url }}">
 
 <meta property="og:type" content="article">
@@ -55,7 +55,7 @@
 <div class="starfield"></div><div class="grid-bg"></div>
 
 <main class="drop-page">
-  <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="/" style="color:inherit;text-decoration:none">← PURSUE Tracker</a> &nbsp;/&nbsp; <a href="/generated/drops/" style="color:inherit;text-decoration:none">All drops</a></p>
+  <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="/" style="color:inherit;text-decoration:none">← PURSUE Tracker</a> &nbsp;/&nbsp; <a href="/drops/" style="color:inherit;text-decoration:none">All drops</a></p>
 
   <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#ff5757;margin-bottom:8px">DROP {{ '%02d'|format(drop.number) }} · {{ drop.date }}</p>
   <h1>{{ drop.title }}</h1>
@@ -146,7 +146,7 @@
 </section>
 
 <footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
-  <p><a href="/" style="color:#52b4ff">PURSUE Tracker home</a> · <a href="/generated/drops/" style="color:#52b4ff">All drops</a> · <a href="/verdict" style="color:#52b4ff">The honest verdict</a> · <a href="/methodology" style="color:#52b4ff">Methodology</a></p>
+  <p><a href="/" style="color:#52b4ff">PURSUE Tracker home</a> · <a href="/drops/" style="color:#52b4ff">All drops</a> · <a href="/verdict" style="color:#52b4ff">The honest verdict</a> · <a href="/methodology" style="color:#52b4ff">Methodology</a></p>
 </footer>
 </body>
 </html>

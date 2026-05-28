@@ -34,6 +34,7 @@
 /press/ /generated/press 200
 /drops /generated/drops/ 200
 /drops/ /generated/drops/ 200
+/drops/* /generated/drops/:splat 200
 /revisions /generated/revisions 200
 /revisions/ /generated/revisions 200
 /faq /generated/faq 200

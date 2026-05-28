@@ -23,7 +23,7 @@ Drop 1 (May 8, 2026) is already indexed. While you wait for Drop 2, three things
 
 🛸 **[Do aliens exist? The honest answer.](https://pursueufotracker.com/generated/verdict.html)** — what these files actually prove and don't prove. No spin.
 
-📁 **[Drop 1 detail page](https://pursueufotracker.com/generated/drops/2026-05-08-drop-01.html)** — every file from Drop 1 with summary, score, and source link.
+📁 **[Drop 1 detail page](https://pursueufotracker.com/drops/2026-05-08-drop-01)** — every file from Drop 1 with summary, score, and source link.
 
 ---
 
