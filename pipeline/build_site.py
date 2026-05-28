@@ -23,6 +23,21 @@ from .config import (
     AMAZON_AFFILIATE_TAG, BUY_ME_COFFEE_USERNAME, PATREON_USERNAME,
     ENABLE_ADS, ADSENSE_CLIENT_ID,
 )
+from .build_categories import CATEGORIES
+
+
+def _category_page(f: dict) -> dict | None:
+    """Map a file to its category hub page (slug + display name) using the
+    same match logic as build_categories, so the breadcrumb can deep-link
+    each file page to its category landing page. Returns None if no hub
+    page matches (shouldn't happen for current manifest, but stay safe)."""
+    for cat in CATEGORIES:
+        try:
+            if cat["match"](f):
+                return {"slug": cat["slug"], "name": cat["h1"]}
+        except Exception:
+            continue
+    return None
 
 
 def _human_size(n: int | None) -> str:
@@ -169,6 +184,7 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
             "enable_ads": ENABLE_ADS,
             "adsense_client_id": ADSENSE_CLIENT_ID,
             "related_files": _related_files(f, all_files),
+            "category_page": _category_page(f),
             "series_prev": prev_f,
             "series_next": next_f,
         }

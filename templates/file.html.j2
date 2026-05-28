@@ -129,7 +129,7 @@
 <div class="starfield"></div><div class="grid-bg"></div>
 
 <main class="file-page">
-  <div class="breadcrumb"><a href="../../index.html">PURSUE Tracker</a> &nbsp;/&nbsp; {{ f.category | upper }} &nbsp;/&nbsp; {{ f.id }}</div>
+  <div class="breadcrumb"><a href="/">PURSUE Tracker</a> &nbsp;/&nbsp; {% if category_page %}<a href="/{{ category_page.slug }}/">{{ category_page.name }}</a>{% else %}{{ f.category | upper }}{% endif %} &nbsp;/&nbsp; {{ f.id }}</div>
 
   <div class="file-head">
     <h1>{{ f.title }}</h1>
@@ -236,7 +236,7 @@
   <div class="score-block">
     <h2>Anomalousness Index: {{ f.score.value }}/100</h2>
     <p style="color:#a8b8cc;margin-bottom:12px">Evidentiary weight that this encounter remains unexplained after conventional analysis. Not a probability of extraterrestrial origin.</p>
-    <p style="display:inline-block;background:rgba(82,255,180,.08);border:1px solid rgba(82,255,180,.3);color:#52ffb4;padding:6px 12px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;margin-bottom:20px">🤖 AI-ASSISTED SCORING · <a href="../../generated/verdict.html#ai" style="color:inherit;text-decoration:underline">methodology</a></p>
+    <p style="display:inline-block;background:rgba(82,255,180,.08);border:1px solid rgba(82,255,180,.3);color:#52ffb4;padding:6px 12px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;margin-bottom:20px">🤖 AI-ASSISTED SCORING · <a href="/verdict#ai" style="color:inherit;text-decoration:underline">methodology</a></p>
     {% for cname, c in f.score.detail.items() %}
     <div class="score-row">
       <span class="name">{{ cname.replace('_',' ') }} <small style="opacity:.6">({{ c.choice }})</small></span>
@@ -284,7 +284,7 @@
     <p style="color:#7a92b0;font-size:13px;margin-bottom:20px">Other PURSUE files in the same category, ranked by Anomalousness Index.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
       {% for rf in related_files %}
-      <a href="{{ rf.id }}.html" style="display:block;padding:14px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.12);border-radius:6px;text-decoration:none">
+      <a href="/files/{{ rf.id }}" style="display:block;padding:14px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.12);border-radius:6px;text-decoration:none">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
           <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#52b4ff;letter-spacing:1.5px">{{ rf.agency }} · {{ rf.type | upper }}</span>
           {% if rf.score and rf.score.value %}<span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#52ffb4;background:rgba(82,255,180,.1);padding:2px 6px;border-radius:3px">SCORE {{ rf.score.value }}</span>{% endif %}
