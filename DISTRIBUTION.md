@@ -35,9 +35,9 @@ Use the revisions URL prominently in EVERY post below.
 ### Title (pick one - first one is the strongest now that we have the war.gov-edits angle)
 > My automated tracker just caught war.gov silently editing the Trump UFO release. 161 files became 158 overnight. Here's the full diff.
 
-> War.gov quietly revised the PURSUE UFO release on May 11. My auto-poller caught it. 5 files removed, 3 added, 28 renamed.
+> War.gov quietly revised the PURSUE UFO release on May 11. My auto-poller caught it: the canonical CSV went 161 rows to 158 - zero files added or removed, verified by URL-set diff.
 
-> I had Claude AI score all 161 Trump PURSUE files. Then war.gov edited the list. Both versions are still indexed here.
+> I had Claude AI score all 161 Trump PURSUE files. Then war.gov restructured the CSV (161 rows to 158, no files removed). Both snapshots are still indexed here.
 
 > All 161 files from the May 8 PURSUE drop, ranked by AI on a transparent rubric (no "% chance aliens" nonsense)
 
