@@ -69,22 +69,25 @@ Six components, weights sum to 1.00:
 - Mundane explanation availability (0.10): no plausible mundane > strong mundane candidate
 - Official disposition (0.10): open after review > resolved conventional
 
-Top 5 by score (read these first):
+Top 5 by Anomalousness Index (read these first):
 
-1. **NASA-UAP-D3A, Gemini 7 Audio, 1965** - score 72
-   Frank Borman reporting unidentified object to mission control in low Earth orbit, on the official NASA voice loop. Astronaut-witness on the official record is essentially unique in this archive.
+1. **NASA-UAP-D3A, Gemini 7 audio, Dec 5 1965** - score 72 (highest in Drop 01)
+   Astronaut Frank Borman reports an unidentified object - a "bogey" - to Houston mission control on the Gemini 7 air-to-ground loop, with crewmate Jim Lovell also on the recording. An astronaut eyewitness on the official NASA record is essentially unique in this archive, which is why it tops the rubric. Disposition: open after review.
 
-2. **Greece, January 2024 - diamond-shaped UAP, SWIR only** - score 66
-   U.S. military operator tracked an object at ~499 mph that was only visible on the Short-Wave Infrared sensor and invisible in EO/IR. The kinematic profile doesn't fit any known craft.
+2. **Unresolved UAP Report, Middle East, May 2022** - score 66
+   CENTCOM submitted 5 seconds of infrared footage to AARO. The accompanying mission report (DoW-UAP-D10) called the object a "possible missile" and four other objects "possible birds" - still logged unresolved.
 
-3. **UAE, October 2023 - 4 min 57 sec IR sequence** - score 66
-   Longest unresolved IR tracking sequence in Drop 01. Multi-sensor platform.
+3. **Unresolved UAP Report, Iraq, May 2022** - score 66
+   CENTCOM, 10 seconds of infrared footage to AARO. Mission report DoW-UAP-D14 called it a "probable SU-27/35" (a fighter jet), but it was never positively identified, so it stays unresolved.
 
-4. **Syria, July 2022 - dual-sensor IR + EO** - score 66
-   14 seconds of footage with both infrared and electro-optical capture - the multi-sensor confirmation that makes single-sensor explanations harder to sustain.
+4. **Unresolved UAP Report, Syria, July 2022** - score 66
+   CENTCOM, 14 seconds captured on both an infrared and an electro-optical sensor (DoW-UAP-D16), described as moving north to south. The dual-sensor capture is what edges it into the top tier.
 
-5. **Apollo 17, December 1972 - 3 dots, triangular formation on lunar surface** - score 65
-   Open Department of War investigation under PURSUE.
+5. **Unresolved UAP Report, Iraq, December 2022** - score 66
+   CENTCOM, 10 seconds of infrared footage to AARO (DoW-UAP-D18), object flying west to east before leaving the sensor field of view. Logged unresolved.
+
+A note on the ties: files 2-5 all score 66 because they share the same evidentiary profile - single military platform, military-personnel witness, no published kinematic data, unresolved with no formal review. The rubric reports the honest tie instead of inventing precision to break it. Full ranked list with every score:
+https://pursueufotracker.com/top-10
 
 What this tracker does NOT do:
 - Claim aliens exist (the files don't prove that)
@@ -329,7 +332,7 @@ Same body as the r/UFOs post, but DIFFERENT title each time (don't post identica
 > The Trump UFO files, ranked by AI on a transparent six-factor rubric (highest-scoring is from 1965)
 
 ### r/HighStrangeness title
-> 161 PURSUE files with the most anomalous ones called out - astronaut audio, SWIR-only diamonds, lunar formations
+> 161 PURSUE files with the most anomalous ones called out - including 1965 astronaut audio of a "bogey" and unresolved CENTCOM infrared tracks
 
 ### r/UFOB title
 > Indexed every file from the May 8 disclosure with full transcripts + AI scoring on an open rubric
