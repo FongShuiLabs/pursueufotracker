@@ -185,34 +185,33 @@ Happy to answer questions on the pipeline, the rubric, or why I made specific sc
 > [link to the file page]
 
 ### Tweet 4
-> #2 - Greece, January 2024. Score 66.
+> The next tier all score 66 - four CENTCOM infrared tracks submitted to AARO and logged unresolved:
 >
-> Military operator tracked a diamond-shaped UAP at ~499 mph. Object was ONLY visible on the Short-Wave Infrared (SWIR) sensor. Invisible to EO and IR.
->
-> Kinematic profile doesn't fit any known craft.
->
-> [link]
+> • Middle East, May 2022 (5 sec)
+> • Iraq, May 2022 (10 sec)
+> • Syria, July 2022 (14 sec, dual-sensor)
+> • Iraq, December 2022 (10 sec)
 
 ### Tweet 5
-> #3 - UAE, October 2023. Score 66.
+> The standout of that tier: Syria, July 2022.
 >
-> 4 minutes 57 seconds of unresolved infrared tracking. Longest IR sequence in Drop 01. Multi-sensor military platform.
+> 14 seconds captured simultaneously on infrared AND electro-optical sensors. Multi-sensor capture is what closes off the easy single-sensor-artifact explanation.
 >
 > [link]
 
 ### Tweet 6
-> #4 - Syria, July 2022. Score 66.
+> The most visually striking file in the 66-point tier: Greece, January 2024.
 >
-> Dual-sensor: infrared AND electro-optical, simultaneously. Multi-sensor capture is what closes off the easy single-sensor-artifact explanation.
+> A military operator logged a diamond-shaped object at ~499 mph (434 kn), visible ONLY on the Short-Wave Infrared sensor, over ~2 minutes.
 >
-> [link]
+> Scores 66 - tied with the rest of the top tier; only Gemini 7's 72 sits above it. [link]
 
 ### Tweet 7
-> #5 - Apollo 17, December 1972. Score 65.
+> Bonus for the data nerds: war.gov quietly restructured the file list on May 11 (161 CSV rows to 158).
 >
-> Three dots in triangular formation, lower right quadrant of the lunar surface. Currently an open Department of War investigation under PURSUE.
+> My auto-poller caught it within hours. Zero files added or removed - verified by URL-set diff. Full breakdown:
 >
-> [link]
+> pursueufotracker.com/changes
 
 ### Tweet 8 (close)
 > What this site does:
