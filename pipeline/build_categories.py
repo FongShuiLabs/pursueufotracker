@@ -168,6 +168,26 @@ def _page_html(cat: dict, files: list[dict]) -> str:
     }
     jsonld = json.dumps([breadcrumbs, item_list, collection], ensure_ascii=False)
     cards = "\n".join(_file_card_html(f) for f in files)
+    # Cross-category + editorial internal links. The hub pages receive a
+    # file->hub link from all 161 file-page breadcrumbs; this nav redistributes
+    # that equity to the other hubs and the high-value editorial pages, and
+    # lifts pageviews per session (more ad impressions).
+    other_cats = "".join(
+        f'<a class="explore-chip" href="/{c["slug"]}/">{_html.escape(c["h1"])}</a>'
+        for c in CATEGORIES if c["slug"] != cat["slug"]
+    )
+    explore_nav = f"""  <nav class="cat-explore" aria-label="Explore the rest of the archive" style="margin:48px 0 8px;padding:28px;background:rgba(82,180,255,.04);border:1px solid rgba(82,180,255,.15);border-radius:10px">
+    <h2 style="color:#fff;font-size:20px;margin-bottom:16px">Explore the rest of the PURSUE archive</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px">{other_cats}</div>
+    <p style="color:#a8b8cc;font-size:14px;margin:0;line-height:1.9">
+      <a href="/top-10" style="color:#52b4ff;text-decoration:none">Top 10 most anomalous</a> &nbsp;·&nbsp;
+      <a href="/methodology" style="color:#52b4ff;text-decoration:none">How the scoring works</a> &nbsp;·&nbsp;
+      <a href="/timeline" style="color:#52b4ff;text-decoration:none">Timeline 1947-2026</a> &nbsp;·&nbsp;
+      <a href="/verdict" style="color:#52b4ff;text-decoration:none">The honest verdict</a> &nbsp;·&nbsp;
+      <a href="/changes" style="color:#52b4ff;text-decoration:none">War.gov revision diff</a> &nbsp;·&nbsp;
+      <a href="/faq" style="color:#52b4ff;text-decoration:none">FAQ</a>
+    </p>
+  </nav>"""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -221,6 +241,8 @@ def _page_html(cat: dict, files: list[dict]) -> str:
   .cat-card h3{{color:#fff;font-size:16px;margin:0 0 8px;line-height:1.35;font-weight:600}}
   .cat-card p{{color:#a8b8cc;font-size:13px;margin:0;line-height:1.55}}
   .cat-back{{display:inline-block;margin-top:24px;color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1px;text-decoration:none}}
+  .explore-chip{{display:inline-block;padding:8px 14px;background:rgba(82,180,255,.08);border:1px solid rgba(82,180,255,.25);border-radius:6px;color:#dfe6ef;text-decoration:none;font-size:13px;font-weight:500}}
+  .explore-chip:hover{{border-color:rgba(82,180,255,.5)}}
 </style>
 </head>
 <body>
@@ -243,6 +265,8 @@ def _page_html(cat: dict, files: list[dict]) -> str:
   <div class="cat-grid">
 {cards}
   </div>
+
+{explore_nav}
 
   <a class="cat-back" href="/">← BACK TO ALL 161 FILES</a>
 </main>
