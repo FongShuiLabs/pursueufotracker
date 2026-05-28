@@ -246,10 +246,10 @@ The scoring rubric is published as open JSON - six components, weights sum to 1.
 
 Top 5 by score:
 1. NASA-UAP-D3A, Gemini 7 Audio, 1965 (Frank Borman) - 72
-2. Greece, January 2024, SWIR-only diamond - 66
-3. UAE, October 2023, 4:57 IR sequence - 66
-4. Syria, July 2022, dual-sensor IR+EO - 66
-5. Apollo 17, December 1972, lunar surface dots - 65
+2. Unresolved UAP Report, Middle East, May 2022 (CENTCOM IR) - 66
+3. Unresolved UAP Report, Iraq, May 2022 (CENTCOM IR) - 66
+4. Unresolved UAP Report, Syria, July 2022 (dual-sensor IR+EO) - 66
+5. Unresolved UAP Report, Iraq, December 2022 (CENTCOM IR) - 66
 
 Site: https://pursueufotracker.com
 Press kit (free embed assets, fact sheet, contact): https://pursueufotracker.com/press
