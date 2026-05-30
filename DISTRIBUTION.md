@@ -293,7 +293,7 @@ Two angles that might be reportable:
 
 1. **The scoring story.** I had Claude apply an open six-axis rubric to every file. The math is auditable (rubric weights sum to 1.00 as published JSON). Highest-scoring file is Frank Borman's 1965 Gemini 7 audio - astronaut-on-the-record, which is essentially unique in the archive.
 
-2. **The Greece SWIR file.** January 2024. Military operator tracked a diamond-shaped UAP at 499 mph visible ONLY on Short-Wave Infrared. Not visible on standard IR or EO. AARO disposition is open after review. The sensor specificity is unusual.
+2. **The Greece SWIR file.** January 2024. Military operator tracked a diamond-shaped UAP at ~499 mph (434 kn) visible ONLY on Short-Wave Infrared, over ~2 minutes. Not visible on standard IR or EO. Scored 66 on the rubric (tied with the top tier; only Gemini 7's 72 sits above it). AARO disposition is unresolved, no formal review. The sensor specificity is unusual.
 
 Press kit (fact sheet + embed assets): https://pursueufotracker.com/press
 Rubric: https://pursueufotracker.com/data/scoring-rubric.json
@@ -361,22 +361,16 @@ Same body as the r/UFOs post, but DIFFERENT title each time (don't post identica
 [1:00-2:00] THE METHODOLOGY (critical - earns credibility)
 "The score is what I call the Anomalousness Index. NOT a probability of aliens. Anyone publishing that number is selling you something. The score reflects evidentiary weight that the encounter remains unexplained after conventional analysis. Six components, weights sum to 1.00. [show rubric on screen]. The full rubric is open JSON - anyone can recompute every score."
 
-[2:00-3:00] FILE #5: APOLLO 17
-"Apollo 17, December 1972. Three dots in a triangular formation on the lunar surface. NASA opened a Department of War investigation on this image under PURSUE. Score: 65."
+[2:00-3:30] FILES #2-5: THE 66-POINT TIER
+"After Gemini 7's 72, the next tier on the rubric is a four-way tie at 66 - all CENTCOM infrared tracks, submitted to AARO, logged unresolved. Middle East, May 2022: five seconds of IR, the mission report flagged it as a 'possible missile.' Iraq, May 2022: ten seconds of IR, the report flagged it as a 'probable SU-27 or 35' that was never confirmed. Iraq, December 2022: ten seconds of IR, object tracked west-to-east. And the standout of the tier - Syria, July 2022: fourteen seconds captured simultaneously on infrared AND electro-optical sensors. The dual-sensor capture is what closes off the easy single-sensor-artifact explanation."
 
-[3:00-4:00] FILE #4: SYRIA 2022
-"Syria, July 2022. U.S. military platform, 14 seconds of footage, captured simultaneously on infrared AND electro-optical sensors. Multi-sensor capture is what closes off the easy explanation."
+[3:30-5:00] BONUS: THE MOST VISUALLY STRIKING FILE
+"Doesn't make the top five by score - only because roughly fifteen files tie at 66 - but it's the file people remember: Greece, January 2024. A military operator logged a diamond-shaped object at approximately 434 knots, that's about 499 miles per hour, visible ONLY on the Short-Wave Infrared sensor. Invisible on standard IR. Invisible on EO. Over roughly two minutes. The mission report explicitly cautions that its descriptions should not be read as conclusive about the object's actual features - so I'm not telling you what it was. I'm telling you what the sensor recorded."
 
-[4:00-5:00] FILE #3: UAE 2023
-"United Arab Emirates, October 2023. 4 minutes 57 seconds of unresolved infrared tracking. Longest IR sequence in the archive. AARO disposition: open."
+[5:00-6:30] FILE #1: GEMINI 7 (the twist)
+"This is what made me build the site. NASA-UAP-D3A. Gemini 7. December 5, 1965. Astronaut Frank Borman reports an unidentified object - he called it a 'bogey' - to Houston mission control. On the official NASA voice loop, with crewmate Jim Lovell also on the recording. Audio is on the site. Astronaut-witness on the federal record is essentially unique in this archive. The Apollo photos can be explained. The lunar formations can be debated. But trained astronauts reporting an unidentified object to mission control, on the record, is a different category of evidence."
 
-[5:00-6:30] FILE #2: GREECE 2024
-"Greece, January 2024. This is the one. Military operator tracked a diamond-shaped UAP at approximately 499 miles per hour. Object was visible ONLY on the Short-Wave Infrared sensor. Invisible on standard IR. Invisible on EO. That kind of sensor specificity is very hard to explain with a balloon or a drone."
-
-[6:30-8:00] FILE #1: GEMINI 7 (twist)
-"This is what made me build the site. NASA-UAP-D3A. Gemini 7. December 5, 1965. Frank Borman, astronaut, reporting to Houston mission control. On the official NASA voice loop. Audio is on the site. Astronaut-witness on the federal record is essentially unique in this archive. The Apollo photos can be explained. The lunar formations can be debated. But trained astronauts reporting unidentified objects to mission control, on the record, is a different category of evidence."
-
-[8:00-9:00] CLOSE
+[6:30-7:30] CLOSE
 "Site is pursueufotracker.com. All 161 files, full text search, transcripts on every video. The rubric is open. SHA-256 hashes verify against war.gov. Public domain. Subscribe if you want to be alerted when Drop 02 lands - my auto-poller checks war.gov every 30 minutes. Link in description."
 ```
 
