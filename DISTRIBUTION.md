@@ -340,7 +340,7 @@ Same body as the r/UFOs post, but DIFFERENT title each time (don't post identica
 > Open six-axis scoring rubric applied to all 161 PURSUE files. Methodology critique welcome.
 
 ### r/conspiracy title
-> Trump's UFO files ranked by AI - the open methodology and the 5 the government can't explain
+> Trump's UFO files ranked by AI - the open methodology and the 5 the government left unresolved
 
 ---
 
