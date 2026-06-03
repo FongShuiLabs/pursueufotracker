@@ -1,6 +1,24 @@
 # PURSUE UFO Tracker — Action Queue
 
-**Last updated: 2026-05-29** (replaces the 2026-05-09 launch-week version; site is launched, the viral spike is past, AdSense is in review, focus is now traffic + activation + Drop 02 readiness)
+**Last updated: 2026-06-03** (Drop 02 checkpoint reminder added; 4 new topic pages shipped this week; war.gov still unchanged 22 days)
+
+---
+
+## 📅 CHECKPOINT — Saturday 2026-06-07 (projected Drop 02 window)
+
+Set 2026-06-03 by operator request. Calendar event also on `anthony.fong.esq@gmail.com` for Sat 6/7 9:00 AM ET.
+
+**Step 1 — did Drop 02 actually land?**
+- Check `data/poll-state.json` `last_change_at` vs the 6/3 baseline `2026-05-12T23:19:37Z` (row_count was 158)
+- Or look for a `[NEW DROP]` auto-poller issue on the repo
+
+**Step 2A — IF Drop 02 landed:** Follow [`DROP02_REACTION.md`](DROP02_REACTION.md) end-to-end. PLUS post a short UPDATE comment on the original r/UFOs viral thread (Aclosmurf account, ~5/20): *"Update — Drop 02 landed [DATE]. [N] new files indexed, scored, SHA-256 verified. Full diff: pursueufotracker.com/changes"* — and drop the homepage banner from DROP02_REACTION.md § 4.
+
+**Step 2B — IF Drop 02 did NOT land:** Skip the full reaction post. Post a short status-check on the original r/UFOs thread: *"Status check [DATE]: war.gov still at 158 rows, no new files since May 11. Auto-poller still active. /changes has the verified diff."*
+
+**Hard Rule #7** — every count/date in the public posts must come from live-pulled `poll-state.json` or the `[NEW DROP]` issue body. No memory, no inference. (The May 11 narrative got mis-told as "5 removed / 3 added / 28 renamed" the first time around — don't repeat.)
+
+Also check on 6/7: r/UFOscience post (was 5/27, draft in DISTRIBUTION.md if still unposted), AdSense site review (~day 16 of the 1-14 window).
 
 ---
 
