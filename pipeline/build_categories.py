@@ -24,20 +24,23 @@ CATEGORIES = [
         "h1": "FBI UFO Files",
         "match": lambda f: f.get("category") == "fbi" or f.get("agency") == "FBI",
         "intro": (
-            "Fifty-seven FBI files were declassified in the May 2026 PURSUE release: the bureau's "
-            "internal case file <strong>62-HQ-83894</strong>, which aggregates UAP investigations from "
-            "<strong>June 1947 through July 1968</strong>. It covers the Roswell field office reporting, "
-            "the Oak Ridge incidents, four decades of citizen sighting reports, the FBI photographic "
-            "library, and technical proposals on propulsion systems engineers thought might explain the "
-            "objects. Most files are partially redacted; we mark redaction status on each. All are public "
-            "domain U.S. Government works under 17 U.S.C. § 105."
+            "Fifty-seven FBI files were declassified in the May 2026 PURSUE release. The largest single "
+            "block is the Bureau's central case file <strong>62-HQ-83894</strong> (18 PDFs), which "
+            "aggregates UFO and flying-disc investigations from <strong>June 1947 through July 1968</strong> "
+            "- 21 years of running investigative records. The PURSUE release also includes Oak Ridge, "
+            "Tennessee incident reporting, eyewitness testimonies and public reports from the period, "
+            "technical proposals on propulsion systems engineers thought might explain the reported "
+            "objects, and case file pages newly declassified beyond what the FBI Vault has previously "
+            "posted. Most files are partially redacted; we mark redaction status on each. All are public "
+            "domain U.S. Government works under 17 U.S.C. § 105. For a file-by-file walkthrough of the "
+            "62-HQ-83894 cluster, see <a href='/fbi-62-hq-83894'>our dedicated deep dive</a>."
         ),
         "meta_desc": (
             "All 57 FBI UFO files declassified in the Trump administration's May 2026 PURSUE release. "
-            "Case file 62-HQ-83894, Roswell records, Oak Ridge incidents, 1947-1968 investigations. "
+            "Central case file 62-HQ-83894, Oak Ridge incidents, 1947-1968 investigations. "
             "Indexed, searchable, full SHA-256 verification."
         ),
-        "keywords": "FBI UFO files, FBI UFO declassified, 62-HQ-83894, Roswell FBI records, Oak Ridge UFO, FBI vault UFO, Trump FBI UFO release, PURSUE FBI",
+        "keywords": "FBI UFO files, FBI UFO declassified, 62-HQ-83894, FBI flying disc investigation, Oak Ridge UFO, FBI vault UFO, Trump FBI UFO release, PURSUE FBI",
     },
     {
         "slug": "military-uap-files",
