@@ -351,6 +351,7 @@ def _build_sitemap(manifest: dict) -> None:
         ("/borman-incident", "0.9", "monthly"),
         ("/apollo-12-ufo-photos", "0.9", "monthly"),
         ("/fbi-62-hq-83894", "0.9", "monthly"),
+        ("/aaro-unresolved-uap", "0.9", "monthly"),
         ("/api", "0.8", "monthly"),
         ("/fbi-ufo-files/", "0.9", "weekly"),
         ("/military-uap-files/", "0.9", "weekly"),
