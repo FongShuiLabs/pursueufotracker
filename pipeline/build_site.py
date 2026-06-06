@@ -26,6 +26,95 @@ from .config import (
 from .build_categories import CATEGORIES
 
 
+CHOICE_EXPLANATIONS = {
+    "sensor_quality": {
+        "single_sensor_military": "Captured by a single U.S. military sensor platform (typically infrared, occasionally short-wave infrared or dual EO+IR), aboard a mission aircraft or operational platform. Instrumented, time-stamped, and recoverable. Lower than a multi-sensor capture only because cross-modality confirmation is the rubric's higher bar.",
+        "photographic": "Captured as a still photograph rather than a time-series sensor capture. The rubric scores still photography below instrumented sensor capture because a still image lacks temporal context and cross-modality confirmation - both of which weight heavily against artifact and noise explanations.",
+        "eyewitness_only": "Reported by a witness with no instrumented record. The lowest tier in the rubric's sensor axis. Eyewitness perception in field conditions, even when the witness is highly credentialed, scores below capture by any instrumented modality.",
+    },
+    "witness_credibility": {
+        "astronaut": "Astronaut witness on the official federal record. The highest tier in the rubric and essentially unique in the PURSUE archive - only the Borman/Lovell Gemini 7 file fits this tier, which is the structural reason it is the sole 72 in the archive.",
+        "military_personnel": "Trained U.S. military personnel reporting from an operational mission context. The second-highest credibility tier in the rubric. This is the witness profile shared by the entire AARO-submitted infrared-capture cluster that anchors the 66-point score band.",
+        "federal_agent": "Federal agency personnel (FBI investigators or equivalent) recording the report into the federal investigative system. Investigative credentials, but typically operating in a reactive rather than mission-active posture.",
+        "civilian_credentialed": "Civilian witness whose report entered the federal record through investigative channels. The rubric weights civilian credentialed witnesses below uniformed personnel because the report enters the federal record at a remove rather than directly from a mission context.",
+    },
+    "corroboration": {
+        "single_witness_instrument": "Single-witness or single-instrument capture. Every file in the PURSUE archive scores at this corroboration tier on the released metadata - the rubric records the honest limit of the underlying record rather than inferring multi-witness corroboration that the released summaries do not establish.",
+    },
+    "kinematic_anomaly": {
+        "no_kinematic_data": "No kinematic measurements - speed, acceleration, vector - are published in the released file with sufficient precision to score on the kinematic axis. The rubric does not infer kinematic anomaly from narrative observer estimates. Every file in the archive carries this value, which is itself an observation about the disclosure: kinematic-grade telemetry was not part of what was released.",
+    },
+    "mundane_explanation_available": {
+        "weak_mundane_candidate": "A conventional candidate explanation has been considered but is not dispositive. Every file in the archive scores this way - reflecting that the underlying release metadata systematically caveats strong determinations in either direction. The released summaries warn against reading them as conclusive analytical judgments, and the rubric respects that.",
+    },
+    "official_disposition": {
+        "open_after_review": "Released as open after formal review by the originating agency. The file passed through a review process and was published in that posture - a stronger disposition signal than 'unresolved with no review,' because review has occurred and the open status is the agency's published conclusion.",
+        "unresolved_no_review": "Catalogued as unresolved with no formal review process having concluded. This is the AARO baseline disposition for the 27-file score-66 cluster - the reports are logged into the system as unresolved, but no formal review has finalized. The rubric distinguishes this from 'open after review' because the absence of review is itself a status signal.",
+    },
+}
+
+TOPIC_PAGES = [
+    {"match": lambda f: f["id"] == "nasa-uap-d3a-gemini-7-audio-excerpt-1965",
+     "slug": "/borman-incident", "name": "The Borman Incident", "size": 1,
+     "anchor": "the highest-scoring file in the archive at 72"},
+    {"match": lambda f: f["id"].startswith("65-hs1-834228961-62-hq-83894-"),
+     "slug": "/fbi-62-hq-83894", "name": "FBI Case 62-HQ-83894", "size": 18,
+     "anchor": "the 18-PDF FBI central case file covering 1947-1968"},
+    {"match": lambda f: f["id"] in {"nasa-uap-vm1-apollo-12-1969","nasa-uap-vm2-apollo-12-1969","nasa-uap-vm3-apollo-12-1969","nasa-uap-vm4-apollo-12-1969","nasa-uap-vm5-apollo-12-1969","nasa-uap-d1-apollo-12-transcript-1969"},
+     "slug": "/apollo-12-ufo-photos", "name": "Apollo 12 UFO Photos", "size": 6,
+     "anchor": "the 6-file Apollo 12 PURSUE cluster"},
+    {"match": lambda f: (f.get("score") or {}).get("value") == 66,
+     "slug": "/aaro-unresolved-uap", "name": "AARO Unresolved UAP", "size": 27,
+     "anchor": "the 27-file AARO unresolved cluster tied at 66"},
+]
+
+
+def _topic_page_for(f: dict) -> dict | None:
+    """First-match wins (predicates are mutually exclusive by construction)."""
+    for tp in TOPIC_PAGES:
+        try:
+            if tp["match"](f):
+                return {"slug": tp["slug"], "name": tp["name"], "size": tp["size"], "anchor": tp["anchor"]}
+        except Exception:
+            continue
+    return None
+
+
+def _score_tier_phrase(score: int | None, rank: int, total: int) -> str:
+    """One sentence placing this score in the broader archive context."""
+    if score is None:
+        return ""
+    if score >= 72:
+        return "That score is the highest in the PURSUE archive - the only file at this tier."
+    if score >= 66:
+        return f"That places it tied with 26 other files at 66 - the densest single-score cluster in the archive, anchored by AARO-submitted military infrared captures."
+    if score >= 65:
+        return f"That places it one rubric point below the 27-file AARO 66 cluster and seven below the Gemini 7 audio at 72 - the second tier in the archive."
+    if score >= 60:
+        return f"That places it in the mid-archive band ({rank} of {total} by score). The score reflects the rubric's read on evidentiary weight, not the underlying event's significance."
+    return f"That places it in the lower-scoring band of the archive ({rank} of {total} by score), typical of investigative-record style files where the report is paper-based rather than instrumented."
+
+
+def _rank_map(all_files: list[dict]) -> dict[str, int]:
+    """File id -> rank (1-indexed) by score desc, ties broken by id."""
+    ranked = sorted(all_files, key=lambda g: (-((g.get("score") or {}).get("value") or 0), g.get("id", "")))
+    return {g["id"]: i + 1 for i, g in enumerate(ranked)}
+
+
+def _agency_rank_map(all_files: list[dict]) -> dict[str, tuple[int, int]]:
+    """File id -> (rank within agency, total files in agency)."""
+    from collections import defaultdict
+    by_agency: dict[str, list[dict]] = defaultdict(list)
+    for f in all_files:
+        by_agency[f.get("agency", "")].append(f)
+    result: dict[str, tuple[int, int]] = {}
+    for agency, files in by_agency.items():
+        files.sort(key=lambda g: (-((g.get("score") or {}).get("value") or 0), g.get("id", "")))
+        for i, g in enumerate(files):
+            result[g["id"]] = (i + 1, len(files))
+    return result
+
+
 def _category_page(f: dict) -> dict | None:
     """Map a file to its category hub page (slug + display name) using the
     same match logic as build_categories, so the breadcrumb can deep-link
@@ -166,10 +255,31 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
     tpl = env.get_template("file.html.j2")
     all_files = manifest["files"]
     seo_titles = _seo_titles_map(all_files)
+    rank_by_id = _rank_map(all_files)
+    agency_rank_by_id = _agency_rank_map(all_files)
+    total_files = len(all_files)
     for f in all_files:
         out = GEN_FILES / f"{f['id']}.html"
         size_h = _human_size(f.get("size_bytes"))
         prev_f, next_f = _series_neighbors(f, all_files)
+        # Build per-file score-component explanations from the rubric choices
+        comps = (f.get("score") or {}).get("detail") or {}
+        score_explanations = {}
+        for cname, c in comps.items():
+            choice = c.get("choice") if isinstance(c, dict) else None
+            if choice and cname in CHOICE_EXPLANATIONS and choice in CHOICE_EXPLANATIONS[cname]:
+                score_explanations[cname] = CHOICE_EXPLANATIONS[cname][choice]
+        rank = rank_by_id.get(f["id"])
+        ag_rank, ag_total = agency_rank_by_id.get(f["id"], (None, None))
+        score_val = (f.get("score") or {}).get("value")
+        archive_context = {
+            "rank": rank,
+            "total": total_files,
+            "agency_rank": ag_rank,
+            "agency_total": ag_total,
+            "tier_phrase": _score_tier_phrase(score_val, rank or 999, total_files),
+            "topic_page": _topic_page_for(f),
+        }
         ctx = {
             "f": f,
             "seo_title": seo_titles[f["id"]],
@@ -187,6 +297,8 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
             "category_page": _category_page(f),
             "series_prev": prev_f,
             "series_next": next_f,
+            "archive_context": archive_context,
+            "score_explanations": score_explanations,
         }
         out.write_text(tpl.render(**ctx), encoding="utf-8")
 

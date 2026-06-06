@@ -257,22 +257,43 @@
 
   {% if f.summary %}
   <p style="font-size:17px;color:#dfe6ef;line-height:1.7;margin:24px 0">{{ f.summary }}</p>
+  <p style="font-size:13px;color:#7a92b0;line-height:1.6;margin:8px 0 24px;font-style:italic">The summary above is sourced from the released file metadata as published to war.gov. The analysis sections below are original to this tracker.</p>
   {% endif %}
 
   {% set slot_id = "1234567890" %}{% set ad_format = "auto" %}
   {% include "partials/ad_slot.html.j2" %}
 
+  {% if archive_context and archive_context.rank %}
+  <section class="archive-context" style="margin:32px 0;padding:28px 30px;background:rgba(82,180,255,.04);border:1px solid rgba(82,180,255,.18);border-radius:10px">
+    <h2 style="color:#fff;font-size:22px;margin:0 0 14px">Where this file fits in the PURSUE archive</h2>
+    <p style="color:#dfe6ef;font-size:15.5px;line-height:1.7;margin:0 0 14px">This file is one of <strong>{{ f.agency }}'s {{ archive_context.agency_total }}</strong> files in the May 8, 2026 Trump PURSUE disclosure. Within the {{ f.agency }} agency block it ranks <strong>#{{ archive_context.agency_rank }} of {{ archive_context.agency_total }}</strong> by Anomalousness Index. Across the entire 161-file release it ranks <strong>#{{ archive_context.rank }} of {{ archive_context.total }}</strong>.</p>
+    {% if archive_context.tier_phrase %}
+    <p style="color:#dfe6ef;font-size:15.5px;line-height:1.7;margin:0 0 14px">{{ archive_context.tier_phrase }}</p>
+    {% endif %}
+    {% if archive_context.topic_page %}
+    <p style="color:#dfe6ef;font-size:15.5px;line-height:1.7;margin:0">For the broader cluster context, this file is part of <a href="{{ archive_context.topic_page.slug }}" style="color:#52b4ff;text-decoration:none"><strong>{{ archive_context.topic_page.name }}</strong></a> - {{ archive_context.topic_page.anchor }}. The cluster page walks through all {{ archive_context.topic_page.size }} member files with regional grouping, sensor breakdown, and standout analysis.</p>
+    {% endif %}
+  </section>
+  {% endif %}
+
   {% if f.score and f.score.detail %}
   <div class="score-block">
     <h2>Anomalousness Index: {{ f.score.value }}/100</h2>
-    <p style="color:#a8b8cc;margin-bottom:12px">Evidentiary weight that this encounter remains unexplained after conventional analysis. Not a probability of extraterrestrial origin.</p>
+    <p style="color:#a8b8cc;margin-bottom:12px">Evidentiary weight that this encounter remains unexplained after conventional analysis. Not a probability of extraterrestrial origin - that number is not honestly computable from the released files and this tracker refuses to publish it.</p>
     <p style="display:inline-block;background:rgba(82,255,180,.08);border:1px solid rgba(82,255,180,.3);color:#52ffb4;padding:6px 12px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;margin-bottom:20px">🤖 AI-ASSISTED SCORING · <a href="/verdict#ai" style="color:inherit;text-decoration:underline">methodology</a></p>
+    <p style="color:#dfe6ef;font-size:14.5px;line-height:1.7;margin-bottom:24px">The six rubric components break down for this file as follows. Each component has a weighted contribution to the final score; the per-component explanation below describes what this file's particular value on that component means in the rubric's framework.</p>
     {% for cname, c in f.score.detail.items() %}
-    <div class="score-row">
-      <span class="name">{{ cname.replace('_',' ') }} <small style="opacity:.6">({{ c.choice }})</small></span>
-      <span class="val">{{ c.value }} × {{ c.weight }} = {{ c.contribution }}</span>
+    <div style="margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid rgba(82,180,255,.1)">
+      <div class="score-row">
+        <span class="name">{{ cname.replace('_',' ') }} <small style="opacity:.6">({{ c.choice.replace('_',' ') }})</small></span>
+        <span class="val">{{ c.value }} × {{ c.weight }} = {{ c.contribution }}</span>
+      </div>
+      {% if score_explanations and score_explanations[cname] %}
+      <p style="color:#a8b8cc;font-size:14px;line-height:1.65;margin:10px 0 0">{{ score_explanations[cname] }}</p>
+      {% endif %}
     </div>
     {% endfor %}
+    <p style="color:#dfe6ef;font-size:14.5px;line-height:1.7;margin:18px 0 0;padding-top:6px"><strong style="color:#fff">Bottom line on the score:</strong> the Anomalousness Index of {{ f.score.value }}/100 reflects evidentiary weight that this specific file's encounter remains structurally unexplained by the rubric's six axes - it is not a claim that the underlying event involved anything non-conventional, and it is not comparable across rubrics that use different weights. For the full per-axis weights and the rubric JSON, see <a href="/methodology" style="color:#52b4ff;text-decoration:none">/methodology</a>.</p>
   </div>
   {% endif %}
 
