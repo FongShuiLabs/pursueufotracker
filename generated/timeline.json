@@ -5,7 +5,7 @@
     "date": "1/24/85",
     "category": "state",
     "agency": "STATE",
-    "score": null,
+    "score": 50,
     "url": "/files/state-department-uap-cable-001-papua-new-guinea-january-28-1985"
   },
   {
@@ -14,7 +14,7 @@
     "date": "1/25/24",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d025-mission-report-greece-january-2024"
   },
   {
@@ -23,7 +23,7 @@
     "date": "1/27/94",
     "category": "state",
     "agency": "STATE",
-    "score": null,
+    "score": 50,
     "url": "/files/state-department-uap-cable-002-kazakhstan-january-31-1994"
   },
   {
@@ -41,7 +41,7 @@
     "date": "10/1/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d063-mission-report-strait-of-hormuz-october-2020"
   },
   {
@@ -59,7 +59,7 @@
     "date": "10/15/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d044-range-fouler-reporting-form-gulf-of-aden-october-2020"
   },
   {
@@ -68,7 +68,7 @@
     "date": "10/20/24",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d032-mission-report-syria-october-2024"
   },
   {
@@ -77,7 +77,7 @@
     "date": "10/27/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d058-range-fouler-debrief-na-october-2020"
   },
   {
@@ -86,7 +86,7 @@
     "date": "10/27/23",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d033-mission-report-greece-october-2023"
   },
   {
@@ -95,7 +95,7 @@
     "date": "10/28/2001-10/29/2001",
     "category": "state",
     "agency": "STATE",
-    "score": null,
+    "score": 50,
     "url": "/files/state-department-uap-cable-003-tbilisi-georgia-october-30-2001"
   },
   {
@@ -104,7 +104,7 @@
     "date": "10/29/23",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d035-mission-report-greece-october-2023"
   },
   {
@@ -113,7 +113,7 @@
     "date": "10/3/62",
     "category": "nasa",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d012-mercury-atlas-8-audio-excerpt-october-3-1962"
   },
   {
@@ -122,7 +122,7 @@
     "date": "10/31/23",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d023-mission-report-united-arab-emirates-october-2023"
   },
   {
@@ -131,7 +131,7 @@
     "date": "10/31/24",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d052-email-correspondance-na-august-2024"
   },
   {
@@ -140,7 +140,7 @@
     "date": "11/18/16",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d055-mission-report-syria-november-2016"
   },
   {
@@ -149,7 +149,7 @@
     "date": "11/2/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d064-mission-report-iran-november-2020"
   },
   {
@@ -158,7 +158,7 @@
     "date": "11/5/04",
     "category": "state",
     "agency": "STATE",
-    "score": null,
+    "score": 50,
     "url": "/files/state-department-uap-cable-004-ashgabat-turkmenistan-november-5-2004"
   },
   {
@@ -185,7 +185,7 @@
     "date": "11/9/23",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d074-mission-report-syria-november-2023"
   },
   {
@@ -194,7 +194,7 @@
     "date": "12/1/22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d018-mission-report-iraq-december-2022"
   },
   {
@@ -203,7 +203,7 @@
     "date": "12/20/73",
     "category": "intel",
     "agency": "CIA",
-    "score": null,
+    "score": 47,
     "url": "/files/cia-uap-d001-intelligence-information-report-ussr-1973"
   },
   {
@@ -221,7 +221,7 @@
     "date": "12/5/65",
     "category": "nasa",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d003-gemini-7-transcript-1965"
   },
   {
@@ -230,7 +230,7 @@
     "date": "12/5/65",
     "category": "nasa",
     "agency": "NASA",
-    "score": null,
+    "score": 72,
     "url": "/files/nasa-uap-d003a-gemini-7-audio-excerpt-1965"
   },
   {
@@ -239,7 +239,7 @@
     "date": "12/7/72",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972"
   },
   {
@@ -248,7 +248,7 @@
     "date": "1948-1950",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 56,
     "url": "/files/dow-uap-d017-uap-reported-at-sandia-base-1948-1950"
   },
   {
@@ -257,7 +257,7 @@
     "date": "1969",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969"
   },
   {
@@ -266,7 +266,7 @@
     "date": "1969",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d001-apollo-12-transcript-1969"
   },
   {
@@ -275,7 +275,7 @@
     "date": "1969",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d004-apollo-11-technical-crew-debriefing-1969"
   },
   {
@@ -284,7 +284,7 @@
     "date": "1969",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 65,
     "url": "/files/nasa-uap-vm001-apollo-12-1969"
   },
   {
@@ -293,7 +293,7 @@
     "date": "1969",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 65,
     "url": "/files/nasa-uap-vm002-apollo-12-1969"
   },
   {
@@ -302,7 +302,7 @@
     "date": "1969",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 65,
     "url": "/files/nasa-uap-vm003-apollo-12-1969"
   },
   {
@@ -311,7 +311,7 @@
     "date": "1969",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 65,
     "url": "/files/nasa-uap-vm004-apollo-12-1969"
   },
   {
@@ -320,7 +320,7 @@
     "date": "1969",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 65,
     "url": "/files/nasa-uap-vm005-apollo-12-1969"
   },
   {
@@ -329,7 +329,7 @@
     "date": "1970s",
     "category": "intel",
     "agency": "DOE",
-    "score": null,
+    "score": 47,
     "url": "/files/doe-uap-d002-james-tuck-correspondence-1970s"
   },
   {
@@ -338,7 +338,7 @@
     "date": "1972",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d002-apollo-17-transcript-1972"
   },
   {
@@ -347,7 +347,7 @@
     "date": "1972",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 65,
     "url": "/files/nasa-uap-vm006-apollo-17-1972"
   },
   {
@@ -356,7 +356,7 @@
     "date": "1973",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d005-apollo-17-crew-debriefing-for-science-1973"
   },
   {
@@ -365,7 +365,7 @@
     "date": "1973",
     "category": "apollo",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d006-apollo-17-technical-crew-debriefing-1973"
   },
   {
@@ -374,7 +374,7 @@
     "date": "1973",
     "category": "nasa",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d007-skylab-techincal-crew-debriefing-1973"
   },
   {
@@ -383,7 +383,7 @@
     "date": "2/21/23",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d019-mission-report-syria-february-21-2023"
   },
   {
@@ -392,7 +392,7 @@
     "date": "2/3/00",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 56,
     "url": "/files/dow-uap-d049-launch-summary-vandenberg-afb-2000"
   },
   {
@@ -401,7 +401,7 @@
     "date": "2018",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr096-hh11-03-july-2018-uaps"
   },
   {
@@ -410,7 +410,7 @@
     "date": "2019",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr086-uap-from-dec-2019-east-coast"
   },
   {
@@ -419,7 +419,7 @@
     "date": "2019",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr097-hi-res-callsign-observes-uap-on-25sep19-at-2135z"
   },
   {
@@ -428,7 +428,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr055-spherical-uap-over-afg-in-and-out-of-clouds-23-nov-2020"
   },
   {
@@ -437,7 +437,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr059-nag-uap-1-jun-20"
   },
   {
@@ -446,7 +446,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr077-2-november-2020-callsign-callsign-observes-and-tracks-uap-1-of-2"
   },
   {
@@ -455,7 +455,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr078-2-november-2020-callsign-callsign-observes-and-tracks-uap-2-of-2"
   },
   {
@@ -464,7 +464,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr079-29-october-2020-callsign-mission-observes-3-fast-moving-uap-s"
   },
   {
@@ -473,7 +473,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr080-20-october-2020-callsign-callsign-observes-uap"
   },
   {
@@ -482,7 +482,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr081-18-oct-2020-callsign-observes-uap"
   },
   {
@@ -491,7 +491,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr082-16-oct-2020-callsign-views-uap"
   },
   {
@@ -500,7 +500,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr083-7-october-2020-callsign-observes-uap"
   },
   {
@@ -509,7 +509,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr084-17-sept-2020-callsign-observes-uap"
   },
   {
@@ -518,7 +518,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr085-16-sept-2020-callsign-callsign-observes-uap"
   },
   {
@@ -527,7 +527,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr087-05-september-2020-callsign-uap"
   },
   {
@@ -536,7 +536,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr088-31-aug-callsign-callsign-observes-uap"
   },
   {
@@ -545,7 +545,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr089-31-aug-callsign-callsign-observes-uap-part2"
   },
   {
@@ -554,7 +554,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr090-24-aug-2020-callsign-mission-observes-uap"
   },
   {
@@ -563,7 +563,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr091-21-aug-callsign-observes-uap-in-persian-gulf"
   },
   {
@@ -572,7 +572,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr092-08-aug-2020-callsign-callsign-uap-observation"
   },
   {
@@ -581,7 +581,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr093-may-05-2020-gulf-of-arabia-callsign-platform-dual-uap"
   },
   {
@@ -590,7 +590,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr094-callsign-mission-hd-2020-02-13"
   },
   {
@@ -599,7 +599,7 @@
     "date": "2020",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr095-may-05-2020-gulf-of-arabia-callsign-platform-dual-uap"
   },
   {
@@ -608,7 +608,7 @@
     "date": "2021",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr051-syrian-uap-instant-acceleration"
   },
   {
@@ -617,7 +617,7 @@
     "date": "2021",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr060-spherical-uap-callsign-2021-04-12-obj-2"
   },
   {
@@ -626,7 +626,7 @@
     "date": "2021",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr061-spherical-uap-callsign-2021-04-12-vid-0"
   },
   {
@@ -635,7 +635,7 @@
     "date": "2021",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr062-spherical-uap-callsign-2021-04-12-vid-1"
   },
   {
@@ -644,7 +644,7 @@
     "date": "2021",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr063-spherical-uap-callsign-2021-04-12-vid-2"
   },
   {
@@ -653,7 +653,7 @@
     "date": "2021",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr075-09jun2021-platform-observed-uap-in-the-ecs"
   },
   {
@@ -662,7 +662,7 @@
     "date": "2021",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr076-03-january-2021-callsign-mission-observes-uap"
   },
   {
@@ -671,7 +671,7 @@
     "date": "2022",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr050-4-uap-formation-iran-26-aug-2022-over-water-callsign"
   },
   {
@@ -680,7 +680,7 @@
     "date": "2022",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr053-cigar-shaped-or-fast-sherical-uap-clip-15-oct-22"
   },
   {
@@ -689,7 +689,7 @@
     "date": "2022",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr054-spherical-uap-erratic-movement-callsign-mission-2022"
   },
   {
@@ -698,7 +698,7 @@
     "date": "2022",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 68,
     "url": "/files/dow-uap-pr072-administrative-revision-iir-1777-j0032-22-kazakhstan-uap-in-the-vi"
   },
   {
@@ -707,7 +707,7 @@
     "date": "2022",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr073-iir-1-655-s0053-23-several-unidentified-aerial-phenomenon-encounte"
   },
   {
@@ -716,7 +716,7 @@
     "date": "2022",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr074-callsign-mission-hd-20220613"
   },
   {
@@ -725,7 +725,7 @@
     "date": "2023",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr057a-spherical-uap-in-clouds"
   },
   {
@@ -734,7 +734,7 @@
     "date": "2023",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr057b-platform-observes-uap-in-east-china-sea-05-jan-2023-indopacom"
   },
   {
@@ -743,7 +743,7 @@
     "date": "2023",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr068-iir-1-666-s0151-23-video-footage-of-unidentified-aerial-phenomenon"
   },
   {
@@ -752,7 +752,7 @@
     "date": "2023",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr070-iir-1-655-s0301-23-eglin-afb-aircrew-observed-unidentified-aerial-"
   },
   {
@@ -761,7 +761,7 @@
     "date": "2023",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr071-usaf-ang-f-16c-callsign-callsign-shoots-down-uap-over-lake-huron-w"
   },
   {
@@ -770,7 +770,7 @@
     "date": "2023",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr099-hi-res-callsign-observes-uap-on-25sep19-at-1715z"
   },
   {
@@ -788,7 +788,7 @@
     "date": "2024",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr065-uscg-c-144-tyndall-uap-2-tic-tac-ir-hot-24-april-2024"
   },
   {
@@ -797,7 +797,7 @@
     "date": "2024",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr066-uscg-c-144-tyndall-uap-1-tic-tac-ir-hot-24-april-2024"
   },
   {
@@ -806,7 +806,7 @@
     "date": "2025",
     "category": "intel",
     "agency": "ODNI",
-    "score": null,
+    "score": 50,
     "url": "/files/odni-uap-d001-usper-narrative-senior-usic-official"
   },
   {
@@ -851,7 +851,7 @@
     "date": "2026-05-08",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 58,
     "url": "/files/65-hs1-834228961-62-hq-83894-section-001"
   },
   {
@@ -860,7 +860,7 @@
     "date": "2026-05-08",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 58,
     "url": "/files/65-hs1-834228961-62-hq-83894-section-002"
   },
   {
@@ -869,7 +869,7 @@
     "date": "2026-05-08",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 58,
     "url": "/files/65-hs1-834228961-62-hq-83894-section-003"
   },
   {
@@ -878,7 +878,7 @@
     "date": "2026-05-08",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 58,
     "url": "/files/65-hs1-834228961-62-hq-83894-section-004"
   },
   {
@@ -887,7 +887,7 @@
     "date": "2026-05-08",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 58,
     "url": "/files/65-hs1-834228961-62-hq-83894-section-005"
   },
   {
@@ -896,7 +896,7 @@
     "date": "2026-05-08",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 58,
     "url": "/files/65-hs1-834228961-62-hq-83894-section-006"
   },
   {
@@ -905,7 +905,7 @@
     "date": "2026-05-08",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 58,
     "url": "/files/65-hs1-834228961-62-hq-83894-section-007"
   },
   {
@@ -914,7 +914,7 @@
     "date": "2026-05-08",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 58,
     "url": "/files/65-hs1-834228961-62-hq-83894-section-008"
   },
   {
@@ -923,7 +923,7 @@
     "date": "2026-05-08",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 58,
     "url": "/files/65-hs1-834228961-62-hq-83894-section-009"
   },
   {
@@ -932,7 +932,7 @@
     "date": "2026-05-08",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 58,
     "url": "/files/65-hs1-834228961-62-hq-83894-section-010"
   },
   {
@@ -1013,7 +1013,7 @@
     "date": "2026-05-08",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d003-mission-report-arabian-gulf-2020"
   },
   {
@@ -1022,7 +1022,7 @@
     "date": "2026-05-08",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d004-mission-report-arabian-gulf-2020"
   },
   {
@@ -1031,7 +1031,7 @@
     "date": "2026-05-08",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d005-mission-report-arabian-gulf-2020"
   },
   {
@@ -1040,7 +1040,7 @@
     "date": "2026-05-08",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d006-mission-report-arabian-gulf-2020"
   },
   {
@@ -1049,7 +1049,7 @@
     "date": "2026-05-08",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d007-mission-report-arabian-gulf-2020"
   },
   {
@@ -1058,7 +1058,7 @@
     "date": "2026-05-08",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d008-mission-report-djibouti-2025"
   },
   {
@@ -1067,7 +1067,7 @@
     "date": "2026-05-08",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d054-mission-report-mediterranean-sea-na"
   },
   {
@@ -1328,7 +1328,7 @@
     "date": "2026-05-22",
     "category": "intel",
     "agency": "DOE",
-    "score": null,
+    "score": 47,
     "url": "/files/doe-uap-d001-enhanced-pantex-imagery"
   },
   {
@@ -1337,7 +1337,7 @@
     "date": "2026-05-22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr052-uap-uso-formation-callsign-mission"
   },
   {
@@ -1346,7 +1346,7 @@
     "date": "2026-05-22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr056-spherical-uap-pulsing-over-water-callsign"
   },
   {
@@ -1355,7 +1355,7 @@
     "date": "2026-05-22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr058-callsign-mission-uap"
   },
   {
@@ -1364,7 +1364,7 @@
     "date": "2026-05-22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr064-afsoc-kabul-uap-jul-2017"
   },
   {
@@ -1373,7 +1373,7 @@
     "date": "2026-05-22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr067-multiple-spherical-uap-uso-near-sub-callsign-2022-03-25-in-and-out"
   },
   {
@@ -1382,7 +1382,7 @@
     "date": "2026-05-22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr069-f-a-18-flir-uap"
   },
   {
@@ -1391,7 +1391,7 @@
     "date": "2026-05-22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 66,
     "url": "/files/dow-uap-pr098-ufos-in-formation-over-persian-gulf"
   },
   {
@@ -1409,7 +1409,7 @@
     "date": "3/23/26",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d051-email-correspondence-pacific-time-zone-march-2023"
   },
   {
@@ -1418,7 +1418,7 @@
     "date": "3/31/23",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d020-mission-report-iraq-2023"
   },
   {
@@ -1427,7 +1427,7 @@
     "date": "4/10/2025-4/11/2025",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d050-email-correspondence-indopacom-april-2025"
   },
   {
@@ -1445,7 +1445,7 @@
     "date": "5/14/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d038-range-fouler-debrief-middle-east-may-2020"
   },
   {
@@ -1454,7 +1454,7 @@
     "date": "5/15/63",
     "category": "nasa",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d010-mercury-atlas-9-audio-excerpt-may-15-1963"
   },
   {
@@ -1463,7 +1463,7 @@
     "date": "5/15/63",
     "category": "nasa",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963"
   },
   {
@@ -1472,7 +1472,7 @@
     "date": "5/20/22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d012-mission-report-iraq-may-2022"
   },
   {
@@ -1481,7 +1481,7 @@
     "date": "5/20/86",
     "category": "intel",
     "agency": "DOE",
-    "score": null,
+    "score": 47,
     "url": "/files/doe-uap-d003-pajarito-astronomers-invitation-1986"
   },
   {
@@ -1490,7 +1490,7 @@
     "date": "5/24/62",
     "category": "nasa",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d013-mercury-atlas-7-may-24-1962"
   },
   {
@@ -1499,7 +1499,7 @@
     "date": "5/29/22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d014-mission-report-iraq-may-2022"
   },
   {
@@ -1508,7 +1508,7 @@
     "date": "5/6/22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d010-mission-report-middle-east-may-2022"
   },
   {
@@ -1526,7 +1526,7 @@
     "date": "6/7/24",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d027-mission-report-united-arab-emirates-october-2023"
   },
   {
@@ -1535,7 +1535,7 @@
     "date": "7/14/24",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d075-mission-report-gulf-of-aden-july-2024"
   },
   {
@@ -1544,7 +1544,7 @@
     "date": "7/16/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d065-mission-report-arabian-gulf-july-2020"
   },
   {
@@ -1562,7 +1562,7 @@
     "date": "7/21/61",
     "category": "nasa",
     "agency": "NASA",
-    "score": null,
+    "score": 59,
     "url": "/files/nasa-uap-d014-mercury-redstone-4-july-21-1961"
   },
   {
@@ -1580,7 +1580,7 @@
     "date": "7/31/22",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d016-mission-report-syria-july-2022"
   },
   {
@@ -1589,7 +1589,7 @@
     "date": "8/24/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d056-range-fouler-debrief-arabian-sea-august-2020"
   },
   {
@@ -1598,7 +1598,7 @@
     "date": "8/27/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d061-mission-report-arabian-gulf-august-2020"
   },
   {
@@ -1607,7 +1607,7 @@
     "date": "8/31/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d042-range-fouler-debrief-japan-2023"
   },
   {
@@ -1616,7 +1616,7 @@
     "date": "8/8/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d060-mission-report-arabian-gulf-august-2020"
   },
   {
@@ -1634,7 +1634,7 @@
     "date": "9/1/23",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-september-2023-sighting-serial-003"
   },
   {
@@ -1643,7 +1643,7 @@
     "date": "9/1/23",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-september-2023-sighting-serial-004"
   },
   {
@@ -1652,7 +1652,7 @@
     "date": "9/1/23",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-september-2023-sighting-serial-005"
   },
   {
@@ -1661,7 +1661,7 @@
     "date": "9/10/96",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 56,
     "url": "/files/dow-uap-d048-department-of-the-air-force-report-1996"
   },
   {
@@ -1670,7 +1670,7 @@
     "date": "9/12/03",
     "category": "state",
     "agency": "STATE",
-    "score": null,
+    "score": 50,
     "url": "/files/state-department-uap-cable-005-mexico-september-16-2003"
   },
   {
@@ -1679,7 +1679,7 @@
     "date": "9/16/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d062-mission-report-strait-of-hormuz-september-2020"
   },
   {
@@ -1688,7 +1688,7 @@
     "date": "9/20/24",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d028-mission-report-iraq-september-2024"
   },
   {
@@ -1697,7 +1697,7 @@
     "date": "9/4/20",
     "category": "military",
     "agency": "DoD",
-    "score": null,
+    "score": 53,
     "url": "/files/dow-uap-d057-range-fouler-reporting-form-gulf-of-aden-september-2020"
   },
   {
@@ -1706,7 +1706,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 61,
     "url": "/files/fbi-photo-a001"
   },
   {
@@ -1715,7 +1715,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 61,
     "url": "/files/fbi-photo-a002"
   },
   {
@@ -1724,7 +1724,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 61,
     "url": "/files/fbi-photo-a003"
   },
   {
@@ -1733,7 +1733,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 61,
     "url": "/files/fbi-photo-a004"
   },
   {
@@ -1742,7 +1742,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 61,
     "url": "/files/fbi-photo-a005"
   },
   {
@@ -1751,7 +1751,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 61,
     "url": "/files/fbi-photo-a006"
   },
   {
@@ -1760,7 +1760,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 61,
     "url": "/files/fbi-photo-a007"
   },
   {
@@ -1769,7 +1769,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 61,
     "url": "/files/fbi-photo-a008"
   },
   {
@@ -1778,7 +1778,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b001"
   },
   {
@@ -1787,7 +1787,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b002"
   },
   {
@@ -1796,7 +1796,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b003"
   },
   {
@@ -1805,7 +1805,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b004"
   },
   {
@@ -1814,7 +1814,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b005"
   },
   {
@@ -1823,7 +1823,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b006"
   },
   {
@@ -1832,7 +1832,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b007"
   },
   {
@@ -1841,7 +1841,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b008"
   },
   {
@@ -1850,7 +1850,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b009"
   },
   {
@@ -1859,7 +1859,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b010"
   },
   {
@@ -1868,7 +1868,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b011"
   },
   {
@@ -1877,7 +1877,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b012"
   },
   {
@@ -1886,7 +1886,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b013"
   },
   {
@@ -1895,7 +1895,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b014"
   },
   {
@@ -1904,7 +1904,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b015"
   },
   {
@@ -1913,7 +1913,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b016"
   },
   {
@@ -1922,7 +1922,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b017"
   },
   {
@@ -1931,7 +1931,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b018"
   },
   {
@@ -1940,7 +1940,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b019"
   },
   {
@@ -1949,7 +1949,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b020"
   },
   {
@@ -1958,7 +1958,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b021"
   },
   {
@@ -1967,7 +1967,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b022"
   },
   {
@@ -1976,7 +1976,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b023"
   },
   {
@@ -1985,7 +1985,7 @@
     "date": "Late 2025",
     "category": "fbi",
     "agency": "FBI",
-    "score": null,
+    "score": 55,
     "url": "/files/fbi-photo-b024"
   },
   {
