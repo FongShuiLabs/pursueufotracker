@@ -49,7 +49,15 @@ from curl_cffi import requests
 
 ROOT = Path(__file__).resolve().parent.parent
 LANDING_URL = "https://www.war.gov/UFO/"
-CSV_URL = "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv"
+# War.gov restructured the CSV around the May 22 2026 Release 02. The original
+# uap-csv.csv URL now 404s. The current canonical CSV is uap-data.csv (containing
+# all releases combined, 222 rows after Release 02). We try the new URL first
+# and fall back to the older URL for legacy continuity if war.gov reverts.
+CSV_URLS = [
+    "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv",
+    "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv",
+]
+CSV_URL = CSV_URLS[0]  # current canonical; legacy code path kept for reference
 STATE_PATH = ROOT / "data" / "poll-state.json"
 CSV_OUT = ROOT / "_scratch" / "uap-csv.csv"
 
@@ -95,18 +103,25 @@ def _csv_row_count(csv_text: str) -> int:
 
 
 def _fetch_csv_curlcffi() -> tuple[bytes, str] | None:
-    """Fetch CSV via curl_cffi with TLS-impersonated Chrome. Returns (bytes, profile)
-    on success, None if all profiles blocked."""
-    for profile in ("chrome120", "chrome119", "chrome116", "edge101"):
+    """Fetch CSV via curl_cffi with TLS-impersonated Chrome. Tries each known
+    CSV URL in turn for each profile. Newer Chrome profiles first because
+    war.gov hardened defenses around May 22 2026 and older profiles get blocked
+    more aggressively. Returns (bytes, profile_label) on success."""
+    for profile in ("chrome131", "chrome124", "chrome120", "chrome119", "chrome116", "edge101"):
         try:
             s = requests.Session()
             warm = s.get(LANDING_URL, impersonate=profile, timeout=20)
             if warm.status_code != 200:
                 continue
-            r = s.get(CSV_URL, headers={"Referer": LANDING_URL},
-                      impersonate=profile, timeout=25)
-            if r.status_code == 200 and len(r.content) > 1000:
-                return r.content, f"curl_cffi:{profile}"
+            for csv_url in CSV_URLS:
+                try:
+                    r = s.get(csv_url, headers={"Referer": LANDING_URL},
+                              impersonate=profile, timeout=25)
+                    if r.status_code == 200 and len(r.content) > 1000:
+                        url_tag = csv_url.rsplit("/", 1)[-1]
+                        return r.content, f"curl_cffi:{profile}:{url_tag}"
+                except Exception:
+                    continue
         except Exception:
             continue
     return None
@@ -148,12 +163,18 @@ def _fetch_csv_playwright() -> tuple[bytes, str] | None:
             except Exception:
                 pass  # tolerate timeout; we just want cookies set
             # Now fetch the CSV in the same browser context, which carries cookies
-            # and shares the realistic-Chrome TLS handshake.
-            resp = page.request.get(CSV_URL, headers={"Referer": LANDING_URL})
-            body = resp.body() if resp.ok else None
+            # and shares the realistic-Chrome TLS handshake. Try each known CSV URL.
+            for csv_url in CSV_URLS:
+                try:
+                    resp = page.request.get(csv_url, headers={"Referer": LANDING_URL})
+                    body = resp.body() if resp.ok else None
+                    if body and len(body) > 1000:
+                        url_tag = csv_url.rsplit("/", 1)[-1]
+                        browser.close()
+                        return body, f"playwright:chromium:{url_tag}"
+                except Exception:
+                    continue
             browser.close()
-            if body and len(body) > 1000:
-                return body, "playwright:chromium"
     except Exception as e:
         print(f"  playwright path failed: {str(e)[:140]}", file=sys.stderr)
     return None
