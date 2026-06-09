@@ -87,24 +87,28 @@ CATEGORIES = [
     },
     {
         "slug": "state-department-uap-cables",
-        "title": "State Department UAP Cables: 7 Diplomatic Records 1952-2025",
+        "title": "State Department UAP Cables: 7 Diplomatic Records 1952-2004",
         "h1": "State Department UAP Diplomatic Cables",
         "match": lambda f: f.get("category") == "state" or f.get("agency") == "STATE",
         "intro": (
-            "Seven U.S. Department of State diplomatic cables were declassified under PURSUE, spanning "
-            "<strong>1952 through 2025</strong>. They include the <strong>1985 Papua New Guinea cable</strong> "
-            "from the U.S. Embassy in Port Moresby to USCINCPAC, the <strong>1994 Tajikistan PanAm crew "
-            "sighting at flight level 410</strong>, plus dispatches from Kazakhstan, Turkmenistan, "
-            "Georgia, and Mexico. These cables are the State Department's running record of what U.S. "
-            "diplomats reported back to Foggy Bottom when foreign governments or aviation authorities "
-            "raised UAP encounters through diplomatic channels."
+            "Seven U.S. Department of State files were declassified under PURSUE, spanning "
+            "<strong>1952 through 2004</strong>. The set includes 5 numbered embassy cables - the "
+            "<strong>1985 Papua New Guinea cable</strong> from the U.S. Embassy in Port Moresby to "
+            "USCINCPAC, the <strong>1994 cable from Dushanbe documenting a Tajik pilot and three U.S. "
+            "citizens encountering an UAP at 41,000 feet over Kazakhstan in a 747</strong>, plus cables "
+            "from Tbilisi (Georgia), Mexico, and Ashgabat (Turkmenistan) - and 2 earlier internal State "
+            "memoranda from 1952 and 1963 (the 1963 memo from the Executive Office's National Aeronautics "
+            "and Space Council). The cluster is the State Department's running record of what foreign "
+            "governments, foreign aviation authorities, and earlier internal policy reviewers communicated "
+            "about UAP through official U.S. channels. For a file-by-file walkthrough with diplomatic "
+            "context, see <a href='/diplomatic-uap-cables'>our deep dive</a>."
         ),
         "meta_desc": (
-            "All 7 State Department UAP diplomatic cables in the Trump May 2026 PURSUE release. "
-            "1985 Papua New Guinea, 1994 Tajikistan PanAm, Kazakhstan, Turkmenistan, Georgia, Mexico. "
-            "1952-2025 span. Indexed and searchable."
+            "All 7 State Department UAP files in the Trump May 2026 PURSUE release: 5 embassy cables "
+            "(Papua New Guinea 1985, Kazakhstan 1994, Georgia 2001, Mexico 2003, Turkmenistan 2004) "
+            "plus 2 earlier internal State memos from 1952 and 1963. Indexed and searchable."
         ),
-        "keywords": "State Department UFO, UAP diplomatic cable, Papua New Guinea UFO 1985, Tajikistan PanAm UFO 1994, USCINCPAC UAP, embassy UFO cable, declassified State UFO",
+        "keywords": "State Department UFO, UAP diplomatic cable, Papua New Guinea UFO 1985, Kazakhstan UAP 1994, USCINCPAC UAP, embassy UFO cable, Mexico UAP Congress, declassified State UFO, diplomatic UAP cable",
     },
 ]
 
