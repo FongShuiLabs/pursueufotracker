@@ -181,11 +181,13 @@
     <li><strong>An automated poller</strong> running on a public GitHub Action that checks war.gov every 30 minutes during U.S. weekday business hours (hourly otherwise) and opens an issue on this repo when the CSV changes. This is how the May 11 revision was caught within hours, and how Drop 02 will be caught when it lands.</li>
   </ul>
 
-  <h2>Where the program goes from here</h2>
+  <h2>Where the program is now</h2>
 
-  <p>Drop 02 has not yet been announced with a firm date. The original disclosure announcement implied a regular cadence, and tracking signals point to a release in the early summer 2026 window. This site's auto-poller is the canonical detector - the moment war.gov pushes a new CSV, the poller catches it and the site re-indexes automatically with the new files added to the manifest, scored against the rubric, and (for videos) transcripted. The verified diff against Drop 01 will appear at <a href="/changes" style="color:#52b4ff">/changes</a> within hours of the release.</p>
+  <p>The Department of War published <a href="https://www.war.gov/News/Releases/Release/Article/4499305/department-of-war-publishes-second-release-of-unidentified-anomalous-phenomena/" rel="nofollow" style="color:#52b4ff">Release 02</a> on <strong>May 22, 2026</strong>, fourteen days after Release 01. Multiple independent sources put Release 02 at approximately 64 new files - 51 sensor videos in the DOW-UAP-PR050 - PR099 series, 7 NASA crew audio files, and 6 documents - for a combined ~222-file PURSUE archive across the two releases. The Department's stated cadence has been "every few weeks."</p>
 
-  <p>Whether or not PURSUE eventually establishes anything definitive about the nature of UAP, the program has already done something concrete: it has moved a substantial body of federal records from internal classification into the public domain. The files are now citable, searchable, and verifiable byte-for-byte against the government source. That is the program's actual product so far, and what this tracker indexes.</p>
+  <p>This site's verified file pages still reflect the Release 01 manifest (158 rows, last fetched 2026-05-12 by our auto-poller). War.gov hardened its anti-bot defenses around the time of Release 02 and our automated fetch path is currently blocked. We do not backfill files from third-party aggregator sites because that would break the SHA-256 chain of custody that makes each file page verifiable byte-for-byte against the government source. See <a href="/changes" style="color:#52b4ff">/changes</a> for the current Release 02 ingest status; the per-file diff will be published there once our verified fetch is restored.</p>
+
+  <p>Whether or not PURSUE eventually establishes anything definitive about the nature of UAP, the program has already done something concrete: it has moved a substantial body of federal records from internal classification into the public domain. The files are now citable, searchable, and verifiable byte-for-byte against the government source. That is the program's actual product so far, and what this tracker indexes for Release 01 - and what it will index for Release 02 the moment the verified fetch path is back.</p>
 
   <section class="related">
     <h2>Read next</h2>
