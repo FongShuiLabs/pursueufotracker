@@ -142,7 +142,7 @@ def _page_html(cat: dict, files: list[dict]) -> str:
         "@type": "BreadcrumbList",
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "PURSUE Tracker", "item": f"{SITE_URL}/"},
-            {"@type": "ListItem", "position": 2, "name": cat["h1"]},
+            {"@type": "ListItem", "position": 2, "name": cat["h1"], "item": canonical},
         ],
     }
     item_list = {
