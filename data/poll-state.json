@@ -1,9 +1,9 @@
 {
-  "last_polled_at": "2026-06-09T18:13:56Z",
-  "last_change_at": "2026-05-12T23:19:37Z",
-  "csv_sha256": "0d7e9ba1d51cded2d4839aac3b65d9ff14f56861c8338a57bbef50c8071d6731",
+  "last_polled_at": "2026-06-09T20:28:25Z",
+  "last_change_at": "2026-06-09T20:28:25Z",
+  "csv_sha256": "6be2c64e760534a567e13ebaac939bf2cea3bd9de4864d9ae98c5c8b5df1b963",
   "html_sha256": "a27473e9160833bd88d9f8c2e2dbe08ca305e15d908f16bbb20a51e0e45eaf8b",
-  "row_count": 158,
+  "row_count": 222,
   "history": [
     {
       "at": "2026-05-08T00:00:00Z",
@@ -61,8 +61,16 @@
       "row_count": null,
       "delta": 0,
       "trigger": "html-fallback"
+    },
+    {
+      "at": "2026-06-09T20:28:25Z",
+      "csv_sha256": "6be2c64e760534a567e13ebaac939bf2cea3bd9de4864d9ae98c5c8b5df1b963",
+      "row_count": 222,
+      "delta": 64,
+      "trigger": "csv",
+      "source": "curl_cffi:chrome131:uap-data.csv"
     }
   ],
-  "consecutive_csv_failures": 121,
-  "csv_stuck_alerted": true
+  "consecutive_csv_failures": 0,
+  "csv_stuck_alerted": false
 }
