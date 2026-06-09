@@ -339,11 +339,11 @@
       "redacted": false,
       "summary": "This document is a first-hand account written by a currently serving (May 2026) senior U.S. intelligence official. The official was part of a team investigating reports of unusual noises and sightings of unidentified anomalous phenomena in and near a sensitive U.S. military facility in late 2025. From the official’s vantage point as a helicopter passenger, the official recounts encountering unidentified “glowing orbs” both at close range and at a distance. The account describes an apparent high-speed object moving low to the ground, which appeared to split in two and accelerate away in two different directions. It also describes numerous higher-altitude “orbs,” some of which the official assessed to be in close proximity to the helicopter. This account is accompanied by infrared imagery taken during the same exercise by other federal officials from the ground, originally released on war.gov/UFO on May 8, 2026.May 26, 2026, correction: The document originally posted to the PURSUE collection of UAP-related records on May 22, 2026, under the name “ODNI-UAP-D001, USPER Narrative, Senior USIC Official,” contained a typographic error in the second paragraph, describing a helicopter flight profile as “map-of-the-earth.” The correct military aviation term for this profile is “nap-of-the-earth.” This document has been updated to reflect this correction.",
       "score": {
-        "value": 50,
+        "value": 66,
         "components": {
           "sensor_quality": "eyewitness_only",
-          "witness_credibility": "civilian_credentialed",
-          "corroboration": "single_witness_instrument",
+          "witness_credibility": "federal_agent",
+          "corroboration": "multi_witness_multi_instrument",
           "kinematic_anomaly": "no_kinematic_data",
           "mundane_explanation_available": "weak_mundane_candidate",
           "official_disposition": "open_after_review"
@@ -356,16 +356,16 @@
             "contribution": 7.5
           },
           "witness_credibility": {
-            "choice": "civilian_credentialed",
-            "value": 50,
+            "choice": "federal_agent",
+            "value": 90,
             "weight": 0.2,
-            "contribution": 10.0
+            "contribution": 18.0
           },
           "corroboration": {
-            "choice": "single_witness_instrument",
-            "value": 60,
+            "choice": "multi_witness_multi_instrument",
+            "value": 100,
             "weight": 0.2,
-            "contribution": 12.0
+            "contribution": 20.0
           },
           "kinematic_anomaly": {
             "choice": "no_kinematic_data",
