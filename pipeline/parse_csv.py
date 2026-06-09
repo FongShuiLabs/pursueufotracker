@@ -36,6 +36,10 @@ AGENCY_MAP = {
     "Department of War": "DoD",
     "NASA": "NASA",
     "Department of State": "STATE",
+    # Added with PURSUE Release 02 (May 22 2026):
+    "Central Intelligence Agency": "CIA",
+    "Office of the Director of National Intelligence": "ODNI",
+    "Department of Energy": "DOE",
 }
 
 TYPE_MAP = {
@@ -43,6 +47,11 @@ TYPE_MAP = {
     "VID": "video",
     "IMG": "image",
 }
+
+# Agencies that share the "intel" category (intelligence-community + DOE
+# nuclear-program records, distinct from military mission reports). New in
+# Release 02 - 5 files in this category for the May 22 disclosure.
+INTEL_AGENCIES = {"CIA", "ODNI", "DOE"}
 
 
 def _slugify(s: str) -> str:
@@ -59,6 +68,8 @@ def _category(agency: str, title: str, vtitle: str) -> str:
         return "fbi"
     if agency == "STATE":
         return "state"
+    if agency in INTEL_AGENCIES:
+        return "intel"
     if "composite" in t or "sketch" in t:
         return "composite"
     return "military"
@@ -69,7 +80,9 @@ def _default_score(type_: str, agency: str, redacted: bool) -> dict:
     sensor = {"pdf": "eyewitness_only", "video": "single_sensor_military",
               "image": "photographic"}.get(type_, "eyewitness_only")
     witness = {"FBI": "federal_agent", "DoD": "military_personnel",
-               "NASA": "astronaut", "STATE": "civilian_credentialed"}.get(agency, "civilian_credentialed")
+               "NASA": "astronaut", "STATE": "civilian_credentialed",
+               "CIA": "federal_agent", "ODNI": "federal_agent",
+               "DOE": "federal_agent"}.get(agency, "civilian_credentialed")
     return {
         "components": {
             "sensor_quality": sensor,
@@ -174,6 +187,17 @@ def run() -> None:
         prev = prev_by_id.get(fid) or {}
         score = prev.get("score") or _default_score(type_, agency, redacted)
 
+        # Convert the CSV's "Release Date" column ("5/8/26", "5/22/26", ...) to
+        # ISO "2026-05-08" / "2026-05-22". Default to Release 01 if missing/malformed
+        # so legacy entries do not lose their previously-correct date.
+        rd = release_date.strip()
+        date_released = "2026-05-08"
+        m_rd = re.match(r"(\d{1,2})/(\d{1,2})/(\d{2,4})", rd)
+        if m_rd:
+            mm, dd, yy = m_rd.groups()
+            yyyy = yy if len(yy) == 4 else ("20" + yy)
+            date_released = f"{yyyy}-{int(mm):02d}-{int(dd):02d}"
+
         entry = {
             "id": fid,
             "title": title_for_id or title.strip() or fid,
@@ -181,7 +205,7 @@ def run() -> None:
             "agency": agency,
             "type": type_,
             "date_event": date_event,
-            "date_released": "2026-05-08",
+            "date_released": date_released,
             "source_url": source_url,
             "pending_verification": False,
             "local_path": None,        # set after download stage

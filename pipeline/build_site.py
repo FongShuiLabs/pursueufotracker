@@ -54,16 +54,16 @@ CHOICE_EXPLANATIONS = {
 }
 
 TOPIC_PAGES = [
-    {"match": lambda f: f["id"] == "nasa-uap-d3a-gemini-7-audio-excerpt-1965",
+    {"match": lambda f: f["id"] == "nasa-uap-d003a-gemini-7-audio-excerpt-1965",
      "slug": "/borman-incident", "name": "The Borman Incident", "size": 1,
      "anchor": "the highest-scoring file in the archive at 72"},
     {"match": lambda f: f["id"].startswith("65-hs1-834228961-62-hq-83894-"),
      "slug": "/fbi-62-hq-83894", "name": "FBI Case 62-HQ-83894", "size": 18,
      "anchor": "the 18-PDF FBI central case file covering 1947-1968"},
-    {"match": lambda f: f["id"] in {"nasa-uap-vm1-apollo-12-1969","nasa-uap-vm2-apollo-12-1969","nasa-uap-vm3-apollo-12-1969","nasa-uap-vm4-apollo-12-1969","nasa-uap-vm5-apollo-12-1969","nasa-uap-d1-apollo-12-transcript-1969"},
+    {"match": lambda f: f["id"] in {"nasa-uap-vm001-apollo-12-1969","nasa-uap-vm002-apollo-12-1969","nasa-uap-vm003-apollo-12-1969","nasa-uap-vm004-apollo-12-1969","nasa-uap-vm005-apollo-12-1969","nasa-uap-d001-apollo-12-transcript-1969"},
      "slug": "/apollo-12-ufo-photos", "name": "Apollo 12 UFO Photos", "size": 6,
      "anchor": "the 6-file Apollo 12 PURSUE cluster"},
-    {"match": lambda f: f["id"] in {"nasa-uap-d2-apollo-17-transcript-1972","nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973","nasa-uap-d6-apollo-17-technical-crew-debriefing-1973","nasa-uap-vm6-apollo-17-1972"},
+    {"match": lambda f: f["id"] in {"nasa-uap-d002-apollo-17-transcript-1972","nasa-uap-d005-apollo-17-crew-debriefing-for-science-1973","nasa-uap-d006-apollo-17-technical-crew-debriefing-1973","nasa-uap-vm006-apollo-17-1972"},
      "slug": "/apollo-17-ufo-records", "name": "Apollo 17 UFO Records", "size": 4,
      "anchor": "the 4-file Apollo 17 PURSUE cluster, including the triangular-formation lunar image and Schmitt light-flash debriefing"},
     {"match": lambda f: f.get("agency") == "STATE",

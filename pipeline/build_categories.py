@@ -110,6 +110,33 @@ CATEGORIES = [
         ),
         "keywords": "State Department UFO, UAP diplomatic cable, Papua New Guinea UFO 1985, Kazakhstan UAP 1994, USCINCPAC UAP, embassy UFO cable, Mexico UAP Congress, declassified State UFO, diplomatic UAP cable",
     },
+    {
+        "slug": "intel-and-doe-uap-files",
+        "title": "Intelligence Community + DOE UAP Files: CIA, ODNI, and Department of Energy Records From PURSUE Release 02",
+        "h1": "Intelligence Community + DOE UAP Records",
+        "match": lambda f: f.get("category") == "intel" or f.get("agency") in ("CIA", "ODNI", "DOE"),
+        "intro": (
+            "Five U.S. intelligence-community and Department of Energy files were declassified under "
+            "PURSUE <strong>Release 02 on May 22, 2026</strong> - new agencies joining the disclosure "
+            "for the first time. The cluster includes "
+            "<strong>CIA-UAP-D001</strong> (a 1973 CIA Intelligence Information Report relating to "
+            "USSR activity), "
+            "<strong>ODNI-UAP-D001</strong> (the USPER Narrative from a senior U.S. Intelligence "
+            "Community official describing a multi-witness UAP encounter from a military helicopter "
+            "in late 2025), and three Department of Energy records: enhanced PANTEX imagery, James "
+            "Tuck correspondence from the 1970s, and a 1986 Pajarito astronomers invitation - the "
+            "DOE files are tied to the U.S. nuclear weapons complex (PANTEX assembly plant, Los Alamos "
+            "via Tuck, and the Pajarito Plateau). All files are public domain U.S. Government works under "
+            "17 U.S.C. § 105."
+        ),
+        "meta_desc": (
+            "All 5 CIA, ODNI, and Department of Energy UAP files released under PURSUE Release 02 on "
+            "May 22, 2026. ODNI-UAP-D001 USPER narrative (senior US Intelligence Community official "
+            "helicopter encounter, late 2025), CIA-UAP-D001 (1973 USSR intelligence report), three "
+            "DOE files tied to PANTEX, Los Alamos, and Pajarito."
+        ),
+        "keywords": "CIA UFO file, ODNI UAP report, ODNI-UAP-D001, CIA-UAP-D001, DOE UAP, Department of Energy UFO, PANTEX UAP, intelligence community UAP, USPER UAP narrative, PURSUE Release 02, intel community UFO disclosure",
+    },
 ]
 
 
