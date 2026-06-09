@@ -38,7 +38,15 @@
 <main class="top-page">
   <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="/" style="color:inherit;text-decoration:none">← PURSUE Tracker</a> &nbsp;/&nbsp; Top 10</p>
   <h1>The 10 Most Anomalous Files</h1>
-  <p class="lede">Ranked by Anomalousness Index. Methodology transparent. Source files verified. <a href="verdict.html" style="color:#52b4ff">What this score does and doesn't mean.</a></p>
+  <p class="lede">Ranked by Anomalousness Index. Methodology transparent. Source files verified. <a href="/verdict" style="color:#52b4ff">What this score does and doesn't mean.</a></p>
+
+  <section style="margin:40px 0 36px;padding:28px 30px;background:rgba(82,180,255,.04);border:1px solid rgba(82,180,255,.18);border-radius:10px">
+    <h2 style="color:#fff;font-size:22px;margin:0 0 14px">How this ranking works</h2>
+    <p style="color:#dfe6ef;font-size:15.5px;line-height:1.7;margin:0 0 14px">The Anomalousness Index is a six-axis open rubric applied to every file in the PURSUE disclosure. Each file is scored on sensor quality, witness credibility, corroboration, kinematic anomaly, mundane-explanation availability, and official disposition. Weights sum to 1.00. The full rubric and weights are published as <a href="/data/scoring-rubric.json" style="color:#52b4ff">open JSON</a> so any reader can audit or recompute every score in this list. See <a href="/methodology" style="color:#52b4ff">/methodology</a> for the per-axis derivation.</p>
+    <p style="color:#dfe6ef;font-size:15.5px;line-height:1.7;margin:0 0 14px">A score of 72 - the single 72 in the archive - is held by the December 1965 Gemini 7 air-to-ground audio in which astronaut Frank Borman reports an unidentified object to NASA mission control. The structural reason it scores 72 is the witness-credibility axis: astronaut on the official federal record is essentially unique. See our <a href="/borman-incident" style="color:#52b4ff">Borman Incident deep dive</a> for the file-by-file walkthrough.</p>
+    <p style="color:#dfe6ef;font-size:15.5px;line-height:1.7;margin:0 0 14px">Positions 2 through 10 in the list below are all tied at 66, and so are 17 more files behind them. The 27-file 66-point cluster is the densest single scoring band in the archive - U.S. military mission infrared captures, mostly CENTCOM submissions, all logged unresolved with no formal review at AARO. They share the same evidentiary profile, which is what produces the tie. See <a href="/aaro-unresolved-uap" style="color:#52b4ff">our AARO Unresolved UAP deep dive</a> for the geographic and sensor breakdown of the full 27.</p>
+    <p style="color:#dfe6ef;font-size:15.5px;line-height:1.7;margin:0">What this ranking is NOT: it is not a probability of extraterrestrial origin. That number is not honestly computable from the released metadata, and this site refuses to publish it. The score is evidentiary weight that an encounter remains structurally unexplained after conventional analysis - nothing more.</p>
+  </section>
 
   {% for f in items %}
   <div class="rank-card">
