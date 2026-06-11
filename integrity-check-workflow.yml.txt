@@ -1,0 +1,99 @@
+# =============================================================================
+# HOW TO INSTALL (the git PAT lacks 'workflow' scope, so this can't be pushed):
+#   1. Go to https://github.com/FongShuiLabs/pursueufotracker
+#   2. Add file -> Create new file
+#   3. Name it exactly: .github/workflows/integrity-check.yml
+#   4. Paste EVERYTHING BELOW the dashed line (not these instructions)
+#   5. Commit directly to main
+# Then it runs daily and opens an issue if war.gov swaps any file body.
+# Test it immediately via Actions -> "Per-file integrity check" -> Run workflow.
+# -----------------------------------------------------------------------------
+name: Per-file integrity check
+
+# Detects war.gov silently replacing file BODIES at the same URLs (the thing the
+# CSV poller is blind to). HEAD-only, so it's cheap - runs once a day.
+on:
+  schedule:
+    - cron: '0 14 * * *'   # 14:00 UTC daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: integrity-check
+  cancel-in-progress: false
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install deps
+        run: pip install curl_cffi
+
+      - name: Run integrity check
+        id: check
+        continue-on-error: true
+        run: python -m pipeline.integrity_check
+
+      - name: Commit integrity state
+        run: |
+          git config user.name "pursueufotracker-bot"
+          git config user.email "bot@pursueufotracker.com"
+          git add data/integrity-state.json
+          if git diff --cached --quiet; then
+            echo "No integrity-state change to commit."
+          else
+            git commit -m "integrity: war.gov file-body check ($(date -u +%FT%TZ))"
+            git push
+          fi
+
+      - name: Open issue on body change
+        if: steps.check.outputs.integrity_change == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const count = '${{ steps.check.outputs.changed_count }}';
+            const ids = '${{ steps.check.outputs.changed_ids }}';
+            const body = [
+              '## war.gov replaced one or more file bodies at the same URLs',
+              '',
+              `- Files whose body size changed: **${count}**`,
+              `- IDs: \`${ids}\``,
+              `- Detected: ${new Date().toISOString()}`,
+              '',
+              '### What this means',
+              'The file URL and CSV row are unchanged, but the bytes war.gov serves',
+              'are different from what we recorded. This is the same class of event',
+              'as the May-June 2026 re-processing (see /changes).',
+              '',
+              '### Next steps (human)',
+              '1. Download the changed file(s) from war.gov.',
+              '2. Compare against the archived original in downloads/ (page count,',
+              '   text, image dims) to determine: re-compression / OCR / redaction /',
+              '   removal. Do NOT assert the cause without diffing the content.',
+              '3. Re-hash and update the manifest; publish the verified diff on /changes.',
+              '4. Original pre-change hashes are preserved in git history + the',
+              '   data/wargov-file-integrity-audit-*.json evidence files.',
+              '',
+              'Triggered by `.github/workflows/integrity-check.yml`.',
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[INTEGRITY] war.gov changed ${count} file bodies at same URLs`,
+              body,
+              labels: ['integrity', 'automated'],
+            });
