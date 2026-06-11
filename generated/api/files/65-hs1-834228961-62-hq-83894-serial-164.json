@@ -9,8 +9,8 @@
   "source_url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_serial_164.pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 30938461,
-  "sha256": "879e35dffa0b4a126fc114f6f402a2ca398bd0b6e4718e12f377e7a65e1a3170",
+  "size_bytes": 22734336,
+  "sha256": "fafb11efae96654a947177809349c9e10d0149d87c23f5f3af18a57e0b5dfae3",
   "redacted": false,
   "summary": "The FBI's 62-HQ-83894 case file includes investigative records, eyewitness testimonies, and public reports concerning Unidentified Flying Objects and flying discs documented between June 1947 and July 1968. The records include high-profile incident accounts, photographic evidence from sites like Oak Ridge, TN, and technical proposals regarding potential propulsion systems. Additional topics include convention programs, researcher accounts, and extensive media coverage from the period.  This file is partially posted on FBI vault with more redactions and some pages missing.  Included here is the complete case file with several newly declassified pages and only minor redactions.",
   "score": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/65-hs1-834228961-62-hq-83894-serial-164.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/65-hs1-834228961-62-hq-83894-serial-164.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,21 +75,5 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/65_hs1-834228961_62-hq-83894_serial_164.jpg",
   "csv_raw_title": "65_HS1-834228961_62-HQ-83894_Serial_164",
-  "audience": {
-    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter.",
-    "what_we_know": [
-      "Document originates from FBI.",
-      "Document references: page."
-    ],
-    "what_we_dont": [
-      "Exact date of the encounter is not specified in the released file.",
-      "Specific geographic coordinates are not disclosed.",
-      "No kinematic data (speed, altitude, maneuver) is attached."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
-    "keywords": [
-      "page"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }

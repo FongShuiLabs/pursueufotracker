@@ -9,10 +9,10 @@
   "source_url": "https://www.war.gov/medialink/ufo/release_1/342_hs1-416511228_box186_319.1-flying-discs-1949.pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 123253043,
-  "sha256": "707639e26003ce0c4f317b379626092d56af0f5a73db52cd91d4af184009c515",
+  "size_bytes": 71924623,
+  "sha256": "9d159600731338100b6b9c8565971b68aac644476fd766ade9d6bf126cfd3c7b",
   "redacted": false,
-  "summary": "This file primarily contains incident reports on Unidentified Flying Objects (UFOs) written in compliance with the 1948 Flight Service Regulation (FSR) 200-4. The incidents were witnessed by military sources, as well as well as by some Civilian Aviation Authority (CAA) ones. The reports typically include information such as dates, locations, weather, and altitude, plus detailed descriptions of appearance and movement. Some messages from the Military Air Transport Service (MATS) and Army Airways Communications System (AACS) are also included, as well as additional military intelligence reports, several diagrams, and a report from a weather station in Japan.",
+  "summary": "This file primarily contains incident reports on Unidentified Flying Objects (UFOs) written in compliance with the 1948 Flight Service Regulation (FSR) 200-4. The incidents were witnessed by military sources, as well as by some Civilian Aviation Authority (CAA) ones. The reports typically include information such as dates, locations, weather, and altitude, plus detailed descriptions of appearance and movement. Some messages from the Military Air Transport Service (MATS) and Army Airways Communications System (AACS) are also included, as well as additional military intelligence reports, several diagrams, and a report from a weather station in Japan.",
   "score": {
     "value": 56,
     "components": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/342-hs1-416511228-319-1-flying-discs-1949.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/342-hs1-416511228-319-1-flying-discs-1949.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,22 +75,5 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/342_hs1-416511228_box186_319.1-flying-discs-1949.jpg",
   "csv_raw_title": "342_HS1-416511228_319.1 Flying Discs 1949",
-  "audience": {
-    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (1/9/50).",
-    "what_we_know": [
-      "Document originates from DoD.",
-      "Encounter dated 1/9/50.",
-      "Document references: page."
-    ],
-    "what_we_dont": [
-      "Specific geographic coordinates are not disclosed.",
-      "No kinematic data (speed, altitude, maneuver) is attached.",
-      "No official conclusion has been issued classifying the object as conventional."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
-    "keywords": [
-      "page"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }

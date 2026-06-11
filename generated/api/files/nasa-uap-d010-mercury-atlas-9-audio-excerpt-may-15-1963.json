@@ -1,0 +1,81 @@
+{
+  "id": "nasa-uap-d010-mercury-atlas-9-audio-excerpt-may-15-1963",
+  "title": "NASA-UAP-D010, Mercury Atlas 9 Audio Excerpt, May 15, 1963",
+  "category": "nasa",
+  "agency": "NASA",
+  "type": "video",
+  "date_event": "5/15/63",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 164897834,
+  "sha256": "392c58d3ebec32241cbaac7b27a1437be827432cf94dcc458e4367dec9eb4a30",
+  "redacted": false,
+  "summary": "Approximately one hour and 41 minutes into the final and longest flight of Project Mercury, Mercury-Atlas 9 mission (MA-9) Faith 7 Pilot L. Gordon Cooper Jr. notes that he sees “John’s fireflies,” referring to John Glenn’s term from the Mercury-Atlas 6 mission. NASA later determined that the “fireflies” are attributable to frozen condensation separating from the spacecraft body. The white, green-hued appearance of this phenomenon results from sunlight reflecting off frozen condensation.",
+  "score": {
+    "value": 59,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Low Earth Orbit"
+  },
+  "thumbnail_url": null,
+  "csv_raw_title": "NASA-UAP-D010, Mercury Atlas 9 Audio Excerpt, May 15, 1963",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721711/DOD_111721711.mp4",
+  "dvids_video_id": "1007874",
+  "byte_verified_at": "2026-06-10"
+}

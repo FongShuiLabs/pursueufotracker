@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-djibouti-2025.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -74,24 +74,10 @@
     "place": "Djibouti"
   },
   "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006159/DOD_111689759.0000001/122x92_q95.jpg",
-  "csv_raw_title": "DOW-UAP-PR43, Unresolved UAP Report, Africa, 2025",
+  "csv_raw_title": "DOW-UAP-PR043, Unresolved UAP Report, Africa, 2025",
   "dvids_video_id": "1006159",
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689759/DOD_111689759.mp4",
   "duration": 11,
   "dvids_page_url": "https://www.dvidshub.net/video/1006159/dow-uap-pr43-unresolved-uap-report-africa-2025",
-  "audience": {
-    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Djibouti.",
-    "what_we_know": [
-      "Document originates from DoD.",
-      "Reported location: Djibouti.",
-      "Sensor footage available; transcript provided."
-    ],
-    "what_we_dont": [
-      "Exact date of the encounter is not specified in the released file.",
-      "Redacted portions may contain identifying or technical detail.",
-      "No kinematic data (speed, altitude, maneuver) is attached."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
-  }
+  "byte_verified_at": "2026-06-10"
 }

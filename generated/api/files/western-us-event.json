@@ -9,8 +9,8 @@
   "source_url": "https://www.war.gov/medialink/ufo/release_1/western_us_event_slides_5.08.2026.pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 63463,
-  "sha256": "6a4e6ee6111eec24d28aa9b4b9d72beafe0be5a480972683fbce82f758e6be35",
+  "size_bytes": 63768,
+  "sha256": "8565c159b82f50a6e9038987f0b71541aa38f07737a91b08af1a5cf224b6a2f3",
   "redacted": false,
   "summary": "This document is a summary of statements by seven US PERSONs employed by the federal government who separately reported observing several unidentified anomalous phenomena in the western United States over the course of two days in 2023.  The summary notes the US PERSONS reported four distinct categories of experiences, including observing “orbs launching other orbs” at a distance, observing a large stationary glowing orb at close estimated range, pursuing a large phenomenon near the ground, and observing a large, seemingly transparent phenomenon, reported to being akin to a “translucent kite.” Although there is no technical data directly associated with this report, contextual factors — such as these events sharing features with others reported to the All-domain Anomaly Resolution Office (AARO), the reporters’ credibility, and the potentially anomalous nature of the events themselves — combine to make this report among the most compelling within AARO’s current holdings.",
   "score": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/western-us-event.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/western-us-event.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,29 +75,5 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/western_us_event_slides_5.08.2026.jpg",
   "csv_raw_title": "Western US Event",
-  "audience": {
-    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (2023) over Western United States.",
-    "what_we_know": [
-      "Document originates from DoD.",
-      "Encounter dated 2023.",
-      "Reported location: Western United States."
-    ],
-    "what_we_dont": [
-      "No kinematic data (speed, altitude, maneuver) is attached.",
-      "No official conclusion has been issued classifying the object as conventional.",
-      "Independent corroboration from non-government sources has not been confirmed."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
-    "keywords": [
-      "object",
-      "usper",
-      "orbs",
-      "orange",
-      "stated",
-      "light",
-      "time",
-      "meters"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }

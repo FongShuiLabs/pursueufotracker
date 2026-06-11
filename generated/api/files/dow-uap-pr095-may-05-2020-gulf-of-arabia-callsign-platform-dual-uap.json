@@ -1,0 +1,83 @@
+{
+  "id": "dow-uap-pr095-may-05-2020-gulf-of-arabia-callsign-platform-dual-uap",
+  "title": "DOW-UAP-PR095, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2020",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 287999442,
+  "sha256": "72729a7280ccbd7b436b2508bcd6e620b94932e14ec59a86cfb3c29a3674b5d7",
+  "redacted": true,
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in 2020. A user uploaded this video to a classified network in May 2020.Video Duration: 00:04:49Video Description:00:00-00:16: The sensor tracks an area of contrast.00:17-00:20: The sensor zooms in on the area of contrast. At higher magnification, the area appears as multiple distinct areas of contrast.00:21-00:35: The sensor zooms in further. The areas of contrast move in and out of the field-of-view as the sensor pans to keep them in frame.00:36-00:54: The sensor zooms out.00:55-01:46: The sensor zooms in. The areas of contrast again become more distinct at higher magnification. The areas enter and exit the field-of-view as the sensor pans to keep them in frame.01:47-01:51: The areas of contrast leave the frame at the lower right edge of the screen.01:52-04:49: No content.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.AARO Comment: DOW-UAP-PR093 and DOW-UAP-PR095 are not duplicates. Both videos share an uploader-defined title and depict highly similar subject matter, but are distinct.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "CENTCOM"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007725/DOD_111719804.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR095, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"",
+  "dvids_video_id": "1007725",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111719804/DOD_111719804-1920x1080-9000k.mp4",
+  "duration": 288,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007725/dow-uap-pr095-may-05-2020-gulf-arabia-callsign-platform-dual-uap",
+  "byte_verified_at": "2026-06-10"
+}

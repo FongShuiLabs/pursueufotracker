@@ -1,0 +1,79 @@
+{
+  "id": "doe-uap-d003-pajarito-astronomers-invitation-1986",
+  "title": "DOE-UAP-D003, Pajarito Astronomers Invitation, 1986",
+  "category": "intel",
+  "agency": "DOE",
+  "type": "pdf",
+  "date_event": "5/20/86",
+  "date_released": "2026-05-22",
+  "source_url": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOE-UAP-D003_Pajarito_Astronomers.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 360462,
+  "sha256": "89ecb1163e42d3e8a215033b88e87ae3befe82a8dad1db112fae7e760bb756f4",
+  "redacted": true,
+  "summary": "A letter to the members of the Pajarito Astronomers club regarding an upcoming meeting featuring a presentation from a Los Alamos National Laboratory-affiliated physicist, Dr. John Warren, titled “Why Should a Scientist be Concerned about UFOs?” The referenced event was not officially hosted by Los Alamos. The laboratory has no record of the subject matter discussed at the meeting.",
+  "score": {
+    "value": 47,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "New Mexico"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/052226/release_02/thumbnails/DOE-UAP-D003_Pajarito_Astronomers.jpg",
+  "csv_raw_title": "DOE-UAP-D003, Pajarito Astronomers Invitation, 1986",
+  "byte_verified_at": "2026-06-10"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969",
+  "title": "NASA-UAP-D008, Apollo 12 Medical Debriefing - Tape 12, 1969",
+  "category": "apollo",
+  "agency": "NASA",
+  "type": "video",
+  "date_event": "1969",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 158294418,
+  "sha256": "ed6707b09c71306271c9b861c7c90683eba61f220a8cd6936089d5692141a739",
+  "redacted": false,
+  "summary": "During a medical debriefing of the crew of the Apollo 12 mission, Commander Charles “Pete” Conrad, Command Module Pilot Richard “Dick” F. Gordon, and Lunar Module Pilot Alan L. Bean describe their observations of instances of light flashes or “streaks of lights.” The astronauts each reported that these experiences occurred in the dark as they tried to sleep.The NASA medical team considered whether similar phenomena reported by Apollo 11 Lunar Module Pilot Buzz Aldrin had been attributable to exposure of the retina by cosmic rays. NASA later determined that the phenomena reported by the Apollo 12 flight crew were internal to the astronauts’ vision rather than external light sources.",
+  "score": {
+    "value": 59,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Texas"
+  },
+  "thumbnail_url": null,
+  "csv_raw_title": "NASA-UAP-D008, Apollo 12 Medical Debriefing - Tape 12, 1969",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721693/DOD_111721693-1920x1080-9000k.mp4",
+  "dvids_video_id": "1007870",
+  "byte_verified_at": "2026-06-10"
+}

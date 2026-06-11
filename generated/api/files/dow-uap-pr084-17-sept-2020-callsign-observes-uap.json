@@ -1,0 +1,83 @@
+{
+  "id": "dow-uap-pr084-17-sept-2020-callsign-observes-uap",
+  "title": "DOW-UAP-PR084, \"17 Sept 2020 [CALLSIGN] observes UAP\"",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2020",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 85710164,
+  "sha256": "6cdd8e86b9e887e0675d66a8e1e42e078751adcc764eb4b50f63ded10f7cacf5",
+  "redacted": true,
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “17 Sept 2020 [CALLSIGN] observes UAP,” is likely derived from a full-motion video camera aboard a U.S. military platform operating within the United States Central Command area of responsibility in 2020. A user uploaded this video to a classified network in September 2020.Video Duration: 00:04:13Video Description:00:00-00:24: No Content.00:25-00:27: An area of contrast enters from the lower right-hand side of the screen and exits the screen in the upper left.00:28-04:13 No Content.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "CENTCOM"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007810/DOD_111720886.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR084, \"17 Sept 2020 [CALLSIGN] observes UAP\"",
+  "dvids_video_id": "1007810",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111720886/DOD_111720886-1920x1080-9000k.mp4",
+  "duration": 253,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007810/dow-uap-pr084-17-sept-2020-callsign-observes-uap",
+  "byte_verified_at": "2026-06-10"
+}

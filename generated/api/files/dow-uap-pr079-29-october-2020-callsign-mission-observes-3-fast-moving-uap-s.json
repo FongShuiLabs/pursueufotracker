@@ -1,0 +1,83 @@
+{
+  "id": "dow-uap-pr079-29-october-2020-callsign-mission-observes-3-fast-moving-uap-s",
+  "title": "DOW-UAP-PR079, \"29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP's\"",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2020",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 70034336,
+  "sha256": "85ea9641ac8efe8205abf4ea337dbdb9312e242e1ac0b46cc1ebc6e515f67894",
+  "redacted": true,
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP’s,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in October 2020. A user uploaded this video to a classified network in October 2020.Video Duration: 00:04:00Video Description:00:02-00:22: The sensor pans to track an area of contrast.00:23-00:28: The sensor zooms in.00:29-01:01: The sensor zooms out, panning to track an area of contrast.01:02-01:17: A second area of contrast enters the frame from the top left quarter of the screen. Both remain in the frame for approximately 15 seconds.01:18-1:41: The sensor pans to track the second area of contrast, causing the first to exit the frame at the bottom of the screen. The area of contrast remains generally within the center of the sensor field-of-view.01:42-1:58: The sensor pans and cycles its zoom level multiple times. No content.01:59-02:58: The sensor pans to track an area of contrast. The area of contrast becomes increasingly indistinct against the background.02:59-04:00: The sensor pans and cycles its zoom level multiple times. No content.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "CENTCOM"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007816/DOD_111720899.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR079, \"29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP's\"",
+  "dvids_video_id": "1007816",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111720899/DOD_111720899-1920x1080-9000k.mp4",
+  "duration": 240,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007816/dow-uap-pr079-29-october-2020-callsign-mission-observes-3-fast-moving-uaps",
+  "byte_verified_at": "2026-06-10"
+}

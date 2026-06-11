@@ -9,8 +9,8 @@
   "source_url": "https://www.war.gov/medialink/ufo/release_1/341_110448_records_relating_to_the_collection_and_dissemination_of_intelligence_1948-1955-ts_cont_no.2_2-5300-2-5399.pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 9888054,
-  "sha256": "45b2fdb6c919cd8ed9c4406f4d60c7add073669dff5a5497595d4ecf08d72073",
+  "size_bytes": 3167015,
+  "sha256": "fc5b1c8ab566157080d8137cdbbbf7f2c3d74e7e1fae52d49dcd5c44b06237ba",
   "redacted": false,
   "summary": "An Air Force intelligence report from November 1948 relating to unidentified flying objects and flying saucers.",
   "score": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/341-110448-records-relating-to-the-collection-and-dissemination-of-intelligence-.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/341-110448-records-relating-to-the-collection-and-dissemination-of-intelligence-.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,22 +75,5 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/341_110448_records_relating_to_the_collection_and_dissemination_of_intelligence_1948-1955-ts_cont_no.2_2-5300-2-5399.jpg",
   "csv_raw_title": "341_110448_Records_Relating_to_the_Collection_and_Dissemination_of_Intelligence_1948-1955-TS_CONT_No.2_2-5300-2-5399",
-  "audience": {
-    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (11/8/48) over Netherlands.",
-    "what_we_know": [
-      "Document originates from DoD.",
-      "Encounter dated 11/8/48.",
-      "Reported location: Netherlands."
-    ],
-    "what_we_dont": [
-      "No kinematic data (speed, altitude, maneuver) is attached.",
-      "No official conclusion has been issued classifying the object as conventional.",
-      "Independent corroboration from non-government sources has not been confirmed."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
-    "keywords": [
-      "page"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }

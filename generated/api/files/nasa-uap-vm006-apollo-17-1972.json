@@ -1,0 +1,79 @@
+{
+  "id": "nasa-uap-vm006-apollo-17-1972",
+  "title": "NASA-UAP-VM006, Apollo 17, 1972",
+  "category": "apollo",
+  "agency": "NASA",
+  "type": "image",
+  "date_event": "1972",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm6-apollo-17-1972.jpg",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 1778754,
+  "sha256": "ce62e46b3535a4683ef6fd192d858be52dbbd9ca011ae1a9cb43dba947815f54",
+  "redacted": false,
+  "summary": "As part of the review of historical UAP materials under PURSUE, DOW has opened a case to investigate the accompanying NASA photograph from the Apollo 17 mission, taken December 1972. The image contains three “dots” in a triangular formation in the lower right quadrant of the lunar sky that is clearly visible upon magnification of the image. While this photo has been previously released and discussed by keen observers, there is no consensus about the nature of the anomaly. New preliminary US government analysis suggests the image feature is potentially the result of a physical object in the scene. Additionally, as part of this investigation, the government has obtained the original film from the Apollo 17 mission and the results of the full NASA and DOW analysis will be released when completed.",
+  "score": {
+    "value": 65,
+    "components": {
+      "sensor_quality": "photographic",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "photographic",
+        "value": 55,
+        "weight": 0.25,
+        "contribution": 13.75
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Moon"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/nasa-uap-vm6-apollo-17-1972.jpg",
+  "csv_raw_title": "NASA-UAP-VM006, Apollo 17, 1972",
+  "byte_verified_at": "2026-06-10"
+}

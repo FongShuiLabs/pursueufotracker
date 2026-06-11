@@ -9,8 +9,8 @@
   "source_url": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 49382924,
-  "sha256": "1d9722f764878359c73135f82b12608f1267eaf90d274c7d5775ab43bc9a289c",
+  "size_bytes": 161362330,
+  "sha256": "b24365329f506d92acfae313f0ed3aef2060de17d72bf61b6c91bc035bf7dd95",
   "redacted": false,
   "summary": "Each of these incident summaries includes a \"Check-List - Unidentified Flying Objects\" that contains details about the incident. Many summaries also include witness lists or statements and other narrative reports or descriptions.",
   "score": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/38-143685-box-incident-summaries-173-233.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/38-143685-box-incident-summaries-173-233.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,21 +75,5 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/38_143685_box7_incident_summaries_173-233.jpg",
   "csv_raw_title": "38_143685_box_Incident_Summaries_173-233",
-  "audience": {
-    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter.",
-    "what_we_know": [
-      "Document originates from DoD.",
-      "Document references: page."
-    ],
-    "what_we_dont": [
-      "Exact date of the encounter is not specified in the released file.",
-      "Specific geographic coordinates are not disclosed.",
-      "No kinematic data (speed, altitude, maneuver) is attached."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
-    "keywords": [
-      "page"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }

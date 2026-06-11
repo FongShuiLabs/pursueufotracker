@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,22 +75,5 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/331_120752_numeric_files_1944–1945_37153_german_armament_equipment_documents.jpg",
   "csv_raw_title": "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents",
-  "audience": {
-    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (3/18/45) over Germany.",
-    "what_we_know": [
-      "Document originates from DoD.",
-      "Encounter dated 3/18/45.",
-      "Reported location: Germany."
-    ],
-    "what_we_dont": [
-      "No kinematic data (speed, altitude, maneuver) is attached.",
-      "No official conclusion has been issued classifying the object as conventional.",
-      "Independent corroboration from non-government sources has not been confirmed."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
-    "keywords": [
-      "page"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }

@@ -1,0 +1,81 @@
+{
+  "id": "nasa-uap-d014-mercury-redstone-4-july-21-1961",
+  "title": "NASA-UAP-D014, Mercury-Redstone 4, July 21, 1961",
+  "category": "nasa",
+  "agency": "NASA",
+  "type": "video",
+  "date_event": "7/21/61",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 33839454,
+  "sha256": "d841ffb84d22a6ecace6a6df19c83e37d72f18fed86b1e2ec91f1a908f2b6247",
+  "redacted": false,
+  "summary": "During the recovery of the fourth launch and second crewed spaceflight of Project Mercury, Mercury-Redstone 4 (MR-4) Liberty Bell 7, the recovery team discusses a dye pack in the water that did not activate.",
+  "score": {
+    "value": 59,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "North Atlantic Ocean"
+  },
+  "thumbnail_url": null,
+  "csv_raw_title": "NASA-UAP-D014, Mercury-Redstone 4, July 21, 1961 ",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721755/DOD_111721755.mp4",
+  "dvids_video_id": "1007878",
+  "byte_verified_at": "2026-06-10"
+}

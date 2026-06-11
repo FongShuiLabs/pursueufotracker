@@ -9,10 +9,10 @@
   "source_url": "https://www.war.gov/medialink/ufo/release_1/usper-statement-redacted.pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 786792,
-  "sha256": "63deae172b2bd4923696ed097c0c25d1286f116be1efb313d14c0630ac0a1786",
+  "size_bytes": 786861,
+  "sha256": "60c1239f7a6bad9655cb66e7b3a82c7e582762f8b4248bc1b614cca9a82d6e37",
   "redacted": true,
-  "summary": "This is an FBI 302 interview conducted with a senior US intelligence official regarding his first-hand account of a UAP encounter at a US military facility. USPER relayed to FBI agents that he and other federal and state personnel conducted searches to where orbs had been previously seen.  After searching the area with a helicopter, they found a “super-hot” orb hovering over the ground.  The orb is reported to have travelled for 20 miles at a speed too fast for the helicopter in pursuit.  An additional “swarm” of lights were seen moving in all directions.  A total of four or five additional orbs were seen shortly thereafter for a short time, flaring up and then down.  This pattern of four or five orbs flaring up, then down continued over the next thirty minutes across the area.",
+  "summary": "This is an FBI 302 interview conducted with a senior US intelligence official regarding his first-hand account of a UAP encounter at a US military facility. USPER relayed to FBI agents that he and other federal and state personnel conducted searches to where orbs had been previously seen. After searching the area with a helicopter, they found a “super-hot” orb hovering over the ground. The orb is reported to have travelled for 20 miles at a speed too fast for the helicopter in pursuit. An additional “swarm” of lights were seen moving in all directions. A total of four or five additional orbs were seen shortly thereafter for a short time, flaring up and then down. This pattern of four or five orbs flaring up, then down continued over the next thirty minutes across the area.The photos linked in the \"Related Media\" section are connected to a set of UAP encounters on a sensitive government testing installation in the Western US in 2025. These orb-like UAP were observed at various ranges by multiple, and in some cases simultaneous, government personnel and sensors. The linked narrative is an FBI-collected account from a senior U.S. intelligence community official who witnessed the UAP with the naked eye, while accompanied by two pilots under NVGs. Other pilots in separate aircraft, and ground-based observers with night vision, also witnessed UAP during the exercise. The photos of UAP underneath the helicopter are from this same set of observations, taken through night vision devices by ground-based personnel.",
   "score": {
     "value": 55,
     "components": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/usper-statement-about-uap-sighting.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/usper-statement-about-uap-sighting.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,29 +75,5 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/usper-statement-redacted.jpg",
   "csv_raw_title": "USPER Statement about UAP Sighting",
-  "audience": {
-    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (Late 2025) over United States.",
-    "what_we_know": [
-      "Document originates from FBI.",
-      "Encounter dated Late 2025.",
-      "Reported location: United States."
-    ],
-    "what_we_dont": [
-      "Redacted portions may contain identifying or technical detail.",
-      "No kinematic data (speed, altitude, maneuver) is attached.",
-      "No official conclusion has been issued classifying the object as conventional."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 55/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
-    "keywords": [
-      "call",
-      "sign",
-      "hours",
-      "name",
-      "orbs",
-      "approximately",
-      "witness",
-      "site"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }

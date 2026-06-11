@@ -9,8 +9,8 @@
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-pr20.pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 2292342,
-  "sha256": "1ff8c16256579734969188915ad0e80062e1d5639bc424c6a207340e892c6dc6",
+  "size_bytes": 2297146,
+  "sha256": "d6614ddb85556a5ad5476be15798b97f16fc3396e42ceffd993548d1e3201389",
   "redacted": true,
   "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a U.S. military system in 2022. The original reporter digitally altered the imagery by adding a red line encircling an area of interest before submitting it to AARO. An accompanying mission report, DoW-UAP-D12, described the UAP as moving from north to northeast. The operator reported that they were unable to positively identify the UAP.Image Description: The image contains an encircled, elongated area of contrast in the top left quarter. The area of contrast increases in intensity along its length from top left to bottom right.This image description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/unresolved-uap-report-iraq-may-2022.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-iraq-may-2022.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -74,30 +74,6 @@
     "place": "Iraq"
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-pr20.jpg",
-  "csv_raw_title": "DOW-UAP-PR20, Unresolved UAP Report, Kuwait, May 2022",
-  "audience": {
-    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter over Iraq.",
-    "what_we_know": [
-      "Document originates from DoD.",
-      "Reported location: Iraq.",
-      "Portions of the document are redacted."
-    ],
-    "what_we_dont": [
-      "Exact date of the encounter is not specified in the released file.",
-      "Redacted portions may contain identifying or technical detail.",
-      "No kinematic data (speed, altitude, maneuver) is attached."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
-    "keywords": [
-      "uscentcom",
-      "recommendation",
-      "page",
-      "richard",
-      "harrison",
-      "chief",
-      "staff",
-      "recommended"
-    ]
-  }
+  "csv_raw_title": "DOW-UAP-PR020, Unresolved UAP Report, Kuwait, May 2022",
+  "byte_verified_at": "2026-06-10"
 }

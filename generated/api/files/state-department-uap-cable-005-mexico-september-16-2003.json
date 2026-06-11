@@ -1,0 +1,79 @@
+{
+  "id": "state-department-uap-cable-005-mexico-september-16-2003",
+  "title": "State Department UAP Cable 005, Mexico, September 16, 2003",
+  "category": "state",
+  "agency": "STATE",
+  "type": "pdf",
+  "date_event": "9/12/03",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/059uap00013.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 1208817,
+  "sha256": "257e2388f838975fcee0b00a381059e903e64018b7aafb7a12e5392437154f5f",
+  "redacted": false,
+  "summary": "On September 12, 20023 the Mexican Congress heard testimony on UAP from experts related to the debate about an Aerial Space Protection Law, which, if approved, would make Mexico the first country to formally acknowledge the presence of alien life on earth. Experts asked legislators to recognize UAP, guarantee airspace security, and allow UAP to be studied.  They presented to alleged alien corpses and videos of Mexican pilot’s encounters with fast-moving flying objects during flight. Disagreement about the efficacy and validity of the purported alien corpses.",
+  "score": {
+    "value": 50,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Mexico"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/059uap00013.jpg",
+  "csv_raw_title": "State Department UAP Cable 005, Mexico, September 16, 2003",
+  "byte_verified_at": "2026-06-10"
+}

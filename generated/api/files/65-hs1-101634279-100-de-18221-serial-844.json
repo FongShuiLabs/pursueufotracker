@@ -9,8 +9,8 @@
   "source_url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-101634279_100-de-18221_serial_844.pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 677153,
-  "sha256": "17e13c53b0cc0c3122b4d14d5b74a6cf8fda907179a9f8f8fea506c90c8fe09c",
+  "size_bytes": 265783,
+  "sha256": "36b00fdf99e456dff9a507db7fd90fadb995db235650966f14b77279095fcc6a",
   "redacted": false,
   "summary": "An FBI memo from 1958 reporting a UFO sighting by a Detroit man who described a \"circular object with a crystal-type dome,\" and recommending that the information be forwarded to \"proper air force authorities.\"",
   "score": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/65-hs1-101634279-100-de-18221-serial-844.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/65-hs1-101634279-100-de-18221-serial-844.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,22 +75,5 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/65_hs1-101634279_100-de-18221_serial_844.jpg",
   "csv_raw_title": "65_HS1-101634279_100-DE-18221_Serial_844",
-  "audience": {
-    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (4/17/58) over Detroit, MI.",
-    "what_we_know": [
-      "Document originates from FBI.",
-      "Encounter dated 4/17/58.",
-      "Reported location: Detroit, MI."
-    ],
-    "what_we_dont": [
-      "No kinematic data (speed, altitude, maneuver) is attached.",
-      "No official conclusion has been issued classifying the object as conventional.",
-      "Independent corroboration from non-government sources has not been confirmed."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
-    "keywords": [
-      "page"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }

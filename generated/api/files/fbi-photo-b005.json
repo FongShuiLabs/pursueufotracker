@@ -1,0 +1,79 @@
+{
+  "id": "fbi-photo-b005",
+  "title": "FBI Photo B005",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": "Late 2025",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b5.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 119604,
+  "sha256": "9048f6d63441caa23ca385c07340399b34a3c70cd9d21da4f79fd73da57aafac",
+  "redacted": true,
+  "summary": "The Federal Bureau of Investigation (FBI) submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of a still image derived from a U.S. military system in 2025. The original imagery was altered with redactions before being submitted to AARO. An accompanying mission report was not provided. The operator reported that they were unable to positively identify the UAP.  The date in the image is incorrect due to system date/time not being set.Narrative Description: The monochrome image displays a grainy texture with a central crosshair reticle. No distinct objects are clearly visible within the central area of the frame. The background shows an indistinct formation, possibly a mountain range. This narrative description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 55,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Western United States"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/fbi-photo-b5.jpg",
+  "csv_raw_title": "FBI Photo B005",
+  "byte_verified_at": "2026-06-10"
+}

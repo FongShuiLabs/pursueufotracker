@@ -1,0 +1,81 @@
+{
+  "id": "nasa-uap-d013-mercury-atlas-7-may-24-1962",
+  "title": "NASA-UAP-D013, Mercury Atlas 7, May 24, 1962",
+  "category": "nasa",
+  "agency": "NASA",
+  "type": "video",
+  "date_event": "5/24/62",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 81701232,
+  "sha256": "ec0ab89ebb8eed83ba4db85a24c6b6230cfe537deaccc3342e330f35f556d931",
+  "redacted": false,
+  "summary": "During the fourth crewed spaceflight and second orbital flight of Project Mercury, Mercury-Atlas 7 (MA-7), Aurora 7 pilot Scott Carpenter describes white particles in view that appear to move at “random” and “look exactly like snowflakes.” He describes these phenomena as reflective, and that some seemed to move faster than the Aurora 7 spacecraft.",
+  "score": {
+    "value": 59,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Low Earth Orbit"
+  },
+  "thumbnail_url": null,
+  "csv_raw_title": "NASA-UAP-D013, Mercury Atlas 7, May 24, 1962 ",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721758/DOD_111721758.mp4",
+  "dvids_video_id": "1007879",
+  "byte_verified_at": "2026-06-10"
+}

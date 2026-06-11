@@ -1,0 +1,83 @@
+{
+  "id": "dow-uap-pr075-09jun2021-platform-observed-uap-in-the-ecs",
+  "title": "DOW-UAP-PR075, \"09JUN2021 [Platform] observed UAP in the ECS\"",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2021",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 19009940,
+  "sha256": "f97c19f0ba2ba284c2a86cf2e6c20c0b3908f213d2d1e2b2e3c58f4b57807e34",
+  "redacted": true,
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “09JUN2021 [Platform] observed UAP in the ECS,” is likely derived from an infrared sensor aboard a U.S. military platform operating above the East China Sea in 2021. A user uploaded this video to a classified network in June 2021.Video Duration: 00:00:23Video Description:00:01-00:18: The sensor pans to track an area of contrast. At the 18 second mark, the sensor loses sight of the object.00:19-00:23: No content.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "East China Sea"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007795/DOD_111720809.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR075, \"09JUN2021 [Platform] observed UAP in the ECS\"",
+  "dvids_video_id": "1007795",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111720809/DOD_111720809.mp4",
+  "duration": 23,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007795/dow-uap-pr075-09jun2021-platform-observed-uap-ecs",
+  "byte_verified_at": "2026-06-10"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "state-department-uap-cable-001-papua-new-guinea-january-28-1985",
+  "title": "State Department UAP Cable 001, Papua New Guinea, January 28, 1985",
+  "category": "state",
+  "agency": "STATE",
+  "type": "pdf",
+  "date_event": "1/24/85",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/dos-uap-d1-cable-1-papua-new-guinea-january-1985.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 306604,
+  "sha256": "566894d9cb31e15818e87d54e848a634ddd711aa7fb9ed72402d4a759e3a3bf8",
+  "redacted": false,
+  "summary": "This document is a U.S. Department of State diplomatic cable from the U.S. Embassy in Port Moresby, Papua New Guinea to USCINCPAC (United States Indo-Pacific Command) at Honolulu, HI on January 28, 1985. The cable reports that the U.S. Embassy to Papua New Guinea received an inquiry from the host nation’s intelligence services regarding reports of high-altitude, high-speed aircraft in Papua New Guinean airspace on the evening of January 24, 1985. The cable refers to a representative of the local intelligence services as “NIO,” or National Intelligence Officer, throughout. The NIO relayed to U.S. diplomatic personnel that residents had been “frightened by overflights, which led to the provincial premier’s calling of a public meeting on the subject.” The NIO also stated there had been “various reports of unidentified aerial phenomena the night of January 24, including fast-moving objects with lights, contrails, and noise.” The NIO assessed these reports as credible based upon the testimony of an Air Niugini pilot who said that their radar had “picked up aircraft flying south to north at high altitude and high speed.”The cable concludes by characterizing the information provided by the NIO as “very sketchy.” It also sought clarification from U.S. INDOPACOM on the presence or absence of U.S. military aircraft within Papua New Guinean airspace on the night in question.",
+  "score": {
+    "value": 50,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Papua New Guinea"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dos-uap-d1-cable-1-papua-new-guinea-january-1985.jpg",
+  "csv_raw_title": "State Department UAP Cable 001, Papua New Guinea, January 28, 1985 ",
+  "byte_verified_at": "2026-06-10"
+}

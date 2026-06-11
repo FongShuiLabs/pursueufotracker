@@ -1,0 +1,79 @@
+{
+  "id": "state-department-uap-cable-002-kazakhstan-january-31-1994",
+  "title": "State Department UAP Cable 002, Kazakhstan, January 31, 1994",
+  "category": "state",
+  "agency": "STATE",
+  "type": "pdf",
+  "date_event": "1/27/94",
+  "date_released": "2026-05-08",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/dos-uap-d2-cable-2-kazakhstan-january-1994.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 382367,
+  "sha256": "e1d583556594e3e98f0ceea5598760c9d122283c4582f7d5f6c6c9ad96ad76e3",
+  "redacted": false,
+  "summary": "This document is a U.S. Department of State diplomatic cable from the U.S. Embassy in Dushanbe, Tajikistan to the Secretary of State in Washington, D.C. on January 31, 1994.On January 27, 1994 one Tajik pilot and three American citizens encountered an UAP flying a 747 jet at 41,000 feet over Kazakhstan.  Object was a bright light of enormous intensity and approached over the horizon to the east at great speed and a much higher altitude.  Several pictures were taken of the craft making 90 degree turns, doing corkscrews and maneuvering in circles a great rates of speed.  Object was reported as resembling a bullet in flight.  Visual estimation of the contrails were at 100,000 feet, which was too high to leave contrails by ordinary aircraft.",
+  "score": {
+    "value": 50,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Kazakhstan"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dos-uap-d2-cable-2-kazakhstan-january-1994.jpg",
+  "csv_raw_title": "State Department UAP Cable 002, Kazakhstan, January 31, 1994",
+  "byte_verified_at": "2026-06-10"
+}

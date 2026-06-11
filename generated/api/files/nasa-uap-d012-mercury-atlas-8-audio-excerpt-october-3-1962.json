@@ -1,0 +1,81 @@
+{
+  "id": "nasa-uap-d012-mercury-atlas-8-audio-excerpt-october-3-1962",
+  "title": "NASA-UAP-D012, Mercury Atlas 8 Audio Excerpt, October 3, 1962",
+  "category": "nasa",
+  "agency": "NASA",
+  "type": "video",
+  "date_event": "10/3/62",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 214076300,
+  "sha256": "8ca2ca5186265864f68f89f493ddbfc9c9cd55c7efebef4a8c6c0d00370180b1",
+  "redacted": false,
+  "summary": "During the Mercury Atlas 8 mission, Sigma 7 pilot Walter M. “Wally” Schirra Jr. describes observing “little white objects that tend to come from the capsule itself and drift off.” Schirra later also refers to those objects as “particles” and “lathe shavings.” Schirra also describes seeing a burst of light in the window, whose source he cannot identify. He speculates that his observation corresponds with the moment the sun passes below the horizon during sunset.",
+  "score": {
+    "value": 59,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Low Earth Orbit"
+  },
+  "thumbnail_url": null,
+  "csv_raw_title": "NASA-UAP-D012, Mercury Atlas 8 Audio Excerpt, October 3, 1962",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721747/DOD_111721747.mp4",
+  "dvids_video_id": "1007877",
+  "byte_verified_at": "2026-06-10"
+}

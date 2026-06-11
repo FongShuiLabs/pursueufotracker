@@ -1,0 +1,79 @@
+{
+  "id": "cia-uap-d001-intelligence-information-report-ussr-1973",
+  "title": "CIA-UAP-D001, Intelligence Information Report, USSR, 1973",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": "12/20/73",
+  "date_released": "2026-05-22",
+  "source_url": "https://www.war.gov/medialink/ufo/052226/release_02/documents/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.pdf",
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 154038,
+  "sha256": "d3039ed486d8400be3263c0c438b199abfdb8ac030156baff1536f007349d315",
+  "redacted": true,
+  "summary": "This document is a Central Intelligence Agency (CIA) intelligence information report (IIR) that describes human intelligence gathering activities in the Union of Soviet Socialist Republics (USSR). This report characterizes its content as informational, not as finally evaluated intelligence. In section 14 of this document, the source describes an incident occurring in summer of 1973, where he allegedly observed an airborne, luminous, bright green, unidentified object. The source described concentric circles forming around the phenomenon over a period of several minutes, before it dissipated. The source also stated that no sound attended the observation. The source offered no opinion on the nature of the phenomenon and was unable to provide further details regarding the incident.",
+  "score": {
+    "value": 47,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "USSR"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/052226/release_02/thumbnails/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.jpg",
+  "csv_raw_title": "CIA-UAP-D001, Intelligence Information Report, USSR, 1973",
+  "byte_verified_at": "2026-06-10"
+}

@@ -1,0 +1,83 @@
+{
+  "id": "dow-uap-pr060-spherical-uap-callsign-2021-04-12-obj-2",
+  "title": "DOW-UAP-PR060, \"Spherical UAP [CALLSIGN] 2021/04/12 obj 2\"",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2021",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 287021108,
+  "sha256": "03dbc4ebcdbdd6e29ec56572a23e6372ac936e9a79467c1ad9db5ad294307300",
+  "redacted": true,
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “Spherical UAP [CALLSIGN] 2021/04/12 obj 2,” is likely derived from a full-motion video camera and an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in 2021. A user uploaded this video to a classified network in June 2024.Video Duration: 00:04:50Video Description:00:00-00:26: An area of contrast transits the sensor field-of-view from right to left. The sensor pans and zooms in and out to track the area of contrast.00:27-02:04: The area of contrast re-enters the sensor field-of-view. The sensor pans to the left and up to track it.02:05-04:50: The sensor refocuses on the original subject matter of the video.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "CENTCOM"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007734/DOD_111719823.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR060, \"Spherical UAP [CALLSIGN] 2021/04/12 obj 2\"",
+  "dvids_video_id": "1007734",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111719823/DOD_111719823-1920x1080-9000k.mp4",
+  "duration": 290,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007734/dow-uap-pr060-spherical-uap-callsign-2021-04-12-obj-2",
+  "byte_verified_at": "2026-06-10"
+}

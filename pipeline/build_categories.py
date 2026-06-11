@@ -302,7 +302,7 @@ def _page_html(cat: dict, files: list[dict]) -> str:
 
 {explore_nav}
 
-  <a class="cat-back" href="/">← BACK TO ALL 161 FILES</a>
+  <a class="cat-back" href="/">← BACK TO ALL 222 FILES</a>
 </main>
 
 <footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">

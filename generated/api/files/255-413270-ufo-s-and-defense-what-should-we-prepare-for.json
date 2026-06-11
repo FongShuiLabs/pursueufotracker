@@ -9,8 +9,8 @@
   "source_url": "https://www.war.gov/medialink/ufo/release_1/255_413270_ufo's_and_defense_what_should_we_prepare_for.pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 33457869,
-  "sha256": "2af37a8e08174de45b12ee3acc628736a3a36c5d95edd6c2c17f0bf6ccf1431e",
+  "size_bytes": 24581224,
+  "sha256": "b6a51b4cd1c09ff6ab811422d1af98173d1a2ba9193ee426b9b060e4cb9eea30",
   "redacted": true,
   "summary": "This file contains an independent report on UFOs written by the French association COMETA (previously published in the French magazine VDS in 1999), which details the results of a study by the Institute of Higher Studies for National Defence. The file also includes a letter from Carol Rosin in which she notes that she was spokesperson for von Braun during the last years of his life.",
   "score": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/255-413270-ufo-s-and-defense-what-should-we-prepare-for.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/255-413270-ufo-s-and-defense-what-should-we-prepare-for.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,22 +75,5 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/255_413270_ufo's_and_defense_what_should_we_prepare_for.jpg",
   "csv_raw_title": "255_413270_UFO's_and_Defense_What_Should_we_Prepare_For",
-  "audience": {
-    "tldr": "NASA mission record from a military encounter report documenting a UAP encounter.",
-    "what_we_know": [
-      "Document originates from NASA.",
-      "Portions of the document are redacted.",
-      "Document references: page."
-    ],
-    "what_we_dont": [
-      "Exact date of the encounter is not specified in the released file.",
-      "Specific geographic coordinates are not disclosed.",
-      "Redacted portions may contain identifying or technical detail."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (astronaut), corroboration (single_witness_instrument).",
-    "keywords": [
-      "page"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }

@@ -1,0 +1,83 @@
+{
+  "id": "dow-uap-pr096-hh11-03-july-2018-uaps",
+  "title": "DOW-UAP-PR096, \"HH11 03 July 2018 UAPs\"",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2018",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 83863647,
+  "sha256": "d869a5367f4c69ed166a540c65a2d4ed6a528e033a8d64496518f2e6ddf7e7b1",
+  "redacted": true,
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “HH11 03 July 2018 UAPs,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in 2018. A user uploaded this video to a classified network in July 2020.Video Duration: 00:01:19Video Description:00:00-00:12: No Content.00:13-00:21: Two areas of contrast enter the lower right side of the screen and exit the bottom of the screen.00:13-00:29: The sensor pans to track the two areas of contrast, centering them generally within the center of the field-of-view.00:30-00:47: The sensor zooms in. One of the areas of contrast is no longer visible within the frame at this level of magnification. The area of contrast within the sensor field-of-view appears as three distinct areas of contrast in a generally straight line.00:47-00:58: The distance between the rightmost area of contrast and the center and left areas of contrast appears to increase. The center and left areas of contrast appear to remain at a roughly fixed distance from one another.00:59-01:19: Other areas of contrast enter the field-of-view from the top of the screen.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "CENTCOM"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007726/DOD_111719807.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR096, \"HH11 03 July 2018 UAPs\"",
+  "dvids_video_id": "1007726",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111719807/DOD_111719807-1920x1080-9000k.mp4",
+  "duration": 79,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007726/dow-uap-pr096-hh11-03-july-2018-uaps",
+  "byte_verified_at": "2026-06-10"
+}

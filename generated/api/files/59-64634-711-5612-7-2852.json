@@ -4,15 +4,15 @@
   "category": "state",
   "agency": "STATE",
   "type": "pdf",
-  "date_event": "7/18/52",
+  "date_event": "7/28/52",
   "date_released": "2026-05-08",
-  "source_url": "https://www.war.gov/medialink/ufo/release_1/59_214434_sp_16_7.18.1963.pdf",
+  "source_url": "https://www.war.gov/medialink/ufo/release_1/59_64634_711.5612[7-2852.pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 1598931,
-  "sha256": "aba3ec3b8ef0240364308cf046ccbfcd252c5a5d7ef470d696b72c1f41b2502d",
+  "size_bytes": 898369,
+  "sha256": "2539850305227baf0b3bb487cbf41f5834eca2b188dc2d65849fdb06b683bd13",
   "redacted": false,
-  "summary": "This two page memorandum, dated July 18, 1952, relates to increased reports of unidentified flying objects (UFOs). Included in the record are possible explanations of increased sightings, such as technological improvements, historical records of UFOs, and U.S. Air Force opinions on UFOs.",
+  "summary": "This two page memorandum, dated July 28, 1952, relates to increased reports of unidentified flying objects (UFOs). Included in the record are possible explanations of increased sightings, such as technological improvements, historical records of UFOs, and U.S. Air Force opinions on UFOs.",
   "score": {
     "value": 50,
     "components": {
@@ -64,33 +64,16 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/59-64634-711-5612-7-2852.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/59-64634-711-5612-7-2852.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
     "lng": null,
     "place": null
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/59_214434_sp_16_7.18.1963.jpg",
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/59_64634_711.5612[7-2852.jpg",
   "csv_raw_title": "59_64634_711.5612[7-2852",
-  "audience": {
-    "tldr": "State Department diplomatic cable from an overseas diplomatic post documenting a UAP encounter (7/18/52).",
-    "what_we_know": [
-      "Document originates from STATE.",
-      "Encounter dated 7/18/52.",
-      "Document references: page."
-    ],
-    "what_we_dont": [
-      "Specific geographic coordinates are not disclosed.",
-      "No kinematic data (speed, altitude, maneuver) is attached.",
-      "No official conclusion has been issued classifying the object as conventional."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 50/100. Top drivers: corroboration (single_witness_instrument), witness credibility (civilian_credentialed).",
-    "keywords": [
-      "page"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }

@@ -1,0 +1,83 @@
+{
+  "id": "dow-uap-pr074-callsign-mission-hd-20220613",
+  "title": "DOW-UAP-PR074, \"[CALLSIGN] (Mission)HD_20220613\"",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2022",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 155020809,
+  "sha256": "b8590ac4c50ee62a88c6d32e1a1cfe97dff93fb5ba91a9346150501bdcb18044",
+  "redacted": true,
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “[CALLSIGN] (Mission) HD_20220613,” is likely derived from an infrared sensor aboard a U.S. military platform operating in the United States Central Command area of responsibility in June 2022. A user uploaded this video to a classified network in June 2022.Video Duration: 00:04:45Video Description:00:00-00:10: The sensor pans from right to left tracking an area of contrast moving towards the center of the field-of-view, before losing distinctiveness against the background.00:11-00:14: The sensor zooms in. An area of contrast transits the sensor field-of-view, entering from the right and exiting from the left side of the frame.00:15-00:43: The sensor zooms out to track an area of contrast.  00:44-00:47: The sensor zooms in. An area of contrast transits the sensor field-of-view, entering from the right and exiting from the left side of the frame.00:48-01:05: The sensor cycles its zoom settings multiple times.01:06-01:13: A small area of contrast transits from the right to the center of the sensor field-of-view.01:14-01:18: The sensor zooms in on an area of contrast. The area of contrast transits from the right to the center of the frame while the sensor pans up.01:19-02:05: The sensor zooms and pans to track the area of contrast until it exits the field-of-view at the top of the display.02:06-03:42: No content.03:43-03:47: Several areas of contrast become visible near the center of the sensor field-of-view.03:48-03:50: No content.03:51-04:00: Four small areas of contrast become visible in the center of the sensor field-of-view. The sensor pans to track the areas of contrast.04:01-04:21: The sensor cycles its zoom level out and pans to the right to track an area of contrast in the bottom right of the field-of-view.04:22-04:39: The sensor cycles its zoom level to focus on an area of contrast multiple times.04:40-04:43: The sensor switches modalities and refocuses on an area of contrast centered in its field-of-view.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "CENTCOM"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007791/DOD_111720775.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR074, \"[CALLSIGN] (Mission)HD_20220613\"",
+  "dvids_video_id": "1007791",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111720775/DOD_111720775-1920x1080-9000k.mp4",
+  "duration": 285,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007791/dow-uap-pr074-callsign-missionhd-20220613",
+  "byte_verified_at": "2026-06-10"
+}

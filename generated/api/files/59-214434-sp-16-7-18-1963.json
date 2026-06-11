@@ -9,8 +9,8 @@
   "source_url": "https://www.war.gov/medialink/ufo/release_1/59_214434_sp_16_[7.18.1963].pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 1598931,
-  "sha256": "aba3ec3b8ef0240364308cf046ccbfcd252c5a5d7ef470d696b72c1f41b2502d",
+  "size_bytes": 1169464,
+  "sha256": "cddcc196385c373ef7fd55fee4c196bfad531860a05777786cf6d90a2fd7dabd",
   "redacted": false,
   "summary": "This memorandum, dated July 18, 1963, from the Executive Office of the President, National Aeronautics and Space Council, relates to thoughts on the space alien race question. Included are details relating to plans if alien intelligence is discovered, expanding scientific knowledge, the possibility of life on Mars, and diplomatic policy.",
   "score": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/59-214434-sp-16-7-18-1963.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/59-214434-sp-16-7-18-1963.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,22 +75,5 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/59_214434_sp_16_[7.18.1963].jpg",
   "csv_raw_title": "59_214434_SP 16 [7.18.1963]",
-  "audience": {
-    "tldr": "State Department diplomatic cable from an overseas diplomatic post documenting a UAP encounter (7/18/63).",
-    "what_we_know": [
-      "Document originates from STATE.",
-      "Encounter dated 7/18/63.",
-      "Document references: page."
-    ],
-    "what_we_dont": [
-      "Specific geographic coordinates are not disclosed.",
-      "No kinematic data (speed, altitude, maneuver) is attached.",
-      "No official conclusion has been issued classifying the object as conventional."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 50/100. Top drivers: corroboration (single_witness_instrument), witness credibility (civilian_credentialed).",
-    "keywords": [
-      "page"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }

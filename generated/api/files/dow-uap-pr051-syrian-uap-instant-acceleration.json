@@ -1,0 +1,83 @@
+{
+  "id": "dow-uap-pr051-syrian-uap-instant-acceleration",
+  "title": "DOW-UAP-PR051, \"Syrian UAP instant acceleration\"",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2021",
+  "date_released": "2026-05-22",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": null,
+  "size_bytes": 235062797,
+  "sha256": "d5c8ea707c836aa23c14750fed97711e8ecbebe230dabb5b8aeab327ca95a49b",
+  "redacted": true,
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “Syrian UAP instant acceleration,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in 2021. A user uploaded this video to a classified network in June 2024.Video Duration: 00:05:02Video Description: This media was digitally altered prior to its upload to a classified network, and is presented as received.00:01-00:19: The sensor pans to maintain the position of an area of contrast within the center of the frame.00:20-00:21: The sensor stops tracking the area of contrast, causing it to rapidly exit the right side of the frame.00:22-00:27: No content.00:27-00:29 A black screen appears featuring the phrase “white edge threshold enhancement in attempt to highlight UAP shape. Original clip excerpt at 100% speed.” 00:30-00:50: The video replays with digital alterations applied.00:51-00:53: A black screen appears featuring the phrase “50% speed.”00:54-01:05: The video replays with digital alterations applied.01:06-01:08: A black screen appears featuring the phrase “25% speed.”01:09-01:35: The video replays with digital alterations applied.01:36-01:41: A black screen appears featuring the phrase “B/W values inverted, picture zoomed”01:42-02:03: The video replays with digital alterations applied.02:04-02:09: A black screen appears featuring the phrase “full original clip TRT: 2:52”02:10-03:49: The video replays, showing additional footage of the area of contrast at its original resolution on a far zoom.03:50-04:02: The sensor rapidly zooms in and out.04:03-04:28: The sensor focuses and zooms in, locking a reticle around the area of contrast.04:29-5:01: The video replays 00:20-00:21, the period in which the sensor stops tracking the area of contrast, causing it to rapidly exit the right side of the frame.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "CENTCOM"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007707/DOD_111719715.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR051, \"Syrian UAP instant acceleration\"",
+  "dvids_video_id": "1007707",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111719715/DOD_111719715-1920x1080-9000k.mp4",
+  "duration": 302,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007707/dow-uap-pr051-syrian-uap-instant-acceleration",
+  "byte_verified_at": "2026-06-10"
+}

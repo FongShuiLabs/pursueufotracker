@@ -326,7 +326,7 @@
   {% if archive_context and archive_context.rank %}
   <section class="archive-context" style="margin:32px 0;padding:28px 30px;background:rgba(82,180,255,.04);border:1px solid rgba(82,180,255,.18);border-radius:10px">
     <h2 style="color:#fff;font-size:22px;margin:0 0 14px">Where this file fits in the PURSUE archive</h2>
-    <p style="color:#dfe6ef;font-size:15.5px;line-height:1.7;margin:0 0 14px">This file is one of <strong>{{ f.agency }}'s {{ archive_context.agency_total }}</strong> files in the May 8, 2026 Trump <a href="/pursue-program" style="color:#52b4ff;text-decoration:none">PURSUE disclosure</a>. Within the {{ f.agency }} agency block it ranks <strong>#{{ archive_context.agency_rank }} of {{ archive_context.agency_total }}</strong> by Anomalousness Index. Across the entire 161-file release it ranks <strong>#{{ archive_context.rank }} of {{ archive_context.total }}</strong>.</p>
+    <p style="color:#dfe6ef;font-size:15.5px;line-height:1.7;margin:0 0 14px">This file is one of <strong>{{ f.agency }}'s {{ archive_context.agency_total }}</strong> files in the Trump <a href="/pursue-program" style="color:#52b4ff;text-decoration:none">PURSUE disclosure</a>. Within the {{ f.agency }} agency block it ranks <strong>#{{ archive_context.agency_rank }} of {{ archive_context.agency_total }}</strong> by Anomalousness Index. Across the entire {{ archive_context.total }}-file archive it ranks <strong>#{{ archive_context.rank }} of {{ archive_context.total }}</strong>.</p>
     {% if archive_context.tier_phrase %}
     <p style="color:#dfe6ef;font-size:15.5px;line-height:1.7;margin:0 0 14px">{{ archive_context.tier_phrase }}</p>
     {% endif %}
@@ -404,7 +404,7 @@
       </a>
       {% endfor %}
     </div>
-    <p style="text-align:center;margin-top:18px"><a href="/" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1px;text-decoration:none">BROWSE ALL 161 FILES →</a></p>
+    <p style="text-align:center;margin-top:18px"><a href="/" style="color:#52b4ff;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1px;text-decoration:none">BROWSE ALL 222 FILES →</a></p>
   </section>
   {% endif %}
 

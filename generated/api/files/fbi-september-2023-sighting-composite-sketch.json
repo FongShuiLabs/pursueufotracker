@@ -9,8 +9,8 @@
   "source_url": "https://www.war.gov/medialink/ufo/release_1/2024-04-30-composite-sketch.pdf",
   "pending_verification": false,
   "local_path": null,
-  "size_bytes": 109275,
-  "sha256": "7768268e837325333be0ea00ce5c00f571de3190e0c390f33e098f183cbf19a5",
+  "size_bytes": 112045,
+  "sha256": "b18179d90564ecae48fbca58e945894633ac9c37f49f5781a9406a389b457663",
   "redacted": false,
   "summary": "Actual site photo with FBI Lab rendered graphic overlay depicting corroborating eyewitness reports from September 2023 of an apparent ellipsoid bronze metallic object materializing out of a bright light in the sky, 130-195 feet in length, and disappearing instantaneously.",
   "score": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": "extracted/pdf-text/fbi-september-2023-sighting-composite-sketch.txt",
+    "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/fbi-september-2023-sighting-composite-sketch.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,22 +75,5 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/2024-04-30-composite-sketch.jpg",
   "csv_raw_title": "FBI September 2023 Sighting - Composite Sketch",
-  "audience": {
-    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (9/1/23) over United States.",
-    "what_we_know": [
-      "Document originates from FBI.",
-      "Encounter dated 9/1/23.",
-      "Reported location: United States."
-    ],
-    "what_we_dont": [
-      "No kinematic data (speed, altitude, maneuver) is attached.",
-      "No official conclusion has been issued classifying the object as conventional.",
-      "Independent corroboration from non-government sources has not been confirmed."
-    ],
-    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
-    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
-    "keywords": [
-      "page"
-    ]
-  }
+  "byte_verified_at": "2026-06-10"
 }
