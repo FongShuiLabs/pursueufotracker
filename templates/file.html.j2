@@ -316,8 +316,13 @@
   </div>
 
   {% if f.summary %}
+  {% set _pr_shared = 'eight members of the U.S. House' in f.summary %}
   <p style="font-size:17px;color:#dfe6ef;line-height:1.7;margin:24px 0">{{ f.summary }}</p>
+  {% if _pr_shared %}
+  <p style="font-size:13px;color:#7a92b0;line-height:1.6;margin:8px 0 24px;font-style:italic">Note: war.gov publishes this same release note for all 51 Congressionally-requested DOW-UAP-PR records, so it is not specific to this file. This file's own specifics are in its title above, the video and metadata below, and the original analysis that follows.</p>
+  {% else %}
   <p style="font-size:13px;color:#7a92b0;line-height:1.6;margin:8px 0 24px;font-style:italic">The summary above is sourced from the released file metadata as published to war.gov. The analysis sections below are original to this tracker.</p>
+  {% endif %}
   {% endif %}
 
   {% set slot_id = "1234567890" %}{% set ad_format = "auto" %}
