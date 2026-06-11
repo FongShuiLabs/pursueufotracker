@@ -1,12 +1,31 @@
 # PURSUE UFO Tracker — Action Queue
 
-**Last updated: 2026-06-03** (Drop 02 checkpoint reminder added; 4 new topic pages shipped this week; war.gov still unchanged 22 days)
+**Last updated: 2026-06-10** (byte-swap investigation + integrity monitor; Release 02 ingested; AdSense re-review requested)
 
 ---
 
-## 📅 CHECKPOINT — Saturday 2026-06-07 (projected Drop 02 window)
+## 🔴 PENDING OPERATOR ACTIONS (do these — Claude can't)
 
-Set 2026-06-03 by operator request. Calendar event also on `anthony.fong.esq@gmail.com` for Sat 6/7 9:00 AM ET.
+1. **Paste the corrected viral r/UFOs post** — body ready in `_scratch/reddit-viral-post-EDITED.md`. Removes 4 false claims ("removed 5/added 3", "28 DOW-UAP-PR renames", "Arabian Gulf consolidation") + fixes stale top-5. Its `/changes` link is live with verified proof. HIGHEST PRIORITY (it's a 487K-view post with false claims). See `_scratch/handoff-2026-06-10-byteswap.md` for full context.
+2. **Install the integrity-check workflow** via GitHub web UI — YAML + instructions in `integrity-check-workflow.yml.txt` (repo root). Runs daily, opens an issue if war.gov swaps a file body. (PAT lacks workflow scope, so web-UI install.)
+3. **AdSense** — re-review requested 6/10, status "Getting ready." Just wait for the email at developer@fongshuilabs.com.
+
+## ✅ DONE 2026-06-10 (the byte-swap thread)
+
+- Verified war.gov re-processed 62 Release-01 PDFs (smaller + OCR'd, NO content removed) against our archived originals — all 62. Published on `/changes`.
+- Evidence preserved: `data/wargov-file-integrity-audit-2026-06-10.json` (old + current sizes/hashes). Old hashes also in git at `6686500`.
+- Restored SHA-256 hashes on 136 file pages (Phase B) with honest "verified as of [date]" framing.
+- Built `pipeline/integrity_check.py` — per-file body-swap monitor (the durable fix for what the CSV poller misses). Baseline clean.
+- Release 02 fully ingested earlier today (222 files, poller URL fixed to uap-data.csv).
+
+## Optional / lower-priority
+
+- Hash the 78 DVIDS videos (manifest sha256 null for them; pages say "pending"). Heavy download. The originals for the 28 Release-01 videos are in `downloads/video/`.
+- Gracious reply to the competitor's comment (u/Narrow_Market45) after the post edit.
+
+---
+
+## (Older) 📅 CHECKPOINT — Saturday 2026-06-07 — RESOLVED (Drop 02 landed 5/22, ingested 6/9)
 
 **Step 1 — did Drop 02 actually land?**
 - Check `data/poll-state.json` `last_change_at` vs the 6/3 baseline `2026-05-12T23:19:37Z` (row_count was 158)
