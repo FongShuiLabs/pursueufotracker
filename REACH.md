@@ -4,7 +4,7 @@ The site's job: be the most-trusted, most-shareable, fastest-loading mirror of t
 
 ## SEO surface area
 
-- **161 files × 6 languages = ~966 indexed pages.** Every long-tail search ("Apollo 17 UFO", "FBI Roswell memo 1947", "Greece UAP 2023") lands on us.
+- **222 files × 6 languages = ~1,332 indexed pages.** Every long-tail search ("Apollo 17 UFO", "FBI UFO file 62-HQ-83894", "Greece UAP 2023") lands on us. (Do not target "Roswell" terms - zero PURSUE files reference Roswell, so we cannot satisfy that intent and would only earn bounces.)
 - **Per-file Schema.org** (`CreativeWork`, `VideoObject`, `Dataset`). Earns rich results.
 - **Per-file `hreflang`** for ES / PT / JA / ZH / AR / FR. Google surfaces localized URLs in each market.
 - **Sitemap regenerated every build.** Pinged to Google + Bing search consoles on deploy.

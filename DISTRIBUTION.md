@@ -32,14 +32,14 @@ Use the revisions URL prominently in EVERY post below.
 **Best time:** Tue-Thu, 9-10am ET (catches the daily peak)
 **Type:** Text post (NOT a link post - mods auto-remove most link posts; text post with link in comments survives)
 
-### Title (pick one - first one is the strongest now that we have the war.gov-edits angle)
-> My automated tracker just caught war.gov silently editing the Trump UFO release. 161 files became 158 overnight. Here's the full diff.
+### Title (pick one - lead with the verified-diff angle, never "silently editing"; the 161->158 change was a benign CSV row restructure, not content removal)
+> My automated tracker caught war.gov restructuring the Trump UFO release CSV: 161 rows to 158, zero files added or removed (verified by URL-set diff). Here's the full diff.
 
 > War.gov quietly revised the PURSUE UFO release on May 11. My auto-poller caught it: the canonical CSV went 161 rows to 158 - zero files added or removed, verified by URL-set diff.
 
 > I had Claude AI score all 161 Trump PURSUE files. Then war.gov restructured the CSV (161 rows to 158, no files removed). Both snapshots are still indexed here.
 
-> All 161 files from the May 8 PURSUE drop, ranked by AI on a transparent rubric (no "% chance aliens" nonsense)
+> All 158 files from the May 8 PURSUE drop, ranked by AI on a transparent rubric (no "% chance aliens" nonsense)
 
 ### Body
 
@@ -132,7 +132,7 @@ Happy to AMA on the methodology, the war.gov diff, or anything else.
 ```
 Author here. Some quick notes on the build:
 
-- The PURSUE release was 161 files in three formats: PDFs, JPGs, MP4s (videos hosted on DVIDS). The official war.gov interface is a flat list with no search, no filtering, no transcripts on the videos.
+- The May 8 PURSUE release was 158 files in three formats: PDFs, JPGs, MP4s (videos hosted on DVIDS); Release 02 on May 22 brought the archive to 222. The official war.gov interface is a flat list with no search, no filtering, no transcripts on the videos.
 
 - Pipeline is Python: curl_cffi for fetching (war.gov's CF rules reject most non-browser TLS fingerprints), pdfplumber for PDF text extraction, OpenAI Whisper for the video transcripts, Claude (Anthropic SDK) for applying the scoring rubric to each file's description, Jinja2 for rendering, Cloudflare Pages for static hosting.
 
@@ -255,7 +255,7 @@ Press kit (free embed assets, fact sheet, contact): https://pursueufotracker.com
 Open rubric: https://pursueufotracker.com/data/scoring-rubric.json
 Top 10 with full reasoning: https://pursueufotracker.com/top-10
 
-Public domain on all 161 files (17 U.S.C. § 105) so anything is free to embed, quote, or screenshot. Happy to be on a segment to walk through the methodology or just send raw data.
+Public domain on all 222 files (17 U.S.C. § 105) so anything is free to embed, quote, or screenshot. Happy to be on a segment to walk through the methodology or just send raw data.
 
 [Your name]
 [Your phone]
@@ -287,7 +287,7 @@ Happy to send raw scoring data, talk through methodology, or just be a free fact
 ```
 Hi [Bryan/Tim],
 
-For your UAP beat - independent tracker for the May 8 PURSUE drop with full-text search across all 161 files, Whisper-generated video transcripts, and SHA-256 verification against war.gov. Public domain so cite freely.
+For your UAP beat - independent tracker for the PURSUE disclosure with full-text search across all 222 files, Whisper-generated video transcripts, and SHA-256 verification against war.gov on every file. Public domain so cite freely.
 
 Two angles that might be reportable:
 
@@ -356,7 +356,7 @@ Same body as the r/UFOs post, but DIFFERENT title each time (don't post identica
 "On May 8, 2026, the Trump administration declassified 161 UFO files. War.gov dropped them as a flat list with no search, no transcripts, no way to compare them. So I had Claude AI score every single one on six evidentiary axes. Here are the five most anomalous, and how the scoring actually works."
 
 [0:20-1:00] CONTEXT
-"PURSUE stands for Presidential Unsealings and Reporting System for UAP Encounters. 161 files from FBI, the Department of War, NASA, and the State Department. Spans 80 years - from 1947 FBI investigations of Roswell, to NASA Apollo photography, to military encounter footage as recent as 2024. All files are public domain. I built pursueufotracker.com because the official interface makes it nearly impossible to actually read what's in there."
+"PURSUE stands for Presidential Unsealings and Reporting System for UAP Encounters. 222 files across two releases from seven federal agencies - FBI, the Department of War, NASA, the State Department, CIA, ODNI, and the Department of Energy. Spans roughly eight decades - from a 1948 military report and the FBI's central UFO case file, to NASA Apollo photography, to military encounter footage as recent as 2026. All files are public domain. I built pursueufotracker.com because the official interface makes it nearly impossible to actually read what's in there."
 
 [1:00-2:00] THE METHODOLOGY (critical - earns credibility)
 "The score is what I call the Anomalousness Index. NOT a probability of aliens. Anyone publishing that number is selling you something. The score reflects evidentiary weight that the encounter remains unexplained after conventional analysis. Six components, weights sum to 1.00. [show rubric on screen]. The full rubric is open JSON - anyone can recompute every score."
@@ -371,7 +371,7 @@ Same body as the r/UFOs post, but DIFFERENT title each time (don't post identica
 "This is what made me build the site. NASA-UAP-D3A. Gemini 7. December 5, 1965. Astronaut Frank Borman reports an unidentified object - he called it a 'bogey' - to Houston mission control. On the official NASA voice loop, with crewmate Jim Lovell also on the recording. Audio is on the site. Astronaut-witness on the federal record is essentially unique in this archive. The Apollo photos can be explained. The lunar formations can be debated. But trained astronauts reporting an unidentified object to mission control, on the record, is a different category of evidence."
 
 [6:30-7:30] CLOSE
-"Site is pursueufotracker.com. All 161 files, full text search, transcripts on every video. The rubric is open. SHA-256 hashes verify against war.gov. Public domain. Subscribe if you want to be alerted when Drop 02 lands - my auto-poller checks war.gov every 30 minutes. Link in description."
+"Site is pursueufotracker.com. All 222 files, full text search, transcripts on every video. The rubric is open. SHA-256 hashes verify against war.gov. Public domain. Subscribe if you want to be alerted when Drop 02 lands - my auto-poller checks war.gov every 30 minutes. Link in description."
 ```
 
 ---
