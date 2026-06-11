@@ -14,7 +14,7 @@
 {% if _desc_loc %}{% set _ = _desc_parts.append('Location: ' ~ _desc_loc ~ '.') %}{% endif %}
 {% if f.date_event and f.date_event != 'date n/a' %}{% set _ = _desc_parts.append('Event date: ' ~ f.date_event ~ '.') %}{% endif %}
 {% if _first_sentence and _first_sentence|length < 110 %}{% set _ = _desc_parts.append(_first_sentence ~ '.') %}{% endif %}
-{% set _ = _desc_parts.append('Indexed and SHA-256 verified against war.gov.') %}
+{% if f.sha256 %}{% set _ = _desc_parts.append('Indexed and SHA-256 verified against war.gov.') %}{% else %}{% set _ = _desc_parts.append('Indexed and mirrored from war.gov.') %}{% endif %}
 <meta name="description" content="{{ _desc_parts | join(' ') | truncate(160, killwords=true) }}">
 {% set place = (f.geo and f.geo.place) or '' %}
 <meta name="keywords" content="{{ f.title }}, {{ f.agency }} UFO, {{ f.agency }} UAP, {% if event_year %}{{ event_year }} UFO sighting, {% endif %}{% if place %}{{ place }} UAP, {% endif %}PURSUE {{ f.agency }}, war.gov UFO, Trump UFO{% if event_year %} {{ event_year }}{% endif %}, declassified UAP, AARO file, {{ f.type }} UAP, Anomalousness Index">
@@ -410,8 +410,14 @@
 
   <div style="margin-top:48px">
     <h3 style="color:#fff;margin-bottom:12px">Verification</h3>
+    {% if f.sha256 %}
+    <p style="color:#a8b8cc;font-size:13px;margin-bottom:8px">SHA-256{% if f.byte_verified_at %} <span style="color:#52ffb4">· verified against war.gov {{ f.byte_verified_at }}</span>{% endif %}:</p>
+    <div class="hash">{{ f.sha256 }}</div>
+    <p style="color:#7a92b0;font-size:12px;line-height:1.6;margin-top:8px">This hash is the SHA-256 of the file body war.gov served on the verification date above. War.gov has re-processed some file bodies since first release (re-compression + OCR, no content removed - see <a href="/changes" style="color:#52b4ff">/changes</a>); we re-verify and record the change rather than silently serve a stale hash.</p>
+    {% else %}
     <p style="color:#a8b8cc;font-size:13px;margin-bottom:8px">SHA-256:</p>
-    <div class="hash">{{ f.sha256 or '(awaiting HD mirror)' }}</div>
+    <div class="hash">(hash pending - this file type is verified on a separate schedule)</div>
+    {% endif %}
     {% if f.source_url %}
     <p style="color:#a8b8cc;font-size:13px;margin-top:16px">Source: <a href="{{ f.source_url }}" target="_blank" rel="noopener" style="color:#52b4ff;word-break:break-all">{{ f.source_url }}</a></p>
     {% elif f.dvids_page_url %}
