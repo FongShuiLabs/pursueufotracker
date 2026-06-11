@@ -46,6 +46,11 @@ TYPE_MAP = {
     "PDF": "pdf",
     "VID": "video",
     "IMG": "image",
+    # "AUD" (audio) files are hosted on DVIDS as video MP4s (audio-only stream).
+    # Map to "video" so they resolve a DVIDS URL and render in the player.
+    # Before this was added (2026-06-10), AUD fell through to "pdf" and lost
+    # its DVIDS resolution - which silently broke the flagship Gemini 7 audio.
+    "AUD": "video",
 }
 
 # Agencies that share the "intel" category (intelligence-community + DOE
