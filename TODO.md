@@ -1,6 +1,16 @@
 # PURSUE UFO Tracker — Action Queue
 
-**Last updated: 2026-06-10** (byte-swap investigation + integrity monitor; Release 02 ingested; AdSense re-review requested)
+**Last updated: 2026-06-11** (sitewide credibility + count audit; 222/222 SHA-256; byte-swap thread closed; AdSense re-review pending)
+
+---
+
+## ✅ DONE 2026-06-11 (sitewide credibility + count sweep)
+
+- **222/222 SHA-256 coverage reached** - hashed the 78 videos + fixed/hashed the 8 NASA audio files (incl. the flagship Gemini 7/Borman audio, which a parse bug had mis-typed as PDF). Source fix: `parse_csv.py` now maps "AUD"->video.
+- **Removed reader-falsifiable false claims sitewide** (Hard Rule #7): "1947 Roswell" FBI framing (zero files mention Roswell), a fabricated "1994 Tajikistan PanAm" cable (the real 1994 cable is the Dushanbe-origin / over-Kazakhstan one), a nonexistent "Apollo 16" file, and a "161+64=222" arithmetic error (it's 158+64).
+- **Fixed stale "161" counts everywhere** - homepage, timeline, search, about, api, random, borman, diplomatic, faq, press, verdict, top-10, drops, category back-links, and `templates/file.html.j2` (was on all 222 file pages). "161" now appears only in the accurate May-11 row-count history.
+- **Regenerated the public API** - it was a full release behind at 161 files; now serves all 222 with current hashes (`/generated/api/files.json`).
+- Surfaced the now-true "222/222 SHA-256 verified" milestone in the homepage hero, stat block, and Release-02 banner.
 
 ---
 
