@@ -66,24 +66,29 @@ CATEGORIES = [
     },
     {
         "slug": "nasa-ufo-photos",
-        "title": "NASA UFO Photos: Apollo, Gemini, Skylab UAP Records",
+        "title": "NASA UFO Photos: Apollo, Gemini, Mercury & Skylab UAP Records",
         "h1": "NASA UFO & UAP Records",
         "match": lambda f: f.get("category") in ("nasa", "apollo") or f.get("agency") == "NASA",
         "intro": (
-            "Fifteen NASA files were declassified under PURSUE in May 2026. They include <strong>Apollo "
-            "12, 16, and 17 mission photography</strong> with highlighted areas of unidentified "
-            "phenomena above the lunar horizon, the <strong>Schmitt-Grimaldi lunar flash report from "
-            "December 1972</strong>, <strong>Gemini 7 air-to-ground audio</strong> in which astronaut "
-            "Frank Borman reports an unidentified object in low Earth orbit, and <strong>Skylab crew "
-            "debriefings</strong> from 1973-74. Astronaut-witness corroboration is rare in the UAP "
-            "record. NASA-UAP-D3A (Borman / Gemini 7) is the single highest-scored file in Drop 01."
+            "Twenty-two NASA files have been declassified under PURSUE - fifteen in Release 01 "
+            "(May 8, 2026) and seven more in Release 02 (May 22, 2026). They span the earliest U.S. "
+            "crewed spaceflights through the Apollo program: <strong>Mercury-Redstone 4 and Mercury-Atlas "
+            "7, 8, and 9 air-to-ground audio</strong> (1961-1963), <strong>Gemini 7 audio</strong> in "
+            "which astronaut Frank Borman reports an unidentified object in low Earth orbit, "
+            "<strong>Apollo 11, 12, and 17 crew debriefings and transcripts</strong>, <strong>Apollo 12 "
+            "and 17 mission photography</strong> with highlighted areas of unidentified phenomena above "
+            "the lunar horizon, the <strong>Schmitt-Grimaldi lunar flash</strong> that Apollo 17 LMP "
+            "Harrison Schmitt reported north of the crater Grimaldi in December 1972, and a "
+            "<strong>Skylab crew debriefing</strong> from 1973. Astronaut-witness corroboration is rare "
+            "in the UAP record. NASA-UAP-D003A (Borman / Gemini 7), score 72, is the single "
+            "highest-scored file in the entire PURSUE release."
         ),
         "meta_desc": (
-            "All NASA UFO files in the Trump May 2026 PURSUE release. Apollo 12/16/17 lunar anomaly "
-            "photos, Gemini 7 Frank Borman UAP audio, Skylab debriefing, Schmitt-Grimaldi lunar flash. "
-            "Astronaut-witness records."
+            "All 22 NASA UFO files in the Trump 2026 PURSUE release (Release 01 + 02). Apollo 12 and 17 "
+            "lunar anomaly photos, Gemini 7 Frank Borman UAP audio, Mercury program audio (1961-63), "
+            "Skylab debriefing, Schmitt-Grimaldi lunar flash. Astronaut-witness records."
         ),
-        "keywords": "NASA UFO photos, Apollo 12 UFO, Apollo 17 UFO, Gemini 7 UAP, Frank Borman UFO, Skylab UFO, Schmitt-Grimaldi lunar flash, astronaut UFO sighting, NASA UAP declassified",
+        "keywords": "NASA UFO photos, Apollo 12 UAP, Apollo 12 UFO, Apollo 11 UFO, Apollo 17 UFO, Gemini 7 UAP, Frank Borman UFO, Mercury Atlas UFO, Mercury Redstone UAP, Skylab UFO, Schmitt-Grimaldi lunar flash, astronaut UFO sighting, NASA UAP declassified",
     },
     {
         "slug": "state-department-uap-cables",
