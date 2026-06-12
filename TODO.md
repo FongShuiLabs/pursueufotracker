@@ -1,8 +1,21 @@
 # PURSUE UFO Tracker — Action Queue
 
-**Last updated: 2026-06-11** (sitewide credibility + count audit; 222/222 SHA-256; byte-swap thread closed; AdSense re-review pending)
+**Last updated: 2026-06-12** (GSC-driven content pass: NASA hub deepened, 111 orphan pages refreshed)
 
 ---
+
+## ✅ DONE 2026-06-12 (GSC/Plausible-driven, the traffic-data pass)
+
+Pulled Plausible (steady-state ~3-25 pv/day post-viral; NASA hub = #2 page) + GSC live via Chrome MCP (domain property). Data verdict: **NASA/Apollo is the organic magnet**; `/nasa-ufo-photos/` ranks pos 11.5 / 195 impressions = the clearest page-2 win.
+
+- **NASA hub deepened + corrected** (`build_categories.py` + regenerated): stale "Fifteen NASA files" -> 22 (15 R01 + 7 R02), killed the false "Apollo 16" (0 occurrences in data), added the 5 Mercury files (Atlas 7/8/9 + Redstone 4, 1961-63) the intro had omitted, fixed Schmitt-Grimaldi attribution, D003A now "highest-scored in the entire release" (72). Title/keywords add Mercury + the live `apollo 12 uap` query. Same fixes on `apollo-12-ufo-photos` + `diplomatic-uap-cables`. Homepage "NASA - 15 FILES" left intact (correctly scoped to "What's in Drop 01?").
+- **111 orphan duplicate file pages refreshed** - GSC showed Google ranks old-slug orphans (`vm1`/`d3a`/`vm6`/`fbi-photo-a5`) that served stale "NASA's 15 / of 161" because the physical files shadow their own 301s on Cloudflare. Operator chose fix-in-place (no delete): re-homed each from its current canonical twin. 0 stale markers remain on any file page. See memory [[orphan-duplicate-file-pages]].
+- All changes pushed + curl-verified live.
+
+### Open opportunities surfaced this pass (operator's call)
+1. **Orphan duplicate-content split still exists** (by operator choice). Deleting the 111 orphans would let the existing 301s consolidate ranking onto canonical pages - higher SEO upside, needs explicit approval. Reversible via git.
+2. **`/revisions`: 546 impressions, 0.4% CTR, pos 8.2** - the biggest impression-volume page, barely converting. A title/meta-description rewrite is the lever, but GSC query->page intent wasn't drilled (needs another Chrome MCP pass). Lower-confidence until intent is known.
+3. **SEO hygiene**: GSC shows `/generated/files/...` and `.html`-extension URLs indexed (non-canonical per Hard Rule #6). Worth a dedicated audit - equity splitting across URL variants.
 
 ## ✅ DONE 2026-06-11 (net-new content)
 
