@@ -418,7 +418,7 @@
     {% if f.sha256 %}
     <p style="color:#a8b8cc;font-size:13px;margin-bottom:8px">SHA-256{% if f.byte_verified_at %} <span style="color:#52ffb4">· verified against war.gov {{ f.byte_verified_at }}</span>{% endif %}:</p>
     <div class="hash">{{ f.sha256 }}</div>
-    <p style="color:#7a92b0;font-size:12px;line-height:1.6;margin-top:8px">This hash is the SHA-256 of the file body war.gov served on the verification date above. War.gov has re-processed some file bodies since first release (re-compression + OCR, no content removed - see <a href="/changes" style="color:#52b4ff">/changes</a>); we re-verify and record the change rather than silently serve a stale hash.</p>
+    <p style="color:#7a92b0;font-size:12px;line-height:1.6;margin-top:8px">This hash is the SHA-256 of the file body war.gov served on the verification date above. War.gov has re-processed some file bodies since first release (re-compression + OCR, no content removed - see <a href="/changes" style="color:#52b4ff">/changes</a>); we re-verify and record the change rather than silently serve a stale hash. <a href="/verify" style="color:#52b4ff">How to check this yourself &rarr;</a></p>
     {% else %}
     <p style="color:#a8b8cc;font-size:13px;margin-bottom:8px">SHA-256:</p>
     <div class="hash">(hash pending - this file type is verified on a separate schedule)</div>

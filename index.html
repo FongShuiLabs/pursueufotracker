@@ -400,6 +400,7 @@ if (window.ADSENSE_PUB_ID) {
     <a href="/search" style="padding:8px 16px;background:rgba(82,255,180,.08);border:1px solid rgba(82,255,180,.25);border-radius:6px;color:#dfe6ef;text-decoration:none;font-size:13px">🔍 <strong style="color:#52ffb4">Search</strong> all 222 files</a>
     <a href="/timeline" style="padding:8px 16px;background:rgba(82,255,180,.08);border:1px solid rgba(82,255,180,.25);border-radius:6px;color:#dfe6ef;text-decoration:none;font-size:13px">📅 <strong style="color:#52ffb4">Timeline</strong> 1948 to 2026</a>
     <a href="/random" onclick="window.plausible&&plausible('RandomNav')" style="padding:8px 16px;background:rgba(82,255,180,.08);border:1px solid rgba(82,255,180,.25);border-radius:6px;color:#dfe6ef;text-decoration:none;font-size:13px">🎲 <strong style="color:#52ffb4">Surprise me</strong> (random file)</a>
+    <a href="/verify" style="padding:8px 16px;background:rgba(82,255,180,.08);border:1px solid rgba(82,255,180,.25);border-radius:6px;color:#dfe6ef;text-decoration:none;font-size:13px">🔐 <strong style="color:#52ffb4">Verify</strong> any file vs war.gov</a>
   </nav>
 </section>
 
@@ -751,7 +752,7 @@ if (window.ADSENSE_PUB_ID) {
 
   <details style="background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.15);border-radius:8px;padding:20px 24px;margin-bottom:14px">
     <summary style="color:#fff;font-size:18px;font-weight:600;cursor:pointer">How can I verify a file matches what's on war.gov?</summary>
-    <p style="color:#dfe6ef;margin-top:14px;line-height:1.7">Every file has a <strong>SHA-256 hash</strong> on its detail page and in the <a href="generated/verification-manifest.json" style="color:#52b4ff">verification manifest</a>. Re-download the file from war.gov, hash it locally (PowerShell: <code>Get-FileHash file.pdf -Algorithm SHA256</code>), and compare. They should match exactly. This is how journalists fact-check our archive.</p>
+    <p style="color:#dfe6ef;margin-top:14px;line-height:1.7">Every file has a <strong>SHA-256 hash</strong> on its detail page and in the <a href="generated/verification-manifest.json" style="color:#52b4ff">verification manifest</a>. Re-download the file from war.gov, hash it locally (PowerShell: <code>Get-FileHash file.pdf -Algorithm SHA256</code>), and compare. They should match exactly. This is how journalists fact-check our archive. <a href="/verify" style="color:#52b4ff">Full step-by-step on the verification page &rarr;</a></p>
   </details>
 
   <details style="background:rgba(10,15,28,.6);border:1px solid rgba(82,180,255,.15);border-radius:8px;padding:20px 24px;margin-bottom:14px">
