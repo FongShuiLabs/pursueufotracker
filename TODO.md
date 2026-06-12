@@ -4,6 +4,13 @@
 
 ---
 
+## ✅ DONE 2026-06-11 (net-new content)
+
+- **New `/verify` page** - the file-integrity story (222/222 SHA-256, how to check any file vs war.gov, the byte-swap case study) as a dedicated, linkable page. Wired into the sitemap, `_redirects`, all 222 file pages, the homepage tools-nav + verification FAQ, and the methodology page. Fills the gap that `/methodology` only covers scoring.
+- **Glossary expanded 17 -> 31 terms** - added ODNI, CIA, DOE, IIR, USPER, FLIR, Tic Tac, USO, transmedium, NORTHCOM, EUCOM, USCINCPAC, PANTEX, nap-of-the-earth (visible + DefinedTerm JSON-LD aligned). "Tic Tac" captures a high-volume query without a thin standalone page.
+- **Top-5 ranking fix** (PR072/68 inserted at #2) and **51 PR file pages** now honestly label war.gov's shared release note.
+- **Editorial audit complete** - CIA/ODNI/DOE/AARO/FBI deep-dives all verified accurate; fixed the Pentagon "29 formations" overstatement and one broken FBI link (sitewide link sweep otherwise clean).
+
 ## ✅ DONE 2026-06-11 (sitewide credibility + count sweep)
 
 - **222/222 SHA-256 coverage reached** - hashed the 78 videos + fixed/hashed the 8 NASA audio files (incl. the flagship Gemini 7/Borman audio, which a parse bug had mis-typed as PDF). Source fix: `parse_csv.py` now maps "AUD"->video.
