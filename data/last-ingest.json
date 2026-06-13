@@ -1,0 +1,6 @@
+{
+  "ingested_csv_sha256": "48db08be39605efd86e1d92fe6af3cda7730e1da6a4b5741d37a30712ebf5e04",
+  "ingested_row_count": 294,
+  "ingested_at": "2026-06-13T23:39:20Z",
+  "_note": "Written by `python -m pipeline.drop_check --mark` after a drop was ingested + the site rebuilt. drop_check compares poll-state.json against this."
+}
