@@ -1,0 +1,103 @@
+{
+  "id": "cia-uap-007-current-status-of-unidentified-flying-objects-ufo-project",
+  "title": "CIA-UAP-007, Current Status Of Unidentified Flying Objects (UFO) Project.",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": "December, 1953",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-007_Current_Status_of_Unidentified_Flying_Objects_UFO_Project.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/cia-uap-007-current-status-of-unidentified-flying-objects-ufo-project.pdf",
+  "size_bytes": 635609,
+  "sha256": "855a0d73d1e9c0fc1b8999aee6fd4186f1539c1b7f7f3d60c4ed60ea35dd35f8",
+  "redacted": false,
+  "summary": "This December 1953 memorandum provides a status update on the Air Force's UFO project activities, including ongoing intelligence operations, equipment procurement for photographing UFOs, and Canada’s establishment of a \"laboratory\" for recording observable phenomena. A more redacted version of this memorandum has been available on CIA's public website.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/cia-uap-007-current-status-of-unidentified-flying-objects-ufo-project.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/CIA-UAP-007_Current_Status_of_Unidentified_Flying_Objects_UFO_Project.jpg",
+  "csv_raw_title": "CIA-UAP-007, Current Status Of Unidentified Flying Objects (UFO) Project.",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (December, 1953).",
+    "what_we_know": [
+      "Document originates from CIA.",
+      "Encounter dated December, 1953.",
+      "Document references: project, objects, usaf, atic, page."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "project",
+      "objects",
+      "usaf",
+      "atic",
+      "page",
+      "division",
+      "ufob",
+      "defense"
+    ]
+  }
+}

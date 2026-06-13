@@ -8,11 +8,11 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969.mp4",
   "size_bytes": 158294418,
   "sha256": "ed6707b09c71306271c9b861c7c90683eba61f220a8cd6936089d5692141a739",
   "redacted": false,
-  "summary": "During a medical debriefing of the crew of the Apollo 12 mission, Commander Charles “Pete” Conrad, Command Module Pilot Richard “Dick” F. Gordon, and Lunar Module Pilot Alan L. Bean describe their observations of instances of light flashes or “streaks of lights.” The astronauts each reported that these experiences occurred in the dark as they tried to sleep.The NASA medical team considered whether similar phenomena reported by Apollo 11 Lunar Module Pilot Buzz Aldrin had been attributable to exposure of the retina by cosmic rays. NASA later determined that the phenomena reported by the Apollo 12 flight crew were internal to the astronauts’ vision rather than external light sources.",
+  "summary": "During a medical debriefing of the crew of the Apollo 12 mission, Commander Charles “Pete” Conrad, Command Module Pilot Richard “Dick” F. Gordon, and Lunar Module Pilot Alan L. Bean describe their observations of instances of light flashes or “streaks of lights.” The astronauts each reported that these experiences occurred in the dark as they tried to sleep.\nThe NASA medical team considered whether similar phenomena reported by Apollo 11 Lunar Module Pilot Buzz Aldrin had been attributable to exposure of the retina by cosmic rays. NASA later determined that the phenomena reported by the Apollo 12 flight crew were internal to the astronauts’ vision rather than external light sources.",
   "score": {
     "value": 59,
     "components": {
@@ -65,17 +65,35 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
-    "thumbnail_path": null
+    "transcript_path": "extracted/transcripts/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969.vtt",
+    "thumbnail_path": "extracted/thumbnails/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969.jpg"
   },
   "geo": {
     "lat": null,
     "lng": null,
     "place": "Texas"
   },
-  "thumbnail_url": null,
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007870/DOD_111721693.0000001/122x92_q95.jpg",
   "csv_raw_title": "NASA-UAP-D008, Apollo 12 Medical Debriefing - Tape 12, 1969",
-  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721693/DOD_111721693-1920x1080-9000k.mp4",
   "dvids_video_id": "1007870",
-  "byte_verified_at": "2026-06-10"
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721693/DOD_111721693-1920x1080-9000k.mp4",
+  "caption_vtt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007870&format=webvtt&api_key=key-68bb60d16b35e",
+  "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007870&format=srt&api_key=key-68bb60d16b35e",
+  "duration": 470,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007870/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969",
+  "audience": {
+    "tldr": "NASA mission record from a crewed lunar mission showing footage of a UAP encounter (1969) over Texas.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 1969.",
+      "Reported location: Texas."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 59/100. Top drivers: witness credibility (astronaut), corroboration (single_witness_instrument)."
+  }
 }

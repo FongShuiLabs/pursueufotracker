@@ -8,7 +8,7 @@
   "date_released": "2026-05-08",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/nasa-uap-d003a-gemini-7-audio-excerpt-1965.mp4",
   "size_bytes": 19252171,
   "sha256": "429d37496deac7b63022bbdf31580a1d381822999591d378c400b48742c9e367",
   "redacted": false,
@@ -65,17 +65,35 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
-    "thumbnail_path": null
+    "transcript_path": "extracted/transcripts/nasa-uap-d003a-gemini-7-audio-excerpt-1965.vtt",
+    "thumbnail_path": "extracted/thumbnails/nasa-uap-d003a-gemini-7-audio-excerpt-1965.jpg"
   },
   "geo": {
     "lat": null,
     "lng": null,
     "place": "Low Earth Orbit"
   },
-  "thumbnail_url": null,
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006119/DOD_111689232.0000001/122x92_q95.jpg",
   "csv_raw_title": "NASA-UAP-D003A, Gemini 7 Audio Excerpt, 1965",
-  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689232/DOD_111689232-1920x1080-9000k.mp4",
   "dvids_video_id": "1006119",
-  "byte_verified_at": "2026-06-10"
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689232/DOD_111689232-1920x1080-9000k.mp4",
+  "caption_vtt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1006119&format=webvtt&api_key=key-68bb60d16b35e",
+  "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1006119&format=srt&api_key=key-68bb60d16b35e",
+  "duration": 371,
+  "dvids_page_url": "https://www.dvidshub.net/video/1006119/nasa-audio-12-5-1965-low-earth-orbit",
+  "audience": {
+    "tldr": "NASA mission record showing footage of a UAP encounter (12/5/65) over Low Earth Orbit.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 12/5/65.",
+      "Reported location: Low Earth Orbit."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 72/100. Top drivers: sensor quality (single_sensor_military), witness credibility (astronaut)."
+  }
 }

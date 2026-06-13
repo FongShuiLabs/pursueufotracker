@@ -1,0 +1,102 @@
+{
+  "id": "dow-uap-d084-us-army-flying-saucer-study-1949",
+  "title": "DOW-UAP-D084, US Army-Flying-Saucer-Study_1949",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": null,
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D084_USArmy-Flying-Saucer-Study_1949.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d084-us-army-flying-saucer-study-1949.pdf",
+  "size_bytes": 10178660,
+  "sha256": "b2e4554e261e980c10251e927942300342081109a50b4ef61dc37946deade80f",
+  "redacted": false,
+  "summary": "This file contains an Evaluation Study of the Phenomenon (Flying Saucers) prepared at the request of the Plans & Operations Divisions of the General Staff, U.S. Army (P&O, GSUSA) to determine if the origin could be traced to natural phenomena or the activities of a foreign power.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d084-us-army-flying-saucer-study-1949.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/DOW-UAP-D084_USArmy-Flying-Saucer-Study_1949.jpg",
+  "csv_raw_title": "DOW-UAP-D084, US Army-Flying-Saucer-Study_1949",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Document references: page, executive, branch, action, study."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "executive",
+      "branch",
+      "action",
+      "study",
+      "flying",
+      "request",
+      "saucers"
+    ]
+  }
+}

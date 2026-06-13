@@ -8,7 +8,7 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_1-100.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/38-143685-box7-incident-summaries-1-100.pdf",
   "size_bytes": 32675506,
   "sha256": "c1c48d35943e6522fc285592453136526b6e41fed23b61a0e81ac61b68d8bde6",
   "redacted": false,
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/38-143685-box7-incident-summaries-1-100.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,21 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/38_143685_box7_incident_summaries_1-100.jpg",
   "csv_raw_title": "38_143685_box7_Incident_Summaries_1-100",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Document references: page."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page"
+    ]
+  }
 }

@@ -8,7 +8,7 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_5.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/65-hs1-834228961-62-hq-83894-section-005.pdf",
   "size_bytes": 36260149,
   "sha256": "ed97686fb1301e3a12e19d91f833f31da5b97065ef85560fc6d8fce7b7c2265d",
   "redacted": false,
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/65-hs1-834228961-62-hq-83894-section-005.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,28 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/65_hs1-834228961_62-hq-83894_section_5.jpg",
   "csv_raw_title": "65_HS1-834228961_62-HQ-83894_Section_005",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Document references: page, flying, object, office, bureau."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "flying",
+      "object",
+      "office",
+      "bureau",
+      "information",
+      "advised",
+      "have"
+    ]
+  }
 }

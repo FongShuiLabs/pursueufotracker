@@ -8,11 +8,11 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/dow-uap-pr093-may-05-2020-gulf-of-arabia-callsign-platform-dual-uap.mp4",
   "size_bytes": 14389403,
   "sha256": "0900834c1513a3f3ee2662e0ead88ae33732a7ff67dca3b823febd734bf26060",
   "redacted": true,
-  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in 2020. A user uploaded this video to a classified network in July 2020.Video Duration: 00:00:30Video Description:00:00-00:07: The sensor pans to track an area of contrast.00:07-00:30: Several areas of contrast enter and exit the field-of-view. The sensor adjusts contrast settings.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.AARO Comment: DOW-UAP-PR093 and DOW-UAP-PR095 are not duplicates. Both videos share an uploader-defined title and depict highly similar subject matter, but are distinct.",
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.\n\nAARO assesses that this video, whose uploader-defined title is, “May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in 2020. A user uploaded this video to a classified network in July 2020.\n\nVideo Duration: 00:00:30\nVideo Description:\n00:00-00:07: The sensor pans to track an area of contrast.\n00:07-00:30: Several areas of contrast enter and exit the field-of-view. The sensor adjusts contrast settings.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.\n\nAARO Comment: DOW-UAP-PR093 and DOW-UAP-PR095 are not duplicates. Both videos share an uploader-defined title and depict highly similar subject matter, but are distinct.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr093-may-05-2020-gulf-of-arabia-callsign-platform-dual-uap.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111719795/DOD_111719795-1920x1080-9000k.mp4",
   "duration": 30,
   "dvids_page_url": "https://www.dvidshub.net/video/1007721/dow-uap-pr093-may-05-2020-gulf-arabia-callsign-platform-dual-uap",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2020) over CENTCOM.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2020.",
+      "Reported location: CENTCOM."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

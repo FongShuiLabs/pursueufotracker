@@ -8,7 +8,7 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/serial-4-redacted_redacted.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/fbi-september-2023-sighting-serial-005.pdf",
   "size_bytes": 237155,
   "sha256": "29ed0fb7cbe0be3c23965212bb83c58d3890a0de9253938ee4e9c9bb2349d5fe",
   "redacted": true,
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/fbi-september-2023-sighting-serial-005.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/serial-4-redacted_redacted.jpg",
   "csv_raw_title": "FBI September 2023 Sighting - Serial 005",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (9/1/23) over United States.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated 9/1/23.",
+      "Reported location: United States."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 55/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "object",
+      "page",
+      "same",
+      "gate",
+      "going",
+      "first",
+      "went",
+      "hotel"
+    ]
+  }
 }

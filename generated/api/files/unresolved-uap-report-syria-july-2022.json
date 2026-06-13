@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/unresolved-uap-report-syria-july-2022.mp4",
   "size_bytes": 3990714,
   "sha256": "f53127e32cb0a76bcb6a2047f75f4483329614dabad87ac1372ba9c2665ba84f",
   "redacted": true,
-  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of 14 seconds of video footage from an infrared (left) and electro-optical (right) sensor aboard a U.S. military platform in 2022. An accompanying mission report, DoW-UAP-D16, described the UAP as “moving from north to south.”Video Description: At the five second mark, the video depicts an object moving from right to left across the top right quarter of the sensor field-of-view.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of 14 seconds of video footage from an infrared (left) and electro-optical (right) sensor aboard a U.S. military platform in 2022. An accompanying mission report, DoW-UAP-D16, described the UAP as “moving from north to south.”\n\nVideo Description: At the five second mark, the video depicts an object moving from right to left across the top right quarter of the sensor field-of-view.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-syria-july-2022.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688775/DOD_111688775-1920x1080-9000k.mp4",
   "duration": 14,
   "dvids_page_url": "https://www.dvidshub.net/video/1006060/dow-uap-pr22-unresolved-uap-report-syria-july-2022",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Syria.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: Syria.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

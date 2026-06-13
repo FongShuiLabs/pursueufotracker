@@ -8,11 +8,11 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972.mp4",
   "size_bytes": 261037350,
   "sha256": "cb0c1525b58f80510b9409c2ea980065370750d7cb9303f9b8684f710cb1deb9",
   "redacted": false,
-  "summary": "During the eleventh and final crewed mission in the Apollo program, Apollo 17 Commander Gene Cernan, Lunar Module Pilot Harrison Schmitt, and Command Module Pilot Ronald Evans report seeing small lights outside the Apollo spacecraft during transit to the moon. The crew describe bright “particles” or “fragments” as being “jagged,” “angular,” and drifting near the Apollo spacecraft and the separated Saturn S-IVB stage. The Apollo 17 crew speculate that paint chips or ice chips are likely the source of these lights and note that they “twinkle” and move away from the Saturn S-IVB stage.",
+  "summary": "During the eleventh and final crewed mission in the Apollo program, Apollo 17 Commander Gene Cernan, Lunar Module Pilot Harrison Schmitt, and Command Module Pilot Ronald Evans report seeing small lights outside the Apollo spacecraft during transit to the moon. \nThe crew describe bright “particles” or “fragments” as being “jagged,” “angular,” and drifting near the Apollo spacecraft and the separated Saturn S-IVB stage. The Apollo 17 crew speculate that paint chips or ice chips are likely the source of these lights and note that they “twinkle” and move away from the Saturn S-IVB stage.",
   "score": {
     "value": 59,
     "components": {
@@ -65,17 +65,35 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
-    "thumbnail_path": null
+    "transcript_path": "extracted/transcripts/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972.vtt",
+    "thumbnail_path": "extracted/thumbnails/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972.jpg"
   },
   "geo": {
     "lat": null,
     "lng": null,
     "place": "Cislunar Space"
   },
-  "thumbnail_url": null,
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007872/DOD_111721698.0000001/122x92_q95.jpg",
   "csv_raw_title": "NASA-UAP-D009, Apollo 17 Audio Excerpt, December 7, 1972",
-  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721698/DOD_111721698.mp4",
   "dvids_video_id": "1007872",
-  "byte_verified_at": "2026-06-10"
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721698/DOD_111721698.mp4",
+  "caption_vtt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007872&format=webvtt&api_key=key-68bb60d16b35e",
+  "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007872&format=srt&api_key=key-68bb60d16b35e",
+  "duration": 275,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007872/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972",
+  "audience": {
+    "tldr": "NASA mission record from a crewed lunar mission showing footage of a UAP encounter (12/7/72) over Cislunar Space.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 12/7/72.",
+      "Reported location: Cislunar Space."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 59/100. Top drivers: witness credibility (astronaut), corroboration (single_witness_instrument)."
+  }
 }

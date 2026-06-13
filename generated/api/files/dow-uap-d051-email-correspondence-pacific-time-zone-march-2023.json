@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d51-email-correspondence-pacific-time-zone-march-2023.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/dow-uap-d051-email-correspondence-pacific-time-zone-march-2023.pdf",
   "size_bytes": 76470,
   "sha256": "f21f4ae91e51810bfa8a6fce6c422f2bbf99c6277871846c642f987954c042f6",
   "redacted": true,
-  "summary": "This document is email correspondence describing the content of a mission report and requesting clarification on its content.All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "summary": "This document is email correspondence describing the content of a mission report and requesting clarification on its content.\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
   "score": {
     "value": 53,
     "components": {
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/dow-uap-d051-email-correspondence-pacific-time-zone-march-2023.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d51-email-correspondence-pacific-time-zone-march-2023.jpg",
   "csv_raw_title": "DOW-UAP-D051, Email Correspondence, Pacific Time Zone, March 2023",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (3/23/26) over Pacific Time Zone.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 3/23/26.",
+      "Reported location: Pacific Time Zone."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "reported",
+      "object",
+      "page",
+      "classification",
+      "request",
+      "reporter",
+      "have",
+      "summary"
+    ]
+  }
 }

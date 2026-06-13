@@ -1,0 +1,103 @@
+{
+  "id": "fbi-uap-d005-fd-1057-04-northeastern-united-states-2024",
+  "title": "FBI-UAP-D005, FD-1057-04, Northeastern United States, 2024",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": "October, 2024",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D005_FD-1057-04_Northeastern-US_2024.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/fbi-uap-d005-fd-1057-04-northeastern-united-states-2024.pdf",
+  "size_bytes": 417487,
+  "sha256": "c33b63109ce1e9d53f700c00d05728cb53bd17d863b1e2e81a40486ceb9f978e",
+  "redacted": true,
+  "summary": "This document is an FBI FD-1057, a form the Federal Bureau of Investigation (FBI) uses to record investigative activity. This FD-1057 documents an October 2024 interview with a US person regarding several incidents potentially involving unidentified anomalous phenomena in the northeastern United States over the previous three years. \n\nThe subject matter described in files FBI-UAP-D004 through FBI-UAP-D008 and depicted in the video footage FBI-UAP-PR001 through FBI-UAP-PR003 corresponds to reports originating from the same general area in the northeastern United States.",
+  "score": {
+    "value": 55,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/fbi-uap-d005-fd-1057-04-northeastern-united-states-2024.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Northeastern United States"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/FBI-UAP-D005_FD-1057-04_Northeastern-US_2024.jpg",
+  "csv_raw_title": "FBI-UAP-D005, FD-1057-04, Northeastern United States, 2024",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (October, 2024) over Northeastern United States.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated October, 2024.",
+      "Reported location: Northeastern United States."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 55/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "stated",
+      "sightings",
+      "lights",
+      "light",
+      "have",
+      "observed",
+      "property",
+      "sighting"
+    ]
+  }
+}

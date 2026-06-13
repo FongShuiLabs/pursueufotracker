@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/unresolved-uap-report-greece-october-2023-2.mp4",
   "size_bytes": 6625380,
   "sha256": "05fd161a5155daf49e14e99c517cdb1b35e7491611f448ddb026d9fa0df63d42",
   "redacted": true,
-  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of 24 seconds of video footage from an infrared sensor aboard a U.S. military platform in 2023. An accompanying mission report, DoW-UAP-D35, described the UAP as small and circular, flying near the surface of the ocean toward land.Video Description:00:02: The sensor narrows its field-of-view to zoom in on an area of contrast near the center of the screen.00:03-00:19: The sensor tracks the area of contrast as it moves against the ocean background.00:20: As the background scene transitions from being predominantly water to land, the area of contrast becomes indistinguishable.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of 24 seconds of video footage from an infrared sensor aboard a U.S. military platform in 2023. An accompanying mission report, DoW-UAP-D35, described the UAP as small and circular, flying near the surface of the ocean toward land.\n\nVideo Description:\n00:02: The sensor narrows its field-of-view to zoom in on an area of contrast near the center of the screen.\n00:03-00:19: The sensor tracks the area of contrast as it moves against the ocean background.\n00:20: As the background scene transitions from being predominantly water to land, the area of contrast becomes indistinguishable.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-greece-october-2023-2.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689022/DOD_111689022-1920x1080-9000k.mp4",
   "duration": 24,
   "dvids_page_url": "https://www.dvidshub.net/video/1006082/dow-uap-pr35-unresolved-uap-report-greece-october-2023",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Greece.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: Greece.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

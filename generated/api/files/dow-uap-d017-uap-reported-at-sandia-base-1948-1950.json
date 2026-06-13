@@ -8,7 +8,7 @@
   "date_released": "2026-05-22",
   "source_url": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOW-UAP-D017_General_Correspondence_Of_Sandia.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/dow-uap-d017-uap-reported-at-sandia-base-1948-1950.pdf",
   "size_bytes": 68764801,
   "sha256": "ec72132902a2f50d2ab032031386710fef1d1ae1face0226a90243f61d9347b4",
   "redacted": false,
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/dow-uap-d017-uap-reported-at-sandia-base-1948-1950.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/052226/release_02/thumbnails/DOW-UAP-D017_General_Correspondence_Of_Sandia.jpg",
   "csv_raw_title": "DOW-UAP-D017, UAP Reported at Sandia Base, 1948-1950",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (1948-1950) over New Mexico.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 1948-1950.",
+      "Reported location: New Mexico."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "green",
+      "phenomena",
+      "have",
+      "fireball",
+      "december",
+      "observed",
+      "mexico"
+    ]
+  }
 }

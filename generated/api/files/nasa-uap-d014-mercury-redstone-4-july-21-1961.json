@@ -8,7 +8,7 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/nasa-uap-d014-mercury-redstone-4-july-21-1961.mp4",
   "size_bytes": 33839454,
   "sha256": "d841ffb84d22a6ecace6a6df19c83e37d72f18fed86b1e2ec91f1a908f2b6247",
   "redacted": false,
@@ -65,17 +65,35 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
-    "thumbnail_path": null
+    "transcript_path": "extracted/transcripts/nasa-uap-d014-mercury-redstone-4-july-21-1961.vtt",
+    "thumbnail_path": "extracted/thumbnails/nasa-uap-d014-mercury-redstone-4-july-21-1961.jpg"
   },
   "geo": {
     "lat": null,
     "lng": null,
     "place": "North Atlantic Ocean"
   },
-  "thumbnail_url": null,
-  "csv_raw_title": "NASA-UAP-D014, Mercury-Redstone 4, July 21, 1961 ",
-  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721755/DOD_111721755.mp4",
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007878/DOD_111721755.0000001/122x92_q95.jpg",
+  "csv_raw_title": "NASA-UAP-D014, Mercury-Redstone 4, July 21, 1961",
   "dvids_video_id": "1007878",
-  "byte_verified_at": "2026-06-10"
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721755/DOD_111721755.mp4",
+  "caption_vtt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007878&format=webvtt&api_key=key-68bb60d16b35e",
+  "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007878&format=srt&api_key=key-68bb60d16b35e",
+  "duration": 26,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007878/nasa-uap-d014-mercury-redstone-4-july-21-1961",
+  "audience": {
+    "tldr": "NASA mission record showing footage of a UAP encounter (7/21/61) over North Atlantic Ocean.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 7/21/61.",
+      "Reported location: North Atlantic Ocean."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 59/100. Top drivers: witness credibility (astronaut), corroboration (single_witness_instrument)."
+  }
 }

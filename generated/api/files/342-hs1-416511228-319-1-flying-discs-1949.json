@@ -8,7 +8,7 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/342_hs1-416511228_box186_319.1-flying-discs-1949.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/342-hs1-416511228-319-1-flying-discs-1949.pdf",
   "size_bytes": 71924623,
   "sha256": "9d159600731338100b6b9c8565971b68aac644476fd766ade9d6bf126cfd3c7b",
   "redacted": false,
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/342-hs1-416511228-319-1-flying-discs-1949.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,22 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/342_hs1-416511228_box186_319.1-flying-discs-1949.jpg",
   "csv_raw_title": "342_HS1-416511228_319.1 Flying Discs 1949",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (1/9/50).",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 1/9/50.",
+      "Document references: page."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page"
+    ]
+  }
 }

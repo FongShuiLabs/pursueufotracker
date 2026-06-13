@@ -1,0 +1,103 @@
+{
+  "id": "cia-uap-019-australian-dept-of-defense-scientific-and-intel-aspects-of-the-ufo-p",
+  "title": "CIA-UAP-019, Australian Dept of Defense Scientific and Intel Aspects of the UFO Problem",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": "1971",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-019-Australian_Dept_of_Defense_Scientific_and_Intel_Aspects_of_the_UFO_Problem.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/cia-uap-019-australian-dept-of-defense-scientific-and-intel-aspects-of-the-ufo-p.pdf",
+  "size_bytes": 1417100,
+  "sha256": "a91a8665371816b5463dff7de2f1c4c02ac449ba122d088b2898592c82dba9dc",
+  "redacted": false,
+  "summary": "Dated to 1971, an Australian review of the USAF Project Blue Book. This document was released by the National Archives of Australia.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/cia-uap-019-australian-dept-of-defense-scientific-and-intel-aspects-of-the-ufo-p.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Australia"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/CIA-UAP-019-Australian_Dept_of_Defense_Scientific_and_Intel_Aspects_of_the_UFO_Problem.jpg",
+  "csv_raw_title": "CIA-UAP-019, Australian Dept of Defense Scientific and Intel Aspects of the UFO Problem",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (1971) over Australia.",
+    "what_we_know": [
+      "Document originates from CIA.",
+      "Encounter dated 1971.",
+      "Reported location: Australia."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "project",
+      "usaf",
+      "page",
+      "public",
+      "national",
+      "report",
+      "blue",
+      "book"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "cia-uap-003-the-central-intelligence-agency-and-overhead-reconnaissance-the-u-2-",
+  "title": "CIA-UAP-003, The Central Intelligence Agency and Overhead Reconnaissance; The U-2 and OXCART Programs, 1954-1974",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": "1954-1974",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-003-THE_CENTRAL_INTELLIGENCE_AGENCY_AND_OVERHEAD_RECONNAISSANCE-THE_U-2_AND_OXCART_PROGRAMS_1954-1974.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/cia-uap-003-the-central-intelligence-agency-and-overhead-reconnaissance-the-u-2-.pdf",
+  "size_bytes": 46410093,
+  "sha256": "3a11822b45f559acc6063304bdbf16977a21dc86ca3a7a743c1a60e40f98b8d1",
+  "redacted": false,
+  "summary": "This CIA History Staff document chronicles the complete history of the U-2 and OXCART (A-12) high-altitude reconnaissance aircraft programs from 1954 to 1974, detailing their development, operations over the Soviet Union and other targets worldwide, the famous downing of Francis Gary Powers in 1960, organizational reforms following that incident, and the eventual transfer of operations from CIA to Air Force control. A more redacted version of this document has been available on CIA's public website.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/cia-uap-003-the-central-intelligence-agency-and-overhead-reconnaissance-the-u-2-.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/CIA-UAP-003-THE_CENTRAL_INTELLIGENCE_AGENCY_AND_OVERHEAD_RECONNAISSANCE-THE_U-2_AND_OXCART_PROGRAMS_1954-1974.jpg",
+  "csv_raw_title": "CIA-UAP-003, The Central Intelligence Agency and Overhead Reconnaissance; The U-2 and OXCART Programs, 1954-1974",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (1954-1974).",
+    "what_we_know": [
+      "Document originates from CIA.",
+      "Encounter dated 1954-1974.",
+      "Document references: soviet, aircraft, force, page, project."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "soviet",
+      "aircraft",
+      "force",
+      "page",
+      "project",
+      "president",
+      "intelligence",
+      "chapter"
+    ]
+  }
+}

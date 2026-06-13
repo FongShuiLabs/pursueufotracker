@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dos-uap-d2-cable-2-kazakhstan-january-1994.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/state-department-uap-cable-002-kazakhstan-january-31-1994.pdf",
   "size_bytes": 382367,
   "sha256": "e1d583556594e3e98f0ceea5598760c9d122283c4582f7d5f6c6c9ad96ad76e3",
   "redacted": false,
-  "summary": "This document is a U.S. Department of State diplomatic cable from the U.S. Embassy in Dushanbe, Tajikistan to the Secretary of State in Washington, D.C. on January 31, 1994.On January 27, 1994 one Tajik pilot and three American citizens encountered an UAP flying a 747 jet at 41,000 feet over Kazakhstan.  Object was a bright light of enormous intensity and approached over the horizon to the east at great speed and a much higher altitude.  Several pictures were taken of the craft making 90 degree turns, doing corkscrews and maneuvering in circles a great rates of speed.  Object was reported as resembling a bullet in flight.  Visual estimation of the contrails were at 100,000 feet, which was too high to leave contrails by ordinary aircraft.",
+  "summary": "This document is a U.S. Department of State diplomatic cable from the U.S. Embassy in Dushanbe, Tajikistan to the Secretary of State in Washington, D.C. on January 31, 1994.\nOn January 27, 1994 one Tajik pilot and three American citizens encountered an UAP flying a 747 jet at 41,000 feet over Kazakhstan.  Object was a bright light of enormous intensity and approached over the horizon to the east at great speed and a much higher altitude.  Several pictures were taken of the craft making 90 degree turns, doing corkscrews and maneuvering in circles a great rates of speed.  Object was reported as resembling a bullet in flight.  Visual estimation of the contrails were at 100,000 feet, which was too high to leave contrails by ordinary aircraft.",
   "score": {
     "value": 50,
     "components": {
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/state-department-uap-cable-002-kazakhstan-january-31-1994.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dos-uap-d2-cable-2-kazakhstan-january-1994.jpg",
   "csv_raw_title": "State Department UAP Cable 002, Kazakhstan, January 31, 1994",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "State Department diplomatic cable from an overseas diplomatic post documenting a UAP encounter (1/27/94) over Kazakhstan.",
+    "what_we_know": [
+      "Document originates from STATE.",
+      "Encounter dated 1/27/94.",
+      "Reported location: Kazakhstan."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 50/100. Top drivers: corroboration (single_witness_instrument), witness credibility (civilian_credentialed).",
+    "keywords": [
+      "unclassified",
+      "object",
+      "amembassy",
+      "page",
+      "rhodes",
+      "speed",
+      "dushanbe",
+      "washdc"
+    ]
+  }
 }

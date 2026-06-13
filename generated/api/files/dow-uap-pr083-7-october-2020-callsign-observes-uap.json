@@ -8,11 +8,11 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/dow-uap-pr083-7-october-2020-callsign-observes-uap.mp4",
   "size_bytes": 92448164,
   "sha256": "a4b8435bb51036dfee1e3589deace70bc62ddc1b0692aa43ca5c6b022fd2d5c9",
   "redacted": true,
-  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “7 October 2020 [CALLSIGN] observes UAP,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in October 2020. A user uploaded this video to a classified network in October 2020.Video Duration: 00:04:34Video Description:00:09-00:25: An area of contrast enters the right side of the sensor field-of-view. The sensor pans to track the area of contrast, keeping it generally within the center of the frame.00:26-03:20: The sensor cycles its zoom level multiple times, panning to track the area of contrast.03:21-04:08: The sensor cycles modalities and zoom levels multiple times to focus on a faint area of contrast.04:09: The area of contrast loses distinctiveness against the background.04:10-04:26: No content.04:27-04:34: An area of contrast appears on the right side of the sensor field-of-view, and the sensor pans to bring the area of contrast to the center of the display.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.\n\nAARO assesses that this video, whose uploader-defined title is, “7 October 2020 [CALLSIGN] observes UAP,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in October 2020. A user uploaded this video to a classified network in October 2020.\nVideo Duration: 00:04:34\nVideo Description:\n00:09-00:25: An area of contrast enters the right side of the sensor field-of-view. The sensor pans to track the area of contrast, keeping it generally within the center of the frame.\n00:26-03:20: The sensor cycles its zoom level multiple times, panning to track the area of contrast.\n03:21-04:08: The sensor cycles modalities and zoom levels multiple times to focus on a faint area of contrast.\n04:09: The area of contrast loses distinctiveness against the background.\n04:10-04:26: No content.\n04:27-04:34: An area of contrast appears on the right side of the sensor field-of-view, and the sensor pans to bring the area of contrast to the center of the display.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr083-7-october-2020-callsign-observes-uap.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111720883/DOD_111720883-1920x1080-9000k.mp4",
   "duration": 274,
   "dvids_page_url": "https://www.dvidshub.net/video/1007808/dow-uap-pr083-7-october-2020-callsign-observes-uap",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2020) over CENTCOM.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2020.",
+      "Reported location: CENTCOM."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

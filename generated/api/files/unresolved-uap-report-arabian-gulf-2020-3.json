@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/unresolved-uap-report-arabian-gulf-2020-3.mp4",
   "size_bytes": 29392078,
   "sha256": "e91f12de19cadaa3af6c324bc3caa83af2ce47c80fefbceeb5e038f5c1866dac",
   "redacted": true,
-  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of one minute and three seconds of video footage from an infrared sensor aboard a U.S. military platform in 2020. The original reporter digitally altered the imagery by pausing the video playback and adding a white line encircling an area of interest at timestamp 00:10, annotated with the phrase “U/I SMALL THERMAL SIGNATURE.” AARO did not edit the originally reported material, and this media is presented as received.Video Description:00:00-00:09: An area of contrast brightens within the sensor field-of-view, becoming increasingly distinct against the background.00:10-00:14: Playback pauses to display a white line encircling an area of interest, annotated with the phrase “U/I SMALL THERMAL SIGNATURE.”00:15-01:03: Playback resumes, with the sensor panning to track the area of contrast against the background, generally maintaining the area of contrast’s position within the top third of the display area. During this period, the sensor cycles through several contrast and zoom settings.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of one minute and three seconds of video footage from an infrared sensor aboard a U.S. military platform in 2020. The original reporter digitally altered the imagery by pausing the video playback and adding a white line encircling an area of interest at timestamp 00:10, annotated with the phrase “U/I SMALL THERMAL SIGNATURE.” AARO did not edit the originally reported material, and this media is presented as received.\n\nVideo Description:\n00:00-00:09: An area of contrast brightens within the sensor field-of-view, becoming increasingly distinct against the background.\n00:10-00:14: Playback pauses to display a white line encircling an area of interest, annotated with the phrase “U/I SMALL THERMAL SIGNATURE.”\n00:15-01:03: Playback resumes, with the sensor panning to track the area of contrast against the background, generally maintaining the area of contrast’s position within the top third of the display area. During this period, the sensor cycles through several contrast and zoom settings.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-arabian-gulf-2020-3.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689082/DOD_111689082.mp4",
   "duration": 63,
   "dvids_page_url": "https://www.dvidshub.net/video/1006093/dow-uap-pr40-unresolved-uap-report-middle-east-2020",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Arabian Gulf.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: Arabian Gulf.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

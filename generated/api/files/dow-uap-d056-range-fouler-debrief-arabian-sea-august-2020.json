@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d56-range-fouler-debrief-arabian-sea-august-2020.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/dow-uap-d056-range-fouler-debrief-arabian-sea-august-2020.pdf",
   "size_bytes": 1849972,
   "sha256": "9127fb5a81efacf030df4dc6290d02bcdf4c8512cf1809b6eccfe6cf16a77f31",
   "redacted": true,
-  "summary": "This document is a Range Fouler Debrief Form, a standardized reporting form the U.S. Navy uses to record the circumstances surrounding an unauthorized intrusion into controlled airspace during active military operations or training. These reports contain a narrative description of the observer’s experiences. A U.S. military operator reported an encounter with a group of three “unidentified small air contacts” over the North Arabian Sea. The reporter described the UAP as having “wings/airframe” structure, and as initially bearing on a westerly heading. The operator tracked one UAP before losing sight of it behind a cloud. Upon regaining contact, the operator reported observing two additional UAP to the east of the first. The report states that all three objects then “appeared to maintain their relative course, speed, and altitude.”All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "summary": "This document is a Range Fouler Debrief Form, a standardized reporting form the U.S. Navy uses to record the circumstances surrounding an unauthorized intrusion into controlled airspace during active military operations or training. These reports contain a narrative description of the observer’s experiences. \nA U.S. military operator reported an encounter with a group of three “unidentified small air contacts” over the North Arabian Sea. The reporter described the UAP as having “wings/airframe” structure, and as initially bearing on a westerly heading. The operator tracked one UAP before losing sight of it behind a cloud. Upon regaining contact, the operator reported observing two additional UAP to the east of the first. The report states that all three objects then “appeared to maintain their relative course, speed, and altitude.”\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
   "score": {
     "value": 53,
     "components": {
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/dow-uap-d056-range-fouler-debrief-arabian-sea-august-2020.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d56-range-fouler-debrief-arabian-sea-august-2020.jpg",
   "csv_raw_title": "DOW-UAP-D056, Range Fouler Debrief, Arabian Sea, August 2020",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (8/24/20) over Arabian Sea.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 8/24/20.",
+      "Reported location: Arabian Sea."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "contact",
+      "please",
+      "unknown",
+      "speed",
+      "other",
+      "form",
+      "squadron",
+      "information"
+    ]
+  }
 }

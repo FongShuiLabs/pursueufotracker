@@ -1,0 +1,96 @@
+{
+  "id": "fbi-uap-d003-digital-rendering-unresolved-uap-report-colorado-springs-2022",
+  "title": "FBI-UAP-D003, Digital Rendering, Unresolved UAP Report, Colorado Springs, 2022",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": "2022",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D003_Digital-Rendering_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/fbi-uap-d003-digital-rendering-unresolved-uap-report-colorado-springs-2022.pdf",
+  "size_bytes": 3459421,
+  "sha256": "e067ec3753f24fbe26501a3932bce900124efea19ce5f949368f1b74d95fb53d",
+  "redacted": false,
+  "summary": "This image is an artistic interpretation of a 2022 incident potentially involving unidentified anomalous phenomena (UAP) reported near Colorado Springs, Colorado. This image is derived from the first-hand narrative description contained in “FBI-UAP-D002, FD-1057, Unresolved UAP Report, Colorado Springs, 2022”.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/fbi-uap-d003-digital-rendering-unresolved-uap-report-colorado-springs-2022.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Colorado Springs, Colorado, U.S."
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/FBI-UAP-D003_Digital-Rendering_Unresolved-UAP-Report_ColoradoSprings_2022.jpg",
+  "csv_raw_title": "FBI-UAP-D003, Digital Rendering, Unresolved UAP Report, Colorado Springs, 2022",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (2022) over Colorado Springs, Colorado, U.S..",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated 2022.",
+      "Reported location: Colorado Springs, Colorado, U.S.."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page"
+    ]
+  }
+}

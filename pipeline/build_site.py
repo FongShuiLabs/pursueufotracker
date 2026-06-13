@@ -495,6 +495,8 @@ def _build_sitemap(manifest: dict) -> None:
         ("/military-uap-files/", "0.9", "weekly"),
         ("/nasa-ufo-photos/", "0.9", "weekly"),
         ("/state-department-uap-cables/", "0.9", "weekly"),
+        ("/cia-ufo-files/", "0.9", "weekly"),
+        ("/intel-and-doe-uap-files/", "0.9", "weekly"),
     ]:
         parts.append(f"<url><loc>{SITE_URL}{path}</loc><lastmod>{today}</lastmod>"
                      f"<priority>{prio}</priority><changefreq>{freq}</changefreq></url>")

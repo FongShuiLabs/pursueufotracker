@@ -8,11 +8,11 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/dow-uap-pr072-administrative-revision-iir-1777-j0032-22-kazakhstan-uap-in-the-vi.mp4",
   "size_bytes": 5101246,
   "sha256": "5e0e1252d0c7443984d545ae09daceb2a01b27bc005056bed6b8172a87c28e28",
   "redacted": false,
-  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “ADMINISTRATIVE REVISION: IIR 1777 J0032 22 Kazakhstan - UAP in the vicinity of Karaganda International Airport,” is likely derived from a commercially available cellular device’s rear-facing camera in February 2022. A user uploaded this video to a classified network in April 2023. Video Duration: 00:00:17Video Description: This media was digitally altered prior to its upload to a classified network, and is presented as received.00:00-00:03: No Content.00:04-00:12: The video fades in from black to show a luminous phenomenon with trails of diminishing brightness extending from the center. The camera pans left and right, and zooms in on the phenomenon.00:13: Video fades to black.00:14-00:17: No content.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.\n\nAARO assesses that this video, whose uploader-defined title is, “ADMINISTRATIVE REVISION: IIR 1777 J0032 22 Kazakhstan - UAP in the vicinity of Karaganda International Airport,” is likely derived from a commercially available cellular device’s rear-facing camera in February 2022. A user uploaded this video to a classified network in April 2023. \n\nVideo Duration: 00:00:17\nVideo Description: This media was digitally altered prior to its upload to a classified network, and is presented as received.\n\n00:00-00:03: No Content.\n00:04-00:12: The video fades in from black to show a luminous phenomenon with trails of diminishing brightness extending from the center. The camera pans left and right, and zooms in on the phenomenon.\n00:13: Video fades to black.\n00:14-00:17: No content.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 68,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr072-administrative-revision-iir-1777-j0032-22-kazakhstan-uap-in-the-vi.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111720752/DOD_111720752-1920x1080-9000k.mp4",
   "duration": 17,
   "dvids_page_url": "https://www.dvidshub.net/video/1007788/dow-uap-pr072-administrative-revision-iir-1777-j0032-22-kazakhstan-uap-vicinity-karaganda-international-airport",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2022) over Kazakhstan.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2022.",
+      "Reported location: Kazakhstan."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 68/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

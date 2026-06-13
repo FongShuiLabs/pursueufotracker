@@ -20,47 +20,55 @@ from .config import MANIFEST_PATH, ROOT, GENERATED_DIR, SITE_NAME, SITE_URL, ens
 CATEGORIES = [
     {
         "slug": "fbi-ufo-files",
-        "title": "FBI UFO Files: 57 Bureau Records Trump Just Declassified",
+        "title": "FBI UFO Files: 86 Bureau Records Trump Declassified",
         "h1": "FBI UFO Files",
         "match": lambda f: f.get("category") == "fbi" or f.get("agency") == "FBI",
         "intro": (
-            "Fifty-seven FBI files were declassified in the May 2026 PURSUE release. The largest single "
+            "Eighty-six FBI files have been declassified across the Trump PURSUE releases (May-June 2026). "
+            "The largest single "
             "block is the Bureau's central case file <strong>62-HQ-83894</strong> (18 PDFs), which "
             "aggregates UFO and flying-disc investigations from <strong>June 1947 through July 1968</strong> "
-            "- 21 years of running investigative records. The PURSUE release also includes Oak Ridge, "
+            "- 21 years of running investigative records. The release also includes Oak Ridge, "
             "Tennessee incident reporting, eyewitness testimonies and public reports from the period, "
             "technical proposals on propulsion systems engineers thought might explain the reported "
             "objects, and case file pages newly declassified beyond what the FBI Vault has previously "
-            "posted. Most files are partially redacted; we mark redaction status on each. All are public "
+            "posted. <strong>Release 03 (June 2026) added 29 more FBI records</strong> - modern Unidentified "
+            "Anomalous Phenomena reports that extend the Bureau's UFO record from the 1947-1968 vault into "
+            "the present, including the 2022 Colorado Springs incident (FD-1057 and a digital rendering), "
+            "2026 Northeastern 'orb' sightings (FD-302 reports), and the FBI-UAP-PR003 'Orbs Over the Pond' "
+            "video. Most files are partially redacted; we mark redaction status on each. All are public "
             "domain U.S. Government works under 17 U.S.C. § 105. For a file-by-file walkthrough of the "
             "62-HQ-83894 cluster, see <a href='/fbi-62-hq-83894'>our dedicated deep dive</a>."
         ),
         "meta_desc": (
-            "All 57 FBI UFO files declassified in the Trump administration's May 2026 PURSUE release. "
-            "Central case file 62-HQ-83894, Oak Ridge incidents, 1947-1968 investigations. "
-            "Indexed, searchable, full SHA-256 verification."
+            "All 86 FBI UFO files declassified across the Trump administration's 2026 PURSUE releases. "
+            "Central case file 62-HQ-83894, Oak Ridge incidents, 1947-1968 investigations, plus 2022 "
+            "Colorado Springs and 2026 Northeastern orb reports. Indexed, searchable, full SHA-256 verification."
         ),
         "keywords": "FBI UFO files, FBI UFO declassified, 62-HQ-83894, FBI flying disc investigation, Oak Ridge UFO, FBI vault UFO, Trump FBI UFO release, PURSUE FBI",
     },
     {
         "slug": "military-uap-files",
-        "title": "Pentagon UAP Files: 83 Military Encounter Reports From the Trump UFO Release",
+        "title": "Pentagon UAP Files: 143 Military Encounter Reports From the Trump UFO Release",
         "h1": "Pentagon UAP & Military Encounter Files",
-        "match": lambda f: f.get("category") == "military" or f.get("agency") == "DoD",
+        "match": lambda f: f.get("agency") == "DoD",
         "intro": (
-            "Eighty-three Department of War files cover U.S. military Unidentified Anomalous Phenomena "
-            "encounters from <strong>2020 through 2026</strong>. These include AARO mission packets and "
+            "One hundred forty-three Department of War files cover U.S. military Unidentified Anomalous "
+            "Phenomena encounters spanning <strong>a 1949 U.S. Army flying-saucer study through 2026</strong>. "
+            "These include AARO mission packets and "
             "Mission Reports (MISREPs) from the Mediterranean, Greek airspace, the Arabian Gulf, the "
-            "Indo-Pacific, Iraq, Syria, the UAE, and Yemen. Many include full-motion video from "
+            "Indo-Pacific, Iraq, Syria, the UAE, and Yemen - plus a multi-document AARO case from the "
+            "<strong>Western United States</strong> added in Release 03 (June 2026). Many include "
+            "full-motion video from "
             "<strong>infrared (IR), electro-optical (EO), and short-wave infrared (SWIR) sensors</strong>. "
             "These are the files that score highest on the Anomalousness Index, because the encounters "
             "have the strongest sensor and witness chain - trained military operators, multi-sensor "
             "capture, and unresolved official disposition."
         ),
         "meta_desc": (
-            "All 83 Pentagon and Department of War UAP files from the Trump May 2026 PURSUE release. "
-            "AARO mission reports, MISREPs, Mediterranean, Greece, UAE, Iraq, Syria, IR/EO/SWIR sensor "
-            "captures. Full transcripts, AI-ranked anomalousness."
+            "All 143 Pentagon and Department of War UAP files from the Trump 2026 PURSUE releases. "
+            "AARO mission reports, MISREPs, Mediterranean, Greece, UAE, Iraq, Syria, Western US, IR/EO/SWIR "
+            "sensor captures. Full transcripts, AI-ranked anomalousness."
         ),
         "keywords": "Pentagon UAP files, DoD UFO files, AARO mission report, MISREP UAP, Greece UAP 2024, UAE UAP, Mediterranean UFO, military UFO video, war.gov UAP, Trump Pentagon UFO",
     },
@@ -70,25 +78,29 @@ CATEGORIES = [
         "h1": "NASA UFO & UAP Records",
         "match": lambda f: f.get("category") in ("nasa", "apollo") or f.get("agency") == "NASA",
         "intro": (
-            "Twenty-two NASA files have been declassified under PURSUE - fifteen in Release 01 "
-            "(May 8, 2026) and seven more in Release 02 (May 22, 2026). They span the earliest U.S. "
+            "Thirty-three NASA files have been declassified under PURSUE - fifteen in Release 01 "
+            "(May 8, 2026), seven in Release 02 (May 22, 2026), and eleven more in Release 03 "
+            "(June 12, 2026). They span the earliest U.S. "
             "crewed spaceflights through the Apollo program: <strong>Mercury-Redstone 4 and Mercury-Atlas "
-            "7, 8, and 9 air-to-ground audio</strong> (1961-1963), <strong>Gemini 7 audio</strong> in "
-            "which astronaut Frank Borman reports an unidentified object in low Earth orbit, "
-            "<strong>Apollo 11, 12, and 17 crew debriefings and transcripts</strong>, <strong>Apollo 12 "
+            "7, 8, and 9 air-to-ground audio</strong> (1961-1963), <strong>Gemini 4, 5, 7, and 9 crew "
+            "debriefings and audio</strong> - including the Gemini 7 recording in "
+            "which astronaut Frank Borman reports an unidentified object in low Earth orbit - "
+            "<strong>Apollo 11, 12, 16, and 17 crew debriefings and transcripts</strong>, <strong>Apollo 12 "
             "and 17 mission photography</strong> with highlighted areas of unidentified phenomena above "
             "the lunar horizon, the <strong>Schmitt-Grimaldi lunar flash</strong> that Apollo 17 LMP "
             "Harrison Schmitt reported north of the crater Grimaldi in December 1972, and a "
-            "<strong>Skylab crew debriefing</strong> from 1973. Astronaut-witness corroboration is rare "
-            "in the UAP record. NASA-UAP-D003A (Borman / Gemini 7), score 72, is the single "
-            "highest-scored file in the entire PURSUE release."
+            "<strong>Skylab crew debriefing</strong> from 1973. Release 03 (June 2026) added the Gemini 4, "
+            "5, 7, and 9 debriefings, the <strong>Apollo 16 scientific debriefing</strong>, an interview "
+            "excerpt with astronaut <strong>Gordon Cooper</strong>, and a 1962-63 astronaut scientific "
+            "debriefing set. Astronaut-witness corroboration is rare in the UAP record. NASA-UAP-D003A "
+            "(Borman / Gemini 7) is tied for the highest score (72) in the entire PURSUE release."
         ),
         "meta_desc": (
-            "All 22 NASA UFO files in the Trump 2026 PURSUE release (Release 01 + 02). Apollo 12 and 17 "
-            "lunar anomaly photos, Gemini 7 Frank Borman UAP audio, Mercury program audio (1961-63), "
-            "Skylab debriefing, Schmitt-Grimaldi lunar flash. Astronaut-witness records."
+            "All 33 NASA UFO files in the Trump 2026 PURSUE releases. Apollo 12, 16, and 17 "
+            "records, Gemini 4/5/7/9 crew debriefings, Frank Borman and Gordon Cooper audio, Mercury "
+            "program audio (1961-63), Skylab debriefing, Schmitt-Grimaldi lunar flash. Astronaut-witness records."
         ),
-        "keywords": "NASA UFO photos, Apollo 12 UAP, Apollo 12 UFO, Apollo 11 UFO, Apollo 17 UFO, Gemini 7 UAP, Frank Borman UFO, Mercury Atlas UFO, Mercury Redstone UAP, Skylab UFO, Schmitt-Grimaldi lunar flash, astronaut UFO sighting, NASA UAP declassified",
+        "keywords": "NASA UFO photos, Apollo 12 UAP, Apollo 16 UFO, Apollo 11 UFO, Apollo 17 UFO, Gemini 7 UAP, Gemini 4 UFO, Gemini 9 UAP, Gordon Cooper UFO, Frank Borman UFO, Mercury Atlas UFO, Skylab UFO, Schmitt-Grimaldi lunar flash, astronaut UFO sighting, NASA UAP declassified",
     },
     {
         "slug": "state-department-uap-cables",
@@ -116,31 +128,57 @@ CATEGORIES = [
         "keywords": "State Department UFO, UAP diplomatic cable, Papua New Guinea UFO 1985, Kazakhstan UAP 1994, USCINCPAC UAP, embassy UFO cable, Mexico UAP Congress, declassified State UFO, diplomatic UAP cable",
     },
     {
-        "slug": "intel-and-doe-uap-files",
-        "title": "Intelligence Community + DOE UAP Files: CIA, ODNI, and Department of Energy Records From PURSUE Release 02",
-        "h1": "Intelligence Community + DOE UAP Records",
-        "match": lambda f: f.get("category") == "intel" or f.get("agency") in ("CIA", "ODNI", "DOE"),
+        "slug": "cia-ufo-files",
+        "title": "CIA UFO Files: 19 Declassified CIA UAP Records From the Trump Disclosure",
+        "h1": "CIA UFO & UAP Files",
+        "match": lambda f: f.get("agency") == "CIA",
         "intro": (
-            "Five U.S. intelligence-community and Department of Energy files were declassified under "
-            "PURSUE <strong>Release 02 on May 22, 2026</strong> - new agencies joining the disclosure "
-            "for the first time. The cluster includes "
-            "<strong>CIA-UAP-D001</strong> (a 1973 CIA Intelligence Information Report relating to "
-            "USSR activity), "
+            "Nineteen CIA files have been declassified under PURSUE - eighteen historical Central "
+            "Intelligence Agency UAP records added in <strong>Release 03 (June 12, 2026)</strong>, plus "
+            "<strong>CIA-UAP-D001</strong>, a 1973 CIA Intelligence Information Report relating to USSR "
+            "activity, from Release 02. The Release 03 set reaches back to the agency's earliest UFO work: "
+            "the <strong>Scientific Advisory Panel on Unidentified Flying Objects</strong>, a study titled "
+            "<strong>'The Central Intelligence Agency and Overhead Reconnaissance'</strong>, the "
+            "<strong>CASE 17708 / Dr. Leon Davidson</strong> correspondence, a German scientist's article "
+            "on 'flying discs,' and multiple mid-century reports of sightings of unconventional aircraft. "
+            "Most are partially redacted; we mark redaction status on each. All are public domain U.S. "
+            "Government works under 17 U.S.C. § 105."
+        ),
+        "meta_desc": (
+            "All 19 CIA UFO files declassified in the Trump administration's 2026 PURSUE releases. The "
+            "CIA Scientific Advisory Panel on UFOs, 'The CIA and Overhead Reconnaissance,' the Leon "
+            "Davidson / CASE 17708 correspondence, mid-century sighting reports, and the 1973 USSR "
+            "intelligence report. Indexed, searchable, SHA-256 verified."
+        ),
+        "keywords": "CIA UFO files, CIA UAP declassified, CIA Scientific Advisory Panel UFO, CIA overhead reconnaissance UFO, Leon Davidson UFO, CASE 17708, CIA flying disc, CIA-UAP-D001, Trump CIA UFO release, PURSUE CIA",
+    },
+    {
+        "slug": "intel-and-doe-uap-files",
+        "title": "Intelligence Community, DOE & Government UAP Files: ODNI, Energy Department, and Federal Records",
+        "h1": "Intelligence Community, DOE & Government UAP Records",
+        "match": lambda f: f.get("agency") in ("ODNI", "DOE", "ICA", "USG"),
+        "intro": (
+            "Six U.S. intelligence-community, Department of Energy, and federal-government UAP files have "
+            "been declassified under PURSUE (the CIA's records now have <a href='/cia-ufo-files'>their own "
+            "section</a>). The cluster includes "
             "<strong>ODNI-UAP-D001</strong> (the USPER Narrative from a senior U.S. Intelligence "
             "Community official describing a multi-witness UAP encounter from a military helicopter "
-            "in late 2025), and three Department of Energy records: enhanced PANTEX imagery, James "
-            "Tuck correspondence from the 1970s, and a 1986 Pajarito astronomers invitation - the "
-            "DOE files are tied to the U.S. nuclear weapons complex (PANTEX assembly plant, Los Alamos "
-            "via Tuck, and the Pajarito Plateau). All files are public domain U.S. Government works under "
+            "in late 2025); three <strong>Department of Energy</strong> records tied to the U.S. nuclear "
+            "weapons complex - enhanced PANTEX imagery, James Tuck correspondence from the 1970s, and a "
+            "1986 Pajarito astronomers invitation (PANTEX assembly plant, Los Alamos via Tuck, and the "
+            "Pajarito Plateau); an <strong>Intelligence Community analysis of the 2022 Colorado Springs "
+            "UAP incident</strong> (ICA-UAP-D001, added in Release 03); and a <strong>U.S. Government "
+            "compilation of Congressional and White House UFO-related constituent correspondence</strong> "
+            "(USG-UAP-D001, Release 03). All files are public domain U.S. Government works under "
             "17 U.S.C. § 105."
         ),
         "meta_desc": (
-            "All 5 CIA, ODNI, and Department of Energy UAP files released under PURSUE Release 02 on "
-            "May 22, 2026. ODNI-UAP-D001 USPER narrative (senior US Intelligence Community official "
-            "helicopter encounter, late 2025), CIA-UAP-D001 (1973 USSR intelligence report), three "
-            "DOE files tied to PANTEX, Los Alamos, and Pajarito."
+            "Six ODNI, Department of Energy, and U.S. Government UAP files from the Trump 2026 PURSUE "
+            "releases. ODNI-UAP-D001 USPER helicopter narrative, three DOE nuclear-complex files (PANTEX, "
+            "Los Alamos, Pajarito), an IC analysis of the 2022 Colorado Springs incident, and "
+            "Congressional/White House UFO correspondence. (CIA files are in their own section.)"
         ),
-        "keywords": "CIA UFO file, ODNI UAP report, ODNI-UAP-D001, CIA-UAP-D001, DOE UAP, Department of Energy UFO, PANTEX UAP, intelligence community UAP, USPER UAP narrative, PURSUE Release 02, intel community UFO disclosure",
+        "keywords": "ODNI UAP report, ODNI-UAP-D001, DOE UAP, Department of Energy UFO, PANTEX UAP, USPER UAP narrative, Colorado Springs UAP 2022, Congressional UFO correspondence, intelligence community UAP, PURSUE intel disclosure",
     },
 ]
 
@@ -307,7 +345,7 @@ def _page_html(cat: dict, files: list[dict]) -> str:
 
 {explore_nav}
 
-  <a class="cat-back" href="/">← BACK TO ALL 222 FILES</a>
+  <a class="cat-back" href="/">← BACK TO ALL 294 FILES</a>
 </main>
 
 <footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">

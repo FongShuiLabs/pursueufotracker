@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/dow-uap-d032-mission-report-syria-october-2024.pdf",
   "size_bytes": 651740,
   "sha256": "fd4deb1e48fcfa7fd2370b6459877882e6d6fdd0226ecaa881a45fba690172df",
   "redacted": true,
-  "summary": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.A U.S. military operator reported observing a “misshapen and uneven ball of white light,” describing multiple “glares or light” emanating from an “unknown origin.” The reporter described the UAP as a “light/glare halo effect” at the top of the Full-Motion Video (FMV) feed.All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "summary": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.\nA U.S. military operator reported observing a “misshapen and uneven ball of white light,” describing multiple “glares or light” emanating from an “unknown origin.” The reporter described the UAP as a “light/glare halo effect” at the top of the Full-Motion Video (FMV) feed.\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
   "score": {
     "value": 53,
     "components": {
@@ -64,9 +64,9 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/dow-uap-d032-mission-report-syria-october-2024.txt",
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d032-mission-report-syria-october-2024.jpg"
   },
   "geo": {
     "lat": null,
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d32-mission-report,-syria-october-2024.jpg",
   "csv_raw_title": "DOW-UAP-D032, Mission Report, Syria, October 2024",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (10/20/24) over Syria.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 10/20/24.",
+      "Reported location: Syria."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "secret",
+      "fvey",
+      "foia",
+      "uscentcom",
+      "number",
+      "declassified",
+      "exemption",
+      "name"
+    ]
+  }
 }

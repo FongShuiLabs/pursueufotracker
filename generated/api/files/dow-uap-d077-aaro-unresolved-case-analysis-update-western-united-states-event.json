@@ -1,0 +1,103 @@
+{
+  "id": "dow-uap-d077-aaro-unresolved-case-analysis-update-western-united-states-event",
+  "title": "DOW-UAP-D077, AARO Unresolved Case Analysis Update: Western United States Event",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "2023",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D077_Unresolved-Case-Analysis-Update_Western-United-States-Event.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d077-aaro-unresolved-case-analysis-update-western-united-states-event.pdf",
+  "size_bytes": 392347,
+  "sha256": "5eb571dbfd4faa81c2b52266e0e0ea933cde481325f8548aefac5b9b09eb42d1",
+  "redacted": false,
+  "summary": "This memorandum summarizes the All-domain Anomaly Resolution Office’s (AARO) ongoing analysis of a reported incident near a sensitive national security site in the western United States involving unidentified anomalous phenomena (UAP) over a period of two days in 2023. As of June 2026, the case remains unresolved.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d077-aaro-unresolved-case-analysis-update-western-united-states-event.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Western United States"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/DOW-UAP-D077_Unresolved-Case-Analysis-Update_Western-United-States-Event.jpg",
+  "csv_raw_title": "DOW-UAP-D077, AARO Unresolved Case Analysis Update: Western United States Event",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (2023) over Western United States.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2023.",
+      "Reported location: Western United States."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "phenomena",
+      "reported",
+      "aaro",
+      "orbs",
+      "agents",
+      "military",
+      "characteristics",
+      "data"
+    ]
+  }
+}

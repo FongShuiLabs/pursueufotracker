@@ -1,0 +1,103 @@
+{
+  "id": "fbi-uap-d001-fd-302-unresolved-uap-report-colorado-springs-2022",
+  "title": "FBI-UAP-D001, FD-302, Unresolved UAP Report, Colorado Springs, 2022",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": "February, 2022",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D001_FD-302_Unresolved-UAP-Report_ColoradoSprings_2022.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/fbi-uap-d001-fd-302-unresolved-uap-report-colorado-springs-2022.pdf",
+  "size_bytes": 383742,
+  "sha256": "22528109268e1ed19d3a10f35d91b66077b674315c283e3ba6e3714743c41f4f",
+  "redacted": true,
+  "summary": "This document is a Federal Bureau of Investigation (FBI) FD-302, a form the FBI uses to record interviews. This FD-302 contains a summary of an interview with a U.S. military service member in March 2025 regarding a February 2022 incident potentially involving unidentified anomalous phenomena (UAP). The individual described the phenomenon as being “bean shaped,” “matte white” or “off-white” in color, with a surface covered in “intersecting lines or ridges which formed an abstract polygon pattern.” The individual described the phenomenon as “motionless” and that “no sound could be heard coming from it.” FBI Note: AARO has since been in contact with the interviewee to conduct subsequent interviews to inform its analysis of this incident.",
+  "score": {
+    "value": 55,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/fbi-uap-d001-fd-302-unresolved-uap-report-colorado-springs-2022.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Colorado Springs, Colorado, U.S."
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/FBI-UAP-D001_FD-302_Unresolved-UAP-Report_ColoradoSprings_2022.jpg",
+  "csv_raw_title": "FBI-UAP-D001, FD-302, Unresolved UAP Report, Colorado Springs, 2022",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (February, 2022) over Colorado Springs, Colorado, U.S..",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated February, 2022.",
+      "Reported location: Colorado Springs, Colorado, U.S.."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 55/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "object",
+      "mountain",
+      "page",
+      "other",
+      "shaped",
+      "stated",
+      "date",
+      "interviewed"
+    ]
+  }
+}

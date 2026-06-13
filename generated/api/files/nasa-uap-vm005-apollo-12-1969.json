@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm5-apollo-12-1969.jpg",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/image/nasa-uap-vm005-apollo-12-1969.jpg",
   "size_bytes": 2590279,
   "sha256": "472793feaf12754d25ed699a667fdd5cee91d61dda66b8027ff7fbdc48d00ccd",
   "redacted": false,
-  "summary": "This archival photograph depicts the lunar surface as viewed from the landing site of Apollo 12. This image features five highlighted areas of interest, labeled “Area 1” through “Area 5,” above the horizon, in which unidentified phenomena are visible.This image has been modified from its original state to assist viewers in identifying specific areas of interest. These highlights are provided for contextual purposes only. Such alterations do not constitute an analytical judgment, investigative conclusion, or factual determination regarding the nature or significance of the subject matter.",
+  "summary": "This archival photograph depicts the lunar surface as viewed from the landing site of Apollo 12. This image features five highlighted areas of interest, labeled “Area 1” through “Area 5,” above the horizon, in which unidentified phenomena are visible.\nThis image has been modified from its original state to assist viewers in identifying specific areas of interest. These highlights are provided for contextual purposes only. Such alterations do not constitute an analytical judgment, investigative conclusion, or factual determination regarding the nature or significance of the subject matter.",
   "score": {
     "value": 65,
     "components": {
@@ -75,5 +75,19 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/nasa-uap-vm5-apollo-12-1969.jpg",
   "csv_raw_title": "NASA-UAP-VM005, Apollo 12, 1969",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "NASA mission record from a crewed lunar mission depicting a UAP encounter (1969) over Moon.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 1969.",
+      "Reported location: Moon."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 65/100. Top drivers: witness credibility (astronaut), sensor quality (photographic)."
+  }
 }

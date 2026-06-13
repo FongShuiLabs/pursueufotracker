@@ -1,0 +1,103 @@
+{
+  "id": "dow-uap-d087-u-s-air-force-analysis-of-flying-objects-in-the-united-states-1-100",
+  "title": "DOW-UAP-D087, U.S. Air Force Analysis of Flying Objects in the United States, 1-100",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": null,
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D087_US-AirForce_Analysis-of-Flying-Objects-in-the-US_1-100.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d087-u-s-air-force-analysis-of-flying-objects-in-the-united-states-1-100.pdf",
+  "size_bytes": 85362382,
+  "sha256": "8004ab172820cb1e35c195b32badf6ede8b5cf12d27c474e54c8788bc14815a9",
+  "redacted": false,
+  "summary": "Includes a \"Check-List - Unidentified Flying Objects\" that contains details about the incident. Many summaries also include witness lists or statements and other narrative reports or descriptions.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d087-u-s-air-force-analysis-of-flying-objects-in-the-united-states-1-100.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "United States"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/DOW-UAP-D087_US-AirForce_Analysis-of-Flying-Objects-in-the-US_1-100.jpg",
+  "csv_raw_title": "DOW-UAP-D087, U.S. Air Force Analysis of Flying Objects in the United States, 1-100",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter over United States.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: United States.",
+      "Document references: page, tion, object, odor, color."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "tion",
+      "object",
+      "odor",
+      "color",
+      "observer",
+      "tino",
+      "objects"
+    ]
+  }
+}

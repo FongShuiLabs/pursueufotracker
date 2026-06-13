@@ -8,7 +8,7 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d48-report-september-1996.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/dow-uap-d048-department-of-the-air-force-report-1996.pdf",
   "size_bytes": 22495083,
   "sha256": "0dc72877cdf9cc3a1645c3c9d282928922b00e8fd9ffd7b1daf66f46c72b2071",
   "redacted": false,
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/dow-uap-d048-department-of-the-air-force-report-1996.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d48-report-september-1996.jpg",
   "csv_raw_title": "DOW-UAP-D048, Department of the Air Force Report, 1996",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (9/10/96).",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 9/10/96.",
+      "Document references: flight, mode, response, seconds, phase."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "flight",
+      "mode",
+      "response",
+      "seconds",
+      "phase",
+      "failure",
+      "vehicle",
+      "launch"
+    ]
+  }
 }

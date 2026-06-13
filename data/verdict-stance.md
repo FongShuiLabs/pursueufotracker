@@ -8,7 +8,7 @@ no sensationalism. Cites into specific files where possible.
 
 ## Q: Do these files prove aliens exist?
 
-No. None of the 222 files in this release contains a body, a craft, biological
+No. None of the 294 files in this release contains a body, a craft, biological
 material, or any artifact whose origin can only be extraterrestrial. Anyone
 telling you otherwise is selling you something.
 
@@ -80,7 +80,7 @@ Yes, and we want to be specific about what the AI did and didn't do.
 
 ## Q: Why is this site here?
 
-Because war.gov's interface is a flat list, and 222 files deserve search,
+Because war.gov's interface is a flat list, and 294 files deserve search,
 categorization, transcripts, and per-file context. Public-domain government
 documents should be as accessible as possible. That's the whole pitch.
 

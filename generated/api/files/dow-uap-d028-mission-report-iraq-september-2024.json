@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d28-mission-report-east-china-sea-2024.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/dow-uap-d028-mission-report-iraq-september-2024.pdf",
   "size_bytes": 633172,
   "sha256": "e12c00b3e2d64e35eef5623499e6eb23b1bc21d304523c75d28d3f474d91d77e",
   "redacted": true,
-  "summary": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.While conducting a weapons calibration test, U.S. military operators reported observing a lens flare via MX-20 and MX-25 IR sensors after firing an AGM-176 Griffin air-to-surface missile. The operators described the source of the flare as a UAP moving through the aircraft’s sensor’s field-of-view at a high rate of speed. The reporter assessed that the flare was associated with “a significant heat source.”All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "summary": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.\nWhile conducting a weapons calibration test, U.S. military operators reported observing a lens flare via MX-20 and MX-25 IR sensors after firing an AGM-176 Griffin air-to-surface missile. The operators described the source of the flare as a UAP moving through the aircraft’s sensor’s field-of-view at a high rate of speed. The reporter assessed that the flare was associated with “a significant heat source.”\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
   "score": {
     "value": 53,
     "components": {
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/dow-uap-d028-mission-report-iraq-september-2024.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d28-mission-report-east-china-sea-2024.jpg",
   "csv_raw_title": "DOW-UAP-D028, Mission Report, Iraq, September 2024",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (9/20/24) over Iraq.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 9/20/24.",
+      "Reported location: Iraq."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "foia",
+      "fvey",
+      "secret",
+      "exemption",
+      "name",
+      "uscentcom",
+      "number",
+      "declassified"
+    ]
+  }
 }

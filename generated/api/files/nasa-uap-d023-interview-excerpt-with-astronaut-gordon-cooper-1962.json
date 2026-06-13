@@ -1,0 +1,99 @@
+{
+  "id": "nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962",
+  "title": "NASA-UAP-D023, Interview Excerpt with Astronaut Gordon Cooper, 1962",
+  "category": "nasa",
+  "agency": "NASA",
+  "type": "video",
+  "date_event": "November, 1962",
+  "date_released": "2026-06-12",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": "downloads/video/nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962.mp4",
+  "size_bytes": 72024798,
+  "sha256": "a8b2961d1642a99db07221560c851e66ed4a06fcac317999862a2c8f9b584039",
+  "redacted": false,
+  "summary": "In November 1962, journalist Walter Cronkite interviewed astronaut Gordon Cooper. In this excerpt from that interview, Cronkite asks Cooper about his views regarding the nature of unidentified flying objects, having previously expressed an interest in the subject. Cooper opines that “a large number of exceptionally well-qualified people have seen objects” without a “logical explanation” and speculates on the existence of other planets with “a livable atmosphere” and that maybe there are “some type of human life” out there. Interview was conducted in November 1962.",
+  "score": {
+    "value": 72,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": "extracted/transcripts/nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962.vtt",
+    "thumbnail_path": "extracted/thumbnails/nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2606/1010337/DOD_111764959.0000001/122x92_q95.jpg",
+  "csv_raw_title": "NASA-UAP-D023, Interview Excerpt with Astronaut Gordon Cooper, 1962",
+  "dvids_video_id": "1010337",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2606/DOD_111764959/DOD_111764959-1920x1080-9000k.mp4",
+  "caption_vtt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1010337&format=webvtt&api_key=key-68bb60d16b35e",
+  "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1010337&format=srt&api_key=key-68bb60d16b35e",
+  "duration": 123,
+  "dvids_page_url": "https://www.dvidshub.net/video/1010337/nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962",
+  "audience": {
+    "tldr": "NASA mission record showing footage of a UAP encounter (November, 1962).",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated November, 1962.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 72/100. Top drivers: sensor quality (single_sensor_military), witness credibility (astronaut)."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "fbi-uap-d011-d-fbi-correspondence-referral-1949",
+  "title": "FBI-UAP-D011, D/FBI Correspondence Referral, 1949",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": "1949",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D011_DFBI-Correspondence-Referral_1949.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/fbi-uap-d011-d-fbi-correspondence-referral-1949.pdf",
+  "size_bytes": 581575,
+  "sha256": "aaf14409fe2a6b8577345394b399e8ccfa36a0571c6205eb6b5da82b53e6876b",
+  "redacted": false,
+  "summary": "This collection of documents contains correspondence between the Director of the Federal Bureau of Investigation (FBI), J. Edgar Hoover, and Rev. Charles Barnes concerning Barnes’ account of an incident potentially involving unidentified anomalous phenomena (UAP). Rev. Barnes described observing four beams of light “converging in the Cascade Mountains,” at an altitude of approximately 10,000 feet, with a “great explosion” visible at the convergence point of those beams for at least ten minutes. Director Hoover replied to Rev. Barnes thanking him for his letter and informing him that he had forwarded it to the Atomic Energy Commission (AEC). Director Hoover conveyed to the AEC that Rev. Barnes believed that the event may relate to a military or scientific experiment within the commission’s purview.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/fbi-uap-d011-d-fbi-correspondence-referral-1949.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/FBI-UAP-D011_DFBI-Correspondence-Referral_1949.jpg",
+  "csv_raw_title": "FBI-UAP-D011, D/FBI Correspondence Referral, 1949",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (1949).",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated 1949.",
+      "Document references: page, have, seen, beams, effect."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "have",
+      "seen",
+      "beams",
+      "effect",
+      "hoover",
+      "information",
+      "great"
+    ]
+  }
+}

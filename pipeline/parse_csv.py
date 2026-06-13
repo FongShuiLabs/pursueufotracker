@@ -17,6 +17,7 @@ The hand-curated scoring components are PRESERVED for files whose IDs match.
 from __future__ import annotations
 import csv
 import json
+import io
 import re
 import time
 from pathlib import Path
@@ -40,6 +41,13 @@ AGENCY_MAP = {
     "Central Intelligence Agency": "CIA",
     "Office of the Director of National Intelligence": "ODNI",
     "Department of Energy": "DOE",
+    # Added with PURSUE Release 03 (June 12 2026). The CSV now uses the short
+    # "CIA" label alongside the long form (the 18-file CIA-UAP-0XX expansion),
+    # plus two new agency strings: an IC analysis (ICA) and a cross-government
+    # correspondence file (USG).
+    "CIA": "CIA",
+    "Intelligence Community Agency": "ICA",
+    "U.S. Government": "USG",
 }
 
 TYPE_MAP = {
@@ -56,7 +64,7 @@ TYPE_MAP = {
 # Agencies that share the "intel" category (intelligence-community + DOE
 # nuclear-program records, distinct from military mission reports). New in
 # Release 02 - 5 files in this category for the May 22 disclosure.
-INTEL_AGENCIES = {"CIA", "ODNI", "DOE"}
+INTEL_AGENCIES = {"CIA", "ODNI", "DOE", "ICA"}
 
 
 def _slugify(s: str) -> str:
@@ -146,10 +154,13 @@ def run() -> None:
         print(f"  CSV not found at {CSV_PATH}")
         return
     text = CSV_PATH.read_text(encoding="utf-8-sig", errors="replace")
-    reader = csv.reader(text.splitlines())
-    rows = list(reader)
-    header = rows[0]
-    data = [r for r in rows[1:] if any(r)]
+    # Map by column NAME, not position. war.gov added a leading "Featured"
+    # column in the Drop 03 schema (2026-06-12), which shifted every positional
+    # field by one and silently corrupted the parse (every file became
+    # agency=OTHER, type=pdf). DictReader is robust to column additions and
+    # reordering. drop_check.py is the guard that surfaces such drops.
+    reader = csv.DictReader(io.StringIO(text))
+    data = [r for r in reader if any((v or "").strip() for v in r.values())]
     print(f"  CSV: {len(data)} entries")
 
     prev_by_id = _existing_manifest()
@@ -157,11 +168,26 @@ def run() -> None:
     seen_ids: set[str] = set()
 
     for row in tqdm(data, desc="parsing", unit="row"):
-        # Pad short rows
-        row = row + [""] * max(0, 14 - len(row))
-        (redaction, release_date, title, type_raw, video_pairing, pdf_pairing,
-         description, dvids_id, video_title, agency_raw, incident_date,
-         incident_location, pdf_link, modal_image) = row[:14]
+        # Read by column name (robust to the Drop 03 schema's added columns).
+        def col(*names: str) -> str:
+            for n in names:
+                if row.get(n) is not None:
+                    return (row[n] or "").strip()
+            return ""
+        redaction = col("Redaction")
+        release_date = col("Release Date")
+        title = col("Title")
+        type_raw = col("Type")
+        video_pairing = col("Video Pairing")
+        pdf_pairing = col("PDF Pairing")
+        description = col("Description Blurb", "Description")
+        dvids_id = col("DVIDS Video ID")
+        video_title = col("Video Title")
+        agency_raw = col("Agency")
+        incident_date = col("Incident Date")
+        incident_location = col("Incident Location")
+        pdf_link = col("PDF | Image Link", "PDF/Image Link", "PDF Link")
+        modal_image = col("Modal Image")
 
         type_ = _normalize_type(type_raw)
         agency = AGENCY_MAP.get(agency_raw.strip(), "OTHER")

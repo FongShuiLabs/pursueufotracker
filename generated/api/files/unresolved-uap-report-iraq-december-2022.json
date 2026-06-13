@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/unresolved-uap-report-iraq-december-2022.mp4",
   "size_bytes": 5300653,
   "sha256": "d6a177a7004837546b8e3ea12ad0e632d9c31eabca427e05ae6eb9d4e4493f47",
   "redacted": true,
-  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of ten seconds of video footage from an infrared sensor aboard a U.S. military platform in 2022. An accompanying mission report, DoW-UAP-D18, described the UAP as \"flying west to east.\"Video Description: The video depicts an area of contrast moving from the bottom left to the top right of the sensor field-of-view. At approximately six seconds, the area of contrast leaves the sensor field-of-view near the top right corner of the frame.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of ten seconds of video footage from an infrared sensor aboard a U.S. military platform in 2022. An accompanying mission report, DoW-UAP-D18, described the UAP as \"flying west to east.\"\n\nVideo Description: The video depicts an area of contrast moving from the bottom left to the top right of the sensor field-of-view. At approximately six seconds, the area of contrast leaves the sensor field-of-view near the top right corner of the frame.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-iraq-december-2022.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688809/DOD_111688809.mp4",
   "duration": 10,
   "dvids_page_url": "https://www.dvidshub.net/video/1006062/dow-uap-pr23-unresolved-uap-report-iraq-december-2022",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Iraq.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: Iraq.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

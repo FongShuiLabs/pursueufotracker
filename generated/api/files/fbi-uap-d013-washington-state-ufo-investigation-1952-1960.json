@@ -1,0 +1,103 @@
+{
+  "id": "fbi-uap-d013-washington-state-ufo-investigation-1952-1960",
+  "title": "FBI-UAP-D013, Washington State ‘UFO’ Investigation, 1952-1960",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": "July 1952-1960",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D013_WA-UFO-Investigation_1952-1960.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/fbi-uap-d013-washington-state-ufo-investigation-1952-1960.pdf",
+  "size_bytes": 27195556,
+  "sha256": "50f1e4af35a5c630f283e10be33e17935ee9e61672506571267248ed2f4583ce",
+  "redacted": false,
+  "summary": "This file details an investigation of various sightings of Unidentified Flying Objects (UFOs) in Washington state between July 1952 and August 1960. This file includes memoranda and correspondence between the Federal Bureau of Investigation and the U.S. Air Force regarding UFO sightings.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/fbi-uap-d013-washington-state-ufo-investigation-1952-1960.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Washington State, United States"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/FBI-UAP-D013_WA-UFO-Investigation_1952-1960.jpg",
+  "csv_raw_title": "FBI-UAP-D013, Washington State ‘UFO’ Investigation, 1952-1960",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (July 1952-1960) over Washington State, United States.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated July 1952-1960.",
+      "Reported location: Washington State, United States."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "docld",
+      "subject",
+      "ball",
+      "office",
+      "oocld",
+      "stated",
+      "large"
+    ]
+  }
+}

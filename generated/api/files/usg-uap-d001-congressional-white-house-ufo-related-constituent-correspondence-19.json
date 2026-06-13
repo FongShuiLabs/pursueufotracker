@@ -1,0 +1,103 @@
+{
+  "id": "usg-uap-d001-congressional-white-house-ufo-related-constituent-correspondence-19",
+  "title": "USG-UAP-D001, Congressional, White House, UFO-related Constituent Correspondence, 1998",
+  "category": "military",
+  "agency": "USG",
+  "type": "pdf",
+  "date_event": "1998",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/USG-UAP-D001_Congress-WhiteHouse-UFO-Correspondence_1998.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/usg-uap-d001-congressional-white-house-ufo-related-constituent-correspondence-19.pdf",
+  "size_bytes": 15771408,
+  "sha256": "3393d62c92d9a5ad76155535caddf39cf9e76f5f19716ebfc851ba2b86b0ae3a",
+  "redacted": true,
+  "summary": "This collection of documents, primarily from 1998, contains draft and final correspondence from the White House and the offices of members of Congress responding to constituent inquiries about Unidentified Flying Objects, or “UFOs.” These inquiries cover a diverse range of topics, including alleged UFO sightings by NASA astronauts, questions regarding the authenticity of photos collected during U.S. missions to Mars, alleged improper withholding of information by the U.S. Government, questions regarding the appropriateness of “UFO-related” governmental spending, and calls for congressional hearings regarding the nature and existence of “UFOs.” The official responses consistently state that, circa 1998, the U.S. Government is not aware of evidence supporting the existence of extraterrestrial technology, and that NASA does not actively investigate “UFOs.” The collection includes references to materials of both confirmed and unconfirmed authenticity, as provided by constituents, as well as references to historical, scientific literature addressing specific “UFO” sighting claims.",
+  "score": {
+    "value": 47,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/usg-uap-d001-congressional-white-house-ufo-related-constituent-correspondence-19.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/USG-UAP-D001_Congress-WhiteHouse-UFO-Correspondence_1998.jpg",
+  "csv_raw_title": "USG-UAP-D001, Congressional, White House, UFO-related Constituent Correspondence, 1998",
+  "audience": {
+    "tldr": "Federal record from a military encounter report documenting a UAP encounter (1998).",
+    "what_we_know": [
+      "Document originates from USG.",
+      "Encounter dated 1998.",
+      "Portions of the document are redacted."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 47/100. Top drivers: corroboration (single_witness_instrument), witness credibility (civilian_credentialed).",
+    "keywords": [
+      "nasa",
+      "space",
+      "date",
+      "page",
+      "have",
+      "ufos",
+      "apollo",
+      "astronauts"
+    ]
+  }
+}

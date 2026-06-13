@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d4-mission-report-arabian-gulf-2020.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/dow-uap-d004-mission-report-arabian-gulf-2020.pdf",
   "size_bytes": 29121,
   "sha256": "857deb5a9363aad6e7604c828574d1f44caa0128b3ee0cb5a69204cbcd95d269",
   "redacted": true,
-  "summary": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.A U.S. military operator reported observing a UAP traveling at an estimated speed of 321 knots (369 mph). The observer reported that the UAP “increased speed and changed direction towards the east.”All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "summary": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.\nA U.S. military operator reported observing a UAP traveling at an estimated speed of 321 knots (369 mph). The observer reported that the UAP “increased speed and changed direction towards the east.”\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
   "score": {
     "value": 53,
     "components": {
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/dow-uap-d004-mission-report-arabian-gulf-2020.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d4-mission-report-arabian-gulf-2020.jpg",
   "csv_raw_title": "DOW-UAP-D004, Mission Report, Arabian Gulf, 2020",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Portions of the document are redacted.",
+      "Document references: page, gentext, description, observed, poss."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Specific geographic coordinates are not disclosed.",
+      "Redacted portions may contain identifying or technical detail."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "gentext",
+      "description",
+      "observed",
+      "poss",
+      "brief",
+      "observation",
+      "precluded"
+    ]
+  }
 }

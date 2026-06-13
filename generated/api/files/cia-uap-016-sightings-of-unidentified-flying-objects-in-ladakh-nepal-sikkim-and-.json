@@ -1,0 +1,103 @@
+{
+  "id": "cia-uap-016-sightings-of-unidentified-flying-objects-in-ladakh-nepal-sikkim-and-",
+  "title": "CIA-UAP-016, Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": "1968",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-016-Sightings_of_Unidentified_Flying_Ojbects_in_Ladakh_Nepal_Sikkim_and_Bhutan.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/cia-uap-016-sightings-of-unidentified-flying-objects-in-ladakh-nepal-sikkim-and-.pdf",
+  "size_bytes": 372322,
+  "sha256": "c6c33cf9f578f24210e3d6454139f20279d025f6d25b4bc6bf3cc3d27865e7fe",
+  "redacted": false,
+  "summary": "A 1968 report about UFO sightings in Ladakh, Nepal, Sikkim and Bhutan. Seven UFO sightings are listed that took place between 19 Feb. to 25 Mar. 1968. A more redacted version of the report has been available on CIA's public website.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/cia-uap-016-sightings-of-unidentified-flying-objects-in-ladakh-nepal-sikkim-and-.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Ladakh, Nepal | Sikkim, India | Bhutam"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/CIA-UAP-016-Sightings_of_Unidentified_Flying_Ojbects_in_Ladakh_Nepal_Sikkim_and_Bhutan.jpg",
+  "csv_raw_title": "CIA-UAP-016, Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (1968) over Ladakh, Nepal | Sikkim, India | Bhutam.",
+    "what_we_know": [
+      "Document originates from CIA.",
+      "Encounter dated 1968.",
+      "Reported location: Ladakh, Nepal | Sikkim, India | Bhutam."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "south",
+      "east",
+      "date",
+      "nepal",
+      "area",
+      "direction",
+      "west"
+    ]
+  }
+}

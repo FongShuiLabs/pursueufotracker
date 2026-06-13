@@ -8,7 +8,7 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/18_100754_ general 1946-7_vol_2.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/18-100754-general-1946-7-vol-2.pdf",
   "size_bytes": 4838247,
   "sha256": "373070ab867b592e5d76cd063f50887a00b7653d2ae4b86a6d988155ecd7c993",
   "redacted": false,
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/18-100754-general-1946-7-vol-2.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,22 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/18_100754_ general 1946-7_vol_2.jpg",
   "csv_raw_title": "18_100754_ General 1946-7_Vol_2",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (12/30/47).",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 12/30/47.",
+      "Document references: page."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page"
+    ]
+  }
 }

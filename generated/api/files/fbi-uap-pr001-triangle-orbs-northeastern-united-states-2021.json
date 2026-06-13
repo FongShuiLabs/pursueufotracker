@@ -1,0 +1,97 @@
+{
+  "id": "fbi-uap-pr001-triangle-orbs-northeastern-united-states-2021",
+  "title": "FBI-UAP-PR001, “Triangle Orbs,” Northeastern United States, 2021",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "video",
+  "date_event": "November, 2021",
+  "date_released": "2026-06-12",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": "downloads/video/fbi-uap-pr001-triangle-orbs-northeastern-united-states-2021.mp4",
+  "size_bytes": 100957993,
+  "sha256": "de1c5acc0b6a3c93eb5625ee1239e169461240d9e3b10306391eb740485c54ef",
+  "redacted": false,
+  "summary": "In November 2021, at approximately 0500 local time in the northeastern United States, an  eyewitness observed a bright light source near the horizon at an estimated distance of  2,000 feet. The light source initially appeared as a single intense luminous object before resolving into multiple lights exhibiting erratic rotational motion relative to one another. The object slowly moved laterally from left to right during the encounter. The eyewitness captured the video with a hand-held iPhone 12 Pro, resulting in unintended camera movement. The location was well known to the eyewitness and is sparsely populated.  \n \nThe description above is derived from statements provided to the Federal Bureau of Investigation (FBI) by the eyewitness to the event. The FBI assesses the individual who reported this event as highly credible. The subject matter described in files FBI-UAP-D004 through FBI-UAP-D008 and depicted in the video footage FBI-UAP-PR001 through FBI-UAP-PR003 corresponds to reports originating from the same general area in the northeastern United States.",
+  "score": {
+    "value": 70,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/fbi-uap-pr001-triangle-orbs-northeastern-united-states-2021.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Northeastern United States"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2606/1010263/DOD_111764142.0000001/122x92_q95.jpg",
+  "csv_raw_title": "FBI-UAP-PR001, “Triangle Orbs,” Northeastern United States, 2021",
+  "dvids_video_id": "1010263",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2606/DOD_111764142/DOD_111764142-1920x1080-9000k.mp4",
+  "duration": 162,
+  "dvids_page_url": "https://www.dvidshub.net/video/1010263/fbi-uap-pr001-triangle-orbs-2021",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file showing footage of a UAP encounter (November, 2021) over Northeastern United States.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated November, 2021.",
+      "Reported location: Northeastern United States."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 70/100. Top drivers: sensor quality (single_sensor_military), witness credibility (federal_agent)."
+  }
+}

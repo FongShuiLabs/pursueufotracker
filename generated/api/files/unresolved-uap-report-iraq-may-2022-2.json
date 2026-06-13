@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d14-mission-report-iraq-may-2022.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/unresolved-uap-report-iraq-may-2022-2.mp4",
   "size_bytes": 12752210,
   "sha256": "af62b4e40a2eb0fd39f98093be2a6ae50271a011e7d5caca2119b26aaabc1212",
   "redacted": true,
-  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of ten seconds of video footage from an infrared sensor aboard a U.S. military platform in 2022. An accompanying mission report, DoW-UAP-D14, described the UAP as a “probable SU-27/35.\" Video Description: The video depicts two areas of contrast moving together near the center of the field-of-view throughout the runtime.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.AARO Comment: SU-27 and SU-35 are designations for military aircraft operated by the Armed Forces of the Russian Federation.",
+  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of ten seconds of video footage from an infrared sensor aboard a U.S. military platform in 2022. An accompanying mission report, DoW-UAP-D14, described the UAP as a “probable SU-27/35.\" \n\nVideo Description: The video depicts two areas of contrast moving together near the center of the field-of-view throughout the runtime.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.\n\nAARO Comment: SU-27 and SU-35 are designations for military aircraft operated by the Armed Forces of the Russian Federation.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-iraq-may-2022-2.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688762/DOD_111688762.mp4",
   "duration": 10,
   "dvids_page_url": "https://www.dvidshub.net/video/1006059/dow-uap-pr21-unresolved-uap-report-iraq-may-2022",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Iraq.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: Iraq.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

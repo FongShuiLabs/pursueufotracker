@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/255_t_763_r1b_transcripts.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/nasa-uap-d003-gemini-7-transcript-1965.pdf",
   "size_bytes": 277579,
   "sha256": "1fe6258aa15843c8b5fba5dfc7da7b1939113201ab6710a183209c942790a6e0",
   "redacted": false,
-  "summary": "Gemini 7 was the tenth crewed American spaceflight. This document is a transcript of communications between the flight crew, Astronauts James “Jim” Lovell and Frank Borman, and the Manned Flight Center (now known as Johnson Space Center) in Houston, Texas. The transcript begins with Borman’s report of a “bogey,” contemporary nomenclature for an unknown aircraft, as well as a debris field. Borman described the debris field as consisting of “very, very many […] hundreds of little particles.” He estimated the particles’ distance from the spacecraft to be four miles. Lovell described observing a “brilliant body in the sun against a black background with trillions of particles on it.”This document also includes handwritten notes documenting the encounter, annotated with the phrase “UFO Sighting by Borman” in the top right corner.",
+  "summary": "Gemini 7 was the tenth crewed American spaceflight. This document is a transcript of communications between the flight crew, Astronauts James “Jim” Lovell and Frank Borman, and the Manned Flight Center (now known as Johnson Space Center) in Houston, Texas. The transcript begins with Borman’s report of a “bogey,” contemporary nomenclature for an unknown aircraft, as well as a debris field. Borman described the debris field as consisting of “very, very many […] hundreds of little particles.” He estimated the particles’ distance from the spacecraft to be four miles. Lovell described observing a “brilliant body in the sun against a black background with trillions of particles on it.”\nThis document also includes handwritten notes documenting the encounter, annotated with the phrase “UFO Sighting by Borman” in the top right corner.",
   "score": {
     "value": 59,
     "components": {
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/nasa-uap-d003-gemini-7-transcript-1965.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/255_t_763_r1b_transcripts.jpg",
   "csv_raw_title": "NASA-UAP-D003, Gemini 7 Transcript, 1965",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "NASA mission record documenting a UAP encounter (12/5/65) over Low Earth Orbit.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 12/5/65.",
+      "Reported location: Low Earth Orbit."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 59/100. Top drivers: witness credibility (astronaut), corroboration (single_witness_instrument).",
+    "keywords": [
+      "houston",
+      "have",
+      "borman",
+      "roger",
+      "booster",
+      "particles",
+      "gemini",
+      "bogey"
+    ]
+  }
 }

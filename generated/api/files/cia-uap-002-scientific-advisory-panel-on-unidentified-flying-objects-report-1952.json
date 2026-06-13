@@ -1,0 +1,103 @@
+{
+  "id": "cia-uap-002-scientific-advisory-panel-on-unidentified-flying-objects-report-1952",
+  "title": "CIA-UAP-002, Scientific Advisory Panel on Unidentified Flying Objects, Report, 1952-1953",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": "1952-1953",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/cia-uap-002-scientific-advisory-panel-on-unidentified-flying-objects-report-1952.pdf",
+  "size_bytes": 13250859,
+  "sha256": "a56e49ed5dd5fbb00b70101762b3eb9bb6148aeb380163ece648d377dfa5e5c7",
+  "redacted": false,
+  "summary": "This file contains correspondence and reports dated 1952–1953 from the Scientific Advisory Panel on Unidentified Flying Objects, convened by the CIA’s Office of Scientific Intelligence. The panel’s primary conclusion was that “flying saucers” did not pose a direct physical threat to the national security of the United States. The panel found no evidence that these phenomena were attributable to hostile foreign artifacts or indicated a need to revise existing scientific concepts. \n\nHowever, the panel identified a significant indirect threat stemming from the public’s fascination with the subject. The panel concluded that the high volume of reports, encouraged by a \"sensationalist press,\" could overwhelm and clog vital intelligence and communication channels, potentially distracting from genuine threats. Furthermore, they warned that a “morbid national psychology” could be exploited by adversaries to incite “hysterical behavior and harmful distrust of duly constituted authority.” To mitigate these risks, the panel recommended an official policy of “debunking” to “strip the UFO subject of its mystery,” alongside a training initiative for military personnel to better recognize and filter out misidentified objects, thereby reducing communication “noise” and allowing the national security apparatus to focus on more \"legitimate defense concerns.\"",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/cia-uap-002-scientific-advisory-panel-on-unidentified-flying-objects-report-1952.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/CIA-UAP-002_Scientific-Advisory-Panel-on-Unidentified-Flying-Objects_Report_1952-1953.jpg",
+  "csv_raw_title": "CIA-UAP-002, Scientific Advisory Panel on Unidentified Flying Objects, Report, 1952-1953",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (1952-1953).",
+    "what_we_know": [
+      "Document originates from CIA.",
+      "Encounter dated 1952-1953.",
+      "Document references: page, panel, objects, intelligence, sightings."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "panel",
+      "objects",
+      "intelligence",
+      "sightings",
+      "report",
+      "have",
+      "security"
+    ]
+  }
+}

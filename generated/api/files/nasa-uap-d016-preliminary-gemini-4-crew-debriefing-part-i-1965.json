@@ -1,0 +1,103 @@
+{
+  "id": "nasa-uap-d016-preliminary-gemini-4-crew-debriefing-part-i-1965",
+  "title": "NASA-UAP-D016, Preliminary Gemini 4 Crew Debriefing, Part I, 1965",
+  "category": "nasa",
+  "agency": "NASA",
+  "type": "pdf",
+  "date_event": "6/9/65",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D016_Preliminary-Gemini-4-Crew-Debriefing_Part1_1965.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/nasa-uap-d016-preliminary-gemini-4-crew-debriefing-part-i-1965.pdf",
+  "size_bytes": 37882686,
+  "sha256": "ca596a44820b275f3e3ba41ddabd9ed8f124b68f8c3207d4c34d8afb1a48a94c",
+  "redacted": false,
+  "summary": "This document is a preliminary transcript (Part I) derived from voice recordings of the Gemini 4 flight crew debriefing taken aboard the recovery ship, USS Wasp, on June 9, 1965. Astronaut Ed White recounts seeing “sparkles” during the flight.",
+  "score": {
+    "value": 59,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/nasa-uap-d016-preliminary-gemini-4-crew-debriefing-part-i-1965.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "North Atlantic Ocean"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/NASA-UAP-D016_Preliminary-Gemini-4-Crew-Debriefing_Part1_1965.jpg",
+  "csv_raw_title": "NASA-UAP-D016, Preliminary Gemini 4 Crew Debriefing, Part I, 1965",
+  "audience": {
+    "tldr": "NASA mission record documenting a UAP encounter (6/9/65) over North Atlantic Ocean.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 6/9/65.",
+      "Reported location: North Atlantic Ocean."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 59/100. Top drivers: witness credibility (astronaut), corroboration (single_witness_instrument).",
+    "keywords": [
+      "white",
+      "mcdivitt",
+      "time",
+      "have",
+      "think",
+      "page",
+      "right",
+      "when"
+    ]
+  }
+}

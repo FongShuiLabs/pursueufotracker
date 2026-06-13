@@ -1,0 +1,103 @@
+{
+  "id": "nasa-uap-d022-gemini-9-debriefing-1966",
+  "title": "NASA-UAP-D022, Gemini 9 Debriefing, 1966",
+  "category": "nasa",
+  "agency": "NASA",
+  "type": "pdf",
+  "date_event": "June 3-6, 1966",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D022_Gemini-9-Debriefing_1966.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/nasa-uap-d022-gemini-9-debriefing-1966.pdf",
+  "size_bytes": 85906525,
+  "sha256": "971d604c8a91acb14a05b818e07f1c6530faf73845dd98f3cdbe0ede6d85c4b8",
+  "redacted": false,
+  "summary": "Gemini IX (renamed Gemini IX-A) was the seventh crewed flight of the Gemini series, launched on June 3, 1966. The mission’s primary objectives included a spacewalk and multiple scientific and medical experiments. This document, dated June 16, 1966, is a transcript of a NASA debriefing of astronauts Thomas Stafford and Eugene Cernan. Pages 2-5 of this document contain the astronauts’ accounts of their observations of “flashing lights” and “sparkles” during the mission.",
+  "score": {
+    "value": 59,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/nasa-uap-d022-gemini-9-debriefing-1966.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Low Earth Orbit"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/NASA-UAP-D022_Gemini-9-Debriefing_1966.jpg",
+  "csv_raw_title": "NASA-UAP-D022, Gemini 9 Debriefing, 1966",
+  "audience": {
+    "tldr": "NASA mission record documenting a UAP encounter (June 3-6, 1966) over Low Earth Orbit.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated June 3-6, 1966.",
+      "Reported location: Low Earth Orbit."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 59/100. Top drivers: witness credibility (astronaut), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "gemini",
+      "will",
+      "experiment",
+      "experiments",
+      "flight",
+      "have",
+      "nasa"
+    ]
+  }
+}

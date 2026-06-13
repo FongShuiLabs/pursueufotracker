@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/unresolved-uap-report-east-china-sea-2024.mp4",
   "size_bytes": 3005135,
   "sha256": "34ffb5ae5fe4f85871d41579767e4e37bc5c8cbba47fb63a40b8a4e4f39d613d",
   "redacted": true,
-  "summary": "The United States Indo-Pacific Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of nine seconds of video footage from an infrared sensor aboard a U.S. military platform in 2024. The reporter did not provide any oral or written description of the observation.Video Description:00:00-00:09: The sensor focuses on an area of contrast that resembles a football-shaped body with three radial projections: one oriented vertically, and two oriented downward at a 45-degree angle relative to the major axis of the main mass.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "The United States Indo-Pacific Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of nine seconds of video footage from an infrared sensor aboard a U.S. military platform in 2024. The reporter did not provide any oral or written description of the observation.\n\nVideo Description:\n00:00-00:09: The sensor focuses on an area of contrast that resembles a football-shaped body with three radial projections: one oriented vertically, and two oriented downward at a 45-degree angle relative to the major axis of the main mass.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-east-china-sea-2024.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689133/DOD_111689133.mp4",
   "duration": 9,
   "dvids_page_url": "https://www.dvidshub.net/video/1006106/dow-uap-pr46-unresolved-uap-report-indopacom-2024",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over East China Sea.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: East China Sea.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

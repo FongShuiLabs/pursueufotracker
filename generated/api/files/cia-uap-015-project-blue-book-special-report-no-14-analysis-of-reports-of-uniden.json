@@ -1,0 +1,102 @@
+{
+  "id": "cia-uap-015-project-blue-book-special-report-no-14-analysis-of-reports-of-uniden",
+  "title": "CIA-UAP-015, Project Blue Book Special Report No. 14 (Analysis of Reports of Unidentified Aerial Objects)",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": null,
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/cia-uap-015-project-blue-book-special-report-no-14-analysis-of-reports-of-uniden.pdf",
+  "size_bytes": 24433155,
+  "sha256": "90e05e77fc088c29758c2ddda514c0c12f317e5686ee213d348db2f9da152ee3",
+  "redacted": false,
+  "summary": "This is the USAF Project Blue Book with a CIA cover sheet stating the document is \"Official Record Copy.\" With the exception of the handwritten note on the first page, the content of this document has been available on CIA's public website.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/cia-uap-015-project-blue-book-special-report-no-14-analysis-of-reports-of-uniden.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.jpg",
+  "csv_raw_title": "CIA-UAP-015, Project Blue Book Special Report No. 14 (Analysis of Reports of Unidentified Aerial Objects)",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter.",
+    "what_we_know": [
+      "Document originates from CIA.",
+      "Document references: total, certain, doubtful, number, cent."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "total",
+      "certain",
+      "doubtful",
+      "number",
+      "cent",
+      "evaluation",
+      "sightings",
+      "object"
+    ]
+  }
+}

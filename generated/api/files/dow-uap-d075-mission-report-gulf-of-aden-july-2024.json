@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d75-mission-report-gulf-of-aden-july-2024.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/dow-uap-d075-mission-report-gulf-of-aden-july-2024.pdf",
   "size_bytes": 792150,
   "sha256": "672b79390fe6595828c71e1f3df8cb0a2290f0658c36ed724e17ea167233b771",
   "redacted": true,
-  "summary": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.A U.S. military operator reported observing one UAP on July 14, 2024. The observer reported that the UAP maintained a “straight flight path at same altitude”. The report notes that the UAP’s “speed was faster than flying speed,” and the operator assessed the object as “benign.” The operator reported following the UAP “till the distance became too far.”All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "summary": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report.\nA U.S. military operator reported observing one UAP on July 14, 2024. The observer reported that the UAP maintained a “straight flight path at same altitude”. The report notes that the UAP’s “speed was faster than flying speed,” and the operator assessed the object as “benign.” The operator reported following the UAP “till the distance became too far.”\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
   "score": {
     "value": 53,
     "components": {
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/dow-uap-d075-mission-report-gulf-of-aden-july-2024.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d75-mission-report-gulf-of-aden-july-2024.jpg",
   "csv_raw_title": "DOW-UAP-D075, Mission Report, Gulf of Aden, July 2024",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (7/14/24) over Gulf of Aden.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 7/14/24.",
+      "Reported location: Gulf of Aden."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "fvey",
+      "number",
+      "zjul",
+      "secret",
+      "uscentcom",
+      "fouo",
+      "time",
+      "station"
+    ]
+  }
 }

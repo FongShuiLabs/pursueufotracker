@@ -8,11 +8,11 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/dow-uap-pr067-multiple-spherical-uap-uso-near-sub-callsign-2022-03-25-in-and-out.mp4",
   "size_bytes": 263523726,
   "sha256": "de1005b30f8c1f70f813240404c052d5ae3fc4930ac736109ea28272e84f6010",
   "redacted": true,
-  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “Multiple Spherical UAP USO near Sub. [CALLSIGN] 2022/03/25 in and out of water,” is likely derived from an infrared sensor aboard a U.S. military platform. A user uploaded this video to a classified network in May 2024.Video Duration: 00:04:50Video Description:00:45-00:56: An area of contrast enters the field-of-view from the bottom left side of the screen and moves to the bottom right of the screen. The sensor pans to track the area of contrast. 00:57-01:10: A second area of contrast enters the field-of-view from the bottom right side of the screen. The sensor pans to keep both objects in its field-of-view, but the second object briefly leaves the field of view off the right side of the screen. The first area of contrast leaves the field-of-view off the right side of the frame, and the sensor pans to continue tracking the second object, which then appears from the middle of the left side of the frame.01:11-01:35: The sensor continues to pan to track the second area of contrast.01:36: The sensor zooms out, losing view of the second area of contrast.02:11-03:05: An area of contrast enters the field-of-view from the lower right side of the screen, moves off the left side of the screen, and the sensor pans to track it. The area of contrast reenters the field-of-view from the lower right side of the screen and the sensor continues to pan to track it.04:09-04:37: An area of contrast enters the field-of-view from the right side of the screen, crosses the field-of-view, and the sensor pans to track it.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.\n\nAARO assesses that this video, whose uploader-defined title is, “Multiple Spherical UAP USO near Sub. [CALLSIGN] 2022/03/25 in and out of water,” is likely derived from an infrared sensor aboard a U.S. military platform. A user uploaded this video to a classified network in May 2024.\n\nVideo Duration: 00:04:50\nVideo Description:\n00:45-00:56: An area of contrast enters the field-of-view from the bottom left side of the screen and moves to the bottom right of the screen. The sensor pans to track the area of contrast. \n00:57-01:10: A second area of contrast enters the field-of-view from the bottom right side of the screen. The sensor pans to keep both objects in its field-of-view, but the second object briefly leaves the field of view off the right side of the screen. The first area of contrast leaves the field-of-view off the right side of the frame, and the sensor pans to continue tracking the second object, which then appears from the middle of the left side of the frame.\n01:11-01:35: The sensor continues to pan to track the second area of contrast.\n01:36: The sensor zooms out, losing view of the second area of contrast.\n02:11-03:05: An area of contrast enters the field-of-view from the lower right side of the screen, moves off the left side of the screen, and the sensor pans to track it. The area of contrast reenters the field-of-view from the lower right side of the screen and the sensor continues to pan to track it.\n04:09-04:37: An area of contrast enters the field-of-view from the right side of the screen, crosses the field-of-view, and the sensor pans to track it.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr067-multiple-spherical-uap-uso-near-sub-callsign-2022-03-25-in-and-out.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111720696/DOD_111720696-1920x1080-9000k.mp4",
   "duration": 290,
   "dvids_page_url": "https://www.dvidshub.net/video/1007779/dow-uap-pr067-multiple-spherical-uap-uso-near-sub-callsign-2022-03-25-and-out-water",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Sensor footage available; transcript provided.",
+      "Portions of the document are redacted."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Specific geographic coordinates are not disclosed.",
+      "Redacted portions may contain identifying or technical detail."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

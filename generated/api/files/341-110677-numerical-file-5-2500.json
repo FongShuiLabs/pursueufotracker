@@ -8,7 +8,7 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/341_110677_numerical_file_5-2500.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/341-110677-numerical-file-5-2500.pdf",
   "size_bytes": 8092245,
   "sha256": "10e3ba274b83d7733c2f7fac755656cc427930b647f003b7a367b58f520cb078",
   "redacted": false,
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/341-110677-numerical-file-5-2500.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,22 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/341_110677_numerical_file_5-2500.jpg",
   "csv_raw_title": "341_110677_Numerical_File,_5-2500",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (10/14/55) over Azerbaijan.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 10/14/55.",
+      "Reported location: Azerbaijan."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page"
+    ]
+  }
 }

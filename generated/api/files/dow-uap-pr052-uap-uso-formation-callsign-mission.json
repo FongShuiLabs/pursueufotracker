@@ -8,11 +8,11 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/dow-uap-pr052-uap-uso-formation-callsign-mission.mp4",
   "size_bytes": 513739591,
   "sha256": "e67b3a3b3d863ef88cc8c4e6b73e9c9bff896506a2962956ed70f508fd8815f5",
   "redacted": true,
-  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “UAP USO Formation [CALLSIGN] (Mission),” is likely derived from an infrared sensor aboard a U.S. military platform. A user uploaded this video to a classified network in June 2024.Video Duration: 00:08:16Video Description: This media was digitally altered prior to its upload to a classified network, and is presented as received.00:00-00:05: Four areas of contrast transit the frame from the bottom third of the left side to the bottom third of the right side of the frame.00:06-00:38: The video appears to cut, refocusing on four areas of contrast. Visual elements of the sensor display enter and exit the frame.00:39-06:08: The video seems to cut multiple times, applying various contrast filters and zoom levels. Visual elements of the sensor display enter and exit the frame.06:09-06:50: The sensor zooms in on four areas of contrast.06:51-08:10: The areas of contrast become increasingly indistinct over time as the video quality degrades.08:11-08:15: Video appears to cut, or zoom out, likely cutting to an earlier portion of the video, with the areas of contrast more visible.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.\n\nAARO assesses that this video, whose uploader-defined title is, “UAP USO Formation [CALLSIGN] (Mission),” is likely derived from an infrared sensor aboard a U.S. military platform. A user uploaded this video to a classified network in June 2024.\n\nVideo Duration: 00:08:16\nVideo Description: This media was digitally altered prior to its upload to a classified network, and is presented as received.\n\n00:00-00:05: Four areas of contrast transit the frame from the bottom third of the left side to the bottom third of the right side of the frame.\n00:06-00:38: The video appears to cut, refocusing on four areas of contrast. Visual elements of the sensor display enter and exit the frame.\n00:39-06:08: The video seems to cut multiple times, applying various contrast filters and zoom levels. Visual elements of the sensor display enter and exit the frame.\n06:09-06:50: The sensor zooms in on four areas of contrast.\n06:51-08:10: The areas of contrast become increasingly indistinct over time as the video quality degrades.\n08:11-08:15: Video appears to cut, or zoom out, likely cutting to an earlier portion of the video, with the areas of contrast more visible.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr052-uap-uso-formation-callsign-mission.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111719718/DOD_111719718.mp4",
   "duration": 495,
   "dvids_page_url": "https://www.dvidshub.net/video/1007708/dow-uap-pr052-uap-uso-formation-callsign-mission",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Sensor footage available; transcript provided.",
+      "Portions of the document are redacted."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Specific geographic coordinates are not disclosed.",
+      "Redacted portions may contain identifying or technical detail."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

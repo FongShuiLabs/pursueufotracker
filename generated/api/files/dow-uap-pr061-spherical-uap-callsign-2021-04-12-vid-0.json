@@ -8,11 +8,11 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/dow-uap-pr061-spherical-uap-callsign-2021-04-12-vid-0.mp4",
   "size_bytes": 255133327,
   "sha256": "990f7bcec5ef23952c758bd7d59086ff547ee85680c64b5973dd4e7cb3bf45f7",
   "redacted": true,
-  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is “Spherical UAP [CALLSIGN] 2021/04/12 vid 0,” is likely derived from a full-motion video camera and an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in 2021. A user uploaded this video to a classified network in June 2024.Video Duration: 00:04:46Video Description:03:02-04:00: An area of contrast enters the sensor field-of-view from the upper right corner of the frame, exiting in the bottom right corner of the screen. The sensor pans to track the area of contrast, centering it within the sensor field-of-view.04:01-04:46: The sensor changes modes as the area of contrast becomes indistinct against the background.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.\n\nAARO assesses that this video, whose uploader-defined title is “Spherical UAP [CALLSIGN] 2021/04/12 vid 0,” is likely derived from a full-motion video camera and an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in 2021. A user uploaded this video to a classified network in June 2024.\n\nVideo Duration: 00:04:46\nVideo Description:\n03:02-04:00: An area of contrast enters the sensor field-of-view from the upper right corner of the frame, exiting in the bottom right corner of the screen. The sensor pans to track the area of contrast, centering it within the sensor field-of-view.\n04:01-04:46: The sensor changes modes as the area of contrast becomes indistinct against the background.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr061-spherical-uap-callsign-2021-04-12-vid-0.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111719828/DOD_111719828-1920x1080-9000k.mp4",
   "duration": 286,
   "dvids_page_url": "https://www.dvidshub.net/video/1007735/dow-uap-pr061-spherical-uap-callsign-2021-04-12-vid-0",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2021) over CENTCOM.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2021.",
+      "Reported location: CENTCOM."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

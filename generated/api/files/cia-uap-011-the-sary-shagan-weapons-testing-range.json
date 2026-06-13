@@ -1,0 +1,103 @@
+{
+  "id": "cia-uap-011-the-sary-shagan-weapons-testing-range",
+  "title": "CIA-UAP-011, The Sary Shagan Weapons Testing Range",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": "December, 1973",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-011-The_Sary_Shagan_Weapons_Testing_Range.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/cia-uap-011-the-sary-shagan-weapons-testing-range.pdf",
+  "size_bytes": 396941,
+  "sha256": "b5a4f68efde9027964d44f4b6f1d0c83a57d44a842c3030f2fd8a58e5f115baf",
+  "redacted": false,
+  "summary": "This CIA Intelligence Information Report from December 1973 provides information on the Soviet Sary Shagan Weapons Testing Range, including details about its facilities, weapons systems (System-75 SA-2 and System-300/Aldan warheads), rumored laser weapon research, and unidentified aerial phenomenon observed at the site. A more redacted version of this report has been available on CIA's public website.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/cia-uap-011-the-sary-shagan-weapons-testing-range.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "USSR"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/CIA-UAP-011-The_Sary_Shagan_Weapons_Testing_Range.jpg",
+  "csv_raw_title": "CIA-UAP-011, The Sary Shagan Weapons Testing Range",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (December, 1973) over USSR.",
+    "what_we_know": [
+      "Document originates from CIA.",
+      "Encounter dated December, 1973.",
+      "Reported location: USSR."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "report",
+      "page",
+      "information",
+      "sary",
+      "weapons",
+      "testing",
+      "range",
+      "approved"
+    ]
+  }
+}

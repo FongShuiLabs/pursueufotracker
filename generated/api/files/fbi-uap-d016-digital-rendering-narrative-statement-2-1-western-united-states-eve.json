@@ -1,0 +1,93 @@
+{
+  "id": "fbi-uap-d016-digital-rendering-narrative-statement-2-1-western-united-states-eve",
+  "title": "FBI-UAP-D016, Digital Rendering, Narrative Statement 2-1, Western United States Event, 2023",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "image",
+  "date_event": "October, 2023",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D016_Digital-Rendering_Incident-2-1_Western-US-Event_2023.jpg",
+  "pending_verification": false,
+  "local_path": "downloads/image/fbi-uap-d016-digital-rendering-narrative-statement-2-1-western-united-states-eve.jpg",
+  "size_bytes": 515380,
+  "sha256": "b1e7c92ade168f3fee8e9a29bd44a4adb9101f00660510ca97b03e2c89d17b79",
+  "redacted": false,
+  "summary": "This image is an artistic interpretation of a reported incident near a sensitive national security site in the western United States involving unidentified anomalous phenomena (UAP) over a period of two days in October 2023. This image is based upon a first-hand description provided by a federal law enforcement special agent, as described in DOW-UAP-D080. The Federal Bureau of Investigation prepared this digital rendering at the request of the Department of War in 2026.",
+  "score": {
+    "value": 64,
+    "components": {
+      "sensor_quality": "photographic",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "photographic",
+        "value": 55,
+        "weight": 0.25,
+        "contribution": 13.75
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Western United States"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/FBI-UAP-D016_Digital-Rendering_Incident-2-1_Western-US-Event_2023.jpg",
+  "csv_raw_title": "FBI-UAP-D016, Digital Rendering, Narrative Statement 2-1, Western United States Event, 2023",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file depicting a UAP encounter (October, 2023) over Western United States.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated October, 2023.",
+      "Reported location: Western United States."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 64/100. Top drivers: witness credibility (federal_agent), sensor quality (photographic)."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "dow-uap-d078-notional-map-western-united-states-event",
+  "title": "DOW-UAP-D078, Notional Map: Western United States Event",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "October, 2023",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D078_Notional-Map_Western-United-States-Event.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d078-notional-map-western-united-states-event.pdf",
+  "size_bytes": 585109,
+  "sha256": "284e470d213a798271fd7ade00d345cd17d4d5fca154db1e3ca5a04f34cc3bbe",
+  "redacted": false,
+  "summary": "This image is a notional representation of four incidents reportedly involving unidentified anomalous phenomena in the western United States, as seen from above. This illustration depicts multiple incidents reported by U.S. federal law enforcement special agents over a period of several days in October 2023.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d078-notional-map-western-united-states-event.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Westen United States"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/DOW-UAP-D078_Notional-Map_Western-United-States-Event.jpg",
+  "csv_raw_title": "DOW-UAP-D078, Notional Map: Western United States Event",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (October, 2023) over Westen United States.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated October, 2023.",
+      "Reported location: Westen United States."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "reported",
+      "agents",
+      "kite",
+      "phenomena",
+      "observing",
+      "notional",
+      "incidents",
+      "incident"
+    ]
+  }
+}

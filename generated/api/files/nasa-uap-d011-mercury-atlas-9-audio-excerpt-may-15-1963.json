@@ -8,7 +8,7 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963.mp4",
   "size_bytes": 416226493,
   "sha256": "dca41b73f9707dd411d03b767a35b939f946afa3641246f548a506f629ffa2da",
   "redacted": false,
@@ -65,17 +65,35 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
-    "thumbnail_path": null
+    "transcript_path": "extracted/transcripts/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963.vtt",
+    "thumbnail_path": "extracted/thumbnails/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963.jpg"
   },
   "geo": {
     "lat": null,
     "lng": null,
     "place": "Low Earth Orbit"
   },
-  "thumbnail_url": null,
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1007876/DOD_111721737.0000001/122x92_q95.jpg",
   "csv_raw_title": "NASA-UAP-D011, Mercury Atlas 9 Audio Excerpt, May 15, 1963",
-  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721737/DOD_111721737.mp4",
   "dvids_video_id": "1007876",
-  "byte_verified_at": "2026-06-10"
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111721737/DOD_111721737.mp4",
+  "caption_vtt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007876&format=webvtt&api_key=key-68bb60d16b35e",
+  "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007876&format=srt&api_key=key-68bb60d16b35e",
+  "duration": 494,
+  "dvids_page_url": "https://www.dvidshub.net/video/1007876/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963",
+  "audience": {
+    "tldr": "NASA mission record showing footage of a UAP encounter (5/15/63) over Low Earth Orbit.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 5/15/63.",
+      "Reported location: Low Earth Orbit."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 59/100. Top drivers: witness credibility (astronaut), corroboration (single_witness_instrument)."
+  }
 }

@@ -1,0 +1,103 @@
+{
+  "id": "cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin",
+  "title": "CIA-UAP-017, Placement on High Alert Due to Perceived Aggressive Foreign Posturing",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": "July, 2008",
+  "date_released": "2026-06-12",
+  "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-017_Placement_on_High_Alert_Due_to_Perceived_Aggressive_Foreign_Posturing.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin.pdf",
+  "size_bytes": 309146,
+  "sha256": "4332ebe48c3fcb1ef53e9186d90f38142e8465f553388a5d8dff277c87a92b16",
+  "redacted": false,
+  "summary": "A never before released July 2008 report on a UFO sighting at the Harare International Airport. Individuals debated if the sighting was an advanced reconnaissance device of a foreign government or of extraterrestrial origins.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Harare, Zimbabwe"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/CIA-UAP-017_Placement_on_High_Alert_Due_to_Perceived_Aggressive_Foreign_Posturing.jpg",
+  "csv_raw_title": "CIA-UAP-017, Placement on High Alert Due to Perceived Aggressive Foreign Posturing",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (July, 2008) over Harare, Zimbabwe.",
+    "what_we_know": [
+      "Document originates from CIA.",
+      "Encounter dated July, 2008.",
+      "Reported location: Harare, Zimbabwe."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "washington",
+      "object",
+      "trident",
+      "intel",
+      "july",
+      "page",
+      "https",
+      "documentview"
+    ]
+  }
+}

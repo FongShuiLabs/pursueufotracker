@@ -8,11 +8,11 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/dow-uap-pr092-08-aug-2020-callsign-callsign-uap-observation.mp4",
   "size_bytes": 129915480,
   "sha256": "c3ebfca1e13edbd586790ff2f02612c633a375e07e0edc7424a925bcb6079bb3",
   "redacted": true,
-  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “08 AUG 2020 [CALLSIGN] [CALLSIGN] UAP observation,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in 2020. A user uploaded this video to a classified network in August 2020.Video Duration: 00:04:52Video Description:00:00-00:47: No content.00:48-00:51: An area of contrast enters the field-of-view from the lower right side of the screen.00:52-00:53: The area of contrast exits the field-of-view from the lower left side of the screen.00:54-01:09: The sensor pans to track the area of contrast and hold it within the center of the screen.01:10-01:34: The sensor zooms in on the area of contrast.01:35-01:37: The sensor zooms in further. The area of contrast remains visible at the top of the screen.01:38-03:45: The sensor zooms out to track the area of contrast.03:46-03:50: The sensor zooms in. The area of contrast remains visible at the top of the screen.03:51-04:07: The sensor zooms out to track the area of contrast.04:08-04:25: The sensor changes visual settings, continuing to track the area of contrast.04:26-04:52: The sensor zooms out and in several times.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.\n\nAARO assesses that this video, whose uploader-defined title is, “08 AUG 2020 [CALLSIGN] [CALLSIGN] UAP observation,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility in 2020. A user uploaded this video to a classified network in August 2020.\n\nVideo Duration: 00:04:52\nVideo Description:\n00:00-00:47: No content.\n00:48-00:51: An area of contrast enters the field-of-view from the lower right side of the screen.\n00:52-00:53: The area of contrast exits the field-of-view from the lower left side of the screen.\n00:54-01:09: The sensor pans to track the area of contrast and hold it within the center of the screen.\n01:10-01:34: The sensor zooms in on the area of contrast.\n01:35-01:37: The sensor zooms in further. The area of contrast remains visible at the top of the screen.\n01:38-03:45: The sensor zooms out to track the area of contrast.\n03:46-03:50: The sensor zooms in. The area of contrast remains visible at the top of the screen.\n03:51-04:07: The sensor zooms out to track the area of contrast.\n04:08-04:25: The sensor changes visual settings, continuing to track the area of contrast.\n04:26-04:52: The sensor zooms out and in several times.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr092-08-aug-2020-callsign-callsign-uap-observation.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111719736/DOD_111719736-1920x1080-9000k.mp4",
   "duration": 292,
   "dvids_page_url": "https://www.dvidshub.net/video/1007715/dow-uap-pr092-08-aug-2020-callsign-callsign-uap-observation",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2020) over CENTCOM.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2020.",
+      "Reported location: CENTCOM."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

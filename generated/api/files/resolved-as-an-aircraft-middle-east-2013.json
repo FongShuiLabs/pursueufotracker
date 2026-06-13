@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/resolved-as-an-aircraft-middle-east-2013.mp4",
   "size_bytes": 30707537,
   "sha256": "bd3f5269c3f123b90db76c9496f8ddbb145184c66b0c11cd3cfd9e54f5b683b6",
   "redacted": true,
-  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of one minute and 46 seconds of video footage from an infrared sensor aboard a U.S. military platform in 2013. The reporter did not provide any oral or written description of the observation.Video Description: This video depicts an area of contrast resembling an eight-pointed star with arms of alternating length.00:10: The sensor field-of-view narrows to zoom in on the area of contrast.00:11-00:29: The area of contrast moves within the sensor field-of-view, followed by a visible trail.00:30: The area of contrast leaves the sensor field-of-view at the bottom right of the screen.00:35-01:44: Following an apparent cut, the area of contrast generally remains within the sensor field-of-view before exiting the frame from the top left quarter of the screen.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of one minute and 46 seconds of video footage from an infrared sensor aboard a U.S. military platform in 2013. The reporter did not provide any oral or written description of the observation.\n\nVideo Description: This video depicts an area of contrast resembling an eight-pointed star with arms of alternating length.\n00:10: The sensor field-of-view narrows to zoom in on the area of contrast.\n00:11-00:29: The area of contrast moves within the sensor field-of-view, followed by a visible trail.\n00:30: The area of contrast leaves the sensor field-of-view at the bottom right of the screen.\n00:35-01:44: Following an apparent cut, the area of contrast generally remains within the sensor field-of-view before exiting the frame from the top left quarter of the screen.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/resolved-as-an-aircraft-middle-east-2013.jpg"
   },
   "geo": {
     "lat": null,
@@ -74,10 +74,24 @@
     "place": "Middle East"
   },
   "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006088/DOD_111689051.0000001/122x92_q95.jpg",
-  "csv_raw_title": "DOW-UAP-PR038, Unresolved UAP Report, Middle East, 2013 ",
+  "csv_raw_title": "DOW-UAP-PR038, Unresolved UAP Report, Middle East, 2013",
   "dvids_video_id": "1006088",
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689051/DOD_111689051.mp4",
   "duration": 106,
   "dvids_page_url": "https://www.dvidshub.net/video/1006088/dow-uap-pr38-unresolved-uap-report-middle-east-2013",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Middle East.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: Middle East.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

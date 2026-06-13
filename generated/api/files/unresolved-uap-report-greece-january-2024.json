@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/unresolved-uap-report-greece-january-2024.mp4",
   "size_bytes": 15992674,
   "sha256": "9aa868828e0b7be178604162a8abc1e11f0ee6e27d9c48eabbee4d032a50fd72",
   "redacted": true,
-  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of one minute and five seconds of video footage captured via multiple sensor modalities aboard a U.S. military platform in 2024. An accompanying mission report, DoW-UAP-D7, described the UAP as “diamond-shaped” and moving at approximately 434 knots. The observer also reported that the UAP was only detectable via short-wave infrared (SWIR) sensor.Video Description: The screen is split into two viewing areas for the first ten seconds of the video, with the right side displaying electro-optical footage and the left side displaying SWIR footage.00:04: An area of contrast becomes distinguishable against the background in the center of the right frame.00:10: The display shifts to a full-screen view of the SWIR feed to better focus on the area of contrast.00:55: The area of contrast remains generally within the center of the sensor field-of-view. The area of contrast visually resembles an inverted teardrop with a vertically linear trailing mass suspended below.00:56: The operator switches the sensor modality to visible spectrum, losing the subject against the background.00:57-01:05: The operator switches the sensor modality to SWIR (Black-Hot) but does not reacquire the area of contrast.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of one minute and five seconds of video footage captured via multiple sensor modalities aboard a U.S. military platform in 2024. An accompanying mission report, DoW-UAP-D7, described the UAP as “diamond-shaped” and moving at approximately 434 knots. The observer also reported that the UAP was only detectable via short-wave infrared (SWIR) sensor.\n\nVideo Description: The screen is split into two viewing areas for the first ten seconds of the video, with the right side displaying electro-optical footage and the left side displaying SWIR footage.\n00:04: An area of contrast becomes distinguishable against the background in the center of the right frame.\n00:10: The display shifts to a full-screen view of the SWIR feed to better focus on the area of contrast.\n00:55: The area of contrast remains generally within the center of the sensor field-of-view. The area of contrast visually resembles an inverted teardrop with a vertically linear trailing mass suspended below.\n00:56: The operator switches the sensor modality to visible spectrum, losing the subject against the background.\n00:57-01:05: The operator switches the sensor modality to SWIR (Black-Hot) but does not reacquire the area of contrast.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": null,
     "transcript_path": null,
-    "thumbnail_path": null
+    "thumbnail_path": "extracted/thumbnails/unresolved-uap-report-greece-january-2024.jpg"
   },
   "geo": {
     "lat": null,
@@ -79,5 +79,19 @@
   "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688954/DOD_111688954.mp4",
   "duration": 66,
   "dvids_page_url": "https://www.dvidshub.net/video/1006073/dow-uap-pr28-unresolved-uap-report-greece-january-2024",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Greece.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: Greece.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

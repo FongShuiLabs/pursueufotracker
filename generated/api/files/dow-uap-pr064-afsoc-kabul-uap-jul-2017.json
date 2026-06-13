@@ -8,11 +8,11 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/dow-uap-pr064-afsoc-kabul-uap-jul-2017.mp4",
   "size_bytes": 13357256,
   "sha256": "32ff1d5068550bc701a95554dc52f7a1c291d90cc95cca5e91cd43b0b0751bb6",
   "redacted": true,
-  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “AFSOC Kabul UAP Jul 2017,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility. A user uploaded this video to a classified network in June 2024.Video Duration: 00:00:17Video Description:00:00-00:13: No content.00:14-00:15: An area of contrast moves into the sensor field-of-view from the left edge and moves to the right edge out of the field-of-view.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.\n\nAARO assesses that this video, whose uploader-defined title is, “AFSOC Kabul UAP Jul 2017,” is likely derived from an infrared sensor aboard a U.S. military platform operating within the United States Central Command area of responsibility. A user uploaded this video to a classified network in June 2024.\n\nVideo Duration: 00:00:17\nVideo Description:\n00:00-00:13: No content.\n00:14-00:15: An area of contrast moves into the sensor field-of-view from the left edge and moves to the right edge out of the field-of-view.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -65,8 +65,8 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
-    "thumbnail_path": null
+    "transcript_path": "extracted/transcripts/dow-uap-pr064-afsoc-kabul-uap-jul-2017.vtt",
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr064-afsoc-kabul-uap-jul-2017.jpg"
   },
   "geo": {
     "lat": null,
@@ -81,5 +81,19 @@
   "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007741&format=srt&api_key=key-68bb60d16b35e",
   "duration": 17,
   "dvids_page_url": "https://www.dvidshub.net/video/1007741/dow-uap-pr064-afsoc-kabul-uap-jul-2017",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over CENTCOM.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Reported location: CENTCOM.",
+      "Sensor footage available; transcript provided."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

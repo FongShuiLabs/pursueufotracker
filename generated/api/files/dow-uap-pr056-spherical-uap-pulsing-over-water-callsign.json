@@ -8,11 +8,11 @@
   "date_released": "2026-05-22",
   "source_url": null,
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/video/dow-uap-pr056-spherical-uap-pulsing-over-water-callsign.mp4",
   "size_bytes": 219254727,
   "sha256": "8b06511eb8e2e97536f00cc919a3a0e446c0b51f7d0b08c9e18e2dbdb6eb6bf0",
   "redacted": true,
-  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.AARO assesses that this video, whose uploader-defined title is, “Spherical UAP pulsing over water [CALLSIGN],” is likely derived from an infrared sensor aboard a U.S. military platform. A user uploaded this video to a classified network in June 2024.Video Duration: 00:03:32Video Description: This media was digitally altered prior to its upload to a classified network, and is presented as received.00:01-0:47: The video features an area of contrast generally within the center of the frame.00:48-00:52: The sensor briefly switches contrast modes, with the area of contrast remaining generally within the center of the frame.00:53-03:32: The sensor returns to its original contrast mode, with the area of contrast remaining generally within the center of the frame.This video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "summary": "On March 6, 2026, eight members of the U.S. House of Representatives requested access to 51 potentially UAP-related records allegedly held by the Department of War and the Intelligence Community. The All-domain Anomaly Resolution Office (AARO) identified a collection of responsive materials held on a classified network. Many of these materials lack a substantiated chain-of-custody.\n\nAARO assesses that this video, whose uploader-defined title is, “Spherical UAP pulsing over water [CALLSIGN],” is likely derived from an infrared sensor aboard a U.S. military platform. A user uploaded this video to a classified network in June 2024.\n\nVideo Duration: 00:03:32\nVideo Description: This media was digitally altered prior to its upload to a classified network, and is presented as received.\n\n00:01-0:47: The video features an area of contrast generally within the center of the frame.\n00:48-00:52: The sensor briefly switches contrast modes, with the area of contrast remaining generally within the center of the frame.\n00:53-03:32: The sensor returns to its original contrast mode, with the area of contrast remaining generally within the center of the frame.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
     "value": 66,
     "components": {
@@ -65,8 +65,8 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
-    "thumbnail_path": null
+    "transcript_path": "extracted/transcripts/dow-uap-pr056-spherical-uap-pulsing-over-water-callsign.vtt",
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr056-spherical-uap-pulsing-over-water-callsign.jpg"
   },
   "geo": {
     "lat": null,
@@ -81,5 +81,19 @@
   "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007718&format=srt&api_key=key-68bb60d16b35e",
   "duration": 212,
   "dvids_page_url": "https://www.dvidshub.net/video/1007718/dow-uap-pr056-spherical-uap-pulsing-over-water-callsign",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Sensor footage available; transcript provided.",
+      "Portions of the document are redacted."
+    ],
+    "what_we_dont": [
+      "Exact date of the encounter is not specified in the released file.",
+      "Specific geographic coordinates are not disclosed.",
+      "Redacted portions may contain identifying or technical detail."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
 }

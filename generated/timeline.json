@@ -126,13 +126,13 @@
     "url": "/files/dow-uap-d023-mission-report-united-arab-emirates-october-2023"
   },
   {
-    "id": "dow-uap-d052-email-correspondance-na-august-2024",
-    "title": "DOW-UAP-D052, Email Correspondance, NA, August 2024",
+    "id": "dow-uap-d052-email-correspondence-na-august-2024",
+    "title": "DOW-UAP-D052, Email Correspondence, NA, August 2024",
     "date": "10/31/24",
     "category": "military",
     "agency": "DoD",
     "score": 53,
-    "url": "/files/dow-uap-d052-email-correspondance-na-august-2024"
+    "url": "/files/dow-uap-d052-email-correspondence-na-august-2024"
   },
   {
     "id": "dow-uap-d055-mission-report-syria-november-2016",
@@ -252,13 +252,103 @@
     "url": "/files/dow-uap-d017-uap-reported-at-sandia-base-1948-1950"
   },
   {
-    "id": "nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969",
-    "title": "NASA-UAP-D008, Apollo 12 Medical Debriefing - Tape 12, 1969",
-    "date": "1969",
-    "category": "apollo",
+    "id": "fbi-uap-d011-d-fbi-correspondence-referral-1949",
+    "title": "FBI-UAP-D011, D/FBI Correspondence Referral, 1949",
+    "date": "1949",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 58,
+    "url": "/files/fbi-uap-d011-d-fbi-correspondence-referral-1949"
+  },
+  {
+    "id": "cia-uap-005-german-scientist-s-article-on-flying-discs",
+    "title": "CIA-UAP-005, German Scientist's Article on 'Flying Discs'",
+    "date": "1950",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-005-german-scientist-s-article-on-flying-discs"
+  },
+  {
+    "id": "cia-uap-002-scientific-advisory-panel-on-unidentified-flying-objects-report-1952",
+    "title": "CIA-UAP-002, Scientific Advisory Panel on Unidentified Flying Objects, Report, 1952-1953",
+    "date": "1952-1953",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-002-scientific-advisory-panel-on-unidentified-flying-objects-report-1952"
+  },
+  {
+    "id": "dow-uap-d085-transmission-of-cia-scientific-advisory-panel-rept-1953",
+    "title": "DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953",
+    "date": "1953",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d085-transmission-of-cia-scientific-advisory-panel-rept-1953"
+  },
+  {
+    "id": "cia-uap-003-the-central-intelligence-agency-and-overhead-reconnaissance-the-u-2-",
+    "title": "CIA-UAP-003, The Central Intelligence Agency and Overhead Reconnaissance; The U-2 and OXCART Programs, 1954-1974",
+    "date": "1954-1974",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-003-the-central-intelligence-agency-and-overhead-reconnaissance-the-u-2-"
+  },
+  {
+    "id": "cia-uap-018-report-of-unusual-flying-object-sightings-and-attendant-scientific-a",
+    "title": "CIA-UAP-018, Report of Unusual Flying Object Sightings and Attendant Scientific Activity",
+    "date": "1955",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-018-report-of-unusual-flying-object-sightings-and-attendant-scientific-a"
+  },
+  {
+    "id": "cia-uap-013-report-of-unusual-flying-object-sightings-and-attendant-scientific-a",
+    "title": "CIA-UAP-013, Report of Unusual Flying Object Sightings and Attendant Scientific Activity",
+    "date": "1956",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-013-report-of-unusual-flying-object-sightings-and-attendant-scientific-a"
+  },
+  {
+    "id": "cia-uap-009-unknown-flying-objects-observed-over-budapest",
+    "title": "CIA-UAP-009, Unknown Flying Objects Observed Over Budapest",
+    "date": "1957",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-009-unknown-flying-objects-observed-over-budapest"
+  },
+  {
+    "id": "cia-uap-004-case-17708-closed-and-dr-leon-davidson",
+    "title": "CIA-UAP-004, CASE 17708 (CLOSED) and DR. Leon Davidson",
+    "date": "1958",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-004-case-17708-closed-and-dr-leon-davidson"
+  },
+  {
+    "id": "nasa-uap-d015-astronaut-scientific-debriefings-1962-1963",
+    "title": "NASA-UAP-D015, Astronaut Scientific Debriefings, 1962-1963",
+    "date": "1962-1963",
+    "category": "nasa",
     "agency": "NASA",
     "score": 59,
-    "url": "/files/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969"
+    "url": "/files/nasa-uap-d015-astronaut-scientific-debriefings-1962-1963"
+  },
+  {
+    "id": "cia-uap-016-sightings-of-unidentified-flying-objects-in-ladakh-nepal-sikkim-and-",
+    "title": "CIA-UAP-016, Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan",
+    "date": "1968",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-016-sightings-of-unidentified-flying-objects-in-ladakh-nepal-sikkim-and-"
   },
   {
     "id": "nasa-uap-d001-apollo-12-transcript-1969",
@@ -277,6 +367,15 @@
     "agency": "NASA",
     "score": 59,
     "url": "/files/nasa-uap-d004-apollo-11-technical-crew-debriefing-1969"
+  },
+  {
+    "id": "nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969",
+    "title": "NASA-UAP-D008, Apollo 12 Medical Debriefing - Tape 12, 1969",
+    "date": "1969",
+    "category": "apollo",
+    "agency": "NASA",
+    "score": 59,
+    "url": "/files/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969"
   },
   {
     "id": "nasa-uap-vm001-apollo-12-1969",
@@ -333,6 +432,24 @@
     "url": "/files/doe-uap-d002-james-tuck-correspondence-1970s"
   },
   {
+    "id": "cia-uap-019-australian-dept-of-defense-scientific-and-intel-aspects-of-the-ufo-p",
+    "title": "CIA-UAP-019, Australian Dept of Defense Scientific and Intel Aspects of the UFO Problem",
+    "date": "1971",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-019-australian-dept-of-defense-scientific-and-intel-aspects-of-the-ufo-p"
+  },
+  {
+    "id": "cia-uap-008-speculative-paper-by-n-kardashev-and-a-sakharov-on-charged-mass-in-s",
+    "title": "CIA-UAP-008, Speculative Paper By N Kardashev and A Sakharov on Charged Mass in Space at Conference on Origins Of Life, Armenia, 6-8 September 1971/Low Scientific Level Of Other Soviet Papers",
+    "date": "1972",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-008-speculative-paper-by-n-kardashev-and-a-sakharov-on-charged-mass-in-s"
+  },
+  {
     "id": "nasa-uap-d002-apollo-17-transcript-1972",
     "title": "NASA-UAP-D002, Apollo 17 Transcript, 1972",
     "date": "1972",
@@ -369,13 +486,22 @@
     "url": "/files/nasa-uap-d006-apollo-17-technical-crew-debriefing-1973"
   },
   {
-    "id": "nasa-uap-d007-skylab-techincal-crew-debriefing-1973",
-    "title": "NASA-UAP-D007, Skylab Techincal Crew Debriefing 1973",
+    "id": "nasa-uap-d007-skylab-technical-crew-debriefing-1973",
+    "title": "NASA-UAP-D007, Skylab Technical Crew Debriefing 1973",
     "date": "1973",
     "category": "nasa",
     "agency": "NASA",
     "score": 59,
-    "url": "/files/nasa-uap-d007-skylab-techincal-crew-debriefing-1973"
+    "url": "/files/nasa-uap-d007-skylab-technical-crew-debriefing-1973"
+  },
+  {
+    "id": "usg-uap-d001-congressional-white-house-ufo-related-constituent-correspondence-19",
+    "title": "USG-UAP-D001, Congressional, White House, UFO-related Constituent Correspondence, 1998",
+    "date": "1998",
+    "category": "military",
+    "agency": "USG",
+    "score": 47,
+    "url": "/files/usg-uap-d001-congressional-white-house-ufo-related-constituent-correspondence-19"
   },
   {
     "id": "dow-uap-d019-mission-report-syria-february-21-2023",
@@ -666,6 +792,33 @@
     "url": "/files/dow-uap-pr076-03-january-2021-callsign-mission-observes-uap"
   },
   {
+    "id": "fbi-uap-d002-fd-1057-unresolved-uap-report-colorado-springs-2022",
+    "title": "FBI-UAP-D002, FD-1057, Unresolved UAP Report, Colorado Springs, 2022",
+    "date": "2022",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d002-fd-1057-unresolved-uap-report-colorado-springs-2022"
+  },
+  {
+    "id": "fbi-uap-d003-digital-rendering-unresolved-uap-report-colorado-springs-2022",
+    "title": "FBI-UAP-D003, Digital Rendering, Unresolved UAP Report, Colorado Springs, 2022",
+    "date": "2022",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 58,
+    "url": "/files/fbi-uap-d003-digital-rendering-unresolved-uap-report-colorado-springs-2022"
+  },
+  {
+    "id": "ica-uap-d001-analysis-colorado-springs-uap-incident-2022",
+    "title": "ICA-UAP-D001, Analysis: Colorado Springs UAP Incident, 2022",
+    "date": "2022",
+    "category": "intel",
+    "agency": "ICA",
+    "score": 47,
+    "url": "/files/ica-uap-d001-analysis-colorado-springs-uap-incident-2022"
+  },
+  {
     "id": "dow-uap-pr050-4-uap-formation-iran-26-aug-2022-over-water-callsign",
     "title": "DOW-UAP-PR050, \"4 UAP Formation Iran 26 Aug 2022 over water [CALLSIGN]\"",
     "date": "2022",
@@ -675,13 +828,13 @@
     "url": "/files/dow-uap-pr050-4-uap-formation-iran-26-aug-2022-over-water-callsign"
   },
   {
-    "id": "dow-uap-pr053-cigar-shaped-or-fast-sherical-uap-clip-15-oct-22",
-    "title": "DOW-UAP-PR053, \"Cigar Shaped or Fast Sherical UAP clip 15 OCT 22\"",
+    "id": "dow-uap-pr053-cigar-shaped-or-fast-spherical-uap-clip-15-oct-22",
+    "title": "DOW-UAP-PR053, \"Cigar Shaped or Fast Spherical UAP clip 15 OCT 22\"",
     "date": "2022",
     "category": "military",
     "agency": "DoD",
     "score": 66,
-    "url": "/files/dow-uap-pr053-cigar-shaped-or-fast-sherical-uap-clip-15-oct-22"
+    "url": "/files/dow-uap-pr053-cigar-shaped-or-fast-spherical-uap-clip-15-oct-22"
   },
   {
     "id": "dow-uap-pr054-spherical-uap-erratic-movement-callsign-mission-2022",
@@ -718,6 +871,15 @@
     "agency": "DoD",
     "score": 66,
     "url": "/files/dow-uap-pr074-callsign-mission-hd-20220613"
+  },
+  {
+    "id": "dow-uap-d077-aaro-unresolved-case-analysis-update-western-united-states-event",
+    "title": "DOW-UAP-D077, AARO Unresolved Case Analysis Update: Western United States Event",
+    "date": "2023",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d077-aaro-unresolved-case-analysis-update-western-united-states-event"
   },
   {
     "id": "dow-uap-pr057a-spherical-uap-in-clouds",
@@ -808,6 +970,24 @@
     "agency": "ODNI",
     "score": 66,
     "url": "/files/odni-uap-d001-usper-narrative-senior-usic-official"
+  },
+  {
+    "id": "fbi-uap-d009-fd-302-67-northeastern-orb-sighting-2026",
+    "title": "FBI-UAP-D009, FD-302-67, “Northeastern Orb Sighting,” 2026",
+    "date": "2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d009-fd-302-67-northeastern-orb-sighting-2026"
+  },
+  {
+    "id": "fbi-uap-d010-fd-302-71-northeastern-orb-sighting-2026",
+    "title": "FBI-UAP-D010, FD-302-71, “Northeastern Orb Sighting,” 2026",
+    "date": "2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d010-fd-302-71-northeastern-orb-sighting-2026"
   },
   {
     "id": "255-413270-ufo-s-and-defense-what-should-we-prepare-for",
@@ -1395,6 +1575,69 @@
     "url": "/files/dow-uap-pr098-ufos-in-formation-over-persian-gulf"
   },
   {
+    "id": "dow-uap-d084-us-army-flying-saucer-study-1949",
+    "title": "DOW-UAP-D084, US Army-Flying-Saucer-Study_1949",
+    "date": "2026-06-12",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d084-us-army-flying-saucer-study-1949"
+  },
+  {
+    "id": "cia-uap-015-project-blue-book-special-report-no-14-analysis-of-reports-of-uniden",
+    "title": "CIA-UAP-015, Project Blue Book Special Report No. 14 (Analysis of Reports of Unidentified Aerial Objects)",
+    "date": "2026-06-12",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-015-project-blue-book-special-report-no-14-analysis-of-reports-of-uniden"
+  },
+  {
+    "id": "dow-uap-d086-usnavy-report-of-flying-discs-1948",
+    "title": "DOW-UAP-D086, USNavy-Report-of-Flying-Discs_1948",
+    "date": "2026-06-12",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d086-usnavy-report-of-flying-discs-1948"
+  },
+  {
+    "id": "dow-uap-d087-u-s-air-force-analysis-of-flying-objects-in-the-united-states-1-100",
+    "title": "DOW-UAP-D087, U.S. Air Force Analysis of Flying Objects in the United States, 1-100",
+    "date": "2026-06-12",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d087-u-s-air-force-analysis-of-flying-objects-in-the-united-states-1-100"
+  },
+  {
+    "id": "dow-uap-d088-u-s-air-force-analysis-of-flying-objects-in-the-united-states-101-1",
+    "title": "DOW-UAP-D088, U.S. Air Force Analysis of Flying Objects in the United States, 101-172",
+    "date": "2026-06-12",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d088-u-s-air-force-analysis-of-flying-objects-in-the-united-states-101-1"
+  },
+  {
+    "id": "nasa-uap-d024-apollo-16-scientific-debriefing",
+    "title": "NASA-UAP-D024, “Apollo 16 Scientific Debriefing”",
+    "date": "2026-06-12",
+    "category": "apollo",
+    "agency": "NASA",
+    "score": 72,
+    "url": "/files/nasa-uap-d024-apollo-16-scientific-debriefing"
+  },
+  {
+    "id": "nasa-uap-d025-apollo-16-scientific-debriefing",
+    "title": "NASA-UAP-D025, “Apollo 16 Scientific Debriefing”",
+    "date": "2026-06-12",
+    "category": "apollo",
+    "agency": "NASA",
+    "score": 72,
+    "url": "/files/nasa-uap-d025-apollo-16-scientific-debriefing"
+  },
+  {
     "id": "331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents",
     "title": "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents",
     "date": "3/18/45",
@@ -1528,6 +1771,24 @@
     "agency": "DoD",
     "score": 53,
     "url": "/files/dow-uap-d027-mission-report-united-arab-emirates-october-2023"
+  },
+  {
+    "id": "nasa-uap-d016-preliminary-gemini-4-crew-debriefing-part-i-1965",
+    "title": "NASA-UAP-D016, Preliminary Gemini 4 Crew Debriefing, Part I, 1965",
+    "date": "6/9/65",
+    "category": "nasa",
+    "agency": "NASA",
+    "score": 59,
+    "url": "/files/nasa-uap-d016-preliminary-gemini-4-crew-debriefing-part-i-1965"
+  },
+  {
+    "id": "nasa-uap-d017-preliminary-gemini-4-crew-debriefing-part-ii-1965",
+    "title": "NASA-UAP-D017, Preliminary Gemini 4 Crew Debriefing, Part II, 1965",
+    "date": "6/9/65",
+    "category": "nasa",
+    "agency": "NASA",
+    "score": 59,
+    "url": "/files/nasa-uap-d017-preliminary-gemini-4-crew-debriefing-part-ii-1965"
   },
   {
     "id": "dow-uap-d075-mission-report-gulf-of-aden-july-2024",
@@ -1699,6 +1960,141 @@
     "agency": "DoD",
     "score": 53,
     "url": "/files/dow-uap-d057-range-fouler-reporting-form-gulf-of-aden-september-2020"
+  },
+  {
+    "id": "fbi-uap-d012-newark-field-office-1952-1967",
+    "title": "FBI-UAP-D012, Newark Field Office, 1952-1967",
+    "date": "August 1952-1967",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 58,
+    "url": "/files/fbi-uap-d012-newark-field-office-1952-1967"
+  },
+  {
+    "id": "nasa-uap-d019-gemini-5-technical-debriefing-part-i-1965",
+    "title": "NASA-UAP-D019, Gemini 5 Technical Debriefing, Part I, 1965",
+    "date": "August 2 - September 2, 1965",
+    "category": "nasa",
+    "agency": "NASA",
+    "score": 59,
+    "url": "/files/nasa-uap-d019-gemini-5-technical-debriefing-part-i-1965"
+  },
+  {
+    "id": "nasa-uap-d020-gemini-5-technical-debriefing-part-ii-1965",
+    "title": "NASA-UAP-D020, Gemini 5 Technical Debriefing, Part II, 1965",
+    "date": "August 30 - September 2, 1965",
+    "category": "nasa",
+    "agency": "NASA",
+    "score": 59,
+    "url": "/files/nasa-uap-d020-gemini-5-technical-debriefing-part-ii-1965"
+  },
+  {
+    "id": "cia-uap-010-report-on-conversations-with-soviet-scientists-on-subject-of-unident",
+    "title": "CIA-UAP-010, Report on Conversations with Soviet Scientists on Subject of Unidentified Flying Objects in the USSR",
+    "date": "August, 1967",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-010-report-on-conversations-with-soviet-scientists-on-subject-of-unident"
+  },
+  {
+    "id": "nasa-uap-d021-gemini-7-technical-debriefing-1965",
+    "title": "NASA-UAP-D021, Gemini 7 Technical Debriefing, 1965",
+    "date": "December 19-21, 1965",
+    "category": "nasa",
+    "agency": "NASA",
+    "score": 59,
+    "url": "/files/nasa-uap-d021-gemini-7-technical-debriefing-1965"
+  },
+  {
+    "id": "cia-uap-014-british-activity-in-the-field-of-unidentified-flying-objects",
+    "title": "CIA-UAP-014, British activity in the Field of \"Unidentified Flying Objects\"",
+    "date": "December, 1952",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-014-british-activity-in-the-field-of-unidentified-flying-objects"
+  },
+  {
+    "id": "cia-uap-007-current-status-of-unidentified-flying-objects-ufo-project",
+    "title": "CIA-UAP-007, Current Status Of Unidentified Flying Objects (UFO) Project.",
+    "date": "December, 1953",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-007-current-status-of-unidentified-flying-objects-ufo-project"
+  },
+  {
+    "id": "cia-uap-011-the-sary-shagan-weapons-testing-range",
+    "title": "CIA-UAP-011, The Sary Shagan Weapons Testing Range",
+    "date": "December, 1973",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-011-the-sary-shagan-weapons-testing-range"
+  },
+  {
+    "id": "fbi-uap-d008-fd-1057-07-northeastern-united-states-2024",
+    "title": "FBI-UAP-D008, FD-1057-07, Northeastern United States, 2024",
+    "date": "December, 2024",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d008-fd-1057-07-northeastern-united-states-2024"
+  },
+  {
+    "id": "fbi-uap-d001-fd-302-unresolved-uap-report-colorado-springs-2022",
+    "title": "FBI-UAP-D001, FD-302, Unresolved UAP Report, Colorado Springs, 2022",
+    "date": "February, 2022",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d001-fd-302-unresolved-uap-report-colorado-springs-2022"
+  },
+  {
+    "id": "fbi-uap-d013-washington-state-ufo-investigation-1952-1960",
+    "title": "FBI-UAP-D013, Washington State ‘UFO’ Investigation, 1952-1960",
+    "date": "July 1952-1960",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 58,
+    "url": "/files/fbi-uap-d013-washington-state-ufo-investigation-1952-1960"
+  },
+  {
+    "id": "cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin",
+    "title": "CIA-UAP-017, Placement on High Alert Due to Perceived Aggressive Foreign Posturing",
+    "date": "July, 2008",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin"
+  },
+  {
+    "id": "fbi-uap-pr004-northeastern-orb-sighting-2025",
+    "title": "FBI-UAP-PR004, “Northeastern Orb Sighting,” 2025",
+    "date": "July, 2025",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 70,
+    "url": "/files/fbi-uap-pr004-northeastern-orb-sighting-2025"
+  },
+  {
+    "id": "nasa-uap-d022-gemini-9-debriefing-1966",
+    "title": "NASA-UAP-D022, Gemini 9 Debriefing, 1966",
+    "date": "June 3-6, 1966",
+    "category": "nasa",
+    "agency": "NASA",
+    "score": 59,
+    "url": "/files/nasa-uap-d022-gemini-9-debriefing-1966"
+  },
+  {
+    "id": "nasa-uap-d018-gemini-4-experiment-debriefing-1967",
+    "title": "NASA-UAP-D018, Gemini 4 Experiment Debriefing, 1967",
+    "date": "June 3-7, 1965",
+    "category": "nasa",
+    "agency": "NASA",
+    "score": 59,
+    "url": "/files/nasa-uap-d018-gemini-4-experiment-debriefing-1967"
   },
   {
     "id": "fbi-photo-a001",
@@ -1996,5 +2392,257 @@
     "agency": "FBI",
     "score": 55,
     "url": "/files/usper-statement-about-uap-sighting"
+  },
+  {
+    "id": "fbi-uap-pr002-red-orb-rotation-northeastern-united-states-2022",
+    "title": "FBI-UAP-PR002, “Red Orb Rotation,” Northeastern United States, 2022",
+    "date": "March, 2022",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 70,
+    "url": "/files/fbi-uap-pr002-red-orb-rotation-northeastern-united-states-2022"
+  },
+  {
+    "id": "cia-uap-006-sighting-of-unconventional-aircraft",
+    "title": "CIA-UAP-006, Sighting Of Unconventional Aircraft",
+    "date": "November, 1955",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-006-sighting-of-unconventional-aircraft"
+  },
+  {
+    "id": "nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962",
+    "title": "NASA-UAP-D023, Interview Excerpt with Astronaut Gordon Cooper, 1962",
+    "date": "November, 1962",
+    "category": "nasa",
+    "agency": "NASA",
+    "score": 72,
+    "url": "/files/nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962"
+  },
+  {
+    "id": "cia-uap-012-combating-fatigue-in-crewmembers",
+    "title": "CIA-UAP-012, Combating Fatigue In Crewmembers",
+    "date": "November, 1976",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-012-combating-fatigue-in-crewmembers"
+  },
+  {
+    "id": "fbi-uap-pr001-triangle-orbs-northeastern-united-states-2021",
+    "title": "FBI-UAP-PR001, “Triangle Orbs,” Northeastern United States, 2021",
+    "date": "November, 2021",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 70,
+    "url": "/files/fbi-uap-pr001-triangle-orbs-northeastern-united-states-2021"
+  },
+  {
+    "id": "fbi-uap-d006-fd-1057-05-northeastern-united-states-2024",
+    "title": "FBI-UAP-D006, FD-1057-05, Northeastern United States, 2024",
+    "date": "November, 2024",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d006-fd-1057-05-northeastern-united-states-2024"
+  },
+  {
+    "id": "fbi-uap-d007-fd-1057-06-northeastern-united-states-2024",
+    "title": "FBI-UAP-D007, FD-1057-06, Northeastern United States, 2024",
+    "date": "November, 2024",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d007-fd-1057-06-northeastern-united-states-2024"
+  },
+  {
+    "id": "dow-uap-d078-notional-map-western-united-states-event",
+    "title": "DOW-UAP-D078, Notional Map: Western United States Event",
+    "date": "October, 2023",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d078-notional-map-western-united-states-event"
+  },
+  {
+    "id": "dow-uap-d079-narrative-statement-1-western-united-states-event-2023",
+    "title": "DOW-UAP-D079, Narrative Statement 1, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d079-narrative-statement-1-western-united-states-event-2023"
+  },
+  {
+    "id": "dow-uap-d080-narrative-statement-2-western-united-states-event-2023",
+    "title": "DOW-UAP-D080, Narrative Statement 2, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d080-narrative-statement-2-western-united-states-event-2023"
+  },
+  {
+    "id": "dow-uap-d081-narrative-statement-3-western-united-states-event-2023",
+    "title": "DOW-UAP-D081, Narrative Statement 3, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d081-narrative-statement-3-western-united-states-event-2023"
+  },
+  {
+    "id": "dow-uap-d082-narrative-statement-4-western-united-states-event-2023",
+    "title": "DOW-UAP-D082, Narrative Statement 4, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d082-narrative-statement-4-western-united-states-event-2023"
+  },
+  {
+    "id": "dow-uap-d083-narrative-statement-5-western-united-states-event-2023",
+    "title": "DOW-UAP-D083, Narrative Statement 5, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d083-narrative-statement-5-western-united-states-event-2023"
+  },
+  {
+    "id": "fbi-uap-d014-digital-rendering-narrative-statement-1-1-western-united-states-eve",
+    "title": "FBI-UAP-D014, Digital Rendering, Narrative Statement 1-1, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d014-digital-rendering-narrative-statement-1-1-western-united-states-eve"
+  },
+  {
+    "id": "fbi-uap-d015-digital-rendering-narrative-statement-1-2-western-united-states-eve",
+    "title": "FBI-UAP-D015, Digital Rendering, Narrative Statement 1-2, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d015-digital-rendering-narrative-statement-1-2-western-united-states-eve"
+  },
+  {
+    "id": "fbi-uap-d016-digital-rendering-narrative-statement-2-1-western-united-states-eve",
+    "title": "FBI-UAP-D016, Digital Rendering, Narrative Statement 2-1, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d016-digital-rendering-narrative-statement-2-1-western-united-states-eve"
+  },
+  {
+    "id": "fbi-uap-d017-digital-rendering-narrative-statement-2-2-western-united-states-eve",
+    "title": "FBI-UAP-D017, Digital Rendering, Narrative Statement 2-2, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d017-digital-rendering-narrative-statement-2-2-western-united-states-eve"
+  },
+  {
+    "id": "fbi-uap-d018-digital-rendering-narrative-statement-2-3-western-united-states-eve",
+    "title": "FBI-UAP-D018, Digital Rendering, Narrative Statement 2-3, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d018-digital-rendering-narrative-statement-2-3-western-united-states-eve"
+  },
+  {
+    "id": "fbi-uap-d019-digital-rendering-narrative-statement-2-4-western-united-states-eve",
+    "title": "FBI-UAP-D019, Digital Rendering, Narrative Statement 2-4, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d019-digital-rendering-narrative-statement-2-4-western-united-states-eve"
+  },
+  {
+    "id": "fbi-uap-d020-digital-rendering-narrative-statement-2-5-western-united-states-eve",
+    "title": "FBI-UAP-D020, Digital Rendering, Narrative Statement 2-5, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d020-digital-rendering-narrative-statement-2-5-western-united-states-eve"
+  },
+  {
+    "id": "fbi-uap-d021-digital-rendering-narrative-statement-1-3-western-united-states-eve",
+    "title": "FBI-UAP-D021, Digital Rendering, Narrative Statement 1-3, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d021-digital-rendering-narrative-statement-1-3-western-united-states-eve"
+  },
+  {
+    "id": "fbi-uap-d022-digital-rendering-narrative-statement-2-6-western-united-states-eve",
+    "title": "FBI-UAP-D022, Digital Rendering, Narrative Statement 2-6, Western United States Event, 2026",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d022-digital-rendering-narrative-statement-2-6-western-united-states-eve"
+  },
+  {
+    "id": "fbi-uap-d023-digital-rendering-narrative-statement-2-7-western-united-states-eve",
+    "title": "FBI-UAP-D023, Digital Rendering, Narrative Statement 2-7, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d023-digital-rendering-narrative-statement-2-7-western-united-states-eve"
+  },
+  {
+    "id": "fbi-uap-pr005-digital-recreation-narrative-statement-3-1-western-united-states-e",
+    "title": "FBI-UAP-PR005, Digital Recreation, Narrative Statement 3-1, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 70,
+    "url": "/files/fbi-uap-pr005-digital-recreation-narrative-statement-3-1-western-united-states-e"
+  },
+  {
+    "id": "fbi-uap-pr006-digital-recreation-narrative-statement-3-2-western-united-states-e",
+    "title": "FBI-UAP-PR006, Digital Recreation, Narrative Statement 3-2, Western United States Event, 2023",
+    "date": "October, 2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 70,
+    "url": "/files/fbi-uap-pr006-digital-recreation-narrative-statement-3-2-western-united-states-e"
+  },
+  {
+    "id": "fbi-uap-pr003-orbs-over-the-pond-2024",
+    "title": "FBI-UAP-PR003, “Orbs Over the Pond,” 2024",
+    "date": "October, 2024",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 70,
+    "url": "/files/fbi-uap-pr003-orbs-over-the-pond-2024"
+  },
+  {
+    "id": "fbi-uap-d004-fd-1057-02-northeastern-united-states-2024",
+    "title": "FBI-UAP-D004, FD-1057-02, Northeastern United States, 2024",
+    "date": "October, 2024",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d004-fd-1057-02-northeastern-united-states-2024"
+  },
+  {
+    "id": "fbi-uap-d005-fd-1057-04-northeastern-united-states-2024",
+    "title": "FBI-UAP-D005, FD-1057-04, Northeastern United States, 2024",
+    "date": "October, 2024",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d005-fd-1057-04-northeastern-united-states-2024"
   }
 ]

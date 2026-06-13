@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d4-apollo-11-technical-crew-debriefing-1969.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/nasa-uap-d004-apollo-11-technical-crew-debriefing-1969.pdf",
   "size_bytes": 29286242,
   "sha256": "aacc41814dd16583bbeabe068026bf286cd9b0e464ff097c5c7b97b00d308443",
   "redacted": false,
-  "summary": "Apollo 11 was the third crewed mission to the Moon and the first to land Astronauts on the lunar surface. This document is an excerpt from the Apollo 11 Technical Crew Debriefing (Volumes 1 and 2) from July 31, 1969. The document highlights three observations: one, an object on the way out to the Moon; two, flashes of light inside the cabin; and three, a sighting on the return trip of a bright light tentatively assumed by the crew to be a laser.•\tPage 6-33 (Vol. 1). [Lunar Module Pilot for Apollo 11, Buzz Aldrin]: “The first unusual thing that we saw I guess was 1 day out or something pretty close to the moon. It had a sizeable dimension to it, so we put the monocular on it.” The crew speculated that it could have been the S-IVB stage of the Saturn V launch vehicle.•\tPage 6-37 (Vol. 1). [Lunar Module Pilot for Apollo 11, Buzz Aldrin] “The other observation that I made accumulated gradually. I don’t know whether I saw it the first night, but I’m sure I saw it the second night. I was trying to go to sleep with all the lights out. I observed what I thought were little flashes inside the cabin, spaced a couple of minutes apart…”•\tPage 21-1 (Vol. 2). [Lunar Module Pilot for Apollo 11, Buzz Aldrin] “I observed what appeared to be a fairly bright light source which we tentatively ascribed to a possible laser.”",
+  "summary": "Apollo 11 was the third crewed mission to the Moon and the first to land Astronauts on the lunar surface. This document is an excerpt from the Apollo 11 Technical Crew Debriefing (Volumes 1 and 2) from July 31, 1969. The document highlights three observations: one, an object on the way out to the Moon; two, flashes of light inside the cabin; and three, a sighting on the return trip of a bright light tentatively assumed by the crew to be a laser.\n\n•\tPage 6-33 (Vol. 1). [Lunar Module Pilot for Apollo 11, Buzz Aldrin]: “The first unusual thing that we saw I guess was 1 day out or something pretty close to the moon. It had a sizeable dimension to it, so we put the monocular on it.” The crew speculated that it could have been the S-IVB stage of the Saturn V launch vehicle.\n•\tPage 6-37 (Vol. 1). [Lunar Module Pilot for Apollo 11, Buzz Aldrin] “The other observation that I made accumulated gradually. I don’t know whether I saw it the first night, but I’m sure I saw it the second night. I was trying to go to sleep with all the lights out. I observed what I thought were little flashes inside the cabin, spaced a couple of minutes apart…”\n•\tPage 21-1 (Vol. 2). [Lunar Module Pilot for Apollo 11, Buzz Aldrin] “I observed what appeared to be a fairly bright light source which we tentatively ascribed to a possible laser.”",
   "score": {
     "value": 59,
     "components": {
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/nasa-uap-d004-apollo-11-technical-crew-debriefing-1969.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,22 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/nasa-uap-d4-apollo-11-technical-crew-debriefing-1969.jpg",
   "csv_raw_title": "NASA-UAP-D004, Apollo 11 Technical Crew Debriefing, 1969",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "NASA mission record from a crewed lunar mission documenting a UAP encounter (1969).",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 1969.",
+      "Document references: page."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 59/100. Top drivers: witness credibility (astronaut), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page"
+    ]
+  }
 }

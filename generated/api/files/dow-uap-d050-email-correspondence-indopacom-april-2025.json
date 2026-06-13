@@ -8,11 +8,11 @@
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d50-email-correspondence-indopacom-april-2025.pdf",
   "pending_verification": false,
-  "local_path": null,
+  "local_path": "downloads/pdf/dow-uap-d050-email-correspondence-indopacom-april-2025.pdf",
   "size_bytes": 312451,
   "sha256": "10c11e9bf4d6686159da48e3d9388e7d3afe4ae8b1e79725ec6c63ccc491e537",
   "redacted": true,
-  "summary": "This document is email correspondence describing the content of a mission report and requesting clarification on its content.All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "summary": "This document is email correspondence describing the content of a mission report and requesting clarification on its content.\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
   "score": {
     "value": 53,
     "components": {
@@ -64,7 +64,7 @@
     "rubric_version": "1.0"
   },
   "extracted": {
-    "text_path": null,
+    "text_path": "extracted/pdf-text/dow-uap-d050-email-correspondence-indopacom-april-2025.txt",
     "transcript_path": null,
     "thumbnail_path": null
   },
@@ -75,5 +75,29 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d50-email-correspondence-indopacom-april-2025.jpg",
   "csv_raw_title": "DOW-UAP-D050, Email Correspondence, INDOPACOM, April 2025",
-  "byte_verified_at": "2026-06-10"
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (4/10/2025-4/11/2025).",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 4/10/2025-4/11/2025.",
+      "Portions of the document are redacted."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "unclassified",
+      "level",
+      "classification",
+      "secret",
+      "noforn",
+      "page",
+      "indopacom",
+      "hello"
+    ]
+  }
 }
