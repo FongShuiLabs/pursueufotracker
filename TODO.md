@@ -1,6 +1,26 @@
 # PURSUE UFO Tracker — Action Queue
 
-**Last updated: 2026-06-12** (GSC-driven content pass: NASA hub deepened, 111 orphan pages refreshed)
+**Last updated: 2026-06-14** (Drop 03 ingested + live; deploy unblocked; CIA deep-dive + /revisions SEO shipped)
+
+---
+
+## ✅ DONE 2026-06-13/14 (PURSUE Release 03 - the marquee event)
+
+**Drop 03 landed 2026-06-12 (war.gov CSV 222 -> 294 rows). Now fully live.** Caught via a CBS News video after the poller's `[NEW DROP]` commit slid past in a rebase - hence the new [[drop-guard-never-miss-a-drop]] (drop_check + SessionStart hook; run `--mark` after each ingest).
+
+- **Ingested 72 new files -> 294 total**, all SHA-256 verified. FBI +29, CIA +18, DoD +12, NASA +11, ICA +1, USG +1. 3 typo re-slugs (skylab/email/cigar), zero withdrawals.
+- **war.gov changed the CSV schema** (added a leading "Featured" column) - parse_csv now maps by column NAME, not position. New agency labels mapped: CIA (short), ICA, USG. See [[wargov-csv-schema-evolves-per-drop]]. Ingest uses `download-manifest`, NOT the legacy `download` stage (it collapses videos by source_url).
+- **New `/cia-ufo-files/` hub (19)** + Apollo 16 restored (real in Drop 03) + Gemini 4/5/9 + Gordon Cooper. Homepage Top-5, all hub counts, and the **sitewide 222->294 sweep** (homepage, faq, /changes R03 block, pursue-program, all 408 file pages, editorial essays) done. All 114 orphans re-homed from current twins.
+- **DEPLOY WAS STUCK ~14h**: not quota/billing - `generated/search-index.json` hit 27.1 MiB, over Cloudflare Pages' 25 MiB/file cap, failing asset validation on every commit. Fixed: `build_search.py` now caps per-doc body at 5000 chars (titles+summaries full) -> 4.58 MiB. **If a deploy ever stalls again, check the CF Pages build log for the oversized-asset error first.**
+- **Content/SEO**: new CIA deep-dive `/cia-ufo-files-explained` (Robertson Panel, U-2, Blue Book; "less-redacted than CIA public copies" hook); `/revisions` retitled to the war.gov-CSV intent (was 549 impr @ 0.4% CTR - all "uap-csv.csv" queries); IndexNow ping for Drop-03 + CIA URLs.
+
+## 🔴 PENDING OPERATOR ACTIONS (Drop 03)
+1. **Install the poller build-skip workflow**: paste `poll-wargov-workflow-UPDATED.yml.txt` into `.github/workflows/poll-wargov.yml` via GitHub web UI. Adds `[CF-Pages-Skip]` to "unchanged" poll commits so they stop triggering Cloudflare builds (~40/day of noise). PAT lacks workflow scope.
+
+## 🟡 OPEN SEO (next session)
+- `/generated/` + `.html` non-canonical URL audit (Hard Rule #6 - equity splitting across URL variants).
+- Fresh GSC pull once Drop 03 indexes - new query opportunities around CIA / Apollo 16 / FBI orbs.
+- Gordon Cooper: fold into NASA hub or a glossary entry (one file - avoid a thin standalone).
 
 ---
 
