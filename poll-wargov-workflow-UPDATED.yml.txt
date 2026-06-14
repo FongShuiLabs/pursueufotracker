@@ -1,0 +1,124 @@
+# =============================================================================
+# READY-TO-PASTE workflow update for .github/workflows/poll-wargov.yml
+#
+# WHY: the poller commits to `main` every ~30 min. Each "unchanged" poll commit
+# triggers a Cloudflare Pages build (~40 noise builds/day), churning the
+# deployment list and burning the free-tier build budget. Cloudflare Pages
+# SKIPS a build when the commit message contains a skip token. This change adds
+# `[CF-Pages-Skip]` to the "unchanged" commits ONLY - so they no longer deploy,
+# while real "[NEW DROP]" commits (and your content commits) still deploy
+# normally.
+#
+# THE ONLY CHANGE vs the current file is line 59 (the "unchanged" commit
+# message now ends with " [CF-Pages-Skip]"). Everything else is identical.
+#
+# HOW TO INSTALL (PAT lacks `workflow` scope, so edit via GitHub web UI):
+#   1. github.com/FongShuiLabs/pursueufotracker/blob/main/.github/workflows/poll-wargov.yml
+#   2. Click the pencil (Edit).
+#   3. Replace the whole file with the YAML below (everything under this banner).
+#   4. Commit to main.
+#
+# Verify after: the next "poll: war.gov unchanged ... [CF-Pages-Skip]" commit
+# should NOT appear as a new Cloudflare Pages deployment.
+# =============================================================================
+name: Poll war.gov for new PURSUE drops
+
+# Polls the official war.gov UAP CSV every 30 minutes during US weekday business
+# hours (when historical drops have happened) and hourly otherwise. Opens an
+# issue when a new drop is detected; commits the updated state file on every
+# successful poll.
+
+on:
+  schedule:
+    # Every 30 min, weekdays 13:00-22:00 UTC (9am-6pm ET)
+    - cron: '*/30 13-22 * * 1-5'
+    # Hourly off-hours, 7 days a week
+    - cron: '0 0-12,23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: poll-wargov
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install poller deps
+        run: pip install curl_cffi
+
+      - name: Poll war.gov
+        id: poll
+        continue-on-error: true
+        run: python -m pipeline.poll_wargov
+
+      - name: Commit poll state
+        if: steps.poll.outcome == 'success' || steps.poll.outputs.new_drop == 'true'
+        run: |
+          git config user.name "pursueufotracker-bot"
+          git config user.email "bot@pursueufotracker.com"
+          git add data/poll-state.json
+          if git diff --cached --quiet; then
+            echo "No state change to commit."
+          else
+            if [ "${{ steps.poll.outputs.new_drop }}" = "true" ]; then
+              git commit -m "[NEW DROP] war.gov CSV changed: ${{ steps.poll.outputs.row_count }} rows (${{ steps.poll.outputs.delta }} delta)"
+            else
+              git commit -m "poll: war.gov unchanged ($(date -u +%FT%TZ)) [CF-Pages-Skip]"
+            fi
+            git push
+          fi
+
+      - name: Open NEW DROP issue
+        if: steps.poll.outputs.new_drop == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const rowCount = '${{ steps.poll.outputs.row_count }}';
+            const delta = '${{ steps.poll.outputs.delta }}';
+            const sha = '${{ steps.poll.outputs.sha256 }}';
+            const body = [
+              '## war.gov uap-csv.csv has changed',
+              '',
+              `- New row count: **${rowCount}**`,
+              `- Delta: **${delta}**`,
+              `- New CSV SHA-256: \`${sha}\``,
+              `- Detected: ${new Date().toISOString()}`,
+              '',
+              '### Next steps',
+              '1. Pull latest: `git pull`',
+              '2. The new CSV is at `_scratch/uap-csv.csv`',
+              '3. Ingest: `python -m pipeline.run parse-csv` then `download-manifest hash extract-pdf thumbnails score summarize search-index og-cards build build-verdict build-top10 build-press build-api build-drops build-categories` (skip the legacy `download` stage - it keys by source_url and collapses videos)',
+              '4. Verify the id-level diff before any public claim, then push',
+              '5. `python -m pipeline.drop_check --mark` to clear the guard',
+              '',
+              'Triggered automatically by `.github/workflows/poll-wargov.yml`.',
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[NEW DROP] war.gov UAP CSV changed (${delta} new rows, ${rowCount} total)`,
+              body,
+              labels: ['new-drop', 'automated'],
+            });
+
+      - name: Fail if poll errored
+        if: steps.poll.outcome == 'failure' && steps.poll.outputs.new_drop != 'true'
+        run: |
+          echo "::error::Poll script failed (network/parse error). Investigate logs above."
+          exit 1
