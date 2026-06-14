@@ -12,8 +12,20 @@ from .config import (
 )
 
 
+# Cap the deep per-doc text that goes into the Lunr index. Cloudflare Pages
+# rejects any single asset over 25 MiB; with the full extracted PDF text +
+# transcripts of every file, search-index.json hit 27.1 MiB at 294 files
+# (Drop 03) and every deploy failed asset validation. Titles and summaries are
+# always indexed in full (small, highest-signal); only the long extracted/
+# transcript body is capped. ~5k chars/doc keeps the leading, most relevant
+# content searchable while leaving comfortable headroom for future drops.
+MAX_DOC_BODY_CHARS = 5000
+
+
 def _doc_text(f: dict) -> str:
-    pieces = [f.get("title", ""), f.get("summary") or ""]
+    # Title + summary always indexed in full.
+    head = "\n".join(p for p in (f.get("title", ""), f.get("summary") or "") if p)
+    pieces: list[str] = []
     ex = f.get("extracted") or {}
     tp = ex.get("text_path")
     if tp:
@@ -25,7 +37,8 @@ def _doc_text(f: dict) -> str:
     txt = EX_TRANSCRIPTS / f"{f['id']}.txt"
     if txt.exists():
         pieces.append(txt.read_text(encoding="utf-8", errors="ignore"))
-    return "\n".join(p for p in pieces if p)
+    body = "\n".join(p for p in pieces if p)[:MAX_DOC_BODY_CHARS]
+    return f"{head}\n{body}".strip()
 
 
 def run() -> None:
