@@ -142,7 +142,9 @@ CATEGORIES = [
             "<strong>CASE 17708 / Dr. Leon Davidson</strong> correspondence, a German scientist's article "
             "on 'flying discs,' and multiple mid-century reports of sightings of unconventional aircraft. "
             "Most are partially redacted; we mark redaction status on each. All are public domain U.S. "
-            "Government works under 17 U.S.C. § 105."
+            "Government works under 17 U.S.C. § 105. For a file-by-file walkthrough - the Robertson Panel's "
+            "debunking recommendation, the U-2 history, Project Blue Book, and what PURSUE actually adds - "
+            "see <a href='/cia-ufo-files-explained'>our CIA UFO files deep dive</a>."
         ),
         "meta_desc": (
             "All 19 CIA UFO files declassified in the Trump administration's 2026 PURSUE releases. The "
