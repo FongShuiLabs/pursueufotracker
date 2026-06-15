@@ -12,15 +12,19 @@
 - **war.gov changed the CSV schema** (added a leading "Featured" column) - parse_csv now maps by column NAME, not position. New agency labels mapped: CIA (short), ICA, USG. See [[wargov-csv-schema-evolves-per-drop]]. Ingest uses `download-manifest`, NOT the legacy `download` stage (it collapses videos by source_url).
 - **New `/cia-ufo-files/` hub (19)** + Apollo 16 restored (real in Drop 03) + Gemini 4/5/9 + Gordon Cooper. Homepage Top-5, all hub counts, and the **sitewide 222->294 sweep** (homepage, faq, /changes R03 block, pursue-program, all 408 file pages, editorial essays) done. All 114 orphans re-homed from current twins.
 - **DEPLOY WAS STUCK ~14h**: not quota/billing - `generated/search-index.json` hit 27.1 MiB, over Cloudflare Pages' 25 MiB/file cap, failing asset validation on every commit. Fixed: `build_search.py` now caps per-doc body at 5000 chars (titles+summaries full) -> 4.58 MiB. **If a deploy ever stalls again, check the CF Pages build log for the oversized-asset error first.**
-- **Content/SEO**: new CIA deep-dive `/cia-ufo-files-explained` (Robertson Panel, U-2, Blue Book; "less-redacted than CIA public copies" hook); `/revisions` retitled to the war.gov-CSV intent (was 549 impr @ 0.4% CTR - all "uap-csv.csv" queries); IndexNow ping for Drop-03 + CIA URLs.
+- **Content/SEO shipped**: two new editorial deep-dives - `/cia-ufo-files-explained` (Robertson Panel, U-2, Blue Book; "less-redacted than CIA public copies" hook) and `/fbi-modern-uap-files` (Colorado Springs 2022, FBI-authenticated NE orb videos, 1949 Hoover letter). Both wired with homepage cards, hub links, sitemap, and file-page breadcrumbs (19 CIA + 29 FBI pages funnel equity up via TOPIC_PAGES). Homepage now shows all 3 drop panels + 3 hero banners (was 01-only). `/revisions` retitled to the war.gov-CSV intent (was 549 impr @ 0.4% CTR - all "uap-csv.csv" queries). IndexNow pinged across all new/updated URLs.
+- **Canonical-URL audit DONE (no change needed)**: 0 internal links to `/generated/files/`, 0 `.html` internal links, sitemap clean, all 408 pages' canonical tags point to clean `/files/X`, robots.txt allows `/generated/` crawl, `.html` 308-redirects. The `/generated/files/<id>` duplicates self-consolidate via canonical tags. Did NOT add a `/generated/files/* 301` - loop risk with the `/files/* -> /generated/files/ 200` rewrite (line 15 of `_redirects`), marginal benefit. Foundational hygiene confirmed sound.
+- **Viral r/UFOs OP corrected + updated** (operator pasted it): fixed the 4 false claims + added Releases 02-03. Final body archived at `_scratch/reddit-OP-edit-2026-06.md`. Thread: reddit.com/r/UFOs/comments/1tioumr/.
 
 ## 🔴 PENDING OPERATOR ACTIONS (Drop 03)
 1. **Install the poller build-skip workflow**: paste `poll-wargov-workflow-UPDATED.yml.txt` into `.github/workflows/poll-wargov.yml` via GitHub web UI. Adds `[CF-Pages-Skip]` to "unchanged" poll commits so they stop triggering Cloudflare builds (~40/day of noise). PAT lacks workflow scope.
+2. **Post the r/UFOscience Drop-03 piece** (fresh reach - OP edits don't re-viral): paste-ready at `_scratch/reddit-rufoscience-drop03.md` (distinct title, CIA/forensic-verification angle). Text post, Tue-Thu 9-10am ET, >=48h from other Aclosmurf posts.
+3. **AdSense**: ads.txt confirmed correct + live (the "Not found" was a stale Jun-10 crawl during the deploy outage); review is "Getting ready" - monitor, will re-crawl now the deploy is healthy.
 
 ## 🟡 OPEN SEO (next session)
-- `/generated/` + `.html` non-canonical URL audit (Hard Rule #6 - equity splitting across URL variants).
-- Fresh GSC pull once Drop 03 indexes - new query opportunities around CIA / Apollo 16 / FBI orbs.
+- Fresh GSC pull once Drop 03 indexes - new query opportunities around CIA / Apollo 16 / FBI orbs; check the two new deep-dives' early performance.
 - Gordon Cooper: fold into NASA hub or a glossary entry (one file - avoid a thin standalone).
+- Consider a Robertson Panel standalone (high-volume evergreen query) if the CIA deep-dive shows traction.
 
 ---
 
