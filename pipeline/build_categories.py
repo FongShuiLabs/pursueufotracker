@@ -36,7 +36,8 @@ CATEGORIES = [
             "Anomalous Phenomena reports that extend the Bureau's UFO record from the 1947-1968 vault into "
             "the present, including the 2022 Colorado Springs incident (FD-1057 and a digital rendering), "
             "2026 Northeastern 'orb' sightings (FD-302 reports), and the FBI-UAP-PR003 'Orbs Over the Pond' "
-            "video. Most files are partially redacted; we mark redaction status on each. All are public "
+            "video - walked through in <a href='/fbi-modern-uap-files'>our FBI modern UAP files deep dive</a>. "
+            "Most files are partially redacted; we mark redaction status on each. All are public "
             "domain U.S. Government works under 17 U.S.C. § 105. For a file-by-file walkthrough of the "
             "62-HQ-83894 cluster, see <a href='/fbi-62-hq-83894'>our dedicated deep dive</a>."
         ),
