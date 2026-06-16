@@ -494,6 +494,7 @@ def _build_sitemap(manifest: dict) -> None:
         ("/diplomatic-uap-cables", "0.9", "monthly"),
         ("/cia-ufo-files-explained", "0.9", "monthly"),
         ("/fbi-modern-uap-files", "0.9", "monthly"),
+        ("/robertson-panel", "0.9", "monthly"),
         ("/odni-uap-d001-helicopter-encounter", "0.9", "monthly"),
         ("/pursue-release-02-pentagon-videos", "0.9", "monthly"),
         ("/doe-nuclear-uap-files", "0.9", "monthly"),
