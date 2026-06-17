@@ -304,8 +304,8 @@
     <div class="meta-item"><div class="k">Agency</div><div class="v">{{ f.agency }}</div></div>
     <div class="meta-item"><div class="k">Category</div><div class="v">{{ f.category }}</div></div>
     <div class="meta-item"><div class="k">Type</div><div class="v">{{ f.type | upper }}</div></div>
-    <div class="meta-item"><div class="k">Event Date</div><div class="v">{{ f.date_event or '—' }}</div></div>
-    <div class="meta-item"><div class="k">Released</div><div class="v">{{ f.date_released or '—' }}</div></div>
+    <div class="meta-item"><div class="k">Event Date</div><div class="v">{{ f.date_event or 'n/a' }}</div></div>
+    <div class="meta-item"><div class="k">Released</div><div class="v">{{ f.date_released or 'n/a' }}</div></div>
     <div class="meta-item"><div class="k">Size</div><div class="v">{{ size_human }}</div></div>
     {% if f.geo and f.geo.place %}
     <div class="meta-item"><div class="k">Location</div><div class="v">{{ f.geo.place }}</div></div>

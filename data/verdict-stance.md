@@ -74,7 +74,7 @@ Yes, and we want to be specific about what the AI did and didn't do.
 - Did not generate the rubric weights or the editorial position. Those are human-set and visible at /data/scoring-rubric.json.
 - Did not produce a "% chance aliens exist" number. No AI can do that honestly. We refuse to publish one.
 
-**Why disclose this:** other AI-analysis sites don't disclose, then get caught and lose credibility. We tell you upfront. The rubric is open JSON. Every score is reproducible. If you disagree with how a specific file was scored, edit the rubric and recompute — the math is identical.
+**Why disclose this:** other AI-analysis sites don't disclose, then get caught and lose credibility. We tell you upfront. The rubric is open JSON. Every score is reproducible. If you disagree with how a specific file was scored, edit the rubric and recompute - the math is identical.
 
 **Models used:** Claude (Anthropic) for rubric application and summaries. OpenAI Whisper for video transcription. pdfplumber (open-source) for PDF text extraction.
 
