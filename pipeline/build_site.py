@@ -498,6 +498,7 @@ def _build_sitemap(manifest: dict) -> None:
         ("/project-blue-book-special-report-14", "0.9", "monthly"),
         ("/gordon-cooper-ufo", "0.9", "monthly"),
         ("/u-2-ufo-sightings", "0.9", "monthly"),
+        ("/apollo-16-ufo", "0.9", "monthly"),
         ("/odni-uap-d001-helicopter-encounter", "0.9", "monthly"),
         ("/pursue-release-02-pentagon-videos", "0.9", "monthly"),
         ("/doe-nuclear-uap-files", "0.9", "monthly"),
