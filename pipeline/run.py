@@ -13,6 +13,7 @@ import time
 
 from . import (
     parse_inputs, parse_csv, download, download_from_manifest, hash_files,
+    upload_r2,
     extract_pdf, thumbnail, transcribe, score, summarize,
     build_search, gen_og, build_site,
     build_verdict, build_top10, build_press_kit, build_api, build_drops,
@@ -25,6 +26,7 @@ STAGES = [
     ("download",           download.run),
     ("download-manifest",  download_from_manifest.run),
     ("hash",               hash_files.run),
+    ("upload-r2",      upload_r2.run),  # no-op without _scratch/r2-creds.json
     ("extract-pdf",    extract_pdf.run),
     ("thumbnails",     thumbnail.run),
     ("transcribe",     transcribe.run),
