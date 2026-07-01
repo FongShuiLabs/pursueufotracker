@@ -138,8 +138,12 @@
     {% endif %}
   </div>
 
-  {# Order of preference: R2 mirror > local file > video DVIDS URL > direct war.gov source #}
-  {% set serve_url = f.mirror_url or (f.local_path and '../../' ~ f.local_path) or f.video_url or f.source_url %}
+  {# Order of preference: R2 mirror > video DVIDS URL > direct war.gov source.
+     local_path is deliberately NOT used here: it points into the gitignored
+     downloads/ folder, which never deploys to Cloudflare Pages, so it 404s
+     in production. Keep this fallback pointed at URLs that actually resolve
+     on the live site until R2 mirroring is wired up (see upload_r2.py). #}
+  {% set serve_url = f.mirror_url or f.video_url or f.source_url %}
   {% set thumb_url = f.thumbnail_url or (f.extracted and f.extracted.thumbnail_path and '../../' ~ f.extracted.thumbnail_path) %}
   {% set caption_url = f.caption_vtt_url or (f.extracted and f.extracted.transcript_path and '../../' ~ f.extracted.transcript_path) %}
 
@@ -176,7 +180,7 @@
     {% endif %}
   </div>
 
-  {% if f.mirror_url or f.local_path %}
+  {% if f.mirror_url or f.video_url %}
   <a class="download" href="{{ serve_url }}" download>
     ⬇ Download HD{% if size_human %} ({{ size_human }}){% endif %}
   </a>
