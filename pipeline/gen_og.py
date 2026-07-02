@@ -86,6 +86,57 @@ def _make_card(out: Path, title: str, agency: str, score: int) -> None:
     img.save(out, "PNG", optimize=True)
 
 
+def _make_essay_card(out: Path, title: str, kicker: str) -> None:
+    """Card for a hand-authored essay/deep-dive page (no score ring)."""
+    from PIL import Image, ImageDraw
+    img = Image.new("RGB", (W, H), BG)
+    d = ImageDraw.Draw(img)
+
+    d.rectangle([0, 0, W, 6], fill=BLUE)
+    d.text((48, 36), "PURSUE UFO TRACKER", font=_font(24), fill=BLUE)
+    d.text((48, 74), kicker.upper(), font=_font(19), fill=(82, 255, 180))
+
+    title_font = _font(58)
+    lines = _wrap(d, title, title_font, max_w=W - 96)
+    y = 175
+    for line in lines[:4]:
+        d.text((48, y), line, font=title_font, fill=WHITE)
+        y += 72
+
+    d.text((48, H - 60), "pursueufotracker.com   |   every file mirrored + SHA-256 verified", font=_font(20), fill=GRAY)
+    img.save(out, "PNG", optimize=True)
+
+
+def _essay_cards() -> int:
+    """Generate cards for top-level essay pages that still use the generic
+    og-cover.svg, and repoint their og:image/twitter:image at the new card.
+    Idempotent: pages already pointing at a per-page card are skipped."""
+    import html as html_mod
+    import re
+    gen_dir = GEN_OG.parent  # generated/
+    count = 0
+    for page in sorted(gen_dir.glob("*.html")):
+        text = page.read_text(encoding="utf-8")
+        if "og-cover.svg" not in text:
+            continue
+        m = re.search(r"<title>(.*?)</title>", text, re.S)
+        if not m:
+            continue
+        title = html_mod.unescape(m.group(1)).split("|")[0].strip()
+        # kicker from the article:section meta if present, else generic
+        km = re.search(r'article:section" content="([^"]+)"', text)
+        kicker = f"DEEP DIVE - {km.group(1)}" if km else "DEEP DIVE"
+        card = GEN_OG / f"page-{page.stem}.png"
+        if not card.exists():
+            _make_essay_card(card, title, kicker)
+        new_url = f"https://pursueufotracker.com/generated/og-cards/page-{page.stem}.png"
+        updated = text.replace("https://pursueufotracker.com/og-cover.svg", new_url)
+        if updated != text:
+            page.write_text(updated, encoding="utf-8")
+            count += 1
+    return count
+
+
 def run() -> None:
     ensure_dirs()
     if not MANIFEST_PATH.exists():
@@ -103,7 +154,8 @@ def run() -> None:
             continue
         score = (f.get("score") or {}).get("value", 50)
         _make_card(out, f.get("title") or f["id"], f.get("agency") or "OTHER", score)
-    print(f"  og cards: {len(manifest['files'])}")
+    essays = _essay_cards()
+    print(f"  og cards: {len(manifest['files'])} file cards, {essays} essay pages repointed")
 
 
 if __name__ == "__main__":
