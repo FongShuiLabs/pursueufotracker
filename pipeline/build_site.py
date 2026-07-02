@@ -555,6 +555,7 @@ def _build_sitemap(manifest: dict) -> None:
         ("/gemini-5-snow-debris", "0.9", "monthly"),
         ("/apollo-12-medical-debrief-coronal-discharges", "0.9", "monthly"),
         ("/uap-data-csv", "0.9", "weekly"),
+        ("/deep-dives", "0.9", "weekly"),
         ("/odni-uap-d001-helicopter-encounter", "0.9", "monthly"),
         ("/pursue-release-02-pentagon-videos", "0.9", "monthly"),
         ("/doe-nuclear-uap-files", "0.9", "monthly"),
