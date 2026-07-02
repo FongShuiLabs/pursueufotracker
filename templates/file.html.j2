@@ -8,7 +8,9 @@
 {% set _desc_loc = (f.geo and f.geo.place) %}
 {% set _desc_summ = (f.summary or '') | trim %}
 {% set _first_sentence = (_desc_summ.split('.')[0] | trim) if _desc_summ else '' %}
+{% set _orig_fname = (f.source_url.rstrip('/').split('/')[-1]) if f.source_url else '' %}
 {% set _desc_parts = [] %}
+{% if _orig_fname %}{% set _ = _desc_parts.append('View and download ' ~ _orig_fname ~ ' (mirrored, SHA-256 verified).') %}{% endif %}
 {% if _desc_score %}{% set _ = _desc_parts.append('Score ' ~ _desc_score ~ '/100 on the Anomalousness Index.') %}{% endif %}
 {% if f.agency %}{% set _ = _desc_parts.append(f.agency ~ ' ' ~ (f.type or 'file') ~ '.') %}{% endif %}
 {% if _desc_loc %}{% set _ = _desc_parts.append('Location: ' ~ _desc_loc ~ '.') %}{% endif %}
@@ -17,7 +19,7 @@
 {% if f.sha256 %}{% set _ = _desc_parts.append('Indexed and SHA-256 verified against war.gov.') %}{% else %}{% set _ = _desc_parts.append('Indexed and mirrored from war.gov.') %}{% endif %}
 <meta name="description" content="{{ _desc_parts | join(' ') | truncate(160, killwords=true) }}">
 {% set place = (f.geo and f.geo.place) or '' %}
-<meta name="keywords" content="{{ f.title }}, {{ f.agency }} UFO, {{ f.agency }} UAP, {% if event_year %}{{ event_year }} UFO sighting, {% endif %}{% if place %}{{ place }} UAP, {% endif %}PURSUE {{ f.agency }}, war.gov UFO, Trump UFO{% if event_year %} {{ event_year }}{% endif %}, declassified UAP, AARO file, {{ f.type }} UAP, Anomalousness Index">
+<meta name="keywords" content="{{ f.title }}, {% if _orig_fname %}{{ _orig_fname }}, {% endif %}{{ f.agency }} UFO, {{ f.agency }} UAP, {% if event_year %}{{ event_year }} UFO sighting, {% endif %}{% if place %}{{ place }} UAP, {% endif %}PURSUE {{ f.agency }}, war.gov UFO, Trump UFO{% if event_year %} {{ event_year }}{% endif %}, declassified UAP, AARO file, {{ f.type }} UAP, Anomalousness Index">
 {# Canonical points to extension-less URL - Cloudflare Pages serves it 200 direct
    while /files/X.html 308-redirects. Avoids canonical-on-redirect SEO loss. #}
 {% set canonical_url = site_url ~ '/files/' ~ f.id %}
@@ -311,6 +313,9 @@
     <div class="meta-item"><div class="k">Event Date</div><div class="v">{{ f.date_event or 'n/a' }}</div></div>
     <div class="meta-item"><div class="k">Released</div><div class="v">{{ f.date_released or 'n/a' }}</div></div>
     <div class="meta-item"><div class="k">Size</div><div class="v">{{ size_human }}</div></div>
+    {% if _orig_fname %}
+    <div class="meta-item"><div class="k">Original Filename</div><div class="v" style="word-break:break-all;font-size:12px">{{ _orig_fname }}</div></div>
+    {% endif %}
     {% if f.geo and f.geo.place %}
     <div class="meta-item"><div class="k">Location</div><div class="v">{{ f.geo.place }}</div></div>
     {% endif %}
