@@ -9,17 +9,20 @@
 {% set _desc_summ = (f.summary or '') | trim %}
 {% set _first_sentence = (_desc_summ.split('.')[0] | trim) if _desc_summ else '' %}
 {% set _orig_fname = (f.source_url.rstrip('/').split('/')[-1]) if f.source_url else '' %}
-{% set _desc_parts = [] %}
-{% if _orig_fname %}{% set _ = _desc_parts.append('View and download ' ~ _orig_fname ~ ' (mirrored, SHA-256 verified).') %}{% endif %}
-{% if _desc_score %}{% set _ = _desc_parts.append('Score ' ~ _desc_score ~ '/100 on the Anomalousness Index.') %}{% endif %}
-{% if f.agency %}{% set _ = _desc_parts.append(f.agency ~ ' ' ~ (f.type or 'file') ~ '.') %}{% endif %}
-{% if _desc_loc %}{% set _ = _desc_parts.append('Location: ' ~ _desc_loc ~ '.') %}{% endif %}
-{% if f.date_event and f.date_event != 'date n/a' %}{% set _ = _desc_parts.append('Event date: ' ~ f.date_event ~ '.') %}{% endif %}
-{% if _first_sentence and _first_sentence|length < 110 %}{% set _ = _desc_parts.append(_first_sentence ~ '.') %}{% endif %}
-{% if f.sha256 %}{% set _ = _desc_parts.append('Indexed and SHA-256 verified against war.gov.') %}{% else %}{% set _ = _desc_parts.append('Indexed and mirrored from war.gov.') %}{% endif %}
-<meta name="description" content="{{ _desc_parts | join(' ') | truncate(160, killwords=true) }}">
+{# Lead every description with the file's own unique summary text so the 294
+   file pages are not near-duplicates of each other (the old templated
+   "Score X/100. Agency type." lead repeated across dozens of pages, a thin/
+   duplicate signal). Fall back to the templated form only when the summary
+   is too short/absent. #}
+{% set _summ_snip = (_desc_summ | truncate(95, false, '')) if (_desc_summ and (_desc_summ | length) >= 25) else '' %}
+{% set _meta_bits = [] %}
+{% if f.agency %}{% set _ = _meta_bits.append(f.agency ~ ' ' ~ (f.type or 'file')) %}{% endif %}
+{% if _desc_score %}{% set _ = _meta_bits.append('Anomalousness Index ' ~ _desc_score ~ '/100') %}{% endif %}
+{% set _meta_tail = (_meta_bits | join(', ')) %}
+{% set _desc_full = f.title ~ ' - ' ~ _meta_tail ~ ', mirrored and SHA-256 verified against war.gov.' ~ (' ' ~ _summ_snip if _summ_snip else '') %}
+<meta name="description" content="{{ _desc_full | truncate(185, false, '') | e }}">
 {% set place = (f.geo and f.geo.place) or '' %}
-<meta name="keywords" content="{{ f.title }}, {% if _orig_fname %}{{ _orig_fname }}, {% endif %}{{ f.agency }} UFO, {{ f.agency }} UAP, {% if event_year %}{{ event_year }} UFO sighting, {% endif %}{% if place %}{{ place }} UAP, {% endif %}PURSUE {{ f.agency }}, war.gov UFO, Trump UFO{% if event_year %} {{ event_year }}{% endif %}, declassified UAP, AARO file, {{ f.type }} UAP, Anomalousness Index">
+<meta name="keywords" content="{{ f.title | e }}, {% if _orig_fname %}{{ _orig_fname | e }}, {% endif %}{{ f.agency }} UFO, {{ f.agency }} UAP, {% if event_year %}{{ event_year }} UFO sighting, {% endif %}{% if place %}{{ place | e }} UAP, {% endif %}PURSUE {{ f.agency }}, war.gov UFO, Trump UFO{% if event_year %} {{ event_year }}{% endif %}, declassified UAP, AARO file, {{ f.type }} UAP, Anomalousness Index">
 {# Canonical points to extension-less URL - Cloudflare Pages serves it 200 direct
    while /files/X.html 308-redirects. Avoids canonical-on-redirect SEO loss. #}
 {% set canonical_url = site_url ~ '/files/' ~ f.id %}
@@ -29,8 +32,8 @@
 {% if series_next %}<link rel="next" href="{{ site_url }}/files/{{ series_next.id }}">{% endif %}
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="{{ seo_title }}">
-<meta property="og:description" content="{{ f.summary or f.title }}">
+<meta property="og:title" content="{{ seo_title | e }}">
+<meta property="og:description" content="{{ (f.summary or f.title) | e }}">
 <meta property="og:image" content="{{ og_image_abs }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -40,8 +43,8 @@
 <meta property="article:section" content="{{ f.agency }}">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ seo_title }}">
-<meta name="twitter:description" content="{{ f.summary or f.title }}">
+<meta name="twitter:title" content="{{ seo_title | e }}">
+<meta name="twitter:description" content="{{ (f.summary or f.title) | e }}">
 <meta name="twitter:image" content="{{ og_image_abs }}">
 
 <script type="application/ld+json">
@@ -152,7 +155,7 @@
   <div class="viewer">
     {% if serve_url %}
       {% if f.type == 'pdf' %}
-        <iframe src="{{ serve_url }}" title="{{ f.title }}" loading="lazy" referrerpolicy="no-referrer"></iframe>
+        <iframe src="{{ serve_url }}" title="{{ f.title | e }}" loading="lazy" referrerpolicy="no-referrer"></iframe>
       {% elif f.type == 'video' %}
         <video controls preload="metadata"
           {% if thumb_url %}poster="{{ thumb_url }}"{% endif %}
@@ -163,7 +166,7 @@
           {% endif %}
         </video>
       {% elif f.type == 'image' %}
-        <img src="{{ serve_url }}" alt="{{ f.title }}" loading="lazy">
+        <img src="{{ serve_url }}" alt="{{ f.title | e }}" loading="lazy">
       {% endif %}
     {% else %}
       <div style="padding:48px;text-align:center;color:#a8b8cc">
@@ -445,8 +448,43 @@
   </div>
 </main>
 
-<footer style="text-align:center;padding:60px 24px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
-  <p>Independent tracker. Not affiliated with the U.S. Department of War. <a href="/" style="color:#52b4ff">Back to tracker</a></p>
+<footer style="padding:48px 24px 60px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">
+  <nav style="max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:28px" aria-label="Site">
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:12px">BROWSE BY AGENCY</div>
+      <a href="/fbi-ufo-files/" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">FBI UFO Files</a>
+      <a href="/military-uap-files/" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Pentagon / Military UAP</a>
+      <a href="/nasa-ufo-photos/" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">NASA UFO Photos</a>
+      <a href="/cia-ufo-files/" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">CIA UFO Files</a>
+      <a href="/state-department-uap-cables/" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">State Dept Cables</a>
+      <a href="/intel-and-doe-uap-files/" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Intel &amp; DOE Files</a>
+    </div>
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:12px">ANALYSIS</div>
+      <a href="/deep-dives" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Deep-Dive Analysis (30)</a>
+      <a href="/top-10" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Top 10 Most Anomalous</a>
+      <a href="/pursue-program" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">What Is PURSUE?</a>
+      <a href="/methodology" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Scoring Methodology</a>
+      <a href="/verdict" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">The Honest Verdict</a>
+    </div>
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:12px">TOOLS</div>
+      <a href="/search" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Search All 294 Files</a>
+      <a href="/timeline" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Timeline 1948-2026</a>
+      <a href="/verify" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Verify vs war.gov</a>
+      <a href="/uap-data-csv" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">uap-data.csv Mirror</a>
+      <a href="/api" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Data API (JSON)</a>
+    </div>
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:12px">ABOUT</div>
+      <a href="/revisions" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">war.gov Change Log</a>
+      <a href="/faq" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">FAQ</a>
+      <a href="/glossary" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Glossary</a>
+      <a href="/about" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">About</a>
+      <a href="/contact" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Contact</a>
+    </div>
+  </nav>
+  <p style="text-align:center;max-width:1000px;margin:40px auto 0;padding-top:24px;border-top:1px solid rgba(82,180,255,.08)">Independent tracker. Not affiliated with the U.S. Department of War or any government agency. All PURSUE files are U.S. Government works (17 U.S.C. &sect; 105, public domain). <a href="/" style="color:#52b4ff">Back to the PURSUE Tracker home</a></p>
 </footer>
 </body>
 </html>
