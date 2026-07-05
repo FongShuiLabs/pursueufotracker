@@ -3,6 +3,12 @@ Allow: /
 Disallow: /_scratch/
 Disallow: /downloads/
 Disallow: /extracted/
+# Raw pre-rewrite paths - every file/essay/category/drop page is also
+# reachable at its underlying generated/ path (Cloudflare Pages serves
+# the repo root directly; _redirects only adds the clean alias on top).
+# Each raw copy already self-canonicalizes to the clean URL; this just
+# stops it from being crawled as a duplicate in the first place.
+Disallow: /generated/*.html$
 
 # AI crawlers - explicitly welcomed. The whole point of this site is
 # to be the canonical, structured, machine-readable record of the
