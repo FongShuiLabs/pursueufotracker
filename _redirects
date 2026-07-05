@@ -1,5 +1,12 @@
 /sitemap.xml /sitemap.xml 200
 /robots.txt /robots.txt 200
+# downloads/ is gitignored (local-only working dir, never deployed) - stale/cached
+# links to it (e.g. from a since-fixed bug where file pages briefly linked here
+# instead of the R2 mirror) 404 instead of resolving. Redirect straight to the
+# live R2 mirror so old links still work instead of dead-ending on a 404 page.
+/downloads/pdf/* https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/:splat 301
+/downloads/video/* https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/:splat 301
+/downloads/image/* https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/image/:splat 301
 /feed /generated/feed.xml 301
 /rss /generated/feed.xml 301
 # Stub-page consolidation: 3 entries created in error during the May 14 audit
