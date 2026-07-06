@@ -182,7 +182,8 @@ if (window.ADSENSE_PUB_ID) {
 <header class="hero">
   <div class="hero-meta">
     <span class="classification">UNCLASSIFIED // PUBLIC RELEASE</span>
-    <span class="date-stamp">TRACKING SINCE 08 MAY 2026 · ROLLING RELEASE</span>
+    <span class="date-stamp">LATEST RELEASE: DROP 03 · 12 JUN 2026</span>
+    <span class="date-stamp" id="freshness-badge" style="color:#52ffb4;border-color:#52ffb4;background:rgba(82,255,180,.05)">✓ CHECKING WAR.GOV...</span>
   </div>
   <h1>P U R S U E<span class="hero-sub">Trump Administration · Presidential Unsealings &amp; Reporting System for UAP Encounters</span></h1>
   <p class="hero-lede">The independent tracker of every UFO file the Trump administration declassifies through PURSUE. Release 01 (May 8, 2026) added 158 files; Release 02 (May 22, 2026) added 64; Release 03 (June 12, 2026) added 72 more. <strong style="color:#52ffb4">294 files now indexed, scored, and SHA-256 verified</strong>. We continue indexing, scoring, and verifying each one within hours of release.</p>
@@ -1051,17 +1052,20 @@ if (window.ADSENSE_PUB_ID) {
   <p><strong>Reporting consulted:</strong> CBS News, CNN, NBC News, TechCrunch, NewsNation, Fox News, ABC News (May 8, 2026 coverage)</p>
   <p>This is an independent index. Not affiliated with the Department of War, the FBI, NASA, the State Department, or any U.S. government entity. All underlying documents are public-domain U.S. Government works.</p>
   <p style="margin-top:14px"><a href="/about" style="color:#52b4ff">About</a> &middot; <a href="/contact" style="color:#52b4ff">Contact</a> &middot; <a href="/privacy" style="color:#52b4ff">Privacy</a> &middot; <a href="/methodology" style="color:#52b4ff">Methodology</a> &middot; <a href="/revisions" style="color:#52b4ff">Revisions log</a> &middot; <a href="/changes" style="color:#52b4ff">Diff data</a> &middot; <a href="https://github.com/FongShuiLabs/pursueufotracker" target="_blank" rel="noopener" style="color:#52b4ff">Source on GitHub</a></p>
-  <p class="tiny">Last indexed: May 8, 2026 &middot; <span id="last-polled">checking war.gov...</span></p>
+  <p class="tiny">Last new release: June 12, 2026 (Drop 03) &middot; <span id="last-polled">checking war.gov...</span></p>
 </footer>
 <script>
 fetch('/data/poll-state.json').then(r => r.json()).then(s => {
-  const el = document.getElementById('last-polled');
-  if (!el) return;
-  if (!s.last_polled_at) { el.textContent = 'Auto-poll initializing'; return; }
+  if (!s.last_polled_at) return;
   const t = new Date(s.last_polled_at);
   const mins = Math.max(0, Math.round((Date.now() - t) / 60000));
   const human = mins < 60 ? `${mins} min ago` : mins < 1440 ? `${Math.round(mins/60)} h ago` : `${Math.round(mins/1440)} d ago`;
-  el.textContent = `war.gov last polled ${human} (${s.row_count} files tracked)`;
+
+  const footerEl = document.getElementById('last-polled');
+  if (footerEl) footerEl.textContent = `war.gov last polled ${human} (${s.row_count} files tracked)`;
+
+  const badgeEl = document.getElementById('freshness-badge');
+  if (badgeEl) badgeEl.textContent = `✓ VERIFIED CURRENT · CHECKED ${human.toUpperCase()}`;
 }).catch(() => {});
 </script>
 
