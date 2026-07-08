@@ -7,7 +7,12 @@
       "date": "2026-05-08",
       "title": "Drop 01 - The Foundation Release",
       "summary": "First public batch of the Trump administration's PURSUE program. 158 files (published as 161 CSV rows) spanning the FBI, Department of Defense, NASA, and State Department - including FBI Case 62-HQ-83894 (1947-1968), Apollo 12 and 17 lunar imagery, military encounter footage from the Mediterranean to the Indo-Pacific, and four decades of State Department cables.",
-      "agencies": ["FBI", "DoD", "NASA", "STATE"],
+      "agencies": [
+        "FBI",
+        "DoD",
+        "NASA",
+        "STATE"
+      ],
       "file_count": 158,
       "video_count": 28,
       "doc_count": 116,
@@ -22,13 +27,88 @@
         "apollo-17-triangular-formation"
       ],
       "press_coverage": [
-        {"outlet": "CBS News",   "url": "https://www.cbsnews.com/news/pentagon-begins-release-ufo-files/"},
-        {"outlet": "CNN",        "url": "https://www.cnn.com/2026/05/08/politics/ufo-files-pentagon-release-aliens"},
-        {"outlet": "NBC News",   "url": "https://www.nbcnews.com/science/ufos-and-anomalous-phenomena/ufo-uap-files-pentagon-release-trump-rcna344204"},
-        {"outlet": "TechCrunch", "url": "https://techcrunch.com/2026/05/08/pentagon-releases-ufo-files-on-new-website/"},
-        {"outlet": "ABC News",   "url": "https://abcnews.com/Politics/pentagon-begins-release-decades-unresolved-ufo-files/story?id=132780534"},
-        {"outlet": "Fox News",   "url": "https://www.foxnews.com/politics/trump-admin-releases-highly-anticipatedfiles-documents-ufos-extraterrestrial-life"}
+        {
+          "outlet": "CBS News",
+          "url": "https://www.cbsnews.com/news/pentagon-begins-release-ufo-files/"
+        },
+        {
+          "outlet": "CNN",
+          "url": "https://www.cnn.com/2026/05/08/politics/ufo-files-pentagon-release-aliens"
+        },
+        {
+          "outlet": "NBC News",
+          "url": "https://www.nbcnews.com/science/ufos-and-anomalous-phenomena/ufo-uap-files-pentagon-release-trump-rcna344204"
+        },
+        {
+          "outlet": "TechCrunch",
+          "url": "https://techcrunch.com/2026/05/08/pentagon-releases-ufo-files-on-new-website/"
+        },
+        {
+          "outlet": "ABC News",
+          "url": "https://abcnews.com/Politics/pentagon-begins-release-decades-unresolved-ufo-files/story?id=132780534"
+        },
+        {
+          "outlet": "Fox News",
+          "url": "https://www.foxnews.com/politics/trump-admin-releases-highly-anticipatedfiles-documents-ufos-extraterrestrial-life"
+        }
       ],
+      "status": "live"
+    },
+    {
+      "id": "drop-02-2026-05-22",
+      "number": 2,
+      "date": "2026-05-22",
+      "title": "Drop 02 - The Sensor-Video Release",
+      "summary": "PURSUE Release 02 added 64 files to the archive - 58 sensor and audio recordings and 6 documents - bringing the total to 222. It is dominated by the DOW-UAP-PR050-PR099 series of U.S. military infrared sensor videos, and also introduced seven NASA crew audio debriefings, three Department of Energy nuclear-complex files, and the first CIA and ODNI records in the disclosure.",
+      "agencies": [
+        "DoD",
+        "NASA",
+        "DOE",
+        "CIA",
+        "ODNI"
+      ],
+      "file_count": 64,
+      "video_count": 58,
+      "doc_count": 6,
+      "image_count": 0,
+      "redacted_count": 54,
+      "headline_files": [
+        "odni-uap-d001-usper-narrative-senior-usic-official",
+        "dow-uap-pr072-administrative-revision-iir-1777-j0032-22-kazakhstan-uap-in-the-vi",
+        "dow-uap-pr050-4-uap-formation-iran-26-aug-2022-over-water-callsign",
+        "doe-uap-d001-enhanced-pantex-imagery",
+        "cia-uap-d001-intelligence-information-report-ussr-1973"
+      ],
+      "press_coverage": [],
+      "status": "live"
+    },
+    {
+      "id": "drop-03-2026-06-12",
+      "number": 3,
+      "date": "2026-06-12",
+      "title": "Drop 03 - CIA History, Apollo 16, and the FBI Orb Files",
+      "summary": "PURSUE Release 03 added 72 files to the archive - 53 documents, 9 videos, and 10 images - bringing the total to 294. It introduced the first large batch of CIA records (18 files spanning Project Blue Book analysis, Cold War sightings, and foreign UFO programs), 29 FBI files including modern orb and triangle sightings and the 2022 Colorado Springs investigation, 11 NASA crew debriefings and astronaut interviews from the Gemini and Apollo programs (including the two Apollo 16 scientific debriefings and a Gordon Cooper interview - three of the four files tied for the archive's top score), 12 Pentagon files, and the first Intelligence Community analysis and U.S. Government correspondence records in the disclosure.",
+      "agencies": [
+        "CIA",
+        "FBI",
+        "DoD",
+        "NASA",
+        "ICA",
+        "USG"
+      ],
+      "file_count": 72,
+      "video_count": 9,
+      "doc_count": 53,
+      "image_count": 10,
+      "redacted_count": 12,
+      "headline_files": [
+        "nasa-uap-d024-apollo-16-scientific-debriefing",
+        "nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962",
+        "fbi-uap-pr003-orbs-over-the-pond-2024",
+        "cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin",
+        "fbi-uap-d002-fd-1057-unresolved-uap-report-colorado-springs-2022"
+      ],
+      "press_coverage": [],
       "status": "live"
     }
   ],

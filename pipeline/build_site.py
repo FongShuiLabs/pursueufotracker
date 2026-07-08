@@ -33,7 +33,7 @@ CHOICE_EXPLANATIONS = {
         "eyewitness_only": "Reported by a witness with no instrumented record. The lowest tier in the rubric's sensor axis. Eyewitness perception in field conditions, even when the witness is highly credentialed, scores below capture by any instrumented modality.",
     },
     "witness_credibility": {
-        "astronaut": "Astronaut witness on the official federal record. The highest tier in the rubric and essentially unique in the PURSUE archive - only the Borman/Lovell Gemini 7 file fits this tier, which is the structural reason it is the sole 72 in the archive.",
+        "astronaut": "Astronaut witness on the official federal record - the highest tier in the rubric's witness-credibility axis. It applies to NASA crew debriefings, mission transcripts, and astronaut interviews across the Mercury, Gemini, and Apollo programs. Witness credibility is only one of six components; the astronaut-witness files that also rank high on the sensor and disposition axes are the four tied for the archive's top score of 72 - the Gemini 7 Borman audio, the Gordon Cooper interview, and the two Apollo 16 scientific debriefings.",
         "military_personnel": "Trained U.S. military personnel reporting from an operational mission context. The second-highest credibility tier in the rubric. This is the witness profile shared by the entire AARO-submitted infrared-capture cluster that anchors the 66-point score band.",
         "federal_agent": "Federal agency personnel (FBI investigators or equivalent) recording the report into the federal investigative system. Investigative credentials, but typically operating in a reactive rather than mission-active posture.",
         "civilian_credentialed": "Civilian witness whose report entered the federal record through investigative channels. The rubric weights civilian credentialed witnesses below uniformed personnel because the report enters the federal record at a remove rather than directly from a mission context.",
@@ -49,14 +49,14 @@ CHOICE_EXPLANATIONS = {
     },
     "official_disposition": {
         "open_after_review": "Released as open after formal review by the originating agency. The file passed through a review process and was published in that posture - a stronger disposition signal than 'unresolved with no review,' because review has occurred and the open status is the agency's published conclusion.",
-        "unresolved_no_review": "Catalogued as unresolved with no formal review process having concluded. This is the AARO baseline disposition for the 27-file score-66 cluster - the reports are logged into the system as unresolved, but no formal review has finalized. The rubric distinguishes this from 'open after review' because the absence of review is itself a status signal.",
+        "unresolved_no_review": "Catalogued as unresolved with no formal review process having concluded. This is the AARO baseline disposition for the dense score-66 cluster of military infrared captures - the reports are logged into the system as unresolved, but no formal review has finalized. The rubric distinguishes this from 'open after review' because the absence of review is itself a status signal.",
     },
 }
 
 TOPIC_PAGES = [
     {"match": lambda f: f["id"] == "nasa-uap-d003a-gemini-7-audio-excerpt-1965",
      "slug": "/borman-incident", "name": "The Borman Incident", "size": 1,
-     "anchor": "the highest-scoring file in the archive at 72"},
+     "anchor": "one of the four files tied for the archive's top score of 72"},
     {"match": lambda f: f["id"].startswith("65-hs1-834228961-62-hq-83894-"),
      "slug": "/fbi-62-hq-83894", "name": "FBI Case 62-HQ-83894", "size": 18,
      "anchor": "the 18-PDF FBI central case file covering 1947-1968"},
@@ -160,11 +160,13 @@ def _score_tier_phrase(score: int | None, rank: int, total: int) -> str:
     if score is None:
         return ""
     if score >= 72:
-        return "That score is the highest in the PURSUE archive - the only file at this tier."
+        return "That score is the highest in the PURSUE archive - one of four files tied at the top score of 72 (the Gemini 7 Borman audio, the Gordon Cooper interview, and the two Apollo 16 scientific debriefings)."
+    if score >= 67:
+        return "That places it just above the archive's densest scoring band - the 78 files tied at 66 - among the small group of top-scoring files."
     if score >= 66:
-        return f"That places it tied with 26 other files at 66 - the densest single-score cluster in the archive, anchored by AARO-submitted military infrared captures."
+        return "That places it in the archive's densest scoring band - 78 files tied at 66, anchored by AARO-submitted and Release-02 military infrared captures."
     if score >= 65:
-        return f"That places it one rubric point below the 27-file AARO 66 cluster and seven below the Gemini 7 audio at 72 - the second tier in the archive."
+        return "That places it one rubric point below the 66-point military-capture band and seven below the archive's top score of 72 - the second tier in the archive."
     if score >= 60:
         return f"That places it in the mid-archive band ({rank} of {total} by score). The score reflects the rubric's read on evidentiary weight, not the underlying event's significance."
     return f"That places it in the lower-scoring band of the archive ({rank} of {total} by score), typical of investigative-record style files where the report is paper-based rather than instrumented."

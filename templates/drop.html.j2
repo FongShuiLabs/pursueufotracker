@@ -84,12 +84,14 @@
   </a>
   {% endfor %}
 
+  {% if drop.press_coverage %}
   <h2>Press coverage</h2>
   <ul class="press-list">
     {% for p in drop.press_coverage %}
     <li><a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.outlet }} →</a></li>
     {% endfor %}
   </ul>
+  {% endif %}
 
   {% set share_title = 'Trump PURSUE Drop ' ~ '%02d'|format(drop.number) ~ ': ' ~ drop.title %}
   <div class="share">
@@ -129,13 +131,13 @@
     </a>
     <a href="/fbi-ufo-files/" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
       <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">CATEGORY</div>
-      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">FBI files (57)</strong>
-      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">Bureau case file 62-HQ-83894. 1947 to 1968.</span>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">FBI files (86)</strong>
+      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">Case file 62-HQ-83894, the modern orb sightings, and Colorado Springs 2022.</span>
     </a>
     <a href="/military-uap-files/" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
       <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">CATEGORY</div>
-      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">Pentagon UAP (86)</strong>
-      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">AARO Mission Reports. 2020 to 2026.</span>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">Pentagon UAP (145)</strong>
+      <span style="color:#a8b8cc;font-size:13px;line-height:1.5">AARO Mission Reports and sensor videos. 2013 to 2026.</span>
     </a>
     <a href="/faq" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
       <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">REFERENCE</div>
