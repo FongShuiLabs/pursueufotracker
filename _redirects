@@ -20,121 +20,77 @@
 /generated/files/dow-uap-pr43-unresolved-uap-report-africa-2025 /files/unresolved-uap-report-djibouti-2025 301
 /generated/files/dow-uap-pr47-unresolved-uap-report-indopacom-2023 /files/unresolved-uap-report-japan-2023 301
 /files/* /generated/files/:splat 200
+#
+# NOTE (2026-07-09): Cloudflare Pages on this project only reliably honors
+# roughly the first ~100 rules in this file - rules past that point silently
+# 404 instead of matching, regardless of total file size (confirmed empirically:
+# a 342-rule file and a 132-rule file both cut off around rule ~101-105). This
+# is well under the documented 2,000-static/100-dynamic ceiling, so treat it as
+# a project-specific effective budget. Below this point, EVERY page gets exactly
+# ONE rule using only the trailing-slash form its internal links actually use
+# (no-slash for single pages, WITH-slash for the 6 category hubs, which are
+# always linked as "/x/" in the footer nav) - do not add a second slash-variant
+# per page; that's what blew the budget last time. If you add a new page, add
+# ONE line for it and keep the running rule count comfortably under 100.
 /changes /generated/changes 200
-/changes/ /generated/changes 200
 /privacy /generated/privacy 200
-/privacy/ /generated/privacy 200
 /about /generated/about 200
-/about/ /generated/about 200
 /contact /generated/contact 200
-/contact/ /generated/contact 200
 /api /generated/api 200
-/api/ /generated/api 200
 /api/files /generated/api/files.json 301
 /api/files.json /generated/api/files.json 301
 /verdict /generated/verdict 200
-/verdict/ /generated/verdict 200
 /top10 /generated/top-10 200
 /top-10 /generated/top-10 200
-/top-10/ /generated/top-10 200
 /press /generated/press 200
-/press/ /generated/press 200
 /drops /generated/drops/ 200
 /drops/ /generated/drops/ 200
 /drops/* /generated/drops/:splat 200
 /revisions /generated/revisions 200
-/revisions/ /generated/revisions 200
 /faq /generated/faq 200
-/faq/ /generated/faq 200
 /glossary /generated/glossary 200
-/glossary/ /generated/glossary 200
 /methodology /generated/methodology 200
-/methodology/ /generated/methodology 200
 /verify /generated/verify 200
-/verify/ /generated/verify 200
 /rubric /generated/rubric 200
-/rubric/ /generated/rubric 200
 /search /generated/search 200
-/search/ /generated/search 200
 /timeline /generated/timeline 200
-/timeline/ /generated/timeline 200
 /random /generated/random 200
-/random/ /generated/random 200
 /borman-incident /generated/borman-incident 200
-/borman-incident/ /generated/borman-incident 200
 /apollo-12-ufo-photos /generated/apollo-12-ufo-photos 200
-/apollo-12-ufo-photos/ /generated/apollo-12-ufo-photos 200
 /fbi-62-hq-83894 /generated/fbi-62-hq-83894 200
-/fbi-62-hq-83894/ /generated/fbi-62-hq-83894 200
 /aaro-unresolved-uap /generated/aaro-unresolved-uap 200
-/aaro-unresolved-uap/ /generated/aaro-unresolved-uap 200
 /pursue-program /generated/pursue-program 200
-/pursue-program/ /generated/pursue-program 200
 /apollo-17-ufo-records /generated/apollo-17-ufo-records 200
-/apollo-17-ufo-records/ /generated/apollo-17-ufo-records 200
 /diplomatic-uap-cables /generated/diplomatic-uap-cables 200
-/diplomatic-uap-cables/ /generated/diplomatic-uap-cables 200
 /cia-ufo-files-explained /generated/cia-ufo-files-explained 200
-/cia-ufo-files-explained/ /generated/cia-ufo-files-explained 200
 /fbi-modern-uap-files /generated/fbi-modern-uap-files 200
-/fbi-modern-uap-files/ /generated/fbi-modern-uap-files 200
 /robertson-panel /generated/robertson-panel 200
-/robertson-panel/ /generated/robertson-panel 200
 /project-blue-book-special-report-14 /generated/project-blue-book-special-report-14 200
-/project-blue-book-special-report-14/ /generated/project-blue-book-special-report-14 200
 /gordon-cooper-ufo /generated/gordon-cooper-ufo 200
-/gordon-cooper-ufo/ /generated/gordon-cooper-ufo 200
 /u-2-ufo-sightings /generated/u-2-ufo-sightings 200
-/u-2-ufo-sightings/ /generated/u-2-ufo-sightings 200
 /apollo-16-ufo /generated/apollo-16-ufo 200
-/apollo-16-ufo/ /generated/apollo-16-ufo 200
 /gemini-4-ufo /generated/gemini-4-ufo 200
-/gemini-4-ufo/ /generated/gemini-4-ufo 200
 /mercury-fireflies /generated/mercury-fireflies 200
-/mercury-fireflies/ /generated/mercury-fireflies 200
 /apollo-11-ufo /generated/apollo-11-ufo 200
-/apollo-11-ufo/ /generated/apollo-11-ufo 200
 /cia-harare-ufo-2008 /generated/cia-harare-ufo-2008 200
-/cia-harare-ufo-2008/ /generated/cia-harare-ufo-2008 200
 /cia-himalayan-ufo-1968 /generated/cia-himalayan-ufo-1968 200
-/cia-himalayan-ufo-1968/ /generated/cia-himalayan-ufo-1968 200
 /western-us-uap-event-2023 /generated/western-us-uap-event-2023 200
-/western-us-uap-event-2023/ /generated/western-us-uap-event-2023 200
 /fbi-2023-uap-investigation /generated/fbi-2023-uap-investigation 200
-/fbi-2023-uap-investigation/ /generated/fbi-2023-uap-investigation 200
 /cia-sary-shagan-laser-uap-1973 /generated/cia-sary-shagan-laser-uap-1973 200
-/cia-sary-shagan-laser-uap-1973/ /generated/cia-sary-shagan-laser-uap-1973 200
 /skylab-three-crews-light-observations /generated/skylab-three-crews-light-observations 200
-/skylab-three-crews-light-observations/ /generated/skylab-three-crews-light-observations 200
 /gemini-5-snow-debris /generated/gemini-5-snow-debris 200
-/gemini-5-snow-debris/ /generated/gemini-5-snow-debris 200
 /apollo-12-medical-debrief-coronal-discharges /generated/apollo-12-medical-debrief-coronal-discharges 200
-/apollo-12-medical-debrief-coronal-discharges/ /generated/apollo-12-medical-debrief-coronal-discharges 200
 /uap-data-csv /generated/uap-data-csv 200
-/uap-data-csv/ /generated/uap-data-csv 200
 /deep-dives /generated/deep-dives 200
-/deep-dives/ /generated/deep-dives 200
 /australia-1971-blue-book-review /generated/australia-1971-blue-book-review 200
-/australia-1971-blue-book-review/ /generated/australia-1971-blue-book-review 200
 /cia-budapest-saucer-letter-1955 /generated/cia-budapest-saucer-letter-1955 200
-/cia-budapest-saucer-letter-1955/ /generated/cia-budapest-saucer-letter-1955 200
 /odni-uap-d001-helicopter-encounter /generated/odni-uap-d001-helicopter-encounter 200
-/odni-uap-d001-helicopter-encounter/ /generated/odni-uap-d001-helicopter-encounter 200
 /pursue-release-02-pentagon-videos /generated/pursue-release-02-pentagon-videos 200
-/pursue-release-02-pentagon-videos/ /generated/pursue-release-02-pentagon-videos 200
 /doe-nuclear-uap-files /generated/doe-nuclear-uap-files 200
-/doe-nuclear-uap-files/ /generated/doe-nuclear-uap-files 200
 /cia-uap-d001-1973-ussr /generated/cia-uap-d001-1973-ussr 200
-/cia-uap-d001-1973-ussr/ /generated/cia-uap-d001-1973-ussr 200
 /fbi-ufo-files/ /generated/categories/fbi-ufo-files 200
-/fbi-ufo-files /generated/categories/fbi-ufo-files 200
 /military-uap-files/ /generated/categories/military-uap-files 200
-/military-uap-files /generated/categories/military-uap-files 200
 /nasa-ufo-photos/ /generated/categories/nasa-ufo-photos 200
-/nasa-ufo-photos /generated/categories/nasa-ufo-photos 200
 /state-department-uap-cables/ /generated/categories/state-department-uap-cables 200
-/state-department-uap-cables /generated/categories/state-department-uap-cables 200
 /intel-and-doe-uap-files/ /generated/categories/intel-and-doe-uap-files 200
-/intel-and-doe-uap-files /generated/categories/intel-and-doe-uap-files 200
 /cia-ufo-files/ /generated/categories/cia-ufo-files 200
-/cia-ufo-files /generated/categories/cia-ufo-files 200
