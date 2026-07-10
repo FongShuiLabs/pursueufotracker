@@ -31,6 +31,11 @@ def run() -> None:
     for f in files:
         by_agency.setdefault(f["agency"], 0)
         by_agency[f["agency"]] += 1
+    by_type = {}
+    for f in files:
+        by_type.setdefault(f["type"], 0)
+        by_type[f["type"]] += 1
+    redacted_count = sum(1 for f in files if f.get("redacted"))
     high = [f for f in files if (f.get("score") or {}).get("value", 0) >= 80]
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
@@ -46,6 +51,8 @@ def run() -> None:
         manifest=manifest,
         total=len(files),
         by_agency=by_agency,
+        by_type=by_type,
+        redacted_count=redacted_count,
         high_anomaly=high,
         site_name=SITE_NAME,
         site_url=SITE_URL,

@@ -234,7 +234,7 @@ def _page_html(cat: dict, files: list[dict]) -> str:
                 "url": f"{SITE_URL}/files/{f['id']}",
                 "name": f.get("title") or f["id"],
             }
-            for i, f in enumerate(files[:50])
+            for i, f in enumerate(files)
         ],
     }
     collection = {
