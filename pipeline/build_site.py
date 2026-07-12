@@ -478,6 +478,36 @@ def _seo_titles_map(all_files: list[dict]) -> dict[str, str]:
     return seo
 
 
+def _transcript_text(f: dict) -> str | None:
+    """Read the plain-text transcript at BUILD time so it can be embedded
+    server-side in the file page HTML. The old template fetched the .vtt
+    client-side from extracted/transcripts/, but that directory is gitignored
+    and never deployed - so the fetch 404'd and the transcript never showed.
+    Embedding the text at build time both fixes that and surfaces substantial
+    unique content (e.g. the 90k-char Apollo 14 debriefing) to crawlers.
+    Returns None for the silent sensor videos that have no linked transcript."""
+    tp = (f.get("extracted") or {}).get("transcript_path")
+    if not tp:
+        return None
+    txt = ROOT / Path(tp).with_suffix(".txt")
+    if txt.exists():
+        body = txt.read_text(encoding="utf-8", errors="replace").strip()
+        if len(body) >= 20:
+            return body
+    # Fallback: strip WEBVTT header + timestamps out of the .vtt.
+    vtt = ROOT / tp
+    if vtt.exists():
+        lines = [
+            ln for ln in vtt.read_text(encoding="utf-8", errors="replace").splitlines()
+            if ln.strip() and "-->" not in ln and ln.strip() != "WEBVTT"
+            and not ln.strip().isdigit()
+        ]
+        body = " ".join(lines).strip()
+        if len(body) >= 20:
+            return body
+    return None
+
+
 def _render_file_pages(env: Environment, manifest: dict) -> None:
     tpl = env.get_template("file.html.j2")
     all_files = manifest["files"]
@@ -526,6 +556,7 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
             "series_next": next_f,
             "archive_context": archive_context,
             "score_explanations": score_explanations,
+            "transcript_text": _transcript_text(f),
         }
         out.write_text(tpl.render(**ctx), encoding="utf-8")
 

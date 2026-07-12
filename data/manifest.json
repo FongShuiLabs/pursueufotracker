@@ -25892,7 +25892,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d003a-gemini-7-audio-excerpt-1965.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d003a-gemini-7-audio-excerpt-1965.jpg"
       },
       "geo": {
@@ -26382,7 +26382,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969.jpg"
       },
       "geo": {
@@ -26482,7 +26482,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972.jpg"
       },
       "geo": {
@@ -26582,7 +26582,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d010-mercury-atlas-9-audio-excerpt-may-15-1963.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d010-mercury-atlas-9-audio-excerpt-may-15-1963.jpg"
       },
       "geo": {
@@ -26682,7 +26682,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963.jpg"
       },
       "geo": {
@@ -26782,7 +26782,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d012-mercury-atlas-8-audio-excerpt-october-3-1962.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d012-mercury-atlas-8-audio-excerpt-october-3-1962.jpg"
       },
       "geo": {
@@ -26882,7 +26882,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d013-mercury-atlas-7-may-24-1962.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d013-mercury-atlas-7-may-24-1962.jpg"
       },
       "geo": {
@@ -26982,7 +26982,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d014-mercury-redstone-4-july-21-1961.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d014-mercury-redstone-4-july-21-1961.jpg"
       },
       "geo": {
@@ -27914,7 +27914,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962.jpg"
       },
       "geo": {
@@ -28014,7 +28014,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d024-apollo-16-scientific-debriefing.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d024-apollo-16-scientific-debriefing.jpg"
       },
       "geo": {
@@ -28114,7 +28114,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d025-apollo-16-scientific-debriefing.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d025-apollo-16-scientific-debriefing.jpg"
       },
       "geo": {
@@ -28514,7 +28514,7 @@
       },
       "extracted": {
         "text_path": null,
-        "transcript_path": null,
+        "transcript_path": "extracted/transcripts/nasa-uap-d029-apollo-17-crew-medical-debriefing-continued-1972.vtt",
         "thumbnail_path": "extracted/thumbnails/nasa-uap-d029-apollo-17-crew-medical-debriefing-continued-1972.jpg"
       },
       "geo": {

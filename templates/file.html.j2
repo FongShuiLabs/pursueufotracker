@@ -376,16 +376,12 @@
   </div>
   {% endif %}
 
-  {% if f.extracted and f.extracted.transcript_path %}
-  <details>
+  {% if transcript_text %}
+  <details open>
     <summary>📝 Transcript (Whisper-generated)</summary>
-    <div class="transcript" id="transcript-target">Loading transcript...</div>
+    <p style="color:#7a92b0;font-size:12px;margin:8px 0 12px">Automatic speech-to-text transcript generated with OpenAI Whisper from the released audio. Machine-generated - expect occasional errors on proper nouns and radio-garbled passages. Verify anything load-bearing against the source file above.</p>
+    <div class="transcript">{{ transcript_text }}</div>
   </details>
-  <script>
-    fetch("../../{{ f.extracted.transcript_path }}")
-      .then(r => r.text())
-      .then(t => document.getElementById("transcript-target").textContent = t);
-  </script>
   {% endif %}
 
   {% include "partials/affiliate_sidebar.html.j2" %}

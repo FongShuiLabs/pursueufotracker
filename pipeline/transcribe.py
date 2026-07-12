@@ -33,21 +33,64 @@ def _segments_to_vtt(segments: list[dict]) -> str:
     return "\n".join(out)
 
 
+def _vtt_has_speech(path: Path) -> bool:
+    """True only if the .vtt carries real transcribed content. Most PURSUE
+    videos are SILENT military infrared/EO sensor captures - Whisper yields an
+    empty cue list for them, and an empty transcript must NOT be linked (it
+    would render a blank transcript box and back a false 'transcripts on every
+    video' claim). Only NASA astronaut audio recordings have real speech."""
+    try:
+        txt = path.read_text(encoding="utf-8", errors="replace")
+    except Exception:
+        return False
+    body = "".join(
+        line for line in txt.splitlines()
+        if line.strip() and "-->" not in line and line.strip() != "WEBVTT"
+        and not line.strip().isdigit()
+    )
+    return len(body.strip()) >= 20
+
+
+def _relink_existing(videos: list[dict]) -> int:
+    """Point manifest entries at any transcript that already exists on disk AND
+    contains real speech. Runs regardless of whether Whisper is installed, so a
+    freshly-parsed manifest (which has no transcript_path) or a machine without
+    Whisper still surfaces the transcripts that were generated on a prior run.
+    Silent-sensor-video VTTs (empty) are deliberately left unlinked."""
+    linked = 0
+    for f in videos:
+        out_vtt = EX_TRANSCRIPTS / f"{f['id']}.vtt"
+        if out_vtt.exists() and _vtt_has_speech(out_vtt):
+            f.setdefault("extracted", {})["transcript_path"] = str(out_vtt.relative_to(ROOT)).replace("\\", "/")
+            linked += 1
+        else:
+            # Ensure a stale/empty link never survives a re-parse.
+            ex = f.get("extracted") or {}
+            if ex.get("transcript_path"):
+                ex["transcript_path"] = None
+    return linked
+
+
 def run() -> None:
     ensure_dirs()
     if not MANIFEST_PATH.exists():
         print("  (no manifest)")
-        return
-    try:
-        import whisper
-    except ImportError:
-        print("  openai-whisper missing. pip install -r requirements.txt")
         return
 
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     videos = [f for f in manifest["files"] if f.get("type") == "video" and f.get("local_path")]
     if not videos:
         print("  (no videos to transcribe)")
+        return
+
+    # Always relink transcripts already on disk first - independent of Whisper.
+    linked = _relink_existing(videos)
+
+    try:
+        import whisper
+    except ImportError:
+        MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
+        print(f"  openai-whisper missing - linked {linked} existing transcripts, skipped new transcription")
         return
 
     print(f"  loading whisper model: {WHISPER_MODEL}")
@@ -61,7 +104,8 @@ def run() -> None:
         out_vtt  = EX_TRANSCRIPTS / f"{f['id']}.vtt"
         out_txt  = EX_TRANSCRIPTS / f"{f['id']}.txt"
         if out_json.exists() and out_vtt.exists() and out_txt.exists():
-            f.setdefault("extracted", {})["transcript_path"] = str(out_vtt.relative_to(ROOT)).replace("\\", "/")
+            # Already transcribed on a prior run; _relink_existing handled the
+            # link (content-gated), so nothing more to do here.
             continue
         try:
             result = model.transcribe(str(src), language=WHISPER_LANG, verbose=False)
@@ -71,10 +115,12 @@ def run() -> None:
         out_json.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
         out_vtt.write_text(_segments_to_vtt(result.get("segments", [])), encoding="utf-8")
         out_txt.write_text((result.get("text") or "").strip(), encoding="utf-8")
-        f.setdefault("extracted", {})["transcript_path"] = str(out_vtt.relative_to(ROOT)).replace("\\", "/")
+        if _vtt_has_speech(out_vtt):
+            f.setdefault("extracted", {})["transcript_path"] = str(out_vtt.relative_to(ROOT)).replace("\\", "/")
 
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(f"  transcripts for {len(videos)} videos")
+    linked = sum(1 for f in videos if (f.get("extracted") or {}).get("transcript_path"))
+    print(f"  transcripts linked for {linked}/{len(videos)} videos (rest are silent sensor captures)")
 
 
 if __name__ == "__main__":
