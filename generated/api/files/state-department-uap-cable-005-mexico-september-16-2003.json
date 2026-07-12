@@ -7,8 +7,7 @@
   "date_event": "9/12/03",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/059uap00013.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/state-department-uap-cable-005-mexico-september-16-2003.pdf",
+  "local_path": "downloads/pdf/059uap00013.pdf",
   "size_bytes": 1208817,
   "sha256": "257e2388f838975fcee0b00a381059e903e64018b7aafb7a12e5392437154f5f",
   "redacted": false,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "Mexico"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/059uap00013.jpg",
-  "csv_raw_title": "State Department UAP Cable 005, Mexico, September 16, 2003",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/059uap00013.pdf",
   "audience": {
     "tldr": "State Department diplomatic cable from an overseas diplomatic post documenting a UAP encounter (9/12/03) over Mexico.",
     "what_we_know": [

@@ -7,8 +7,7 @@
   "date_event": "11/9/23",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d74-mission-report-syria-november-2023.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d074-mission-report-syria-november-2023.pdf",
+  "local_path": "downloads/pdf/dow-uap-d74-mission-report-syria-november-2023.pdf",
   "size_bytes": 719044,
   "sha256": "30708df4aa8484c668d3c3694560f5b57d5a10b6b3da1cfb826a925d9cc806e1",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "Syria"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d74-mission-report-syria-november-2023.jpg",
-  "csv_raw_title": "DOW-UAP-D074, Mission Report, Syria, November 2023",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d74-mission-report-syria-november-2023.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (11/9/23) over Syria.",
     "what_we_know": [

@@ -7,8 +7,7 @@
   "date_event": "1969",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d1-apollo-12-transcript-1969.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/nasa-uap-d001-apollo-12-transcript-1969.pdf",
+  "local_path": "downloads/pdf/nasa-uap-d1-apollo-12-transcript-1969.pdf",
   "size_bytes": 1052877,
   "sha256": "74dc1a19ef09d093ceba4a0ab082bf3729cb19218c0c3481d8b71f814740c9b3",
   "redacted": false,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "Moon"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/nasa-uap-d1-apollo-12-transcript-1969.jpg",
-  "csv_raw_title": "NASA-UAP-D001, Apollo 12 Transcript, 1969",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/nasa-uap-d1-apollo-12-transcript-1969.pdf",
   "audience": {
     "tldr": "NASA mission record from a crewed lunar mission documenting a UAP encounter (1969) over Moon.",
     "what_we_know": [

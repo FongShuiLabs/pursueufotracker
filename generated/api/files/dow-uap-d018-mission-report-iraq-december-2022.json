@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": "extracted/pdf-text/dow-uap-d018-mission-report-iraq-december-2022.txt",
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/dow-uap-d018-mission-report-iraq-december-2022.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,6 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d18-mission-report-iraq-december-2022.jpg",
   "csv_raw_title": "DOW-UAP-D018, Mission Report, Iraq, December 2022",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d018-mission-report-iraq-december-2022.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (12/1/22) over Iraq.",
     "what_we_know": [

@@ -1,118 +1,8 @@
 {
   "version": 1,
-  "generated_at": "2026-05-09T20:00:00Z",
-  "count": 294,
+  "generated_at": "2026-07-12T00:29:10.302293+00:00",
+  "count": 334,
   "files": [
-    {
-      "id": "cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin",
-      "title": "CIA-UAP-017, Placement on High Alert Due to Perceived Aggressive Foreign Posturing",
-      "agency": "CIA",
-      "category": "intel",
-      "type": "pdf",
-      "date_event": "July, 2008",
-      "score": 58,
-      "url": "https://pursueufotracker.com/files/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin",
-      "detail_api": "https://pursueufotracker.com/api/files/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin.json"
-    },
-    {
-      "id": "dow-uap-d084-us-army-flying-saucer-study-1949",
-      "title": "DOW-UAP-D084, US Army-Flying-Saucer-Study_1949",
-      "agency": "DoD",
-      "category": "military",
-      "type": "pdf",
-      "date_event": null,
-      "score": 56,
-      "url": "https://pursueufotracker.com/files/dow-uap-d084-us-army-flying-saucer-study-1949",
-      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d084-us-army-flying-saucer-study-1949.json"
-    },
-    {
-      "id": "fbi-uap-d002-fd-1057-unresolved-uap-report-colorado-springs-2022",
-      "title": "FBI-UAP-D002, FD-1057, Unresolved UAP Report, Colorado Springs, 2022",
-      "agency": "FBI",
-      "category": "fbi",
-      "type": "pdf",
-      "date_event": "2022",
-      "score": 55,
-      "url": "https://pursueufotracker.com/files/fbi-uap-d002-fd-1057-unresolved-uap-report-colorado-springs-2022",
-      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d002-fd-1057-unresolved-uap-report-colorado-springs-2022.json"
-    },
-    {
-      "id": "fbi-uap-d003-digital-rendering-unresolved-uap-report-colorado-springs-2022",
-      "title": "FBI-UAP-D003, Digital Rendering, Unresolved UAP Report, Colorado Springs, 2022",
-      "agency": "FBI",
-      "category": "fbi",
-      "type": "pdf",
-      "date_event": "2022",
-      "score": 58,
-      "url": "https://pursueufotracker.com/files/fbi-uap-d003-digital-rendering-unresolved-uap-report-colorado-springs-2022",
-      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d003-digital-rendering-unresolved-uap-report-colorado-springs-2022.json"
-    },
-    {
-      "id": "fbi-uap-d009-fd-302-67-northeastern-orb-sighting-2026",
-      "title": "FBI-UAP-D009, FD-302-67, “Northeastern Orb Sighting,” 2026",
-      "agency": "FBI",
-      "category": "fbi",
-      "type": "pdf",
-      "date_event": "2026",
-      "score": 55,
-      "url": "https://pursueufotracker.com/files/fbi-uap-d009-fd-302-67-northeastern-orb-sighting-2026",
-      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d009-fd-302-67-northeastern-orb-sighting-2026.json"
-    },
-    {
-      "id": "fbi-uap-d010-fd-302-71-northeastern-orb-sighting-2026",
-      "title": "FBI-UAP-D010, FD-302-71, “Northeastern Orb Sighting,” 2026",
-      "agency": "FBI",
-      "category": "fbi",
-      "type": "pdf",
-      "date_event": "2026",
-      "score": 55,
-      "url": "https://pursueufotracker.com/files/fbi-uap-d010-fd-302-71-northeastern-orb-sighting-2026",
-      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d010-fd-302-71-northeastern-orb-sighting-2026.json"
-    },
-    {
-      "id": "fbi-uap-d011-d-fbi-correspondence-referral-1949",
-      "title": "FBI-UAP-D011, D/FBI Correspondence Referral, 1949",
-      "agency": "FBI",
-      "category": "fbi",
-      "type": "pdf",
-      "date_event": "1949",
-      "score": 58,
-      "url": "https://pursueufotracker.com/files/fbi-uap-d011-d-fbi-correspondence-referral-1949",
-      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d011-d-fbi-correspondence-referral-1949.json"
-    },
-    {
-      "id": "fbi-uap-pr003-orbs-over-the-pond-2024",
-      "title": "FBI-UAP-PR003, “Orbs Over the Pond,” 2024",
-      "agency": "FBI",
-      "category": "fbi",
-      "type": "video",
-      "date_event": "October, 2024",
-      "score": 70,
-      "url": "https://pursueufotracker.com/files/fbi-uap-pr003-orbs-over-the-pond-2024",
-      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-pr003-orbs-over-the-pond-2024.json"
-    },
-    {
-      "id": "fbi-uap-pr004-northeastern-orb-sighting-2025",
-      "title": "FBI-UAP-PR004, “Northeastern Orb Sighting,” 2025",
-      "agency": "FBI",
-      "category": "fbi",
-      "type": "video",
-      "date_event": "July, 2025",
-      "score": 70,
-      "url": "https://pursueufotracker.com/files/fbi-uap-pr004-northeastern-orb-sighting-2025",
-      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-pr004-northeastern-orb-sighting-2025.json"
-    },
-    {
-      "id": "ica-uap-d001-analysis-colorado-springs-uap-incident-2022",
-      "title": "ICA-UAP-D001, Analysis: Colorado Springs UAP Incident, 2022",
-      "agency": "ICA",
-      "category": "intel",
-      "type": "pdf",
-      "date_event": "2022",
-      "score": 47,
-      "url": "https://pursueufotracker.com/files/ica-uap-d001-analysis-colorado-springs-uap-incident-2022",
-      "detail_api": "https://pursueufotracker.com/api/files/ica-uap-d001-analysis-colorado-springs-uap-incident-2022.json"
-    },
     {
       "id": "18-100754-general-1946-7-vol-2",
       "title": "18_100754_ General 1946-7_Vol_2",
@@ -631,6 +521,17 @@
       "detail_api": "https://pursueufotracker.com/api/files/cia-uap-016-sightings-of-unidentified-flying-objects-in-ladakh-nepal-sikkim-and-.json"
     },
     {
+      "id": "cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin",
+      "title": "CIA-UAP-017, Placement on High Alert Due to Perceived Aggressive Foreign Posturing",
+      "agency": "CIA",
+      "category": "intel",
+      "type": "pdf",
+      "date_event": "July, 2008",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin",
+      "detail_api": "https://pursueufotracker.com/api/files/cia-uap-017-placement-on-high-alert-due-to-perceived-aggressive-foreign-posturin.json"
+    },
+    {
       "id": "cia-uap-018-report-of-unusual-flying-object-sightings-and-attendant-scientific-a",
       "title": "CIA-UAP-018, Report of Unusual Flying Object Sightings and Attendant Scientific Activity",
       "agency": "CIA",
@@ -664,6 +565,28 @@
       "detail_api": "https://pursueufotracker.com/api/files/cia-uap-d001-intelligence-information-report-ussr-1973.json"
     },
     {
+      "id": "cia-uap-d020-memorandum-on-unconventional-aircraft-sightings-1955",
+      "title": "CIA-UAP-D020, Memorandum on Unconventional Aircraft Sightings, 1955",
+      "agency": "CIA",
+      "category": "intel",
+      "type": "pdf",
+      "date_event": "1955",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/cia-uap-d020-memorandum-on-unconventional-aircraft-sightings-1955",
+      "detail_api": "https://pursueufotracker.com/api/files/cia-uap-d020-memorandum-on-unconventional-aircraft-sightings-1955.json"
+    },
+    {
+      "id": "cia-uap-d021-analysis-of-unconventional-aircraft-sightings-1955",
+      "title": "CIA-UAP-D021, Analysis of Unconventional Aircraft Sightings, 1955",
+      "agency": "CIA",
+      "category": "intel",
+      "type": "pdf",
+      "date_event": "1955",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/cia-uap-d021-analysis-of-unconventional-aircraft-sightings-1955",
+      "detail_api": "https://pursueufotracker.com/api/files/cia-uap-d021-analysis-of-unconventional-aircraft-sightings-1955.json"
+    },
+    {
       "id": "doe-uap-d001-enhanced-pantex-imagery",
       "title": "DOE-UAP-D001, Enhanced PANTEX Imagery",
       "agency": "DOE",
@@ -695,6 +618,28 @@
       "score": 47,
       "url": "https://pursueufotracker.com/files/doe-uap-d003-pajarito-astronomers-invitation-1986",
       "detail_api": "https://pursueufotracker.com/api/files/doe-uap-d003-pajarito-astronomers-invitation-1986.json"
+    },
+    {
+      "id": "doe-uap-d004-los-alamos-conference-on-aerial-phenomena-1949",
+      "title": "DOE-UAP-D004, Los Alamos Conference on Aerial Phenomena, 1949",
+      "agency": "DOE",
+      "category": "intel",
+      "type": "pdf",
+      "date_event": "3/22/49",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/doe-uap-d004-los-alamos-conference-on-aerial-phenomena-1949",
+      "detail_api": "https://pursueufotracker.com/api/files/doe-uap-d004-los-alamos-conference-on-aerial-phenomena-1949.json"
+    },
+    {
+      "id": "doe-uap-d005-pantex-unidentified-object-incident-report-2015",
+      "title": "DOE-UAP-D005, Pantex Unidentified Object Incident Report, 2015",
+      "agency": "DOE",
+      "category": "intel",
+      "type": "pdf",
+      "date_event": "9/1/15",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/doe-uap-d005-pantex-unidentified-object-incident-report-2015",
+      "detail_api": "https://pursueufotracker.com/api/files/doe-uap-d005-pantex-unidentified-object-incident-report-2015.json"
     },
     {
       "id": "dow-uap-d003-mission-report-arabian-gulf-2020",
@@ -1236,6 +1181,17 @@
       "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d083-narrative-statement-5-western-united-states-event-2023.json"
     },
     {
+      "id": "dow-uap-d084-us-army-flying-saucer-study-1949",
+      "title": "DOW-UAP-D084, US Army-Flying-Saucer-Study_1949",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": null,
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d084-us-army-flying-saucer-study-1949",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d084-us-army-flying-saucer-study-1949.json"
+    },
+    {
       "id": "dow-uap-d085-transmission-of-cia-scientific-advisory-panel-rept-1953",
       "title": "DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953",
       "agency": "DoD",
@@ -1280,312 +1236,125 @@
       "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d088-u-s-air-force-analysis-of-flying-objects-in-the-united-states-101-1.json"
     },
     {
-      "id": "unresolved-uap-report-middle-east-may-2022",
-      "title": "Unresolved UAP Report, Middle East, May 2022",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-middle-east-may-2022",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-middle-east-may-2022.json"
-    },
-    {
-      "id": "unresolved-uap-report-iraq-may-2022",
-      "title": "Unresolved UAP Report, Iraq, May 2022",
+      "id": "dow-uap-d089-range-fouler-debrief-eastern-united-states-2020",
+      "title": "DOW-UAP-D089, Range Fouler Debrief, Eastern United States, 2020",
       "agency": "DoD",
       "category": "military",
       "type": "pdf",
-      "date_event": null,
+      "date_event": "2020",
       "score": 53,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-iraq-may-2022",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-iraq-may-2022.json"
+      "url": "https://pursueufotracker.com/files/dow-uap-d089-range-fouler-debrief-eastern-united-states-2020",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d089-range-fouler-debrief-eastern-united-states-2020.json"
     },
     {
-      "id": "unresolved-uap-report-iraq-may-2022-2",
-      "title": "Unresolved UAP Report, Iraq, May 2022",
+      "id": "dow-uap-d090-range-fouler-debrief-eastern-united-states-2019",
+      "title": "DOW-UAP-D090, Range Fouler Debrief, Eastern United States, 2019",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "2019",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d090-range-fouler-debrief-eastern-united-states-2019",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d090-range-fouler-debrief-eastern-united-states-2019.json"
+    },
+    {
+      "id": "dow-uap-d091-range-fouler-debrief-atlantic-ocean-2020",
+      "title": "DOW-UAP-D091, Range Fouler Debrief, Atlantic Ocean, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "2020",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d091-range-fouler-debrief-atlantic-ocean-2020",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d091-range-fouler-debrief-atlantic-ocean-2020.json"
+    },
+    {
+      "id": "dow-uap-d092-department-of-the-air-force-committee-to-review-project-bluebook-19",
+      "title": "DOW-UAP-D092, Department of the Air Force Committee to Review Project Bluebook, 1966-1967",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "4/17/67",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d092-department-of-the-air-force-committee-to-review-project-bluebook-19",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d092-department-of-the-air-force-committee-to-review-project-bluebook-19.json"
+    },
+    {
+      "id": "dow-uap-d093-analysis-of-flying-object-incidents-in-the-united-states-1948",
+      "title": "DOW-UAP-D093, Analysis of Flying Object Incidents in the United States, 1948",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "12/10/48",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d093-analysis-of-flying-object-incidents-in-the-united-states-1948",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d093-analysis-of-flying-object-incidents-in-the-united-states-1948.json"
+    },
+    {
+      "id": "dow-uap-d094-analysis-of-flying-object-incidents-in-the-united-states-1949",
+      "title": "DOW-UAP-D094, Analysis of Flying Object Incidents in the United States, 1949",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "4/28/49",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d094-analysis-of-flying-object-incidents-in-the-united-states-1949",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d094-analysis-of-flying-object-incidents-in-the-united-states-1949.json"
+    },
+    {
+      "id": "dow-uap-d095-joint-u-s-canadian-aviation-projects-and-ufo-sighting-reports-1954-",
+      "title": "DOW-UAP-D095, Joint U.S.-Canadian Aviation Projects and UFO Sighting Reports, 1954-1955",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "1955",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d095-joint-u-s-canadian-aviation-projects-and-ufo-sighting-reports-1954-",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d095-joint-u-s-canadian-aviation-projects-and-ufo-sighting-reports-1954-.json"
+    },
+    {
+      "id": "dow-uap-d096-correspondence-relating-to-project-blue-book-1955",
+      "title": "DOW-UAP-D096, Correspondence Relating to Project Blue Book, 1955",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "1955",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d096-correspondence-relating-to-project-blue-book-1955",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d096-correspondence-relating-to-project-blue-book-1955.json"
+    },
+    {
+      "id": "dow-uap-d097-project-sign-progress-report-1948",
+      "title": "DOW-UAP-D097, Project Sign Progress Report, 1948",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "1948",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d097-project-sign-progress-report-1948",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d097-project-sign-progress-report-1948.json"
+    },
+    {
+      "id": "dow-uap-pr024-unresolved-uap-report-middle-east-2023",
+      "title": "DOW-UAP-PR024, Unresolved UAP Report, Middle East, 2023",
       "agency": "DoD",
       "category": "military",
       "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-iraq-may-2022-2",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-iraq-may-2022-2.json"
+      "date_event": "2023",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr024-unresolved-uap-report-middle-east-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr024-unresolved-uap-report-middle-east-2023.json"
     },
     {
-      "id": "unresolved-uap-report-syria-july-2022",
-      "title": "Unresolved UAP Report, Syria, July 2022",
+      "id": "dow-uap-pr030-unresolved-uap-report-middle-east-2023",
+      "title": "DOW-UAP-PR030, Unresolved UAP Report, Middle East, 2023",
       "agency": "DoD",
       "category": "military",
       "type": "video",
-      "date_event": null,
+      "date_event": "2023",
       "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-syria-july-2022",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-syria-july-2022.json"
-    },
-    {
-      "id": "unresolved-uap-report-iraq-december-2022",
-      "title": "Unresolved UAP Report, Iraq, December 2022",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-iraq-december-2022",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-iraq-december-2022.json"
-    },
-    {
-      "id": "unresolved-uap-report-united-arab-emirates-october-2023",
-      "title": "Unresolved UAP Report, United Arab Emirates, October 2023",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-united-arab-emirates-october-2023",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-united-arab-emirates-october-2023.json"
-    },
-    {
-      "id": "unresolved-uap-report-united-arab-emirates-october-2023-2",
-      "title": "Unresolved UAP Report, United Arab Emirates, October 2023",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-united-arab-emirates-october-2023-2",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-united-arab-emirates-october-2023-2.json"
-    },
-    {
-      "id": "unresolved-uap-report-greece-january-2024",
-      "title": "Unresolved UAP Report, Greece, January 2024",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-greece-january-2024",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-greece-january-2024.json"
-    },
-    {
-      "id": "unresolved-uap-report-gulf-of-oman-june-2024",
-      "title": "Unresolved UAP Report, Gulf of Oman, June 2024",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-gulf-of-oman-june-2024",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-gulf-of-oman-june-2024.json"
-    },
-    {
-      "id": "unresolved-uap-report-syria-october-2024",
-      "title": "Unresolved UAP Report, Syria, October 2024",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-syria-october-2024",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-syria-october-2024.json"
-    },
-    {
-      "id": "unresolved-uap-report-syria-october-2024-2",
-      "title": "Unresolved UAP Report, Syria, October 2024",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-syria-october-2024-2",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-syria-october-2024-2.json"
-    },
-    {
-      "id": "unresolved-uap-report-syria-october-2024-3",
-      "title": "Unresolved UAP Report, Syria, October 2024",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-syria-october-2024-3",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-syria-october-2024-3.json"
-    },
-    {
-      "id": "unresolved-uap-report-greece-october-2023",
-      "title": "Unresolved UAP Report, Greece, October 2023",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-greece-october-2023",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-greece-october-2023.json"
-    },
-    {
-      "id": "unresolved-uap-report-greece-october-2023-2",
-      "title": "Unresolved UAP Report, Greece, October 2023",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-greece-october-2023-2",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-greece-october-2023-2.json"
-    },
-    {
-      "id": "unresolved-uap-report-middle-east-may-2020",
-      "title": "Unresolved UAP Report, Middle East, May 2020",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-middle-east-may-2020",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-middle-east-may-2020.json"
-    },
-    {
-      "id": "unresolved-uap-report-arabian-gulf-2020",
-      "title": "Unresolved UAP Report, Arabian Gulf 2020",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020.json"
-    },
-    {
-      "id": "resolved-as-an-aircraft-middle-east-2013",
-      "title": "Resolved as an Aircraft, Middle East 2013",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/resolved-as-an-aircraft-middle-east-2013",
-      "detail_api": "https://pursueufotracker.com/api/files/resolved-as-an-aircraft-middle-east-2013.json"
-    },
-    {
-      "id": "unresolved-uap-report-arabian-gulf-2020-2",
-      "title": "Unresolved UAP Report, Arabian Gulf, 2020",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020-2",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020-2.json"
-    },
-    {
-      "id": "unresolved-uap-report-arabian-gulf-2020-3",
-      "title": "Unresolved UAP Report, Arabian Gulf, 2020",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020-3",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020-3.json"
-    },
-    {
-      "id": "unresolved-uap-report-arabian-gulf-2020-4",
-      "title": "Unresolved UAP Report, Arabian Gulf, 2020",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020-4",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020-4.json"
-    },
-    {
-      "id": "unresolved-uap-report-arabian-gulf-2020-5",
-      "title": "Unresolved UAP Report, Arabian Gulf, 2020",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020-5",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020-5.json"
-    },
-    {
-      "id": "unresolved-uap-report-djibouti-2025",
-      "title": "Unresolved UAP Report, Djibouti, 2025",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-djibouti-2025",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-djibouti-2025.json"
-    },
-    {
-      "id": "unresolved-uap-report-arabian-gulf-2020-6",
-      "title": "Unresolved UAP Report, Arabian Gulf, 2020",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020-6",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020-6.json"
-    },
-    {
-      "id": "unresolved-uap-report-southern-united-states-2020",
-      "title": "Unresolved UAP Report, Southern United States, 2020",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-southern-united-states-2020",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-southern-united-states-2020.json"
-    },
-    {
-      "id": "unresolved-uap-report-east-china-sea-2024",
-      "title": "Unresolved UAP Report East China Sea, 2024",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-east-china-sea-2024",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-east-china-sea-2024.json"
-    },
-    {
-      "id": "unresolved-uap-report-japan-2023",
-      "title": "Unresolved UAP Report Japan, 2023",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-japan-2023",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-japan-2023.json"
-    },
-    {
-      "id": "unresolved-uap-report-indo-pacom-2024",
-      "title": "Unresolved UAP Report, Indo-PACOM 2024",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-indo-pacom-2024",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-indo-pacom-2024.json"
-    },
-    {
-      "id": "unresolved-uap-report-department-of-the-army-2026",
-      "title": "Unresolved UAP Report, Department of the Army 2026",
-      "agency": "DoD",
-      "category": "military",
-      "type": "video",
-      "date_event": null,
-      "score": 66,
-      "url": "https://pursueufotracker.com/files/unresolved-uap-report-department-of-the-army-2026",
-      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-department-of-the-army-2026.json"
+      "url": "https://pursueufotracker.com/files/dow-uap-pr030-unresolved-uap-report-middle-east-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr030-unresolved-uap-report-middle-east-2023.json"
     },
     {
       "id": "dow-uap-pr050-4-uap-formation-iran-26-aug-2022-over-water-callsign",
@@ -2149,6 +1918,193 @@
       "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr099-hi-res-callsign-observes-uap-on-25sep19-at-1715z.json"
     },
     {
+      "id": "dow-uap-pr100-unresolved-uap-report-yellow-sea-2023",
+      "title": "DOW-UAP-PR100, Unresolved UAP Report, Yellow Sea, 2023",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2023",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr100-unresolved-uap-report-yellow-sea-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr100-unresolved-uap-report-yellow-sea-2023.json"
+    },
+    {
+      "id": "dow-uap-pr101-unresolved-uap-report-south-china-sea-2024",
+      "title": "DOW-UAP-PR101, Unresolved UAP Report, South China Sea, 2024",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2024",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr101-unresolved-uap-report-south-china-sea-2024",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr101-unresolved-uap-report-south-china-sea-2024.json"
+    },
+    {
+      "id": "dow-uap-pr102-unresolved-uap-report-east-china-sea-2024",
+      "title": "DOW-UAP-PR102, Unresolved UAP Report, East China Sea, 2024",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2024",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr102-unresolved-uap-report-east-china-sea-2024",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr102-unresolved-uap-report-east-china-sea-2024.json"
+    },
+    {
+      "id": "dow-uap-pr103-unresolved-uap-report-east-china-sea-2024",
+      "title": "DOW-UAP-PR103, Unresolved UAP Report, East China Sea, 2024",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2024",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr103-unresolved-uap-report-east-china-sea-2024",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr103-unresolved-uap-report-east-china-sea-2024.json"
+    },
+    {
+      "id": "dow-uap-pr104-unresolved-uap-report-yellow-sea-2025",
+      "title": "DOW-UAP-PR104, Unresolved UAP Report, Yellow Sea, 2025",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2025",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr104-unresolved-uap-report-yellow-sea-2025",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr104-unresolved-uap-report-yellow-sea-2025.json"
+    },
+    {
+      "id": "dow-uap-pr105-unresolved-uap-report-east-china-sea-2025",
+      "title": "DOW-UAP-PR105, Unresolved UAP Report, East China Sea, 2025",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2025",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr105-unresolved-uap-report-east-china-sea-2025",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr105-unresolved-uap-report-east-china-sea-2025.json"
+    },
+    {
+      "id": "dow-uap-pr106-unresolved-uap-report-eastern-united-states-2020",
+      "title": "DOW-UAP-PR106, Unresolved UAP Report, Eastern United States, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2020",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr106-unresolved-uap-report-eastern-united-states-2020",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr106-unresolved-uap-report-eastern-united-states-2020.json"
+    },
+    {
+      "id": "dow-uap-pr107-unresolved-uap-report-eastern-united-states-2020",
+      "title": "DOW-UAP-PR107, Unresolved UAP Report, Eastern United States, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2020",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr107-unresolved-uap-report-eastern-united-states-2020",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr107-unresolved-uap-report-eastern-united-states-2020.json"
+    },
+    {
+      "id": "dow-uap-pr108-unresolved-uap-report-western-united-states-2020",
+      "title": "DOW-UAP-PR108, Unresolved UAP Report, Western United States, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2020",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr108-unresolved-uap-report-western-united-states-2020",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr108-unresolved-uap-report-western-united-states-2020.json"
+    },
+    {
+      "id": "dow-uap-pr109-unresolved-uap-report-eastern-united-states-2015",
+      "title": "DOW-UAP-PR109, Unresolved UAP Report, Eastern United States, 2015",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2015",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr109-unresolved-uap-report-eastern-united-states-2015",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr109-unresolved-uap-report-eastern-united-states-2015.json"
+    },
+    {
+      "id": "dow-uap-pr110-unresolved-uap-report-eastern-united-states-2020",
+      "title": "DOW-UAP-PR110, Unresolved UAP Report, Eastern United States, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2020",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr110-unresolved-uap-report-eastern-united-states-2020",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr110-unresolved-uap-report-eastern-united-states-2020.json"
+    },
+    {
+      "id": "dow-uap-pr111-unresolved-uap-report-eastern-united-states-2020",
+      "title": "DOW-UAP-PR111, Unresolved UAP Report, Eastern United States, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2020",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr111-unresolved-uap-report-eastern-united-states-2020",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr111-unresolved-uap-report-eastern-united-states-2020.json"
+    },
+    {
+      "id": "dow-uap-pr112-unresolved-uap-report-eastern-united-states-2019",
+      "title": "DOW-UAP-PR112, Unresolved UAP Report, Eastern United States, 2019",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2019",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr112-unresolved-uap-report-eastern-united-states-2019",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr112-unresolved-uap-report-eastern-united-states-2019.json"
+    },
+    {
+      "id": "dow-uap-pr113-unresolved-uap-report-western-united-states-1996",
+      "title": "DOW-UAP-PR113, Unresolved UAP Report, Western United States, 1996",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "1996",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr113-unresolved-uap-report-western-united-states-1996",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr113-unresolved-uap-report-western-united-states-1996.json"
+    },
+    {
+      "id": "dow-uap-pr114-unresolved-uap-report-atlantic-ocean-2016",
+      "title": "DOW-UAP-PR114, Unresolved UAP Report, Atlantic Ocean, 2016",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2016",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr114-unresolved-uap-report-atlantic-ocean-2016",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr114-unresolved-uap-report-atlantic-ocean-2016.json"
+    },
+    {
+      "id": "dow-uap-pr115-unresolved-uap-report-gulf-of-america-2019",
+      "title": "DOW-UAP-PR115, Unresolved UAP Report, Gulf of America, 2019",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2019",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr115-unresolved-uap-report-gulf-of-america-2019",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr115-unresolved-uap-report-gulf-of-america-2019.json"
+    },
+    {
+      "id": "dow-uap-pr116-unresolved-uap-report-atlantic-ocean-2020",
+      "title": "DOW-UAP-PR116, Unresolved UAP Report, Atlantic Ocean, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2020",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr116-unresolved-uap-report-atlantic-ocean-2020",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr116-unresolved-uap-report-atlantic-ocean-2020.json"
+    },
+    {
       "id": "fbi-photo-a001",
       "title": "FBI Photo A001",
       "agency": "FBI",
@@ -2556,6 +2512,28 @@
       "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d001-fd-302-unresolved-uap-report-colorado-springs-2022.json"
     },
     {
+      "id": "fbi-uap-d002-fd-1057-unresolved-uap-report-colorado-springs-2022",
+      "title": "FBI-UAP-D002, FD-1057, Unresolved UAP Report, Colorado Springs, 2022",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2022",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d002-fd-1057-unresolved-uap-report-colorado-springs-2022",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d002-fd-1057-unresolved-uap-report-colorado-springs-2022.json"
+    },
+    {
+      "id": "fbi-uap-d003-digital-rendering-unresolved-uap-report-colorado-springs-2022",
+      "title": "FBI-UAP-D003, Digital Rendering, Unresolved UAP Report, Colorado Springs, 2022",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2022",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d003-digital-rendering-unresolved-uap-report-colorado-springs-2022",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d003-digital-rendering-unresolved-uap-report-colorado-springs-2022.json"
+    },
+    {
       "id": "fbi-uap-d004-fd-1057-02-northeastern-united-states-2024",
       "title": "FBI-UAP-D004, FD-1057-02, Northeastern United States, 2024",
       "agency": "FBI",
@@ -2611,6 +2589,39 @@
       "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d008-fd-1057-07-northeastern-united-states-2024.json"
     },
     {
+      "id": "fbi-uap-d009-fd-302-67-northeastern-orb-sighting-2026",
+      "title": "FBI-UAP-D009, FD-302-67, “Northeastern Orb Sighting,” 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2026",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d009-fd-302-67-northeastern-orb-sighting-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d009-fd-302-67-northeastern-orb-sighting-2026.json"
+    },
+    {
+      "id": "fbi-uap-d010-fd-302-71-northeastern-orb-sighting-2026",
+      "title": "FBI-UAP-D010, FD-302-71, “Northeastern Orb Sighting,” 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2026",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d010-fd-302-71-northeastern-orb-sighting-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d010-fd-302-71-northeastern-orb-sighting-2026.json"
+    },
+    {
+      "id": "fbi-uap-d011-d-fbi-correspondence-referral-1949",
+      "title": "FBI-UAP-D011, D/FBI Correspondence Referral, 1949",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "1949",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d011-d-fbi-correspondence-referral-1949",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d011-d-fbi-correspondence-referral-1949.json"
+    },
+    {
       "id": "fbi-uap-d012-newark-field-office-1952-1967",
       "title": "FBI-UAP-D012, Newark Field Office, 1952-1967",
       "agency": "FBI",
@@ -2631,6 +2642,17 @@
       "score": 58,
       "url": "https://pursueufotracker.com/files/fbi-uap-d013-washington-state-ufo-investigation-1952-1960",
       "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d013-washington-state-ufo-investigation-1952-1960.json"
+    },
+    {
+      "id": "fbi-uap-d014-correspondence-relating-to-ufo-sightings-1967-1974",
+      "title": "FBI-UAP-D014, Correspondence Relating to UFO Sightings, 1967, 1974",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "10/10/74",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d014-correspondence-relating-to-ufo-sightings-1967-1974",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d014-correspondence-relating-to-ufo-sightings-1967-1974.json"
     },
     {
       "id": "fbi-uap-d014-digital-rendering-narrative-statement-1-1-western-united-states-eve",
@@ -2765,6 +2787,28 @@
       "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-pr002-red-orb-rotation-northeastern-united-states-2022.json"
     },
     {
+      "id": "fbi-uap-pr003-orbs-over-the-pond-2024",
+      "title": "FBI-UAP-PR003, “Orbs Over the Pond,” 2024",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "video",
+      "date_event": "October, 2024",
+      "score": 70,
+      "url": "https://pursueufotracker.com/files/fbi-uap-pr003-orbs-over-the-pond-2024",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-pr003-orbs-over-the-pond-2024.json"
+    },
+    {
+      "id": "fbi-uap-pr004-northeastern-orb-sighting-2025",
+      "title": "FBI-UAP-PR004, “Northeastern Orb Sighting,” 2025",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "video",
+      "date_event": "July, 2025",
+      "score": 70,
+      "url": "https://pursueufotracker.com/files/fbi-uap-pr004-northeastern-orb-sighting-2025",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-pr004-northeastern-orb-sighting-2025.json"
+    },
+    {
       "id": "fbi-uap-pr005-digital-recreation-narrative-statement-3-1-western-united-states-e",
       "title": "FBI-UAP-PR005, Digital Recreation, Narrative Statement 3-1, Western United States Event, 2023",
       "agency": "FBI",
@@ -2785,6 +2829,17 @@
       "score": 70,
       "url": "https://pursueufotracker.com/files/fbi-uap-pr006-digital-recreation-narrative-statement-3-2-western-united-states-e",
       "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-pr006-digital-recreation-narrative-statement-3-2-western-united-states-e.json"
+    },
+    {
+      "id": "ica-uap-d001-analysis-colorado-springs-uap-incident-2022",
+      "title": "ICA-UAP-D001, Analysis: Colorado Springs UAP Incident, 2022",
+      "agency": "ICA",
+      "category": "intel",
+      "type": "pdf",
+      "date_event": "2022",
+      "score": 47,
+      "url": "https://pursueufotracker.com/files/ica-uap-d001-analysis-colorado-springs-uap-incident-2022",
+      "detail_api": "https://pursueufotracker.com/api/files/ica-uap-d001-analysis-colorado-springs-uap-incident-2022.json"
     },
     {
       "id": "nasa-uap-d001-apollo-12-transcript-1969",
@@ -3073,6 +3128,83 @@
       "detail_api": "https://pursueufotracker.com/api/files/nasa-uap-d025-apollo-16-scientific-debriefing.json"
     },
     {
+      "id": "nasa-uap-d026-apollo-14-debriefing-1971",
+      "title": "NASA-UAP-D026, Apollo 14 Debriefing, 1971",
+      "agency": "NASA",
+      "category": "apollo",
+      "type": "video",
+      "date_event": "2/18/71",
+      "score": 72,
+      "url": "https://pursueufotracker.com/files/nasa-uap-d026-apollo-14-debriefing-1971",
+      "detail_api": "https://pursueufotracker.com/api/files/nasa-uap-d026-apollo-14-debriefing-1971.json"
+    },
+    {
+      "id": "nasa-uap-d027-apollo-14-debriefing-continued-1971",
+      "title": "NASA-UAP-D027, Apollo 14 Debriefing (Continued), 1971",
+      "agency": "NASA",
+      "category": "apollo",
+      "type": "video",
+      "date_event": "2/18/71",
+      "score": 72,
+      "url": "https://pursueufotracker.com/files/nasa-uap-d027-apollo-14-debriefing-continued-1971",
+      "detail_api": "https://pursueufotracker.com/api/files/nasa-uap-d027-apollo-14-debriefing-continued-1971.json"
+    },
+    {
+      "id": "nasa-uap-d028-apollo-17-crew-medical-debriefing-1972",
+      "title": "NASA-UAP-D028, Apollo 17 Crew Medical Debriefing, 1972",
+      "agency": "NASA",
+      "category": "apollo",
+      "type": "video",
+      "date_event": "12/21/72",
+      "score": 72,
+      "url": "https://pursueufotracker.com/files/nasa-uap-d028-apollo-17-crew-medical-debriefing-1972",
+      "detail_api": "https://pursueufotracker.com/api/files/nasa-uap-d028-apollo-17-crew-medical-debriefing-1972.json"
+    },
+    {
+      "id": "nasa-uap-d029-apollo-17-crew-medical-debriefing-continued-1972",
+      "title": "NASA-UAP-D029, Apollo 17 Crew Medical Debriefing (Continued), 1972",
+      "agency": "NASA",
+      "category": "apollo",
+      "type": "video",
+      "date_event": "12/21/72",
+      "score": 72,
+      "url": "https://pursueufotracker.com/files/nasa-uap-d029-apollo-17-crew-medical-debriefing-continued-1972",
+      "detail_api": "https://pursueufotracker.com/api/files/nasa-uap-d029-apollo-17-crew-medical-debriefing-continued-1972.json"
+    },
+    {
+      "id": "nasa-uap-d030-sts-80-unidentified-object-image-1-1996",
+      "title": "NASA-UAP-D030, STS-80 Unidentified Object Image 1, 1996",
+      "agency": "NASA",
+      "category": "nasa",
+      "type": "image",
+      "date_event": "1996",
+      "score": 65,
+      "url": "https://pursueufotracker.com/files/nasa-uap-d030-sts-80-unidentified-object-image-1-1996",
+      "detail_api": "https://pursueufotracker.com/api/files/nasa-uap-d030-sts-80-unidentified-object-image-1-1996.json"
+    },
+    {
+      "id": "nasa-uap-d031-sts-80-unidentified-object-image-2-1996",
+      "title": "NASA-UAP-D031, STS-80 Unidentified Object Image 2, 1996",
+      "agency": "NASA",
+      "category": "nasa",
+      "type": "image",
+      "date_event": "1996",
+      "score": 65,
+      "url": "https://pursueufotracker.com/files/nasa-uap-d031-sts-80-unidentified-object-image-2-1996",
+      "detail_api": "https://pursueufotracker.com/api/files/nasa-uap-d031-sts-80-unidentified-object-image-2-1996.json"
+    },
+    {
+      "id": "nasa-uap-d032-sts-80-unidentified-object-image-3-1996",
+      "title": "NASA-UAP-D032, STS-80 Unidentified Object Image 3, 1996",
+      "agency": "NASA",
+      "category": "nasa",
+      "type": "image",
+      "date_event": "1996",
+      "score": 65,
+      "url": "https://pursueufotracker.com/files/nasa-uap-d032-sts-80-unidentified-object-image-3-1996",
+      "detail_api": "https://pursueufotracker.com/api/files/nasa-uap-d032-sts-80-unidentified-object-image-3-1996.json"
+    },
+    {
       "id": "nasa-uap-vm001-apollo-12-1969",
       "title": "NASA-UAP-VM001, Apollo 12, 1969",
       "agency": "NASA",
@@ -3150,6 +3282,17 @@
       "detail_api": "https://pursueufotracker.com/api/files/odni-uap-d001-usper-narrative-senior-usic-official.json"
     },
     {
+      "id": "resolved-as-an-aircraft-middle-east-2013",
+      "title": "Resolved as an Aircraft, Middle East 2013",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/resolved-as-an-aircraft-middle-east-2013",
+      "detail_api": "https://pursueufotracker.com/api/files/resolved-as-an-aircraft-middle-east-2013.json"
+    },
+    {
       "id": "state-department-uap-cable-001-papua-new-guinea-january-28-1985",
       "title": "State Department UAP Cable 001, Papua New Guinea, January 28, 1985",
       "agency": "STATE",
@@ -3203,6 +3346,303 @@
       "score": 50,
       "url": "https://pursueufotracker.com/files/state-department-uap-cable-005-mexico-september-16-2003",
       "detail_api": "https://pursueufotracker.com/api/files/state-department-uap-cable-005-mexico-september-16-2003.json"
+    },
+    {
+      "id": "unresolved-uap-report-arabian-gulf-2020",
+      "title": "Unresolved UAP Report, Arabian Gulf 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020.json"
+    },
+    {
+      "id": "unresolved-uap-report-arabian-gulf-2020-2",
+      "title": "Unresolved UAP Report, Arabian Gulf, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020-2",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020-2.json"
+    },
+    {
+      "id": "unresolved-uap-report-arabian-gulf-2020-3",
+      "title": "Unresolved UAP Report, Arabian Gulf, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020-3",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020-3.json"
+    },
+    {
+      "id": "unresolved-uap-report-arabian-gulf-2020-4",
+      "title": "Unresolved UAP Report, Arabian Gulf, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020-4",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020-4.json"
+    },
+    {
+      "id": "unresolved-uap-report-arabian-gulf-2020-5",
+      "title": "Unresolved UAP Report, Arabian Gulf, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020-5",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020-5.json"
+    },
+    {
+      "id": "unresolved-uap-report-arabian-gulf-2020-6",
+      "title": "Unresolved UAP Report, Arabian Gulf, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-arabian-gulf-2020-6",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-arabian-gulf-2020-6.json"
+    },
+    {
+      "id": "unresolved-uap-report-department-of-the-army-2026",
+      "title": "Unresolved UAP Report, Department of the Army 2026",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-department-of-the-army-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-department-of-the-army-2026.json"
+    },
+    {
+      "id": "unresolved-uap-report-djibouti-2025",
+      "title": "Unresolved UAP Report, Djibouti, 2025",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-djibouti-2025",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-djibouti-2025.json"
+    },
+    {
+      "id": "unresolved-uap-report-east-china-sea-2024",
+      "title": "Unresolved UAP Report East China Sea, 2024",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-east-china-sea-2024",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-east-china-sea-2024.json"
+    },
+    {
+      "id": "unresolved-uap-report-greece-january-2024",
+      "title": "Unresolved UAP Report, Greece, January 2024",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-greece-january-2024",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-greece-january-2024.json"
+    },
+    {
+      "id": "unresolved-uap-report-greece-october-2023",
+      "title": "Unresolved UAP Report, Greece, October 2023",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-greece-october-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-greece-october-2023.json"
+    },
+    {
+      "id": "unresolved-uap-report-greece-october-2023-2",
+      "title": "Unresolved UAP Report, Greece, October 2023",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-greece-october-2023-2",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-greece-october-2023-2.json"
+    },
+    {
+      "id": "unresolved-uap-report-gulf-of-oman-june-2024",
+      "title": "Unresolved UAP Report, Gulf of Oman, June 2024",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-gulf-of-oman-june-2024",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-gulf-of-oman-june-2024.json"
+    },
+    {
+      "id": "unresolved-uap-report-indo-pacom-2024",
+      "title": "Unresolved UAP Report, Indo-PACOM 2024",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-indo-pacom-2024",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-indo-pacom-2024.json"
+    },
+    {
+      "id": "unresolved-uap-report-iraq-december-2022",
+      "title": "Unresolved UAP Report, Iraq, December 2022",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-iraq-december-2022",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-iraq-december-2022.json"
+    },
+    {
+      "id": "unresolved-uap-report-iraq-may-2022",
+      "title": "Unresolved UAP Report, Iraq, May 2022",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": null,
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-iraq-may-2022",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-iraq-may-2022.json"
+    },
+    {
+      "id": "unresolved-uap-report-iraq-may-2022-2",
+      "title": "Unresolved UAP Report, Iraq, May 2022",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-iraq-may-2022-2",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-iraq-may-2022-2.json"
+    },
+    {
+      "id": "unresolved-uap-report-japan-2023",
+      "title": "Unresolved UAP Report Japan, 2023",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-japan-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-japan-2023.json"
+    },
+    {
+      "id": "unresolved-uap-report-middle-east-may-2020",
+      "title": "Unresolved UAP Report, Middle East, May 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-middle-east-may-2020",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-middle-east-may-2020.json"
+    },
+    {
+      "id": "unresolved-uap-report-middle-east-may-2022",
+      "title": "Unresolved UAP Report, Middle East, May 2022",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-middle-east-may-2022",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-middle-east-may-2022.json"
+    },
+    {
+      "id": "unresolved-uap-report-southern-united-states-2020",
+      "title": "Unresolved UAP Report, Southern United States, 2020",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-southern-united-states-2020",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-southern-united-states-2020.json"
+    },
+    {
+      "id": "unresolved-uap-report-syria-july-2022",
+      "title": "Unresolved UAP Report, Syria, July 2022",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-syria-july-2022",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-syria-july-2022.json"
+    },
+    {
+      "id": "unresolved-uap-report-syria-october-2024",
+      "title": "Unresolved UAP Report, Syria, October 2024",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-syria-october-2024",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-syria-october-2024.json"
+    },
+    {
+      "id": "unresolved-uap-report-syria-october-2024-2",
+      "title": "Unresolved UAP Report, Syria, October 2024",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-syria-october-2024-2",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-syria-october-2024-2.json"
+    },
+    {
+      "id": "unresolved-uap-report-syria-october-2024-3",
+      "title": "Unresolved UAP Report, Syria, October 2024",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-syria-october-2024-3",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-syria-october-2024-3.json"
+    },
+    {
+      "id": "unresolved-uap-report-united-arab-emirates-october-2023",
+      "title": "Unresolved UAP Report, United Arab Emirates, October 2023",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-united-arab-emirates-october-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-united-arab-emirates-october-2023.json"
+    },
+    {
+      "id": "unresolved-uap-report-united-arab-emirates-october-2023-2",
+      "title": "Unresolved UAP Report, United Arab Emirates, October 2023",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": null,
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/unresolved-uap-report-united-arab-emirates-october-2023-2",
+      "detail_api": "https://pursueufotracker.com/api/files/unresolved-uap-report-united-arab-emirates-october-2023-2.json"
     },
     {
       "id": "usg-uap-d001-congressional-white-house-ufo-related-constituent-correspondence-19",

@@ -9,8 +9,8 @@
   "source_url": null,
   "pending_verification": false,
   "local_path": "downloads/video/nasa-uap-d013-mercury-atlas-7-may-24-1962.mp4",
-  "size_bytes": 81701232,
-  "sha256": "ec0ab89ebb8eed83ba4db85a24c6b6230cfe537deaccc3342e330f35f556d931",
+  "size_bytes": 81705408,
+  "sha256": "732bfabceb63164a17f3c1b9760da9122378c0b5cb8448ef74c3c9d9178325d9",
   "redacted": false,
   "summary": "During the fourth crewed spaceflight and second orbital flight of Project Mercury, Mercury-Atlas 7 (MA-7), Aurora 7 pilot Scott Carpenter describes white particles in view that appear to move at “random” and “look exactly like snowflakes.” He describes these phenomena as reflective, and that some seemed to move faster than the Aurora 7 spacecraft.",
   "score": {
@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": "extracted/transcripts/nasa-uap-d013-mercury-atlas-7-may-24-1962.vtt",
+    "transcript_path": null,
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d013-mercury-atlas-7-may-24-1962.jpg"
   },
   "geo": {
@@ -81,6 +81,7 @@
   "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007879&format=srt&api_key=key-68bb60d16b35e",
   "duration": 108,
   "dvids_page_url": "https://www.dvidshub.net/video/1007879/nasa-uap-d013-mercury-atlas-7-may-24-1962",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/nasa-uap-d013-mercury-atlas-7-may-24-1962.mp4",
   "audience": {
     "tldr": "NASA mission record showing footage of a UAP encounter (5/24/62) over Low Earth Orbit.",
     "what_we_know": [

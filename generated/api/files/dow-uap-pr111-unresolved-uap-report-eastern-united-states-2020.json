@@ -1,0 +1,98 @@
+{
+  "id": "dow-uap-pr111-unresolved-uap-report-eastern-united-states-2020",
+  "title": "DOW-UAP-PR111, Unresolved UAP Report, Eastern United States, 2020",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2020",
+  "date_released": "2026-07-10",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": "downloads/video/dow-uap-pr111-unresolved-uap-report-eastern-united-states-2020.mp4",
+  "size_bytes": 53789548,
+  "sha256": "3f6177a2ad01bdf920222831d368e4878127d068c5a63e77fb0028798c0310d2",
+  "redacted": true,
+  "summary": "The United States Northern Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of 1 minute of video footage from an infrared sensor aboard a U.S. military platform in 2020.\n\nVideo Description:\n00:01-00:21: Several small areas of contrast enter and leave the sensor field-of-view as the sensor pans across the background scene.\n00:22-00:41: An auto-tracking reticle surrounds an area of contrast, and the sensor pans to keep it generally within the center of the frame. Several other areas of contrast periodically enter and exit the frame.\n00:42-00:49: The sensor zooms out.\n00:50-01:00: The area of contrast is no longer visible within the frame. The sensor display flickers between a black screen and normal function as it cycles contrast modes. No content.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr111-unresolved-uap-report-eastern-united-states-2020.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Eastern United States"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014114/DOD_111830080.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR111, Unresolved UAP Report, Eastern United States, 2020",
+  "dvids_video_id": "1014114",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111830080/DOD_111830080-1920x1080-9000k.mp4",
+  "duration": 60,
+  "dvids_page_url": "https://www.dvidshub.net/video/1014114/dow-uap-pr111-unresolved-uap-report-eastern-united-states-2020",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/dow-uap-pr111-unresolved-uap-report-eastern-united-states-2020.mp4",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2020) over Eastern United States.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2020.",
+      "Reported location: Eastern United States."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
+}

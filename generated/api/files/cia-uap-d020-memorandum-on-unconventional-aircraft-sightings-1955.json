@@ -1,0 +1,104 @@
+{
+  "id": "cia-uap-d020-memorandum-on-unconventional-aircraft-sightings-1955",
+  "title": "CIA-UAP-D020, Memorandum on Unconventional Aircraft Sightings, 1955",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": "1955",
+  "date_released": "2026-07-10",
+  "source_url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D020_Memorandum-on-Unconventional-Aircraft-Sightings_1955.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/cia-uap-d020-memorandum-on-unconventional-aircraft-sightings-1955.pdf",
+  "size_bytes": 368172,
+  "sha256": "973be877f06b55373da6c7a1022ca25345fdeb7864414fe4ae29d83ef963b7e9",
+  "redacted": false,
+  "summary": "This memorandum summarizes a Central Intelligence Agency (CIA) debriefing of a group of four individuals who reported observing a “flying saucer” or “unconventional aircraft” in 1955. The group, which included U.S. Senator Richard Russell, a U.S. military service member, and two U.S. Government officials, reported observing a luminescent “greenish-yellow” phenomenon, as seen from aboard a train while traveling within the Soviet Union, in present-day Azerbaijan, between Baku and Tiflis (Tbilisi, Georgia). The document concludes by stating that the observation can “probably be explained as steep climbing aircraft or missiles,” and that “the evidence does not appear sufficiently firm to warrant the conclusion that the Soviets have developed […] a radically new type of aircraft.” The document “CIA-UAP-D021” contains a contemporary analysis of the incident.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/cia-uap-d020-memorandum-on-unconventional-aircraft-sightings-1955.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Azerbaijan"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/071026/release_04/thumbnails/CIA-UAP-D020_Memorandum-on-Unconventional-Aircraft-Sightings_1955.jpg",
+  "csv_raw_title": "CIA-UAP-D020, Memorandum on Unconventional Aircraft Sightings, 1955",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/cia-uap-d020-memorandum-on-unconventional-aircraft-sightings-1955.pdf",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (1955) over Azerbaijan.",
+    "what_we_know": [
+      "Document originates from CIA.",
+      "Encounter dated 1955.",
+      "Reported location: Azerbaijan."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "secret",
+      "signature",
+      "date",
+      "document",
+      "control",
+      "form",
+      "will",
+      "page"
+    ]
+  }
+}

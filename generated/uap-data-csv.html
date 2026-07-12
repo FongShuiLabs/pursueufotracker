@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>uap-data.csv - war.gov's PURSUE UAP File, Verified | PURSUE UFO Tracker</title>
-<meta name="description" content="Download uap-data.csv, the canonical war.gov PURSUE UAP data file (294 rows, all three releases). Direct mirror, SHA-256 verified against war.gov, full revision history since May 8, 2026. The original /Portals/1/Interactive/2026/UFO/uap-data.csv URL blocks most non-browser requests - this mirror doesn't.">
+<meta name="description" content="Download uap-data.csv, the canonical war.gov PURSUE UAP data file (334 rows, all four releases). Direct mirror, SHA-256 verified against war.gov, full revision history since May 8, 2026. The original /Portals/1/Interactive/2026/UFO/uap-data.csv URL blocks most non-browser requests - this mirror doesn't.">
 <meta name="keywords" content="uap-data.csv, war.gov uap-data.csv, portals/1/interactive/2026/ufo/uap-data.csv, uap-csv.csv, war.gov UFO CSV download, PURSUE data file, PURSUE CSV mirror, war.gov UAP data download, uap-data.csv 404, uap-data.csv release 3">
 <link rel="canonical" href="https://pursueufotracker.com/uap-data-csv">
 <meta name="robots" content="index, follow">
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="uap-data.csv - war.gov's PURSUE UAP Data File, Mirrored and Verified">
-<meta property="og:description" content="The canonical war.gov PURSUE UAP data file (294 rows), mirrored with SHA-256 verification and full revision history since May 8, 2026. Download it directly - no session warmup, no rate limiting.">
+<meta property="og:description" content="The canonical war.gov PURSUE UAP data file (334 rows), mirrored with SHA-256 verification and full revision history since May 8, 2026. Download it directly - no session warmup, no rate limiting.">
 <meta property="og:url" content="https://pursueufotracker.com/uap-data-csv">
 <meta property="og:image" content="https://pursueufotracker.com/generated/og-cards/page-uap-data-csv.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -23,7 +23,7 @@
   "@context": "https://schema.org",
   "@type": "Dataset",
   "name": "uap-data.csv - war.gov PURSUE UAP data file (verified mirror)",
-  "description": "The canonical CSV data file published by war.gov for the PURSUE UAP disclosure program, listing all released files across three releases (294 rows as of June 12, 2026). This mirror is SHA-256 verified against the file war.gov serves and re-checked every 30-60 minutes by an automated poller.",
+  "description": "The canonical CSV data file published by war.gov for the PURSUE UAP disclosure program, listing all released files across four releases (334 rows as of July 10, 2026). This mirror is SHA-256 verified against the file war.gov serves and re-checked every 30-60 minutes by an automated poller.",
   "url": "https://pursueufotracker.com/uap-data-csv",
   "sameAs": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv",
   "license": "https://www.usa.gov/government-works",
@@ -105,7 +105,7 @@
   <div class="download-hero">
     <a class="btn" href="/data/uap-data.csv" download="uap-data.csv" onclick="window.plausible&&plausible('CsvDownload')">⬇ Download uap-data.csv</a>
     <div class="meta">
-      <strong>294 rows</strong> · 366 KB · text/csv<br>
+      <strong>334 rows</strong> · text/csv<br>
       SHA-256: <span style="word-break:break-all">48db08be39605efd86e1d92fe6af3cda7730e1da6a4b5741d37a30712ebf5e04</span><br>
       Matches war.gov's live file as of the last poller check
     </div>
@@ -125,7 +125,7 @@
 
   <h2>What's in the file</h2>
 
-  <p>One row per released item (294 as of the June 12, 2026 release). Columns include the file title, originating agency (FBI, DOW, NASA, CIA, State, ODNI, DOE), file type and URL on war.gov's media servers, event date, and - since the third release - a "Featured" flag. Note that the schema has changed between releases (the third release added columns), so scripts that parse by column position rather than column name will break across versions.</p>
+  <p>One row per released item (334 as of the July 10, 2026 release). Columns include the file title, originating agency (FBI, DOW, NASA, CIA, State, ODNI, DOE), file type and URL on war.gov's media servers, event date, and - since the third release - a "Featured" flag. Note that the schema has changed between releases (the third release added columns), so scripts that parse by column position rather than column name will break across versions.</p>
 
   <p>If you'd rather not parse the CSV at all, this site publishes the same data enriched with scores, transcripts, and text extraction as JSON: <a href="/api" style="color:#52b4ff">the files.json API</a>.</p>
 
@@ -144,7 +144,8 @@
       <tr><td class="mono">2026-05-12</td><td>-</td><td>0</td><td class="mono">n/a</td><td>CSV temporarily unreachable to the poller (three checks fell back to HTML monitoring). Separately: the file was renamed from uap-csv.csv to uap-data.csv at an unrecorded point; both states (old URL 404, new URL 200) were verified directly against war.gov on 2026-06-16</td></tr>
       <tr><td class="mono">2026-06-09 20:28</td><td>222</td><td class="hl">+64</td><td class="mono">6be2c64e760534a5</td><td>First poller capture of the renamed file: +64 rows vs the last readable version, reflecting the Release 02 additions (Pentagon video series and ODNI narrative, announced May 22). The poller could not read the CSV between the rename and this date, so the +64 is cumulative, not a single-day change</td></tr>
       <tr><td class="mono">2026-06-10 16:36</td><td>222</td><td>0</td><td class="mono">a62a76884e52c136</td><td>Re-save, row count unchanged</td></tr>
-      <tr><td class="mono">2026-06-12 14:11</td><td class="hl">294</td><td class="hl">+72</td><td class="mono">48db08be39605efd</td><td>Release 03 - current version (adds "Featured" column and new agency labels)</td></tr>
+      <tr><td class="mono">2026-06-12 14:11</td><td class="hl">294</td><td class="hl">+72</td><td class="mono">48db08be39605efd</td><td>Release 03 (adds "Featured" column and new agency labels)</td></tr>
+      <tr><td class="mono">2026-07-10 12:00</td><td class="hl">334</td><td class="hl">+40</td><td class="mono">13e730c18d6ea586</td><td>Release 04 - current version (+40 files: 23 videos, 14 documents, 3 images - the first Apollo 14 debriefings, three STS-80 Space Shuttle images, and more Pentagon sensor video)</td></tr>
     </tbody>
   </table>
 
@@ -169,12 +170,12 @@
       <a href="/api">
         <span class="k">API</span>
         <strong>files.json - the enriched dataset</strong>
-        <span>All 294 files as JSON with Anomalousness Index scores, SHA-256 hashes, transcripts, and mirror URLs. Free, no key required.</span>
+        <span>All 334 files as JSON with Anomalousness Index scores, SHA-256 hashes, transcripts, and mirror URLs. Free, no key required.</span>
       </a>
       <a href="/verify">
         <span class="k">TOOL</span>
         <strong>Verify any file against war.gov</strong>
-        <span>Check any of the 294 mirrored files byte-for-byte against what war.gov currently serves.</span>
+        <span>Check any of the 334 mirrored files byte-for-byte against what war.gov currently serves.</span>
       </a>
     </div>
   </section>
@@ -210,7 +211,7 @@
     </div>
     <div>
       <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:12px">TOOLS</div>
-      <a href="/search" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Search All 294 Files</a>
+      <a href="/search" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Search All 334 Files</a>
       <a href="/timeline" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Timeline 1948-2026</a>
       <a href="/verify" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Verify vs war.gov</a>
       <a href="/uap-data-csv" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">uap-data.csv Mirror</a>

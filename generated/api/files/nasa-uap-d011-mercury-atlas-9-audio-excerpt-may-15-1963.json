@@ -9,8 +9,8 @@
   "source_url": null,
   "pending_verification": false,
   "local_path": "downloads/video/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963.mp4",
-  "size_bytes": 416226493,
-  "sha256": "dca41b73f9707dd411d03b767a35b939f946afa3641246f548a506f629ffa2da",
+  "size_bytes": 416230797,
+  "sha256": "7f18288e28384224cde647f873b0a1c9f287885a08153bc637c9785e80c59fcb",
   "redacted": false,
   "summary": "During the final and longest flight of Project Mercury, Mercury-Atlas 9 mission (MA-9) Faith 7 Pilot L. Gordon Cooper Jr. describes the brilliant blue of sunrise beneath the haze layer of the Earth’s atmosphere. As he approaches sunrise, he describes small, luminous, brilliant white particles drifting away from the spacecraft. Cooper describes observing “fireflies” after deploying beacons, which are spherical mission-related equipment with xenon strobe lights.",
   "score": {
@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": "extracted/transcripts/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963.vtt",
+    "transcript_path": null,
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963.jpg"
   },
   "geo": {
@@ -81,6 +81,7 @@
   "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007876&format=srt&api_key=key-68bb60d16b35e",
   "duration": 494,
   "dvids_page_url": "https://www.dvidshub.net/video/1007876/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/nasa-uap-d011-mercury-atlas-9-audio-excerpt-may-15-1963.mp4",
   "audience": {
     "tldr": "NASA mission record showing footage of a UAP encounter (5/15/63) over Low Earth Orbit.",
     "what_we_know": [

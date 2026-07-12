@@ -7,10 +7,9 @@
   "date_event": null,
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/video/unresolved-uap-report-iraq-december-2022.mp4",
-  "size_bytes": 5300653,
-  "sha256": "d6a177a7004837546b8e3ea12ad0e632d9c31eabca427e05ae6eb9d4e4493f47",
+  "local_path": "downloads/video/unresolved-uap-report-iraq-december-2022.pdf",
+  "size_bytes": 3673697,
+  "sha256": "4752dd830144b21c3055a2fea8b44c551445b41622c27db64fb0fa07c2dcd93d",
   "redacted": true,
   "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of ten seconds of video footage from an infrared sensor aboard a U.S. military platform in 2022. An accompanying mission report, DoW-UAP-D18, described the UAP as \"flying west to east.\"\n\nVideo Description: The video depicts an area of contrast moving from the bottom left to the top right of the sensor field-of-view. At approximately six seconds, the area of contrast leaves the sensor field-of-view near the top right corner of the frame.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
@@ -73,12 +72,7 @@
     "lng": null,
     "place": "Iraq"
   },
-  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006062/DOD_111688809.0000001/122x92_q95.jpg",
-  "csv_raw_title": "DOW-UAP-PR023, Unresolved UAP Report, Iraq, December 2022",
-  "dvids_video_id": "1006062",
-  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688809/DOD_111688809.mp4",
-  "duration": 10,
-  "dvids_page_url": "https://www.dvidshub.net/video/1006062/dow-uap-pr23-unresolved-uap-report-iraq-december-2022",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/unresolved-uap-report-iraq-december-2022.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Iraq.",
     "what_we_know": [

@@ -1,0 +1,104 @@
+{
+  "id": "fbi-uap-d014-correspondence-relating-to-ufo-sightings-1967-1974",
+  "title": "FBI-UAP-D014, Correspondence Relating to UFO Sightings, 1967, 1974",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "pdf",
+  "date_event": "10/10/74",
+  "date_released": "2026-07-10",
+  "source_url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/fbi-uap-d014-correspondence-relating-to-ufo-sightings-1967-1974.pdf",
+  "size_bytes": 339618,
+  "sha256": "e91344aaa3cae8760bb695db30416048d94d333d3cf8e616dfd878ef60731379",
+  "redacted": false,
+  "summary": "This file contains two pieces of correspondence. The first, dated 9/22/1967, relays a description of an incident provided by an eleven-year-old child in which they heard a “weird” noise and saw a “flash of light.” The second, dated 9/30/1974 and 10/10/1974, is an exchange of letters between the Federal Bureau of Investigation (FBI) and Mr. Larry Bryant regarding an “alleged April 8, 1954 sighting of an occupied unidentified flying object (UFO).” The FBI’s response to Mr. Bryant’s inquiry indicated that it maintained no record of such an event, and that, circa 1974, the Bureau does not collect information regarding UFO sightings.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/fbi-uap-d014-correspondence-relating-to-ufo-sightings-1967-1974.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Various"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/071026/release_04/thumbnails/FBI-UAP-D014_Correspondence-Relating-to-UFO-Sightings_1967_1974.jpg",
+  "csv_raw_title": "FBI-UAP-D014, Correspondence Relating to UFO Sightings, 1967, 1974",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/fbi-uap-d014-correspondence-relating-to-ufo-sightings-1967-1974.pdf",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (10/10/74) over Various.",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated 10/10/74.",
+      "Reported location: Various."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "chicago",
+      "south",
+      "information",
+      "illinois",
+      "copy",
+      "arlington",
+      "road"
+    ]
+  }
+}

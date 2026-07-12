@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": "extracted/transcripts/nasa-uap-d010-mercury-atlas-9-audio-excerpt-may-15-1963.vtt",
+    "transcript_path": null,
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d010-mercury-atlas-9-audio-excerpt-may-15-1963.jpg"
   },
   "geo": {
@@ -81,6 +81,7 @@
   "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007874&format=srt&api_key=key-68bb60d16b35e",
   "duration": 180,
   "dvids_page_url": "https://www.dvidshub.net/video/1007874/nasa-uap-d010-mercury-atlas-9-audio-excerpt-may-15-1963",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/nasa-uap-d010-mercury-atlas-9-audio-excerpt-may-15-1963.mp4",
   "audience": {
     "tldr": "NASA mission record showing footage of a UAP encounter (5/15/63) over Low Earth Orbit.",
     "what_we_know": [

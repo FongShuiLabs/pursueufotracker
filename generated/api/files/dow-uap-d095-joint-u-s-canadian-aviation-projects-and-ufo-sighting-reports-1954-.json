@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d095-joint-u-s-canadian-aviation-projects-and-ufo-sighting-reports-1954-",
+  "title": "DOW-UAP-D095, Joint U.S.-Canadian Aviation Projects and UFO Sighting Reports, 1954-1955",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "1955",
+  "date_released": "2026-07-10",
+  "source_url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D095_Joint-US-Canadian-Aviation-Projects-and-UFO-Sighting-Reports_1954-1955.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d095-joint-u-s-canadian-aviation-projects-and-ufo-sighting-reports-1954-.pdf",
+  "size_bytes": 32221008,
+  "sha256": "9c7629703ed55608b29000e490ac91be260e6088587f9048d7412593233878f9",
+  "redacted": false,
+  "summary": "This file contains reports, memoranda, and correspondence concerning various then-developmental vertical take-off and landing (VTOL) aircraft. The file includes assessments of the experimental potential of the “Avro Project Y2,” a joint U.S.-Canadian near-circular VTOL aircraft that is similar in appearance to contemporary popular descriptions of unidentified flying objects (UFO). A 1954 memorandum opines that VTOL aircraft with a circular planform may be mistaken for UFOs to observers unfamiliar with such technologies. It also recommends that UFO reports in the vicinity of Soviet military operations or assets be re-examined to assess whether they may be attributable to previously unknown advanced VTOL aircraft of foreign design.\n\nThe file also contains correspondence relating to a UFO incident involving a U.S. Air Force (USAF) KC-97 flying near Newfoundland, Canada in July 1955. A USAF committee found that the characteristics described in the report were inconsistent with those of known Soviet, American, or Canadian military systems. The committee was also “unable to explain the simultaneous ground radar returns and aircrew visual sightings.”\n\nIt also contains correspondence relating to the potential value of data from incidental radar collection of meteors entering the atmosphere. USAF Air Research and Development Command recommended using that data to improve the performance of the AN/FPS-17 radar system. Finally, the file contains correspondence indicating support for the Communications Instructions for Reporting Vital Intelligence Sightings (CIRVIS) program, a joint U.S.-Canadian civil-military program to standardize reporting methods for unusual or unidentified airborne and maritime hazards and threats.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d095-joint-u-s-canadian-aviation-projects-and-ufo-sighting-reports-1954-.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Various"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/071026/release_04/thumbnails/DOW-UAP-D095_Joint-US-Canadian-Aviation-Projects-and-UFO-Sighting-Reports_1954-1955.jpg",
+  "csv_raw_title": "DOW-UAP-D095, Joint U.S.-Canadian Aviation Projects and UFO Sighting Reports, 1954-1955",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d095-joint-u-s-canadian-aviation-projects-and-ufo-sighting-reports-1954-.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (1955) over Various.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 1955.",
+      "Reported location: Various."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "aircraft",
+      "force",
+      "board",
+      "afoin",
+      "states",
+      "directorate",
+      "project"
+    ]
+  }
+}

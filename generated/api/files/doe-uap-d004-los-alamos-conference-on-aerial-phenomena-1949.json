@@ -1,0 +1,104 @@
+{
+  "id": "doe-uap-d004-los-alamos-conference-on-aerial-phenomena-1949",
+  "title": "DOE-UAP-D004, Los Alamos Conference on Aerial Phenomena, 1949",
+  "category": "intel",
+  "agency": "DOE",
+  "type": "pdf",
+  "date_event": "3/22/49",
+  "date_released": "2026-07-10",
+  "source_url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOE-UAP-D004_Los-Alamos-Conference-on-Aerial-Phenomena_1949.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/doe-uap-d004-los-alamos-conference-on-aerial-phenomena-1949.pdf",
+  "size_bytes": 5192634,
+  "sha256": "64f70db72f3747cfdc512f78f16b0ac33a0876b39dbf7dddf07ab870ba1b1a47",
+  "redacted": false,
+  "summary": "This document is a transcript of a 1949 conference held at Los Alamos Scientific Laboratory (now Los Alamos National Laboratory), Los Alamos, New Mexico. Attendees included several eminent scientists and physicists, many of whom had contributed to the development of the first nuclear weapons during the Manhattan Project. The purpose of the conference was to discuss and gather hypotheses to account for the nature and origin of a phenomenon involving “green fireballs” that had been reported over a period of several months in the vicinity of the laboratory. The group did not come to a consensus on a likely attribution for the phenomenon, though a leading hypothesis was that the observations may have been related to meteors entering the atmosphere at a shallow angle and high altitude. Dr. Edward Teller suggested that if not a “material body,” an “electron phenomenon” might be the cause, while Dr. Lincoln LaPaz, an expert specializing in meteorics, expressed that “nothing like this, to [his] knowledge, has ever been observed in the case of meteorite drops.”",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/doe-uap-d004-los-alamos-conference-on-aerial-phenomena-1949.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "New Mexico"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/071026/release_04/thumbnails/DOE-UAP-D004_Los-Alamos-Conference-on-Aerial-Phenomena_1949.jpg",
+  "csv_raw_title": "DOE-UAP-D004, Los Alamos Conference on Aerial Phenomena, 1949",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/doe-uap-d004-los-alamos-conference-on-aerial-phenomena-1949.pdf",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (3/22/49) over New Mexico.",
+    "what_we_know": [
+      "Document originates from DOE.",
+      "Encounter dated 3/22/49.",
+      "Reported location: New Mexico."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "have",
+      "green",
+      "very",
+      "page",
+      "teller",
+      "like",
+      "think",
+      "observed"
+    ]
+  }
+}

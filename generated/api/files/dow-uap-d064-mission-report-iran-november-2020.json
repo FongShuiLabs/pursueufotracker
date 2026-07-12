@@ -7,8 +7,7 @@
   "date_event": "11/2/20",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d64-mission-report-iran-november-2020.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d064-mission-report-iran-november-2020.pdf",
+  "local_path": "downloads/pdf/dow-uap-d64-mission-report-iran-november-2020.pdf",
   "size_bytes": 860506,
   "sha256": "8422fceb10b2eafcab525690cc9aff6827fc78d5ae5e34b44174d9cc78abbb7c",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "Iran"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d64-mission-report-iran-november-2020.jpg",
-  "csv_raw_title": "DOW-UAP-D064, Mission Report, Iran, November 2020",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d64-mission-report-iran-november-2020.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (11/2/20) over Iran.",
     "what_we_know": [

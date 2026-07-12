@@ -7,10 +7,9 @@
   "date_event": null,
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/video/unresolved-uap-report-middle-east-may-2020.mp4",
-  "size_bytes": 142686223,
-  "sha256": "5f32ce0126de2c9571f2af368b2629c15b4f1cb3582700641ef31c1d1a8ceac8",
+  "local_path": "downloads/video/unresolved-uap-report-middle-east-may-2020.pdf",
+  "size_bytes": 342668,
+  "sha256": "90b353682ba2181149054d0911b7553e58e959438dd4de531a06fc387a332f85",
   "redacted": true,
   "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of two minutes and 17 seconds of video footage from an infrared sensor aboard a U.S. military platform in 2020. An accompanying Range Fouler report, DoW-UAP-D38, described the UAP as a solid white object making erratic movements above the water.\n\nVideo Description:\n00:05: An area of contrast briefly enters the sensor field-of-view from the left side of the screen.\n00:06-00:18: The sensor pans away from the scene’s initial subject matter while cycling contrast settings and zoom levels.\n00:19: The area of contrast re-enters the sensor field-of-view from near the center of the top edge of the screen.\n00:20-01:15: The area of contrast remains generally within the sensor field-of-view.\n01:16: The sensor narrows its field-of-view to zoom in on the area of contrast.\n01:56: The sensor further narrows its field-of-view to zoom in on the area of contrast.\n02:10: A blue reticle briefly appears on screen but does not acquire a lock on the area of contrast.\n02:15-02:17: The sensor switches to a different modality and loses track of the area of contrast.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
@@ -73,12 +72,7 @@
     "lng": null,
     "place": "Middle East"
   },
-  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006083/DOD_111689030.0000001/122x92_q95.jpg",
-  "csv_raw_title": "DOW-UAP-PR036, Unresolved UAP Report, Middle East, May 2020",
-  "dvids_video_id": "1006083",
-  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689030/DOD_111689030.mp4",
-  "duration": 137,
-  "dvids_page_url": "https://www.dvidshub.net/video/1006083/dow-uap-pr36-unresolved-uap-report-middle-east-may-2020",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/unresolved-uap-report-middle-east-may-2020.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Middle East.",
     "what_we_know": [

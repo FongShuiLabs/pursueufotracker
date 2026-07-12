@@ -64,7 +64,10 @@ def _save_manifest(manifest: dict) -> None:
 
 
 def _index_manifest(manifest: dict) -> dict[str, dict]:
-    return {f["source_url"]: f for f in manifest["files"]}
+    # Guard against None/empty source_url (all video-type entries have one,
+    # since video content comes from DVIDS, not this column) colliding on a
+    # single dict key.
+    return {f["source_url"]: f for f in manifest["files"] if f.get("source_url")}
 
 
 async def _download_one(
@@ -150,12 +153,28 @@ async def _download_one(
             },
             "geo": {"lat": None, "lng": None, "place": None},
         }
-        # Preserve any prior enrichment (title, category, agency, etc.)
+        # Preserve any prior enrichment (title, category, agency, etc.). Critically
+        # this must include "id" and "date_released": the fresh record above builds
+        # id from the URL's filename via _slug_from_url(), which does NOT match the
+        # stable, title-derived id parse_csv.py assigns (e.g. a CSV row titled
+        # "..._Section_001" produces id "...-section-001", but its PDF link filename
+        # is "..._section_1.pdf" -> _slug_from_url gives "...-section-1"). Without
+        # this, every file whose local download cache misses a byte-exact size match
+        # gets silently re-issued a new id/URL, breaking every existing inbound link
+        # and violating the site's "never delete/rename a file page" rule.
         if existing:
-            for k in ("title", "category", "agency", "date_event", "summary",
-                      "geo", "redacted", "score"):
+            for k in ("id", "title", "category", "agency", "type", "date_event",
+                      "date_released", "summary", "geo", "redacted", "score"):
                 if existing.get(k) not in (None, "", "other", "OTHER"):
                     record[k] = existing[k]
+        elif record["agency"] == "OTHER":
+            # No existing manifest entry matched this URL, and this generic-download
+            # path can only ever produce placeholder agency/category/title data (it
+            # has no source of truth for real metadata). Rather than publish a junk
+            # file page, drop it. Real new files come from parse_csv.py, which always
+            # assigns a real agency; this path is a supplementary asset fetch only.
+            pbar.update(1)
+            return None
 
         pbar.update(1)
         return record
@@ -183,10 +202,16 @@ async def _run_async(urls: list[str], concurrency: int, dry_run: bool) -> None:
 
     new_records = [r for r in results if r is not None]
 
-    # Merge: keep existing entries not in this batch, replace by source_url
-    keep = {f["source_url"]: f for f in manifest["files"] if f["source_url"] not in {r["source_url"] for r in new_records}}
-    by_url = {**keep, **{r["source_url"]: r for r in new_records}}
-    manifest["files"] = sorted(by_url.values(), key=lambda x: x["id"])
+    # Merge by id, NOT source_url: every video-type CSV row has source_url=None
+    # (video content comes from DVIDS, not the PDF|Image Link column), so keying
+    # this merge by source_url collapses every video entry into a single dict
+    # slot and silently drops the rest (observed: 118 video entries -> 10 on a
+    # 334-file manifest). id is always present and unique (parse_csv.py enforces
+    # this via seen_ids), so it is the only safe merge key here.
+    new_by_id = {r["id"]: r for r in new_records}
+    keep = {f["id"]: f for f in manifest["files"] if f["id"] not in new_by_id}
+    by_id = {**keep, **new_by_id}
+    manifest["files"] = sorted(by_id.values(), key=lambda x: x["id"])
     _save_manifest(manifest)
     print(f"\n  manifest now has {len(manifest['files'])} files -> {MANIFEST_PATH}")
 

@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": "extracted/transcripts/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972.vtt",
+    "transcript_path": null,
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972.jpg"
   },
   "geo": {
@@ -81,6 +81,7 @@
   "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007872&format=srt&api_key=key-68bb60d16b35e",
   "duration": 275,
   "dvids_page_url": "https://www.dvidshub.net/video/1007872/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972.mp4",
   "audience": {
     "tldr": "NASA mission record from a crewed lunar mission showing footage of a UAP encounter (12/7/72) over Cislunar Space.",
     "what_we_know": [

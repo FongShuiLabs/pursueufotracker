@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": "extracted/transcripts/fbi-uap-pr002-red-orb-rotation-northeastern-united-states-2022.vtt",
+    "transcript_path": null,
     "thumbnail_path": "extracted/thumbnails/fbi-uap-pr002-red-orb-rotation-northeastern-united-states-2022.jpg"
   },
   "geo": {
@@ -81,6 +81,7 @@
   "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1010264&format=srt&api_key=key-68bb60d16b35e",
   "duration": 162,
   "dvids_page_url": "https://www.dvidshub.net/video/1010264/fbi-uap-pr002-red-orb-rotation-northeastern-united-states-2022",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/fbi-uap-pr002-red-orb-rotation-northeastern-united-states-2022.mp4",
   "audience": {
     "tldr": "FBI investigative document from a Bureau case file showing footage of a UAP encounter (March, 2022) over Northeastern United States.",
     "what_we_know": [

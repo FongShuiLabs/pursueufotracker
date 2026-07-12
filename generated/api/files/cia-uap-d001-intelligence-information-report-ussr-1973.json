@@ -7,8 +7,7 @@
   "date_event": "12/20/73",
   "date_released": "2026-05-22",
   "source_url": "https://www.war.gov/medialink/ufo/052226/release_02/documents/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/cia-uap-d001-intelligence-information-report-ussr-1973.pdf",
+  "local_path": "downloads/pdf/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.pdf",
   "size_bytes": 154038,
   "sha256": "d3039ed486d8400be3263c0c438b199abfdb8ac030156baff1536f007349d315",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "USSR"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/052226/release_02/thumbnails/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.jpg",
-  "csv_raw_title": "CIA-UAP-D001, Intelligence Information Report, USSR, 1973",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/CIA-UAP-D001_Intelligence_Information_Report_USSR_1973.pdf",
   "audience": {
     "tldr": "Federal record documenting a UAP encounter (12/20/73) over USSR.",
     "what_we_know": [

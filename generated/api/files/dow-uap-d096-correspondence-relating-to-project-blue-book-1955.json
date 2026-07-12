@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d096-correspondence-relating-to-project-blue-book-1955",
+  "title": "DOW-UAP-D096, Correspondence Relating to Project Blue Book, 1955",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "1955",
+  "date_released": "2026-07-10",
+  "source_url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D096_Correspondence-Relating-to-Project-Blue-Book_1955.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d096-correspondence-relating-to-project-blue-book-1955.pdf",
+  "size_bytes": 126111298,
+  "sha256": "2c64dc1cd88ac9717cad81ecee9518af9310bebf5fc51596b85737374e2bf4cf",
+  "redacted": false,
+  "summary": "This file contains correspondence relating to Project Blue Book, a 1952-1969 U.S. Air Force program to investigate the nature and origin of unidentified flying objects (UFO). The correspondence includes letters and memoranda sent between various departments and agencies of the U.S. Government, the Legislative Branch, and private citizens concerning UFO sightings and the research and findings of Project Blue Book.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d096-correspondence-relating-to-project-blue-book-1955.txt",
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Various"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/071026/release_04/thumbnails/DOW-UAP-D096_Correspondence-Relating-to-Project-Blue-Book_1955.jpg",
+  "csv_raw_title": "DOW-UAP-D096, Correspondence Relating to Project Blue Book, 1955",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d096-correspondence-relating-to-project-blue-book-1955.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (1955) over Various.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 1955.",
+      "Reported location: Various."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "force",
+      "letter",
+      "secretary",
+      "have",
+      "washington",
+      "will",
+      "defense"
+    ]
+  }
+}

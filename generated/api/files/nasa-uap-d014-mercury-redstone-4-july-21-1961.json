@@ -9,8 +9,8 @@
   "source_url": null,
   "pending_verification": false,
   "local_path": "downloads/video/nasa-uap-d014-mercury-redstone-4-july-21-1961.mp4",
-  "size_bytes": 33839454,
-  "sha256": "d841ffb84d22a6ecace6a6df19c83e37d72f18fed86b1e2ec91f1a908f2b6247",
+  "size_bytes": 33843484,
+  "sha256": "d7727da5cae8faef90f1e3bd77ee5cb9933ff34c6741b7ba2c4903c953c89a06",
   "redacted": false,
   "summary": "During the recovery of the fourth launch and second crewed spaceflight of Project Mercury, Mercury-Redstone 4 (MR-4) Liberty Bell 7, the recovery team discusses a dye pack in the water that did not activate.",
   "score": {
@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": "extracted/transcripts/nasa-uap-d014-mercury-redstone-4-july-21-1961.vtt",
+    "transcript_path": null,
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d014-mercury-redstone-4-july-21-1961.jpg"
   },
   "geo": {
@@ -81,6 +81,7 @@
   "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007878&format=srt&api_key=key-68bb60d16b35e",
   "duration": 26,
   "dvids_page_url": "https://www.dvidshub.net/video/1007878/nasa-uap-d014-mercury-redstone-4-july-21-1961",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/nasa-uap-d014-mercury-redstone-4-july-21-1961.mp4",
   "audience": {
     "tldr": "NASA mission record showing footage of a UAP encounter (7/21/61) over North Atlantic Ocean.",
     "what_we_know": [

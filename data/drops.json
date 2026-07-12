@@ -110,6 +110,34 @@
       ],
       "press_coverage": [],
       "status": "live"
+    },
+    {
+      "id": "drop-04-2026-07-10",
+      "number": 4,
+      "date": "2026-07-10",
+      "title": "Drop 04 - Apollo 14, the Space Shuttle, and More Sensor Video",
+      "summary": "PURSUE Release 04 added 40 files to the archive - 23 videos, 14 documents, and 3 images - bringing the total to 334. It is led by 28 new Department of War records, mostly military infrared sensor videos and Range Fouler debriefs spanning the Eastern and Western United States, the Atlantic Ocean, the East and South China Seas, the Yellow Sea, and the Middle East. NASA added the first Apollo 14 debriefings in the disclosure (tied for the archive's top score of 72), two Apollo 17 crew medical debriefings, and three STS-80 Space Shuttle images of an unidentified object from 1996. The release also added two 1955 CIA memoranda on unconventional aircraft sightings, a 1949 Los Alamos conference record and a 2015 Pantex incident report from the Department of Energy, and one FBI correspondence file spanning 1967 to 1974.",
+      "agencies": [
+        "DoD",
+        "NASA",
+        "CIA",
+        "DOE",
+        "FBI"
+      ],
+      "file_count": 40,
+      "video_count": 23,
+      "doc_count": 14,
+      "image_count": 3,
+      "redacted_count": 19,
+      "headline_files": [
+        "nasa-uap-d026-apollo-14-debriefing-1971",
+        "dow-uap-pr116-unresolved-uap-report-atlantic-ocean-2020",
+        "nasa-uap-d030-sts-80-unidentified-object-image-1-1996",
+        "dow-uap-pr108-unresolved-uap-report-western-united-states-2020",
+        "dow-uap-pr024-unresolved-uap-report-middle-east-2023"
+      ],
+      "press_coverage": [],
+      "status": "live"
     }
   ],
   "expected_next": {

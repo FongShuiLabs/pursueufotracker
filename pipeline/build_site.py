@@ -26,30 +26,180 @@ from .config import (
 from .build_categories import CATEGORIES
 
 
+_AGENCY_PROSE = {
+    "DoD": "the Department of War", "FBI": "the FBI", "NASA": "NASA", "CIA": "the CIA",
+    "STATE": "the State Department", "DOE": "the Department of Energy", "ODNI": "ODNI",
+    "ICA": "the Intelligence Community", "USG": "the federal government",
+}
+
+_AGENCY_BARE = {
+    "DoD": "Department of War", "FBI": "FBI", "NASA": "NASA", "CIA": "CIA",
+    "STATE": "State Department", "DOE": "Department of Energy", "ODNI": "ODNI",
+    "ICA": "Intelligence Community", "USG": "federal government",
+}
+
+
+def _agency_prose(f: dict) -> str:
+    """Article-inclusive form for use as a subject/object: 'the FBI', 'NASA'."""
+    return _AGENCY_PROSE.get(f.get("agency"), f.get("agency") or "the releasing agency")
+
+
+def _agency_bare(f: dict) -> str:
+    """Article-free form for noun-adjective use: 'FBI personnel', 'this file from Department of War'."""
+    return _AGENCY_BARE.get(f.get("agency"), f.get("agency") or "the releasing agency")
+
+
+def _file_date_prose(f: dict) -> str:
+    d = f.get("date_event") or f.get("date_released") or ""
+    return d
+
+
+def _pick(f: dict, variants: list[str]) -> str:
+    """Deterministic (not random - stable across rebuilds) variant selection
+    keyed on the file's own id, so re-running the pipeline doesn't churn text."""
+    idx = sum(ord(c) for c in f.get("id", "")) % len(variants)
+    return variants[idx]
+
+
+def _explain_sensor_single_military(f: dict) -> str:
+    ag = _agency_prose(f)
+    variants = [
+        f"Captured by a single U.S. military sensor platform (typically infrared, occasionally short-wave infrared or dual EO+IR), aboard a mission aircraft or operational platform under {ag}. Instrumented, time-stamped, and recoverable. Lower than a multi-sensor capture only because cross-modality confirmation is the rubric's higher bar.",
+        f"This file from {ag} is a single-sensor military capture - one instrumented platform, one modality, time-stamped and recoverable rather than a witness account. The rubric scores it below a multi-sensor capture because cross-modality confirmation (the same object seen by two independent sensor types at once) is the higher bar on this axis, and that confirmation isn't present here.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_sensor_photographic(f: dict) -> str:
+    ag = _agency_prose(f)
+    variants = [
+        f"Captured as a still photograph rather than a time-series sensor capture. The rubric scores still photography below instrumented sensor capture because a still image lacks temporal context and cross-modality confirmation - both of which weight heavily against artifact and noise explanations. This particular photograph comes from {ag}.",
+        f"A still-photograph capture from {ag}, not a time-series sensor record. On the sensor-quality axis, a single frame carries less evidentiary weight than instrumented, time-stamped capture, because it can't show how the object behaved before or after the shutter opened - the temporal context that helps rule out artifacts.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_sensor_eyewitness(f: dict) -> str:
+    ag = _agency_prose(f)
+    variants = [
+        f"Reported by a witness with no instrumented record. The lowest tier in the rubric's sensor axis. Eyewitness perception in field conditions, even when the witness is highly credentialed, scores below capture by any instrumented modality. This report reached the federal record through {ag}.",
+        f"No sensor, camera, or instrument backs this observation - it is testimony, relayed through {ag}, and scored on the rubric's lowest sensor-quality tier for that reason. That doesn't bear on the witness's credibility (a separate axis); it reflects only that nothing beyond human perception recorded the event.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_witness_astronaut(f: dict) -> str:
+    date = _file_date_prose(f)
+    variants = [
+        f"Astronaut witness on the official federal record - the highest tier in the rubric's witness-credibility axis. It applies to NASA crew debriefings, mission transcripts, and astronaut interviews across the Mercury, Gemini, and Apollo programs. Witness credibility is only one of six components; the astronaut-witness files that also rank high on the sensor and disposition axes are the four tied for the archive's top score of 72 - the Gemini 7 Borman audio, the Gordon Cooper interview, and the two Apollo 16 scientific debriefings.",
+        f"This {date} account comes from an astronaut on the official federal record - NASA's highest-credibility witness tier in the rubric, spanning debriefings and mission transcripts from Mercury through Apollo. It's one of six score components, not a standalone verdict; the astronaut-witness files that also score highest on sensor quality and disposition are the four tied at the archive's top score of 72.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_witness_military(f: dict) -> str:
+    date = _file_date_prose(f)
+    variants = [
+        f"Trained U.S. military personnel reporting from an operational mission context. The second-highest credibility tier in the rubric. This is the witness profile shared by the entire AARO-submitted infrared-capture cluster that anchors the 66-point score band.",
+        f"Reported by trained U.S. military personnel during an operational mission ({date}) - the rubric's second-highest witness-credibility tier, one step below astronaut testimony. This profile is shared across the AARO-submitted infrared-capture cluster that anchors the archive's densest scoring band, at 66.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_witness_federal_agent(f: dict) -> str:
+    bare = _agency_bare(f)
+    variants = [
+        f"Federal agency personnel ({bare} investigators or equivalent) recording the report into the federal investigative system. Investigative credentials, but typically operating in a reactive rather than mission-active posture.",
+        f"The witness here is {bare} personnel, entering the report into the federal investigative system through standard channels. That's a real credibility tier - trained federal investigative staff - though the rubric ranks it below mission-active military or astronaut testimony because the posture is reactive (responding to a report) rather than an active operational context.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_witness_civilian(f: dict) -> str:
+    ag = _agency_prose(f)
+    variants = [
+        f"Civilian witness whose report entered the federal record through investigative channels. The rubric weights civilian credentialed witnesses below uniformed personnel because the report enters the federal record at a remove rather than directly from a mission context.",
+        f"A civilian account, routed into the federal record via {ag}'s investigative channels rather than an operational mission report. The rubric scores this tier below uniformed personnel specifically because of that remove - the witness wasn't reporting from within a federal mission context when the observation occurred.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_corroboration(f: dict) -> str:
+    ag = _agency_prose(f)
+    variants = [
+        "Single-witness or single-instrument capture. This is the corroboration tier for the overwhelming majority of the PURSUE archive on the released metadata - the rubric records the honest limit of the underlying record rather than inferring multi-witness corroboration that the released summaries do not establish. A small number of files with an independent second witness or instrument score on the multi-witness/multi-instrument tier above this one.",
+        f"On corroboration, this file from {ag} - like every single-tier file in the PURSUE archive - is a single-witness or single-instrument capture per the released metadata. The rubric doesn't infer multi-witness confirmation the summaries don't actually establish; this score reflects the honest limit of what was released, not a judgment about the underlying event.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_corroboration_multi(f: dict) -> str:
+    variants = [
+        "Multi-witness, multi-instrument corroboration - the rubric's highest corroboration tier. More than one witness and more than one capture modality independently describe the same event. That combination sits above the single-witness/single-instrument tier the rest of the archive's files occupy, where the released record supports only one witness or one instrument, not independent confirmation from both.",
+        "This file clears the rubric's highest corroboration bar: an independent witness account paired with independently-captured instrumented evidence of the same event, rather than either alone. Most PURSUE files score a tier below this because the released record backs only a single witness or a single instrument - not both, confirming each other.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_kinematic(f: dict) -> str:
+    variants = [
+        "No kinematic measurements - speed, acceleration, vector - are published in the released file with sufficient precision to score on the kinematic axis. The rubric does not infer kinematic anomaly from narrative observer estimates. Every file in the archive carries this value, which is itself an observation about the disclosure: kinematic-grade telemetry was not part of what was released.",
+        "The released file contains no speed, acceleration, or vector data precise enough to score on the kinematic axis - and that's true archive-wide, not specific to this file. The rubric declines to infer kinematic anomaly from a witness's narrative estimate of how fast something moved; that itself says something about what PURSUE actually released: descriptive accounts, not flight-path telemetry.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_mundane(f: dict) -> str:
+    variants = [
+        "A conventional candidate explanation has been considered but is not dispositive. Every file in the archive scores this way - reflecting that the underlying release metadata systematically caveats strong determinations in either direction. The released summaries warn against reading them as conclusive analytical judgments, and the rubric respects that.",
+        "Every file in the archive, including this one, scores this tier: a conventional explanation was considered in the released record but isn't treated as dispositive. That's a pattern in how war.gov's own summaries are written - they consistently hedge against strong conclusions either way - and the rubric takes that hedging at face value rather than resolving it for them.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_disposition_open(f: dict) -> str:
+    ag = _agency_prose(f)
+    variants = [
+        "Released as open after formal review by the originating agency. The file passed through a review process and was published in that posture - a stronger disposition signal than 'unresolved with no review,' because review has occurred and the open status is the agency's published conclusion.",
+        f"This file was released as open by {ag} after a formal review process concluded - not simply logged and left pending. That's a stronger disposition signal than 'unresolved, no review': a review actually happened, and remaining open is {ag}'s own published conclusion from it, not an absence of one.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_disposition_unresolved(f: dict) -> str:
+    ag = _agency_prose(f)
+    variants = [
+        "Catalogued as unresolved with no formal review process having concluded. This is the disposition for a large share of the archive's military infrared captures - the reports are logged into the system as unresolved, but no formal review has finalized. The rubric distinguishes this from 'open after review' because the absence of review is itself a status signal.",
+        f"This file from {ag} is catalogued as unresolved, with no formal review process having concluded - logged into the system, but not yet finalized by any review. The rubric treats that differently from 'open after review,' because the absence of a completed review is itself part of the file's status, not a placeholder for one.",
+    ]
+    return _pick(f, variants)
+
+
 CHOICE_EXPLANATIONS = {
     "sensor_quality": {
-        "single_sensor_military": "Captured by a single U.S. military sensor platform (typically infrared, occasionally short-wave infrared or dual EO+IR), aboard a mission aircraft or operational platform. Instrumented, time-stamped, and recoverable. Lower than a multi-sensor capture only because cross-modality confirmation is the rubric's higher bar.",
-        "photographic": "Captured as a still photograph rather than a time-series sensor capture. The rubric scores still photography below instrumented sensor capture because a still image lacks temporal context and cross-modality confirmation - both of which weight heavily against artifact and noise explanations.",
-        "eyewitness_only": "Reported by a witness with no instrumented record. The lowest tier in the rubric's sensor axis. Eyewitness perception in field conditions, even when the witness is highly credentialed, scores below capture by any instrumented modality.",
+        "single_sensor_military": _explain_sensor_single_military,
+        "photographic": _explain_sensor_photographic,
+        "eyewitness_only": _explain_sensor_eyewitness,
     },
     "witness_credibility": {
-        "astronaut": "Astronaut witness on the official federal record - the highest tier in the rubric's witness-credibility axis. It applies to NASA crew debriefings, mission transcripts, and astronaut interviews across the Mercury, Gemini, and Apollo programs. Witness credibility is only one of six components; the astronaut-witness files that also rank high on the sensor and disposition axes are the four tied for the archive's top score of 72 - the Gemini 7 Borman audio, the Gordon Cooper interview, and the two Apollo 16 scientific debriefings.",
-        "military_personnel": "Trained U.S. military personnel reporting from an operational mission context. The second-highest credibility tier in the rubric. This is the witness profile shared by the entire AARO-submitted infrared-capture cluster that anchors the 66-point score band.",
-        "federal_agent": "Federal agency personnel (FBI investigators or equivalent) recording the report into the federal investigative system. Investigative credentials, but typically operating in a reactive rather than mission-active posture.",
-        "civilian_credentialed": "Civilian witness whose report entered the federal record through investigative channels. The rubric weights civilian credentialed witnesses below uniformed personnel because the report enters the federal record at a remove rather than directly from a mission context.",
+        "astronaut": _explain_witness_astronaut,
+        "military_personnel": _explain_witness_military,
+        "federal_agent": _explain_witness_federal_agent,
+        "civilian_credentialed": _explain_witness_civilian,
     },
     "corroboration": {
-        "single_witness_instrument": "Single-witness or single-instrument capture. Every file in the PURSUE archive scores at this corroboration tier on the released metadata - the rubric records the honest limit of the underlying record rather than inferring multi-witness corroboration that the released summaries do not establish.",
+        "single_witness_instrument": _explain_corroboration,
+        "multi_witness_multi_instrument": _explain_corroboration_multi,
     },
     "kinematic_anomaly": {
-        "no_kinematic_data": "No kinematic measurements - speed, acceleration, vector - are published in the released file with sufficient precision to score on the kinematic axis. The rubric does not infer kinematic anomaly from narrative observer estimates. Every file in the archive carries this value, which is itself an observation about the disclosure: kinematic-grade telemetry was not part of what was released.",
+        "no_kinematic_data": _explain_kinematic,
     },
     "mundane_explanation_available": {
-        "weak_mundane_candidate": "A conventional candidate explanation has been considered but is not dispositive. Every file in the archive scores this way - reflecting that the underlying release metadata systematically caveats strong determinations in either direction. The released summaries warn against reading them as conclusive analytical judgments, and the rubric respects that.",
+        "weak_mundane_candidate": _explain_mundane,
     },
     "official_disposition": {
-        "open_after_review": "Released as open after formal review by the originating agency. The file passed through a review process and was published in that posture - a stronger disposition signal than 'unresolved with no review,' because review has occurred and the open status is the agency's published conclusion.",
-        "unresolved_no_review": "Catalogued as unresolved with no formal review process having concluded. This is the AARO baseline disposition for the dense score-66 cluster of military infrared captures - the reports are logged into the system as unresolved, but no formal review has finalized. The rubric distinguishes this from 'open after review' because the absence of review is itself a status signal.",
+        "open_after_review": _explain_disposition_open,
+        "unresolved_no_review": _explain_disposition_unresolved,
     },
 }
 
@@ -345,7 +495,7 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
         for cname, c in comps.items():
             choice = c.get("choice") if isinstance(c, dict) else None
             if choice and cname in CHOICE_EXPLANATIONS and choice in CHOICE_EXPLANATIONS[cname]:
-                score_explanations[cname] = CHOICE_EXPLANATIONS[cname][choice]
+                score_explanations[cname] = CHOICE_EXPLANATIONS[cname][choice](f)
         rank = rank_by_id.get(f["id"])
         ag_rank, ag_total = agency_rank_by_id.get(f["id"], (None, None))
         score_val = (f.get("score") or {}).get("value")

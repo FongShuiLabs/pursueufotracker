@@ -7,8 +7,7 @@
   "date_event": "11/18/16",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d55-mission-report-syria-november-2016.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d055-mission-report-syria-november-2016.pdf",
+  "local_path": "downloads/pdf/dow-uap-d55-mission-report-syria-november-2016.pdf",
   "size_bytes": 207227,
   "sha256": "f5885b95b57a81c08f0595c02950a07c250db050562520c52fb74f2195787166",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "Syria"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d55-mission-report-syria-november-2016.jpg",
-  "csv_raw_title": "DOW-UAP-D055, Mission Report, Syria, November 2016",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d55-mission-report-syria-november-2016.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (11/18/16) over Syria.",
     "what_we_know": [

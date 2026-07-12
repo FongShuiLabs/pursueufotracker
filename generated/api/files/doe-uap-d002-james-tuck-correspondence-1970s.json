@@ -7,8 +7,7 @@
   "date_event": "1970s",
   "date_released": "2026-05-22",
   "source_url": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOE-UAP-D002_JamesTuck_Correspondence.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/doe-uap-d002-james-tuck-correspondence-1970s.pdf",
+  "local_path": "downloads/pdf/DOE-UAP-D002_JamesTuck_Correspondence.pdf",
   "size_bytes": 554461,
   "sha256": "324a9795356cc793ede04a2494fa2eb18be10847baa490f605a22572c75f51ec",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": null
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/052226/release_02/thumbnails/DOE-UAP-D002_JamesTuck_Correspondence.jpg",
-  "csv_raw_title": "DOE-UAP-D002, James Tuck Correspondence, 1970s",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/DOE-UAP-D002_JamesTuck_Correspondence.pdf",
   "audience": {
     "tldr": "Federal record documenting a UAP encounter (1970s).",
     "what_we_know": [

@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": "extracted/transcripts/dow-uap-pr055-spherical-uap-over-afg-in-and-out-of-clouds-23-nov-2020.vtt",
+    "transcript_path": null,
     "thumbnail_path": "extracted/thumbnails/dow-uap-pr055-spherical-uap-over-afg-in-and-out-of-clouds-23-nov-2020.jpg"
   },
   "geo": {
@@ -81,6 +81,7 @@
   "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007713&format=srt&api_key=key-68bb60d16b35e",
   "duration": 47,
   "dvids_page_url": "https://www.dvidshub.net/video/1007713/dow-uap-pr055-spherical-uap-over-afg-and-out-clouds-23-nov-2020",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/dow-uap-pr055-spherical-uap-over-afg-in-and-out-of-clouds-23-nov-2020.mp4",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2020) over CENTCOM.",
     "what_we_know": [

@@ -7,8 +7,7 @@
   "date_event": "3/31/23",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-iraq-2023.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d020-mission-report-iraq-2023.pdf",
+  "local_path": "downloads/pdf/dow-uap-d20-mission-report-iraq-2023.pdf",
   "size_bytes": 3698245,
   "sha256": "71ca8826db94d61583083ef8465a6902564532dcab7d49d0d2db3e86aaf85b2f",
   "redacted": true,
@@ -66,15 +65,14 @@
   "extracted": {
     "text_path": "extracted/pdf-text/dow-uap-d020-mission-report-iraq-2023.txt",
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/dow-uap-d020-mission-report-iraq-2023.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
     "lng": null,
     "place": "Iraq"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d20-mission-report-iraq-2023.jpg",
-  "csv_raw_title": "DOW-UAP-D020, Mission Report, Iraq, 2023",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d20-mission-report-iraq-2023.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (3/31/23) over Iraq.",
     "what_we_know": [

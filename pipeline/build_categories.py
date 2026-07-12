@@ -20,11 +20,11 @@ from .config import MANIFEST_PATH, ROOT, GENERATED_DIR, SITE_NAME, SITE_URL, ens
 CATEGORIES = [
     {
         "slug": "fbi-ufo-files",
-        "title": "FBI UFO Files: 86 Bureau Records Trump Declassified",
+        "title": "FBI UFO Files: 87 Bureau Records Trump Declassified",
         "h1": "FBI UFO Files",
         "match": lambda f: f.get("category") == "fbi" or f.get("agency") == "FBI",
         "intro": (
-            "Eighty-six FBI files have been declassified across the Trump PURSUE releases (May-June 2026). "
+            "Eighty-seven FBI files have been declassified across the Trump PURSUE releases (May-June 2026). "
             "The largest single "
             "block is the Bureau's central case file <strong>62-HQ-83894</strong> (18 PDFs), which "
             "aggregates UFO and flying-disc investigations from <strong>June 1947 through July 1968</strong> "
@@ -42,7 +42,7 @@ CATEGORIES = [
             "62-HQ-83894 cluster, see <a href='/fbi-62-hq-83894'>our dedicated deep dive</a>."
         ),
         "meta_desc": (
-            "All 86 FBI UFO files declassified across the Trump administration's 2026 PURSUE releases. "
+            "All 87 FBI UFO files declassified across the Trump administration's 2026 PURSUE releases. "
             "Central case file 62-HQ-83894, Oak Ridge incidents, 1947-1968 investigations, plus 2022 "
             "Colorado Springs and 2026 Northeastern orb reports. Indexed, searchable, full SHA-256 verification."
         ),
@@ -50,11 +50,11 @@ CATEGORIES = [
     },
     {
         "slug": "military-uap-files",
-        "title": "Pentagon UAP Files: 143 Military Encounter Reports From the Trump UFO Release",
+        "title": "Pentagon UAP Files: 171 Military Encounter Reports From the Trump UFO Release",
         "h1": "Pentagon UAP & Military Encounter Files",
         "match": lambda f: f.get("agency") == "DoD",
         "intro": (
-            "One hundred forty-three Department of War files cover U.S. military Unidentified Anomalous "
+            "One hundred seventy-one Department of War files cover U.S. military Unidentified Anomalous "
             "Phenomena encounters spanning <strong>a 1949 U.S. Army flying-saucer study through 2026</strong>. "
             "These include AARO mission packets and "
             "Mission Reports (MISREPs) from the Mediterranean, Greek airspace, the Arabian Gulf, the "
@@ -67,7 +67,7 @@ CATEGORIES = [
             "capture, and unresolved official disposition."
         ),
         "meta_desc": (
-            "All 143 Pentagon and Department of War UAP files from the Trump 2026 PURSUE releases. "
+            "All 171 Pentagon and Department of War UAP files from the Trump 2026 PURSUE releases. "
             "AARO mission reports, MISREPs, Mediterranean, Greece, UAE, Iraq, Syria, Western US, IR/EO/SWIR "
             "sensor captures. Full transcripts, AI-ranked anomalousness."
         ),
@@ -79,7 +79,7 @@ CATEGORIES = [
         "h1": "NASA UFO & UAP Records",
         "match": lambda f: f.get("category") in ("nasa", "apollo") or f.get("agency") == "NASA",
         "intro": (
-            "Thirty-three NASA files have been declassified under PURSUE - fifteen in Release 01 "
+            "Forty NASA files have been declassified under PURSUE - fifteen in Release 01 "
             "(May 8, 2026), seven in Release 02 (May 22, 2026), and eleven more in Release 03 "
             "(June 12, 2026). They span the earliest U.S. "
             "crewed spaceflights through the Apollo program: <strong>Mercury-Redstone 4 and Mercury-Atlas "
@@ -97,7 +97,7 @@ CATEGORIES = [
             "(Borman / Gemini 7) is tied for the highest score (72) in the entire PURSUE release."
         ),
         "meta_desc": (
-            "All 33 NASA UFO files in the Trump 2026 PURSUE releases. Apollo 12, 16, and 17 "
+            "All 40 NASA UFO files in the Trump 2026 PURSUE releases. Apollo 12, 16, and 17 "
             "records, Gemini 4/5/7/9 crew debriefings, Frank Borman and Gordon Cooper audio, Mercury "
             "program audio (1961-63), Skylab debriefing, Schmitt-Grimaldi lunar flash. Astronaut-witness records."
         ),
@@ -130,11 +130,11 @@ CATEGORIES = [
     },
     {
         "slug": "cia-ufo-files",
-        "title": "CIA UFO Files: 19 Declassified CIA UAP Records From the Trump Disclosure",
+        "title": "CIA UFO Files: 21 Declassified CIA UAP Records From the Trump Disclosure",
         "h1": "CIA UFO & UAP Files",
         "match": lambda f: f.get("agency") == "CIA",
         "intro": (
-            "Nineteen CIA files have been declassified under PURSUE - eighteen historical Central "
+            "Twenty-one CIA files have been declassified under PURSUE - eighteen historical Central "
             "Intelligence Agency UAP records added in <strong>Release 03 (June 12, 2026)</strong>, plus "
             "<strong>CIA-UAP-D001</strong>, a 1973 CIA Intelligence Information Report relating to USSR "
             "activity, from Release 02. The Release 03 set reaches back to the agency's earliest UFO work: "
@@ -148,7 +148,7 @@ CATEGORIES = [
             "see <a href='/cia-ufo-files-explained'>our CIA UFO files deep dive</a>."
         ),
         "meta_desc": (
-            "All 19 CIA UFO files declassified in the Trump administration's 2026 PURSUE releases. The "
+            "All 21 CIA UFO files declassified in the Trump administration's 2026 PURSUE releases. The "
             "CIA Scientific Advisory Panel on UFOs, 'The CIA and Overhead Reconnaissance,' the Leon "
             "Davidson / CASE 17708 correspondence, mid-century sighting reports, and the 1973 USSR "
             "intelligence report. Indexed, searchable, SHA-256 verified."
@@ -348,7 +348,7 @@ def _page_html(cat: dict, files: list[dict]) -> str:
 
 {explore_nav}
 
-  <a class="cat-back" href="/">← BACK TO ALL 294 FILES</a>
+  <a class="cat-back" href="/">← BACK TO ALL 334 FILES</a>
 
   <div class="subscribe-bar">
     <p class="subscribe-prompt"><strong>Get alerted the moment the next PURSUE drop lands.</strong></p>
@@ -381,7 +381,7 @@ def _page_html(cat: dict, files: list[dict]) -> str:
     </div>
     <div>
       <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:12px">TOOLS</div>
-      <a href="/search" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Search All 294 Files</a>
+      <a href="/search" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Search All 334 Files</a>
       <a href="/timeline" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Timeline 1948-2026</a>
       <a href="/verify" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Verify vs war.gov</a>
       <a href="/uap-data-csv" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">uap-data.csv Mirror</a>

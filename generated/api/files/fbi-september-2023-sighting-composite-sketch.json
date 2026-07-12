@@ -7,8 +7,7 @@
   "date_event": "9/1/23",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/2024-04-30-composite-sketch.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/fbi-september-2023-sighting-composite-sketch.pdf",
+  "local_path": "downloads/pdf/2024-04-30-composite-sketch.pdf",
   "size_bytes": 112045,
   "sha256": "b18179d90564ecae48fbca58e945894633ac9c37f49f5781a9406a389b457663",
   "redacted": false,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "United States"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/2024-04-30-composite-sketch.jpg",
-  "csv_raw_title": "FBI September 2023 Sighting - Composite Sketch",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/2024-04-30-composite-sketch.pdf",
   "audience": {
     "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (9/1/23) over United States.",
     "what_we_know": [

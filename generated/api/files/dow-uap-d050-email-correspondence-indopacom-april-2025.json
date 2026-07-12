@@ -7,8 +7,7 @@
   "date_event": "4/10/2025-4/11/2025",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d50-email-correspondence-indopacom-april-2025.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d050-email-correspondence-indopacom-april-2025.pdf",
+  "local_path": "downloads/pdf/dow-uap-d50-email-correspondence-indopacom-april-2025.pdf",
   "size_bytes": 312451,
   "sha256": "10c11e9bf4d6686159da48e3d9388e7d3afe4ae8b1e79725ec6c63ccc491e537",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": null
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d50-email-correspondence-indopacom-april-2025.jpg",
-  "csv_raw_title": "DOW-UAP-D050, Email Correspondence, INDOPACOM, April 2025",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d50-email-correspondence-indopacom-april-2025.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (4/10/2025-4/11/2025).",
     "what_we_know": [

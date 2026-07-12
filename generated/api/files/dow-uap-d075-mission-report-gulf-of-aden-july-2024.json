@@ -7,8 +7,7 @@
   "date_event": "7/14/24",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d75-mission-report-gulf-of-aden-july-2024.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d075-mission-report-gulf-of-aden-july-2024.pdf",
+  "local_path": "downloads/pdf/dow-uap-d75-mission-report-gulf-of-aden-july-2024.pdf",
   "size_bytes": 792150,
   "sha256": "672b79390fe6595828c71e1f3df8cb0a2290f0658c36ed724e17ea167233b771",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "Gulf of Aden"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d75-mission-report-gulf-of-aden-july-2024.jpg",
-  "csv_raw_title": "DOW-UAP-D075, Mission Report, Gulf of Aden, July 2024",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d75-mission-report-gulf-of-aden-july-2024.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (7/14/24) over Gulf of Aden.",
     "what_we_know": [

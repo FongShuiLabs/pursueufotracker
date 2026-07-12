@@ -7,8 +7,7 @@
   "date_event": "Late 2025",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/fbi-photo-b23.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/fbi-photo-b023.pdf",
+  "local_path": "downloads/pdf/fbi-photo-b23.pdf",
   "size_bytes": 63037,
   "sha256": "921e5ea0a0b4264d6aabfecee036fc924bf11dd9c6212873122c0fa457de194a",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "Western United States"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/fbi-photo-b23.jpg",
-  "csv_raw_title": "FBI Photo B023",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/fbi-photo-b23.pdf",
   "audience": {
     "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (Late 2025) over Western United States.",
     "what_we_know": [

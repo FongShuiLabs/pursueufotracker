@@ -7,8 +7,7 @@
   "date_event": "10/1/20",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d63-mission-report-strait-of-hormuz-october-2020.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d063-mission-report-strait-of-hormuz-october-2020.pdf",
+  "local_path": "downloads/pdf/dow-uap-d63-mission-report-strait-of-hormuz-october-2020.pdf",
   "size_bytes": 3311583,
   "sha256": "ad3b37eb9fbd20e6dc75152e486514e58ff8a1edde3d32615887ea0d19727884",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "Strait of Hormuz"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d63-mission-report-strait-of-hormuz-october-2020.jpg",
-  "csv_raw_title": "DOW-UAP-D063, Mission Report, Strait of Hormuz, October 2020",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d63-mission-report-strait-of-hormuz-october-2020.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (10/1/20) over Strait of Hormuz.",
     "what_we_know": [

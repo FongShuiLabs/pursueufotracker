@@ -7,8 +7,7 @@
   "date_event": "7/16/20",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d65-mission-report-persian-gulf-july-2020.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d065-mission-report-arabian-gulf-july-2020.pdf",
+  "local_path": "downloads/pdf/dow-uap-d65-mission-report-persian-gulf-july-2020.pdf",
   "size_bytes": 3043075,
   "sha256": "bfbc281190a14c522d854c0cf2699f82de419e8f8a455949871ccdc9175bf423",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "Arabian Gulf"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d65-mission-report-persian-gulf-july-2020.jpg",
-  "csv_raw_title": "DOW-UAP-D065, Mission Report, Arabian Gulf, July 2020",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d65-mission-report-persian-gulf-july-2020.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (7/16/20) over Arabian Gulf.",
     "what_we_know": [

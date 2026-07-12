@@ -7,8 +7,7 @@
   "date_event": "1973",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/nasa-uap-d005-apollo-17-crew-debriefing-for-science-1973.pdf",
+  "local_path": "downloads/pdf/nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973.pdf",
   "size_bytes": 122499,
   "sha256": "23c76f92be6a04417373771a12229c0a6857b9769086989c1b5e459afb5c3e52",
   "redacted": false,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": null
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973.jpg",
-  "csv_raw_title": "NASA-UAP-D005, Apollo 17 Crew Debriefing for Science, 1973",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/nasa-uap-d5-apollo-17-crew-debriefing-for-science-1973.pdf",
   "audience": {
     "tldr": "NASA mission record from a crewed lunar mission documenting a UAP encounter (1973).",
     "what_we_know": [

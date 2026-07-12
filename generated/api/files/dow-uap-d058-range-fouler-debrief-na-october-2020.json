@@ -7,8 +7,7 @@
   "date_event": "10/27/20",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d58-range-fouler-debrief-na-october-2020.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d058-range-fouler-debrief-na-october-2020.pdf",
+  "local_path": "downloads/pdf/dow-uap-d58-range-fouler-debrief-na-october-2020.pdf",
   "size_bytes": 301419,
   "sha256": "c2bd370cdadc2f17649830713d55731aa22ceb76940fd64ae7ffc86fc0559261",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": null
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d58-range-fouler-debrief-na-october-2020.jpg",
-  "csv_raw_title": "DOW-UAP-D058, Range Fouler Debrief, NA, October 2020",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d58-range-fouler-debrief-na-october-2020.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (10/27/20).",
     "what_we_know": [

@@ -81,6 +81,7 @@
   "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1010336&format=srt&api_key=key-68bb60d16b35e",
   "duration": 3341,
   "dvids_page_url": "https://www.dvidshub.net/video/1010336/nasa-uap-d025-apollo-16-scientific-debriefing",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/nasa-uap-d025-apollo-16-scientific-debriefing.mp4",
   "audience": {
     "tldr": "NASA mission record from a crewed lunar mission showing footage of a UAP encounter over Houston, Texas.",
     "what_we_know": [

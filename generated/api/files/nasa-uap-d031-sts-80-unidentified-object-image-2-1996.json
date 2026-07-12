@@ -1,0 +1,94 @@
+{
+  "id": "nasa-uap-d031-sts-80-unidentified-object-image-2-1996",
+  "title": "NASA-UAP-D031, STS-80 Unidentified Object Image 2, 1996",
+  "category": "nasa",
+  "agency": "NASA",
+  "type": "image",
+  "date_event": "1996",
+  "date_released": "2026-07-10",
+  "source_url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/NASA-UAP-D031_STS-80-Unidentified-Object-Image2_1996.jpg",
+  "pending_verification": false,
+  "local_path": "downloads/image/nasa-uap-d031-sts-80-unidentified-object-image-2-1996.jpg",
+  "size_bytes": 1543284,
+  "sha256": "4733b16c778046f805e7d32a8a0f891b88e3e22fa32c7595ce3e0065f985e9bf",
+  "redacted": false,
+  "summary": "During STS-80, between November 19 and December 7, 1996, astronauts aboard Space Shuttle Columbia captured a series of three images of an unidentified object in low-Earth orbit. In the second photograph, the object is visible near the center of the frame, to the right of the limb of the Earth. It appears to have rotated or tumbled about its major axis, which is consistent with the behavior of a free-floating object.",
+  "score": {
+    "value": 65,
+    "components": {
+      "sensor_quality": "photographic",
+      "witness_credibility": "astronaut",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "photographic",
+        "value": 55,
+        "weight": 0.25,
+        "contribution": 13.75
+      },
+      "witness_credibility": {
+        "choice": "astronaut",
+        "value": 95,
+        "weight": 0.2,
+        "contribution": 19.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": null
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Low-Earth Orbit"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/071026/release_04/thumbnails/NASA-UAP-D031_STS-80-Unidentified-Object-Image2_1996.jpg",
+  "csv_raw_title": "NASA-UAP-D031, STS-80 Unidentified Object Image 2, 1996",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/image/nasa-uap-d031-sts-80-unidentified-object-image-2-1996.jpg",
+  "audience": {
+    "tldr": "NASA mission record depicting a UAP encounter (1996) over Low-Earth Orbit.",
+    "what_we_know": [
+      "Document originates from NASA.",
+      "Encounter dated 1996.",
+      "Reported location: Low-Earth Orbit."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 65/100. Top drivers: witness credibility (astronaut), sensor quality (photographic)."
+  }
+}

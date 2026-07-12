@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": "extracted/transcripts/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969.vtt",
+    "transcript_path": null,
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969.jpg"
   },
   "geo": {
@@ -81,6 +81,7 @@
   "caption_srt_url": "https://api.dvidshub.net/closed-captions/get?asset_id=video:1007870&format=srt&api_key=key-68bb60d16b35e",
   "duration": 470,
   "dvids_page_url": "https://www.dvidshub.net/video/1007870/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969.mp4",
   "audience": {
     "tldr": "NASA mission record from a crewed lunar mission showing footage of a UAP encounter (1969) over Texas.",
     "what_we_know": [

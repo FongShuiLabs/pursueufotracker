@@ -66,7 +66,7 @@
   "extracted": {
     "text_path": "extracted/pdf-text/dow-uap-d038-range-fouler-debrief-middle-east-may-2020.txt",
     "transcript_path": null,
-    "thumbnail_path": "extracted/thumbnails/dow-uap-d038-range-fouler-debrief-middle-east-may-2020.jpg"
+    "thumbnail_path": null
   },
   "geo": {
     "lat": null,
@@ -75,6 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d38-range-fouler-debrief-middle-east-may-2020.jpg",
   "csv_raw_title": "DOW-UAP-D038, Range Fouler Debrief, Middle East, May 2020",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d038-range-fouler-debrief-middle-east-may-2020.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (5/14/20) over Arabian Gulf.",
     "what_we_know": [

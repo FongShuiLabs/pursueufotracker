@@ -7,10 +7,9 @@
   "date_event": null,
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/video/unresolved-uap-report-syria-july-2022.mp4",
-  "size_bytes": 3990714,
-  "sha256": "f53127e32cb0a76bcb6a2047f75f4483329614dabad87ac1372ba9c2665ba84f",
+  "local_path": "downloads/video/unresolved-uap-report-syria-july-2022.pdf",
+  "size_bytes": 6999240,
+  "sha256": "b3b3f023d70bcce3178de9fe6a019ea6db5e5145bc7e28a49308442e190ef817",
   "redacted": true,
   "summary": "The United States Central Command submitted a report of an unidentified anomalous phenomenon (UAP) to the All-domain Anomaly Resolution Office (AARO) consisting of 14 seconds of video footage from an infrared (left) and electro-optical (right) sensor aboard a U.S. military platform in 2022. An accompanying mission report, DoW-UAP-D16, described the UAP as “moving from north to south.”\n\nVideo Description: At the five second mark, the video depicts an object moving from right to left across the top right quarter of the sensor field-of-view.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
   "score": {
@@ -73,12 +72,7 @@
     "lng": null,
     "place": "Syria"
   },
-  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006060/DOD_111688775.0000001/122x92_q95.jpg",
-  "csv_raw_title": "DOW-UAP-PR022, Unresolved UAP Report, Syria, July 2022",
-  "dvids_video_id": "1006060",
-  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688775/DOD_111688775-1920x1080-9000k.mp4",
-  "duration": 14,
-  "dvids_page_url": "https://www.dvidshub.net/video/1006060/dow-uap-pr22-unresolved-uap-report-syria-july-2022",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/unresolved-uap-report-syria-july-2022.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Syria.",
     "what_we_know": [

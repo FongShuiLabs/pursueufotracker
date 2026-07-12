@@ -1,0 +1,98 @@
+{
+  "id": "dow-uap-pr109-unresolved-uap-report-eastern-united-states-2015",
+  "title": "DOW-UAP-PR109, Unresolved UAP Report, Eastern United States, 2015",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2015",
+  "date_released": "2026-07-10",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": "downloads/video/dow-uap-pr109-unresolved-uap-report-eastern-united-states-2015.mp4",
+  "size_bytes": 6746580,
+  "sha256": "93ad0fe3bd9279c302cd8206c004a01e77b0dbf448b9de18f3b29563e446b2dc",
+  "redacted": false,
+  "summary": "The United States Navy Unidentified Anomalous Phenomena Task Force (UAPTF) transferred this media to the All-domain Anomaly Resolution Office (AARO) in 2022. The video contains 21 seconds of footage likely captured by an infrared sensor aboard a U.S. military platform in 2015.\n\nVideo Description: No formal data handling practices for UAP-related records existed at the time this media was reported to the UAPTF. This media was digitally altered before being reported to the UAPTF, and is presented as it was received by AARO.\n00:01-00:08: No content.\n00:09-00:11: An area of contrast becomes visible near the center of the screen, The area of contrast transits the sensor field-of-view, moving from right to left before exiting from upper left corner of the frame.\n00:12-00:21: The footage repeats at a slower playback speed.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 68,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr109-unresolved-uap-report-eastern-united-states-2015.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Eastern United States"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014108/DOD_111830065.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR109, Unresolved UAP Report, Eastern United States, 2015",
+  "dvids_video_id": "1014108",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111830065/DOD_111830065-1920x1080-9000k.mp4",
+  "duration": 21,
+  "dvids_page_url": "https://www.dvidshub.net/video/1014108/dow-uap-pr109-unresolved-uap-report-eastern-united-states-2015",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/dow-uap-pr109-unresolved-uap-report-eastern-united-states-2015.mp4",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2015) over Eastern United States.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2015.",
+      "Reported location: Eastern United States."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 68/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
+}

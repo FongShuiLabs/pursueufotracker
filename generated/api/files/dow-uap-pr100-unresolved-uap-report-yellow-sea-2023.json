@@ -1,0 +1,98 @@
+{
+  "id": "dow-uap-pr100-unresolved-uap-report-yellow-sea-2023",
+  "title": "DOW-UAP-PR100, Unresolved UAP Report, Yellow Sea, 2023",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2023",
+  "date_released": "2026-07-10",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": "downloads/video/dow-uap-pr100-unresolved-uap-report-yellow-sea-2023.mp4",
+  "size_bytes": 236563582,
+  "sha256": "1210749cf671a113f953a5955b043c1fb02acc5ebb8a0b3c66b5bd172ef00721",
+  "redacted": true,
+  "summary": "The United States Indo-Pacific Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of 4 minutes and 57 seconds of video footage from an electro-optical and infrared sensor system aboard a U.S. military platform in 2023.\n\nVideo Description: The overall quality of this video footage progressively degrades over its runtime.\n00:01-00:08: In infrared mode, the sensor tracks an area of contrast, keeping it generally within the center of the frame.\n00:09-01:03: The sensor zooms in and tracks the area of contrast, holding it generally within the center of the frame.\n01:04-01:10: The sensor display switches modes to an electro-optical day time television camera feed (a collection mode that displays visible and near infrared signatures). The video features a dark object superimposed against a blue background.\n01:11-01:13: The sensor display changes modes to infrared. The area of contrast is no longer visible within the frame.\n01:14-02:16: The sensor zooms in and changes contrast settings. An area of contrast is visible near the center of the frame.\n02:17-02:22: The area of contrast repeatedly leaves and enters the sensor field-of-view.\n02:23-02:46: The sensor reacquires and tracks the area of contrast, keeping it generally within the center of the frame.\n02:47-03:27: The sensor zooms in, tracking the area of contrast.\n03:28-03:32: The footage appears to “skip,” or lose coherence.\n03:33-03:46: The footage returns to its previous state, and the sensor continues to track the area of contrast generally within the center of the frame.\n03:47-04:32: The sensor zooms out.\n04:33-04:40: The area of contrast repeatedly leaves and enters the sensor field-of-view.\n04:41-04:45: No content.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr100-unresolved-uap-report-yellow-sea-2023.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Yellow Sea"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014096/DOD_111830004.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR100, Unresolved UAP Report, Yellow Sea, 2023",
+  "dvids_video_id": "1014096",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111830004/DOD_111830004-1920x1080-9000k.mp4",
+  "duration": 285,
+  "dvids_page_url": "https://www.dvidshub.net/video/1014096/dow-uap-pr100-unresolved-uap-report-yellow-sea-2023",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/dow-uap-pr100-unresolved-uap-report-yellow-sea-2023.mp4",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2023) over Yellow Sea.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2023.",
+      "Reported location: Yellow Sea."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
+}

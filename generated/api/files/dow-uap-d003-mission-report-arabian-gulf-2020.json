@@ -7,8 +7,7 @@
   "date_event": null,
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d3-mission-report-arabian-gulf-2020.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d003-mission-report-arabian-gulf-2020.pdf",
+  "local_path": "downloads/pdf/dow-uap-d3-mission-report-arabian-gulf-2020.pdf",
   "size_bytes": 101111,
   "sha256": "58219b8000454aa27424ead9530bf80420365a587b95d4c770a5dce916783b45",
   "redacted": true,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": null
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d3-mission-report-arabian-gulf-2020.jpg",
-  "csv_raw_title": "DOW-UAP-D003, Mission Report, Arabian Gulf, 2020",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d3-mission-report-arabian-gulf-2020.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter.",
     "what_we_know": [

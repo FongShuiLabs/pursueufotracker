@@ -7,8 +7,7 @@
   "date_event": "1948-1950",
   "date_released": "2026-05-22",
   "source_url": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOW-UAP-D017_General_Correspondence_Of_Sandia.pdf",
-  "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d017-uap-reported-at-sandia-base-1948-1950.pdf",
+  "local_path": "downloads/pdf/DOW-UAP-D017_General_Correspondence_Of_Sandia.pdf",
   "size_bytes": 68764801,
   "sha256": "ec72132902a2f50d2ab032031386710fef1d1ae1face0226a90243f61d9347b4",
   "redacted": false,
@@ -73,8 +72,7 @@
     "lng": null,
     "place": "New Mexico"
   },
-  "thumbnail_url": "https://www.war.gov/medialink/ufo/052226/release_02/thumbnails/DOW-UAP-D017_General_Correspondence_Of_Sandia.jpg",
-  "csv_raw_title": "DOW-UAP-D017, UAP Reported at Sandia Base, 1948-1950",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/DOW-UAP-D017_General_Correspondence_Of_Sandia.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (1948-1950) over New Mexico.",
     "what_we_know": [
