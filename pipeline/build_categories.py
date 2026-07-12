@@ -183,6 +183,38 @@ CATEGORIES = [
         ),
         "keywords": "ODNI UAP report, ODNI-UAP-D001, DOE UAP, Department of Energy UFO, PANTEX UAP, USPER UAP narrative, Colorado Springs UAP 2022, Congressional UFO correspondence, intelligence community UAP, PURSUE intel disclosure",
     },
+    # NOTE: keep this entry LAST. build_site._category_page() breadcrumbs each
+    # file to its FIRST matching category; agency hubs must win over this
+    # type-based hub. Intro deliberately avoids hardcoded file counts (the page
+    # header renders the live count) so it never joins the stale-count drift.
+    {
+        "slug": "videos",
+        "title": "Pentagon & Government UFO Videos: Every PURSUE Video File, Indexed",
+        "h1": "UFO & UAP Videos",
+        "match": lambda f: f.get("type") == "video",
+        "intro": (
+            "Every video file in the Trump administration's PURSUE disclosure, in one place, ranked by "
+            "the <a href='/methodology'>Anomalousness Index</a>. The bulk of the set is <strong>U.S. military "
+            "sensor footage</strong> - the DOW-UAP-PR series of infrared (IR), electro-optical (EO), and "
+            "short-wave infrared (SWIR) captures recorded from operational platforms and submitted to AARO, "
+            "spanning the Eastern and Western United States, the Atlantic, the Mediterranean, the Middle East, "
+            "and the Indo-Pacific. Alongside them: <strong>FBI-released orb videos</strong> from modern "
+            "sightings, and <strong>NASA crew debriefing and interview footage</strong> reaching back to the "
+            "Mercury, Gemini, and Apollo programs - including the Apollo 14 debriefings added in Release 04. "
+            "Some sensor videos ship with a paired debrief document describing the same event in the "
+            "observer's own words; the most-discussed example is "
+            "<a href='/dow-uap-pr116-explained'>DOW-UAP-PR116 and its Range Fouler debrief</a>. Every video "
+            "is mirrored on this site and SHA-256 verified against war.gov's own bytes, so you can confirm "
+            "the copy you're watching matches the government's. For the sensor-video series in depth, see "
+            "<a href='/pursue-release-02-pentagon-videos'>our Release 02 Pentagon videos deep dive</a>."
+        ),
+        "meta_desc": (
+            "Every UFO video in the Trump PURSUE disclosure: Pentagon infrared sensor captures (DOW-UAP-PR "
+            "series), FBI orb videos, and NASA astronaut debriefing footage. Ranked by evidentiary weight, "
+            "mirrored, SHA-256 verified against war.gov."
+        ),
+        "keywords": "Pentagon UFO videos, UAP videos, declassified UFO videos, war.gov UFO videos, DOW-UAP-PR videos, AARO sensor video, infrared UFO footage, FBI orb video, NASA UFO video, PURSUE videos, Trump UFO video release",
+    },
 ]
 
 
