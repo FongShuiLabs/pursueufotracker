@@ -1,0 +1,3 @@
+# war.gov mirror files must stay byte-exact (published SHA-256 must match served bytes).
+# -text disables all EOL conversion; git stores and serves the file verbatim.
+data/uap-data.csv -text
