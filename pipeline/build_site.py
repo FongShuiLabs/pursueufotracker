@@ -722,6 +722,7 @@ def _build_sitemap(manifest: dict) -> None:
         ("/cia-uap-d001-1973-ussr", "0.9", "monthly"),
         ("/western-us-uap-event-2023", "0.9", "monthly"),
         ("/cheyenne-mountain-uap-backscattering-explanation", "0.9", "monthly"),
+        ("/dow-uap-pr116-explained", "0.9", "monthly"),
         ("/1998-white-house-ufo-correspondence", "0.9", "monthly"),
         ("/api", "0.8", "monthly"),
         ("/fbi-ufo-files/", "0.9", "weekly"),
