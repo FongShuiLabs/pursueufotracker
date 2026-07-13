@@ -11,15 +11,15 @@ Drop 02 is expected ~2026-06-07 (could slip earlier or later). When the poller a
 The poller's `[NEW DROP]` GitHub issue gives you: new row count, delta vs. last snapshot, new CSV SHA-256. That is not enough to post a verified public claim. You need the manifest diff too.
 
 1. Pull latest: `git pull`
-2. Open `_scratch/uap-csv.csv` and confirm row count + SHA-256 match the issue body.
+2. **`python -m pipeline.preflight pre-ingest`** — fetches a verified-fresh CSV straight from war.gov and hard-fails unless its SHA-256 matches `data/poll-state.json`. NEVER skip this: `pipeline.run all` does NOT auto-fetch, and a stale `_scratch/uap-csv.csv` once silently re-parsed an old schema (2026-07-11).
 3. Run pipeline: `python -m pipeline.run all` (may take a while — videos transcribe, PDFs extract, OG cards regen).
-4. `git diff data/manifest.json | head -200` — note the NEW file IDs (added blocks, not CSV row count changes; some delta could be re-rows of existing files like the May 11 revision was).
+4. **`python -m pipeline.preflight post-ingest`** — hard-fails if any previously-live file id vanished, junk OTHER-agency entries appeared, a type count shrank, or new files are missing title/sha256/score. Only after it passes: `git diff data/manifest.json | head -200` to note the NEW file IDs (added blocks, not CSV row count changes; some delta could be re-rows of existing files like the May 11 revision was).
 5. For each genuinely new file, open `generated/files/<id>.html` and confirm:
    - Title, score, summary all populated (no `[UNKNOWN]`, no empty fields)
    - Source URL (war.gov or DVIDS) resolves
    - SHA-256 hash present
 6. Compute the **verified counts** below (do NOT trust the CSV row delta as "files added" — it includes re-rows).
-7. Push to deploy.
+7. **`python -m pipeline.preflight pre-push`** (catches >25MiB deploy-killers, _redirects ceiling, CSV-mirror byte drift), then push to deploy.
 8. Wait ~2 min for Cloudflare, then `curl -I https://pursueufotracker.com/files/<one-new-id>` and confirm `HTTP/2 200`.
 9. Open `/drops/` and confirm Drop 02 detail page renders.
 10. Only NOW fill the placeholders below and post.
