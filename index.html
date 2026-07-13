@@ -182,22 +182,30 @@ if (window.ADSENSE_PUB_ID) {
 <header class="hero">
   <div class="hero-meta">
     <span class="classification">UNCLASSIFIED // PUBLIC RELEASE</span>
-    <span class="date-stamp">LATEST RELEASE: DROP 03 · 12 JUN 2026</span>
-    <span class="date-stamp" id="freshness-badge" style="color:#52ffb4;border-color:#52ffb4;background:rgba(82,255,180,.05)">✓ CHECKING WAR.GOV...</span>
+    <span class="date-stamp" id="latest-release">LATEST RELEASE: DROP 04 · 10 JUL 2026</span>
+    <span class="date-stamp" id="freshness-badge" style="color:#a8b8cc;border-color:rgba(168,184,204,.4);background:rgba(168,184,204,.05)">CHECKING WAR.GOV...</span>
   </div>
   <h1>P U R S U E<span class="hero-sub">Trump Administration · Presidential Unsealings &amp; Reporting System for UAP Encounters</span></h1>
-  <p class="hero-lede">The independent tracker of every UFO file the Trump administration declassifies through PURSUE. Release 01 (May 8, 2026) added 158 files; Release 02 (May 22, 2026) added 64; Release 03 (June 12, 2026) added 72 more. <strong style="color:#52ffb4">334 files now indexed, scored, and SHA-256 verified</strong>. We continue indexing, scoring, and verifying each one within hours of release.</p>
+  <p class="hero-lede">The independent tracker of every UFO file the Trump administration declassifies through PURSUE. Release 01 (May 8, 2026) added 158 files; Release 02 (May 22, 2026) added 64; Release 03 (June 12, 2026) added 72; Release 04 (July 10, 2026) added 40 more. <strong style="color:#52ffb4">334 files now indexed, scored, and SHA-256 verified</strong>. We continue indexing, scoring, and verifying each one within hours of release.</p>
 
   <div class="drop-banner" style="border-color:rgba(82,255,180,.5);background:linear-gradient(120deg,rgba(82,255,180,.14),rgba(82,180,255,.08))">
-    <div class="drop-tag" style="background:#52ffb4">DROP 03</div>
+    <div class="drop-tag" style="background:#52ffb4">DROP 04</div>
     <div class="drop-info">
-      <strong>June 12, 2026</strong> · 72 new files · CIA, FBI, NASA, DoD, IC/Gov
+      <strong>July 10, 2026</strong> · 40 new files · DoD, NASA, CIA, DOE, FBI
       <span class="drop-status">NEWEST · Indexed</span>
     </div>
-    <a href="/changes" class="drop-link" style="color:#52ffb4">View diff →</a>
+    <a href="/drops/2026-07-10-drop-04" class="drop-link" style="color:#52ffb4">View drop →</a>
   </div>
   <div class="drop-banner" style="margin-top:12px;border-color:rgba(82,180,255,.3);background:linear-gradient(120deg,rgba(82,180,255,.08),rgba(82,180,255,.03))">
-    <div class="drop-tag" style="background:#52b4ff">DROP 02</div>
+    <div class="drop-tag" style="background:#52b4ff">DROP 03</div>
+    <div class="drop-info">
+      <strong>June 12, 2026</strong> · 72 files · CIA, FBI, NASA, DoD, IC/Gov
+      <span class="drop-status">LIVE · Indexed</span>
+    </div>
+    <a href="/changes" class="drop-link">View diff →</a>
+  </div>
+  <div class="drop-banner" style="margin-top:12px">
+    <div class="drop-tag">DROP 02</div>
     <div class="drop-info">
       <strong>May 22, 2026</strong> · 64 files · Pentagon videos, first CIA/ODNI/DOE
       <span class="drop-status">LIVE · Indexed</span>
@@ -1077,21 +1085,68 @@ if (window.ADSENSE_PUB_ID) {
   <p><strong>Reporting consulted:</strong> CBS News, CNN, NBC News, TechCrunch, NewsNation, Fox News, ABC News (May 8, 2026 coverage)</p>
   <p>This is an independent index. Not affiliated with the Department of War, the FBI, NASA, the State Department, or any U.S. government entity. All underlying documents are public-domain U.S. Government works.</p>
   <p style="margin-top:14px"><a href="/about" style="color:#52b4ff">About</a> &middot; <a href="/contact" style="color:#52b4ff">Contact</a> &middot; <a href="/privacy" style="color:#52b4ff">Privacy</a> &middot; <a href="/methodology" style="color:#52b4ff">Methodology</a> &middot; <a href="/revisions" style="color:#52b4ff">Revisions log</a> &middot; <a href="/changes" style="color:#52b4ff">Diff data</a> &middot; <a href="https://github.com/FongShuiLabs/pursueufotracker" target="_blank" rel="noopener" style="color:#52b4ff">Source on GitHub</a></p>
-  <p class="tiny">Last new release: June 12, 2026 (Drop 03) &middot; <span id="last-polled">checking war.gov...</span></p>
+  <p class="tiny"><span id="last-new-release">Last new release: July 10, 2026 (Drop 04)</span> &middot; <span id="last-polled">checking war.gov...</span></p>
 </footer>
 <script>
-fetch('/data/poll-state.json').then(r => r.json()).then(s => {
-  if (!s.last_polled_at) return;
-  const t = new Date(s.last_polled_at);
-  const mins = Math.max(0, Math.round((Date.now() - t) / 60000));
-  const human = mins < 60 ? `${mins} min ago` : mins < 1440 ? `${Math.round(mins/60)} h ago` : `${Math.round(mins/1440)} d ago`;
+/* Freshness / "verified current" logic - HONEST BY CONSTRUCTION.
+   Everything a visitor sees about "what's the latest drop" and "are we current"
+   is driven live from the three data files, never from hand-maintained HTML:
+     - drops.json      = what THIS SITE has ingested and built pages for (display truth)
+     - poll-state.json = what the war.gov poller last DETECTED (external truth, bot-owned)
+     - last-ingest.json = the exact CSV fingerprint the site last ingested
+   The green "VERIFIED CURRENT" badge is shown ONLY when the ingested fingerprint
+   equals the poller's current fingerprint. If war.gov has published something the
+   site hasn't indexed yet, the badge automatically flips to an honest amber
+   "NEW RELEASE DETECTED - INDEXING" - it can never falsely claim "current".
+   The HTML fallbacks below are the correct current values, so no-JS users see
+   truth too; JS just keeps them live so they can never silently drift stale. */
+(function () {
+  const pad2 = (n) => String(n).padStart(2, '0');
+  const MON = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  const MONTH = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  // Parse "2026-07-10" without timezone drift.
+  const parseYMD = (s) => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(s || ''); return m ? {y:+m[1], mo:+m[2], d:+m[3]} : null; };
+  const fmtShort = (s) => { const p = parseYMD(s); return p ? `${pad2(p.d)} ${MON[p.mo-1]} ${p.y}` : ''; };
+  const fmtLong  = (s) => { const p = parseYMD(s); return p ? `${MONTH[p.mo-1]} ${p.d}, ${p.y}` : ''; };
+  const ago = (iso) => {
+    const mins = Math.max(0, Math.round((Date.now() - new Date(iso)) / 60000));
+    return mins < 60 ? `${mins} min ago` : mins < 1440 ? `${Math.round(mins/60)} h ago` : `${Math.round(mins/1440)} d ago`;
+  };
+  const grab = (u) => fetch(u).then(r => r.ok ? r.json() : null).catch(() => null);
 
-  const footerEl = document.getElementById('last-polled');
-  if (footerEl) footerEl.textContent = `war.gov last polled ${human} (${s.row_count} files tracked)`;
+  Promise.all([grab('/data/drops.json'), grab('/data/poll-state.json'), grab('/data/last-ingest.json')])
+    .then(([dropsData, poll, ingest]) => {
+      // --- LATEST RELEASE chip + footer, driven from drops.json (updated every ingest) ---
+      const drops = (dropsData && dropsData.drops) || [];
+      const latest = drops.length ? drops[drops.length - 1] : null;
+      if (latest && latest.date != null && latest.number != null) {
+        const chip = document.getElementById('latest-release');
+        if (chip) chip.textContent = `LATEST RELEASE: DROP ${pad2(latest.number)} · ${fmtShort(latest.date)}`;
+        const foot = document.getElementById('last-new-release');
+        if (foot) foot.textContent = `Last new release: ${fmtLong(latest.date)} (Drop ${pad2(latest.number)})`;
+      }
 
-  const badgeEl = document.getElementById('freshness-badge');
-  if (badgeEl) badgeEl.textContent = `✓ VERIFIED CURRENT · CHECKED ${human.toUpperCase()}`;
-}).catch(() => {});
+      // --- freshness badge + poll footer, driven from poll-state + last-ingest ---
+      if (!poll || !poll.last_polled_at) return;
+      const human = ago(poll.last_polled_at);
+      const footEl = document.getElementById('last-polled');
+      if (footEl) footEl.textContent = `war.gov last polled ${human} (${poll.row_count} files tracked)`;
+
+      const badge = document.getElementById('freshness-badge');
+      if (!badge) return;
+      const ingestedHash = ingest && ingest.ingested_csv_sha256;
+      const isCurrent = ingestedHash && poll.csv_sha256 && ingestedHash === poll.csv_sha256;
+      if (isCurrent) {
+        badge.textContent = `✓ VERIFIED CURRENT · CHECKED ${human.toUpperCase()}`;
+        badge.style.color = '#ffffff'; badge.style.borderColor = 'rgba(255,255,255,.55)'; badge.style.background = 'rgba(255,255,255,.06)';
+      } else {
+        // War.gov's CSV fingerprint changed since our last ingest (a new drop, or
+        // a byte-level re-processing) - do NOT claim "current" until re-indexed.
+        badge.textContent = `⚠ WAR.GOV CHANGE DETECTED · INDEXING`;
+        badge.style.color = '#ffd494'; badge.style.borderColor = '#ffd494'; badge.style.background = 'rgba(255,180,82,.08)';
+      }
+    });
+})();
 </script>
 
 <script src="/filter.js"></script>
