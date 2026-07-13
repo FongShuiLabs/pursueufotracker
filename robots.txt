@@ -8,7 +8,28 @@ Disallow: /extracted/
 # the repo root directly; _redirects only adds the clean alias on top).
 # Each raw copy already self-canonicalizes to the clean URL; this just
 # stops it from being crawled as a duplicate in the first place.
-Disallow: /generated/*.html$
+#
+# 2026-07-13: the original rule below (`*.html$`) only blocked the
+# .html-suffixed form. Cloudflare Pages' own extension-stripping means the
+# EXTENSIONLESS raw path (e.g. /generated/borman-incident, no .html) 200s
+# too, and GSC showed Google actually ranking and sending clicks to that
+# form on several high-traffic file pages instead of the canonical /files/
+# URL. Broadened to block the whole /generated/ HTML tree, with explicit
+# Allow-lines preserving the legitimate non-HTML assets under it (the
+# public JSON API, OG card images, video clips, feed/data files).
+Disallow: /generated/
+Allow: /generated/api/
+Allow: /generated/og-cards/
+Allow: /generated/clips/
+Allow: /generated/*.json$
+Allow: /generated/*.xml$
+Allow: /generated/*.xsl$
+Allow: /generated/*.png$
+Allow: /generated/*.jpg$
+Allow: /generated/*.jpeg$
+Allow: /generated/*.csv$
+Allow: /generated/*.mp4$
+Allow: /generated/*.vtt$
 
 # AI crawlers - explicitly welcomed. The whole point of this site is
 # to be the canonical, structured, machine-readable record of the
