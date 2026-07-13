@@ -182,7 +182,7 @@ if (window.ADSENSE_PUB_ID) {
 <header class="hero">
   <div class="hero-meta">
     <span class="classification">UNCLASSIFIED // PUBLIC RELEASE</span>
-    <span class="date-stamp" id="latest-release">LATEST RELEASE: DROP 04 · 10 JUL 2026</span>
+    <span class="date-stamp" id="latest-release" style="color:#eef3f8;border-color:rgba(238,243,248,.5);background:rgba(238,243,248,.05)">LATEST RELEASE: DROP 04 · 10 JUL 2026</span>
     <span class="date-stamp" id="freshness-badge" style="color:#a8b8cc;border-color:rgba(168,184,204,.4);background:rgba(168,184,204,.05)">CHECKING WAR.GOV...</span>
   </div>
   <h1>P U R S U E<span class="hero-sub">Trump Administration · Presidential Unsealings &amp; Reporting System for UAP Encounters</span></h1>
@@ -1094,7 +1094,7 @@ if (window.ADSENSE_PUB_ID) {
      - drops.json      = what THIS SITE has ingested and built pages for (display truth)
      - poll-state.json = what the war.gov poller last DETECTED (external truth, bot-owned)
      - last-ingest.json = the exact CSV fingerprint the site last ingested
-   The green "VERIFIED CURRENT" badge is shown ONLY when the ingested fingerprint
+   The blue "VERIFIED CURRENT" badge is shown ONLY when the ingested fingerprint
    equals the poller's current fingerprint. If war.gov has published something the
    site hasn't indexed yet, the badge automatically flips to an honest amber
    "NEW RELEASE DETECTED - INDEXING" - it can never falsely claim "current".
@@ -1138,7 +1138,7 @@ if (window.ADSENSE_PUB_ID) {
       const isCurrent = ingestedHash && poll.csv_sha256 && ingestedHash === poll.csv_sha256;
       if (isCurrent) {
         badge.textContent = `✓ VERIFIED CURRENT · CHECKED ${human.toUpperCase()}`;
-        badge.style.color = '#ffffff'; badge.style.borderColor = 'rgba(255,255,255,.55)'; badge.style.background = 'rgba(255,255,255,.06)';
+        badge.style.color = '#52b4ff'; badge.style.borderColor = 'rgba(82,180,255,.55)'; badge.style.background = 'rgba(82,180,255,.06)';
       } else {
         // War.gov's CSV fingerprint changed since our last ingest (a new drop, or
         // a byte-level re-processing) - do NOT claim "current" until re-indexed.

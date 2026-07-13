@@ -498,39 +498,11 @@ footer a:hover{text-decoration:underline}
   html{ scroll-behavior:auto; }
 }
 
-/* Reveal keyframes. Note: no rule OUTSIDE the @supports/@media block ever
-   sets opacity:0, so the fallback state is always fully visible. */
-@keyframes reveal-rise{
-  from{ opacity:0; transform:translateY(24px); }
-  to  { opacity:1; transform:none; }
-}
-/* Cards fade opacity-ONLY: their :hover uses transform:translateY(-4px),
-   and a fill-forwards transform animation would clobber that lift. */
-@keyframes reveal-fade{
-  from{ opacity:0; }
-  to  { opacity:1; }
-}
-
-@supports (animation-timeline: view()){
-  @media (prefers-reduced-motion: no-preference){
-    .home .drop-banner,
-    .home .hero-stats,
-    .home .subscribe-bar,
-    .home .intro,
-    .home .drop-summary,
-    .home .top-anomalous,
-    .home .methodology{
-      animation: reveal-rise ease-out both;
-      animation-timeline: view();
-      animation-range: entry 0% entry 45%;
-    }
-    .home .card{
-      animation: reveal-fade ease-out both;
-      animation-timeline: view();
-      animation-range: entry 8% entry 42%;
-    }
-  }
-}
+/* Scroll-reveal removed 2026-07-13: tying opacity to the view() `entry` range
+   left the top of tall prose sections dim while they were still in the reading
+   zone (reported as "text disappears before you can read it"). The smoothness
+   wins below - GPU-composited starfield drift, lighter sticky-bar blur,
+   scroll-padding, content-visibility - stand on their own without hiding text. */
 
 /* Sticky filter bar: backdrop-blur is re-sampled every scroll frame.
    On <=768px there is no starfield behind it anyway (see the existing
