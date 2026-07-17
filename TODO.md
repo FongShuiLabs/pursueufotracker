@@ -29,10 +29,14 @@ for later, but it is not a near-term earner.
    vs live manifest, all 3 URLs 200, the "deformed balloon" debrief quote confirmed
    live. Weekday 9am-1pm ET, text post. If the viral two-tiered-video moment has
    cooled, the body still lands (the debrief-vs-video angle is evergreen).
-2. **AdSense status** — BLOCKED for Claude: this Chrome is signed in as
-   `anthony.fong.esq@gmail.com` (Access-Denied on `pub-7264251466939264`). Sign into
-   Chrome as `developer@fongshuilabs.com` (admin) or check the status yourself and
-   tell me. Re-review was requested 2026-07-01 (day 15+ now). Branch per PLAN C2a/b/c.
+2. **AdSense status** — RESOLVED 2026-07-17 (operator screenshots, Work profile):
+   "Getting ready", review requested **12 Jul 2026 09:33** (fresh cycle - not the
+   7/1 one; window is "few days to 2-4 weeks"). Ownership verified. DO NOT
+   re-request; wait for the decision email at developer@fongshuilabs.com. The
+   Sites-list "Ads.txt: Not found" chip is FALSE-stale: file verified live+correct
+   2026-07-17 (200, text/plain, correct pub ID, 301 variants fine, not blocked) -
+   AdSense's ads.txt crawler just lags; no action. glp1cost.org: also "Getting
+   ready" (in review since ~May), its ads.txt reads "Authorized".
 3. **Pick an ESP for email capture** — Substack recommended (free, discovery traffic,
    paid tier later). Create the account, send me the handle/URL, I wire the form
    same-day. Needs to be live BEFORE the next drop (~early August) so the spike
