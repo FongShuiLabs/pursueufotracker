@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>uap-data.csv - war.gov's PURSUE UAP File, Verified | PURSUE UFO Tracker</title>
+<title>Download uap-data.csv - war.gov's PURSUE UAP File, Verified | PURSUE UFO Tracker</title>
 <meta name="description" content="Download uap-data.csv, the canonical war.gov PURSUE UAP data file (334 rows, all four releases). Direct mirror, SHA-256 verified against war.gov, full revision history since May 8, 2026. The original /Portals/1/Interactive/2026/UFO/uap-data.csv URL blocks most non-browser requests - this mirror doesn't.">
 <meta name="keywords" content="uap-data.csv, war.gov uap-data.csv, portals/1/interactive/2026/ufo/uap-data.csv, uap-csv.csv, war.gov UFO CSV download, PURSUE data file, PURSUE CSV mirror, war.gov UAP data download, uap-data.csv 404, uap-data.csv release 3">
 <link rel="canonical" href="https://pursueufotracker.com/uap-data-csv">
 <meta name="robots" content="index, follow">
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="uap-data.csv - war.gov's PURSUE UAP Data File, Mirrored and Verified">
+<meta property="og:title" content="Download uap-data.csv - war.gov's PURSUE UAP Data File, Mirrored and Verified">
 <meta property="og:description" content="The canonical war.gov PURSUE UAP data file (334 rows), mirrored with SHA-256 verification and full revision history since May 8, 2026. Download it directly - no session warmup, no rate limiting.">
 <meta property="og:url" content="https://pursueufotracker.com/uap-data-csv">
 <meta property="og:image" content="https://pursueufotracker.com/generated/og-cards/page-uap-data-csv.png">
@@ -122,6 +122,17 @@
   </ul>
 
   <p>Verification: hash your download with <code>sha256sum uap-data.csv</code> (or <code>certutil -hashfile uap-data.csv SHA256</code> on Windows) and compare against the hash above, which is recomputed from the live war.gov file by the poller. If war.gov publishes a new version, this page updates with the new hash and the old version's hash stays in the revision table - nothing is silently replaced.</p>
+
+  <h2>Every URL this file goes by</h2>
+
+  <p>People reach this page searching several different forms of the war.gov URL. They all refer to the same file:</p>
+
+  <ul>
+    <li><strong>Current war.gov URL:</strong> <code style="word-break:break-all">https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-data.csv</code> (live, but 403s most scripted fetches)</li>
+    <li><strong>With a release query string:</strong> <code style="word-break:break-all">uap-data.csv?release=3</code>, <code>?release=4</code>, etc. - war.gov's landing page appends these per release, but the server ignores the parameter and serves the identical file. Verified byte-identical (same SHA-256) against the plain URL on 2026-07-17.</li>
+    <li><strong>Original URL (dead):</strong> <code style="word-break:break-all">https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv</code> - the file's first published name; war.gov renamed it and this URL now returns 404. Full details on <a href="/revisions" style="color:#52b4ff">the revisions page</a>.</li>
+    <li><strong>This mirror (stable):</strong> <a href="/data/uap-data.csv" download style="color:#52ffb4">pursueufotracker.com/data/uap-data.csv</a> - byte-exact, SHA-256-verified against war.gov, fetchable by any tool, and this URL will not change.</li>
+  </ul>
 
   <h2>What's in the file</h2>
 
