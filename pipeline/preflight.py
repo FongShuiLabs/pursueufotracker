@@ -21,7 +21,16 @@ Three subcommands, run at three moments:
       BEFORE `git push`. Hard-fails if any file staged/committed at HEAD
       exceeds Cloudflare Pages' 25 MiB limit (the "No deployment available"
       incident), warns if _redirects is near the ~100-rule effective ceiling,
-      and re-verifies the served CSV mirror blob is byte-exact vs poll-state.
+      re-verifies the served CSV mirror blob is byte-exact vs poll-state, and
+      hard-fails on cluster/score-band count drift (see check-counts).
+
+  python -m pipeline.preflight check-counts
+      Recomputes every TOPIC_PAGES cluster size (vs its live match lambda) and
+      the score-band totals in EXPECTED_SCORE_BANDS (vs the manifest), and fails
+      on any drift, naming the prose to update. Guards against the 2026-07-16
+      Drop 04 incident: "four files tied at 72" (really eight), "78 at 66"
+      (really 92), and five stale cluster sizes. Runs as a warning in post-ingest
+      and a hard gate in pre-push.
 
 Exit code 0 = safe to proceed. Non-zero = stop and read the output.
 """
@@ -39,6 +48,18 @@ POLL_STATE = ROOT / "data" / "poll-state.json"
 REDIRECTS = ROOT / "_redirects"
 CF_LIMIT = 25 * 1024 * 1024  # Cloudflare Pages per-file hard limit
 REDIRECT_CEILING = 100       # observed effective rule cutoff (see memory notes)
+
+# Score-band totals that render as prose across the site. A drop that adds files
+# at one of these scores silently drifts every page that hardcodes the count (the
+# 2026-07-16 Drop 04 incident: "four files tied at 72" was really eight, "78 at 66"
+# was really 92). When check-counts fails on a band, update BOTH the prose in the
+# files below AND the number here, together.
+EXPECTED_SCORE_BANDS = {72: 8, 70: 6, 66: 92, 65: 9}
+_SCORE_BAND_PROSE = (
+    "pipeline/build_site.py (_score_tier_phrase + _explain_witness_astronaut), "
+    "generated/faq.html, generated/top-10.html, generated/glossary.html, "
+    "generated/aaro-unresolved-uap.html, templates/top10.html.j2"
+)
 
 
 def _fail(msg: str) -> None:
@@ -133,6 +154,10 @@ def post_ingest() -> None:
               "the pipeline did not finish enriching them. Re-run the "
               "remaining stages before building pages.")
     _ok(f"all {len(new) - len(set(old) & set(new))} new files fully enriched")
+
+    # A drop that grows a cluster or a score band silently drifts every page that
+    # hardcodes the count. Surface it here as a to-do (pre-push hard-blocks it).
+    check_counts(warn_only=True)
     print("post-ingest: manifest diff is clean - safe to build/commit")
 
 
@@ -171,12 +196,73 @@ def pre_push() -> None:
                   "served mirror is not byte-exact (check .gitattributes "
                   "-text rule, or the mirror is stale vs the latest drop).")
         _ok("served CSV mirror blob is byte-exact vs poll-state")
+
+    # Hard gate: never push cluster/score-band counts that drifted from the manifest.
+    check_counts()
     print("pre-push: safe to push")
+
+
+def _match(fn, f) -> bool:
+    try:
+        return bool(fn(f))
+    except Exception:
+        return False
+
+
+def check_counts(warn_only: bool = False) -> None:
+    """Recompute cluster + score-band counts from the manifest and flag drift vs
+    the counts the site hardcodes in prose. Catches the 2026-07-16 Drop 04 class:
+    TOPIC_PAGES cluster sizes and score-band totals that render across file pages,
+    /faq, /top-10, /glossary, and the cluster essays.
+
+    warn_only=True (post-ingest) prints drift without exiting, so a drop's expected
+    count changes surface as a to-do. Strict (the `check-counts` subcommand and
+    pre-push) hard-fails, so drifted counts can never be pushed live."""
+    from . import build_site as bs
+    files = json.loads(MANIFEST.read_text(encoding="utf-8"))["files"]
+
+    def score(f):
+        s = f.get("score") or {}
+        return s.get("value") if isinstance(s, dict) else s
+
+    problems: list[str] = []
+
+    # 1. Every TOPIC_PAGES cluster: declared size vs actual lambda match count.
+    #    Self-checking - imports the real match predicates, so a cluster that a
+    #    drop grows (agency==CIA, score==66, dow-uap-pr, agency==DOE, ...) is caught.
+    for tp in bs.TOPIC_PAGES:
+        n = sum(1 for f in files if _match(tp["match"], f))
+        if n != tp["size"]:
+            problems.append(
+                f'cluster {tp["slug"]}: declared size={tp["size"]} but {n} files '
+                'match its lambda - update size + the "anchor" prose in build_site.py '
+                "(and the cluster essay page if it prints the count)")
+
+    # 2. Score-band totals referenced in prose (golden-value guard).
+    counts = Counter(score(f) for f in files if score(f) is not None)
+    for band, expected in sorted(EXPECTED_SCORE_BANDS.items(), reverse=True):
+        actual = counts.get(band, 0)
+        if actual != expected:
+            problems.append(
+                f"score band {band}: EXPECTED_SCORE_BANDS says {expected}, manifest "
+                f"has {actual} - update the prose ({_SCORE_BAND_PROSE}) AND "
+                "EXPECTED_SCORE_BANDS in preflight.py, together")
+
+    if problems:
+        for p in problems:
+            print(f"  {'WARN' if warn_only else 'FAIL'}: {p}")
+        if warn_only:
+            print("  ^ count drift detected - fix the prose before pushing "
+                  "(pre-push hard-blocks otherwise)")
+            return
+        sys.exit(1)
+    _ok(f"{len(bs.TOPIC_PAGES)} cluster sizes + {len(EXPECTED_SCORE_BANDS)} "
+        "score-band totals all match the manifest")
 
 
 def main() -> int:
     cmds = {"pre-ingest": pre_ingest, "post-ingest": post_ingest,
-            "pre-push": pre_push}
+            "pre-push": pre_push, "check-counts": check_counts}
     if len(sys.argv) != 2 or sys.argv[1] not in cmds:
         print(f"usage: python -m pipeline.preflight [{'|'.join(cmds)}]")
         return 2

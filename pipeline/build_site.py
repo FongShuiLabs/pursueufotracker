@@ -91,8 +91,8 @@ def _explain_sensor_eyewitness(f: dict) -> str:
 def _explain_witness_astronaut(f: dict) -> str:
     date = _file_date_prose(f)
     variants = [
-        f"Astronaut witness on the official federal record - the highest tier in the rubric's witness-credibility axis. It applies to NASA crew debriefings, mission transcripts, and astronaut interviews across the Mercury, Gemini, and Apollo programs. Witness credibility is only one of six components; the astronaut-witness files that also rank high on the sensor and disposition axes are the four tied for the archive's top score of 72 - the Gemini 7 Borman audio, the Gordon Cooper interview, and the two Apollo 16 scientific debriefings.",
-        f"This {date} account comes from an astronaut on the official federal record - NASA's highest-credibility witness tier in the rubric, spanning debriefings and mission transcripts from Mercury through Apollo. It's one of six score components, not a standalone verdict; the astronaut-witness files that also score highest on sensor quality and disposition are the four tied at the archive's top score of 72.",
+        f"Astronaut witness on the official federal record - the highest tier in the rubric's witness-credibility axis. It applies to NASA crew debriefings, mission transcripts, and astronaut interviews across the Mercury, Gemini, and Apollo programs. Witness credibility is only one of six components; the astronaut-witness files that also rank high on the sensor and disposition axes are the eight tied for the archive's top score of 72 - the Gemini 7 Borman audio, the Gordon Cooper interview, and the Apollo 14, 16, and 17 crew debriefings.",
+        f"This {date} account comes from an astronaut on the official federal record - NASA's highest-credibility witness tier in the rubric, spanning debriefings and mission transcripts from Mercury through Apollo. It's one of six score components, not a standalone verdict; the astronaut-witness files that also score highest on sensor quality and disposition are the eight tied at the archive's top score of 72.",
     ]
     return _pick(f, variants)
 
@@ -206,7 +206,7 @@ CHOICE_EXPLANATIONS = {
 TOPIC_PAGES = [
     {"match": lambda f: f["id"] == "nasa-uap-d003a-gemini-7-audio-excerpt-1965",
      "slug": "/borman-incident", "name": "The Borman Incident", "size": 1,
-     "anchor": "one of the four files tied for the archive's top score of 72"},
+     "anchor": "one of the eight files tied for the archive's top score of 72"},
     {"match": lambda f: f["id"].startswith("65-hs1-834228961-62-hq-83894-"),
      "slug": "/fbi-62-hq-83894", "name": "FBI Case 62-HQ-83894", "size": 18,
      "anchor": "the 18-PDF FBI central case file covering 1947-1968"},
@@ -220,8 +220,8 @@ TOPIC_PAGES = [
      "slug": "/gordon-cooper-ufo", "name": "Gordon Cooper on UFOs", "size": 1,
      "anchor": "the 1962 Walter Cronkite interview clip, tied for the archive's highest score at 72"},
     {"match": lambda f: f["id"] in {"nasa-uap-d026-apollo-14-debriefing-1971","nasa-uap-d027-apollo-14-debriefing-continued-1971","nasa-uap-d028-apollo-17-crew-medical-debriefing-1972","nasa-uap-d029-apollo-17-crew-medical-debriefing-continued-1972"},
-     "slug": "/astronaut-light-flashes-explained", "name": "The Astronaut Light Flashes", "size": 8,
-     "anchor": "the 8-file light-flash cluster - why the archive's top-scoring files are explained science (cosmic rays through the eye), in the crews' own words"},
+     "slug": "/astronaut-light-flashes-explained", "name": "The Astronaut Light Flashes", "size": 4,
+     "anchor": "the 4-file light-flash cluster - why the archive's top-scoring files are explained science (cosmic rays through the eye), in the crews' own words"},
     {"match": lambda f: f["id"] in {"nasa-uap-d030-sts-80-unidentified-object-image-1-1996","nasa-uap-d031-sts-80-unidentified-object-image-2-1996","nasa-uap-d032-sts-80-unidentified-object-image-3-1996"},
      "slug": "/sts-80-unidentified-object-explained", "name": "The STS-80 Photos, Explained", "size": 3,
      "anchor": "the first Space Shuttle imagery in PURSUE, next to the famous explained UFO case from the same 1996 mission"},
@@ -280,26 +280,26 @@ TOPIC_PAGES = [
      "slug": "/apollo-12-medical-debrief-coronal-discharges", "name": "Apollo 12's \"Coronal Discharges\"", "size": 1,
      "anchor": "the Apollo 12 crew's medical debriefing in which Conrad, Gordon, and Bean were questioned about reported light flashes and \"coronal discharges\" seen with their eyes closed"},
     {"match": lambda f: f.get("agency") == "CIA",
-     "slug": "/cia-ufo-files-explained", "name": "CIA UFO Files", "size": 19,
-     "anchor": "the 19-file CIA cluster, from the 1953 Robertson Panel to the U-2 history and Cold War sightings"},
+     "slug": "/cia-ufo-files-explained", "name": "CIA UFO Files", "size": 21,
+     "anchor": "the 21-file CIA cluster, from the 1953 Robertson Panel to the U-2 history and Cold War sightings"},
     {"match": lambda f: f["id"].startswith("fbi-september-2023-sighting"),
      "slug": "/fbi-2023-uap-investigation", "name": "FBI 2023 UAP Investigation", "size": 4,
      "anchor": "the 4-document FBI investigation cluster from September 2023 - three FD-302 witness interviews and an FBI Lab composite sketch of a bronze metallic cigar-shaped object at a US test site"},
     {"match": lambda f: f["id"].startswith("fbi-uap-"),
-     "slug": "/fbi-modern-uap-files", "name": "FBI Modern UAP Files", "size": 29,
+     "slug": "/fbi-modern-uap-files", "name": "FBI Modern UAP Files", "size": 30,
      "anchor": "the FBI's modern UAP files: the 2022 Colorado Springs interview and the FBI-authenticated northeastern orb videos"},
     {"match": lambda f: f["id"] == "odni-uap-d001-usper-narrative-senior-usic-official",
      "slug": "/odni-uap-d001-helicopter-encounter", "name": "ODNI-UAP-D001 Helicopter Encounter", "size": 1,
      "anchor": "the senior US intelligence official's first-person helicopter UAP narrative from late 2025, released in PURSUE Release 02"},
-    {"match": lambda f: f["id"].startswith("dow-uap-pr"),
+    {"match": lambda f: f["id"].startswith("dow-uap-pr") and (f.get("date_released") or "").startswith("2026-05-22"),
      "slug": "/pursue-release-02-pentagon-videos", "name": "Release 02 Pentagon UAP Videos", "size": 51,
      "anchor": "the 51-file DOW-UAP-PR050-PR099 series released in PURSUE Release 02 on May 22, 2026"},
     {"match": lambda f: f.get("agency") == "DOE",
-     "slug": "/doe-nuclear-uap-files", "name": "DOE Nuclear UAP Files", "size": 3,
-     "anchor": "the 3 Department of Energy files tying the U.S. nuclear weapons complex to UAP (PANTEX, Los Alamos via Tuck, Pajarito Astronomers)"},
-    {"match": lambda f: (f.get("score") or {}).get("value") == 66,
+     "slug": "/doe-nuclear-uap-files", "name": "DOE Nuclear UAP Files", "size": 5,
+     "anchor": "the 5 Department of Energy files tying the U.S. nuclear weapons complex to UAP (PANTEX, Los Alamos, the Pajarito Astronomers, and a 1949 Los Alamos conference record)"},
+    {"match": lambda f: (f.get("score") or {}).get("value") == 66 and (f.get("date_released") or "").startswith("2026-05-08"),
      "slug": "/aaro-unresolved-uap", "name": "AARO Unresolved UAP", "size": 27,
-     "anchor": "the 27-file AARO unresolved cluster tied at 66"},
+     "anchor": "the 27-file Release-01 AARO unresolved cluster tied at 66 (the score-66 band now spans 92 files across four releases)"},
 ]
 
 
@@ -319,11 +319,11 @@ def _score_tier_phrase(score: int | None, rank: int, total: int) -> str:
     if score is None:
         return ""
     if score >= 72:
-        return "That score is the highest in the PURSUE archive - one of four files tied at the top score of 72 (the Gemini 7 Borman audio, the Gordon Cooper interview, and the two Apollo 16 scientific debriefings)."
+        return "That score is the highest in the PURSUE archive - one of eight files tied at the top score of 72 (the Gemini 7 Borman audio, the Gordon Cooper interview, and the Apollo 14, 16, and 17 crew debriefings)."
     if score >= 67:
-        return "That places it just above the archive's densest scoring band - the 78 files tied at 66 - among the small group of top-scoring files."
+        return "That places it just above the archive's densest scoring band - the 92 files tied at 66 - among the small group of top-scoring files."
     if score >= 66:
-        return "That places it in the archive's densest scoring band - 78 files tied at 66, anchored by AARO-submitted and Release-02 military infrared captures."
+        return "That places it in the archive's densest scoring band - 92 files tied at 66, anchored by AARO-submitted and Release-02/04 military infrared captures."
     if score >= 65:
         return "That places it one rubric point below the 66-point military-capture band and seven below the archive's top score of 72 - the second tier in the archive."
     if score >= 60:
