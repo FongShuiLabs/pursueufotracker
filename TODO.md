@@ -66,6 +66,14 @@ for later, but it is not a near-term earner.
   duplicate. Top candidate is a Robertson Panel standalone (evergreen). Every claim verified
   from CSV/manifest (Hard Rule #7), no % aliens (Hard Rule #2).
 
+## ⏳ Standing refresh hooks
+
+- **/aaro-unresolved-uap "latest annual report" section** (added 2026-07-17, targets
+  the "latest aaro uap report 2025 2026" GSC query family at pos 17-20): the status
+  is date-stamped "as of July 17, 2026". When AARO publishes its FY2025 annual (or
+  Historical Record Vol. 2), update the section + meta description same-day - being
+  current on that news cycle is the whole play. Verify from aaro.mil/war.gov, not memory.
+
 ## 🛰️ Drop 05 readiness (~early August)
 
 - When the poller fires `[NEW DROP]`: follow `DROP02_REACTION.md`. Run the preflight
