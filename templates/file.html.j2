@@ -56,8 +56,9 @@
     "name": {{ seo_title | tojson }},
     "description": {{ (f.summary or f.title) | tojson }},
     {% if f.type == 'video' %}"thumbnailUrl": {{ og_image_abs | tojson }},
-    "contentUrl": {{ (f.video_url or f.source_url) | tojson }},
+    "contentUrl": {{ (f.mirror_url or f.video_url or f.source_url) | tojson }},
     "uploadDate": "{{ f.date_released }}T00:00:00Z",
+    {% if f.duration %}"duration": "PT{{ f.duration }}S",{% endif %}
     {% elif f.type == 'image' %}"contentUrl": {{ (f.mirror_url or f.source_url) | tojson }},
     "thumbnailUrl": {{ og_image_abs | tojson }},
     "datePublished": "{{ f.date_released }}",

@@ -668,7 +668,12 @@ def _build_video_sitemap(manifest: dict) -> None:
         desc = html.escape(desc[:2000])
         if len(desc) < 5:
             desc = title
-        content_loc = f.get("video_url") or f.get("mirror_url") or f.get("source_url") or ""
+        # content_loc mirrors the page player's serve order (mirror-first): the
+        # R2 mirror is the URL we control and the one Googlebot can always fetch.
+        # player_loc is deliberately NOT emitted: it must be an embeddable player,
+        # not the watch page itself (which <loc> already is) - a page-URL
+        # player_loc muddies Google's watch-page determination.
+        content_loc = f.get("mirror_url") or f.get("video_url") or f.get("source_url") or ""
         pub_date = (f.get("date_released") or "2026-05-08") + "T00:00:00Z"
         parts.append(f"<url><loc>{page}</loc>")
         parts.append("<video:video>")
@@ -677,7 +682,9 @@ def _build_video_sitemap(manifest: dict) -> None:
         parts.append(f"<video:description>{desc}</video:description>")
         if content_loc:
             parts.append(f"<video:content_loc>{html.escape(content_loc)}</video:content_loc>")
-        parts.append(f"<video:player_loc>{page}</video:player_loc>")
+        dur = f.get("duration")
+        if isinstance(dur, int) and 0 < dur <= 28800:
+            parts.append(f"<video:duration>{dur}</video:duration>")
         parts.append(f"<video:publication_date>{pub_date}</video:publication_date>")
         parts.append(f"<video:family_friendly>yes</video:family_friendly>")
         parts.append(f"<video:requires_subscription>no</video:requires_subscription>")
