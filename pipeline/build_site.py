@@ -24,6 +24,11 @@ from .config import (
     ENABLE_ADS, ADSENSE_CLIENT_ID,
 )
 from .build_categories import CATEGORIES
+from .subscribe import subscribe_html
+
+# One block rendered into every file page (see pipeline/subscribe.py; flips to a
+# live email form when ESP_PROVIDER/ESP_HANDLE are set in config).
+_subscribe_block = subscribe_html("page")
 
 
 _AGENCY_PROSE = {
@@ -549,6 +554,7 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
         ctx = {
             "f": f,
             "seo_title": seo_titles[f["id"]],
+            "subscribe_html": _subscribe_block,
             "size_human": size_h,
             "event_year": _event_year(f),
             "site_name": SITE_NAME,

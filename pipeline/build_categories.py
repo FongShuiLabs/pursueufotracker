@@ -17,6 +17,13 @@ from pathlib import Path
 from .config import MANIFEST_PATH, ROOT, GENERATED_DIR, SITE_NAME, SITE_URL, ensure_dirs
 
 
+def _subscribe_block() -> str:
+    """Sitewide subscribe component (see pipeline/subscribe.py). Imported lazily
+    because build_site imports this module at import time."""
+    from .subscribe import subscribe_html
+    return subscribe_html("page")
+
+
 CATEGORIES = [
     {
         "slug": "fbi-ufo-files",
@@ -382,14 +389,7 @@ def _page_html(cat: dict, files: list[dict]) -> str:
 
   <a class="cat-back" href="/">← BACK TO ALL 334 FILES</a>
 
-  <div class="subscribe-bar">
-    <p class="subscribe-prompt"><strong>Get alerted the moment the next PURSUE drop lands.</strong></p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-items:center">
-      <a href="/generated/feed.xml" onclick="window.plausible&&plausible('Subscribe',{{props:{{channel:'rss'}}}})" class="btn btn-primary" style="display:inline-block">📡 Subscribe via RSS</a>
-      <a href="https://github.com/FongShuiLabs/pursueufotracker/subscription" target="_blank" rel="noopener" onclick="window.plausible&&plausible('Subscribe',{{props:{{channel:'github'}}}})" class="btn btn-ghost" style="display:inline-block">🔔 Watch on GitHub</a>
-    </div>
-    <p class="subscribe-fineprint" style="margin-top:14px">No spam, ever. Email signup launching soon.</p>
-  </div>
+  {_subscribe_block()}
 </main>
 
 <footer style="padding:48px 24px 60px;color:#7a92b0;font-size:13px;border-top:1px solid rgba(82,180,255,.1);margin-top:60px">

@@ -18,6 +18,7 @@ from . import (
     build_search, gen_og, build_site,
     build_verdict, build_top10, build_press_kit, build_api, build_drops,
     translate, clip_generator, validate, index_now, build_categories,
+    subscribe,
 )
 
 STAGES = [
@@ -34,6 +35,7 @@ STAGES = [
     ("summarize",      summarize.run),
     ("search-index",   build_search.run),
     ("og-cards",       gen_og.run),
+    ("wire-subscribe", subscribe.run),   # stamps homepage + hand-authored statics
     ("build",          build_site.run),
     ("build-verdict",  build_verdict.run),
     ("build-top10",    build_top10.run),

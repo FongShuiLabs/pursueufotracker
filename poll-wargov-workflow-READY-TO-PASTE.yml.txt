@@ -1,0 +1,200 @@
+# =============================================================================
+# READY-TO-PASTE workflow for .github/workflows/poll-wargov.yml
+# Written 2026-07-18. SUPERSEDES poll-wargov-workflow.yml.txt and
+# poll-wargov-workflow-UPDATED.yml.txt (you can delete those two after this).
+#
+# THIS PASTE GIVES YOU TWO IMPROVEMENTS AT ONCE:
+#
+#   1. [CF-Pages-Skip] on "unchanged" poll commits (was pending since June).
+#      The poller commits every ~30 min; each one currently triggers a
+#      Cloudflare Pages build (~40 noise builds/day, burning free-tier budget).
+#      Cloudflare skips a build when the commit message carries this token.
+#      Real "[NEW DROP]" commits and your content commits still deploy normally.
+#
+#   2. NEW: an ntfy push to your phone the instant a drop is detected, so you
+#      are not relying on noticing a GitHub issue. Includes the row count,
+#      delta, CSV hash, and the playbook steps, and taps through to your issues.
+#
+# ---------------------------------------------------------------------------
+# BEFORE YOU PASTE - add the secret (required, one time):
+#
+#   github.com/FongShuiLabs/pursueufotracker/settings/secrets/actions
+#     -> "New repository secret"
+#     Name:   NTFY_TOPIC
+#     Value:  <your ntfy topic - copy it from .claude/accounts.md, which is
+#              gitignored and stays local. It is deliberately NOT written here.>
+#
+#   WHY THE TOPIC IS NOT IN THIS FILE: this repo is PUBLIC, and these *.yml.txt
+#   helper files are git-tracked - verified fetchable with no auth at
+#   raw.githubusercontent.com. On ntfy.sh the topic name IS the password: anyone
+#   who reads it can see your alerts and publish fake ones. So the topic lives
+#   only in the gitignored .claude/accounts.md and in the GitHub secret.
+#   Never paste it into this file, the workflow, a commit message, or an issue.
+#   If the secret is missing the push step simply skips - the poller still works.
+#
+# HOW TO INSTALL (your PAT lacks `workflow` scope, so use the web UI):
+#   1. github.com/FongShuiLabs/pursueufotracker/blob/main/.github/workflows/poll-wargov.yml
+#   2. Click the pencil (Edit).
+#   3. Select all, replace with EVERYTHING BELOW THIS BANNER (starts at "name:").
+#   4. Commit to main.
+#
+# VERIFY AFTERWARDS (two things):
+#   - Next "poll: war.gov unchanged ... [CF-Pages-Skip]" commit should NOT create
+#     a new Cloudflare Pages deployment.
+#   - Actions tab -> "Poll war.gov for new PURSUE drops" -> "Run workflow"
+#     (manual dispatch). It will report no drop and skip the push - that is
+#     correct. The push only fires on a real change. To truly test the alert,
+#     wait for Drop 05 (or temporarily point NTFY_TOPIC at a throwaway topic
+#     and hand-edit poll-state.json locally - not recommended, it is bot-owned).
+#
+# SELF-HOSTED NTFY: change the ntfy.sh URL in the last step to your server.
+# =============================================================================
+name: Poll war.gov for new PURSUE drops
+
+# Polls the official war.gov UAP CSV every 30 minutes during US weekday business
+# hours (when historical drops have happened) and hourly otherwise. Opens an
+# issue AND pushes an ntfy alert when a new drop is detected; commits the
+# updated state file on every successful poll.
+
+on:
+  schedule:
+    # Every 30 min, weekdays 13:00-22:00 UTC (9am-6pm ET)
+    - cron: '*/30 13-22 * * 1-5'
+    # Hourly off-hours, 7 days a week
+    - cron: '0 0-12,23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: poll-wargov
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install poller deps
+        run: pip install curl_cffi
+
+      - name: Poll war.gov
+        id: poll
+        continue-on-error: true
+        run: python -m pipeline.poll_wargov
+
+      - name: Commit poll state
+        if: steps.poll.outcome == 'success' || steps.poll.outputs.new_drop == 'true'
+        run: |
+          git config user.name "pursueufotracker-bot"
+          git config user.email "bot@pursueufotracker.com"
+          git add data/poll-state.json
+          if git diff --cached --quiet; then
+            echo "No state change to commit."
+          else
+            if [ "${{ steps.poll.outputs.new_drop }}" = "true" ]; then
+              git commit -m "[NEW DROP] war.gov CSV changed: ${{ steps.poll.outputs.row_count }} rows (${{ steps.poll.outputs.delta }} delta)"
+            else
+              git commit -m "poll: war.gov unchanged ($(date -u +%FT%TZ)) [CF-Pages-Skip]"
+            fi
+            git push
+          fi
+
+      - name: Open NEW DROP issue
+        if: steps.poll.outputs.new_drop == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const rowCount = '${{ steps.poll.outputs.row_count }}';
+            const delta = '${{ steps.poll.outputs.delta }}';
+            const sha = '${{ steps.poll.outputs.sha256 }}';
+            const body = [
+              '## war.gov uap-data.csv has changed',
+              '',
+              `- New row count: **${rowCount}**`,
+              `- Delta: **${delta}**`,
+              `- New CSV SHA-256: \`${sha}\``,
+              `- Detected: ${new Date().toISOString()}`,
+              '',
+              '### Follow DROP_REACTION.md top-to-bottom. Short version:',
+              '1. `git pull`',
+              '2. `python -m pipeline.preflight pre-ingest`  (fetches a verified-fresh CSV; never skip)',
+              '3. `python -m pipeline.run all`',
+              '4. `python -m pipeline.preflight post-ingest`  (then RECONCILE any count-drift WARNings)',
+              '5. Append the new drop to `data/drops.json`, then `python -m pipeline.run build-drops`',
+              '6. `python -m pipeline.preflight pre-push`, then push',
+              '7. `python -m pipeline.drop_check --mark` to clear the guard',
+              '',
+              'Verify the id-level diff before ANY public claim (Hard Rule #7).',
+              'Triggered automatically by `.github/workflows/poll-wargov.yml`.',
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[NEW DROP] war.gov UAP CSV changed (${delta} new rows, ${rowCount} total)`,
+              body,
+              labels: ['new-drop', 'automated'],
+            });
+
+      # Values are passed via env (not inlined into the shell) so a weird CSV
+      # value can never be interpreted as a command. Non-fatal by design: a
+      # flaky notification must never break drop detection.
+      - name: Push ntfy drop alert
+        if: steps.poll.outputs.new_drop == 'true'
+        continue-on-error: true
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          ROWS: ${{ steps.poll.outputs.row_count }}
+          DELTA: ${{ steps.poll.outputs.delta }}
+          SHA: ${{ steps.poll.outputs.sha256 }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [ -z "$NTFY_TOPIC" ]; then
+            echo "NTFY_TOPIC secret not set - skipping push. Poller unaffected."
+            exit 0
+          fi
+          MSG=$(printf '%s\n' \
+            "**war.gov just published a new PURSUE drop.**" \
+            "" \
+            "* Rows: **$ROWS**  (delta $DELTA)" \
+            "* CSV SHA-256: \`$SHA\`" \
+            "* Detected: $(date -u +%FT%TZ)" \
+            "" \
+            "**Run DROP_REACTION.md:**" \
+            "1. preflight pre-ingest" \
+            "2. pipeline.run all" \
+            "3. preflight post-ingest (reconcile count drift)" \
+            "4. append data/drops.json + build-drops" \
+            "5. preflight pre-push, then push" \
+            "" \
+            "Verify the id-level diff before any public claim.")
+          if curl -sS --max-time 20 \
+              -H "Title: NEW DROP - war.gov UAP CSV changed" \
+              -H "Tags: rotating_light,satellite" \
+              -H "Priority: high" \
+              -H "Markdown: yes" \
+              -H "Click: https://github.com/$REPO/issues" \
+              -d "$MSG" \
+              "https://ntfy.sh/$NTFY_TOPIC" ; then
+            echo "ntfy alert sent."
+          else
+            echo "::warning::ntfy push failed (non-fatal). The NEW DROP issue was still created."
+          fi
+
+      - name: Fail if poll errored
+        if: steps.poll.outcome == 'failure' && steps.poll.outputs.new_drop != 'true'
+        run: |
+          echo "::error::Poll script failed (network/parse error). Investigate logs above."
+          exit 1

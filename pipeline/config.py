@@ -65,6 +65,15 @@ PATREON_USERNAME = ""                  # e.g. "pursueufotracker"; empty = hidden
 # Auto Ads in <head> handles serving without needing the manual partials.
 ENABLE_ADS = False                     # manual ad slots; False until real slot IDs replace placeholders
 ADSENSE_CLIENT_ID = "ca-pub-7264251466939264"
+
+# --- Email capture (pre-staged 2026-07-18; see pipeline/subscribe.py) ---------
+# The moment the operator picks an ESP, set BOTH values, then run:
+#   python -m pipeline.run wire-subscribe && python -m pipeline.run build \
+#     && python -m pipeline.run build-categories
+# then verify locally, commit, push. Every subscribe surface flips at once.
+# While ESP_PROVIDER is "" the site keeps its safe-fail RSS/GitHub placeholder.
+ESP_PROVIDER = ""                      # "" | "buttondown" | "substack"
+ESP_HANDLE = ""                        # Buttondown username / Substack subdomain
 AD_NETWORK = "adsense"                 # adsense | ezoic | mediavine | raptive
 
 # Day 90+ - paid tier:
