@@ -38,9 +38,11 @@ for later, but it is not a near-term earner.
    AdSense's ads.txt crawler just lags; no action. glp1cost.org: also "Getting
    ready" (in review since ~May), its ads.txt reads "Authorized".
 3. **Pick an ESP for email capture** — Substack recommended (free, discovery traffic,
-   paid tier later). Create the account, send me the handle/URL, I wire the form
-   same-day. Needs to be live BEFORE the next drop (~early August) so the spike
-   converts. This is the biggest structural gap.
+   paid tier later). The form is now FULLY PRE-STAGED sitewide (pipeline/subscribe.py,
+   2026-07-18): once you create the account and hand over the handle, the flip is
+   two config values + `wire-subscribe`/`build`/`build-categories` + push (~10 min).
+   Live BEFORE Drop 05 (~early-mid August) or the spike evaporates again. Full
+   revenue sequencing: `_scratch/MONETIZATION_PLAYBOOK.md` (gates 0-5).
 4. **Cloudflare Email Routing for pursueufotracker.com** (~5 min) — the `/contact`
    addresses (contact@/press@/tips@/privacy@/legal@) still BOUNCE. CF zone → Email →
    catch-all → developer@fongshuilabs.com. Also a human-reviewer trust signal for AdSense.
