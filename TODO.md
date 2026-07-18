@@ -81,8 +81,10 @@ for later, but it is not a near-term earner.
 
 ## 🛰️ Drop 05 readiness (~early August)
 
-- When the poller fires `[NEW DROP]`: follow `DROP02_REACTION.md`. Run the preflight
-  guards each stage: `python -m pipeline.preflight pre-ingest|post-ingest|pre-push`.
+- When the poller fires `[NEW DROP]`: follow `DROP_REACTION.md` (release-agnostic,
+  rewritten 2026-07-17 with the count-drift + drops.json-append steps). Run the
+  preflight guards each stage: `python -m pipeline.preflight pre-ingest|post-ingest|pre-push`
+  (post-ingest/pre-push now also check count drift; reconcile before the push gate).
 - Fetch fresh CSV via `poll_wargov._fetch_csv()` + SHA-256 match BEFORE ingest
   (parse-csv reads stale `_scratch` otherwise). Use `download-manifest`, never legacy
   `download`. Diff manifest ids vs `git show HEAD:data/manifest.json` before trusting the ingest.

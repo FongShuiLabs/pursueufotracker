@@ -21,7 +21,7 @@ If `.claude/accounts.md` doesn't exist on this machine, ask the operator to recr
 ## High-leverage docs
 
 - [`DISTRIBUTION.md`](DISTRIBUTION.md) — Reddit / HN / X / journalist launch material, copy-paste ready
-- [`DROP02_REACTION.md`](DROP02_REACTION.md) — Real-time playbook for when the auto-poller fires `[NEW DROP]` (pre-flight + Reddit/X/journalist templates, every claim placeholder-driven so nothing posts from memory)
+- [`DROP_REACTION.md`](DROP_REACTION.md) — Release-agnostic real-time playbook for when the auto-poller fires `[NEW DROP]` (pre-flight guards + count-drift reconciliation + drops.json append + Reddit/HN/X templates, every claim placeholder-driven so nothing posts from memory). Renamed from DROP02_REACTION.md 2026-07-17.
 - [`MONETIZE.md`](MONETIZE.md) — Ad / affiliate / sponsor activation guide
 - [`PIPELINE.md`](PIPELINE.md) — Pipeline stage docs
 - [`DEPLOY.md`](DEPLOY.md) — Deploy mechanics
