@@ -68,6 +68,11 @@ for later, but it is not a near-term earner.
 
 ## ⏳ Standing refresh hooks
 
+- **FAQ "When will more UFO files be released?" + /drops title cadence claims**
+  (added 2026-07-17): both state "four releases" and extrapolate the next drop to
+  early-to-mid August 2026 from the +14/+21/+28-day gaps. When Drop 05 lands (or
+  mid-August passes with no drop), update the FAQ answer (visible + JSON-LD twin),
+  the /drops meta description (templates/drops_index.html.j2), and re-run build-drops.
 - **/aaro-unresolved-uap "latest annual report" section** (added 2026-07-17, targets
   the "latest aaro uap report 2025 2026" GSC query family at pos 17-20): the status
   is date-stamped "as of July 17, 2026". When AARO publishes its FY2025 annual (or
