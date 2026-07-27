@@ -76,13 +76,20 @@ jobs:
   poll:
     runs-on: ubuntu-latest
     steps:
+      # Node 24 runtimes. checkout@v4 / setup-python@v5 are node20, which GitHub
+      # deprecated (Sept 2025) and now force-runs on node24, emitting a warning
+      # on every run. Verified from each action's manifest 2026-07-23:
+      # checkout v5/v6/v7 = node24, setup-python v6/v7 = node24.
+      # v7 pinned (both released 2026-07-20). The 2026-07-20 "allow-unsafe-pr-checkout"
+      # breaking change only affects pull_request_target, which this workflow
+      # does not use (schedule + workflow_dispatch only).
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 1
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
           cache: 'pip'
@@ -109,12 +116,34 @@ jobs:
             else
               git commit -m "poll: war.gov unchanged ($(date -u +%FT%TZ)) [CF-Pages-Skip]"
             fi
-            git push
+            # Retry with rebase: a bare `git push` fails non-fast-forward whenever
+            # a human pushes between this job's checkout and its push. That is the
+            # ONLY cause of workflow failure in 518 runs (run #462, 2026-07-17,
+            # during a burst of operator commits). Detection never stopped - only
+            # the state commit - but a red X on the drop poller is noise we do not
+            # want to learn to ignore. poll-state.json is bot-owned, so rebasing
+            # onto origin/main is always safe here.
+            for attempt in 1 2 3; do
+              if git push; then
+                echo "state pushed (attempt $attempt)"; break
+              fi
+              if [ "$attempt" = "3" ]; then
+                echo "::warning::Could not push poll state after 3 attempts. Detection still ran; the next poll will re-commit."
+                exit 0
+              fi
+              echo "push rejected - rebasing onto origin/main and retrying"
+              git pull --rebase --autostash origin main || exit 0
+              sleep 3
+            done
           fi
 
+      # github-script@v7 is also node20 (verified 2026-07-23). It did NOT appear in
+      # the deprecation warning only because this step runs solely when a drop
+      # fires - i.e. it would have surfaced during the highest-stakes run of the
+      # cycle. v9 is node24.
       - name: Open NEW DROP issue
         if: steps.poll.outputs.new_drop == 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const rowCount = '${{ steps.poll.outputs.row_count }}';
