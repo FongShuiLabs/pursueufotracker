@@ -43,9 +43,12 @@ for later, but it is not a near-term earner.
    two config values + `wire-subscribe`/`build`/`build-categories` + push (~10 min).
    Live BEFORE Drop 05 (~early-mid August) or the spike evaporates again. Full
    revenue sequencing: `_scratch/MONETIZATION_PLAYBOOK.md` (gates 0-5).
-4. **Cloudflare Email Routing for pursueufotracker.com** (~5 min) — the `/contact`
-   addresses (contact@/press@/tips@/privacy@/legal@) still BOUNCE. CF zone → Email →
-   catch-all → developer@fongshuilabs.com. Also a human-reviewer trust signal for AdSense.
+4. **Cloudflare Email Routing** — ✅ DONE 2026-08-05 (Claude, operator-authorized).
+   Enabled + DNS live (MX/SPF/DKIM verified resolving); catch-all **Active** →
+   anthony.fong.esq@gmail.com. All @pursueufotracker.com addresses now deliver.
+   ONE CLICK REMAINS for the operator: Cloudflare's verification email for
+   developer@fongshuilabs.com is in that inbox — click it, then (optionally)
+   switch the catch-all destination to the business inbox.
 5. **Install the poller build-skip workflow** — paste `poll-wargov-workflow-UPDATED.yml.txt`
    into `.github/workflows/poll-wargov.yml` via GitHub web UI (PAT lacks workflow
    scope). Kills ~40/day of no-op Cloudflare builds.
