@@ -1,28 +1,36 @@
 # PURSUE UFO Tracker - Action Queue
 
-> ## 🛰️ DROP 05 IS INGESTED (2026-08-18) - AND WAS MISSED FOR 11 DAYS
+> ## ✅ EVERYTHING IS COMMITTED, REBASED, AND GREEN - ONE COMMAND LEFT
 >
-> Drop 05 landed **2026-08-07** (375 rows, +41 files). Nobody noticed until
-> 2026-08-18 because `drop_check` compared two LOCAL files that had gone stale
-> together (see [[drop-guard-blind-to-stale-clone]]) - it reported
-> `DROP STATUS: current` the entire time. **Fixed:** drop_check now cross-checks
-> origin's bot-owned poll-state and says so when the local clone is behind;
-> verified by replaying the exact blind spot.
+> As of 2026-08-26 the repo is **0 commits behind origin, 2 ahead, working tree
+> clean, and `preflight pre-push` passes every check**. Drop 05 (375 files) is
+> ingested and committed as `d1e3b56`.
 >
-> **Site is now fully ingested at 375 files and every guard passes.** The one
-> remaining pre-push FAIL (`data/uap-data.csv` blob) is structural - it reads the
-> COMMITTED blob, so it clears on commit. Nothing is deployed.
+> Previous sessions told you to run `git pull --rebase && git push`. **That could
+> never have worked** - the tree had 740 uncommitted files, so the rebase would
+> have aborted with "you have unstaged changes". That is now done for you:
+> committed (excluding the bot-owned `poll-state.json`), rebased onto the 471 new
+> bot commits, no conflicts.
 >
-> ### Operator, in order
-> 1. `git pull --rebase` then `git push` (own terminal - PAT re-auth). This
->    deploys Drop 05 **plus** five sessions of work. The live site is still
->    serving the 334-file build, and `llms.txt` still tells AI assistants
->    "161 files".
-> 2. Verify live: `curl -I https://pursueufotracker.com/drops/2026-08-07-drop-05`
->    and one new file page -> both `HTTP/2 200`.
-> 3. Post the r/UFOs thread: `_scratch/reddit-drop05.md` (Option A, timing-neutral
->    1963 White House paper trail). Every number and quote verified. **Do not post
->    before the push - the links 404 until then.**
+> ### The only thing left
+> ```
+> git push
+> ```
+> Run it in your own terminal, not here - it needs git-credential-manager to pop
+> its window so you can re-auth the expired PAT. A push from this session hangs
+> invisibly waiting for that window.
+>
+> - **If it succeeds:** Cloudflare Pages builds in ~2 min. Then verify:
+>   `curl -I https://pursueufotracker.com/drops/2026-08-07-drop-05` -> `HTTP/2 200`.
+> - **If it is rejected as non-fast-forward:** the bot pushed again while you were
+>   reading. Run `git pull --rebase` then `git push`. The tree is clean so the
+>   rebase will work.
+> - **Do NOT** `git push --force`. There is no reason to, and it would clobber bot
+>   commits.
+>
+> ### Then, and only then
+> Post the r/UFOs thread from `_scratch/reddit-drop05.md` (Option A). The links
+> 404 until the deploy lands.
 
 > 👉 **Next session: read [`_scratch/HANDOFF-2026-08-06.md`](_scratch/HANDOFF-2026-08-06.md) first.**
 > It has the verified 2026-08-05 state, the one blocker (operator's GitHub PAT
