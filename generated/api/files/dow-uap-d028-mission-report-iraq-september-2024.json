@@ -7,6 +7,7 @@
   "date_event": "9/20/24",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d28-mission-report-east-china-sea-2024.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/dow-uap-d28-mission-report-east-china-sea-2024.pdf",
   "size_bytes": 633172,
   "sha256": "e12c00b3e2d64e35eef5623499e6eb23b1bc21d304523c75d28d3f474d91d77e",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "Iraq"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d28-mission-report-east-china-sea-2024.jpg",
+  "csv_raw_title": "DOW-UAP-D028, Mission Report, Iraq, September 2024",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d28-mission-report-east-china-sea-2024.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (9/20/24) over Iraq.",

@@ -7,7 +7,7 @@
   "date_event": null,
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf",
-  "local_path": "downloads/video/unresolved-uap-report-syria-july-2022.pdf",
+  "local_path": "downloads/pdf/dow-uap-d16-mission-report-syria-july-2022.pdf",
   "size_bytes": 6999240,
   "sha256": "b3b3f023d70bcce3178de9fe6a019ea6db5e5145bc7e28a49308442e190ef817",
   "redacted": true,
@@ -72,7 +72,7 @@
     "lng": null,
     "place": "Syria"
   },
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/unresolved-uap-report-syria-july-2022.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d16-mission-report-syria-july-2022.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Syria.",
     "what_we_know": [

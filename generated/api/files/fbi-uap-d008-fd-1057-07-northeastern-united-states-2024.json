@@ -8,7 +8,7 @@
   "date_released": "2026-06-12",
   "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.pdf",
   "pending_verification": false,
-  "local_path": "downloads/pdf/fbi-uap-d008-fd-1057-07-northeastern-united-states-2024.pdf",
+  "local_path": "downloads/pdf/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.pdf",
   "size_bytes": 265993,
   "sha256": "abcbc0042ec0f228c81cff200fb59f82f8b8b1374e8c4e5d0e8b2f32160bef8b",
   "redacted": true,
@@ -75,7 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.jpg",
   "csv_raw_title": "FBI-UAP-D008, FD-1057-07, Northeastern United States, 2024",
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/fbi-uap-d008-fd-1057-07-northeastern-united-states-2024.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/FBI-UAP-D008_FD-1057-07_Northeastern-US_2024.pdf",
   "audience": {
     "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (December, 2024) over Northeastern United States.",
     "what_we_know": [

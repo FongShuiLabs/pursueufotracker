@@ -16,7 +16,7 @@ If `.claude/accounts.md` doesn't exist on this machine, ask the operator to recr
 - **Stack**: Python pipeline → static HTML → Cloudflare Pages
 - **Source of record**: https://www.war.gov/UFO/ (PURSUE program landing page)
 - **Pipeline orchestrator**: `python -m pipeline.run all` (or a specific stage like `build`, `build-categories`, `index-now`)
-- **Auto-poller**: GitHub Action at `.github/workflows/poll-wargov.yml` polls war.gov every 30 min weekday business hours, hourly off-hours. Opens an issue on real CSV change.
+- **Auto-poller**: GitHub Action at `.github/workflows/poll-wargov.yml`. Its cron *requests* every 30 min weekday business hours / hourly off-hours, but **GitHub heavily throttles scheduled workflows and that cadence has never actually been delivered** - measured over all 696 runs (2026-05-10 to 2026-08-10): 3-4 runs/day at launch, ~9-11/day recently, median gap 107 min, worst observed gap 11.9 h. Reliability when it does run is excellent (0.6% failure). Detection is state-based (each run diffs the CSV SHA-256 against `data/poll-state.json`), so a skipped cycle **delays** detection but never misses a drop. Never state a 30-minute or "within the hour" detection promise on a public page (Hard Rule #7) - say "several times a day."
 
 ## High-leverage docs
 

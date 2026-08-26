@@ -7,6 +7,7 @@
   "date_event": "10/28/2001-10/29/2001",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/059uap00011.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/059uap00011.pdf",
   "size_bytes": 825714,
   "sha256": "968c266f780e1f69abf1bca70aa0edcb094bc61c38d6743e01de335775af347c",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "Georgia"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/059uap00011.jpg",
+  "csv_raw_title": "State Department UAP Cable 003, Tbilisi, Georgia, October 30, 2001",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/059uap00011.pdf",
   "audience": {
     "tldr": "State Department diplomatic cable from an overseas diplomatic post documenting a UAP encounter (10/28/2001-10/29/2001) over Georgia.",

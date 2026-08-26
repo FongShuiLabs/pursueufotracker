@@ -1,0 +1,104 @@
+{
+  "id": "cia-uap-d022-unidentified-flying-object-reported-near-puerto-rico-1965",
+  "title": "CIA-UAP-D022, Unidentified Flying Object Reported near Puerto Rico, 1965",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": "2/1/65",
+  "date_released": "2026-08-07",
+  "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/CIA-UAP-D022_Unidentified-Flying-Object-Reported-near-Puerto-Rico_1965.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/cia-uap-d022-unidentified-flying-object-reported-near-puerto-rico-1965.pdf",
+  "size_bytes": 639051,
+  "sha256": "358b0d2e45ff0320f4e4ad689f0c918362d6c5d36be765d386018d279d835b01",
+  "redacted": true,
+  "summary": "This file contains Central Intelligence Agency (CIA) memoranda exchanged between the Assistant Director for Special Activities (AD/SA) and the Assistant Director for Scientific Intelligence (AD/SI) regarding an incident allegedly involving unidentified aircraft in the vicinity of Puerto Rico. The AD/SI was then-responsible for analyzing foreign scientific advancements and technological threats, such as Soviet nuclear, chemical, and ballistic missile capabilities. The AD/SA managed the CIA’s classified overhead reconnaissance operations, including the deployment of advanced aircraft like the U-2 and A-12 OXCART. Together, these offices ensured the United States could both gather critical intelligence over contested territories and accurately evaluate the technical capabilities of foreign adversaries during the Cold War.\n\nThe memoranda refer to an incident on November 19, 1964, in which a U.S. Naval aviator described observing an unidentified object as “delta-shaped, about the size of a jet fighter.” The pilot visually estimated the object’s velocity as Mach 3 (approximately 2,200 mph). A corresponding track from an AN/SPS-49 radar system aboard a U.S. Navy guided missile destroyer in the area, USS Gyatt, measured the object’s speed at 3,800 knots (approximately 4,373 mph). The memoranda indicate that, in the opinion of the AD/SI, the object was conceivably associated with foreign intelligence gathering activities, citing active missile testing within the AFWR, or Atlantic Fleet Weapons Range, as being an attractive reconnaissance target. The AD/SA and AD/SI also ruled out domestic experimental aircraft, such as the YF-12A OXCART, as a potential attribution.",
+  "score": {
+    "value": 55,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/cia-uap-d022-unidentified-flying-object-reported-near-puerto-rico-1965.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/cia-uap-d022-unidentified-flying-object-reported-near-puerto-rico-1965.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Caribbean Sea"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/thumbnails/CIA-UAP-D022_Unidentified-Flying-Object-Reported-near-Puerto-Rico_1965.jpg",
+  "csv_raw_title": "CIA-UAP-D022, Unidentified Flying Object Reported near Puerto Rico, 1965",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/cia-uap-d022-unidentified-flying-object-reported-near-puerto-rico-1965.pdf",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (2/1/65) over Caribbean Sea.",
+    "what_we_know": [
+      "Document originates from CIA.",
+      "Encounter dated 2/1/65.",
+      "Reported location: Caribbean Sea."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 55/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "date",
+      "page",
+      "security",
+      "information",
+      "united",
+      "states",
+      "material",
+      "time"
+    ]
+  }
+}

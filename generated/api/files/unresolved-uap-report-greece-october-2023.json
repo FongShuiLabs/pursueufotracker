@@ -7,7 +7,7 @@
   "date_event": null,
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf",
-  "local_path": "downloads/video/unresolved-uap-report-greece-october-2023.pdf",
+  "local_path": "downloads/pdf/dow-uap-d33-mission-report-greece-october-2023.pdf",
   "size_bytes": 897434,
   "sha256": "7078d96f334dbf396e0e0a141f943009fe2191cd20842e16ee381bcbc2776c43",
   "redacted": true,
@@ -72,7 +72,7 @@
     "lng": null,
     "place": "Greece"
   },
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/unresolved-uap-report-greece-october-2023.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d33-mission-report-greece-october-2023.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Greece.",
     "what_we_know": [

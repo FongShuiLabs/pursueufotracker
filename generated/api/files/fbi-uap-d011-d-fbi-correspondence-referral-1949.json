@@ -8,7 +8,7 @@
   "date_released": "2026-06-12",
   "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D011_DFBI-Correspondence-Referral_1949.pdf",
   "pending_verification": false,
-  "local_path": "downloads/pdf/fbi-uap-d011-d-fbi-correspondence-referral-1949.pdf",
+  "local_path": "downloads/pdf/FBI-UAP-D011_DFBI-Correspondence-Referral_1949.pdf",
   "size_bytes": 581575,
   "sha256": "aaf14409fe2a6b8577345394b399e8ccfa36a0571c6205eb6b5da82b53e6876b",
   "redacted": false,
@@ -75,7 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/FBI-UAP-D011_DFBI-Correspondence-Referral_1949.jpg",
   "csv_raw_title": "FBI-UAP-D011, D/FBI Correspondence Referral, 1949",
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/fbi-uap-d011-d-fbi-correspondence-referral-1949.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/FBI-UAP-D011_DFBI-Correspondence-Referral_1949.pdf",
   "audience": {
     "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (1949).",
     "what_we_know": [

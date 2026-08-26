@@ -7,6 +7,7 @@
   "date_event": "5/20/86",
   "date_released": "2026-05-22",
   "source_url": "https://www.war.gov/medialink/ufo/052226/release_02/documents/DOE-UAP-D003_Pajarito_Astronomers.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/DOE-UAP-D003_Pajarito_Astronomers.pdf",
   "size_bytes": 360462,
   "sha256": "89ecb1163e42d3e8a215033b88e87ae3befe82a8dad1db112fae7e760bb756f4",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "New Mexico"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/052226/release_02/thumbnails/DOE-UAP-D003_Pajarito_Astronomers.jpg",
+  "csv_raw_title": "DOE-UAP-D003, Pajarito Astronomers Invitation, 1986",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/DOE-UAP-D003_Pajarito_Astronomers.pdf",
   "audience": {
     "tldr": "Federal record documenting a UAP encounter (5/20/86) over New Mexico.",

@@ -8,7 +8,7 @@
   "date_released": "2026-06-12",
   "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D019_Gemini-5-Technical-Debriefing_Part1_1965.pdf",
   "pending_verification": false,
-  "local_path": "downloads/pdf/nasa-uap-d019-gemini-5-technical-debriefing-part-i-1965.pdf",
+  "local_path": "downloads/pdf/NASA-UAP-D019_Gemini-5-Technical-Debriefing_Part1_1965.pdf",
   "size_bytes": 24652260,
   "sha256": "fd3b139e6b9ad4e3b697561f1712541e54668617fe8be72f9214124e4325c793",
   "redacted": false,
@@ -75,7 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/NASA-UAP-D019_Gemini-5-Technical-Debriefing_Part1_1965.jpg",
   "csv_raw_title": "NASA-UAP-D019, Gemini 5 Technical Debriefing, Part I, 1965",
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/nasa-uap-d019-gemini-5-technical-debriefing-part-i-1965.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/NASA-UAP-D019_Gemini-5-Technical-Debriefing_Part1_1965.pdf",
   "audience": {
     "tldr": "NASA mission record documenting a UAP encounter (August 2 - September 2, 1965) over Cape Kennedy, Florida.",
     "what_we_know": [

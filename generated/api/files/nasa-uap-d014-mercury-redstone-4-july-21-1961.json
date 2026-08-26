@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
+    "transcript_path": "extracted/transcripts/nasa-uap-d014-mercury-redstone-4-july-21-1961.vtt",
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d014-mercury-redstone-4-july-21-1961.jpg"
   },
   "geo": {

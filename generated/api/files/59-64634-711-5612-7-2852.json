@@ -7,6 +7,7 @@
   "date_event": "7/28/52",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/59_64634_711.5612[7-2852.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/59_64634_711.5612[7-2852.pdf",
   "size_bytes": 898369,
   "sha256": "2539850305227baf0b3bb487cbf41f5834eca2b188dc2d65849fdb06b683bd13",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": null
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/59_64634_711.5612[7-2852.jpg",
+  "csv_raw_title": "59_64634_711.5612[7-2852",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/59_64634_711.5612[7-2852.pdf",
   "audience": {
     "tldr": "State Department diplomatic cable from an overseas diplomatic post documenting a UAP encounter (7/28/52).",

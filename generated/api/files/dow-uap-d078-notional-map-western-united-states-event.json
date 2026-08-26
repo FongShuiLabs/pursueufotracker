@@ -8,7 +8,7 @@
   "date_released": "2026-06-12",
   "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D078_Notional-Map_Western-United-States-Event.pdf",
   "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d078-notional-map-western-united-states-event.pdf",
+  "local_path": "downloads/pdf/DOW-UAP-D078_Notional-Map_Western-United-States-Event.pdf",
   "size_bytes": 585109,
   "sha256": "284e470d213a798271fd7ade00d345cd17d4d5fca154db1e3ca5a04f34cc3bbe",
   "redacted": false,
@@ -75,7 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/DOW-UAP-D078_Notional-Map_Western-United-States-Event.jpg",
   "csv_raw_title": "DOW-UAP-D078, Notional Map: Western United States Event",
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d078-notional-map-western-united-states-event.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/DOW-UAP-D078_Notional-Map_Western-United-States-Event.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (October, 2023) over Westen United States.",
     "what_we_know": [

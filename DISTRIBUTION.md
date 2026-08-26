@@ -44,7 +44,7 @@ Use the revisions URL prominently in EVERY post below.
 ### Body
 
 ```
-On May 11, war.gov silently restructured the canonical PURSUE CSV. 161 rows became 158 rows. My automated tracker (which polls war.gov every 30 min during weekday business hours via a public GitHub Action) caught it within hours.
+On May 11, war.gov silently restructured the canonical PURSUE CSV. 161 rows became 158 rows. My automated tracker (a public GitHub Action that polls war.gov several times a day) caught it within hours.
 
 What actually changed, verified by URL-set comparison against the May 8 snapshot:
 - Zero PDFs added, zero PDFs removed.
@@ -138,7 +138,7 @@ Author here. Some quick notes on the build:
 
 - The Anomalousness Index is six weighted components, all human-designed, weights sum to 1.00. Rubric lives as open JSON at https://pursueufotracker.com/data/scoring-rubric.json - anyone can recompute every score. I deliberately did NOT publish a "% chance aliens" number; that number is not honestly computable from these files.
 
-- GitHub Action polls the canonical war.gov UAP CSV every 30 minutes during weekday business hours; when the hash changes, it opens an issue. Cloudflare auto-deploys when I push.
+- GitHub Action polls the canonical war.gov UAP CSV several times a day; when the hash changes, it opens an issue. Cloudflare auto-deploys when I push.
 
 - Source is public on GitHub: https://github.com/FongShuiLabs/pursueufotracker
 
@@ -371,7 +371,7 @@ Same body as the r/UFOs post, but DIFFERENT title each time (don't post identica
 "This is what made me build the site. NASA-UAP-D3A. Gemini 7. December 5, 1965. Astronaut Frank Borman reports an unidentified object - he called it a 'bogey' - to Houston mission control. On the official NASA voice loop, with crewmate Jim Lovell also on the recording. Audio is on the site. Astronaut-witness on the federal record is essentially unique in this archive. The Apollo photos can be explained. The lunar formations can be debated. But trained astronauts reporting an unidentified object to mission control, on the record, is a different category of evidence."
 
 [6:30-7:30] CLOSE
-"Site is pursueufotracker.com. All 222 files, full text search, transcripts on every video. The rubric is open. SHA-256 hashes verify against war.gov. Public domain. Subscribe if you want to be alerted when Drop 02 lands - my auto-poller checks war.gov every 30 minutes. Link in description."
+"Site is pursueufotracker.com. All 222 files, full text search, transcripts on every video. The rubric is open. SHA-256 hashes verify against war.gov. Public domain. Subscribe if you want to be alerted when the next drop lands - my auto-poller checks war.gov several times a day. Link in description."
 ```
 
 ---

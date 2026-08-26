@@ -55,6 +55,31 @@ def mark_ingested() -> None:
           f"(csv_sha256 {str(marker['ingested_csv_sha256'])[:12]}...).")
 
 
+REMOTE_POLL_STATE = ("https://raw.githubusercontent.com/FongShuiLabs/"
+                     "pursueufotracker/main/data/poll-state.json")
+
+
+def _remote_poll_state(timeout: float = 6.0):
+    """The bot's poll-state as published on origin/main.
+
+    THE reason this exists: `poll-state.json` is bot-owned and only reaches this
+    clone via `git pull`. If nobody pulls, the LOCAL copy freezes at whatever the
+    last pull saw - and since last-ingest.json freezes with it, the two agree and
+    drop_check reports "current" with total confidence. That is exactly how Drop
+    05 (2026-08-07, 375 rows) sat unnoticed for 11 days: both local files said
+    334 and matched each other. Checking the remote costs one HTTP GET and is the
+    only way this guard can see past a stale clone. Failure is non-fatal - the
+    local comparison still runs, we just say the remote was unreachable."""
+    try:
+        import urllib.request
+        req = urllib.request.Request(REMOTE_POLL_STATE,
+                                     headers={"User-Agent": "pursueufotracker-drop-check"})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except Exception:
+        return None
+
+
 def check() -> None:
     poll = _read(POLL_STATE)
     if not poll:
@@ -77,6 +102,20 @@ def check() -> None:
     ing_sha = ingest.get("ingested_csv_sha256")
     ing_rows = ingest.get("ingested_row_count")
 
+    # Cross-check the bot's published state before trusting a local "current".
+    remote = _remote_poll_state()
+    if remote:
+        r_sha, r_rows = remote.get("csv_sha256"), remote.get("row_count")
+        if r_sha and r_sha != cur_sha:
+            print(f"  drop_check: LOCAL poll-state is STALE (local {cur_rows} rows / "
+                  f"{str(cur_sha)[:12]}... vs origin {r_rows} rows / {str(r_sha)[:12]}...).")
+            print("  Using origin's copy - run `git pull --rebase` to refresh the clone.")
+            cur_sha, cur_rows = r_sha, r_rows
+            changed_at = remote.get("last_change_at", changed_at)
+    else:
+        print("  drop_check: could not reach origin's poll-state; "
+              "local-only check (a stale clone can hide a drop).")
+
     if cur_sha and ing_sha and cur_sha == ing_sha:
         print(f"DROP STATUS: current. Site ingested {ing_rows} rows; poller agrees "
               f"(csv unchanged since {ingest.get('ingested_at')}).")
@@ -91,7 +130,7 @@ def check() -> None:
     print(f"  Delta       : {('+' if isinstance(delta, int) and delta >= 0 else '')}{delta} rows")
     print(f"  csv_sha256  : poller {str(cur_sha)[:12]}...  != ingested {str(ing_sha)[:12]}...")
     print("")
-    print("  ACTION: this is the marquee event. Follow DROP02_REACTION.md:")
+    print("  ACTION: this is the marquee event. Follow DROP_REACTION.md:")
     print("    1. Ingest:  python -m pipeline.run all")
     print("    2. Verify the new-file diff (Hard Rule #7) before any public claim")
     print("    3. Rebuild + push, curl-verify live")

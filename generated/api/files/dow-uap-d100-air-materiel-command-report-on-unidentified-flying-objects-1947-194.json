@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d100-air-materiel-command-report-on-unidentified-flying-objects-1947-194",
+  "title": "DOW-UAP-D100, Air Materiel Command Report on Unidentified Flying Objects, 1947-1948",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "1947-1948",
+  "date_released": "2026-08-07",
+  "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D100_Air-Materiel-Command-Report-on-UFOs_1947-1948.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d100-air-materiel-command-report-on-unidentified-flying-objects-1947-194.pdf",
+  "size_bytes": 40873795,
+  "sha256": "4052303ee0d521c15656b65fed3075734c83332ec5db319c744f0dbe53b8ec90",
+  "redacted": false,
+  "summary": "This file is a collection of U.S. Government memoranda and correspondence relating to “Project Sign,” a 1948 U.S. Air Force program to investigate reports of high-performance airborne objects. The documents characterize some of these reports as being consistent with “real” objects rather than fabrications or resulting from perceptual errors. The U.S. Air Force cites the reported characteristics of the phenomena, e.g., high speed and maneuverability, as exceeding known performance envelopes of U.S. military aircraft and thereby presenting a potential national security threat, if validated. This potential threat prompted the Air Force to call on the Air Materiel Command (AMC), the Service’s Major Command for logistics and procurement from 1946 to 1961, to gather further evidence to assess the validity of the reports. The Air Force emphasized that there was an “imperative need” for such evidence to enable appropriate countermeasures. The stated urgency of this request reflects the strategic environment of the early Cold War, a period characterized by heightened national defense concerns amid rapid global advancements in aerospace design and development. In framing the call for an investigation, the Air Force noted that sustained public interest and persistent inquiries from the press may eventually require an official statement in response.\n\nAMC’s investigation found that observers were generally not mistaken when reporting that they had seen an airborne object, but that their characterizations of those objects as unusual was likely a reflection of the “limits of their personal experience.” It identified “a great many” of the objects reported with a rounded appearance as “weather or upper air scientific balloons of some type.” It also identified several cases in which the reported objects were most likely celestial phenomena, such as Venus. AMC found that a small number of reports lacked a “reasonable everyday explanation,” but that “so far, no physical evidence of the existence of the unidentified sightings has been obtained.” AMC expressly considered whether the phenomena may have been “vehicles from another planet,” but found no evidence supporting such an origin. Ultimately, AMC found that “there is as yet no conclusive proof that unidentified flying objects, other than those which are known to be balloons, are real aircraft.” In light of these findings, AMC recommended that the Department of War should avoid publicly commenting on the subject of “flying discs.” Responding to the Air Force’s anticipated concerns regarding public interest in the subject, AMC recommended that the Department should reply in terms that minimize the investigation’s inconclusive findings, focusing on positive determinations in cases assessed to be weather balloons and celestial phenomena.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d100-air-materiel-command-report-on-unidentified-flying-objects-1947-194.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d100-air-materiel-command-report-on-unidentified-flying-objects-1947-194.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/thumbnails/DOW-UAP-D100_Air-Materiel-Command-Report-on-UFOs_1947-1948.jpg",
+  "csv_raw_title": "DOW-UAP-D100, Air Materiel Command Report on Unidentified Flying Objects, 1947-1948",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d100-air-materiel-command-report-on-unidentified-flying-objects-1947-194.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (1947-1948).",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 1947-1948.",
+      "Document references: date, page, down, remarks, action."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "date",
+      "page",
+      "down",
+      "remarks",
+      "action",
+      "exec",
+      "asst",
+      "sheet"
+    ]
+  }
+}

@@ -7,6 +7,7 @@
   "date_event": "2/3/00",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d49-launch-summary-february-2000.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/dow-uap-d49-launch-summary-february-2000.pdf",
   "size_bytes": 9090715,
   "sha256": "0dd7855ac3c69e39a9752c53fe6ba3e851d617e28adfcbf07c3ec93907877cf7",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": null
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d49-launch-summary-february-2000.jpg",
+  "csv_raw_title": "DOW-UAP-D049, Launch Summary, Vandenberg AFB, 2000",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d49-launch-summary-february-2000.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (2/3/00).",

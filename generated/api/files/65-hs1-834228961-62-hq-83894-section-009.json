@@ -7,6 +7,7 @@
   "date_event": null,
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_9.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/65_hs1-834228961_62-hq-83894_section_9.pdf",
   "size_bytes": 52058639,
   "sha256": "c0a322f3544e3ba6c95257b89b2fd3aec3249c7a5d8f419e3f1826facea40a08",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": null
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/65_hs1-834228961_62-hq-83894_section_9.jpg",
+  "csv_raw_title": "65_HS1-834228961_62-HQ-83894_Section_009",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/65_hs1-834228961_62-hq-83894_section_9.pdf",
   "audience": {
     "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter.",

@@ -8,7 +8,7 @@
   "date_released": "2026-06-12",
   "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D084_USArmy-Flying-Saucer-Study_1949.pdf",
   "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d084-us-army-flying-saucer-study-1949.pdf",
+  "local_path": "downloads/pdf/DOW-UAP-D084_USArmy-Flying-Saucer-Study_1949.pdf",
   "size_bytes": 10178660,
   "sha256": "b2e4554e261e980c10251e927942300342081109a50b4ef61dc37946deade80f",
   "redacted": false,
@@ -75,7 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/DOW-UAP-D084_USArmy-Flying-Saucer-Study_1949.jpg",
   "csv_raw_title": "DOW-UAP-D084, US Army-Flying-Saucer-Study_1949",
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d084-us-army-flying-saucer-study-1949.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/DOW-UAP-D084_USArmy-Flying-Saucer-Study_1949.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter.",
     "what_we_know": [

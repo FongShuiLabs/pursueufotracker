@@ -7,6 +7,7 @@
   "date_event": "3/18/45",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/331_120752_numeric_files_1944–1945_37153_german_armament_equipment_documents.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/331_120752_numeric_files_1944–1945_37153_german_armament_equipment_documents.pdf",
   "size_bytes": 15892720,
   "sha256": "cc709f89f3f3de832ee3979817a3c716727dd03c2f4fe26a545f1904b29fd467",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "Germany"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/331_120752_numeric_files_1944–1945_37153_german_armament_equipment_documents.jpg",
+  "csv_raw_title": "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/331_120752_numeric_files_1944–1945_37153_german_armament_equipment_documents.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (3/18/45) over Germany.",

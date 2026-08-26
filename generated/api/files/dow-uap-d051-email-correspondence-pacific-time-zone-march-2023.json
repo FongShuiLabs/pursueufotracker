@@ -7,6 +7,7 @@
   "date_event": "3/23/26",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d51-email-correspondence-pacific-time-zone-march-2023.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/dow-uap-d51-email-correspondence-pacific-time-zone-march-2023.pdf",
   "size_bytes": 76470,
   "sha256": "f21f4ae91e51810bfa8a6fce6c422f2bbf99c6277871846c642f987954c042f6",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "Pacific Time Zone"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d51-email-correspondence-pacific-time-zone-march-2023.jpg",
+  "csv_raw_title": "DOW-UAP-D051, Email Correspondence, Pacific Time Zone, March 2023",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d51-email-correspondence-pacific-time-zone-march-2023.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (3/23/26) over Pacific Time Zone.",

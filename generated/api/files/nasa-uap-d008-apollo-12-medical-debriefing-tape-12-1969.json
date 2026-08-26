@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
+    "transcript_path": "extracted/transcripts/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969.vtt",
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d008-apollo-12-medical-debriefing-tape-12-1969.jpg"
   },
   "geo": {

@@ -1,0 +1,104 @@
+{
+  "id": "dos-uap-d001-diplomatic-cable-brazil-november-14-1963",
+  "title": "DOS-UAP-D001, Diplomatic Cable, Brazil, November 14, 1963",
+  "category": "state",
+  "agency": "STATE",
+  "type": "pdf",
+  "date_event": "11/14/63",
+  "date_released": "2026-08-07",
+  "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D001_Diplomatic-Cable_Brazil_November-14-1963.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dos-uap-d001-diplomatic-cable-brazil-november-14-1963.pdf",
+  "size_bytes": 848958,
+  "sha256": "1259083d422e420b63cfe864fa75abd6c883193d12d605ac1880d2093d8d7335",
+  "redacted": false,
+  "summary": "This document is a U.S. Department of State diplomatic cable from the U.S. Embassy in Rio de Janeiro, Brazil to the Office of the Secretary of State in Washington, D.C., on November 14, 1963. This cable documents an effort by the Embassy to verify that the Department had assessed certain content published in a local newspaper as inauthentic, following a discussion on a poor-quality telephone connection the previous night.\n\nTo ensure both offices were referencing the same reporting, the cable cites descriptive language paraphrased from the press, namely a “large metal manned balloon” and a “dead crewman aboard wearing [a] uniform or spacesuit with strange markings.” The cable concludes with the embassy’s understanding that an object assessed to be a weather balloon had been reported in the vicinity, but that no such object had been found to have crashed. A follow-on correspondence regarding the alleged incident is included in this collection under the title “DOS-UAP-D002.”",
+  "score": {
+    "value": 50,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dos-uap-d001-diplomatic-cable-brazil-november-14-1963.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dos-uap-d001-diplomatic-cable-brazil-november-14-1963.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Bahia, Brazil"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/thumbnails/DOS-UAP-D001_Diplomatic-Cable_Brazil_November-14-1963.jpg",
+  "csv_raw_title": "DOS-UAP-D001, Diplomatic Cable, Brazil, November 14, 1963",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dos-uap-d001-diplomatic-cable-brazil-november-14-1963.pdf",
+  "audience": {
+    "tldr": "State Department diplomatic cable from an overseas diplomatic post documenting a UAP encounter (11/14/63) over Bahia, Brazil.",
+    "what_we_know": [
+      "Document originates from STATE.",
+      "Encounter dated 11/14/63.",
+      "Reported location: Bahia, Brazil."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 50/100. Top drivers: corroboration (single_witness_instrument), witness credibility (civilian_credentialed).",
+    "keywords": [
+      "action",
+      "copy",
+      "salvador",
+      "object",
+      "page",
+      "state",
+      "info",
+      "defense"
+    ]
+  }
+}

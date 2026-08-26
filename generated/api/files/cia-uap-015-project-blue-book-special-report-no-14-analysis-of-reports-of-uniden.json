@@ -8,7 +8,7 @@
   "date_released": "2026-06-12",
   "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.pdf",
   "pending_verification": false,
-  "local_path": "downloads/pdf/cia-uap-015-project-blue-book-special-report-no-14-analysis-of-reports-of-uniden.pdf",
+  "local_path": "downloads/pdf/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.pdf",
   "size_bytes": 24433155,
   "sha256": "90e05e77fc088c29758c2ddda514c0c12f317e5686ee213d348db2f9da152ee3",
   "redacted": false,
@@ -75,7 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.jpg",
   "csv_raw_title": "CIA-UAP-015, Project Blue Book Special Report No. 14 (Analysis of Reports of Unidentified Aerial Objects)",
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/cia-uap-015-project-blue-book-special-report-no-14-analysis-of-reports-of-uniden.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/CIA-UAP-015-Project_Blue_Book_Special_Report_No_14.pdf",
   "audience": {
     "tldr": "Federal record documenting a UAP encounter.",
     "what_we_know": [

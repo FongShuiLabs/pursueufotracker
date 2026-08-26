@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
+    "transcript_path": "extracted/transcripts/nasa-uap-d029-apollo-17-crew-medical-debriefing-continued-1972.vtt",
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d029-apollo-17-crew-medical-debriefing-continued-1972.jpg"
   },
   "geo": {

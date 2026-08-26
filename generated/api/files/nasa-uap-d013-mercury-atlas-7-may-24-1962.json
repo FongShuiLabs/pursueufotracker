@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
+    "transcript_path": "extracted/transcripts/nasa-uap-d013-mercury-atlas-7-may-24-1962.vtt",
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d013-mercury-atlas-7-may-24-1962.jpg"
   },
   "geo": {

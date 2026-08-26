@@ -1,0 +1,104 @@
+{
+  "id": "cia-uap-d023-briefing-notes-for-mr-walter-elder",
+  "title": "CIA-UAP-D023, Briefing Notes for Mr. Walter Elder",
+  "category": "intel",
+  "agency": "CIA",
+  "type": "pdf",
+  "date_event": "Undated",
+  "date_released": "2026-08-07",
+  "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/CIA-UAP-D023_Briefing-Notes-for-Mr-Walter-Elder.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/cia-uap-d023-briefing-notes-for-mr-walter-elder.pdf",
+  "size_bytes": 205058,
+  "sha256": "aba51f51191bbcd37dc1f591171b6edc78c9bfb9632cfed8fae6a8bf1d61ca40",
+  "redacted": false,
+  "summary": "This document contains briefing material prepared for Mr. Walter N. Elder, Executive Assistant to the Director of the Central Intelligence Agency (CIA), regarding a November 19, 1964, incident allegedly involving unidentified aircraft in the vicinity of Puerto Rico. The previous entry in this collection, CIA-UAP-D022, contains CIA memoranda on the same subject matter. The briefing includes additional details regarding that incident, including a characterization of the meteorological conditions and sensing capabilities of nearby U.S. military collection systems.\n\nThe briefing states that a radar system aboard USS Gyatt, a guided missile destroyer operating in the vicinity, detected a contact tracking more than 3,800 knots (approximately 4,373 mph) over a period of 21 minutes. The briefing contains visual estimates regarding the phenomenon’s apparent capabilities from the pilot of an F-8 Crusader who was present during the incident.",
+  "score": {
+    "value": 58,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/cia-uap-d023-briefing-notes-for-mr-walter-elder.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/cia-uap-d023-briefing-notes-for-mr-walter-elder.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Caribbean Sea"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/thumbnails/CIA-UAP-D023_Briefing-Notes-for-Mr-Walter-Elder.jpg",
+  "csv_raw_title": "CIA-UAP-D023, Briefing Notes for Mr. Walter Elder",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/cia-uap-d023-briefing-notes-for-mr-walter-elder.pdf",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (Undated) over Caribbean Sea.",
+    "what_we_know": [
+      "Document originates from CIA.",
+      "Encounter dated Undated.",
+      "Reported location: Caribbean Sea."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 58/100. Top drivers: witness credibility (federal_agent), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "object",
+      "rapidly",
+      "radar",
+      "again",
+      "high",
+      "mach",
+      "pilot"
+    ]
+  }
+}

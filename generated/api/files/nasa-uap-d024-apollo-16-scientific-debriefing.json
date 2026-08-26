@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
+    "transcript_path": "extracted/transcripts/nasa-uap-d024-apollo-16-scientific-debriefing.vtt",
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d024-apollo-16-scientific-debriefing.jpg"
   },
   "geo": {

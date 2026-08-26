@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-07-12T00:29:10.302293+00:00",
-  "count": 334,
+  "generated_at": "2026-08-18T21:21:17.133911+00:00",
+  "count": 375,
   "files": [
     {
       "id": "18-100754-general-1946-7-vol-2",
@@ -587,6 +587,28 @@
       "detail_api": "https://pursueufotracker.com/api/files/cia-uap-d021-analysis-of-unconventional-aircraft-sightings-1955.json"
     },
     {
+      "id": "cia-uap-d022-unidentified-flying-object-reported-near-puerto-rico-1965",
+      "title": "CIA-UAP-D022, Unidentified Flying Object Reported near Puerto Rico, 1965",
+      "agency": "CIA",
+      "category": "intel",
+      "type": "pdf",
+      "date_event": "2/1/65",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/cia-uap-d022-unidentified-flying-object-reported-near-puerto-rico-1965",
+      "detail_api": "https://pursueufotracker.com/api/files/cia-uap-d022-unidentified-flying-object-reported-near-puerto-rico-1965.json"
+    },
+    {
+      "id": "cia-uap-d023-briefing-notes-for-mr-walter-elder",
+      "title": "CIA-UAP-D023, Briefing Notes for Mr. Walter Elder",
+      "agency": "CIA",
+      "category": "intel",
+      "type": "pdf",
+      "date_event": "Undated",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/cia-uap-d023-briefing-notes-for-mr-walter-elder",
+      "detail_api": "https://pursueufotracker.com/api/files/cia-uap-d023-briefing-notes-for-mr-walter-elder.json"
+    },
+    {
       "id": "doe-uap-d001-enhanced-pantex-imagery",
       "title": "DOE-UAP-D001, Enhanced PANTEX Imagery",
       "agency": "DOE",
@@ -640,6 +662,28 @@
       "score": 55,
       "url": "https://pursueufotracker.com/files/doe-uap-d005-pantex-unidentified-object-incident-report-2015",
       "detail_api": "https://pursueufotracker.com/api/files/doe-uap-d005-pantex-unidentified-object-incident-report-2015.json"
+    },
+    {
+      "id": "dos-uap-d001-diplomatic-cable-brazil-november-14-1963",
+      "title": "DOS-UAP-D001, Diplomatic Cable, Brazil, November 14, 1963",
+      "agency": "STATE",
+      "category": "state",
+      "type": "pdf",
+      "date_event": "11/14/63",
+      "score": 50,
+      "url": "https://pursueufotracker.com/files/dos-uap-d001-diplomatic-cable-brazil-november-14-1963",
+      "detail_api": "https://pursueufotracker.com/api/files/dos-uap-d001-diplomatic-cable-brazil-november-14-1963.json"
+    },
+    {
+      "id": "dos-uap-d002-diplomatic-cable-brazil-november-20-1963",
+      "title": "DOS-UAP-D002, Diplomatic Cable, Brazil, November 20, 1963",
+      "agency": "STATE",
+      "category": "state",
+      "type": "pdf",
+      "date_event": "11/20/63",
+      "score": 50,
+      "url": "https://pursueufotracker.com/files/dos-uap-d002-diplomatic-cable-brazil-november-20-1963",
+      "detail_api": "https://pursueufotracker.com/api/files/dos-uap-d002-diplomatic-cable-brazil-november-20-1963.json"
     },
     {
       "id": "dow-uap-d003-mission-report-arabian-gulf-2020",
@@ -1333,6 +1377,50 @@
       "score": 56,
       "url": "https://pursueufotracker.com/files/dow-uap-d097-project-sign-progress-report-1948",
       "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d097-project-sign-progress-report-1948.json"
+    },
+    {
+      "id": "dow-uap-d098-film-analysis-of-unidentified-objects-1953",
+      "title": "DOW-UAP-D098, Film Analysis of Unidentified Objects, 1953",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "1950, 1952",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d098-film-analysis-of-unidentified-objects-1953",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d098-film-analysis-of-unidentified-objects-1953.json"
+    },
+    {
+      "id": "dow-uap-d099-intelligence-review-of-ghost-rocket-incidents-1947",
+      "title": "DOW-UAP-D099, Intelligence Review of “Ghost Rocket” Incidents, 1947",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "1/9/47",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d099-intelligence-review-of-ghost-rocket-incidents-1947",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d099-intelligence-review-of-ghost-rocket-incidents-1947.json"
+    },
+    {
+      "id": "dow-uap-d100-air-materiel-command-report-on-unidentified-flying-objects-1947-194",
+      "title": "DOW-UAP-D100, Air Materiel Command Report on Unidentified Flying Objects, 1947-1948",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "1947-1948",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d100-air-materiel-command-report-on-unidentified-flying-objects-1947-194",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d100-air-materiel-command-report-on-unidentified-flying-objects-1947-194.json"
+    },
+    {
+      "id": "dow-uap-d101-intelligence-information-report-unresolved-uap-report-gulf-of-oman-",
+      "title": "DOW-UAP-D101, Intelligence Information Report, Unresolved UAP Report, Gulf of Oman, 2021",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "9/8/21",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d101-intelligence-information-report-unresolved-uap-report-gulf-of-oman-",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d101-intelligence-information-report-unresolved-uap-report-gulf-of-oman-.json"
     },
     {
       "id": "dow-uap-pr024-unresolved-uap-report-middle-east-2023",
@@ -2105,6 +2193,182 @@
       "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr116-unresolved-uap-report-atlantic-ocean-2020.json"
     },
     {
+      "id": "dow-uap-pr117-unresolved-uap-report-gulf-of-oman-2021",
+      "title": "DOW-UAP-PR117, Unresolved UAP Report, Gulf of Oman, 2021",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "9/8/21",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr117-unresolved-uap-report-gulf-of-oman-2021",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr117-unresolved-uap-report-gulf-of-oman-2021.json"
+    },
+    {
+      "id": "dow-uap-pr118-unresolved-uap-report-gulf-of-oman-2021",
+      "title": "DOW-UAP-PR118, Unresolved UAP Report, Gulf of Oman, 2021",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "9/8/21",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr118-unresolved-uap-report-gulf-of-oman-2021",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr118-unresolved-uap-report-gulf-of-oman-2021.json"
+    },
+    {
+      "id": "dow-uap-pr119-unresolved-uap-report-gulf-of-oman-2021",
+      "title": "DOW-UAP-PR119, Unresolved UAP Report, Gulf of Oman, 2021",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "9/8/21",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr119-unresolved-uap-report-gulf-of-oman-2021",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr119-unresolved-uap-report-gulf-of-oman-2021.json"
+    },
+    {
+      "id": "dow-uap-pr120-unresolved-uap-report-gulf-of-oman-2021",
+      "title": "DOW-UAP-PR120, Unresolved UAP Report, Gulf of Oman, 2021",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "9/8/21",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr120-unresolved-uap-report-gulf-of-oman-2021",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr120-unresolved-uap-report-gulf-of-oman-2021.json"
+    },
+    {
+      "id": "dow-uap-pr121-unresolved-uap-report-gulf-of-oman-2021",
+      "title": "DOW-UAP-PR121, Unresolved UAP Report, Gulf of Oman, 2021",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "9/8/21",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr121-unresolved-uap-report-gulf-of-oman-2021",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr121-unresolved-uap-report-gulf-of-oman-2021.json"
+    },
+    {
+      "id": "dow-uap-pr122-unresolved-uap-report-gulf-of-oman-2021",
+      "title": "DOW-UAP-PR122, Unresolved UAP Report, Gulf of Oman, 2021",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "9/8/21",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr122-unresolved-uap-report-gulf-of-oman-2021",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr122-unresolved-uap-report-gulf-of-oman-2021.json"
+    },
+    {
+      "id": "dow-uap-pr123-unresolved-uap-report-pacific-ocean-2019",
+      "title": "DOW-UAP-PR123, Unresolved UAP Report, Pacific Ocean, 2019",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2019",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr123-unresolved-uap-report-pacific-ocean-2019",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr123-unresolved-uap-report-pacific-ocean-2019.json"
+    },
+    {
+      "id": "dow-uap-pr124-unresolved-uap-report-pacific-ocean-2019",
+      "title": "DOW-UAP-PR124, Unresolved UAP Report, Pacific Ocean, 2019",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2019",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr124-unresolved-uap-report-pacific-ocean-2019",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr124-unresolved-uap-report-pacific-ocean-2019.json"
+    },
+    {
+      "id": "dow-uap-pr125-unresolved-uap-report-pacific-ocean-2019",
+      "title": "DOW-UAP-PR125, Unresolved UAP Report, Pacific Ocean, 2019",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2019",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr125-unresolved-uap-report-pacific-ocean-2019",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr125-unresolved-uap-report-pacific-ocean-2019.json"
+    },
+    {
+      "id": "dow-uap-pr126-unresolved-uap-report-pacific-ocean-2019",
+      "title": "DOW-UAP-PR126, Unresolved UAP Report, Pacific Ocean, 2019",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2019",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr126-unresolved-uap-report-pacific-ocean-2019",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr126-unresolved-uap-report-pacific-ocean-2019.json"
+    },
+    {
+      "id": "dow-uap-pr127-unresolved-uap-report-pacific-ocean-2019",
+      "title": "DOW-UAP-PR127, Unresolved UAP Report, Pacific Ocean, 2019",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2019",
+      "score": 68,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr127-unresolved-uap-report-pacific-ocean-2019",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr127-unresolved-uap-report-pacific-ocean-2019.json"
+    },
+    {
+      "id": "dow-uap-pr134-unresolved-uap-report-middle-east-2025",
+      "title": "DOW-UAP-PR134, Unresolved UAP Report, Middle East, 2025",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2025",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr134-unresolved-uap-report-middle-east-2025",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr134-unresolved-uap-report-middle-east-2025.json"
+    },
+    {
+      "id": "dow-uap-pr136-unresolved-uap-report-middle-east-2023",
+      "title": "DOW-UAP-PR136, Unresolved UAP Report, Middle East, 2023",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2023",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr136-unresolved-uap-report-middle-east-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr136-unresolved-uap-report-middle-east-2023.json"
+    },
+    {
+      "id": "dow-uap-pr142-unresolved-uap-report-middle-east-2025",
+      "title": "DOW-UAP-PR142, Unresolved UAP Report, Middle East, 2025",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2025",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr142-unresolved-uap-report-middle-east-2025",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr142-unresolved-uap-report-middle-east-2025.json"
+    },
+    {
+      "id": "dow-uap-pr149-unresolved-uap-report-middle-east-2023",
+      "title": "DOW-UAP-PR149, Unresolved UAP Report, Middle East, 2023",
+      "agency": "DoD",
+      "category": "military",
+      "type": "video",
+      "date_event": "2023",
+      "score": 66,
+      "url": "https://pursueufotracker.com/files/dow-uap-pr149-unresolved-uap-report-middle-east-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-pr149-unresolved-uap-report-middle-east-2023.json"
+    },
+    {
+      "id": "eop-uap-d001-nasc-inquiry-into-bahia-brazil-incident-november-13-1963",
+      "title": "EOP-UAP-D001, NASC Inquiry into Bahia, Brazil Incident, November 13, 1963",
+      "agency": "EOP",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "11/13/63",
+      "score": 50,
+      "url": "https://pursueufotracker.com/files/eop-uap-d001-nasc-inquiry-into-bahia-brazil-incident-november-13-1963",
+      "detail_api": "https://pursueufotracker.com/api/files/eop-uap-d001-nasc-inquiry-into-bahia-brazil-incident-november-13-1963.json"
+    },
+    {
       "id": "fbi-photo-a001",
       "title": "FBI Photo A001",
       "agency": "FBI",
@@ -2765,6 +3029,182 @@
       "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d023-digital-rendering-narrative-statement-2-7-western-united-states-eve.json"
     },
     {
+      "id": "fbi-uap-d024-fd-302-airborne-lights-and-triangle-2002-2023-2024",
+      "title": "FBI-UAP-D024, FD-302, “Airborne Lights and Triangle,” 2002, 2023-2024",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2002, 2023-2024",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d024-fd-302-airborne-lights-and-triangle-2002-2023-2024",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d024-fd-302-airborne-lights-and-triangle-2002-2023-2024.json"
+    },
+    {
+      "id": "fbi-uap-d025-digital-rendering-airborne-triangle-2002",
+      "title": "FBI-UAP-D025, Digital Rendering, “Airborne Triangle,” 2002",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "image",
+      "date_event": "2002",
+      "score": 64,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d025-digital-rendering-airborne-triangle-2002",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d025-digital-rendering-airborne-triangle-2002.json"
+    },
+    {
+      "id": "fbi-uap-d026-fd-302-dark-translucent-triangle-2023",
+      "title": "FBI-UAP-D026, FD-302, “Dark Translucent Triangle,” 2023",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2023",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d026-fd-302-dark-translucent-triangle-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d026-fd-302-dark-translucent-triangle-2023.json"
+    },
+    {
+      "id": "fbi-uap-d027-digital-rendering-dark-translucent-triangle-2023",
+      "title": "FBI-UAP-D027, Digital Rendering, “Dark Translucent Triangle,” 2023",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2023",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d027-digital-rendering-dark-translucent-triangle-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d027-digital-rendering-dark-translucent-triangle-2023.json"
+    },
+    {
+      "id": "fbi-uap-d028-fd-302-dark-triangle-with-lights-2011",
+      "title": "FBI-UAP-D028, FD-302, “Dark Triangle with Lights,” 2011",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2011",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d028-fd-302-dark-triangle-with-lights-2011",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d028-fd-302-dark-triangle-with-lights-2011.json"
+    },
+    {
+      "id": "fbi-uap-d029-digital-rendering-dark-triangle-with-lights-2011",
+      "title": "FBI-UAP-D029, Digital Rendering, “Dark Triangle with Lights,” 2011",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "image",
+      "date_event": "2011",
+      "score": 64,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d029-digital-rendering-dark-triangle-with-lights-2011",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d029-digital-rendering-dark-triangle-with-lights-2011.json"
+    },
+    {
+      "id": "fbi-uap-d030-fd-302-large-triangle-with-red-lights-2023",
+      "title": "FBI-UAP-D030, FD-302, “Large Triangle with Red Lights,” 2023",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2023",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d030-fd-302-large-triangle-with-red-lights-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d030-fd-302-large-triangle-with-red-lights-2023.json"
+    },
+    {
+      "id": "fbi-uap-d031-digital-rendering-large-triangle-with-red-lights-2023",
+      "title": "FBI-UAP-D031, Digital Rendering, “Large Triangle with Red Lights,” 2023",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "image",
+      "date_event": "2023",
+      "score": 64,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d031-digital-rendering-large-triangle-with-red-lights-2023",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d031-digital-rendering-large-triangle-with-red-lights-2023.json"
+    },
+    {
+      "id": "fbi-uap-d032-fd-302-slow-moving-objects-2026",
+      "title": "FBI-UAP-D032, FD-302, “Slow-moving Objects,” 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2026",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d032-fd-302-slow-moving-objects-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d032-fd-302-slow-moving-objects-2026.json"
+    },
+    {
+      "id": "fbi-uap-d033-fd-302-thermally-elevated-aerial-object-2026",
+      "title": "FBI-UAP-D033, FD-302, “Thermally Elevated Aerial Object,” 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2026",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d033-fd-302-thermally-elevated-aerial-object-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d033-fd-302-thermally-elevated-aerial-object-2026.json"
+    },
+    {
+      "id": "fbi-uap-d037-fd-302-multiple-red-lights-2026",
+      "title": "FBI-UAP-D037, FD-302, “Multiple Red Lights,” 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2026",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d037-fd-302-multiple-red-lights-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d037-fd-302-multiple-red-lights-2026.json"
+    },
+    {
+      "id": "fbi-uap-d038-digital-rendering-1-multiple-red-lights-2026",
+      "title": "FBI-UAP-D038, Digital Rendering 1, “Multiple Red Lights,” 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2026",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d038-digital-rendering-1-multiple-red-lights-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d038-digital-rendering-1-multiple-red-lights-2026.json"
+    },
+    {
+      "id": "fbi-uap-d039-digital-rendering-2-multiple-red-lights-2026",
+      "title": "FBI-UAP-D039, Digital Rendering 2, “Multiple Red Lights,” 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2026",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d039-digital-rendering-2-multiple-red-lights-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d039-digital-rendering-2-multiple-red-lights-2026.json"
+    },
+    {
+      "id": "fbi-uap-d040-fd-302-multiple-red-lights-2026",
+      "title": "FBI-UAP-D040, FD-302, “Multiple Red Lights,” 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2026",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d040-fd-302-multiple-red-lights-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d040-fd-302-multiple-red-lights-2026.json"
+    },
+    {
+      "id": "fbi-uap-d041-digital-rendering-1-multiple-red-lights-2026",
+      "title": "FBI-UAP-D041, Digital Rendering 1, “Multiple Red Lights,” 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2026",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d041-digital-rendering-1-multiple-red-lights-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d041-digital-rendering-1-multiple-red-lights-2026.json"
+    },
+    {
+      "id": "fbi-uap-d042-digital-rendering-2-multiple-red-lights-2026",
+      "title": "FBI-UAP-D042, Digital Rendering 2, “Multiple Red Lights,” 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "2026",
+      "score": 58,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d042-digital-rendering-2-multiple-red-lights-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d042-digital-rendering-2-multiple-red-lights-2026.json"
+    },
+    {
       "id": "fbi-uap-pr001-triangle-orbs-northeastern-united-states-2021",
       "title": "FBI-UAP-PR001, “Triangle Orbs,” Northeastern United States, 2021",
       "agency": "FBI",
@@ -2829,6 +3269,17 @@
       "score": 70,
       "url": "https://pursueufotracker.com/files/fbi-uap-pr006-digital-recreation-narrative-statement-3-2-western-united-states-e",
       "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-pr006-digital-recreation-narrative-statement-3-2-western-united-states-e.json"
+    },
+    {
+      "id": "fbi-uap-pr007-slow-moving-objects-2026",
+      "title": "FBI-UAP-PR007, “Slow-moving Objects,” 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "video",
+      "date_event": "2026",
+      "score": 70,
+      "url": "https://pursueufotracker.com/files/fbi-uap-pr007-slow-moving-objects-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-pr007-slow-moving-objects-2026.json"
     },
     {
       "id": "ica-uap-d001-analysis-colorado-springs-uap-incident-2022",

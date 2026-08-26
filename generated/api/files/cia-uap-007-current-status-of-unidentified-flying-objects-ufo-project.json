@@ -8,7 +8,7 @@
   "date_released": "2026-06-12",
   "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/CIA-UAP-007_Current_Status_of_Unidentified_Flying_Objects_UFO_Project.pdf",
   "pending_verification": false,
-  "local_path": "downloads/pdf/cia-uap-007-current-status-of-unidentified-flying-objects-ufo-project.pdf",
+  "local_path": "downloads/pdf/CIA-UAP-007_Current_Status_of_Unidentified_Flying_Objects_UFO_Project.pdf",
   "size_bytes": 635609,
   "sha256": "855a0d73d1e9c0fc1b8999aee6fd4186f1539c1b7f7f3d60c4ed60ea35dd35f8",
   "redacted": false,
@@ -75,7 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/CIA-UAP-007_Current_Status_of_Unidentified_Flying_Objects_UFO_Project.jpg",
   "csv_raw_title": "CIA-UAP-007, Current Status Of Unidentified Flying Objects (UFO) Project.",
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/cia-uap-007-current-status-of-unidentified-flying-objects-ufo-project.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/CIA-UAP-007_Current_Status_of_Unidentified_Flying_Objects_UFO_Project.pdf",
   "audience": {
     "tldr": "Federal record documenting a UAP encounter (December, 1953).",
     "what_we_know": [

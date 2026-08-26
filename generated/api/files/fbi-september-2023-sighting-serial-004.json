@@ -7,6 +7,7 @@
   "date_event": "9/1/23",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/serial-3_redacted.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/serial-3_redacted.pdf",
   "size_bytes": 468817,
   "sha256": "abe02815d6331854374cee46db6b1f948f83d9115d2121ac86f5836fef1b65a0",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "United States"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/serial-3_redacted.jpg",
+  "csv_raw_title": "FBI September 2023 Sighting - Serial 004",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/serial-3_redacted.pdf",
   "audience": {
     "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (9/1/23) over United States.",

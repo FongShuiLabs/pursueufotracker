@@ -7,6 +7,7 @@
   "date_event": "9/10/96",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d48-report-september-1996.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/dow-uap-d48-report-september-1996.pdf",
   "size_bytes": 22495083,
   "sha256": "0dc72877cdf9cc3a1645c3c9d282928922b00e8fd9ffd7b1daf66f46c72b2071",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": null
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d48-report-september-1996.jpg",
+  "csv_raw_title": "DOW-UAP-D048, Department of the Air Force Report, 1996",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d48-report-september-1996.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (9/10/96).",

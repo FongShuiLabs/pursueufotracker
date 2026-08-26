@@ -20,6 +20,20 @@ from .config import (
 )
 
 
+def _count_entries(path: Path, tag: str) -> int | None:
+    """Count <tag> occurrences in a generated XML artifact, or None if it isn't
+    built yet. Returned to the template so /press quotes real sitemap sizes
+    instead of hardcoded ones - the 2026-08-06 incident: /press told journalists
+    "~177 URLs" and "30 entries" when the real files held 401 and 118. That page
+    invites fact-checking, so a stale number there is the worst place to have one.
+    Only artifacts written by an EARLIER stage than build-press (build_site's two
+    sitemaps) can be counted here; api/files.json is written afterwards by
+    build-api, so its size is deliberately not quoted rather than quoted stale."""
+    if not path.exists():
+        return None
+    return path.read_text(encoding="utf-8").count(f"<{tag}>")
+
+
 def run() -> None:
     ensure_dirs()
     if not MANIFEST_PATH.exists():
@@ -56,6 +70,8 @@ def run() -> None:
         high_anomaly=high,
         site_name=SITE_NAME,
         site_url=SITE_URL,
+        sitemap_urls=_count_entries(ROOT / "sitemap.xml", "url"),
+        video_sitemap_entries=_count_entries(ROOT / "video-sitemap.xml", "url"),
     ), encoding="utf-8")
     # Also dump the verification manifest journalists can download
     verify = [{"id": f["id"], "title": f.get("title"), "sha256": f.get("sha256"),

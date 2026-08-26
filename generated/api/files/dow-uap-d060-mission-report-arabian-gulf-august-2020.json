@@ -7,6 +7,7 @@
   "date_event": "8/8/20",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d60-mission-report-persian-gulf-august-2020.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/dow-uap-d60-mission-report-persian-gulf-august-2020.pdf",
   "size_bytes": 2412310,
   "sha256": "39126406547c89dbc81112c5638612858fcfe7e38179dd89e6d725dc6cee13b1",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "Arabian Gulf"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d60-mission-report-persian-gulf-august-2020.jpg",
+  "csv_raw_title": "DOW-UAP-D060, Mission Report, Arabian Gulf, August 2020",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d60-mission-report-persian-gulf-august-2020.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (8/8/20) over Arabian Gulf.",

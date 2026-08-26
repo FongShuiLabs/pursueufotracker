@@ -8,7 +8,7 @@
   "date_released": "2026-06-12",
   "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D086_USNavy-Report-of-Flying-Discs_1948.pdf",
   "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d086-usnavy-report-of-flying-discs-1948.pdf",
+  "local_path": "downloads/pdf/DOW-UAP-D086_USNavy-Report-of-Flying-Discs_1948.pdf",
   "size_bytes": 4486402,
   "sha256": "f96457d53f3cd65aec3fc539e7138cc42a5ea962654a83c75abbd0f13d54383c",
   "redacted": false,
@@ -75,7 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/DOW-UAP-D086_USNavy-Report-of-Flying-Discs_1948.jpg",
   "csv_raw_title": "DOW-UAP-D086, USNavy-Report-of-Flying-Discs_1948",
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d086-usnavy-report-of-flying-discs-1948.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/DOW-UAP-D086_USNavy-Report-of-Flying-Discs_1948.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter.",
     "what_we_know": [

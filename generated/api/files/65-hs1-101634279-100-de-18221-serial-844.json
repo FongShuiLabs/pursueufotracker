@@ -7,6 +7,7 @@
   "date_event": "4/17/58",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-101634279_100-de-18221_serial_844.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/65_hs1-101634279_100-de-18221_serial_844.pdf",
   "size_bytes": 265783,
   "sha256": "36b00fdf99e456dff9a507db7fd90fadb995db235650966f14b77279095fcc6a",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "Detroit, MI"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/65_hs1-101634279_100-de-18221_serial_844.jpg",
+  "csv_raw_title": "65_HS1-101634279_100-DE-18221_Serial_844",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/65_hs1-101634279_100-de-18221_serial_844.pdf",
   "audience": {
     "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (4/17/58) over Detroit, MI.",

@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
+    "transcript_path": "extracted/transcripts/nasa-uap-d003a-gemini-7-audio-excerpt-1965.vtt",
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d003a-gemini-7-audio-excerpt-1965.jpg"
   },
   "geo": {

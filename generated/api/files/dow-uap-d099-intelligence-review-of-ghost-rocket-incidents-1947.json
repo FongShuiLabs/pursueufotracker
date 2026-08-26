@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d099-intelligence-review-of-ghost-rocket-incidents-1947",
+  "title": "DOW-UAP-D099, Intelligence Review of “Ghost Rocket” Incidents, 1947",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "1/9/47",
+  "date_released": "2026-08-07",
+  "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D099_Intelligence-Review-of-Ghost-Rocket-Incidents_1947.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d099-intelligence-review-of-ghost-rocket-incidents-1947.pdf",
+  "size_bytes": 1165464,
+  "sha256": "59bdcb1406b50d7dab7f13dbce940eb247a0724c744100d34f9a53ea3209e2f4",
+  "redacted": false,
+  "summary": "This document is a U.S. Department of War General Staff intelligence review assessing incidents involving unidentified “Ghost Rockets” reported over Sweden and other Scandinavian countries beginning in May 1946. The review includes an analysis of observational reports, statements from the Swedish government, and reporting from the U.S. military attaché in Stockholm. The review highlights the inconclusive nature of the contemporary evidence available to substantiate reports from civilian and military observers. \n\nThe review also documents a change in the public stance of the Swedish Defense Staff, which privately attributed the objects to Soviet V-1 missile tests launched from Peenemünde. Peenemünde is a then-occupied municipality in northeastern Germany that had been associated with the development of the V-1 and V-2 rocket program during World War II. The Swedish assessment publicly shifted from an unknown technological origin to one of a “celestial origin.” The review suggests that this shift was a deliberate effort to avoid diplomatic conflict with the Soviet Union. The report’s final assessment concludes that while most reported incidents were likely misidentified natural phenomena, the “best evidence” suggested a small number of “real incidents” involving low-flying V-1 type missiles, likely attributable to Soviet tests of captured German technology.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d099-intelligence-review-of-ghost-rocket-incidents-1947.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d099-intelligence-review-of-ghost-rocket-incidents-1947.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Sweden"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/thumbnails/DOW-UAP-D099_Intelligence-Review-of-Ghost-Rocket-Incidents_1947.jpg",
+  "csv_raw_title": "DOW-UAP-D099, Intelligence Review of “Ghost Rocket” Incidents, 1947",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d099-intelligence-review-of-ghost-rocket-incidents-1947.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (1/9/47) over Sweden.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 1/9/47.",
+      "Reported location: Sweden."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "missiles",
+      "have",
+      "reported",
+      "page",
+      "swedish",
+      "staff",
+      "ghost",
+      "rockets"
+    ]
+  }
+}

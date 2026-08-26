@@ -7,6 +7,7 @@
   "date_event": null,
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/38_143685_box7_incident_summaries_173-233.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/38_143685_box7_incident_summaries_173-233.pdf",
   "size_bytes": 161362330,
   "sha256": "b24365329f506d92acfae313f0ed3aef2060de17d72bf61b6c91bc035bf7dd95",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": null
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/38_143685_box7_incident_summaries_173-233.jpg",
+  "csv_raw_title": "38_143685_box_Incident_Summaries_173-233",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/38_143685_box7_incident_summaries_173-233.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter.",

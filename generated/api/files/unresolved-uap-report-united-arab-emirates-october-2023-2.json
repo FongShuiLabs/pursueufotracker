@@ -7,7 +7,7 @@
   "date_event": null,
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
-  "local_path": "downloads/video/unresolved-uap-report-united-arab-emirates-october-2023-2.pdf",
+  "local_path": "downloads/pdf/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
   "size_bytes": 1324277,
   "sha256": "ea1cd5296143f378db533066b524c32c1ecfbfd43d74ec6be7d832c20fa271bb",
   "redacted": true,
@@ -72,7 +72,7 @@
     "lng": null,
     "place": "United Arab Emirates"
   },
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/unresolved-uap-report-united-arab-emirates-october-2023-2.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over United Arab Emirates.",
     "what_we_know": [

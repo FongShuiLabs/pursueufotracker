@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
+    "transcript_path": "extracted/transcripts/nasa-uap-d010-mercury-atlas-9-audio-excerpt-may-15-1963.vtt",
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d010-mercury-atlas-9-audio-excerpt-may-15-1963.jpg"
   },
   "geo": {

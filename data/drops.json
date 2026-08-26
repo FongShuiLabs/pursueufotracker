@@ -138,10 +138,37 @@
       ],
       "press_coverage": [],
       "status": "live"
+    },
+    {
+      "id": "drop-05-2026-08-07",
+      "number": 5,
+      "date": "2026-08-07",
+      "title": "Drop 05 - Bahia 1963, the FBI Triangles, and the Gulf of Oman",
+      "summary": "PURSUE Release 05 added 41 files to the archive - 22 documents, 16 videos, and 3 images - bringing the total to 375. It introduced a new releasing body: the Executive Office of the President, whose single file (EOP-UAP-D001) is a National Aeronautics and Space Council inquiry into a November 13, 1963 incident at Bahia, Brazil. Two State Department diplomatic cables from the U.S. Embassy in Rio de Janeiro, dated November 14 and 20, 1963, cover the same Bahia incident. The FBI contributed 17 records, including eight FD-302 witness reports each paired with a digital rendering, covering triangular-craft sightings from 2002, 2011, and 2023. The Department of War added 19 files split between historical intelligence records - a 1947 review of the Scandinavian \"ghost rocket\" incidents, a 1947-48 Air Materiel Command report, and a 1953 film analysis - and a set of 2021 Gulf of Oman unresolved UAP reports with accompanying sensor video. The CIA added two records, a 1965 UFO report near Puerto Rico and undated briefing notes. Fourteen of the 41 files are partially redacted.",
+      "agencies": [
+        "DoD",
+        "FBI",
+        "CIA",
+        "STATE",
+        "EOP"
+      ],
+      "file_count": 41,
+      "video_count": 16,
+      "doc_count": 22,
+      "image_count": 3,
+      "redacted_count": 14,
+      "headline_files": [
+        "eop-uap-d001-nasc-inquiry-into-bahia-brazil-incident-november-13-1963",
+        "fbi-uap-pr007-slow-moving-objects-2026",
+        "dow-uap-pr117-unresolved-uap-report-gulf-of-oman-2021"
+      ],
+      "press_coverage": [],
+      "status": "verified"
     }
   ],
   "expected_next": {
     "status": "monitoring",
-    "note": "Department of War has stated additional files will be added on a rolling basis. This tracker polls war.gov/UFO daily for new content."
+    "note": "The Department of War has said files will be added on a rolling basis, but no schedule has ever been announced. The five releases so far came 14, 21, 28, and 28 days apart - Release 05 landed on August 7, 2026. We do not publish a predicted date. This tracker checks war.gov automatically, several times a day, and logs a release here whenever it lands.",
+    "as_of": "2026-08-18"
   }
 }

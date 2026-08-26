@@ -27,6 +27,15 @@
     "url": "/files/state-department-uap-cable-002-kazakhstan-january-31-1994"
   },
   {
+    "id": "dow-uap-d099-intelligence-review-of-ghost-rocket-incidents-1947",
+    "title": "DOW-UAP-D099, Intelligence Review of “Ghost Rocket” Incidents, 1947",
+    "date": "1/9/47",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d099-intelligence-review-of-ghost-rocket-incidents-1947"
+  },
+  {
     "id": "342-hs1-416511228-319-1-flying-discs-1949",
     "title": "342_HS1-416511228_319.1 Flying Discs 1949",
     "date": "1/9/50",
@@ -144,6 +153,24 @@
     "url": "/files/dow-uap-d052-email-correspondence-na-august-2024"
   },
   {
+    "id": "eop-uap-d001-nasc-inquiry-into-bahia-brazil-incident-november-13-1963",
+    "title": "EOP-UAP-D001, NASC Inquiry into Bahia, Brazil Incident, November 13, 1963",
+    "date": "11/13/63",
+    "category": "military",
+    "agency": "EOP",
+    "score": 50,
+    "url": "/files/eop-uap-d001-nasc-inquiry-into-bahia-brazil-incident-november-13-1963"
+  },
+  {
+    "id": "dos-uap-d001-diplomatic-cable-brazil-november-14-1963",
+    "title": "DOS-UAP-D001, Diplomatic Cable, Brazil, November 14, 1963",
+    "date": "11/14/63",
+    "category": "state",
+    "agency": "STATE",
+    "score": 50,
+    "url": "/files/dos-uap-d001-diplomatic-cable-brazil-november-14-1963"
+  },
+  {
     "id": "dow-uap-d055-mission-report-syria-november-2016",
     "title": "DOW-UAP-D055, Mission Report, Syria, November 2016",
     "date": "11/18/16",
@@ -160,6 +187,15 @@
     "agency": "DoD",
     "score": 53,
     "url": "/files/dow-uap-d064-mission-report-iran-november-2020"
+  },
+  {
+    "id": "dos-uap-d002-diplomatic-cable-brazil-november-20-1963",
+    "title": "DOS-UAP-D002, Diplomatic Cable, Brazil, November 20, 1963",
+    "date": "11/20/63",
+    "category": "state",
+    "agency": "STATE",
+    "score": 50,
+    "url": "/files/dos-uap-d002-diplomatic-cable-brazil-november-20-1963"
   },
   {
     "id": "state-department-uap-cable-004-ashgabat-turkmenistan-november-5-2004",
@@ -279,6 +315,15 @@
     "url": "/files/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972"
   },
   {
+    "id": "dow-uap-d100-air-materiel-command-report-on-unidentified-flying-objects-1947-194",
+    "title": "DOW-UAP-D100, Air Materiel Command Report on Unidentified Flying Objects, 1947-1948",
+    "date": "1947-1948",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d100-air-materiel-command-report-on-unidentified-flying-objects-1947-194"
+  },
+  {
     "id": "dow-uap-d097-project-sign-progress-report-1948",
     "title": "DOW-UAP-D097, Project Sign Progress Report, 1948",
     "date": "1948",
@@ -313,6 +358,15 @@
     "agency": "CIA",
     "score": 58,
     "url": "/files/cia-uap-005-german-scientist-s-article-on-flying-discs"
+  },
+  {
+    "id": "dow-uap-d098-film-analysis-of-unidentified-objects-1953",
+    "title": "DOW-UAP-D098, Film Analysis of Unidentified Objects, 1953",
+    "date": "1950, 1952",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d098-film-analysis-of-unidentified-objects-1953"
   },
   {
     "id": "cia-uap-002-scientific-advisory-panel-on-unidentified-flying-objects-report-1952",
@@ -621,6 +675,15 @@
     "url": "/files/usg-uap-d001-congressional-white-house-ufo-related-constituent-correspondence-19"
   },
   {
+    "id": "cia-uap-d022-unidentified-flying-object-reported-near-puerto-rico-1965",
+    "title": "CIA-UAP-D022, Unidentified Flying Object Reported near Puerto Rico, 1965",
+    "date": "2/1/65",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 55,
+    "url": "/files/cia-uap-d022-unidentified-flying-object-reported-near-puerto-rico-1965"
+  },
+  {
     "id": "nasa-uap-d026-apollo-14-debriefing-1971",
     "title": "NASA-UAP-D026, Apollo 14 Debriefing, 1971",
     "date": "2/18/71",
@@ -655,6 +718,42 @@
     "agency": "DoD",
     "score": 56,
     "url": "/files/dow-uap-d049-launch-summary-vandenberg-afb-2000"
+  },
+  {
+    "id": "fbi-uap-d025-digital-rendering-airborne-triangle-2002",
+    "title": "FBI-UAP-D025, Digital Rendering, “Airborne Triangle,” 2002",
+    "date": "2002",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d025-digital-rendering-airborne-triangle-2002"
+  },
+  {
+    "id": "fbi-uap-d024-fd-302-airborne-lights-and-triangle-2002-2023-2024",
+    "title": "FBI-UAP-D024, FD-302, “Airborne Lights and Triangle,” 2002, 2023-2024",
+    "date": "2002, 2023-2024",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d024-fd-302-airborne-lights-and-triangle-2002-2023-2024"
+  },
+  {
+    "id": "fbi-uap-d028-fd-302-dark-triangle-with-lights-2011",
+    "title": "FBI-UAP-D028, FD-302, “Dark Triangle with Lights,” 2011",
+    "date": "2011",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d028-fd-302-dark-triangle-with-lights-2011"
+  },
+  {
+    "id": "fbi-uap-d029-digital-rendering-dark-triangle-with-lights-2011",
+    "title": "FBI-UAP-D029, Digital Rendering, “Dark Triangle with Lights,” 2011",
+    "date": "2011",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d029-digital-rendering-dark-triangle-with-lights-2011"
   },
   {
     "id": "dow-uap-pr109-unresolved-uap-report-eastern-united-states-2015",
@@ -727,6 +826,51 @@
     "agency": "DoD",
     "score": 66,
     "url": "/files/dow-uap-pr115-unresolved-uap-report-gulf-of-america-2019"
+  },
+  {
+    "id": "dow-uap-pr123-unresolved-uap-report-pacific-ocean-2019",
+    "title": "DOW-UAP-PR123, Unresolved UAP Report, Pacific Ocean, 2019",
+    "date": "2019",
+    "category": "military",
+    "agency": "DoD",
+    "score": 68,
+    "url": "/files/dow-uap-pr123-unresolved-uap-report-pacific-ocean-2019"
+  },
+  {
+    "id": "dow-uap-pr124-unresolved-uap-report-pacific-ocean-2019",
+    "title": "DOW-UAP-PR124, Unresolved UAP Report, Pacific Ocean, 2019",
+    "date": "2019",
+    "category": "military",
+    "agency": "DoD",
+    "score": 68,
+    "url": "/files/dow-uap-pr124-unresolved-uap-report-pacific-ocean-2019"
+  },
+  {
+    "id": "dow-uap-pr125-unresolved-uap-report-pacific-ocean-2019",
+    "title": "DOW-UAP-PR125, Unresolved UAP Report, Pacific Ocean, 2019",
+    "date": "2019",
+    "category": "military",
+    "agency": "DoD",
+    "score": 68,
+    "url": "/files/dow-uap-pr125-unresolved-uap-report-pacific-ocean-2019"
+  },
+  {
+    "id": "dow-uap-pr126-unresolved-uap-report-pacific-ocean-2019",
+    "title": "DOW-UAP-PR126, Unresolved UAP Report, Pacific Ocean, 2019",
+    "date": "2019",
+    "category": "military",
+    "agency": "DoD",
+    "score": 68,
+    "url": "/files/dow-uap-pr126-unresolved-uap-report-pacific-ocean-2019"
+  },
+  {
+    "id": "dow-uap-pr127-unresolved-uap-report-pacific-ocean-2019",
+    "title": "DOW-UAP-PR127, Unresolved UAP Report, Pacific Ocean, 2019",
+    "date": "2019",
+    "category": "military",
+    "agency": "DoD",
+    "score": 68,
+    "url": "/files/dow-uap-pr127-unresolved-uap-report-pacific-ocean-2019"
   },
   {
     "id": "dow-uap-d089-range-fouler-debrief-eastern-united-states-2020",
@@ -1215,6 +1359,60 @@
     "url": "/files/dow-uap-pr100-unresolved-uap-report-yellow-sea-2023"
   },
   {
+    "id": "dow-uap-pr136-unresolved-uap-report-middle-east-2023",
+    "title": "DOW-UAP-PR136, Unresolved UAP Report, Middle East, 2023",
+    "date": "2023",
+    "category": "military",
+    "agency": "DoD",
+    "score": 66,
+    "url": "/files/dow-uap-pr136-unresolved-uap-report-middle-east-2023"
+  },
+  {
+    "id": "dow-uap-pr149-unresolved-uap-report-middle-east-2023",
+    "title": "DOW-UAP-PR149, Unresolved UAP Report, Middle East, 2023",
+    "date": "2023",
+    "category": "military",
+    "agency": "DoD",
+    "score": 66,
+    "url": "/files/dow-uap-pr149-unresolved-uap-report-middle-east-2023"
+  },
+  {
+    "id": "fbi-uap-d026-fd-302-dark-translucent-triangle-2023",
+    "title": "FBI-UAP-D026, FD-302, “Dark Translucent Triangle,” 2023",
+    "date": "2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d026-fd-302-dark-translucent-triangle-2023"
+  },
+  {
+    "id": "fbi-uap-d027-digital-rendering-dark-translucent-triangle-2023",
+    "title": "FBI-UAP-D027, Digital Rendering, “Dark Translucent Triangle,” 2023",
+    "date": "2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 58,
+    "url": "/files/fbi-uap-d027-digital-rendering-dark-translucent-triangle-2023"
+  },
+  {
+    "id": "fbi-uap-d030-fd-302-large-triangle-with-red-lights-2023",
+    "title": "FBI-UAP-D030, FD-302, “Large Triangle with Red Lights,” 2023",
+    "date": "2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d030-fd-302-large-triangle-with-red-lights-2023"
+  },
+  {
+    "id": "fbi-uap-d031-digital-rendering-large-triangle-with-red-lights-2023",
+    "title": "FBI-UAP-D031, Digital Rendering, “Large Triangle with Red Lights,” 2023",
+    "date": "2023",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 64,
+    "url": "/files/fbi-uap-d031-digital-rendering-large-triangle-with-red-lights-2023"
+  },
+  {
     "id": "western-us-event",
     "title": "Western US Event",
     "date": "2023",
@@ -1287,6 +1485,24 @@
     "url": "/files/dow-uap-pr105-unresolved-uap-report-east-china-sea-2025"
   },
   {
+    "id": "dow-uap-pr134-unresolved-uap-report-middle-east-2025",
+    "title": "DOW-UAP-PR134, Unresolved UAP Report, Middle East, 2025",
+    "date": "2025",
+    "category": "military",
+    "agency": "DoD",
+    "score": 66,
+    "url": "/files/dow-uap-pr134-unresolved-uap-report-middle-east-2025"
+  },
+  {
+    "id": "dow-uap-pr142-unresolved-uap-report-middle-east-2025",
+    "title": "DOW-UAP-PR142, Unresolved UAP Report, Middle East, 2025",
+    "date": "2025",
+    "category": "military",
+    "agency": "DoD",
+    "score": 66,
+    "url": "/files/dow-uap-pr142-unresolved-uap-report-middle-east-2025"
+  },
+  {
     "id": "odni-uap-d001-usper-narrative-senior-usic-official",
     "title": "ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
     "date": "2025",
@@ -1312,6 +1528,87 @@
     "agency": "FBI",
     "score": 55,
     "url": "/files/fbi-uap-d010-fd-302-71-northeastern-orb-sighting-2026"
+  },
+  {
+    "id": "fbi-uap-d032-fd-302-slow-moving-objects-2026",
+    "title": "FBI-UAP-D032, FD-302, “Slow-moving Objects,” 2026",
+    "date": "2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d032-fd-302-slow-moving-objects-2026"
+  },
+  {
+    "id": "fbi-uap-d033-fd-302-thermally-elevated-aerial-object-2026",
+    "title": "FBI-UAP-D033, FD-302, “Thermally Elevated Aerial Object,” 2026",
+    "date": "2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d033-fd-302-thermally-elevated-aerial-object-2026"
+  },
+  {
+    "id": "fbi-uap-d037-fd-302-multiple-red-lights-2026",
+    "title": "FBI-UAP-D037, FD-302, “Multiple Red Lights,” 2026",
+    "date": "2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d037-fd-302-multiple-red-lights-2026"
+  },
+  {
+    "id": "fbi-uap-d038-digital-rendering-1-multiple-red-lights-2026",
+    "title": "FBI-UAP-D038, Digital Rendering 1, “Multiple Red Lights,” 2026",
+    "date": "2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 58,
+    "url": "/files/fbi-uap-d038-digital-rendering-1-multiple-red-lights-2026"
+  },
+  {
+    "id": "fbi-uap-d039-digital-rendering-2-multiple-red-lights-2026",
+    "title": "FBI-UAP-D039, Digital Rendering 2, “Multiple Red Lights,” 2026",
+    "date": "2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 58,
+    "url": "/files/fbi-uap-d039-digital-rendering-2-multiple-red-lights-2026"
+  },
+  {
+    "id": "fbi-uap-d040-fd-302-multiple-red-lights-2026",
+    "title": "FBI-UAP-D040, FD-302, “Multiple Red Lights,” 2026",
+    "date": "2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d040-fd-302-multiple-red-lights-2026"
+  },
+  {
+    "id": "fbi-uap-d041-digital-rendering-1-multiple-red-lights-2026",
+    "title": "FBI-UAP-D041, Digital Rendering 1, “Multiple Red Lights,” 2026",
+    "date": "2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 58,
+    "url": "/files/fbi-uap-d041-digital-rendering-1-multiple-red-lights-2026"
+  },
+  {
+    "id": "fbi-uap-d042-digital-rendering-2-multiple-red-lights-2026",
+    "title": "FBI-UAP-D042, Digital Rendering 2, “Multiple Red Lights,” 2026",
+    "date": "2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 58,
+    "url": "/files/fbi-uap-d042-digital-rendering-2-multiple-red-lights-2026"
+  },
+  {
+    "id": "fbi-uap-pr007-slow-moving-objects-2026",
+    "title": "FBI-UAP-PR007, “Slow-moving Objects,” 2026",
+    "date": "2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 70,
+    "url": "/files/fbi-uap-pr007-slow-moving-objects-2026"
   },
   {
     "id": "255-413270-ufo-s-and-defense-what-should-we-prepare-for",
@@ -2322,6 +2619,69 @@
     "url": "/files/dow-uap-d057-range-fouler-reporting-form-gulf-of-aden-september-2020"
   },
   {
+    "id": "dow-uap-d101-intelligence-information-report-unresolved-uap-report-gulf-of-oman-",
+    "title": "DOW-UAP-D101, Intelligence Information Report, Unresolved UAP Report, Gulf of Oman, 2021",
+    "date": "9/8/21",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d101-intelligence-information-report-unresolved-uap-report-gulf-of-oman-"
+  },
+  {
+    "id": "dow-uap-pr117-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR117, Unresolved UAP Report, Gulf of Oman, 2021",
+    "date": "9/8/21",
+    "category": "military",
+    "agency": "DoD",
+    "score": 68,
+    "url": "/files/dow-uap-pr117-unresolved-uap-report-gulf-of-oman-2021"
+  },
+  {
+    "id": "dow-uap-pr118-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR118, Unresolved UAP Report, Gulf of Oman, 2021",
+    "date": "9/8/21",
+    "category": "military",
+    "agency": "DoD",
+    "score": 68,
+    "url": "/files/dow-uap-pr118-unresolved-uap-report-gulf-of-oman-2021"
+  },
+  {
+    "id": "dow-uap-pr119-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR119, Unresolved UAP Report, Gulf of Oman, 2021",
+    "date": "9/8/21",
+    "category": "military",
+    "agency": "DoD",
+    "score": 68,
+    "url": "/files/dow-uap-pr119-unresolved-uap-report-gulf-of-oman-2021"
+  },
+  {
+    "id": "dow-uap-pr120-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR120, Unresolved UAP Report, Gulf of Oman, 2021",
+    "date": "9/8/21",
+    "category": "military",
+    "agency": "DoD",
+    "score": 68,
+    "url": "/files/dow-uap-pr120-unresolved-uap-report-gulf-of-oman-2021"
+  },
+  {
+    "id": "dow-uap-pr121-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR121, Unresolved UAP Report, Gulf of Oman, 2021",
+    "date": "9/8/21",
+    "category": "military",
+    "agency": "DoD",
+    "score": 68,
+    "url": "/files/dow-uap-pr121-unresolved-uap-report-gulf-of-oman-2021"
+  },
+  {
+    "id": "dow-uap-pr122-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR122, Unresolved UAP Report, Gulf of Oman, 2021",
+    "date": "9/8/21",
+    "category": "military",
+    "agency": "DoD",
+    "score": 68,
+    "url": "/files/dow-uap-pr122-unresolved-uap-report-gulf-of-oman-2021"
+  },
+  {
     "id": "fbi-uap-d012-newark-field-office-1952-1967",
     "title": "FBI-UAP-D012, Newark Field Office, 1952-1967",
     "date": "August 1952-1967",
@@ -3004,5 +3364,14 @@
     "agency": "FBI",
     "score": 70,
     "url": "/files/fbi-uap-pr003-orbs-over-the-pond-2024"
+  },
+  {
+    "id": "cia-uap-d023-briefing-notes-for-mr-walter-elder",
+    "title": "CIA-UAP-D023, Briefing Notes for Mr. Walter Elder",
+    "date": "Undated",
+    "category": "intel",
+    "agency": "CIA",
+    "score": 58,
+    "url": "/files/cia-uap-d023-briefing-notes-for-mr-walter-elder"
   }
 ]

@@ -1,0 +1,94 @@
+{
+  "id": "fbi-uap-d029-digital-rendering-dark-triangle-with-lights-2011",
+  "title": "FBI-UAP-D029, Digital Rendering, “Dark Triangle with Lights,” 2011",
+  "category": "fbi",
+  "agency": "FBI",
+  "type": "image",
+  "date_event": "2011",
+  "date_released": "2026-08-07",
+  "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D029_Digital-Rendering_Dark-Triangle-with-Lights_2011.jpg",
+  "pending_verification": false,
+  "local_path": "downloads/image/fbi-uap-d029-digital-rendering-dark-triangle-with-lights-2011.jpg",
+  "size_bytes": 123327,
+  "sha256": "465e4e3ff6d3e49a2b6891326e5d537f4ce7d3c406b8c8cf3271d9bde04e36db",
+  "redacted": false,
+  "summary": "This image is an artistic interpretation of a reported incident potentially involving unidentified anomalous phenomena (UAP) in June or July of 2011. This image is based upon a first-hand description provided by two former U.S. military service members, as described in FBI-UAP-D028. The Federal Bureau of Investigation prepared this digital rendering in 2026 as a visual aid in support of the PURSUE initiative.",
+  "score": {
+    "value": 64,
+    "components": {
+      "sensor_quality": "photographic",
+      "witness_credibility": "federal_agent",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "photographic",
+        "value": 55,
+        "weight": 0.25,
+        "contribution": 13.75
+      },
+      "witness_credibility": {
+        "choice": "federal_agent",
+        "value": 90,
+        "weight": 0.2,
+        "contribution": 18.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/fbi-uap-d029-digital-rendering-dark-triangle-with-lights-2011.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/thumbnails/FBI-UAP-D029_Digital-Rendering_Dark-Triangle-with-Lights_2011.jpg",
+  "csv_raw_title": "FBI-UAP-D029, Digital Rendering, “Dark Triangle with Lights,” 2011",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/image/fbi-uap-d029-digital-rendering-dark-triangle-with-lights-2011.jpg",
+  "audience": {
+    "tldr": "FBI investigative document from a Bureau case file depicting a UAP encounter (2011).",
+    "what_we_know": [
+      "Document originates from FBI.",
+      "Encounter dated 2011.",
+      "Photographic capture preserved in the original release."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 64/100. Top drivers: witness credibility (federal_agent), sensor quality (photographic)."
+  }
+}

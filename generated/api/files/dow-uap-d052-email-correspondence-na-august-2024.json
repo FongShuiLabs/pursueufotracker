@@ -7,6 +7,7 @@
   "date_event": "10/31/24",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d52-email-correspondance-na-august-2024.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/dow-uap-d52-email-correspondance-na-august-2024.pdf",
   "size_bytes": 66874,
   "sha256": "90570293e61c9b228e557b2e83f6e32821f5cf13879b0c5b83c1b8b58153f510",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": null
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d52-email-correspondance-na-august-2024.jpg",
+  "csv_raw_title": "DOW-UAP-D052, Email Correspondence, NA, August 2024",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d52-email-correspondance-na-august-2024.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (10/31/24).",

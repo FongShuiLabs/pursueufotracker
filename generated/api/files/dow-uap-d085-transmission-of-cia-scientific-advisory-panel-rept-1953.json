@@ -8,7 +8,7 @@
   "date_released": "2026-06-12",
   "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf",
   "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d085-transmission-of-cia-scientific-advisory-panel-rept-1953.pdf",
+  "local_path": "downloads/pdf/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf",
   "size_bytes": 5224870,
   "sha256": "43f3553b900cf8cceab5575edc33e14e6b6e980764ae78f979be664829efb089",
   "redacted": false,
@@ -75,7 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.jpg",
   "csv_raw_title": "DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953",
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d085-transmission-of-cia-scientific-advisory-panel-rept-1953.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (1953).",
     "what_we_know": [

@@ -371,6 +371,20 @@
     "source_url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/CIA-UAP-D021_Analysis-of-Unconventional-Aircraft-Sightings_1955.pdf"
   },
   {
+    "id": "cia-uap-d022-unidentified-flying-object-reported-near-puerto-rico-1965",
+    "title": "CIA-UAP-D022, Unidentified Flying Object Reported near Puerto Rico, 1965",
+    "sha256": "358b0d2e45ff0320f4e4ad689f0c918362d6c5d36be765d386018d279d835b01",
+    "size_bytes": 639051,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/CIA-UAP-D022_Unidentified-Flying-Object-Reported-near-Puerto-Rico_1965.pdf"
+  },
+  {
+    "id": "cia-uap-d023-briefing-notes-for-mr-walter-elder",
+    "title": "CIA-UAP-D023, Briefing Notes for Mr. Walter Elder",
+    "sha256": "aba51f51191bbcd37dc1f591171b6edc78c9bfb9632cfed8fae6a8bf1d61ca40",
+    "size_bytes": 205058,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/CIA-UAP-D023_Briefing-Notes-for-Mr-Walter-Elder.pdf"
+  },
+  {
     "id": "doe-uap-d001-enhanced-pantex-imagery",
     "title": "DOE-UAP-D001, Enhanced PANTEX Imagery",
     "sha256": "4c007724fa7325d211123c153e1ed3eb989635302a6d2cd8757319d7f69358de",
@@ -404,6 +418,20 @@
     "sha256": "249cd9f5b85c4a92dc819d65e1dad180744479d1c8a68ebbc202ade66facbcbb",
     "size_bytes": 1244028,
     "source_url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOE-UAP-D005_Pantex-Unidentified-Object-Incident-Report_2015.pdf"
+  },
+  {
+    "id": "dos-uap-d001-diplomatic-cable-brazil-november-14-1963",
+    "title": "DOS-UAP-D001, Diplomatic Cable, Brazil, November 14, 1963",
+    "sha256": "1259083d422e420b63cfe864fa75abd6c883193d12d605ac1880d2093d8d7335",
+    "size_bytes": 848958,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D001_Diplomatic-Cable_Brazil_November-14-1963.pdf"
+  },
+  {
+    "id": "dos-uap-d002-diplomatic-cable-brazil-november-20-1963",
+    "title": "DOS-UAP-D002, Diplomatic Cable, Brazil, November 20, 1963",
+    "sha256": "3c9e5cf5f15c62e89826b482af3820ebe9914f9d3442f0d652f2ff1019c8f4c4",
+    "size_bytes": 1010496,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOS-UAP-D002_Diplomatic-Cable_Brazil_November-20-1963.pdf"
   },
   {
     "id": "dow-uap-d003-mission-report-arabian-gulf-2020",
@@ -845,6 +873,34 @@
     "sha256": "4e191615a53faf81a49721ec594aee5f8c909026348a830025329d847a857e60",
     "size_bytes": 10240953,
     "source_url": "https://www.war.gov/medialink/ufo/071026/release_04/documents/DOW-UAP-D097_Project-Sign-Progress-Report_1948.pdf"
+  },
+  {
+    "id": "dow-uap-d098-film-analysis-of-unidentified-objects-1953",
+    "title": "DOW-UAP-D098, Film Analysis of Unidentified Objects, 1953",
+    "sha256": "a8f271bb7bae396631eb3e35070fab285eb0d3258041b042b1a5a6b3e0d9c4f1",
+    "size_bytes": 65760070,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D098_Film-Analysis-of-Unidentified-Objects_1953.pdf"
+  },
+  {
+    "id": "dow-uap-d099-intelligence-review-of-ghost-rocket-incidents-1947",
+    "title": "DOW-UAP-D099, Intelligence Review of “Ghost Rocket” Incidents, 1947",
+    "sha256": "59bdcb1406b50d7dab7f13dbce940eb247a0724c744100d34f9a53ea3209e2f4",
+    "size_bytes": 1165464,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D099_Intelligence-Review-of-Ghost-Rocket-Incidents_1947.pdf"
+  },
+  {
+    "id": "dow-uap-d100-air-materiel-command-report-on-unidentified-flying-objects-1947-194",
+    "title": "DOW-UAP-D100, Air Materiel Command Report on Unidentified Flying Objects, 1947-1948",
+    "sha256": "4052303ee0d521c15656b65fed3075734c83332ec5db319c744f0dbe53b8ec90",
+    "size_bytes": 40873795,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D100_Air-Materiel-Command-Report-on-UFOs_1947-1948.pdf"
+  },
+  {
+    "id": "dow-uap-d101-intelligence-information-report-unresolved-uap-report-gulf-of-oman-",
+    "title": "DOW-UAP-D101, Intelligence Information Report, Unresolved UAP Report, Gulf of Oman, 2021",
+    "sha256": "926f4cf9a852d77bca34e8e7370c4a9da386610a6ba799e060de71c2339b0e92",
+    "size_bytes": 6207177,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.pdf"
   },
   {
     "id": "dow-uap-pr024-unresolved-uap-report-middle-east-2023",
@@ -1337,6 +1393,118 @@
     "source_url": null
   },
   {
+    "id": "dow-uap-pr117-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR117, Unresolved UAP Report, Gulf of Oman, 2021",
+    "sha256": "dc48093f51e0853c88fee28f9d3cf2a4377918748800439f4c7dc2151985ce95",
+    "size_bytes": 20921441,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr118-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR118, Unresolved UAP Report, Gulf of Oman, 2021",
+    "sha256": "742e1b5087e671eed4aa3b8c7baba38d4543bd6669fe6f68cf4b532d064b9f96",
+    "size_bytes": 24285664,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr119-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR119, Unresolved UAP Report, Gulf of Oman, 2021",
+    "sha256": "b70dd7b8870db22d521fda1eceddf0833d6c9ed009f878352fdc0061deb0ac06",
+    "size_bytes": 2430115,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr120-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR120, Unresolved UAP Report, Gulf of Oman, 2021",
+    "sha256": "8690b54cb88995ba6e9b2ae5c8f8e8bf7aa8989604d684a4b729bb35f86b33c7",
+    "size_bytes": 10651330,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr121-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR121, Unresolved UAP Report, Gulf of Oman, 2021",
+    "sha256": "be9f6bf3333d9970adfc10f74c183bd0afefa8c09e8de4f727e5c8126db0cf9b",
+    "size_bytes": 23948152,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr122-unresolved-uap-report-gulf-of-oman-2021",
+    "title": "DOW-UAP-PR122, Unresolved UAP Report, Gulf of Oman, 2021",
+    "sha256": "c1cf73db92aef319e97887579705108e710250376e14ae3a392e0dd4c78b4eeb",
+    "size_bytes": 16655319,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr123-unresolved-uap-report-pacific-ocean-2019",
+    "title": "DOW-UAP-PR123, Unresolved UAP Report, Pacific Ocean, 2019",
+    "sha256": "89365a5f6560098a742d685f66269a44fb99cd5c22ac33733bd3da350175922c",
+    "size_bytes": 68498386,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr124-unresolved-uap-report-pacific-ocean-2019",
+    "title": "DOW-UAP-PR124, Unresolved UAP Report, Pacific Ocean, 2019",
+    "sha256": "d176220dbf5da3b6da2621b250a02e27e020795d56917095916a492572636eac",
+    "size_bytes": 64220001,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr125-unresolved-uap-report-pacific-ocean-2019",
+    "title": "DOW-UAP-PR125, Unresolved UAP Report, Pacific Ocean, 2019",
+    "sha256": "7cf3d44b94ddb8c2cb0ac292445a3bf581cdf5db4a1be163db608dbca303fb3d",
+    "size_bytes": 33432958,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr126-unresolved-uap-report-pacific-ocean-2019",
+    "title": "DOW-UAP-PR126, Unresolved UAP Report, Pacific Ocean, 2019",
+    "sha256": "e7c64c691b14295bea1ee1d32ec453ac89588500a3cec984b03dd9bf12ad7b37",
+    "size_bytes": 158869321,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr127-unresolved-uap-report-pacific-ocean-2019",
+    "title": "DOW-UAP-PR127, Unresolved UAP Report, Pacific Ocean, 2019",
+    "sha256": "4b9a3509231a24f839db951c6a2c9df5a4a65c51ae8a41c615367378086ba6e1",
+    "size_bytes": 165867995,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr134-unresolved-uap-report-middle-east-2025",
+    "title": "DOW-UAP-PR134, Unresolved UAP Report, Middle East, 2025",
+    "sha256": "9f21dad9ca8fdc72d4602a33ce1d0801538dc82696c350be95b26b90de79adf1",
+    "size_bytes": 86059666,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr136-unresolved-uap-report-middle-east-2023",
+    "title": "DOW-UAP-PR136, Unresolved UAP Report, Middle East, 2023",
+    "sha256": "80026326d553379c790f7226ab681c21111f2278cc8d38b72846c4ac6f28e3bd",
+    "size_bytes": 23254651,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr142-unresolved-uap-report-middle-east-2025",
+    "title": "DOW-UAP-PR142, Unresolved UAP Report, Middle East, 2025",
+    "sha256": "336e61c9e43e8bdae56282577011e3c0028c2ac776a3c014a9255a0c56f5eca5",
+    "size_bytes": 11181518,
+    "source_url": null
+  },
+  {
+    "id": "dow-uap-pr149-unresolved-uap-report-middle-east-2023",
+    "title": "DOW-UAP-PR149, Unresolved UAP Report, Middle East, 2023",
+    "sha256": "9eb2ef8fc5951c475d340931cc354977451a8b2d13028610f17947f78a8b24ad",
+    "size_bytes": 55174849,
+    "source_url": null
+  },
+  {
+    "id": "eop-uap-d001-nasc-inquiry-into-bahia-brazil-incident-november-13-1963",
+    "title": "EOP-UAP-D001, NASC Inquiry into Bahia, Brazil Incident, November 13, 1963",
+    "sha256": "63654bcd90c0515f30e31ed511a12a05f170ff4470e3d8a6f40fca12012a1adb",
+    "size_bytes": 126624,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/EOP-UAP-D001_NASC-Inquiry-into-Bahia-Brazil-Incident_November-13-1963.pdf"
+  },
+  {
     "id": "fbi-photo-a001",
     "title": "FBI Photo A001",
     "sha256": "6e05171abaf2e9652035f276b683dab78bf8d0964d66bbed5022be7425bacee3",
@@ -1757,6 +1925,118 @@
     "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/FBI-UAP-D023_Digital-Rendering_Incident-2-7_Western-US-Event_2023.jpg"
   },
   {
+    "id": "fbi-uap-d024-fd-302-airborne-lights-and-triangle-2002-2023-2024",
+    "title": "FBI-UAP-D024, FD-302, “Airborne Lights and Triangle,” 2002, 2023-2024",
+    "sha256": "949c9dc80fb247c6ea12d6750cebe629f00c37930f9572a9d0ef43365d5d4489",
+    "size_bytes": 1608243,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D024_FD-302_Airborne-Lights-and-Triangle_2002_2023-2024.pdf"
+  },
+  {
+    "id": "fbi-uap-d025-digital-rendering-airborne-triangle-2002",
+    "title": "FBI-UAP-D025, Digital Rendering, “Airborne Triangle,” 2002",
+    "sha256": "52c2fd0e4306488e6d7e1c682d0c5ee97ba1b9294774bea8617fc8fc7113e6b6",
+    "size_bytes": 2168856,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D025_Digital-Rendering_Airborne-Triangle_2002.jpg"
+  },
+  {
+    "id": "fbi-uap-d026-fd-302-dark-translucent-triangle-2023",
+    "title": "FBI-UAP-D026, FD-302, “Dark Translucent Triangle,” 2023",
+    "sha256": "a6eb053699dcf7c2fdfe2d37bd4be8ef980c58e3f5595c7bee41ab1f7450bfe0",
+    "size_bytes": 522591,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D026_FD-302_Dark-Translucent-Triangle_2023.pdf"
+  },
+  {
+    "id": "fbi-uap-d027-digital-rendering-dark-translucent-triangle-2023",
+    "title": "FBI-UAP-D027, Digital Rendering, “Dark Translucent Triangle,” 2023",
+    "sha256": "207f31090a4f187a365c552d45b1e0f3eb2aa47541dd9a8b0d1f7b5769c5d0ab",
+    "size_bytes": 774734,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D027_Digital-Rendering_Dark-Translucent-Triangle_2023.pdf"
+  },
+  {
+    "id": "fbi-uap-d028-fd-302-dark-triangle-with-lights-2011",
+    "title": "FBI-UAP-D028, FD-302, “Dark Triangle with Lights,” 2011",
+    "sha256": "6a1c229de51ed47cff5de843b0cc4592e1ff691f1ed20254ada15d267e0942bb",
+    "size_bytes": 1330526,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D028_FD-302_Dark-Triangle-with-Lights_2011.pdf"
+  },
+  {
+    "id": "fbi-uap-d029-digital-rendering-dark-triangle-with-lights-2011",
+    "title": "FBI-UAP-D029, Digital Rendering, “Dark Triangle with Lights,” 2011",
+    "sha256": "465e4e3ff6d3e49a2b6891326e5d537f4ce7d3c406b8c8cf3271d9bde04e36db",
+    "size_bytes": 123327,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D029_Digital-Rendering_Dark-Triangle-with-Lights_2011.jpg"
+  },
+  {
+    "id": "fbi-uap-d030-fd-302-large-triangle-with-red-lights-2023",
+    "title": "FBI-UAP-D030, FD-302, “Large Triangle with Red Lights,” 2023",
+    "sha256": "1ac0068c5a4f77c1bb2029971fc5e768d84ea921e3ac3122701746e548b12f06",
+    "size_bytes": 456735,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D030_FD-302_Large-Triangle-with-Red-Lights_2023.pdf"
+  },
+  {
+    "id": "fbi-uap-d031-digital-rendering-large-triangle-with-red-lights-2023",
+    "title": "FBI-UAP-D031, Digital Rendering, “Large Triangle with Red Lights,” 2023",
+    "sha256": "33f6602ddc5c73a5b2e7ee1898ef5b51dc895e31ab27e0d2f15eab17c10461bc",
+    "size_bytes": 649050,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D031_Digital-Rendering_Large-Triangle-with-Red-Lights_2023.jpg"
+  },
+  {
+    "id": "fbi-uap-d032-fd-302-slow-moving-objects-2026",
+    "title": "FBI-UAP-D032, FD-302, “Slow-moving Objects,” 2026",
+    "sha256": "04684f8e8e0d9292e273b8e3152be6a22e195ce25f9c4a92b21c25b1813bd1e1",
+    "size_bytes": 1270489,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D032_FD-302_Slow-moving-Objects_2026.pdf"
+  },
+  {
+    "id": "fbi-uap-d033-fd-302-thermally-elevated-aerial-object-2026",
+    "title": "FBI-UAP-D033, FD-302, “Thermally Elevated Aerial Object,” 2026",
+    "sha256": "bea21a52d0bfcf82ca2845628f39aeaaeccb447a924babfd448ab89a57f5eb02",
+    "size_bytes": 255185,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D033_FD-302_Thermally-Elevated-Aerial-Object_2026.pdf"
+  },
+  {
+    "id": "fbi-uap-d037-fd-302-multiple-red-lights-2026",
+    "title": "FBI-UAP-D037, FD-302, “Multiple Red Lights,” 2026",
+    "sha256": "df8741ec7bee9778646142e3c2c55c050e3c58d067fa1049683ccd1126f0110a",
+    "size_bytes": 583708,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D037_FD-302_Multiple-Red-Lights_2026.pdf"
+  },
+  {
+    "id": "fbi-uap-d038-digital-rendering-1-multiple-red-lights-2026",
+    "title": "FBI-UAP-D038, Digital Rendering 1, “Multiple Red Lights,” 2026",
+    "sha256": "53e69e5d6dbe46fc435574c3f0246fcdfbbd537928a8a6c46c3f35752f68133e",
+    "size_bytes": 119935,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D038_Digital-Rendering-1_Multiple-Red-Lights_2026.pdf"
+  },
+  {
+    "id": "fbi-uap-d039-digital-rendering-2-multiple-red-lights-2026",
+    "title": "FBI-UAP-D039, Digital Rendering 2, “Multiple Red Lights,” 2026",
+    "sha256": "491d158803934b9c4e5de46ee51388cd9eff8a8aba2cf17dfcc9d957a8952ebd",
+    "size_bytes": 631040,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D039_Digital-Rendering-2_Multiple-Red-Lights_2026.pdf"
+  },
+  {
+    "id": "fbi-uap-d040-fd-302-multiple-red-lights-2026",
+    "title": "FBI-UAP-D040, FD-302, “Multiple Red Lights,” 2026",
+    "sha256": "978ac7226c7ec06f4561c3986732183e3bf2aa4f07c03430daa9111a20eec77e",
+    "size_bytes": 1870080,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D040_FD-302_Multiple-Red-Lights_2026.pdf"
+  },
+  {
+    "id": "fbi-uap-d041-digital-rendering-1-multiple-red-lights-2026",
+    "title": "FBI-UAP-D041, Digital Rendering 1, “Multiple Red Lights,” 2026",
+    "sha256": "7416fff9cc1cb0e19e5d1f5b6efc2b031ea986403a049e3d6fa38d7965fa79e9",
+    "size_bytes": 652906,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D041_Digital-Rendering-1_Multiple-Red-Lights_2026.pdf"
+  },
+  {
+    "id": "fbi-uap-d042-digital-rendering-2-multiple-red-lights-2026",
+    "title": "FBI-UAP-D042, Digital Rendering 2, “Multiple Red Lights,” 2026",
+    "sha256": "8ccb25fd8f47cdec75cc384bcf7db137c842931428472664fecfd04db69f6a2f",
+    "size_bytes": 134379,
+    "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D042_Digital-Rendering-2_Multiple-Red-Lights_2026.pdf"
+  },
+  {
     "id": "fbi-uap-pr001-triangle-orbs-northeastern-united-states-2021",
     "title": "FBI-UAP-PR001, “Triangle Orbs,” Northeastern United States, 2021",
     "sha256": "de1c5acc0b6a3c93eb5625ee1239e169461240d9e3b10306391eb740485c54ef",
@@ -1796,6 +2076,13 @@
     "title": "FBI-UAP-PR006, Digital Recreation, Narrative Statement 3-2, Western United States Event, 2023",
     "sha256": "d377b6c92f8d4d825d75f3efcb951392102c14dd970b8286d094f0e43e6ba517",
     "size_bytes": 4027867,
+    "source_url": null
+  },
+  {
+    "id": "fbi-uap-pr007-slow-moving-objects-2026",
+    "title": "FBI-UAP-PR007, “Slow-moving Objects,” 2026",
+    "sha256": "cbfa0cbcb2976374f21ea1a2f0dc29ecb622935dd5eaac853e440b4341e32a73",
+    "size_bytes": 2318008,
     "source_url": null
   },
   {

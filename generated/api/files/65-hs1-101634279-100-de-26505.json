@@ -7,6 +7,7 @@
   "date_event": "11/7/57",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/65_hs1-101634279_100-de-26505.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/65_hs1-101634279_100-de-26505.pdf",
   "size_bytes": 5326217,
   "sha256": "3fc7a74876b36b328bca96953fd73049b063cc0b50ad412c7a32900c83539d89",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "Germany"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/65_hs1-101634279_100-de-26505.jpg",
+  "csv_raw_title": "65_HS1-101634279_100-DE-26505",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/65_hs1-101634279_100-de-26505.pdf",
   "audience": {
     "tldr": "FBI investigative document from a Bureau case file documenting a UAP encounter (11/7/57) over Germany.",

@@ -8,7 +8,7 @@
   "date_released": "2026-06-12",
   "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/NASA-UAP-D017_Preliminary-Gemini-4-Crew-Debriefing_Part2_1965.pdf",
   "pending_verification": false,
-  "local_path": "downloads/pdf/nasa-uap-d017-preliminary-gemini-4-crew-debriefing-part-ii-1965.pdf",
+  "local_path": "downloads/pdf/NASA-UAP-D017_Preliminary-Gemini-4-Crew-Debriefing_Part2_1965.pdf",
   "size_bytes": 32535399,
   "sha256": "2be20f887d364078d11c7340380c21800348ac84beb5722c5932ef0be3e57c57",
   "redacted": false,
@@ -75,7 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/NASA-UAP-D017_Preliminary-Gemini-4-Crew-Debriefing_Part2_1965.jpg",
   "csv_raw_title": "NASA-UAP-D017, Preliminary Gemini 4 Crew Debriefing, Part II, 1965",
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/nasa-uap-d017-preliminary-gemini-4-crew-debriefing-part-ii-1965.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/NASA-UAP-D017_Preliminary-Gemini-4-Crew-Debriefing_Part2_1965.pdf",
   "audience": {
     "tldr": "NASA mission record documenting a UAP encounter (6/9/65) over North Atlantic Ocean.",
     "what_we_know": [

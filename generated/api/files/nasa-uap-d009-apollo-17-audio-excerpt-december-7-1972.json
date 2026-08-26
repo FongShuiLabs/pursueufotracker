@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
+    "transcript_path": "extracted/transcripts/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972.vtt",
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d009-apollo-17-audio-excerpt-december-7-1972.jpg"
   },
   "geo": {

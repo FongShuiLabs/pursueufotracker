@@ -7,7 +7,7 @@
   "date_event": null,
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d14-mission-report-iraq-may-2022.pdf",
-  "local_path": "downloads/video/unresolved-uap-report-iraq-may-2022-2.pdf",
+  "local_path": "downloads/pdf/dow-uap-d14-mission-report-iraq-may-2022.pdf",
   "size_bytes": 7463660,
   "sha256": "1822564fbae08f152ad4541c8d067a6ec3b6014c4b4eb8209604e1facb5e1bb3",
   "redacted": true,
@@ -72,7 +72,7 @@
     "lng": null,
     "place": "Iraq"
   },
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/unresolved-uap-report-iraq-may-2022-2.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d14-mission-report-iraq-may-2022.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Iraq.",
     "what_we_know": [

@@ -7,6 +7,7 @@
   "date_event": "6/15/48",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/18_6369445_general_1948_vol_1.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/18_6369445_general_1948_vol_1.pdf",
   "size_bytes": 4740807,
   "sha256": "5479dd8f1138ef43c8bcf51481fe83df06d1704bdc54244d893c21cf0aad926f",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": null
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/18_6369445_general_1948_vol_1.jpg",
+  "csv_raw_title": "18_6369445_General_1948_Vol_1",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/18_6369445_general_1948_vol_1.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (6/15/48).",

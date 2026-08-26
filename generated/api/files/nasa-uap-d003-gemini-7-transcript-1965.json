@@ -7,6 +7,7 @@
   "date_event": "12/5/65",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/255_t_763_r1b_transcripts.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/255_t_763_r1b_transcripts.pdf",
   "size_bytes": 277579,
   "sha256": "1fe6258aa15843c8b5fba5dfc7da7b1939113201ab6710a183209c942790a6e0",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "Low Earth Orbit"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/255_t_763_r1b_transcripts.jpg",
+  "csv_raw_title": "NASA-UAP-D003, Gemini 7 Transcript, 1965",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/255_t_763_r1b_transcripts.pdf",
   "audience": {
     "tldr": "NASA mission record documenting a UAP encounter (12/5/65) over Low Earth Orbit.",

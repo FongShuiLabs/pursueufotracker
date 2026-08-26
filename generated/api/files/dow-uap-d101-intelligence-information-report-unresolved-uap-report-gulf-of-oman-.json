@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d101-intelligence-information-report-unresolved-uap-report-gulf-of-oman-",
+  "title": "DOW-UAP-D101, Intelligence Information Report, Unresolved UAP Report, Gulf of Oman, 2021",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "9/8/21",
+  "date_released": "2026-08-07",
+  "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d101-intelligence-information-report-unresolved-uap-report-gulf-of-oman-.pdf",
+  "size_bytes": 6207177,
+  "sha256": "926f4cf9a852d77bca34e8e7370c4a9da386610a6ba799e060de71c2339b0e92",
+  "redacted": true,
+  "summary": "This document is an Intelligence Information Report (IIR), the primary standardized format utilized by the Department of War, military services, and the broader Intelligence Community to disseminate unevaluated intelligence information derived from human sources (HUMINT), open sources, and field collection activities. IIRs are not finished intelligence products; they serve as inputs for subsequent all-source intelligence assessments. This report accompanies the footage contained within DOW-UAP-PR117 through DOW-UAP-PR122.\n\nThis report documents an observation by the aircrew of a U.S. Special Operations Forces (USSOF) AC-130 Gunship on September 8, 2021, during a nighttime live-fire training exercise over the Gulf of Oman. The aircrew reported first observing two unidentified anomalous phenomena (UAP) after dropping a water-activated flare. The report describes the UAP as stationary, approximately four feet in diameter, 0-20 feet above the water’s surface.\n\nThroughout the training sortie, the aircrew reported observing approximately 25 instances involving similar phenomena via infrared sensor, describing them as “cold orbs.” Aircrew visual estimates of the UAP’s apparent speed range from 250 to 1,300 miles per hour. The report characterizes the UAP’s behavior as “maneuvering aggressively,” “flying in various formations,” and appearing to react to deployments of the aircraft’s onboard weapons systems. The aircrew stated that they were unable to capture video footage of the phenomena because the aircraft’s digital video recorder was not functioning during the incident.\n\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "score": {
+    "value": 53,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d101-intelligence-information-report-unresolved-uap-report-gulf-of-oman-.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d101-intelligence-information-report-unresolved-uap-report-gulf-of-oman-.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/thumbnails/DOW-UAP-D101_IIR_Unresolved-UAP-Report-Gulf-of-Oman_2021.jpg",
+  "csv_raw_title": "DOW-UAP-D101, Intelligence Information Report, Unresolved UAP Report, Gulf of Oman, 2021",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d101-intelligence-information-report-unresolved-uap-report-gulf-of-oman-.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (9/8/21).",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 9/8/21.",
+      "Portions of the document are redacted."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "observed",
+      "uaps",
+      "source",
+      "afsoc",
+      "report",
+      "washington",
+      "maneuvering",
+      "sensor"
+    ]
+  }
+}

@@ -7,7 +7,7 @@
   "date_event": null,
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf",
-  "local_path": "downloads/video/unresolved-uap-report-syria-october-2024-3.pdf",
+  "local_path": "downloads/pdf/dow-uap-d32-mission-report,-syria-october-2024.pdf",
   "size_bytes": 651740,
   "sha256": "fd4deb1e48fcfa7fd2370b6459877882e6d6fdd0226ecaa881a45fba690172df",
   "redacted": true,
@@ -72,7 +72,7 @@
     "lng": null,
     "place": "Syria"
   },
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/unresolved-uap-report-syria-october-2024-3.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d32-mission-report,-syria-october-2024.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter over Syria.",
     "what_we_know": [

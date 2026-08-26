@@ -7,9 +7,12 @@ a new PURSUE drop, with every public number verified first.
 **This file applies to every drop** (it was `DROP02_REACTION.md` through July 2026;
 renamed because it is not Drop-02-specific). Fill the placeholders fresh each time.
 
-**Status (2026-07-17):** four releases so far - Drop 01 (May 8), 02 (May 22), 03
-(Jun 12), 04 (Jul 10). Gaps have been +14/+21/+28 days, so Drop 05 would land
-early-to-mid August 2026 *if* the cadence holds (extrapolation, not an announcement).
+**Status (2026-08-17):** four releases so far - Drop 01 (May 8), 02 (May 22), 03
+(Jun 12), 04 (Jul 10). Gaps were +14/+21/+28 days, so the extrapolated window was
+early-to-mid August - **that window has now passed with no drop** (38 days and
+counting since Drop 04, already longer than any prior gap). Treat the +7-per-drop
+pattern as broken, not as a countdown; Drop 05 could land any day or not for weeks.
+Nothing on a public page should imply a predicted date.
 The last drop's actual, proven Reddit post is archived in `_scratch/reddit-drop04.md` -
 adapt that format; it is the format that has worked.
 
@@ -22,7 +25,11 @@ SHA-256. That is NOT enough to post - CSV rows are not the same as files (war.go
 has added multi-row representations of existing PDFs before). You need the manifest
 diff and a clean guard run.
 
-1. `git pull`
+1. **`git pull --rebase`** - NOT a bare `git pull`. The poller bot pushes a
+   state commit every cycle, so local `main` sits tens-to-hundreds of commits
+   behind (measured 178 on 2026-08-17) and a plain pull/push either makes a
+   merge commit or is rejected non-fast-forward. Rebase needs a clean tree, so
+   commit or stash local work first.
 2. **`python -m pipeline.preflight pre-ingest`** - fetches a verified-fresh CSV
    from war.gov (curl_cffi chrome-impersonation + session warmup) into
    `_scratch/uap-csv.csv` and hard-fails unless its SHA-256 matches `data/poll-state.json`.
@@ -31,9 +38,23 @@ diff and a clean guard run.
 3. **`python -m pipeline.run all`** - may take a while (videos transcribe, PDFs
    extract, OG cards regen). Note: `all` runs both the legacy `download` and
    `download-manifest` stages; the download.py id-corruption bug was fixed 2026-07-11,
-   and the post-ingest guard below is the backstop if it ever recurs. War.gov may
-   also add CSV columns per drop (Drop 03 added "Featured") - `parse_csv` maps by
-   column NAME, so new columns are fine, but eyeball the new agency labels.
+   and the post-ingest guard below is the backstop if it ever recurs.
+   - **New CSV columns are safe** - `parse_csv` uses `csv.DictReader` and looks
+     columns up by NAME (verified 2026-08-17), so additions like Drop 03's
+     "Featured" cannot shift the parse.
+   - **A new AGENCY label is NOT safe, and used to be misdiagnosed.** Anything
+     outside `AGENCY_MAP` becomes `agency=OTHER`, which post-ingest hard-fails.
+     Until 2026-08-17 it called that "placeholder junk ... Do not commit," which
+     would send you hunting a corruption that isn't there. Now parse-csv prints
+     `!! UNMAPPED AGENCY LABELS` and post-ingest names the label and tells you to
+     add it to `AGENCY_MAP`. If you see it: add the label, re-run, move on.
+   - **Prefer `run all` over a targeted `parse-csv`.** Fixed 2026-08-17, but worth
+     knowing: parse-csv rebuilds each entry from the CSV alone and used to null
+     everything the later stages add - a standalone re-parse wiped all 15
+     transcripts, 189 extracted-text paths, 118 thumbnails, every `mirror_url`
+     AND all 334 `sha256` values (which would have voided the site's entire
+     "SHA-256 verified" claim). It now carries those forward, so it is
+     non-destructive - but `run all` is still the safe default.
 4. **`python -m pipeline.preflight post-ingest`** - hard-fails if any previously-live
    file id vanished (the 196-renamed-ids incident), junk OTHER-agency entries
    appeared (the 166-junk-pages incident), a type count shrank (the video-collapse
@@ -64,6 +85,21 @@ diff and a clean guard run.
    `python -m pipeline.run build-drops`. Confirm `/drops/` shows the new drop and
    the per-drop page renders. Drop URLs are **date-first**: `/drops/YYYY-MM-DD-drop-0N`
    (e.g. `/drops/2026-07-10-drop-04`), never built from the drops.json id.
+7b. **UPDATE `llms.txt` - it hard-fails the pre-push gate otherwise.** This is
+    the AI-assistant manifest, and `check-counts` validates 17 of its claims
+    against the manifest, the built sitemaps and `drops.json`. A drop breaks
+    essentially all of them at once. Rehearsed 2026-08-17 against a simulated
+    +40-file Drop 05: **17 hard failures**, every one naming its correct value.
+    Do this AFTER step 7 - the release list is checked against `drops.json`.
+    What changes: the header blockquote ("N files across <Word> releases as of
+    <date>"), the "Current archive state" block (total, type breakdown, the
+    per-release list, the `(verified YYYY-MM-DD)` stamp), sitemap + video-sitemap
+    counts, every category count, the files-API total, the top-score tie, the
+    transcript honesty note ("15 of the N videos"), the verdict line, and the
+    file-count clarification. Then re-run `python -m pipeline.preflight check-counts`
+    until clean. Note the deep-dive count claims are hub-derived and do NOT move
+    on a drop - if one fails, something else is wrong.
+
 8. **`python -m pipeline.preflight pre-push`** - hard-gates >25MiB deploy-killers,
    the `_redirects` ~100-rule ceiling, CSV-mirror byte drift, AND count drift.
    Then push to deploy.
@@ -118,7 +154,7 @@ most striking file/angle, then the verified diff, then the honest framing). Skel
 
 ### Body
 ```
-Drop [DROP_N] landed at war.gov on [DROP_DATE]. My automated tracker (public GitHub Action, polls war.gov every 30 min on weekday business hours) caught it and the site is fully indexed - new files scored, audio videos transcribed, every file SHA-256 verified against war.gov's own bytes.
+Drop [DROP_N] landed at war.gov on [DROP_DATE]. My automated tracker (public GitHub Action, polls war.gov several times a day) caught it and the site is fully indexed - new files scored, audio videos transcribed, every file SHA-256 verified against war.gov's own bytes.
 
 What actually changed, verified by URL-set comparison against the prior snapshot:
 - [NEW_FILE_COUNT] new files added ([NEW_TYPE_BREAKDOWN])

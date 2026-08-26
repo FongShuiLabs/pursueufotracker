@@ -8,7 +8,7 @@
   "date_released": "2026-06-12",
   "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/DOW-UAP-D088_US-AirForce_Analysis-of-Flying-Objects-in-the-US_101-172.pdf",
   "pending_verification": false,
-  "local_path": "downloads/pdf/dow-uap-d088-u-s-air-force-analysis-of-flying-objects-in-the-united-states-101-1.pdf",
+  "local_path": "downloads/pdf/DOW-UAP-D088_US-AirForce_Analysis-of-Flying-Objects-in-the-US_101-172.pdf",
   "size_bytes": 34075288,
   "sha256": "0d53232bd0d23672c053bbdac4241e5693eae4d156b8c709e109de31191da117",
   "redacted": false,
@@ -75,7 +75,7 @@
   },
   "thumbnail_url": "https://www.war.gov/medialink/ufo/061226/release_03/thumbnails/DOW-UAP-D088_US-AirForce_Analysis-of-Flying-Objects-in-the-US_101-172.jpg",
   "csv_raw_title": "DOW-UAP-D088, U.S. Air Force Analysis of Flying Objects in the United States, 101-172",
-  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d088-u-s-air-force-analysis-of-flying-objects-in-the-united-states-101-1.pdf",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/DOW-UAP-D088_US-AirForce_Analysis-of-Flying-Objects-in-the-US_101-172.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter.",
     "what_we_know": [

@@ -1,4 +1,38 @@
-# PURSUE UFO Tracker — Action Queue
+# PURSUE UFO Tracker - Action Queue
+
+> ## 🛰️ DROP 05 IS INGESTED (2026-08-18) - AND WAS MISSED FOR 11 DAYS
+>
+> Drop 05 landed **2026-08-07** (375 rows, +41 files). Nobody noticed until
+> 2026-08-18 because `drop_check` compared two LOCAL files that had gone stale
+> together (see [[drop-guard-blind-to-stale-clone]]) - it reported
+> `DROP STATUS: current` the entire time. **Fixed:** drop_check now cross-checks
+> origin's bot-owned poll-state and says so when the local clone is behind;
+> verified by replaying the exact blind spot.
+>
+> **Site is now fully ingested at 375 files and every guard passes.** The one
+> remaining pre-push FAIL (`data/uap-data.csv` blob) is structural - it reads the
+> COMMITTED blob, so it clears on commit. Nothing is deployed.
+>
+> ### Operator, in order
+> 1. `git pull --rebase` then `git push` (own terminal - PAT re-auth). This
+>    deploys Drop 05 **plus** five sessions of work. The live site is still
+>    serving the 334-file build, and `llms.txt` still tells AI assistants
+>    "161 files".
+> 2. Verify live: `curl -I https://pursueufotracker.com/drops/2026-08-07-drop-05`
+>    and one new file page -> both `HTTP/2 200`.
+> 3. Post the r/UFOs thread: `_scratch/reddit-drop05.md` (Option A, timing-neutral
+>    1963 White House paper trail). Every number and quote verified. **Do not post
+>    before the push - the links 404 until then.**
+
+> 👉 **Next session: read [`_scratch/HANDOFF-2026-08-06.md`](_scratch/HANDOFF-2026-08-06.md) first.**
+> It has the verified 2026-08-05 state, the one blocker (operator's GitHub PAT
+> expired → nothing deploys), and the branch for whether Drop 05 has landed.
+>
+> ⚠️ **Correction to that handoff (found 2026-08-06):** it tells the operator to run
+> a bare `git push`. That will be **rejected** — local `main` is **96 commits behind**
+> origin (the bot's poll commits) as well as 1 ahead, so the push is a non-fast-forward.
+> The working sequence is `git pull --rebase` **then** `git push`, run in the operator's
+> own terminal (the rebase needs a clean tree, so local work must be committed first).
 
 **Last updated: 2026-07-16** (post-freeze session: verified site health, pulled GSC, re-verified Drop 04 distribution copy. Full strategy in `_scratch/PLAN-2026-07-16.md`.)
 
@@ -24,11 +58,13 @@ for later, but it is not a near-term earner.
 
 ## 🔴 PENDING OPERATOR ACTIONS (Claude can't do these)
 
-1. **Post the Drop 04 r/UFOs thread** — HIGHEST URGENCY, decaying value. Fully
-   re-verified copy in `_scratch/reddit-drop04.md` (Option A). All numbers checked
-   vs live manifest, all 3 URLs 200, the "deformed balloon" debrief quote confirmed
-   live. Weekday 9am-1pm ET, text post. If the viral two-tiered-video moment has
-   cooled, the body still lands (the debrief-vs-video angle is evergreen).
+1. **Post the Drop 05 r/UFOs thread** — SUPERSEDES the old Drop 04 item, which is
+   now two releases stale (`_scratch/reddit-drop04.md` is archived, do not post it).
+   Use `_scratch/reddit-drop05.md` **Option A**: the 1963 White House / NASC paper
+   trail, deliberately written timing-neutral because Drop 05 is already 11 days old
+   and a "just landed" framing is what made the Drop 04 draft decay. Every number
+   and quoted phrase verified against the documents. Weekday 9am-1pm ET, text post.
+   **Push must land first** or every link 404s.
 2. **AdSense status** — RESOLVED 2026-07-17 (operator screenshots, Work profile):
    "Getting ready", review requested **12 Jul 2026 09:33** (fresh cycle - not the
    7/1 one; window is "few days to 2-4 weeks"). Ownership verified. DO NOT
@@ -41,7 +77,8 @@ for later, but it is not a near-term earner.
    paid tier later). The form is now FULLY PRE-STAGED sitewide (pipeline/subscribe.py,
    2026-07-18): once you create the account and hand over the handle, the flip is
    two config values + `wire-subscribe`/`build`/`build-categories` + push (~10 min).
-   Live BEFORE Drop 05 (~early-mid August) or the spike evaporates again. Full
+   Drop 05 has now LANDED (Aug 7) with no capture form live - that spike is spent.
+   Get it live before Drop 06 (the gaps have run +14/+21/+28/+28). Full
    revenue sequencing: `_scratch/MONETIZATION_PLAYBOOK.md` (gates 0-5).
 4. **Cloudflare Email Routing** — ✅ DONE 2026-08-05 (Claude, operator-authorized).
    Enabled + DNS live (MX/SPF/DKIM verified resolving); catch-all **Active** →
@@ -57,32 +94,164 @@ for later, but it is not a near-term earner.
 
 ## 🟡 OPEN — Claude autonomous (SEO is background, not headline)
 
-- **`/revisions` CTR leak** — 778 impressions / 2 clicks over 90 days (worst CTR on
-  the site). Retitle (6/14) didn't fix it. Needs a GSC query-for-this-page drill to
-  learn intent BEFORE rewriting the title/meta (searchers may want the file, not the
-  changelog) — otherwise we optimize for the wrong intent.
-- **URL-shaped query capture** — literal war.gov CSV paths + exact PDF filenames draw
-  impressions but ~0 clicks; a new `?release=3` variant appeared. Extend `/uap-data-csv`
-  + file-page meta descriptions to win these. See [[gsc-url-shaped-queries]].
-- **Count drift (minor)** — homepage says "30 analyses", the deep-dives hub subsections
-  sum to 31. Reconcile in the next sitewide count sweep (see [[homepage-hand-authored-drifts]]).
-- **Next deep-dive** (ranked by GSC evidence, distribution-first so treat as background):
-  Apollo 14 (d026/d027) is ALREADY covered by /astronaut-light-flashes-explained - do not
-  duplicate. Top candidate is a Robertson Panel standalone (evergreen). Every claim verified
-  from CSV/manifest (Hard Rule #7), no % aliens (Hard Rule #2).
+- **`/revisions` CTR leak** — GSC drilled 2026-08-08: 28d window shows 0 clicks /
+  18 impressions / position 5.4, queries all below threshold. The Jul-17 download-led
+  retitle CANNOT be scored on 18 impressions; position improved (5.4), so it is not
+  hurting. HOLD until Drop 05 spikes the URL-shaped family, then score. Do not edit.
+- **URL-shaped query capture** — drilled 2026-08-08, and the lane has structurally
+  changed: for exact file-ID queries (e.g. "dow-uap-pr053") the live SERP is DVIDS
+  with a video thumbnail at #1 + a Google AI Overview answering the query inline +
+  official .mil pages + YouTube; pursueufotracker is not on page 1 organically. GSC
+  "position 2.3, 74 impr/28d, 0 clicks" on the dow-uap-pr05x family reflects rare
+  sub-threshold queries, not winnable head IDs. **Read: meta rewrites cannot win
+  clicks an AI Overview absorbs. The play is machine citability** — being the source
+  AI answers quote. Shipped 2026-08-08: `llms.txt` fully rebuilt (it was frozen at
+  Drop 01: "161 files", 171-URL sitemap, "single highest-scoring file" now an 8-way
+  tie, no CIA/videos/deep-dives sections, stale .html URL) with every claim verified
+  against the manifest, and wired into `preflight.py check-counts` so it hard-fails
+  pre-push if any of its 16 numeric claims drifts from live data. See
+  [[gsc-url-shaped-queries]].
+- ~~**Count drift (minor)**~~ — ✅ **DONE 2026-08-06**, and it was worse than this entry
+  described (the entry's own numbers were wrong: the homepage said 33 *and* 36 in two
+  places, not 30, and the hub sums to 35, not 31). Four surfaces each claimed a
+  different number - homepage 33 + 36, file-page sidebar 36, category sidebar 30 -
+  against a hub that has always been self-consistent at **35 analyses + 1 primer card**.
+  All 392 pages now read 35. The hub's JSON-LD `numberOfItems: 36` is correct as-is and
+  was deliberately left alone: it enumerates all 36 `ListItem`s including the primer.
+  Guarded so it can't drift a fifth time: `pipeline/preflight.py` now derives the count
+  from the hub and hard-fails pre-push on any mismatch, on the hub disagreeing with
+  itself, or on a claim being reworded out of pattern range (that last mode is why the
+  51 hand-authored statics went unnoticed - no builder owns them, so a rebuild does NOT
+  fix them). See [[homepage-hand-authored-drifts]].
+- **Next deep-dive** — the Robertson Panel standalone this entry used to recommend
+  ALREADY SHIPPED (`/robertson-panel`, verified live in the deep-dives hub 2026-08-08;
+  this entry was stale). Apollo 14 (d026/d027) remains covered by
+  /astronaut-light-flashes-explained - do not duplicate. No new candidate ranked;
+  re-rank from GSC after Drop 05. Every claim verified from CSV/manifest (Hard Rule
+  #7), no % aliens (Hard Rule #2).
+
+## 🛰️ Drop 05 - what shipped (2026-08-18)
+
+- **375 files** (was 334): +41 = DoD 19, FBI 17, CIA 2, State 2, EOP 1.
+  22 documents / 16 videos / 3 images, 14 redacted, zero removed.
+- **New agency: `EOP`** (Executive Office of the President), war.gov's own
+  `EOP-UAP-D001` prefix. Required three wirings - `AGENCY_MAP`, the agency prose
+  maps in `build_site.py`, and the `intel-and-doe-uap-files` hub match list,
+  which had a hardcoded agency tuple that would have **orphaned the new file from
+  all category navigation**.
+- The parse-time `!! UNMAPPED AGENCY LABELS` warning added on 2026-08-17 fired on
+  its first real drop, exactly as rehearsed - instead of post-ingest
+  misdiagnosing it as "placeholder junk ... Do not commit".
+- Count reconciliation touched ~460 files: cluster sizes (FBI-modern 30→47,
+  CIA 21→23, diplomatic 7→9), score bands (66-band 92→96, 70-band 6→7), and a
+  sitewide 334→375 pass done with context-matching so historical decomposition
+  ("Release 04 brought the archive to 334") stayed true.
+- Also fixed en route: `/top-10` said "Positions 5 through 10 are tied at 70"
+  (stale even before this drop - eight files sit at 72), and a `drops.json`
+  claim I wrote that Bahia was documented "across three separate arms of
+  government" - it is **two** (EOP + State), and Colorado Springs and Western US
+  already spanned two each. Removed before it reached a page.
+
+## 🔗 Internal-link audit (2026-08-18) - 3 defects found and fixed
+
+Ran a sitewide audit of every `href="/files/<id>"` against the manifest. Found
+by accident while adding the Drop 05 homepage section, which is the point: these
+had been live for an unknown period and nothing was checking.
+
+- **`index.html` linked to a 404** - `nasa-uap-d007-skylab-tech**inc**al-...`
+  (transposed letters). On the highest-traffic page on the site. Fixed to the
+  canonical `...technical...` id.
+- **`/pursue-release-02-pentagon-videos`** linked to the `...fast-sh**e**rical...`
+  old-slug orphan instead of the canonical `...spherical...` id. Fixed.
+- **`/random`** linked to the `nasa-uap-d3a-...` orphan instead of
+  `nasa-uap-d003a-...`. Fixed.
+
+**Remaining (deliberately not fixed): 1 dead link**, `dow-uap-pr20-...-kuwait-may-2022-2`,
+which appears ONLY on the orphan page `dow-uap-pr20-...-kuwait-may-2022.html`. War.gov
+retired the Kuwait slug entirely and no replacement file exists. The orphan is kept for
+URL stability (Hard Rule #1) and its own canonical already points at a live page, so the
+dead sibling link is cosmetic and invisible to canonical navigation.
+
+**Worth automating:** this audit is ~20 lines (walk every `*.html`, regex the
+`/files/` hrefs, diff against manifest ids and the orphan set) and would fit
+naturally in `preflight pre-push`. Not added yet - flagging rather than
+silently expanding the guard surface mid-drop.
+
+## 🔎 SEO audit 2026-08-17 (evidence pulled, deliberately zero on-page edits)
+
+**Verdict: the site is technically healthy and demand is the only constraint.
+No on-page work is justified. Editing now would be churn against noise.**
+
+GSC 28d (Jul 19 - Aug 15): **1 click / 216 impressions / 0.5% CTR / position 12**.
+3-month: 64 clicks / 5.22K / 1.2% / position 8.1. Impressions are down ~78% vs
+July's 1.33K. The position 6.0 -> 12 move is **not a ranking loss**: with only
+216 impressions the mix is random long-tail ("apollo 17 alien", "the central
+intelligence agency and overhead reconnaissance"), while the brand/head queries
+that used to anchor position 6 have fallen below GSC's visibility threshold.
+This is the inter-drop trough at 38 days, exactly what the standing rule predicts.
+
+Technical layer verified clean (this part does NOT depend on demand):
+- **Indexing healthy and RISING** - 346 indexed, stepped up in late July. Not deindexed.
+- **Sitemap 100% clean** - all 401 URLs curled live, every one 200. Zero dead URLs published.
+- All 7 category hubs + /deep-dives return 200 live; `_redirects` at 82/100 rules,
+  under the cutoff that broke them before.
+- GSC's "Not found (404): 10" is historical URLs Google remembers, NOT our defect
+  (proven by the clean sitemap sweep).
+- "Blocked by robots.txt: 88" and "Alternate page with proper canonical: 54" are
+  both intentional and working as designed.
+- "Duplicate, Google chose different canonical: 9" - still improving on its own
+  (14 -> 11 -> 9). Leave it.
+
+**The one SEO action that would actually help is deploying what is already built.**
+Verified live 2026-08-17: `https://pursueufotracker.com/llms.txt` still serves
+**"161 files"** and **"171 indexed URLs"** - the Drop-01 numbers, 173 files and
+three drops stale. The rebuilt version (334 files, verified, guarded) is sitting
+undeployed in the working tree. Every AI assistant fetching the site today gets
+the stale manifest, which is precisely the machine-citability lane the Aug-8 GSC
+work identified as the remaining winnable play. See [[gsc-url-shaped-queries]].
 
 ## ⏳ Standing refresh hooks
 
-- **FAQ "When will more UFO files be released?" + /drops title cadence claims**
-  (added 2026-07-17): both state "four releases" and extrapolate the next drop to
-  early-to-mid August 2026 from the +14/+21/+28-day gaps. When Drop 05 lands (or
-  mid-August passes with no drop), update the FAQ answer (visible + JSON-LD twin),
-  the /drops meta description (templates/drops_index.html.j2), and re-run build-drops.
+- ~~**FAQ "When will more UFO files be released?" + /drops cadence claims**~~ -
+  ✅ **DONE 2026-08-17**, triggered exactly as this hook specified (mid-August
+  passed with no drop). The +14/+21/+28 pattern is now stated as **broken**: 33
+  days since Release 04, longer than any prior gap, and the site no longer
+  publishes a predicted date anywhere. Updated: `/faq` visible copy AND its
+  JSON-LD twin (both carried byte-identical text - JSON-LD re-validated, 2 blocks
+  / 16 entities intact), `data/drops.json` `expected_next.note` (the "NEXT DROP -
+  Monitoring" block, the site's most prominent when-is-it surface) plus a new
+  `as_of` stamp, and a latent "Subscribers get an alert within minutes" overclaim
+  in the `drops_index.html.j2` fallback that the 2026-08-10 cadence sweep missed
+  because it only renders when `expected_next.note` is empty.
+  **Re-arm on the next drop:** all four surfaces need the new release added, and
+  the 33-day figure re-stated or removed.
 - **/aaro-unresolved-uap "latest annual report" section** (added 2026-07-17, targets
   the "latest aaro uap report 2025 2026" GSC query family at pos 17-20): the status
   is date-stamped "as of July 17, 2026". When AARO publishes its FY2025 annual (or
   Historical Record Vol. 2), update the section + meta description same-day - being
   current on that news cycle is the whole play. Verify from aaro.mil/war.gov, not memory.
+
+## 🔵 DECISION NEEDED: make the poller cadence real, or leave it honest?
+
+Found 2026-08-10 from the GitHub Actions API (all 696 runs): the poller's cron asks
+for every-30-min weekday / hourly off-hours, but **GitHub throttles scheduled
+workflows so hard that cadence has never once been delivered** - really ~9-11
+runs/day, median gap 107 min, worst observed 11.9 h. Reliability is otherwise
+excellent (0.6% failures) and detection is state-based, so a skipped cycle only
+DELAYS a drop, never misses it.
+
+The site had been promising the undelivered number on 12 public surfaces; all are
+now rewritten to "several times a day" (true at the historical floor). That closes
+the Hard Rule #7 exposure. **Remaining choice is yours:**
+
+- **(a) Leave it.** Copy is honest, detection still guaranteed. Drop-day latency
+  stays ~2 h typical. Zero work. ← recommended unless drop-day speed matters
+- **(b) Make it real.** Cron alone cannot; needs an external pinger hitting
+  `workflow_dispatch` on a real schedule (cron-job.org free tier, or a Cloudflare
+  Worker cron - you already run CF). ~20 min setup, then the 30-min claim could be
+  restored truthfully. Worth it only if being first to post a drop is the goal.
+
+See [[poller-cadence-never-as-documented]] for the full measurement.
 
 ## 🛰️ Drop 05 readiness (~early August)
 

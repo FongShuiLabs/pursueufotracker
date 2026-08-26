@@ -35,12 +35,14 @@ _AGENCY_PROSE = {
     "DoD": "the Department of War", "FBI": "the FBI", "NASA": "NASA", "CIA": "the CIA",
     "STATE": "the State Department", "DOE": "the Department of Energy", "ODNI": "ODNI",
     "ICA": "the Intelligence Community", "USG": "the federal government",
+    "EOP": "the Executive Office of the President",
 }
 
 _AGENCY_BARE = {
     "DoD": "Department of War", "FBI": "FBI", "NASA": "NASA", "CIA": "CIA",
     "STATE": "State Department", "DOE": "Department of Energy", "ODNI": "ODNI",
     "ICA": "Intelligence Community", "USG": "federal government",
+    "EOP": "Executive Office of the President",
 }
 
 
@@ -246,8 +248,8 @@ TOPIC_PAGES = [
      "slug": "/apollo-11-ufo", "name": "Apollo 11 UFO Sightings", "size": 1,
      "anchor": "the classified Apollo 11 Technical Crew Debriefing describing three unexplained observations including the object Buzz Aldrin tracked with a monocular one day from the Moon"},
     {"match": lambda f: f.get("agency") == "STATE",
-     "slug": "/diplomatic-uap-cables", "name": "Diplomatic UAP Cables", "size": 7,
-     "anchor": "the 7-file State Department PURSUE cluster spanning 1952-2004 embassy cables and policy memoranda"},
+     "slug": "/diplomatic-uap-cables", "name": "Diplomatic UAP Cables", "size": 9,
+     "anchor": "the 9-file State Department PURSUE cluster spanning 1952-2004 embassy cables and policy memoranda, including the two 1963 Bahia, Brazil cables added in Release 05"},
     {"match": lambda f: f["id"] == "cia-uap-002-scientific-advisory-panel-on-unidentified-flying-objects-report-1952",
      "slug": "/robertson-panel", "name": "The Robertson Panel", "size": 1,
      "anchor": "the 1952-53 CIA Scientific Advisory Panel (the Robertson Panel) that recommended an official policy of debunking UFOs"},
@@ -285,13 +287,13 @@ TOPIC_PAGES = [
      "slug": "/apollo-12-medical-debrief-coronal-discharges", "name": "Apollo 12's \"Coronal Discharges\"", "size": 1,
      "anchor": "the Apollo 12 crew's medical debriefing in which Conrad, Gordon, and Bean were questioned about reported light flashes and \"coronal discharges\" seen with their eyes closed"},
     {"match": lambda f: f.get("agency") == "CIA",
-     "slug": "/cia-ufo-files-explained", "name": "CIA UFO Files", "size": 21,
-     "anchor": "the 21-file CIA cluster, from the 1953 Robertson Panel to the U-2 history and Cold War sightings"},
+     "slug": "/cia-ufo-files-explained", "name": "CIA UFO Files", "size": 23,
+     "anchor": "the 23-file CIA cluster, from the 1953 Robertson Panel to the U-2 history and Cold War sightings"},
     {"match": lambda f: f["id"].startswith("fbi-september-2023-sighting"),
      "slug": "/fbi-2023-uap-investigation", "name": "FBI 2023 UAP Investigation", "size": 4,
      "anchor": "the 4-document FBI investigation cluster from September 2023 - three FD-302 witness interviews and an FBI Lab composite sketch of a bronze metallic cigar-shaped object at a US test site"},
     {"match": lambda f: f["id"].startswith("fbi-uap-"),
-     "slug": "/fbi-modern-uap-files", "name": "FBI Modern UAP Files", "size": 30,
+     "slug": "/fbi-modern-uap-files", "name": "FBI Modern UAP Files", "size": 47,
      "anchor": "the FBI's modern UAP files: the 2022 Colorado Springs interview and the FBI-authenticated northeastern orb videos"},
     {"match": lambda f: f["id"] == "odni-uap-d001-usper-narrative-senior-usic-official",
      "slug": "/odni-uap-d001-helicopter-encounter", "name": "ODNI-UAP-D001 Helicopter Encounter", "size": 1,
@@ -304,7 +306,7 @@ TOPIC_PAGES = [
      "anchor": "the 5 Department of Energy files tying the U.S. nuclear weapons complex to UAP (PANTEX, Los Alamos, the Pajarito Astronomers, and a 1949 Los Alamos conference record)"},
     {"match": lambda f: (f.get("score") or {}).get("value") == 66 and (f.get("date_released") or "").startswith("2026-05-08"),
      "slug": "/aaro-unresolved-uap", "name": "AARO Unresolved UAP", "size": 27,
-     "anchor": "the 27-file Release-01 AARO unresolved cluster tied at 66 (the score-66 band now spans 92 files across four releases)"},
+     "anchor": "the 27-file Release-01 AARO unresolved cluster tied at 66 (the score-66 band now spans 96 files across four releases)"},
 ]
 
 
@@ -326,9 +328,9 @@ def _score_tier_phrase(score: int | None, rank: int, total: int) -> str:
     if score >= 72:
         return "That score is the highest in the PURSUE archive - one of eight files tied at the top score of 72 (the Gemini 7 Borman audio, the Gordon Cooper interview, and the Apollo 14, 16, and 17 crew debriefings)."
     if score >= 67:
-        return "That places it just above the archive's densest scoring band - the 92 files tied at 66 - among the small group of top-scoring files."
+        return "That places it just above the archive's densest scoring band - the 96 files tied at 66 - among the small group of top-scoring files."
     if score >= 66:
-        return "That places it in the archive's densest scoring band - 92 files tied at 66, anchored by AARO-submitted and Release-02/04 military infrared captures."
+        return "That places it in the archive's densest scoring band - 96 files tied at 66, anchored by AARO-submitted and Release-02/04 military infrared captures."
     if score >= 65:
         return "That places it one rubric point below the 66-point military-capture band and seven below the archive's top score of 72 - the second tier in the archive."
     if score >= 60:

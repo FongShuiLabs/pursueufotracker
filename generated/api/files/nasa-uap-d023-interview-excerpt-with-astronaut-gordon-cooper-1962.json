@@ -65,7 +65,7 @@
   },
   "extracted": {
     "text_path": null,
-    "transcript_path": null,
+    "transcript_path": "extracted/transcripts/nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962.vtt",
     "thumbnail_path": "extracted/thumbnails/nasa-uap-d023-interview-excerpt-with-astronaut-gordon-cooper-1962.jpg"
   },
   "geo": {

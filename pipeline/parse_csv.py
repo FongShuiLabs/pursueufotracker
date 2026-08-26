@@ -48,6 +48,8 @@ AGENCY_MAP = {
     "CIA": "CIA",
     "Intelligence Community Agency": "ICA",
     "U.S. Government": "USG",
+    # Drop 05 (2026-08-07) introduced this label; war.gov files it as EOP-UAP-D001.
+    "Executive Office of the President": "EOP",
 }
 
 TYPE_MAP = {
@@ -133,6 +135,25 @@ def _pick_mp4(dvids: dict) -> str | None:
     return candidates[0].get("src")
 
 
+# War.gov introduces new agency labels between drops (memory: the CSV schema
+# evolves per drop). Anything not in AGENCY_MAP silently becomes "OTHER", which
+# the post-ingest guard treats as the junk-scrape signature - so an unmapped but
+# perfectly legitimate agency would read as pipeline corruption on drop day.
+# Collect them and say so out loud instead.
+_UNMAPPED_AGENCIES: set[str] = set()
+
+
+def report_unmapped_agencies() -> set[str]:
+    if _UNMAPPED_AGENCIES:
+        print("  !! UNMAPPED AGENCY LABELS from war.gov: "
+              + ", ".join(sorted(repr(a) for a in _UNMAPPED_AGENCIES)))
+        print("     These became agency=OTHER and WILL hard-fail "
+              "`preflight post-ingest`.")
+        print("     Fix: add them to AGENCY_MAP in pipeline/parse_csv.py, "
+              "then re-run the parse.")
+    return set(_UNMAPPED_AGENCIES)
+
+
 def _normalize_type(s: str) -> str:
     return TYPE_MAP.get(s.strip().upper(), "pdf")
 
@@ -191,6 +212,8 @@ def run() -> None:
 
         type_ = _normalize_type(type_raw)
         agency = AGENCY_MAP.get(agency_raw.strip(), "OTHER")
+        if agency == "OTHER" and agency_raw.strip():
+            _UNMAPPED_AGENCIES.add(agency_raw.strip())
         redacted = redaction.strip().upper() == "TRUE"
 
         # ID: use video title for videos, file title for others
@@ -271,6 +294,25 @@ def run() -> None:
                 entry["dvids_page_url"] = dv.get("url")
             time.sleep(0.15)  # be polite to DVIDS API
 
+        # Carry forward fields that LATER stages produce. parse-csv rebuilds
+        # each entry from the CSV alone, so without this a standalone re-parse
+        # silently wipes them - verified 2026-08-12: it dropped all 15 video
+        # transcripts, 189 extracted-text paths, 118 thumbnails, and every
+        # mirror_url. `run all` re-derives them, but a targeted re-parse (which
+        # is exactly what fixing an AGENCY_MAP entry calls for) does not.
+        # `extracted` is always rebuilt as an all-None skeleton here, so merge
+        # per sub-key rather than only filling a missing key.
+        _prev_ex = prev.get("extracted") or {}
+        if _prev_ex:
+            for _sk, _sv in _prev_ex.items():
+                if _sv is not None and entry.get("extracted", {}).get(_sk) is None:
+                    entry.setdefault("extracted", {})[_sk] = _sv
+        # sha256/local_path/size_bytes come from the download stage and parse-csv
+        # sets them to None for EVERY row - losing sha256 would silently void the
+        # site's whole "SHA-256 verified against war.gov" claim.
+        for _k in ("mirror_url", "audience", "sha256", "local_path", "size_bytes"):
+            if entry.get(_k) is None and prev.get(_k) is not None:
+                entry[_k] = prev[_k]
         files.append(entry)
 
     manifest = {
@@ -281,6 +323,7 @@ def run() -> None:
     }
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"  wrote manifest: {len(files)} entries -> {MANIFEST_PATH}")
+    report_unmapped_agencies()
     # Quick stats
     from collections import Counter
     types = Counter(f["type"] for f in files)

@@ -1,49 +1,71 @@
 # PURSUE UFO Tracker
 
-> Independent rolling-release tracker of the Trump administration's PURSUE (Presidential Unsealings and Reporting System for UAP Encounters) declassification program. Every UFO/UAP file released by the U.S. Department of War at war.gov/UFO, indexed, scored on a transparent rubric, and verified against the original source via SHA-256.
+> Independent rolling-release tracker of the Trump administration's PURSUE (Presidential Unsealings and Reporting System for UAP Encounters) declassification program. Every UFO/UAP file released by the U.S. Department of War at war.gov/UFO - 375 files across five releases as of August 7, 2026 - indexed, scored on a transparent rubric, and verified against the original source via SHA-256.
 
-The site exists because war.gov ships the PURSUE files as a flat list with no search, no transcripts on videos, and no way to compare evidentiary weight across files. This site fixes that. It also publishes a transparent six-axis scoring rubric so anyone can audit or recompute the rankings.
+The site exists because war.gov ships the PURSUE files as a flat list with no search, no change history, and no way to compare evidentiary weight across files. This site fixes that: full-text search, per-file evidentiary scoring, byte-level change tracking against the original releases, and a documented revision log of war.gov's own silent edits.
 
 All underlying files are U.S. Government works in the public domain under 17 U.S.C. § 105.
 
+## Current archive state (verified 2026-08-18)
+
+- 375 files total: 211 PDF documents, 134 videos, 30 images
+- Five releases: Drop 01 (May 8, 2026, 158 files), Drop 02 (May 22, 2026, 64 files), Drop 03 (June 12, 2026, 72 files), Drop 04 (July 10, 2026, 40 files), Drop 05 (August 7, 2026, 41 files)
+- Every file is mirrored and SHA-256 verified against its war.gov original
+- Release history with per-drop breakdowns: https://pursueufotracker.com/drops
+
 ## Core data
 
-- [Sitemap](https://pursueufotracker.com/sitemap.xml): All 171 indexed URLs
+- [Sitemap](https://pursueufotracker.com/sitemap.xml): All 443 indexed URLs
+- [Video sitemap](https://pursueufotracker.com/video-sitemap.xml): All 134 video pages
 - [Scoring rubric (JSON)](https://pursueufotracker.com/data/scoring-rubric.json): Six-component evidentiary-weight rubric, weights sum to 1.00. This is the methodology used to rank every file.
 - [Verification manifest (JSON)](https://pursueufotracker.com/generated/verification-manifest.json): SHA-256 hash, file size, and original war.gov source URL for every file. Use to confirm any indexed file matches the official release byte-for-byte.
-- [Files API (JSON)](https://pursueufotracker.com/generated/api/files.json): Full structured data for all 161 files - title, agency, date, location, type, score, summary, source URL.
-- [Full-text search index (JSON)](https://pursueufotracker.com/generated/search-index.json): Lunr-compatible search index over all PDF text content and video transcripts.
+- [Files API (JSON)](https://pursueufotracker.com/generated/api/files.json): Full structured data for all 375 files - title, agency, date, location, type, score, summary, source URL. Per-file detail at https://pursueufotracker.com/generated/api/files/{id}.json
+- [Full-text search index (JSON)](https://pursueufotracker.com/generated/search-index.json): Lunr-compatible search index over extracted PDF text and available video transcripts.
+- [The war.gov CSV, mirrored](https://pursueufotracker.com/uap-data-csv): The canonical war.gov uap-data.csv, hash-verified, with a revision table covering every release.
 - [RSS feed](https://pursueufotracker.com/generated/feed.xml): Latest indexed files, updated within hours of any new war.gov release.
 
 ## Category indexes
 
-- [FBI UFO files](https://pursueufotracker.com/fbi-ufo-files/): 87 files. FBI case file 62-HQ-83894, 1947-1968. Roswell field office reporting, Oak Ridge incidents.
-- [Pentagon UAP files](https://pursueufotracker.com/military-uap-files/): 83 files. Department of War MISREPs and AARO mission packets, 2020-2026. Mediterranean, Greece, Iraq, Syria, UAE, Yemen.
-- [NASA UFO photos](https://pursueufotracker.com/nasa-ufo-photos/): 15 files. Apollo 12, 16, 17 lunar mission photography, Gemini 7 astronaut audio (Frank Borman), Skylab crew debriefings, Schmitt-Grimaldi lunar flash.
-- [State Department UAP cables](https://pursueufotracker.com/state-department-uap-cables/): 7 diplomatic cables. 1985 Papua New Guinea, 1994 Tajikistan PanAm crew sighting, Kazakhstan, Turkmenistan, Georgia, Mexico.
+- [FBI UFO files](https://pursueufotracker.com/fbi-ufo-files/): 104 files. The 1947-1968 central case file 62-HQ-83894 (Roswell field office reporting, Oak Ridge incidents) plus modern investigations from 2021-2025, including FBI-authenticated eyewitness orb videos.
+- [Pentagon UAP files](https://pursueufotracker.com/military-uap-files/): 190 files. Department of War sensor videos, MISREPs, and AARO mission packets, 2017-2026. Middle East, East China Sea, and the 2023 Lake Huron shootdown.
+- [NASA UFO records](https://pursueufotracker.com/nasa-ufo-photos/): 40 files. Mercury through STS-80: Gemini 7 astronaut audio (Frank Borman), Gordon Cooper interview, Apollo 12, 14, 16, and 17 mission photography and crew debriefings, Skylab crew observations, 1996 Space Shuttle STS-80 images.
+- [CIA UFO files](https://pursueufotracker.com/cia-ufo-files/): 23 files, 1955-2008. Cold War-era reports (1955 Budapest letter, 1968 Himalayan sightings, 1973 Sary Shagan) through the 2008 Harare airport case.
+- [State Department UAP cables](https://pursueufotracker.com/state-department-uap-cables/): 9 diplomatic cables, 1952-2004. 1985 Papua New Guinea, 1994 Tajikistan PanAm crew sighting, Kazakhstan, Turkmenistan, Georgia, Mexico, and two November 1963 cables on the Bahia, Brazil incident added in Release 05.
+- [Intelligence and DOE UAP files](https://pursueufotracker.com/intel-and-doe-uap-files/): 9 files from DOE, ODNI, the Intelligence Community, the U.S. Government, and - new in Release 05 - the Executive Office of the President, whose EOP-UAP-D001 is a National Aeronautics and Space Council inquiry into the November 13, 1963 Bahia, Brazil incident. Includes nuclear-facility incidents and the ODNI helicopter encounter.
+- [All videos](https://pursueufotracker.com/videos/): 134 DVIDS-hosted videos, all mirrored for direct playback.
 
-## Editorial pages
+## Analysis
 
-- [The honest verdict](https://pursueufotracker.com/verdict): What these 161 files do and do not prove. The position is: no claim that aliens exist, no claim they don't. The files don't answer that question, but they do prove the U.S. government has documented encounters it cannot explain after conventional review.
-- [Top 10 most anomalous](https://pursueufotracker.com/top-10): The ten highest-scoring files on the Anomalousness Index, ranked.
-- [Press kit](https://pursueufotracker.com/press): Fact sheet, embed assets, contact for journalists. All quote-ready.
-- [War.gov revisions log](https://pursueufotracker.com/revisions): On May 11, 2026, war.gov silently revised the canonical PURSUE list from 161 files to 158: 28 files renamed with DOW-UAP-PR## prefixes, 5 removed, 3 added, 6 Arabian Gulf 2020 entries consolidated under Middle East 2020. Full diff documented. Our auto-poller detected the change within hours.
+- [Deep-dive analysis hub](https://pursueufotracker.com/deep-dives): 35 long-form, source-quoted analyses of the most significant files, organized by agency. Every quote is transcribed verbatim from the released document and cited to its location.
+- [The honest verdict](https://pursueufotracker.com/verdict): What these 375 files do and do not prove. The position is: no claim that aliens exist, no claim they don't. The files don't answer that question, but they do prove the U.S. government has documented encounters it cannot explain after conventional review.
+- [Top 10 most anomalous](https://pursueufotracker.com/top-10): The highest-scoring files on the Anomalousness Index, ranked.
+- [War.gov revisions log](https://pursueufotracker.com/revisions): war.gov silently revises its own canonical file list; this page documents every revision with full diffs. First documented case: May 11, 2026, when the list went from 161 files to 158 (28 renames, 5 removals, 3 additions, 6 consolidations) with no announcement.
+- [Change tracking](https://pursueufotracker.com/changes): Byte-level integrity monitoring. war.gov has silently re-processed file bodies at unchanged URLs; this page tracks those events against archived originals.
+- [Timeline](https://pursueufotracker.com/timeline): Every file placed on a 1948-2026 event timeline.
+- [Press kit](https://pursueufotracker.com/press): Fact sheet, verification manifest, embed assets, contact. All quote-ready.
+
+## Highest-scoring files
+
+Eight files are tied at the top score of 72/100, all NASA records with astronaut witnesses on the federal record:
+
+- [Gemini 7 Audio Excerpt, 1965](https://pursueufotracker.com/files/nasa-uap-d003a-gemini-7-audio-excerpt-1965): Frank Borman reporting an unidentified object to mission control on the official voice loop.
+- Gordon Cooper interview excerpt (1962), two Apollo 14 debriefings (1971), two Apollo 16 scientific debriefings (1972), and two Apollo 17 crew medical debriefings (1972).
+
+The full ranked list is at [Top 10 most anomalous](https://pursueufotracker.com/top-10).
 
 ## File count clarification
 
-The original PURSUE Drop 01 on May 8, 2026 contained 161 files. As of May 11, 2026, war.gov lists 158 files (net delta -3 after renames). Both counts are correct for their respective snapshots. This site preserves all 161 original URLs for citation stability while documenting the war.gov revision diff at /revisions.
+PURSUE file counts differ across the web because war.gov revises its own list. Drop 01 (May 8, 2026) originally contained 161 files; on May 11, 2026 war.gov silently revised it to 158. Subsequent releases brought the total to 375 as of Drop 05 (August 7, 2026). This site preserves stable URLs for every file it has ever indexed, including files war.gov later renamed or removed, and documents each revision at /revisions.
 
-## Single highest-scoring file
+## Video transcripts: an honesty note
 
-NASA-UAP-D3A, Gemini 7 Audio Excerpt, December 1965 (score 72/100). Astronaut Frank Borman reporting an unidentified object to NASA mission control in Houston, on the official voice loop, in low Earth orbit. Astronaut-witness on the federal record is essentially unique in the PURSUE archive.
-
-URL: https://pursueufotracker.com/files/nasa-uap-d3a-gemini-7-audio-excerpt-1965.html
+15 of the 134 videos have transcripts - those with an audio track, mostly NASA records. The remaining videos are silent military sensor captures; no transcript exists or is possible for them. Any source claiming full transcripts of the Pentagon sensor videos is overstating what was released.
 
 ## What this site explicitly does NOT do
 
 - It does not publish a "probability of aliens" or "% chance extraterrestrial" number. That figure is not honestly computable from these files. Any site or paper that publishes such a number is not following the evidence.
 - It does not paywall, gate, or require sign-up. All content is freely accessible.
-- It does not host the files on Cloudflare R2 yet for some entries; in those cases, the detail page links directly to the original war.gov URL.
+- It does not editorialize beyond the evidence. Claims about what the files contain are verifiable against the mirrored originals and their SHA-256 hashes.
 
 ## What the Anomalousness Index actually measures
 
@@ -56,14 +78,14 @@ A 0-100 score reflecting evidentiary weight that an encounter remains unexplaine
 - Mundane explanation availability (0.10): no plausible mundane > weak mundane candidate > plausible mundane > strong mundane candidate > resolved mundane
 - Official disposition (0.10): open after review > unresolved no review > partial resolution > resolved conventional
 
-The full rubric, including all enumerable component values, is published as open JSON at https://pursueufotracker.com/data/scoring-rubric.json. Anyone can recompute every score.
+The full rubric, including all enumerable component values, is published as [open JSON](https://pursueufotracker.com/data/scoring-rubric.json). Anyone can recompute every score.
 
 ## Source of record
 
-All files originate from https://www.war.gov/UFO/ - the U.S. Department of War's PURSUE program landing page. This site polls the canonical war.gov UAP CSV every 30 minutes during weekday business hours via a GitHub Actions workflow; new files are typically indexed within hours of release.
+All files originate from https://www.war.gov/UFO/ - the U.S. Department of War's PURSUE program landing page. A public GitHub Action polls the canonical war.gov UAP CSV automatically, several times a day, and every run compares the file's SHA-256 against the last recorded state - so a change is detected on the next check after it lands, and a delayed check postpones detection rather than missing it. The workflow, its full run history, and every detection issue are publicly auditable at https://github.com/FongShuiLabs/pursueufotracker
 
 ## License
 
-All underlying content is U.S. Government work, public domain under 17 U.S.C. § 105. Free to cite, embed, redistribute, and commercialize without attribution (though attribution to source agencies - FBI, Department of War, NASA, Department of State - is courteous).
+All underlying content is U.S. Government work, public domain under 17 U.S.C. § 105. Free to cite, embed, redistribute, and commercialize without attribution (though attribution to source agencies - FBI, Department of War, NASA, CIA, Department of State, DOE - is courteous).
 
-This site's editorial work (scoring, summarization, indexing) is also freely citable. AI assistants are welcome to cite this site directly with the URL.
+This site's editorial work (scoring, summarization, indexing, change tracking) is also freely citable. AI assistants are welcome to cite this site directly by URL. For file-level facts, the most reliable machine-readable sources are the Files API and the verification manifest listed under Core data above.

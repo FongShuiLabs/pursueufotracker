@@ -63,7 +63,7 @@
   <h2>Quick-quote ready talking points</h2>
   <p>For podcasts, TV segments, and articles. Attribution: "PURSUE UFO Tracker" or "the independent PURSUE archive at pursueufotracker.com".</p>
 
-  <blockquote>"The Trump administration released 334 declassified files across four PURSUE drops. The most striking ones aren't the most famous ones - and the official war.gov interface gives you no way to find them."<cite>- on why this index exists</cite></blockquote>
+  <blockquote>"The Trump administration released 375 declassified files across five PURSUE drops. The most striking ones aren't the most famous ones - and the official war.gov interface gives you no way to find them."<cite>- on why this index exists</cite></blockquote>
 
   <blockquote>"There is no proof of aliens in this release. There is also no proof against. What there is, irrefutably, is 80 years of trained military and government personnel observing objects whose kinematics no known craft can replicate."<cite>- on the honest verdict</cite></blockquote>
 
@@ -100,10 +100,10 @@
   <h2>API</h2>
   <p>Public read-only JSON endpoints. CORS-enabled. No authentication required. Build derivative tools, run analytics, generate alerts:</p>
   <ul>
-    <li><a href="api/files.json">{{ site_url }}/generated/api/files.json</a> &mdash; full index of all files (~5 KB)</li>
+    <li><a href="api/files.json">{{ site_url }}/generated/api/files.json</a> &mdash; full index of all files</li>
     <li><code>{{ site_url }}/generated/api/files/&lt;id&gt;.json</code> &mdash; per-file detail with full metadata, scoring breakdown, source URLs</li>
-    <li><a href="/sitemap.xml">{{ site_url }}/sitemap.xml</a> &mdash; main sitemap (~177 URLs)</li>
-    <li><a href="/video-sitemap.xml">{{ site_url }}/video-sitemap.xml</a> &mdash; video sitemap (30 entries)</li>
+    <li><a href="/sitemap.xml">{{ site_url }}/sitemap.xml</a> &mdash; main sitemap{% if sitemap_urls %} ({{ sitemap_urls }} URLs){% endif %}</li>
+    <li><a href="/video-sitemap.xml">{{ site_url }}/video-sitemap.xml</a> &mdash; video sitemap{% if video_sitemap_entries %} ({{ video_sitemap_entries }} entries){% endif %}</li>
     <li><a href="feed.xml">{{ site_url }}/generated/feed.xml</a> &mdash; RSS feed; subscribe for new-drop notifications</li>
   </ul>
 

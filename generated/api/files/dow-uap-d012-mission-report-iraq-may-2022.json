@@ -7,6 +7,7 @@
   "date_event": "5/20/22",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d12-mission-report-iraq-may-2022.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/dow-uap-d12-mission-report-iraq-may-2022.pdf",
   "size_bytes": 670302,
   "sha256": "00afb60938d05101a62d0af41fdfc6749612fcea806d90d5a1035a9dc874afb5",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "Iraq"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d12-mission-report-iraq-may-2022.jpg",
+  "csv_raw_title": "DOW-UAP-D012, Mission Report, Iraq, May 2022",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d12-mission-report-iraq-may-2022.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (5/20/22) over Iraq.",
