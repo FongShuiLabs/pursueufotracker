@@ -1,46 +1,36 @@
 # PURSUE UFO Tracker - Action Queue
 
-> ## ✅ EVERYTHING IS COMMITTED, REBASED, AND GREEN - ONE COMMAND LEFT
+> ## ✅ DROP 05 IS LIVE (deployed 2026-08-27)
 >
-> As of 2026-08-26 the repo is **0 commits behind origin, 2 ahead, working tree
-> clean, and `preflight pre-push` passes every check**. Drop 05 (375 files) is
-> ingested and committed as `d1e3b56`.
+> Verified live, not assumed: all **41** new Drop 05 pages return HTTP 200
+> (paced check, zero failures), the homepage shows the Release 05 banner and a
+> "What's New in Drop 05" section, `llms.txt` advertises **375 files / five
+> releases** (it was serving "161 files" that morning), and the new EOP file is
+> linked from the intel-and-doe hub. Running `verify-deploy.ps1` returns
+> **DEPLOY VERIFIED**.
 >
-> Previous sessions told you to run `git pull --rebase && git push`. **That could
-> never have worked** - the tree had 740 uncommitted files, so the rebase would
-> have aborted with "you have unstaged changes". That is now done for you:
-> committed (excluding the bot-owned `poll-state.json`), rebased onto the 471 new
-> bot commits, no conflicts.
+> **62 URLs submitted to IndexNow** (41 new files + 21 changed pages) - Bing,
+> Yandex, Naver, Seznam, `200 OK`. Note the `index-now` stage inside
+> `pipeline.run all` fired BEFORE the push, when those URLs were still 404, so
+> that submission was wasted; this one was done after the deploy. **On the next
+> drop, submit to IndexNow AFTER the push, not as part of the build.**
+> Google does not support IndexNow and will recrawl on its own schedule.
 >
-> ### The only thing left
-> ```
-> git push
-> ```
-> Run it in your own terminal, not here - it needs git-credential-manager to pop
-> its window so you can re-auth the expired PAT. A push from this session hangs
-> invisibly waiting for that window.
+> ### Next action (operator)
+> **Post the r/UFOs thread** - `_scratch/reddit-drop05.md`, Option A. The draft is
+> marked CLEARED TO POST; all five of its URLs were re-checked live at 200.
+> Text post, not a link post, weekday 9am-1pm ET.
 >
-> - **If it succeeds:** Cloudflare Pages builds in ~2 min. Then verify:
->   `curl -I https://pursueufotracker.com/drops/2026-08-07-drop-05` -> `HTTP/2 200`.
-> - **If it is rejected as non-fast-forward:** the bot pushed again while you were
->   reading. Run `git pull --rebase` then `git push`. The tree is clean so the
->   rebase will work.
-> - **Do NOT** `git push --force`. There is no reason to, and it would clobber bot
->   commits.
+> ### Then, before Drop 06 (~Sept 4 if the +28 pattern holds)
+> 1. **ntfy alerts** - paste `poll-wargov-workflow-READY-TO-PASTE.yml.txt` into
+>    `.github/workflows/poll-wargov.yml` via the GitHub web UI, and add repo
+>    secret `NTFY_TOPIC`. The workflow currently running has ZERO ntfy
+>    references, so a drop will still arrive silently.
+> 2. **Email capture** - Drop 05 came and went with no form live. That is two
+>    consecutive drops of spike traffic not captured.
 >
-> ### Then, and only then
-> Post the r/UFOs thread from `_scratch/reddit-drop05.md` (Option A). The links
-> 404 until the deploy lands.
-
-> 👉 **Next session: read [`_scratch/HANDOFF-2026-08-06.md`](_scratch/HANDOFF-2026-08-06.md) first.**
-> It has the verified 2026-08-05 state, the one blocker (operator's GitHub PAT
-> expired → nothing deploys), and the branch for whether Drop 05 has landed.
->
-> ⚠️ **Correction to that handoff (found 2026-08-06):** it tells the operator to run
-> a bare `git push`. That will be **rejected** — local `main` is **96 commits behind**
-> origin (the bot's poll commits) as well as 1 ahead, so the push is a non-fast-forward.
-> The working sequence is `git pull --rebase` **then** `git push`, run in the operator's
-> own terminal (the rebase needs a clean tree, so local work must be committed first).
+> Credential note: the push is authenticated as GitHub user **FongShuiLabs**,
+> stored in `~/.git-credentials` as PLAINTEXT (`credential.helper=store`).
 
 **Last updated: 2026-07-16** (post-freeze session: verified site health, pulled GSC, re-verified Drop 04 distribution copy. Full strategy in `_scratch/PLAN-2026-07-16.md`.)
 
@@ -66,13 +56,12 @@ for later, but it is not a near-term earner.
 
 ## 🔴 PENDING OPERATOR ACTIONS (Claude can't do these)
 
-1. **Post the Drop 05 r/UFOs thread** — SUPERSEDES the old Drop 04 item, which is
-   now two releases stale (`_scratch/reddit-drop04.md` is archived, do not post it).
-   Use `_scratch/reddit-drop05.md` **Option A**: the 1963 White House / NASC paper
-   trail, deliberately written timing-neutral because Drop 05 is already 11 days old
-   and a "just landed" framing is what made the Drop 04 draft decay. Every number
-   and quoted phrase verified against the documents. Weekday 9am-1pm ET, text post.
-   **Push must land first** or every link 404s.
+1. **Post the Drop 05 r/UFOs thread** - the site is DEPLOYED, links verified live.
+   Use `_scratch/reddit-drop05.md` **Option A** (the 1963 White House / NASC paper
+   trail). Written timing-neutral on purpose: Drop 05 landed Aug 7 and went live
+   Aug 27, so a "just dropped" framing would read stale - that is what killed the
+   Drop 04 draft. Do NOT post `_scratch/reddit-drop04.md`; it is two releases old.
+   Weekday 9am-1pm ET, text post, replace [SITE] with the domain.
 2. **AdSense status** — RESOLVED 2026-07-17 (operator screenshots, Work profile):
    "Getting ready", review requested **12 Jul 2026 09:33** (fresh cycle - not the
    7/1 one; window is "few days to 2-4 weeks"). Ownership verified. DO NOT
