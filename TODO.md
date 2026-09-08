@@ -1,48 +1,46 @@
 # PURSUE UFO Tracker - Action Queue
 
-> ## ✅ DROP 05 IS LIVE (deployed 2026-08-27)
+> ## 👉 Next session: read `_scratch/HANDOFF-2026-09-09.md` first
 >
-> Verified live, not assumed: all **41** new Drop 05 pages return HTTP 200
-> (paced check, zero failures), the homepage shows the Release 05 banner and a
-> "What's New in Drop 05" section, `llms.txt` advertises **375 files / five
-> releases** (it was serving "161 files" that morning), and the new EOP file is
-> linked from the intel-and-doe hub. Running `verify-deploy.ps1` returns
-> **DEPLOY VERIFIED**.
+> **State as of 2026-09-08 (all verified live):** Drop 05 is deployed and the site
+> is healthy at 375 files. **No Drop 06** - war.gov unchanged since 2026-08-07,
+> confirmed by independent live fetch, not just the guard. The +14/+21/+28/+28
+> cadence has now **broken**: 32 days elapsed, the +28 mark (Sept 4) passed.
 >
-> **62 URLs submitted to IndexNow** (41 new files + 21 changed pages) - Bing,
-> Yandex, Naver, Seznam, `200 OK`. Note the `index-now` stage inside
-> `pipeline.run all` fired BEFORE the push, when those URLs were still 404, so
-> that submission was wasted; this one was done after the deploy. **On the next
-> drop, submit to IndexNow AFTER the push, not as part of the build.**
-> Google does not support IndexNow and will recrawl on its own schedule.
+> **Deploys are UNBLOCKED.** Credential stored as GitHub user `FongShuiLabs`; a
+> Claude session pushed successfully on 2026-08-27. No operator step needed to ship.
 >
-> ### Next action (operator)
-> **Post the r/UFOs thread** - `_scratch/reddit-drop05.md`, Option A. The draft is
-> marked CLEARED TO POST; all five of its URLs were re-checked live at 200.
-> Text post, not a link post, weekday 9am-1pm ET.
+> ### The one number that matters
+> **0 clicks / 115 impressions / position 40.1 (28d).** Twelve days after
+> publishing 41 new files, search has not moved. No penalty, no technical fault -
+> all ruled out. Distribution is the channel; search is not.
 >
-> ### Then, before Drop 06 (~Sept 4 if the +28 pattern holds)
-> 1. **ntfy alerts** - paste `poll-wargov-workflow-READY-TO-PASTE.yml.txt` into
->    `.github/workflows/poll-wargov.yml` via the GitHub web UI, and add repo
->    secret `NTFY_TOPIC`. The workflow currently running has ZERO ntfy
->    references, so a drop will still arrive silently.
-> 2. **Email capture** - Drop 05 came and went with no form live. That is two
->    consecutive drops of spike traffic not captured.
+> **The unpulled lever: `_scratch/reddit-drop05.md` has not been posted.**
 >
-> Credential note: the push is authenticated as GitHub user **FongShuiLabs**,
-> stored in `~/.git-credentials` as PLAINTEXT (`credential.helper=store`).
+> ### Do not panic about indexing
+> Indexed fell 342 -> 307, but "Alternate page with proper canonical tag" rose
+> 54 -> 90. Near-exact offset: Google is finally consolidating the ~114 old-slug
+> orphans onto their canonicals. That is `f532c6d` landing. **Good news.**
 
-**Last updated: 2026-07-16** (post-freeze session: verified site health, pulled GSC, re-verified Drop 04 distribution copy. Full strategy in `_scratch/PLAN-2026-07-16.md`.)
+**Last updated: 2026-09-08** (Drop 05 ingested + deployed; drop-guard blindness fixed; GSC re-pulled. Full state: `_scratch/HANDOFF-2026-09-09.md`.)
 
 ---
 
-## Current state (verified 2026-07-16)
+## Current state (verified live 2026-09-08)
 
-- **Drop 04 live and clean.** 334 files (manifest + live API + poll-state all agree), CSV SHA-256 `13e730c1...`, poller current (no change since 2026-07-12). Integrity check clean (216 files, 0 body-changed, 0 unreachable). Homepage 200, deploys healthy.
-- **114 old-slug orphans already canonical-remapped** (fix f532c6d holds; Drop 04's `d8`→`d008`, `serial-3`→`serial-003` re-slugs all carry correct canonical tags). No remap work needed - Google is still consolidating.
-- **robots.txt /generated/ fix (2026-07-13) is landing.** 28-day GSC shows canonical `/files/` URLs replacing the raw `/generated/` twins; a few `/generated/` URLs still hold 90-day clicks. Monitor deindexing over the next few weeks.
+- **Drop 05 live and clean.** 375 files (manifest + poller + live war.gov all agree),
+  CSV SHA-256 `5f5698f1...`, deployed 2026-08-27. All 41 new pages return 200.
+  Release 05 banner + "What's New in Drop 05" on the homepage; `llms.txt` at 375.
+- **No Drop 06.** war.gov unchanged since 2026-08-07. The +14/+21/+28/+28 cadence
+  has broken - 32 days elapsed, the +28 mark (Sept 4) passed. Site copy survives
+  this: it states only historical gaps and refuses to predict a date.
+- **Deploys unblocked.** Credential stored (`FongShuiLabs`); a Claude session
+  pushed successfully 2026-08-27. `verify-deploy.ps1` confirms a deploy landed.
+- **Orphan consolidation is completing.** Indexed 342 -> 307 while "alternate page
+  with proper canonical" rose 54 -> 90. That is the duplicate problem resolving,
+  not coverage loss.
 
-## The strategic read (from the 2026-07-16 GSC pull)
+## The strategic read (re-confirmed by the 2026-09-08 GSC pull)
 
 **Traffic is the bottleneck, and organic search is currently a rounding error.**
 28-day: 11 clicks / 1.33K impressions / 0.8% CTR / pos 8.5. 90-day: 98 clicks /
