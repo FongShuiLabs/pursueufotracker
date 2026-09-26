@@ -1,44 +1,36 @@
 # PURSUE UFO Tracker - Action Queue
 
-> ## 👉 Next session: read `_scratch/HANDOFF-2026-09-09.md` first
+> ## Next session: Drop 06 is ingested - post the Reddit draft, then the AAWSAP page
 >
-> **State as of 2026-09-08 (all verified live):** Drop 05 is deployed and the site
-> is healthy at 375 files. **No Drop 06** - war.gov unchanged since 2026-08-07,
-> confirmed by independent live fetch, not just the guard. The +14/+21/+28/+28
-> cadence has now **broken**: 32 days elapsed, the +28 mark (Sept 4) passed.
+> **State as of 2026-09-26:** Drop 06 (Release 06, Sept 18) ingested and pushed
+> (`189e0919`). 450 files, CSV SHA-256 `c3f8209e...`. war.gov amended the release on
+> Sept 24 (+3 transcripts, PR004 retitled, the LLE-UAP-D001 PDF swapped at the same URL);
+> all three are documented on /revisions. The site was 8 days late on this drop - see
+> "ship the verified core first" in DROP_REACTION.md.
 >
-> **Deploys are UNBLOCKED.** Credential stored as GitHub user `FongShuiLabs`; a
-> Claude session pushed successfully on 2026-08-27. No operator step needed to ship.
->
-> ### The one number that matters
-> **0 clicks / 115 impressions / position 40.1 (28d).** Twelve days after
-> publishing 41 new files, search has not moved. No penalty, no technical fault -
-> all ruled out. Distribution is the channel; search is not.
->
-> **The unpulled lever: `_scratch/reddit-drop05.md` has not been posted.**
->
-> ### Do not panic about indexing
-> Indexed fell 342 -> 307, but "Alternate page with proper canonical tag" rose
-> 54 -> 90. Near-exact offset: Google is finally consolidating the ~114 old-slug
-> orphans onto their canonicals. That is `f532c6d` landing. **Good news.**
+> ### Open items
+> 1. **Post `_scratch/reddit-drop06.md`** (Tremonton angle), Monday 9am-1pm ET, after
+>    `verify-deploy.ps1` passes. `_scratch/reddit-drop05.md` was never posted either;
+>    its FBI bullet has been corrected.
+> 2. **AAWSAP landing page** - 44 records, high search interest, no hub yet (a hub costs
+>    one `_redirects` rule; 82/100 used). Option B in the Reddit draft notes 37 of 38 DIRDs
+>    are in the release; the missing title is not yet checked against a sourced list.
+> 3. **Tremonton deep dive** (film + Blue Book files + the 1953 Navy analysis).
+> 4. /changes still describes only Releases 01-03; decide whether it should cover later
+>    releases or point to the uap-data.csv revision table.
 
-**Last updated: 2026-09-08** (Drop 05 ingested + deployed; drop-guard blindness fixed; GSC re-pulled. Full state: `_scratch/HANDOFF-2026-09-09.md`.)
+**Last updated: 2026-09-26** (Drop 06 ingested + pushed. Previous handoff: `_scratch/HANDOFF-2026-09-09.md`.)
 
 ---
 
-## Current state (verified live 2026-09-08)
+## Current state (2026-09-26)
 
-- **Drop 05 live and clean.** 375 files (manifest + poller + live war.gov all agree),
-  CSV SHA-256 `5f5698f1...`, deployed 2026-08-27. All 41 new pages return 200.
-  Release 05 banner + "What's New in Drop 05" on the homepage; `llms.txt` at 375.
-- **No Drop 06.** war.gov unchanged since 2026-08-07. The +14/+21/+28/+28 cadence
-  has broken - 32 days elapsed, the +28 mark (Sept 4) passed. Site copy survives
-  this: it states only historical gaps and refuses to predict a date.
-- **Deploys unblocked.** Credential stored (`FongShuiLabs`); a Claude session
-  pushed successfully 2026-08-27. `verify-deploy.ps1` confirms a deploy landed.
-- **Orphan consolidation is completing.** Indexed 342 -> 307 while "alternate page
-  with proper canonical" rose 54 -> 90. That is the duplicate problem resolving,
-  not coverage loss.
+- **Drop 06 pushed.** 450 files, CSV SHA-256 `c3f8209e...`; homepage release list,
+  counts and nav phrases now stamped automatically (stamp-counts). Run `.erify-deploy.ps1`
+  to confirm it is live.
+- **Deploys unblocked.** Credential stored (`FongShuiLabs`); pushes work from a Claude session.
+- **Orphan consolidation** was completing as of 2026-09-08 (indexed 342 -> 307 while
+  "alternate page with proper canonical" rose 54 -> 90).
 
 ## The strategic read (re-confirmed by the 2026-09-08 GSC pull)
 

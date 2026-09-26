@@ -112,6 +112,39 @@ CATEGORIES = [
         ),
         "keywords": "FBI UFO files, FBI UFO declassified, 62-HQ-83894, FBI flying disc investigation, Oak Ridge UFO, FBI vault UFO, Trump FBI UFO release, PURSUE FBI",
     },
+    # Before military-uap-files: the file-page breadcrumb takes the FIRST matching hub,
+    # so the 44 AAWSAP records link to this hub rather than the general Pentagon one.
+    {
+        "slug": "aawsap-files",
+        "title": "AAWSAP Files & DIRDs: @@N@@ Released DIA Program Records",
+        "h1": "AAWSAP Records and DIRDs",
+        "match": lambda f: "aawsap" in (f.get("id") or ""),
+        "intro": (
+            "@@NWORD@@ records of the <strong>Advanced Aerospace Weapon System Applications Program "
+            "(AAWSAP)</strong>, a Defense Intelligence Agency program that war.gov describes as active from "
+            "2008 to 2012, were released in PURSUE Release 06 (September 2026). They fall into two groups. "
+            "The first is the program's administrative file: a "
+            "<a href='/files/dow-uap-d110-aawsap-statement-of-objectives-july-2008'>July 2008 statement of "
+            "objectives</a> that frames AAWSAP as a contractor-supported effort to assess far-term foreign "
+            "aerospace threats out to the year 2050 across 12 technical study areas, a September 2008 "
+            "solicitation and original order, and five contract modifications from 2009 and 2010. The second "
+            "is the program's <strong>Defense Intelligence Reference Documents (DIRDs)</strong>: technical "
+            "papers on subjects from metallic glasses and biomaterials to warp drives, traversable wormholes "
+            "and negative-mass propulsion. War.gov describes DIRDs as reference and synthesis products rather "
+            "than original research, notes that not every paper directly concerns aerospace systems or threat "
+            "assessment, and cautions that its summaries should not be read as implying current validation of "
+            "the concepts discussed. Its descriptions say 38 DIRDs were produced between 2009 and 2011; PURSUE "
+            "has released 37. None of these records reports a sighting, so each file's Anomalousness Index is "
+            "the rubric's default for a document that describes no event, not a finding. All are flagged as "
+            "redacted, and all are public domain U.S. Government works under 17 U.S.C. § 105."
+        ),
+        "meta_desc": (
+            "All @@N@@ AAWSAP records in the Trump PURSUE disclosure: the Defense Intelligence Agency program's "
+            "2008 statement of objectives, solicitation and contract modifications, plus its Defense Intelligence "
+            "Reference Documents (DIRDs) on topics from metallic glasses to warp drives. Mirrored and SHA-256 verified."
+        ),
+        "keywords": "AAWSAP, AAWSAP files, AAWSAP DIRD, DIRD list, Defense Intelligence Reference Documents, DIA AAWSAP, Advanced Aerospace Weapon System Applications Program, AAWSAP statement of objectives, PURSUE AAWSAP, war.gov AAWSAP",
+    },
     {
         "slug": "military-uap-files",
         "title": "Pentagon UAP Files: @@N@@ Department of War Records From the Trump UFO Release",
@@ -119,19 +152,19 @@ CATEGORIES = [
         "match": lambda f: f.get("agency") == "DoD",
         "intro": (
             "@@NWORD@@ Department of War files cover U.S. military Unidentified Anomalous "
-            "Phenomena encounters and historical investigations spanning <strong>1946 through 2026</strong>. "
+            "Phenomena encounters and historical investigations from <strong>the 1940s to the 2020s</strong>. "
             "These include AARO mission packets and "
             "Mission Reports (MISREPs) from the Mediterranean, Greek airspace, the Arabian Gulf, the "
             "Indo-Pacific, Iraq, Syria, the UAE, and Yemen - plus a multi-document AARO case from the "
             "<strong>Western United States</strong> added in Release 03 (June 2026). Release 06 (September "
             "2026) added the 1952 Tremonton, Utah film with its Project Blue Book files, an audio "
             "recording of Captain Edward J. Ruppelt's 1952 presentation, and 44 records from the "
-            "Defense Intelligence Agency's AAWSAP program. Many include "
-            "full-motion video from "
+            "Defense Intelligence Agency's AAWSAP program (<a href='/aawsap-files/'>see the AAWSAP hub</a>). "
+            "Many include full-motion video from "
             "<strong>infrared (IR), electro-optical (EO), and short-wave infrared (SWIR) sensors</strong>. "
-            "These are the files that score highest on the Anomalousness Index, because the encounters "
-            "have the strongest sensor and witness chain - trained military operators, multi-sensor "
-            "capture, and unresolved official disposition."
+            "Nearly all of the archive's densest scoring band, the files tied at 66 on the Anomalousness "
+            "Index, are these military sensor captures: trained operators, instrumented capture, and reports "
+            "logged as unresolved. The archive's highest scores belong to NASA astronaut records."
         ),
         "meta_desc": (
             "All @@N@@ Pentagon and Department of War UAP files from the Trump 2026 PURSUE releases. "

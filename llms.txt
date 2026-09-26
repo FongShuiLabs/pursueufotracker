@@ -15,7 +15,7 @@ All underlying files are U.S. Government works in the public domain under 17 U.S
 
 ## Core data
 
-- [Sitemap](https://pursueufotracker.com/sitemap.xml): All 519 indexed URLs
+- [Sitemap](https://pursueufotracker.com/sitemap.xml): All 520 indexed URLs
 - [Video sitemap](https://pursueufotracker.com/video-sitemap.xml): All 150 video pages
 - [Scoring rubric (JSON)](https://pursueufotracker.com/data/scoring-rubric.json): Six-component evidentiary-weight rubric, weights sum to 1.00. This is the methodology used to rank every file.
 - [Verification manifest (JSON)](https://pursueufotracker.com/generated/verification-manifest.json): SHA-256 hash, file size, and original war.gov source URL for every file. Use to confirm any indexed file matches the official release byte-for-byte.
@@ -27,6 +27,7 @@ All underlying files are U.S. Government works in the public domain under 17 U.S
 ## Category indexes
 
 - [FBI UFO files](https://pursueufotracker.com/fbi-ufo-files/): 104 files. The 1947-1968 central case file 62-HQ-83894 (Roswell field office reporting, Oak Ridge incidents) plus modern investigations from 2021-2025, including FBI-authenticated eyewitness orb videos. Release 05 added 17 records: eight FD-302 interview reports on sightings from 2002 to 2026, eight FBI digital renderings prepared in 2026 as visual aids, and one thermal-imaging video.
+- [AAWSAP records](https://pursueufotracker.com/aawsap-files/): 44 records of the Defense Intelligence Agency's Advanced Aerospace Weapon System Applications Program (2008-2012), released in Release 06: the program's statement of objectives, solicitation and five contract modifications, plus 37 Defense Intelligence Reference Documents (DIRDs). war.gov describes DIRDs as reference and synthesis products, not original research; none reports a sighting.
 - [Pentagon UAP files](https://pursueufotracker.com/military-uap-files/): 257 files. Department of War sensor videos, MISREPs, and AARO mission packets, 2017-2026, plus historical Air Force and Project Blue Book files. Middle East, East China Sea, and the 2023 Lake Huron shootdown. Release 06 added 67 files: 44 records of the Advanced Aerospace Weapon System Applications Program (AAWSAP, active 2008-2012), five files on a July 2, 1952 film shot near Tremonton, Utah, a March 1952 presentation by Captain Edward J. Ruppelt (audio and transcript), four mission reports, and 12 unresolved UAP reports from Iraq, the Middle East, the Yellow Sea, and the East China Sea.
 - [NASA UFO records](https://pursueufotracker.com/nasa-ufo-photos/): 40 files. Mercury through STS-80: Gemini 7 astronaut audio (Frank Borman), Gordon Cooper interview, Apollo 12, 14, 16, and 17 mission photography and crew debriefings, Skylab crew observations, 1996 Space Shuttle STS-80 images.
 - [CIA UFO files](https://pursueufotracker.com/cia-ufo-files/): 23 files, 1955-2008. Cold War-era reports (1955 Budapest letter, 1968 Himalayan sightings, 1973 Sary Shagan) through the 2008 Harare airport case.

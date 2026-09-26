@@ -7,14 +7,16 @@ a new PURSUE drop, with every public number verified first.
 **This file applies to every drop** (it was `DROP02_REACTION.md` through July 2026;
 renamed because it is not Drop-02-specific). Fill the placeholders fresh each time.
 
-**Status (2026-08-17):** four releases so far - Drop 01 (May 8), 02 (May 22), 03
-(Jun 12), 04 (Jul 10). Gaps were +14/+21/+28 days, so the extrapolated window was
-early-to-mid August - **that window has now passed with no drop** (38 days and
-counting since Drop 04, already longer than any prior gap). Treat the +7-per-drop
-pattern as broken, not as a countdown; Drop 05 could land any day or not for weeks.
-Nothing on a public page should imply a predicted date.
-The last drop's actual, proven Reddit post is archived in `_scratch/reddit-drop04.md` -
-adapt that format; it is the format that has worked.
+**Status (2026-09-26):** six releases so far - Drop 01 (May 8), 02 (May 22), 03
+(Jun 12), 04 (Jul 10), 05 (Aug 7), 06 (Sep 18). Gaps: +14/+21/+28/+28/+42 days. No
+schedule has ever been announced; nothing on a public page may imply a predicted date.
+The latest drafts are `_scratch/reddit-drop05.md` and `_scratch/reddit-drop06.md` -
+timing-neutral, source-quoted; adapt that format.
+
+**Ship the verified core first.** Drop 06 landed Sept 18 and was not live until
+Sept 26: the session batched a long list of improvements before the first push, and
+war.gov amended the release mid-way (Sept 24). Push as soon as the ingest is verified
+and the guards pass; improvements go in follow-up pushes.
 
 ---
 
@@ -39,6 +41,19 @@ diff and a clean guard run.
    extract, OG cards regen). Note: `all` runs both the legacy `download` and
    `download-manifest` stages; the download.py id-corruption bug was fixed 2026-07-11,
    and the post-ingest guard below is the backstop if it ever recurs.
+   - `all` no longer runs `index-now` (it pinged search engines before the push, so
+     they fetched 404s). Run it by name after the deploy - see section 5.
+   - The last stage is `stamp-counts`: it rewrites every archive total on the
+     hand-authored pages (hero tiles, /pursue-program, /timeline, /verify, /api, the
+     CSV mirror row count + hash, "Search All N Files"-style phrases on ~550 pages)
+     and GENERATES the homepage release list (hero sentence, newest-release banners,
+     LATEST RELEASE chip, footer, release-history FAQ JSON-LD) from `data/drops.json`.
+     So after step 7 (drops.json), re-run `python -m pipeline.run stamp-counts`.
+   - **A file war.gov replaces at the same URL is NOT re-downloaded** -
+     download-manifest trusts the cached copy if its size matches the old record.
+     On Drop 06 war.gov swapped LLE-UAP-D001 for a different document six days
+     after the drop. If the CSV diff shows a row whose description changed, re-fetch
+     that file and compare hashes before trusting the mirror.
    - **New CSV columns are safe** - `parse_csv` uses `csv.DictReader` and looks
      columns up by NAME (verified 2026-08-17), so additions like Drop 03's
      "Featured" cannot shift the parse.
@@ -100,12 +115,22 @@ diff and a clean guard run.
     until clean. Note the deep-dive count claims are hub-derived and do NOT move
     on a drop - if one fails, something else is wrong.
 
-8. **`python -m pipeline.preflight pre-push`** - hard-gates >25MiB deploy-killers,
-   the `_redirects` ~100-rule ceiling, CSV-mirror byte drift, AND count drift.
-   Then push to deploy.
-9. Wait ~2 min for Cloudflare, then verify live:
-   `curl -I https://pursueufotracker.com/files/<one-new-id>` -> `HTTP/2 200`,
-   and open `/drops/<slug>`.
+7c. **Copy the verified CSV into the mirror and mark the ingest** (both ship in
+    the same commit): copy `_scratch/uap-csv.csv` to `data/uap-data.csv` after
+    asserting its SHA-256 equals `data/poll-state.json`, then
+    `python -m pipeline.drop_check --mark` (writes `data/last-ingest.json`, which
+    drives the homepage's "verified current" badge).
+
+8. Commit, then **`git pull --rebase`**, then **`python -m pipeline.preflight pre-push`**
+   - hard-gates >25MiB deploy-killers, the `_redirects` ~100-rule ceiling,
+   CSV-mirror byte drift, AND count drift. Pulling first matters: the pull brings
+   the bot's latest poll-state, so if war.gov amended the release after your ingest
+   (as it did on Drop 06), the mirror-drift check fails instead of shipping stale
+   data. Then push to deploy.
+9. Wait ~2 min for Cloudflare, then run `.\verify-deploy.ps1` (reads everything
+   from the repo, no per-drop edits): it checks the newest drop page and its
+   headline files return 200 and that the homepage and llms.txt advertise the
+   manifest's file count.
 10. Update the two standing cadence claims to include this drop: the FAQ "When will
     more UFO files be released?" answer (visible + JSON-LD twin) and the `/drops`
     meta (`templates/drops_index.html.j2`), then re-run `build-drops`. Also refresh
@@ -210,9 +235,32 @@ a spike's traffic is anonymous, but a subscriber is reachable for the NEXT drop.
 
 ## 4. On-site
 
-The homepage auto-updates from the manifest (new top-scorer, drop panels) after the
-rebuild - no manual edit required. Optional yellow banner above the file grid on
-`index.html` (remove after ~1 week or when the next drop lands):
+**What updates itself** (after step 7 + a build): the homepage release list, chip,
+footer and release-history JSON-LD (stamp-counts, from drops.json); every archive
+total and nav phrase (stamp-counts); category hubs, /drops, /press, /top-10, file
+pages (builders).
+
+**What is still hand-written each drop** (the Drop 06 sweep found every one of
+these stale, some since Drop 04):
+- `index.html`: the "PURSUE RELEASE NN - INGESTED" status box under the banners,
+  and a new "What's New in Drop NN" section (the page runs oldest to newest).
+- `generated/faq.html`: the release-history, total-files and next-release answers
+  (each has a JSON-LD twin).
+- `generated/pursue-program.html`: "Where the program is now" and the per-agency
+  paragraphs.
+- `generated/uap-data-csv.html`: a revision-table row for each new CSV version
+  (move "current version" to it), and the "revised at least N times" count.
+- `generated/revisions.html` when war.gov edits rows it already released.
+- `llms.txt` (step 7b) and `_scratch/reddit-dropNN.md`.
+
+Every claim in those must come from the CSV or the file itself. Two Drop 05/06
+lessons: describe pairings only from the `PDF Pairing` / `Video Pairing` columns
+(the Drop 05 copy said all eight FD-302s had renderings; six did), and never say a
+recording carries speech without measuring it (the Drop 06 police videos are silent:
+AARO removed the audio).
+
+Optional yellow banner above the file grid on `index.html` (remove after ~1 week or
+when the next drop lands):
 ```html
 <div style="max-width:1100px;margin:24px auto 0;padding:14px 20px;background:rgba(82,255,180,.08);border:1px solid rgba(82,255,180,.3);border-radius:8px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:13px;color:#52ffb4">
   🔔 DROP [DROP_N] LIVE - [NEW_FILE_COUNT] new files indexed [DROP_DATE]. <a href="/drops/[DROP_SLUG]" style="color:#52ffb4;text-decoration:underline">See the diff →</a>
@@ -221,8 +269,12 @@ rebuild - no manual edit required. Optional yellow banner above the file grid on
 
 ## 5. Search engines
 
-`index-now` runs automatically as the last stage of `pipeline.run all` (pings
-Bing/Yandex/Naver/Seznam); confirm the 200 in the log. Google: re-submit
+Run `python -m pipeline.run index-now` AFTER `verify-deploy.ps1` passes (it pings
+Bing/Yandex/Naver/Seznam with every sitemap URL; it is no longer part of `all`
+because it fired before the push). Confirm the 200 in the log. On Drop 06 the first
+full-sitemap submission, minutes after the deploy, returned HTTP 422 ("URLs are not
+related to your verified domain") and the identical retry a few minutes later returned
+200 - so retry once before debugging. Google: re-submit
 `sitemap-index.xml` in GSC, and optionally URL-inspect -> Request Indexing the new
 `/drops/[DROP_SLUG]` and top new file page (the GSC inspect UI is flaky under
 automation - IndexNow + natural recrawl cover it if the button won't cooperate).
@@ -237,7 +289,10 @@ automation - IndexNow + natural recrawl cover it if the button won't cooperate).
   step 6 so you're not stuck at the push gate under time pressure.
 - Don't forget `data/drops.json` (step 7) - without it `/drops` silently shows the
   old set even though the file pages are live.
-- Don't claim "transcripts on every video" - most are silent sensor captures.
+- Don't claim "transcripts on every video" - most are silent sensor captures, and
+  war.gov's own transcript PDFs (Ruppelt, the Colorado police videos) are not ours.
+- Don't describe a pairing, a speaker, or a date that the CSV columns or the file
+  itself does not show.
 - Don't add commercial framing (affiliate/sponsor) unless the relationship is active
   that day (Hard Rule #8).
 - Don't delete-and-repost an underperformer; don't tag journalists in tweet 1.
@@ -245,6 +300,11 @@ automation - IndexNow + natural recrawl cover it if the button won't cooperate).
 ---
 
 ## Last updated
+
+2026-09-26 - Drop 06: stamp-counts stage (runs last, generates the homepage release
+list from drops.json), index-now moved out of `all`, the same-URL file-swap check,
+the pull-before-pre-push order, drop_check --mark before the commit, the list of
+pages that are still hand-written, and "ship the verified core first."
 
 2026-07-17 - rewritten release-agnostic from the Drop-02-era draft. Folded in the
 Drop 03-04 lessons: the count-drift reconciliation step (now guarded by

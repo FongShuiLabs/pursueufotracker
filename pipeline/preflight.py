@@ -414,6 +414,8 @@ def check_llms_txt() -> list[str]:
          by_agency["STATE"], "State category"),
         (r"intel-and-doe-uap-files/\): (\d+) files", intel_doe, "intel/DOE category"),
         (r"videos/\): (\d+) DVIDS-hosted videos", by_type["video"], "videos category"),
+        (r"aawsap-files/\): (\d+) records", sum(1 for f in files if "aawsap" in (f.get("id") or "")),
+         "AAWSAP category"),
         (r"deep-dives\): (\d+) long-form", dd_total, "deep-dive count"),
         (r"(\w+) files are tied at the top score of (\d+)/100",
          (top_ties, top), "top-score tie"),

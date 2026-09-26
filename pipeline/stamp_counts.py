@@ -52,6 +52,21 @@ def _mirror() -> tuple[int | None, str | None]:
     return rows, hashlib.sha256(raw).hexdigest()
 
 
+def _hub_counts(files: list[dict]) -> dict[str, int]:
+    """File count per category hub, using the hubs' own match rules."""
+    from .build_categories import CATEGORIES
+    out = {}
+    for c in CATEGORIES:
+        n = 0
+        for f in files:
+            try:
+                n += bool(c["match"](f))
+            except Exception:
+                pass
+        out[c["slug"]] = n
+    return out
+
+
 def _drops_list() -> list[dict]:
     try:
         d = json.loads(DROPS_PATH.read_text(encoding="utf-8"))
@@ -77,6 +92,7 @@ def _values(files: list[dict], n_drops: int) -> dict:
         "other": total - named,
         "drops": n_drops,
         "drops_list": _drops_list(),
+        "hubs": _hub_counts(files),
     }
 
 
@@ -245,6 +261,20 @@ def _block_repl(v):
     return lambda m: m.group(0) if block is None else block
 
 
+def _hub_link(slug: str):
+    """Homepage 'Browse by agency' button: <a href="/SLUG/" ...>... <span ...>(N)</span></a>.
+    They sat at Drop 03-04 values ("Intel + DOE (6)" beside a 17-file hub) until 2026-09-26."""
+    pat = (r'(<a href="/' + re.escape(slug) + r'/"[^>]*>(?:(?!</a>).)*?<span style="color:#7a92b0">\()\d+'
+           r'(\)</span></a>)')
+    return (f"homepage hub button '{slug}'", pat,
+            lambda v: (lambda m: f"{m.group(1)}{v['hubs'][slug]}{m.group(2)}"))
+
+
+def _hub_links() -> list:
+    from .build_categories import CATEGORIES
+    return [_hub_link(c["slug"]) for c in CATEGORIES]
+
+
 TARGETS = {
     "index.html": [
         ("homepage release block (hero sentence + banners)",
@@ -382,6 +412,9 @@ def _sweep_global(vals: dict, write: bool) -> list[str]:
                 if write:
                     path.write_text(new, encoding="utf-8")
     return changed
+
+
+TARGETS["index.html"] += _hub_links()
 
 
 def _load() -> tuple[list[dict], int]:
