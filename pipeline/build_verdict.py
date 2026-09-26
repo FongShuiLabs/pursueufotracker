@@ -37,29 +37,60 @@ def _md_to_qa(md: str) -> list[dict]:
     # Light markdown -> html: paragraphs, bold, lists
     for b in blocks:
         b["body_html"] = _mini_md(b["body"])
+        # Plain text for the FAQPage JSON-LD: no markdown markers, wrapped lines joined.
+        b["body_text"] = re.sub(r"\s+", " ", b["body"].replace("**", "")).strip()
     return blocks
 
 
+def _bold(s: str) -> str:
+    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+
+
 def _mini_md(text: str) -> str:
-    # bold
-    text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
-    # bullets
-    out = []
-    in_list = False
+    """Paragraphs, "- " and "1. " lists, and **bold**.
+
+    Wrapped lines are joined before bold is applied: the old line-by-line version
+    left a bold span that crossed a line break as literal ** on the live page, and
+    turned every wrapped source line into its own <p>. An indented line continues
+    the list item above it."""
+    out: list[str] = []
+    para: list[str] = []
+    items: list[str] = []
+    tag = None
+
+    def flush_para():
+        if para:
+            out.append(f"<p>{_bold(' '.join(para))}</p>")
+            para.clear()
+
+    def flush_list():
+        nonlocal tag
+        if items:
+            out.append(f"<{tag}>" + "".join(f"<li>{_bold(i)}</li>" for i in items) + f"</{tag}>")
+            items.clear()
+        tag = None
+
     for line in text.splitlines():
-        if re.match(r"^\s*-\s+", line):
-            if not in_list:
-                out.append("<ul>")
-                in_list = True
-            out.append("<li>" + re.sub(r"^\s*-\s+", "", line) + "</li>")
-        else:
-            if in_list:
-                out.append("</ul>")
-                in_list = False
-            if line.strip():
-                out.append(f"<p>{line.strip()}</p>")
-    if in_list:
-        out.append("</ul>")
+        if not line.strip():
+            flush_para()
+            flush_list()
+            continue
+        m = re.match(r"^\s*(-|\d+\.)\s+(.*)$", line)
+        if m:
+            flush_para()
+            new_tag = "ul" if m.group(1) == "-" else "ol"
+            if tag and new_tag != tag:
+                flush_list()
+            tag = new_tag
+            items.append(m.group(2).strip())
+            continue
+        if items and line[:1] in (" ", "\t"):
+            items[-1] += " " + line.strip()
+            continue
+        flush_list()
+        para.append(line.strip())
+    flush_para()
+    flush_list()
     return "\n".join(out)
 
 

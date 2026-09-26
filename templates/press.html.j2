@@ -58,14 +58,14 @@
     <div class="fact-tile"><div class="n">{{ by_type.image }}</div><div class="l">Images</div></div>
     <div class="fact-tile"><div class="n">{{ redacted_count }}</div><div class="l">Redacted</div></div>
   </div>
-  <p><strong>First release:</strong> May 8, 2026 (Drop 01) · <strong>Latest release:</strong> June 12, 2026 (Drop 03) · <strong>Source of record:</strong> <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener">war.gov/UFO</a> · <strong>Program:</strong> PURSUE (Trump administration) · <strong>Cadence:</strong> rolling release; this site indexes new drops within hours.</p>
+  <p><strong>First release:</strong> {{ first_drop.date_long }} (Drop {{ '%02d'|format(first_drop.number) }}) · <strong>Latest release:</strong> {{ latest_drop.date_long }} (Drop {{ '%02d'|format(latest_drop.number) }}) · <strong>Source of record:</strong> <a href="https://www.war.gov/UFO/" target="_blank" rel="noopener">war.gov/UFO</a> · <strong>Program:</strong> PURSUE (Trump administration) · <strong>Cadence:</strong> rolling release with no announced schedule; a public poller checks war.gov several times a day, and each new release is added here once its files are verified.</p>
 
   <h2>Quick-quote ready talking points</h2>
   <p>For podcasts, TV segments, and articles. Attribution: "PURSUE UFO Tracker" or "the independent PURSUE archive at pursueufotracker.com".</p>
 
-  <blockquote>"The Trump administration released 375 declassified files across five PURSUE drops. The most striking ones aren't the most famous ones - and the official war.gov interface gives you no way to find them."<cite>- on why this index exists</cite></blockquote>
+  <blockquote>"The Trump administration released {{ total }} declassified files across {{ n_drops_word }} PURSUE drops. The most striking ones aren't the most famous ones - and the official war.gov interface gives you no way to find them."<cite>- on why this index exists</cite></blockquote>
 
-  <blockquote>"There is no proof of aliens in this release. There is also no proof against. What there is, irrefutably, is 80 years of trained military and government personnel observing objects whose kinematics no known craft can replicate."<cite>- on the honest verdict</cite></blockquote>
+  <blockquote>"There is no proof of aliens in this release. There is also no proof against. What there is, on the record, is decades of trained military and government personnel reporting observations that the federal record still logs as unresolved."<cite>- on the honest verdict</cite></blockquote>
 
   <blockquote>"Every score on this site is reproducible. The rubric is open JSON. We use AI to apply human-designed weighting - we do not use AI to decide if something is alien. No model can honestly do that."<cite>- on AI methodology</cite></blockquote>
 
@@ -73,10 +73,10 @@
 
   <h2>What we are - and what we are not</h2>
   <ul>
-    <li><strong>What we are:</strong> An independent, public-domain mirror and search index of every file released through PURSUE. Searchable across all {{ by_type.pdf }} PDFs, with transcripts on every video that has spoken audio, transparent scoring, and SHA-256 verification on every file.</li>
+    <li><strong>What we are:</strong> An independent, public-domain mirror and search index of every file released through PURSUE. Searchable across all {{ by_type.pdf }} PDFs, with Whisper-generated transcripts on the narrated videos (most PURSUE videos are silent sensor captures), transparent scoring, and SHA-256 verification on every file.</li>
     <li><strong>What we are not:</strong> Affiliated with the Department of War, the FBI, NASA, the State Department, AARO, or any U.S. government entity. Not a Pentagon press office, not a contractor, not a content partner. We mirror the public record.</li>
     <li><strong>Editorial position:</strong> Honest. We do not claim aliens exist. We do not claim they don't. The files don't answer that question, and any site that says otherwise is selling something.</li>
-    <li><strong>Funding:</strong> Reader-supported. Tasteful affiliate links and donations keep the archive free. No paywall. No autoplay ads. No interstitials. The public-domain government record stays accessible.</li>
+    <li><strong>Funding:</strong> No paywall. No autoplay ads. No interstitials. The public-domain government record stays accessible.</li>
   </ul>
 
   <h2>Use of materials</h2>

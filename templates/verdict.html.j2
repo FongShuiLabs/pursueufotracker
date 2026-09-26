@@ -29,7 +29,7 @@
     {
       "@type": "Question",
       "name": {{ item.q | tojson }},
-      "acceptedAnswer": { "@type": "Answer", "text": {{ item.body | tojson }} }
+      "acceptedAnswer": { "@type": "Answer", "text": {{ item.body_text | tojson }} }
     }{% if not loop.last %},{% endif %}
     {% endfor %}
   ]

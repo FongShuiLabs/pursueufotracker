@@ -20,6 +20,7 @@ import re
 from collections import Counter
 from pathlib import Path
 
+from .bespoke_audience import bespoke
 from .config import MANIFEST_PATH, ROOT, ensure_dirs
 
 
@@ -46,6 +47,7 @@ def _agency_blurb(agency: str) -> str:
         "FBI":  "FBI investigative document",
         "DoD":  "Department of Defense record",
         "STATE":"State Department diplomatic cable",
+        "LLE": "Local law enforcement record",
         "OTHER":"Federal record",
     }.get(agency, "Federal record")
 
@@ -162,6 +164,11 @@ def run() -> None:
                 kw = []
         f.setdefault("audience", {})
         a = f["audience"]
+        # Kind-specific text first (records the encounter templates would misdescribe);
+        # anything it leaves empty falls through to the generic builders below.
+        for key, val in (bespoke(f) or {}).items():
+            if not a.get(key):
+                a[key] = val
         if not a.get("tldr"):              a["tldr"] = _build_tldr(f)
         if not a.get("what_we_know"):      a["what_we_know"] = _build_what_we_know(f, kw)
         if not a.get("what_we_dont"):      a["what_we_dont"] = _build_what_we_dont(f)

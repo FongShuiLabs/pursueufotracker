@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d102-project-blue-book-file-on-tremonton-film-utah-1952",
+  "title": "DOW-UAP-D102, Project Blue Book File on Tremonton Film, Utah, 1952",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "7/2/52",
+  "date_released": "2026-09-18",
+  "source_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D102_Project-Blue-Book-File-on-Tremonton-Film-Utah-1952.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d102-project-blue-book-file-on-tremonton-film-utah-1952.pdf",
+  "size_bytes": 122031613,
+  "sha256": "941f95a0ae621f3dbba1ff63dbaea54ed6396dbcc5f434cd5341e833d15f923a",
+  "redacted": false,
+  "summary": "This document records the Project Blue Book investigation and subsequent assessments of an incident near Tremonton, Utah, on July 2, 1952. Project Blue Book was a 1952-1969 U.S. Air Force program to investigate the nature and origin of unidentified flying objects (UFOs). The file describes the Air Force’s assessment of the principal witness, Delbert C. Newhouse, a U.S. Navy Warrant Officer specializing in photography, as honest and reliable, and as an expert with more than 1,000 hours of aerial-photography experience. Newhouse reported observing 12 to 14 reflective objects and recorded the event on color motion-picture film using a handheld Bell & Howell Auto Master camera.\n\nThe file reflects an evolving Air Force assessment of the imagery over several years. Early documentation considered several possible explanations, including sunlight reflecting from birds or balloons, and a mirage effect, and did not identify the objects conclusively. Later assessments became more confident that the objects were seabirds reflecting sunlight, citing identifiable seabirds and similar films showing seabirds as bright points of light under comparable conditions. However, the film’s limited detail and lack of fixed reference points prevented reliable determination of the objects’ distance, size, altitude, or linear speed from the film alone.\n\nAARO Comment: The file contains conflicting references to the film format. Several documents describe a 35mm film, while contemporaneous submission documentation identifies the original as a 50-foot roll of processed 16mm Kodachrome color motion-picture film recorded with a handheld Bell & Howell Auto Master camera. Newhouse reported exposing approximately 30 feet of the roll during the incident and using the remaining film later that day to record unrelated mountain scenery in Idaho. Other records show that 35mm positive and negative duplicate blowups were produced from the original 16mm material. The file also indicates that the original film was duplicated for preservation, citing its deteriorating condition. The footage retained by the National Archives and Records Administration and presented in this collection as DOW-UAP-PR159 is a digitization of a 16mm print.",
+  "score": {
+    "value": 51,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "partial_resolution"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "partial_resolution",
+        "value": 40,
+        "weight": 0.1,
+        "contribution": 4.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d102-project-blue-book-file-on-tremonton-film-utah-1952.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d102-project-blue-book-file-on-tremonton-film-utah-1952.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Tremonton, Utah"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D102_Project-Blue-Book-File-on-Tremonton-Film-Utah-1952.jpg",
+  "csv_raw_title": "DOW-UAP-D102, Project Blue Book File on Tremonton Film, Utah, 1952",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d102-project-blue-book-file-on-tremonton-film-utah-1952.pdf",
+  "audience": {
+    "tldr": "Project Blue Book's file on the July 2, 1952 Tremonton, Utah film: the Air Force's assessment of the witness and its explanations of the objects over several years.",
+    "what_we_know": [
+      "The Air Force assessed the witness, Navy Warrant Officer Delbert C. Newhouse, a photographer, as honest and reliable, with more than 1,000 hours of aerial-photography experience.",
+      "He reported 12 to 14 reflective objects and filmed them on color film. Early documents considered birds, balloons and a mirage; later assessments were more confident the objects were seabirds reflecting sunlight.",
+      "War.gov's AARO comment notes the file conflicts on the film format (35mm versus 16mm): the original was a 50-foot roll of 16mm Kodachrome, and the footage in the National Archives (DOW-UAP-PR159) digitizes a 16mm print."
+    ],
+    "what_we_dont": [
+      "The film's limited detail and lack of fixed reference points prevented reliable determination of the objects' distance, size, altitude, or speed from the film alone.",
+      "The seabird conclusion is an Air Force assessment based on comparison with similar films; the Navy's Photographic Interpretation Center generally assessed the objects it analyzed (DOW-UAP-D098) as inconsistent with natural phenomena or commonly known aerospace technologies.",
+      "Efforts to identify a pillow-balloon release in the Tremonton area were unsuccessful (DOW-UAP-D103)."
+    ],
+    "mundane_candidate": "Project Blue Book first considered sunlight reflecting from birds or balloons and a mirage effect, a December 1952 review found the objects closely resembled pillow balloons in flight, and later Air Force assessments favored seabirds reflecting sunlight. The film's limited detail prevented a conclusive resolution.",
+    "score_sentence": "Anomalousness Index 51/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "objects",
+      "page",
+      "film",
+      "declassified",
+      "object",
+      "motion",
+      "utah",
+      "authority"
+    ]
+  }
+}

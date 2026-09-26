@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d145-aawsap-dird-aneutronic-fusion-propulsion-i-november-2010",
+  "title": "DOW-UAP-D145, AAWSAP DIRD, Aneutronic Fusion Propulsion I, November 2010",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "11/1/10",
+  "date_released": "2026-09-18",
+  "source_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D145_AAWSAP-DIRD-Aneutronic-Fusion-Propulsion-I-November-1-2010.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d145-aawsap-dird-aneutronic-fusion-propulsion-i-november-2010.pdf",
+  "size_bytes": 52515579,
+  "sha256": "122ea541032e427492ba1bc11e569a3f667cdc8654fdbe08d4f52cc04039842a",
+  "redacted": true,
+  "summary": "This document is a Defense Intelligence Reference Document (DIRD), a technical reference format used by the Defense Intelligence Agency (DIA) to capture baseline knowledge on a specific topic for later analytic use. DIRDs are best understood as reference and synthesis products rather than as original research. It is one of 38 DIRDs produced under the Advanced Aerospace Weapon System Applications Program (AAWSAP) between 2009 and 2011. Because AAWSAP’s scope permitted a broad range of supporting topics, not every DIRD in the series directly concerns aerospace systems or future threat assessment. The following summary reflects the DIRD’s scope and framing at the time of writing and should not be read as implying current validation of the concepts discussed.\n\nThis DIRD surveys aneutronic fusion as a possible advanced space-propulsion method, focusing on fusion reactions that release most of their energy in charged particles rather than neutrons and therefore offer potential advantages over more neutron-intensive fusion concepts, especially in radiation shielding, direct energy conversion, and thrust generation. The report reviews the underlying rocket physics, compares candidate fusion fuels and ignition conditions, and gives particular attention to proton-boron and related schemes, while also discussing Bussard’s concepts and other fusion projects as representative development paths. It also makes clear that the central obstacle remains ignition and sustained net-energy fusion under practical conditions, and it notes additional problems such as x-ray energy losses from the hot plasma, extreme temperature requirements, and the gap between theoretical specific impulse and what proposed systems had demonstrated experimentally. Overall, the document presents aneutronic fusion propulsion as an attractive long-range concept for deep-space travel, but one whose practical realization still depended on major unresolved advances in fusion engineering.",
+  "score": {
+    "value": 53,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d145-aawsap-dird-aneutronic-fusion-propulsion-i-november-2010.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d145-aawsap-dird-aneutronic-fusion-propulsion-i-november-2010.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Las Vegas, Nevada"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D145_AAWSAP-DIRD-Aneutronic-Fusion-Propulsion-I-November-1-2010.jpg",
+  "csv_raw_title": "DOW-UAP-D145, AAWSAP DIRD, Aneutronic Fusion Propulsion I, November 2010",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d145-aawsap-dird-aneutronic-fusion-propulsion-i-november-2010.pdf",
+  "audience": {
+    "tldr": "Defense Intelligence Reference Document (DIRD) from the Defense Intelligence Agency's AAWSAP program: a technical reference paper, \"Aneutronic Fusion Propulsion I\" (November 2010).",
+    "what_we_know": [
+      "Produced under AAWSAP (the Advanced Aerospace Weapon System Applications Program), a Defense Intelligence Agency program that war.gov says was active from 2008 to 2012.",
+      "War.gov describes DIRDs as reference and synthesis products rather than original research, and describes each as one of 38 DIRDs produced between 2009 and 2011. The CSV contains 37, all released together in Release 06.",
+      "War.gov notes that not every DIRD in the series directly concerns aerospace systems or future threat assessment."
+    ],
+    "what_we_dont": [
+      "This is a technical reference paper, not a report of a UAP encounter: it describes no sighting.",
+      "War.gov cautions that its summary reflects the paper's scope and framing at the time of writing and does not imply current validation of the concepts discussed.",
+      "Redacted portions may contain identifying or technical detail."
+    ],
+    "mundane_candidate": "Not applicable: this is a reference document, not an encounter report.",
+    "score_sentence": "Anomalousness Index 53/100 - the rubric default for a document that reports no encounter, not a finding about any event.",
+    "keywords": [
+      "fusion",
+      "rocket",
+      "energy",
+      "unclassified",
+      "propulsion",
+      "mass",
+      "nuclear",
+      "radiation"
+    ]
+  }
+}

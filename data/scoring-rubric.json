@@ -14,7 +14,7 @@
       }
     },
     "witness_credibility": {
-      "weight": 0.20,
+      "weight": 0.2,
       "scale": {
         "trained_aviator": 90,
         "federal_agent": 90,
@@ -26,7 +26,7 @@
       }
     },
     "corroboration": {
-      "weight": 0.20,
+      "weight": 0.2,
       "scale": {
         "multi_witness_multi_instrument": 100,
         "multi_witness_single_instrument": 80,
@@ -46,7 +46,7 @@
       }
     },
     "mundane_explanation_available": {
-      "weight": 0.10,
+      "weight": 0.1,
       "scale": {
         "no_plausible_mundane": 100,
         "weak_mundane_candidate": 70,
@@ -56,7 +56,7 @@
       }
     },
     "official_disposition": {
-      "weight": 0.10,
+      "weight": 0.1,
       "scale": {
         "open_after_review": 90,
         "unresolved_no_review": 60,
@@ -81,6 +81,46 @@
       "kinematic_anomaly": "physically_impossible_for_known_craft",
       "mundane_explanation_available": "no_plausible_mundane",
       "official_disposition": "open_after_review"
+    }
+  },
+  "component_overrides": {
+    "_note": "Files whose default rubric inputs would misdescribe the record. Every file not listed here uses the defaults set in pipeline/parse_csv.py. Each entry sets only the named component; all other components keep their default. Listed here so anyone recomputing the scores can reproduce every value.",
+    "dow-uap-pr159-historical-film-of-reported-ufos-utah-1952": {
+      "set": {
+        "sensor_quality": "photographic",
+        "official_disposition": "partial_resolution"
+      },
+      "why": "1952 handheld 16mm Kodachrome film, not an instrumented military sensor capture; Project Blue Book's later assessments favored seabirds reflecting sunlight (DOW-UAP-D102) while war.gov's summary states the film's limited detail prevented a conclusive resolution"
+    },
+    "dow-uap-pr160-presentation-by-captain-edward-j-ruppelt-1952": {
+      "set": {
+        "sensor_quality": "eyewitness_only"
+      },
+      "why": "audio recording of a 1952 briefing by an Air Force officer, a spoken account rather than a sensor capture"
+    },
+    "dow-uap-d102-project-blue-book-file-on-tremonton-film-utah-1952": {
+      "set": {
+        "official_disposition": "partial_resolution"
+      },
+      "why": "the file records Project Blue Book's later assessments favoring seabirds reflecting sunlight, alongside the finding that the film alone cannot establish distance, size, altitude or speed"
+    },
+    "dow-uap-d103-project-blue-book-photo-file-relating-to-tremonton-film-utah-1952": {
+      "set": {
+        "official_disposition": "partial_resolution"
+      },
+      "why": "the file records a December 1952 pillow-balloon review and later Air Force assessments favoring seabirds, without a demonstrated identification"
+    },
+    "dow-uap-pr130-unresolved-uap-report-iraq-2022": {
+      "set": {
+        "sensor_quality": "single_sensor_military"
+      },
+      "why": "a still frame from an infrared system aboard a U.S. military platform, filed as a PDF; scored on the same sensor tier as the video captures from the same kind of platform"
+    },
+    "dow-uap-pr131-unresolved-uap-report-iraq-2022": {
+      "set": {
+        "sensor_quality": "single_sensor_military"
+      },
+      "why": "a still frame from an infrared system aboard a U.S. military platform, filed as a PDF; scored on the same sensor tier as the video captures from the same kind of platform"
     }
   }
 }

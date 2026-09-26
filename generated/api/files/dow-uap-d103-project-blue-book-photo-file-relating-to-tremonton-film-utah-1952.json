@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d103-project-blue-book-photo-file-relating-to-tremonton-film-utah-1952",
+  "title": "DOW-UAP-D103, Project Blue Book Photo File Relating to Tremonton Film, Utah, 1952",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "7/2/52",
+  "date_released": "2026-09-18",
+  "source_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D103_Project-Blue-Book-Photo-File-Relating-to-Tremonton-Film-Utah-1952.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d103-project-blue-book-photo-file-relating-to-tremonton-film-utah-1952.pdf",
+  "size_bytes": 1582551,
+  "sha256": "950cc1f3d5a9b4f74c1342784a846a2cd2d2dae95f825b89839ac229292e6fa1",
+  "redacted": false,
+  "summary": "During its investigation of a July 1952 film of an incident reported near Tremonton, Utah, Project Blue Book examined whether the objects recorded on film might have been “pillow balloons.” Project Blue Book was a U.S. Air Force program active from 1952 to 1969 that investigated the nature and origin of unidentified flying objects (UFOs). In December 1952, investigators contacted General Mills, Inc., the only known manufacturer of pillow balloons at the time, to determine whether a balloon release could account for the incident.\n\nThe file includes example imagery of pillow balloons supplied by General Mills Research Laboratories. In late December 1952, Project Blue Book personnel, balloon specialists, and representatives from General Mills reviewed the Tremonton footage. The group’s consensus was that the objects closely resembled pillow balloons in flight and behaved consistently with that explanation. One General Mills representative was less convinced, noting that the objects appeared somewhat too bright and seemed to maneuver too rapidly.\n\nThe reviewers also questioned previous angular-velocity calculations suggesting that the objects moved at a high rate of speed because those calculations depended on the unverified assumption that the camera operator had held the camera still during filming. Subsequent efforts to identify a pillow-balloon release in the Tremonton area were unsuccessful. The file also considered seabirds as a possible explanation, citing similar films showing seabirds as bright points of light under comparable conditions. Later Air Force assessments favored the seabird attribution.",
+  "score": {
+    "value": 51,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "partial_resolution"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "partial_resolution",
+        "value": 40,
+        "weight": 0.1,
+        "contribution": 4.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d103-project-blue-book-photo-file-relating-to-tremonton-film-utah-1952.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d103-project-blue-book-photo-file-relating-to-tremonton-film-utah-1952.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Tremonton, Utah"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D103_Project-Blue-Book-Photo-File-Relating-to-Tremonton-Film-Utah-1952.jpg",
+  "csv_raw_title": "DOW-UAP-D103, Project Blue Book Photo File Relating to Tremonton Film, Utah, 1952",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d103-project-blue-book-photo-file-relating-to-tremonton-film-utah-1952.pdf",
+  "audience": {
+    "tldr": "Project Blue Book's photo file on the Tremonton film, documenting a December 1952 check of whether the objects were General Mills \"pillow balloons.\"",
+    "what_we_know": [
+      "In December 1952 investigators contacted General Mills, Inc., then the only known manufacturer of pillow balloons, to ask whether a balloon release could account for the incident.",
+      "In late December 1952 Blue Book personnel, balloon specialists and General Mills representatives reviewed the footage; the consensus was that the objects closely resembled pillow balloons in flight.",
+      "One General Mills representative was less convinced, noting the objects appeared somewhat too bright and seemed to maneuver too rapidly."
+    ],
+    "what_we_dont": [
+      "Efforts to identify a pillow-balloon release in the Tremonton area were unsuccessful.",
+      "The reviewers questioned earlier high-speed calculations because they depended on the unverified assumption that the camera operator held the camera still.",
+      "Later Air Force assessments favored seabirds rather than balloons."
+    ],
+    "mundane_candidate": "Project Blue Book first considered sunlight reflecting from birds or balloons and a mirage effect, a December 1952 review found the objects closely resembled pillow balloons in flight, and later Air Force assessments favored seabirds reflecting sunlight. The film's limited detail prevented a conclusive resolution.",
+    "score_sentence": "Anomalousness Index 51/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "page",
+      "july",
+      "tremonton",
+      "utah",
+      "objects",
+      "size",
+      "photo",
+      "files"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d137-aawsap-dird-state-of-the-art-and-evolution-of-high-energy-lasers-ma",
+  "title": "DOW-UAP-D137, AAWSAP DIRD, State of the Art and Evolution of High-Energy Lasers, March 2010",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "3/31/10",
+  "date_released": "2026-09-18",
+  "source_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D137_AAWSAP-DIRD-State-of-the-Art-and-Evolution-of-High-Energy-Lasers-March-31-2010.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d137-aawsap-dird-state-of-the-art-and-evolution-of-high-energy-lasers-ma.pdf",
+  "size_bytes": 36030969,
+  "sha256": "d397fc90f994bc6002c98c9ff8de02fb91007c8357076a51eabce30ee2ac5974",
+  "redacted": true,
+  "summary": "This document is a Defense Intelligence Reference Document (DIRD), a technical reference format used by the Defense Intelligence Agency (DIA) to capture baseline knowledge on a specific topic for later analytic use. DIRDs are best understood as reference and synthesis products rather than as original research. It is one of 38 DIRDs produced under the Advanced Aerospace Weapon System Applications Program (AAWSAP) between 2009 and 2011. Because AAWSAP’s scope permitted a broad range of supporting topics, not every DIRD in the series directly concerns aerospace systems or future threat assessment. The following summary reflects the DIRD’s scope and framing at the time of writing and should not be read as implying current validation of the concepts discussed.\n\nThis DIRD surveys the development of high-energy laser weapons and notes that, although lasers had already become important military tools for ranging, guidance, and other lower-power uses, true weapon-class systems remained limited by power generation, beam control, atmospheric propagation, and logistics. The report reviews major laser types along with the optical, tracking, and thermal-management systems needed to make them militarily useful. It argues that high-energy lasers can offer important advantages over kinetic weapons in speed, precision, and low collateral damage, especially against softer or fast-moving targets, while also emphasizing that practical deployment has long been hindered by hazardous chemical fuels, thermal blooming in the atmosphere, power-supply constraints for mobile systems, and waste-heat removal.",
+  "score": {
+    "value": 53,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d137-aawsap-dird-state-of-the-art-and-evolution-of-high-energy-lasers-ma.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d137-aawsap-dird-state-of-the-art-and-evolution-of-high-energy-lasers-ma.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Las Vegas, Nevada"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D137_AAWSAP-DIRD-State-of-the-Art-and-Evolution-of-High-Energy-Lasers-March-31-2010.jpg",
+  "csv_raw_title": "DOW-UAP-D137, AAWSAP DIRD, State of the Art and Evolution of High-Energy Lasers, March 2010",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d137-aawsap-dird-state-of-the-art-and-evolution-of-high-energy-lasers-ma.pdf",
+  "audience": {
+    "tldr": "Defense Intelligence Reference Document (DIRD) from the Defense Intelligence Agency's AAWSAP program: a technical reference paper, \"State of the Art and Evolution of High-Energy Lasers\" (March 2010).",
+    "what_we_know": [
+      "Produced under AAWSAP (the Advanced Aerospace Weapon System Applications Program), a Defense Intelligence Agency program that war.gov says was active from 2008 to 2012.",
+      "War.gov describes DIRDs as reference and synthesis products rather than original research, and describes each as one of 38 DIRDs produced between 2009 and 2011. The CSV contains 37, all released together in Release 06.",
+      "War.gov notes that not every DIRD in the series directly concerns aerospace systems or future threat assessment."
+    ],
+    "what_we_dont": [
+      "This is a technical reference paper, not a report of a UAP encounter: it describes no sighting.",
+      "War.gov cautions that its summary reflects the paper's scope and framing at the time of writing and does not imply current validation of the concepts discussed.",
+      "Redacted portions may contain identifying or technical detail."
+    ],
+    "mundane_candidate": "Not applicable: this is a reference document, not an encounter report.",
+    "score_sentence": "Anomalousness Index 53/100 - the rubric default for a document that reports no encounter, not a finding about any event.",
+    "keywords": [
+      "laser",
+      "beam",
+      "lasers",
+      "power",
+      "unclassified",
+      "figure",
+      "ffoa",
+      "energy"
+    ]
+  }
+}

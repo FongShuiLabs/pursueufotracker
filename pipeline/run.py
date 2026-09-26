@@ -18,7 +18,7 @@ from . import (
     build_search, gen_og, build_site,
     build_verdict, build_top10, build_press_kit, build_api, build_drops,
     translate, clip_generator, validate, index_now, build_categories,
-    subscribe,
+    subscribe, stamp_counts,
 )
 
 STAGES = [
@@ -43,11 +43,25 @@ STAGES = [
     ("build-api",      build_api.run),
     ("build-drops",    build_drops.run),
     ("build-categories", build_categories.run),
+    # After every builder: stamps counts + the homepage release list into the
+    # hand-authored pages, and corrects any archive-total phrase a builder wrote.
+    ("stamp-counts",   stamp_counts.run),
     ("translate",      translate.run),       # no-op without DEEPL_API_KEY
     ("clips",          clip_generator.run),  # no-op without ffmpeg
     ("index-now",      index_now.run),       # ping Bing/Yandex/Naver/Seznam
 ]
 NAMES = [n for n, _ in STAGES]
+
+# Stages that must run only AFTER the push has deployed. `all` and `--from` skip them:
+# index-now inside `all` pinged Bing/Yandex before the new pages existed, so the search
+# engines fetched 404s for every new URL (Drop 05). Run it by name once the deploy is
+# verified: python -m pipeline.run index-now
+POST_DEPLOY = {"index-now"}
+
+
+def _post_deploy_reminder() -> None:
+    print("\nSkipped (post-deploy only): " + ", ".join(sorted(POST_DEPLOY))
+          + "\n  After pushing and running .\\verify-deploy.ps1, run: python -m pipeline.run index-now")
 
 
 def _run_stage(name: str, fn) -> None:
@@ -73,12 +87,16 @@ def main() -> int:
             return 2
         idx = NAMES.index(args.from_stage)
         for n, fn in STAGES[idx:]:
-            _run_stage(n, fn)
+            if n not in POST_DEPLOY:
+                _run_stage(n, fn)
+        _post_deploy_reminder()
         return 0
 
     if args.stage == "all":
         for n, fn in STAGES:
-            _run_stage(n, fn)
+            if n not in POST_DEPLOY:
+                _run_stage(n, fn)
+        _post_deploy_reminder()
         return 0
 
     if args.stage in NAMES:

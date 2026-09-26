@@ -1,0 +1,98 @@
+{
+  "id": "lle-uap-pr002-unresolved-uap-report-colorado-october-2023",
+  "title": "LLE-UAP-PR002, Unresolved UAP Report, Colorado, October 2023",
+  "category": "intel",
+  "agency": "LLE",
+  "type": "video",
+  "date_event": "October, 2023",
+  "date_released": "2026-09-18",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": "downloads/video/lle-uap-pr002-unresolved-uap-report-colorado-october-2023.mp4",
+  "size_bytes": 137312993,
+  "sha256": "728e8697a11e5c214a00693543ea4f095f3c72cbd498746899bb89977bfdfc1c",
+  "redacted": true,
+  "summary": "A local law enforcement officer submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office consisting of 15 minutes of video footage from a commercially available cellular device’s rear-facing camera in October 2023. The reporting officer described the phenomenon as “silent” and as featuring “red, blue, and green flashing lights.” \n\nVideo Description: AARO digitally altered this footage by blurring the bottom half to obscure information whose release could be reasonably expected to affect the privacy or other protected interest of a U.S. person or commercial entity. \n\n00:00-15:00: The camera focuses on an apparent light source for the duration of the video, keeping it generally centered within the frame. \n\nAARO Comment: Cellular devices of the type used to capture this footage employ autofocus and other automated image-processing functions that may distort the apparent morphological and kinematic characteristics of distant subjects, particularly at high magnification.",
+  "score": {
+    "value": 57,
+    "components": {
+      "sensor_quality": "photographic",
+      "witness_credibility": "law_enforcement",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "photographic",
+        "value": 55,
+        "weight": 0.25,
+        "contribution": 13.75
+      },
+      "witness_credibility": {
+        "choice": "law_enforcement",
+        "value": 70,
+        "weight": 0.2,
+        "contribution": 14.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/lle-uap-pr002-unresolved-uap-report-colorado-october-2023.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Colorado"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023412/DOD_111985844.0000001/122x92_q95.jpg",
+  "csv_raw_title": "LLE-UAP-PR002, Unresolved UAP Report, Colorado, October 2023",
+  "dvids_video_id": "1023412",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985844/DOD_111985844-1920x1080-9000k.mp4",
+  "duration": 900,
+  "dvids_page_url": "https://www.dvidshub.net/video/1023412/lle-uap-pr002-unresolved-uap-report-colorado-october-2023",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/lle-uap-pr002-unresolved-uap-report-colorado-october-2023.mp4",
+  "audience": {
+    "tldr": "Local law enforcement record showing footage of a UAP encounter (October, 2023) over Colorado.",
+    "what_we_know": [
+      "Document originates from LLE.",
+      "Encounter dated October, 2023.",
+      "Reported location: Colorado."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 57/100. Top drivers: witness credibility (law_enforcement), sensor quality (photographic)."
+  }
+}

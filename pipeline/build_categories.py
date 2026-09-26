@@ -17,6 +17,60 @@ from pathlib import Path
 from .config import MANIFEST_PATH, ROOT, GENERATED_DIR, SITE_NAME, SITE_URL, ensure_dirs
 
 
+_ONES = ("zero one two three four five six seven eight nine ten eleven twelve thirteen "
+         "fourteen fifteen sixteen seventeen eighteen nineteen").split()
+_TENS = "_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()
+_MONTHS = ("January February March April May June July August September October "
+           "November December").split()
+
+
+def _num_words(n: int) -> str:
+    if n < 20:
+        return _ONES[n]
+    if n < 100:
+        return _TENS[n // 10] + ("-" + _ONES[n % 10] if n % 10 else "")
+    if n < 1000:
+        return _ONES[n // 100] + " hundred" + (" " + _num_words(n % 100) if n % 100 else "")
+    return str(n)
+
+
+def _month_span(files: list[dict]) -> str:
+    """'May-August 2026' from the release dates of the files a hub actually holds."""
+    ds = sorted(f["date_released"] for f in files if f.get("date_released"))
+    if not ds:
+        return ""
+    (y0, m0), (y1, m1) = (tuple(int(p) for p in ds[0].split("-")[:2]),
+                          tuple(int(p) for p in ds[-1].split("-")[:2]))
+    if (y0, m0) == (y1, m1):
+        return f"{_MONTHS[m0 - 1]} {y0}"
+    if y0 == y1:
+        return f"{_MONTHS[m0 - 1]}-{_MONTHS[m1 - 1]} {y0}"
+    return f"{_MONTHS[m0 - 1]} {y0}-{_MONTHS[m1 - 1]} {y1}"
+
+
+def _resolve(cat: dict, files: list[dict]) -> dict:
+    """Fill the @@TOKENS@@ in a hub's text from its live file list.
+
+    Why: the hubs hard-coded their own totals ("FBI UFO Files: 87 Bureau
+    Records", "Pentagon UAP Files: 171 ...") in <title>, meta description and
+    intro. Those went stale with every drop (FBI is 104, DoD 190 -> 257) and no
+    guard looked at them, so the most search-facing text on each hub was wrong.
+    Deriving the totals here means they cannot drift again."""
+    n = len(files)
+    words = _num_words(n)
+    tokens = {"@@N@@": str(n), "@@NWORD@@": words[:1].upper() + words[1:],
+              "@@nword@@": words, "@@SPAN@@": _month_span(files)}
+    out = dict(cat)
+    for key in ("title", "h1", "intro", "meta_desc"):
+        v = out.get(key)
+        if isinstance(v, str):
+            for tok, val in tokens.items():
+                v = v.replace(tok, val)
+            assert "@@" not in v, f"unresolved token in hub {cat['slug']!r} {key}: {v[:90]!r}"
+            out[key] = v
+    return out
+
+
 def _subscribe_block() -> str:
     """Sitewide subscribe component (see pipeline/subscribe.py). Imported lazily
     because build_site imports this module at import time."""
@@ -27,11 +81,11 @@ def _subscribe_block() -> str:
 CATEGORIES = [
     {
         "slug": "fbi-ufo-files",
-        "title": "FBI UFO Files: 87 Bureau Records Trump Declassified",
+        "title": "FBI UFO Files: @@N@@ Bureau Records Trump Declassified",
         "h1": "FBI UFO Files",
         "match": lambda f: f.get("category") == "fbi" or f.get("agency") == "FBI",
         "intro": (
-            "Eighty-seven FBI files have been declassified across the Trump PURSUE releases (May-June 2026). "
+            "@@NWORD@@ FBI files have been declassified across the Trump PURSUE releases (@@SPAN@@). "
             "The largest single "
             "block is the Bureau's central case file <strong>62-HQ-83894</strong> (18 PDFs), which "
             "aggregates UFO and flying-disc investigations from <strong>June 1947 through July 1968</strong> "
@@ -44,12 +98,15 @@ CATEGORIES = [
             "the present, including the 2022 Colorado Springs incident (FD-1057 and a digital rendering), "
             "2026 Northeastern 'orb' sightings (FD-302 reports), and the FBI-UAP-PR003 'Orbs Over the Pond' "
             "video - walked through in <a href='/fbi-modern-uap-files'>our FBI modern UAP files deep dive</a>. "
+            "<strong>Release 05 (August 2026) added 17 more</strong> - eight FD-302 interview reports, eight "
+            "digital renderings the FBI prepared in 2026 as visual aids from witnesses' descriptions, and "
+            "FBI-UAP-PR007, thermal-imaging video captured by a U.S. Government Special Agent. "
             "Most files are partially redacted; we mark redaction status on each. All are public "
             "domain U.S. Government works under 17 U.S.C. § 105. For a file-by-file walkthrough of the "
             "62-HQ-83894 cluster, see <a href='/fbi-62-hq-83894'>our dedicated deep dive</a>."
         ),
         "meta_desc": (
-            "All 87 FBI UFO files declassified across the Trump administration's 2026 PURSUE releases. "
+            "All @@N@@ FBI UFO files declassified across the Trump administration's 2026 PURSUE releases. "
             "Central case file 62-HQ-83894, Oak Ridge incidents, 1947-1968 investigations, plus 2022 "
             "Colorado Springs and 2026 Northeastern orb reports. Indexed, searchable, full SHA-256 verification."
         ),
@@ -57,16 +114,19 @@ CATEGORIES = [
     },
     {
         "slug": "military-uap-files",
-        "title": "Pentagon UAP Files: 171 Military Encounter Reports From the Trump UFO Release",
+        "title": "Pentagon UAP Files: @@N@@ Department of War Records From the Trump UFO Release",
         "h1": "Pentagon UAP & Military Encounter Files",
         "match": lambda f: f.get("agency") == "DoD",
         "intro": (
-            "One hundred seventy-one Department of War files cover U.S. military Unidentified Anomalous "
-            "Phenomena encounters spanning <strong>a 1949 U.S. Army flying-saucer study through 2026</strong>. "
+            "@@NWORD@@ Department of War files cover U.S. military Unidentified Anomalous "
+            "Phenomena encounters and historical investigations spanning <strong>1946 through 2026</strong>. "
             "These include AARO mission packets and "
             "Mission Reports (MISREPs) from the Mediterranean, Greek airspace, the Arabian Gulf, the "
             "Indo-Pacific, Iraq, Syria, the UAE, and Yemen - plus a multi-document AARO case from the "
-            "<strong>Western United States</strong> added in Release 03 (June 2026). Many include "
+            "<strong>Western United States</strong> added in Release 03 (June 2026). Release 06 (September "
+            "2026) added the 1952 Tremonton, Utah film with its Project Blue Book files, an audio "
+            "recording of Captain Edward J. Ruppelt's 1952 presentation, and 44 records from the "
+            "Defense Intelligence Agency's AAWSAP program. Many include "
             "full-motion video from "
             "<strong>infrared (IR), electro-optical (EO), and short-wave infrared (SWIR) sensors</strong>. "
             "These are the files that score highest on the Anomalousness Index, because the encounters "
@@ -74,9 +134,9 @@ CATEGORIES = [
             "capture, and unresolved official disposition."
         ),
         "meta_desc": (
-            "All 171 Pentagon and Department of War UAP files from the Trump 2026 PURSUE releases. "
+            "All @@N@@ Pentagon and Department of War UAP files from the Trump 2026 PURSUE releases. "
             "AARO mission reports, MISREPs, Mediterranean, Greece, UAE, Iraq, Syria, Western US, IR/EO/SWIR "
-            "sensor captures. Full transcripts, AI-ranked anomalousness."
+            "sensor captures, the 1952 Tremonton film, AAWSAP records. SHA-256 verified."
         ),
         "keywords": "Pentagon UAP files, DoD UFO files, AARO mission report, MISREP UAP, Greece UAP 2024, UAE UAP, Mediterranean UFO, military UFO video, war.gov UAP, Trump Pentagon UFO",
     },
@@ -86,9 +146,9 @@ CATEGORIES = [
         "h1": "NASA UFO & UAP Records",
         "match": lambda f: f.get("category") in ("nasa", "apollo") or f.get("agency") == "NASA",
         "intro": (
-            "Forty NASA files have been declassified under PURSUE - fifteen in Release 01 "
-            "(May 8, 2026), seven in Release 02 (May 22, 2026), and eleven more in Release 03 "
-            "(June 12, 2026). They span the earliest U.S. "
+            "@@NWORD@@ NASA files have been declassified under PURSUE - fifteen in Release 01 "
+            "(May 8, 2026), seven in Release 02 (May 22, 2026), eleven in Release 03 "
+            "(June 12, 2026), and seven in Release 04 (July 10, 2026). They span the earliest U.S. "
             "crewed spaceflights through the Apollo program: <strong>Mercury-Redstone 4 and Mercury-Atlas "
             "7, 8, and 9 air-to-ground audio</strong> (1961-1963), <strong>Gemini 4, 5, 7, and 9 crew "
             "debriefings and audio</strong> - including the Gemini 7 recording in "
@@ -100,11 +160,13 @@ CATEGORIES = [
             "<strong>Skylab crew debriefing</strong> from 1973. Release 03 (June 2026) added the Gemini 4, "
             "5, 7, and 9 debriefings, the <strong>Apollo 16 scientific debriefing</strong>, an interview "
             "excerpt with astronaut <strong>Gordon Cooper</strong>, and a 1962-63 astronaut scientific "
-            "debriefing set. Astronaut-witness corroboration is rare in the UAP record. NASA-UAP-D003A "
+            "debriefing set. Release 04 (July 2026) added the first <strong>Apollo 14 crew debriefings</strong>, "
+            "two <strong>Apollo 17 crew medical debriefings</strong>, and three <strong>STS-80 Space "
+            "Shuttle images</strong>. Astronaut-witness corroboration is rare in the UAP record. NASA-UAP-D003A "
             "(Borman / Gemini 7) is tied for the highest score (72) in the entire PURSUE release."
         ),
         "meta_desc": (
-            "All 40 NASA UFO files in the Trump 2026 PURSUE releases. Apollo 12, 16, and 17 "
+            "All @@N@@ NASA UFO files in the Trump 2026 PURSUE releases. Apollo 12, 16, and 17 "
             "records, Gemini 4/5/7/9 crew debriefings, Frank Borman and Gordon Cooper audio, Mercury "
             "program audio (1961-63), Skylab debriefing, Schmitt-Grimaldi lunar flash. Astronaut-witness records."
         ),
@@ -112,36 +174,38 @@ CATEGORIES = [
     },
     {
         "slug": "state-department-uap-cables",
-        "title": "State Department UAP Cables: 7 Diplomatic Records 1952-2004",
+        "title": "State Department UAP Cables: @@N@@ Diplomatic Records 1952-2004",
         "h1": "State Department UAP Diplomatic Cables",
         "match": lambda f: f.get("category") == "state" or f.get("agency") == "STATE",
         "intro": (
-            "Seven U.S. Department of State files were declassified under PURSUE, spanning "
+            "@@NWORD@@ U.S. Department of State files were declassified under PURSUE, spanning "
             "<strong>1952 through 2004</strong>. The set includes 5 numbered embassy cables - the "
             "<strong>1985 Papua New Guinea cable</strong> from the U.S. Embassy in Port Moresby to "
             "USCINCPAC, the <strong>1994 cable from Dushanbe documenting a Tajik pilot and three U.S. "
             "citizens encountering an UAP at 41,000 feet over Kazakhstan in a 747</strong>, plus cables "
             "from Tbilisi (Georgia), Mexico, and Ashgabat (Turkmenistan) - and 2 earlier internal State "
             "memoranda from 1952 and 1963 (the 1963 memo from the Executive Office's National Aeronautics "
-            "and Space Council). The cluster is the State Department's running record of what foreign "
+            "and Space Council). Release 05 (August 2026) added two November 1963 cables from the U.S. "
+            "Embassy in Rio de Janeiro about a reported incident at Bahia, Brazil. The cluster is the "
+            "State Department's running record of what foreign "
             "governments, foreign aviation authorities, and earlier internal policy reviewers communicated "
             "about UAP through official U.S. channels. For a file-by-file walkthrough with diplomatic "
             "context, see <a href='/diplomatic-uap-cables'>our deep dive</a>."
         ),
         "meta_desc": (
-            "All 7 State Department UAP files in the Trump May 2026 PURSUE release: 5 embassy cables "
-            "(Papua New Guinea 1985, Kazakhstan 1994, Georgia 2001, Mexico 2003, Turkmenistan 2004) "
+            "All @@N@@ State Department UAP files in the Trump PURSUE releases: embassy cables "
+            "(Papua New Guinea 1985, Kazakhstan 1994, Georgia 2001, Mexico 2003, Turkmenistan 2004, Brazil 1963) "
             "plus 2 earlier internal State memos from 1952 and 1963. Indexed and searchable."
         ),
         "keywords": "State Department UFO, UAP diplomatic cable, Papua New Guinea UFO 1985, Kazakhstan UAP 1994, USCINCPAC UAP, embassy UFO cable, Mexico UAP Congress, declassified State UFO, diplomatic UAP cable",
     },
     {
         "slug": "cia-ufo-files",
-        "title": "CIA UFO Files: 21 Declassified CIA UAP Records From the Trump Disclosure",
+        "title": "CIA UFO Files: @@N@@ Declassified CIA UAP Records From the Trump Disclosure",
         "h1": "CIA UFO & UAP Files",
         "match": lambda f: f.get("agency") == "CIA",
         "intro": (
-            "Twenty-one CIA files have been declassified under PURSUE - eighteen historical Central "
+            "@@NWORD@@ CIA files have been declassified under PURSUE - eighteen historical Central "
             "Intelligence Agency UAP records added in <strong>Release 03 (June 12, 2026)</strong>, plus "
             "<strong>CIA-UAP-D001</strong>, a 1973 CIA Intelligence Information Report relating to USSR "
             "activity, from Release 02. The Release 03 set reaches back to the agency's earliest UFO work: "
@@ -149,13 +213,15 @@ CATEGORIES = [
             "<strong>'The Central Intelligence Agency and Overhead Reconnaissance'</strong>, the "
             "<strong>CASE 17708 / Dr. Leon Davidson</strong> correspondence, a German scientist's article "
             "on 'flying discs,' and multiple mid-century reports of sightings of unconventional aircraft. "
-            "Most are partially redacted; we mark redaction status on each. All are public domain U.S. "
+            "Later releases added four more: two 1955 memoranda on unconventional aircraft sightings "
+            "(Release 04) and, in Release 05, memoranda and briefing notes on a November 1964 incident "
+            "near Puerto Rico. Most are partially redacted; we mark redaction status on each. All are public domain U.S. "
             "Government works under 17 U.S.C. § 105. For a file-by-file walkthrough - the Robertson Panel's "
             "debunking recommendation, the U-2 history, Project Blue Book, and what PURSUE actually adds - "
             "see <a href='/cia-ufo-files-explained'>our CIA UFO files deep dive</a>."
         ),
         "meta_desc": (
-            "All 21 CIA UFO files declassified in the Trump administration's 2026 PURSUE releases. The "
+            "All @@N@@ CIA UFO files declassified in the Trump administration's 2026 PURSUE releases. The "
             "CIA Scientific Advisory Panel on UFOs, 'The CIA and Overhead Reconnaissance,' the Leon "
             "Davidson / CASE 17708 correspondence, mid-century sighting reports, and the 1973 USSR "
             "intelligence report. Indexed, searchable, SHA-256 verified."
@@ -166,27 +232,36 @@ CATEGORIES = [
         "slug": "intel-and-doe-uap-files",
         "title": "Intelligence Community, DOE & Government UAP Files: ODNI, Energy Department, and Federal Records",
         "h1": "Intelligence Community, DOE & Government UAP Records",
-        "match": lambda f: f.get("agency") in ("ODNI", "DOE", "ICA", "USG", "EOP"),
+        "match": lambda f: f.get("agency") in ("ODNI", "DOE", "ICA", "USG", "EOP", "LLE"),
         "intro": (
-            "Six U.S. intelligence-community, Department of Energy, and federal-government UAP files have "
+            "@@NWORD@@ UAP files from intelligence-community, Department of Energy, federal-government, "
+            "Executive Office of the President, and local law enforcement sources have "
             "been declassified under PURSUE (the CIA's records now have <a href='/cia-ufo-files'>their own "
             "section</a>). The cluster includes "
             "<strong>ODNI-UAP-D001</strong> (the USPER Narrative from a senior U.S. Intelligence "
             "Community official describing a multi-witness UAP encounter from a military helicopter "
-            "in late 2025); three <strong>Department of Energy</strong> records tied to the U.S. nuclear "
+            "in late 2025); five <strong>Department of Energy</strong> records tied to the U.S. nuclear "
             "weapons complex - enhanced PANTEX imagery, James Tuck correspondence from the 1970s, and a "
             "1986 Pajarito astronomers invitation (PANTEX assembly plant, Los Alamos via Tuck, and the "
-            "Pajarito Plateau); an <strong>Intelligence Community analysis of the 2022 Colorado Springs "
+            "Pajarito Plateau), plus a 1949 Los Alamos conference record and a 2015 Pantex incident "
+            "report added in Release 04; an <strong>Intelligence Community analysis of the 2022 Colorado Springs "
             "UAP incident</strong> (ICA-UAP-D001, added in Release 03); and a <strong>U.S. Government "
             "compilation of Congressional and White House UFO-related constituent correspondence</strong> "
-            "(USG-UAP-D001, Release 03). All files are public domain U.S. Government works under "
+            "(USG-UAP-D001, Release 03); <strong>EOP-UAP-D001</strong>, a National Aeronautics and Space "
+            "Council inquiry into a November 1963 incident at Bahia, Brazil, the first Executive Office "
+            "of the President record in the disclosure (Release 05); and eight <strong>local law "
+            "enforcement</strong> records from Colorado - four cellphone videos that local law enforcement "
+            "submitted to the All-domain Anomaly Resolution Office, and a transcript of each recording's "
+            "audio, which AARO removed from the released videos (Release 06). "
+            "All files are public domain U.S. Government works under "
             "17 U.S.C. § 105."
         ),
         "meta_desc": (
-            "Six ODNI, Department of Energy, and U.S. Government UAP files from the Trump 2026 PURSUE "
-            "releases. ODNI-UAP-D001 USPER helicopter narrative, three DOE nuclear-complex files (PANTEX, "
+            "@@NWORD@@ ODNI, Department of Energy, Executive Office of the President, local law enforcement, "
+            "and U.S. Government UAP files from the Trump 2026 PURSUE "
+            "releases. ODNI-UAP-D001 USPER helicopter narrative, five DOE nuclear-complex files (PANTEX, "
             "Los Alamos, Pajarito), an IC analysis of the 2022 Colorado Springs incident, and "
-            "Congressional/White House UFO correspondence. (CIA files are in their own section.)"
+            "Congressional/White House UFO correspondence, and Colorado police UFO videos. (CIA files are in their own section.)"
         ),
         "keywords": "ODNI UAP report, ODNI-UAP-D001, DOE UAP, Department of Energy UFO, PANTEX UAP, USPER UAP narrative, Colorado Springs UAP 2022, Congressional UFO correspondence, intelligence community UAP, PURSUE intel disclosure",
     },
@@ -208,6 +283,10 @@ CATEGORIES = [
             "and the Indo-Pacific. Alongside them: <strong>FBI-released orb videos</strong> from modern "
             "sightings, and <strong>NASA crew debriefing and interview footage</strong> reaching back to the "
             "Mercury, Gemini, and Apollo programs - including the Apollo 14 debriefings added in Release 04. "
+            "Release 06 (September 2026) added the 1952 <a href='/files/dow-uap-pr159-historical-film-of-reported-ufos-utah-1952'>"
+            "Tremonton, Utah film</a> and four cellphone videos that local law enforcement in Colorado "
+            "submitted to AARO, released without their audio (war.gov published transcripts of it as "
+            "separate documents). "
             "Some sensor videos ship with a paired debrief document describing the same event in the "
             "observer's own words; the most-discussed example is "
             "<a href='/dow-uap-pr116-explained'>DOW-UAP-PR116 and its Range Fouler debrief</a>. Every video "
@@ -217,7 +296,7 @@ CATEGORIES = [
         ),
         "meta_desc": (
             "Every UFO video in the Trump PURSUE disclosure: Pentagon infrared sensor captures (DOW-UAP-PR "
-            "series), FBI orb videos, and NASA astronaut debriefing footage. Ranked by evidentiary weight, "
+            "series), the 1952 Tremonton film, FBI orb videos, and NASA astronaut debriefing footage. Ranked by evidentiary weight, "
             "mirrored, SHA-256 verified against war.gov."
         ),
         "keywords": "Pentagon UFO videos, UAP videos, declassified UFO videos, war.gov UFO videos, DOW-UAP-PR videos, AARO sensor video, infrared UFO footage, FBI orb video, NASA UFO video, PURSUE videos, Trump UFO video release",
@@ -250,7 +329,8 @@ def _file_card_html(f: dict) -> str:
     )
 
 
-def _page_html(cat: dict, files: list[dict]) -> str:
+def _page_html(cat: dict, files: list[dict], total: int) -> str:
+    cat = _resolve(cat, files)
     canonical = f"{SITE_URL}/{cat['slug']}/"
     title_full = f"{cat['title']} | {SITE_NAME}"
     breadcrumbs = {
@@ -387,7 +467,7 @@ def _page_html(cat: dict, files: list[dict]) -> str:
 
 {explore_nav}
 
-  <a class="cat-back" href="/">← BACK TO ALL 375 FILES</a>
+  <a class="cat-back" href="/">← BACK TO ALL {total} FILES</a>
 
   {_subscribe_block()}
 </main>
@@ -413,7 +493,7 @@ def _page_html(cat: dict, files: list[dict]) -> str:
     </div>
     <div>
       <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:12px">TOOLS</div>
-      <a href="/search" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Search All 375 Files</a>
+      <a href="/search" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Search All {total} Files</a>
       <a href="/timeline" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Timeline 1948-2026</a>
       <a href="/verify" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">Verify vs war.gov</a>
       <a href="/uap-data-csv" style="display:block;color:#a8b8cc;text-decoration:none;margin-bottom:7px">uap-data.csv Mirror</a>
@@ -446,5 +526,5 @@ def run() -> None:
     for cat in CATEGORIES:
         files = _pick_files(manifest, cat["match"])
         path = out_dir / f"{cat['slug']}.html"
-        path.write_text(_page_html(cat, files), encoding="utf-8")
+        path.write_text(_page_html(cat, files, len(manifest["files"])), encoding="utf-8")
         print(f"  /{cat['slug']}/ -> {len(files)} files")

@@ -44,7 +44,9 @@ def run() -> None:
     tpl = env.get_template("top10.html.j2")
     out = GENERATED_DIR / "top-10.html"
     out.write_text(
-        tpl.render(items=top, site_name=SITE_NAME, site_url=SITE_URL),
+        tpl.render(items=top, total=len(manifest["files"]),
+                   band66=sum(1 for f in manifest["files"] if (f.get("score") or {}).get("value") == 66),
+                   site_name=SITE_NAME, site_url=SITE_URL),
         encoding="utf-8",
     )
     print(f"  top-10 page -> {out}")

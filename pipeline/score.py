@@ -40,6 +40,10 @@ def run() -> None:
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     rubric = _load_rubric()
     presets = rubric.get("presets", {})
+    # Published exceptions: files whose DEFAULT inputs would misdescribe the record
+    # (e.g. a 1952 handheld film that the default scorer would call a military
+    # sensor capture). Everything not listed keeps the defaults from parse_csv.
+    overrides = rubric.get("component_overrides", {})
     manifest["rubric_version"] = rubric["version"]
 
     for f in manifest["files"]:
@@ -58,6 +62,9 @@ def run() -> None:
                     "note": "no rubric components or preset; neutral placeholder",
                 }
                 continue
+        ov = (overrides.get(f["id"]) or {}).get("set")
+        if ov:
+            components = {**components, **ov}
         value, detail = _score_from_components(components, rubric)
         f["score"] = {
             "value": value,

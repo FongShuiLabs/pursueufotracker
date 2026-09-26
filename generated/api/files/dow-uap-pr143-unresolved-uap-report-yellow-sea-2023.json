@@ -1,0 +1,98 @@
+{
+  "id": "dow-uap-pr143-unresolved-uap-report-yellow-sea-2023",
+  "title": "DOW-UAP-PR143, Unresolved UAP Report, Yellow Sea, 2023",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "2023",
+  "date_released": "2026-09-18",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": "downloads/video/dow-uap-pr143-unresolved-uap-report-yellow-sea-2023.mp4",
+  "size_bytes": 24075943,
+  "sha256": "4e578f41be4fa8179126123dfe46b047a680f0ae6ddff43dfb11756bcf7e7036",
+  "redacted": true,
+  "summary": "The United States Indo-Pacific Command submitted a report of an unidentified anomalous phenomenon to the All-domain Anomaly Resolution Office (AARO) consisting of 19 seconds of video footage from an infrared sensor aboard a U.S. military platform in 2023.\n\nVideo Description:\n00:00-00:19: The sensor pans to track an area of contrast, keeping it generally within the center of the frame.\n\nThis video description is provided for informational purposes only. Readers should not interpret any part of this description as reflecting an analytical judgment, investigative conclusion, or factual determination regarding the described event’s validity, nature, or significance.",
+  "score": {
+    "value": 66,
+    "components": {
+      "sensor_quality": "single_sensor_military",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "single_sensor_military",
+        "value": 80,
+        "weight": 0.25,
+        "contribution": 20.0
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr143-unresolved-uap-report-yellow-sea-2023.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Yellow Sea"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023403/DOD_111985818.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR143, Unresolved UAP Report, Yellow Sea, 2023",
+  "dvids_video_id": "1023403",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985818/DOD_111985818.mp4",
+  "duration": 19,
+  "dvids_page_url": "https://www.dvidshub.net/video/1023403/dow-uap-pr143-unresolved-uap-report-yellow-sea-2023",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/dow-uap-pr143-unresolved-uap-report-yellow-sea-2023.mp4",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report showing footage of a UAP encounter (2023) over Yellow Sea.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 2023.",
+      "Reported location: Yellow Sea."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 66/100. Top drivers: sensor quality (single_sensor_military), witness credibility (military_personnel)."
+  }
+}

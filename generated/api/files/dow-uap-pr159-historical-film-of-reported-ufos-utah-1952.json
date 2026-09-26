@@ -1,0 +1,98 @@
+{
+  "id": "dow-uap-pr159-historical-film-of-reported-ufos-utah-1952",
+  "title": "DOW-UAP-PR159, Historical Film of Reported UFOs, Utah, 1952",
+  "category": "military",
+  "agency": "DoD",
+  "type": "video",
+  "date_event": "7/2/52",
+  "date_released": "2026-09-18",
+  "source_url": null,
+  "pending_verification": false,
+  "local_path": "downloads/video/dow-uap-pr159-historical-film-of-reported-ufos-utah-1952.mp4",
+  "size_bytes": 79823577,
+  "sha256": "eb01892cf7f9338617e3bb875af742ad71f894823206cbcd448ae2980677def1",
+  "redacted": false,
+  "summary": "This archival footage is a digitization of a 16mm print of Kodachrome color motion-picture film shot on a handheld Bell & Howell Auto Master camera near Tremonton, Utah, on July 2, 1952. U.S. Navy Chief Warrant Officer Delbert C. Newhouse reported observing and filming a group of bright airborne objects and shortly thereafter submitted the footage to the U.S. Air Force. The film later became one of the visual cases reviewed by Project Blue Book, the 1952–1969 U.S. Air Force program that investigated the nature and origin of unidentified flying objects (UFOs). The film’s limited detail and lack of fixed reference points prevented a conclusive resolution. From the 55-second mark onward, the film transitions to unrelated footage appearing to show a demonstration of sewing equipment. The presence of unrelated sewing-equipment footage suggests that the surviving footage may be a composite or reused print, though the available record does not establish how or when the materials came to be combined. As documented in records submitted with the film, contained in this collection under the title DOW-UAP-D102, the footage originally was paired with mountain scenery from Idaho, which is not preserved in this digitization.",
+  "score": {
+    "value": 57,
+    "components": {
+      "sensor_quality": "photographic",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "partial_resolution"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "photographic",
+        "value": 55,
+        "weight": 0.25,
+        "contribution": 13.75
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "partial_resolution",
+        "value": 40,
+        "weight": 0.1,
+        "contribution": 4.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": null,
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-pr159-historical-film-of-reported-ufos-utah-1952.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Tremonton, Utah"
+  },
+  "thumbnail_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2609/1023402/DOD_111985807.0000001/122x92_q95.jpg",
+  "csv_raw_title": "DOW-UAP-PR159, Historical Film of Reported UFOs, Utah, 1952",
+  "dvids_video_id": "1023402",
+  "video_url": "https://d34w7g4gy10iej.cloudfront.net/video/2609/DOD_111985807/DOD_111985807.mp4",
+  "duration": 70,
+  "dvids_page_url": "https://www.dvidshub.net/video/1023402/dow-uap-pr159-historical-film-reported-ufos-utah-1952",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/video/dow-uap-pr159-historical-film-of-reported-ufos-utah-1952.mp4",
+  "audience": {
+    "tldr": "Digitized 16mm color film of a group of bright objects shot near Tremonton, Utah on July 2, 1952 by U.S. Navy Chief Warrant Officer Delbert C. Newhouse, later reviewed by Project Blue Book.",
+    "what_we_know": [
+      "Shot on a handheld Bell & Howell Auto Master camera near Tremonton, Utah, and submitted to the U.S. Air Force by Newhouse, who reported observing and filming the objects.",
+      "Project Blue Book's later assessments favored seabirds reflecting sunlight (DOW-UAP-D102); the Navy's Photographic Interpretation Center read the objects differently (DOW-UAP-D098).",
+      "War.gov notes that from the 55-second mark the film shows unrelated footage that appears to be a demonstration of sewing equipment."
+    ],
+    "what_we_dont": [
+      "The film's limited detail and lack of fixed reference points prevented a conclusive resolution.",
+      "How and when the sewing-equipment footage came to be combined with the Tremonton film is not established by the available record.",
+      "Records submitted with the film say it was originally paired with mountain scenery from Idaho, which is not preserved in this digitization."
+    ],
+    "mundane_candidate": "Project Blue Book first considered sunlight reflecting from birds or balloons and a mirage effect, a December 1952 review found the objects closely resembled pillow balloons in flight, and later Air Force assessments favored seabirds reflecting sunlight. The film's limited detail prevented a conclusive resolution.",
+    "score_sentence": "Anomalousness Index 57/100. Top drivers: witness credibility (military_personnel), sensor quality (photographic)."
+  }
+}

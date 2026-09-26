@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>When Is the Next UFO File Release? Every PURSUE Drop Tracked | {{ site_name }}</title>
-<meta name="description" content="When will the next Trump UFO files be released? No schedule is announced; the five PURSUE drops so far landed May 8, May 22, June 12, July 10, and August 7, 2026. This tracker polls war.gov automatically several times a day and logs each new release - full drop-by-drop timeline here.">
+<meta name="description" content="When will the next Trump UFO files be released? No schedule is announced; the {{ n_drops_word }} PURSUE drops so far landed {{ dates_phrase }}. This tracker polls war.gov automatically several times a day and logs each new release - full drop-by-drop timeline here.">
 <link rel="canonical" href="{{ site_url }}/drops/">
 
 <meta property="og:type" content="website">
@@ -40,13 +40,13 @@
 <main class="drops-page">
   <p style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;color:#52b4ff;margin-bottom:16px"><a href="/" style="color:inherit;text-decoration:none">← PURSUE Tracker</a></p>
   <h1>Every Trump UFO Drop, Tracked</h1>
-  <p class="drops-lede">The Trump administration's PURSUE program releases declassified UAP files on a rolling basis. We index every drop within hours.</p>
+  <p class="drops-lede">The Trump administration's PURSUE program releases declassified UAP files on a rolling basis. A public poller checks war.gov several times a day, and each new drop is added here once its files are downloaded and verified.</p>
 
   {% for d in drops %}
   <a class="drop-row" href="/drops/{{ d.date }}-drop-{{ '%02d'|format(d.number) }}">
     <div class="drop-num">{{ '%02d'|format(d.number) }}</div>
     <div class="drop-body">
-      <div class="when">{{ d.date }} · {{ d.agencies | join(' · ') }}</div>
+      <div class="when">{{ d.date }}{% for a in d.agencies %} · {{ agency_labels.get(a, a) }}{% endfor %}</div>
       <h2>{{ d.title }}</h2>
       <p class="summary">{{ d.summary }}</p>
       <div class="drop-stats-mini">

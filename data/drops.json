@@ -144,7 +144,7 @@
       "number": 5,
       "date": "2026-08-07",
       "title": "Drop 05 - Bahia 1963, the FBI Triangles, and the Gulf of Oman",
-      "summary": "PURSUE Release 05 added 41 files to the archive - 22 documents, 16 videos, and 3 images - bringing the total to 375. It introduced a new releasing body: the Executive Office of the President, whose single file (EOP-UAP-D001) is a National Aeronautics and Space Council inquiry into a November 13, 1963 incident at Bahia, Brazil. Two State Department diplomatic cables from the U.S. Embassy in Rio de Janeiro, dated November 14 and 20, 1963, cover the same Bahia incident. The FBI contributed 17 records, including eight FD-302 witness reports each paired with a digital rendering, covering triangular-craft sightings from 2002, 2011, and 2023. The Department of War added 19 files split between historical intelligence records - a 1947 review of the Scandinavian \"ghost rocket\" incidents, a 1947-48 Air Materiel Command report, and a 1953 film analysis - and a set of 2021 Gulf of Oman unresolved UAP reports with accompanying sensor video. The CIA added two records, a 1965 UFO report near Puerto Rico and undated briefing notes. Fourteen of the 41 files are partially redacted.",
+      "summary": "PURSUE Release 05 added 41 files to the archive - 22 documents, 16 videos, and 3 images - bringing the total to 375. It introduced a new releasing body: the Executive Office of the President, whose single file (EOP-UAP-D001) is a National Aeronautics and Space Council inquiry into a November 13, 1963 incident at Bahia, Brazil. Two State Department diplomatic cables from the U.S. Embassy in Rio de Janeiro, dated November 14 and 20, 1963, cover the same Bahia incident. The FBI contributed 17 records: eight FD-302 interview reports, eight digital renderings that the FBI prepared in 2026 as visual aids based on witnesses' first-hand descriptions (four of them depict triangular craft reported in 2002, 2011, and 2023), and one hand-held thermal-imaging video from a 2026 incident in the western United States. The Department of War added 19 files: historical intelligence records - a 1947 review of the Scandinavian \"ghost rocket\" incidents, a 1947-48 Air Materiel Command report, and a 1953 film analysis - plus unresolved UAP reports with sensor video from the Gulf of Oman (2021), the Pacific Ocean (2019), and the Middle East (2023-2025). The CIA added two records, a 1965 UFO report near Puerto Rico and undated briefing notes. Fourteen of the 41 files are partially redacted.",
       "agencies": [
         "DoD",
         "FBI",
@@ -164,11 +164,34 @@
       ],
       "press_coverage": [],
       "status": "verified"
+    },
+    {
+      "id": "drop-06-2026-09-18",
+      "number": 6,
+      "date": "2026-09-18",
+      "title": "Drop 06 - Tremonton 1952, the AAWSAP Records, and Police Video from Colorado",
+      "summary": "PURSUE Release 06 added 75 files to the archive - 59 documents and 16 recordings (15 videos and one audio file) - bringing the total to 450. War.gov published 72 of them on September 18 and added three more, transcripts of police videos, to its list on September 24. It introduced a new releasing body: Local Law Enforcement, with eight Colorado files: four videos from a commercially available cellular device's rear-facing camera, submitted to AARO by local law enforcement, and a transcript of each recording, whose audio AARO removed before release. The Department of War contributed the other 67 files. Forty-four are records of the Advanced Aerospace Weapon System Applications Program (AAWSAP), a Defense Intelligence Agency program active from 2008 to 2012: a July 2008 statement of objectives, a September 2008 solicitation and original order, five contract modifications, and 37 Defense Intelligence Reference Documents (DIRDs) on topics from metallic glasses to warp drives. Five files form a cluster around a July 2, 1952 film shot near Tremonton, Utah: the film itself, two Project Blue Book files, the final Navy personnel record of the man who filmed it, and an Air Force file of 1952 flying disc records. The CSV links all five to the 1953 Navy film analysis (DOW-UAP-D098) that Release 05 published. A March 1952 presentation by Captain Edward J. Ruppelt arrived as both an audio recording and a transcript. The remaining 16 files are four mission reports and 12 unresolved UAP reports from Iraq, the Middle East, the Yellow Sea, and the East China Sea. Sixty-seven of the 75 files are flagged as redacted.",
+      "agencies": [
+        "DoD",
+        "LLE"
+      ],
+      "file_count": 75,
+      "video_count": 16,
+      "doc_count": 59,
+      "image_count": 0,
+      "redacted_count": 67,
+      "headline_files": [
+        "dow-uap-pr159-historical-film-of-reported-ufos-utah-1952",
+        "dow-uap-d110-aawsap-statement-of-objectives-july-2008",
+        "lle-uap-pr001-unresolved-uap-report-colorado-2023"
+      ],
+      "press_coverage": [],
+      "status": "verified"
     }
   ],
   "expected_next": {
     "status": "monitoring",
-    "note": "The Department of War has said files will be added on a rolling basis, but no schedule has ever been announced. The five releases so far came 14, 21, 28, and 28 days apart - Release 05 landed on August 7, 2026. We do not publish a predicted date. This tracker checks war.gov automatically, several times a day, and logs a release here whenever it lands.",
-    "as_of": "2026-08-18"
+    "note": "The Department of War has said files will be added on a rolling basis, but no schedule has ever been announced. The six releases so far came 14, 21, 28, 28, and 42 days apart - Release 06 landed on September 18, 2026. We do not publish a predicted date. This tracker checks war.gov automatically, several times a day, and logs a release here whenever it lands.",
+    "as_of": "2026-09-26"
   }
 }

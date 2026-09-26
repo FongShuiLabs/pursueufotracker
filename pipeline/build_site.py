@@ -24,6 +24,7 @@ from .config import (
     ENABLE_ADS, ADSENSE_CLIENT_ID,
 )
 from .build_categories import CATEGORIES
+from .records import agency_display, is_reference_record as _is_reference_record
 from .subscribe import subscribe_html
 
 # One block rendered into every file page (see pipeline/subscribe.py; flips to a
@@ -36,6 +37,7 @@ _AGENCY_PROSE = {
     "STATE": "the State Department", "DOE": "the Department of Energy", "ODNI": "ODNI",
     "ICA": "the Intelligence Community", "USG": "the federal government",
     "EOP": "the Executive Office of the President",
+    "LLE": "local law enforcement",
 }
 
 _AGENCY_BARE = {
@@ -43,7 +45,12 @@ _AGENCY_BARE = {
     "STATE": "State Department", "DOE": "Department of Energy", "ODNI": "ODNI",
     "ICA": "Intelligence Community", "USG": "federal government",
     "EOP": "Executive Office of the President",
+    "LLE": "Local Law Enforcement",
 }
+
+
+def _agency_display(f: dict) -> str:
+    return agency_display(f.get("agency") or "")
 
 
 def _agency_prose(f: dict) -> str:
@@ -79,6 +86,16 @@ def _explain_sensor_single_military(f: dict) -> str:
 
 def _explain_sensor_photographic(f: dict) -> str:
     ag = _agency_prose(f)
+    if f.get("type") == "video":
+        # Reached by moving-image files scored at the photographic tier (the LLE
+        # phone clips and the 1952 Tremonton film): every other video scores on an
+        # instrumented-sensor tier. Without this branch the still-photograph
+        # wording below would be false for a video.
+        variants = [
+            "Moving-image footage recorded on a camera rather than an instrumented military sensor platform. The rubric's photographic tier sits below instrumented military capture because a camera's footage offers no calibrated sensor data or second modality to help rule out artifacts. Unlike a still photograph, moving footage does preserve how the object moved over time.",
+            f"A moving-image capture from {ag} recorded on a camera, not an instrumented sensor platform. On the sensor-quality axis the rubric scores that below military sensor capture, since the footage cannot be cross-checked against a second instrument, though it does show motion over time in a way a single frame cannot.",
+        ]
+        return _pick(f, variants)
     variants = [
         f"Captured as a still photograph rather than a time-series sensor capture. The rubric scores still photography below instrumented sensor capture because a still image lacks temporal context and cross-modality confirmation - both of which weight heavily against artifact and noise explanations. This particular photograph comes from {ag}.",
         f"A still-photograph capture from {ag}, not a time-series sensor record. On the sensor-quality axis, a single frame carries less evidentiary weight than instrumented, time-stamped capture, because it can't show how the object behaved before or after the shutter opened - the temporal context that helps rule out artifacts.",
@@ -88,6 +105,13 @@ def _explain_sensor_photographic(f: dict) -> str:
 
 def _explain_sensor_eyewitness(f: dict) -> str:
     ag = _agency_prose(f)
+    if f.get("type") == "video":
+        # Audio recordings are stored as type "video" (audio-only MP4 on DVIDS).
+        variants = [
+            "An audio recording of a spoken account, not an instrumented capture of an event. The lowest tier in the rubric's sensor axis: nothing in the recording can be cross-checked against a second instrument. That says nothing about the speaker's credibility, which is scored on a separate axis.",
+            f"This is a recorded spoken account released by {ag}, so it sits on the rubric's lowest sensor-quality tier: no camera, sensor, or instrument captured an event. The tier reflects the medium only, not the speaker's credibility.",
+        ]
+        return _pick(f, variants)
     variants = [
         f"Reported by a witness with no instrumented record. The lowest tier in the rubric's sensor axis. Eyewitness perception in field conditions, even when the witness is highly credentialed, scores below capture by any instrumented modality. This report reached the federal record through {ag}.",
         f"No sensor, camera, or instrument backs this observation - it is testimony, relayed through {ag}, and scored on the rubric's lowest sensor-quality tier for that reason. That doesn't bear on the witness's credibility (a separate axis); it reflects only that nothing beyond human perception recorded the event.",
@@ -106,9 +130,26 @@ def _explain_witness_astronaut(f: dict) -> str:
 
 def _explain_witness_military(f: dict) -> str:
     date = _file_date_prose(f)
+    fid = f.get("id", "")
+    # The stock text below says "operational mission" and points at the AARO infrared
+    # cluster. That is false for the Release 06 historical records, so they say what is
+    # actually on file.
+    if fid.startswith(("dow-uap-pr159-", "dow-uap-d102-", "dow-uap-d103-")):
+        return ("The witness, U.S. Navy Chief Warrant Officer Delbert C. Newhouse, was a trained photographer whom the Air Force "
+                "assessed as honest and reliable. That is a high witness-credibility tier, ranked in the rubric below astronaut, "
+                "trained-aviator, and federal-agent testimony. This axis scores the witness, separately from how the objects were "
+                "later interpreted.")
+    if fid.startswith(("dow-uap-pr160-", "dow-uap-d154-")):
+        return ("The speaker is U.S. Air Force Captain Edward J. Ruppelt, briefing on the service's reorganized investigation of "
+                "unidentified flying objects. The rubric scores this axis from the originating service, a high witness-credibility "
+                "tier ranked below astronaut, trained-aviator, and federal-agent testimony.")
+    if fid.startswith("dow-uap-d105-"):
+        return ("The file compiles Air Force Director of Intelligence records from military and other sources rather than one "
+                "witness's account. The rubric scores this axis from the originating service, a high witness-credibility tier "
+                "ranked below astronaut, trained-aviator, and federal-agent testimony.")
     variants = [
-        f"Trained U.S. military personnel reporting from an operational mission context. The second-highest credibility tier in the rubric. This is the witness profile shared by the entire AARO-submitted infrared-capture cluster that anchors the 66-point score band.",
-        f"Reported by trained U.S. military personnel during an operational mission ({date}) - the rubric's second-highest witness-credibility tier, one step below astronaut testimony. This profile is shared across the AARO-submitted infrared-capture cluster that anchors the archive's densest scoring band, at 66.",
+        f"Trained U.S. military personnel reporting from an operational mission context. A high witness-credibility tier, ranked in the rubric below astronaut, trained-aviator, and federal-agent testimony. This is the witness profile shared by the entire AARO-submitted infrared-capture cluster that anchors the 66-point score band.",
+        f"Reported by trained U.S. military personnel during an operational mission ({date}) - a high witness-credibility tier, ranked in the rubric below astronaut, trained-aviator, and federal-agent testimony. This profile is shared across the AARO-submitted infrared-capture cluster that anchors the archive's densest scoring band, at 66.",
     ]
     return _pick(f, variants)
 
@@ -117,7 +158,7 @@ def _explain_witness_federal_agent(f: dict) -> str:
     bare = _agency_bare(f)
     variants = [
         f"Federal agency personnel ({bare} investigators or equivalent) recording the report into the federal investigative system. Investigative credentials, but typically operating in a reactive rather than mission-active posture.",
-        f"The witness here is {bare} personnel, entering the report into the federal investigative system through standard channels. That's a real credibility tier - trained federal investigative staff - though the rubric ranks it below mission-active military or astronaut testimony because the posture is reactive (responding to a report) rather than an active operational context.",
+        f"The witness here is {bare} personnel, entering the report into the federal investigative system through standard channels. That's one of the rubric's higher credibility tiers - trained federal investigative staff, weighted level with a trained aviator and below only an astronaut witness - though the posture is reactive (responding to a report) rather than an active operational context.",
     ]
     return _pick(f, variants)
 
@@ -127,6 +168,14 @@ def _explain_witness_civilian(f: dict) -> str:
     variants = [
         f"Civilian witness whose report entered the federal record through investigative channels. The rubric weights civilian credentialed witnesses below uniformed personnel because the report enters the federal record at a remove rather than directly from a mission context.",
         f"A civilian account, routed into the federal record via {ag}'s investigative channels rather than an operational mission report. The rubric scores this tier below uniformed personnel specifically because of that remove - the witness wasn't reporting from within a federal mission context when the observation occurred.",
+    ]
+    return _pick(f, variants)
+
+
+def _explain_witness_law_enforcement(f: dict) -> str:
+    variants = [
+        "The witness is a law enforcement officer. The rubric places this tier below trained military personnel and federal agents and above a credentialed civilian: an officer is a trained observer and reporter, but is not describing an event from within an operational mission context. Witness credibility is one of six score components, so this tier speaks to the observer, not to what was observed.",
+        "This account comes from a law enforcement officer, which the rubric weights a step below uniformed military personnel and above a credentialed civilian. The weighting reflects training in observation and reporting without the operational mission context that military reports carry. It is one of six score components, not a verdict on the event itself.",
     ]
     return _pick(f, variants)
 
@@ -182,6 +231,62 @@ def _explain_disposition_unresolved(f: dict) -> str:
     return _pick(f, variants)
 
 
+def _explain_disposition_partial(f: dict) -> str:
+    variants = [
+        "War.gov's own summary of this record describes an official assessment that favors a conventional explanation while also stating that the record could not conclusively resolve the case. The rubric scores that between 'open after review' and 'resolved conventional': an agency reached a view, but the evidence does not settle it.",
+        "The released record reports an official conclusion that leans conventional, alongside the statement that the available material cannot conclusively resolve the case. That is neither an open file nor a closed one, so the rubric scores it on its partial-resolution tier.",
+    ]
+    return _pick(f, variants)
+
+
+# Program, administrative and reference documents report no observation at all: the
+# AAWSAP contract file and its 37 DIRD technical papers (Release 06), a Navy personnel
+# record. The encounter explainers above ("testimony relayed through...", "reported by
+# trained personnel during an operational mission") would be false for them, so they get
+# their own per-axis text. The score itself stays on the rubric defaults so ranking and
+# the API remain uniform; the copy simply says what that number is.
+def _ref_sensor(f: dict) -> str:
+    return ("This file is a reference document, not an observation, so no sensor, camera, or witness captured anything. "
+            "The rubric's sensor axis has no not-applicable option, so a document with no instrument record sits on its "
+            "lowest tier by default.")
+
+
+def _ref_witness(f: dict) -> str:
+    return (f"There is no witness: this is a document released by {_agency_prose(f)}, not a first-hand account. The rubric "
+            "assigns this axis from the originating body, so the value reflects the source of the record, not anyone's testimony.")
+
+
+def _ref_corroboration(f: dict) -> str:
+    return ("Nothing is being corroborated, because the file does not report an event. Like every file in the archive it "
+            "takes the rubric's single-source default.")
+
+
+def _ref_kinematic(f: dict) -> str:
+    return ("The file describes no object and no motion, so the kinematic axis takes the archive-wide 'no kinematic data' "
+            "default.")
+
+
+def _ref_mundane(f: dict) -> str:
+    return ("Every file in the archive scores this tier. For a document that describes no event it carries no information "
+            "about the record at all.")
+
+
+def _ref_disposition(f: dict) -> str:
+    return ("The rubric's default for the file's release status (files released with redactions are catalogued as "
+            "unresolved, unredacted ones as open). For a document that reports no event this describes how the file was "
+            "released, not anything that happened.")
+
+
+REFERENCE_EXPLANATIONS = {
+    "sensor_quality": _ref_sensor,
+    "witness_credibility": _ref_witness,
+    "corroboration": _ref_corroboration,
+    "kinematic_anomaly": _ref_kinematic,
+    "mundane_explanation_available": _ref_mundane,
+    "official_disposition": _ref_disposition,
+}
+
+
 CHOICE_EXPLANATIONS = {
     "sensor_quality": {
         "single_sensor_military": _explain_sensor_single_military,
@@ -193,6 +298,7 @@ CHOICE_EXPLANATIONS = {
         "military_personnel": _explain_witness_military,
         "federal_agent": _explain_witness_federal_agent,
         "civilian_credentialed": _explain_witness_civilian,
+        "law_enforcement": _explain_witness_law_enforcement,
     },
     "corroboration": {
         "single_witness_instrument": _explain_corroboration,
@@ -207,6 +313,7 @@ CHOICE_EXPLANATIONS = {
     "official_disposition": {
         "open_after_review": _explain_disposition_open,
         "unresolved_no_review": _explain_disposition_unresolved,
+        "partial_resolution": _explain_disposition_partial,
     },
 }
 
@@ -306,7 +413,7 @@ TOPIC_PAGES = [
      "anchor": "the 5 Department of Energy files tying the U.S. nuclear weapons complex to UAP (PANTEX, Los Alamos, the Pajarito Astronomers, and a 1949 Los Alamos conference record)"},
     {"match": lambda f: (f.get("score") or {}).get("value") == 66 and (f.get("date_released") or "").startswith("2026-05-08"),
      "slug": "/aaro-unresolved-uap", "name": "AARO Unresolved UAP", "size": 27,
-     "anchor": "the 27-file Release-01 AARO unresolved cluster tied at 66 (the score-66 band now spans 96 files across four releases)"},
+     "anchor": "the 27-file Release-01 AARO unresolved cluster tied at 66 (the score-66 band now spans 108 files across five releases)"},
 ]
 
 
@@ -321,20 +428,27 @@ def _topic_page_for(f: dict) -> dict | None:
     return None
 
 
-def _score_tier_phrase(score: int | None, rank: int, total: int) -> str:
-    """One sentence placing this score in the broader archive context."""
+def _score_tier_phrase(score: int | None, rank: int, total: int, band66: int = 0, kind: str = "") -> str:
+    """One sentence placing this score in the broader archive context.
+
+    band66 is the live count of files scored 66, passed in from the manifest so this
+    sentence cannot go stale (it said "96 files tied at 66" when there were 108).
+    kind is the file's type: a recording in the lower band is not a "paper-based" report.
+    """
     if score is None:
         return ""
     if score >= 72:
         return "That score is the highest in the PURSUE archive - one of eight files tied at the top score of 72 (the Gemini 7 Borman audio, the Gordon Cooper interview, and the Apollo 14, 16, and 17 crew debriefings)."
     if score >= 67:
-        return "That places it just above the archive's densest scoring band - the 96 files tied at 66 - among the small group of top-scoring files."
+        return f"That places it just above the archive's densest scoring band - the {band66} files tied at 66 - among the small group of top-scoring files."
     if score >= 66:
-        return "That places it in the archive's densest scoring band - 96 files tied at 66, anchored by AARO-submitted and Release-02/04 military infrared captures."
+        return f"That places it in the archive's densest scoring band - {band66} files tied at 66, anchored by AARO-submitted and Release-02/04 military infrared captures."
     if score >= 65:
         return "That places it one rubric point below the 66-point military-capture band and seven below the archive's top score of 72 - the second tier in the archive."
     if score >= 60:
         return f"That places it in the mid-archive band ({rank} of {total} by score). The score reflects the rubric's read on evidentiary weight, not the underlying event's significance."
+    if kind == "video":
+        return f"That places it in the lower-scoring band of the archive ({rank} of {total} by score), typical of recordings that are not instrumented military sensor captures."
     return f"That places it in the lower-scoring band of the archive ({rank} of {total} by score), typical of investigative-record style files where the report is paper-based rather than instrumented."
 
 
@@ -531,6 +645,7 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
     rank_by_id = _rank_map(all_files)
     agency_rank_by_id = _agency_rank_map(all_files)
     total_files = len(all_files)
+    band66 = sum(1 for g in all_files if (g.get("score") or {}).get("value") == 66)
     for f in all_files:
         out = GEN_FILES / f"{f['id']}.html"
         size_h = _human_size(f.get("size_bytes"))
@@ -538,9 +653,12 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
         # Build per-file score-component explanations from the rubric choices
         comps = (f.get("score") or {}).get("detail") or {}
         score_explanations = {}
+        is_reference = _is_reference_record(f)
         for cname, c in comps.items():
             choice = c.get("choice") if isinstance(c, dict) else None
-            if choice and cname in CHOICE_EXPLANATIONS and choice in CHOICE_EXPLANATIONS[cname]:
+            if is_reference and cname in REFERENCE_EXPLANATIONS:
+                score_explanations[cname] = REFERENCE_EXPLANATIONS[cname](f)
+            elif choice and cname in CHOICE_EXPLANATIONS and choice in CHOICE_EXPLANATIONS[cname]:
                 score_explanations[cname] = CHOICE_EXPLANATIONS[cname][choice](f)
         rank = rank_by_id.get(f["id"])
         ag_rank, ag_total = agency_rank_by_id.get(f["id"], (None, None))
@@ -550,7 +668,7 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
             "total": total_files,
             "agency_rank": ag_rank,
             "agency_total": ag_total,
-            "tier_phrase": _score_tier_phrase(score_val, rank or 999, total_files),
+            "tier_phrase": _score_tier_phrase(score_val, rank or 999, total_files, band66, f.get("type") or ""),
             "topic_page": _topic_page_for(f),
         }
         ctx = {
@@ -573,6 +691,8 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
             "series_next": next_f,
             "archive_context": archive_context,
             "score_explanations": score_explanations,
+            "is_reference": is_reference,
+            "agency_label": _agency_display(f),
             "transcript_text": _transcript_text(f),
         }
         out.write_text(tpl.render(**ctx), encoding="utf-8")

@@ -8,7 +8,7 @@ no sensationalism. Cites into specific files where possible.
 
 ## Q: Do these files prove aliens exist?
 
-No. None of the 375 files in this release contains a body, a craft, biological
+No. None of the files released so far contains a body, a craft, biological
 material, or any artifact whose origin can only be extraterrestrial. Anyone
 telling you otherwise is selling you something.
 
@@ -26,14 +26,18 @@ Three things, with file-level evidence:
    for at least 80 years**, across the FBI, DoD, NASA, and State Department.
    FBI case file 62-HQ-83894 alone covers 1947-1968.
 
-2. **Trained military and government personnel have observed objects whose
-   flight characteristics do not match any known aircraft.** The Greece 2023
-   90-degree-turn-at-80mph file documents a maneuver that no known fixed-wing
-   or rotary platform can survive without disintegrating.
+2. **Trained military personnel have reported objects they could not identify,
+   and the government has logged those reports as unresolved.** A 2023 mission
+   report from the Aegean Sea (DOW-UAP-D033) describes an object flying just
+   above the ocean surface and taking "multiple 90-degree turns at an estimated
+   80 mph." War.gov itself cautions that such descriptions reflect the
+   reporter's subjective interpretation, not a measured performance.
 
-3. **At least some encounters involve multi-sensor capture, not just eyewitness
-   testimony.** The Mediterranean triangular-object file at 25,000 feet is
-   military sensor data, not a civilian phone camera.
+3. **At least some encounters come with military sensor footage, not only
+   eyewitness testimony.** The Aegean Sea report is paired with infrared video
+   (DOW-UAP-PR034) in which the sensor tracks the object for more than two
+   minutes before losing lock, and some captures show electro-optical and
+   infrared views of the same object side by side (DOW-UAP-PR141).
 
 ## Q: What would change the answer?
 
@@ -55,8 +59,8 @@ None of these is in the current PURSUE release.
 You shouldn't have to. Every file links back to the war.gov source URL.
 Every file has a SHA-256 hash you can independently verify. We mirror;
 we don't editorialize the documents themselves. The Anomalousness Index
-is our editorial scoring of evidentiary weight, with transparent methodology
-- not a claim on the underlying files.
+is our editorial scoring of evidentiary weight, with transparent methodology,
+not a claim on the underlying files.
 
 ## Q: Did you use AI for the analysis?
 
@@ -80,12 +84,13 @@ Yes, and we want to be specific about what the AI did and didn't do.
 
 ## Q: Why is this site here?
 
-Because war.gov's interface is a flat list, and 375 files deserve search,
+Because war.gov's interface is a flat list, and hundreds of files deserve search,
 categorization, transcripts, and per-file context. Public-domain government
 documents should be as accessible as possible. That's the whole pitch.
 
 ## Q: Will this site be updated as PURSUE adds more files?
 
 Yes. The Department of War has stated that files will be added to war.gov/UFO
-"on a rolling basis." This index re-runs its pipeline on a weekly schedule.
-Subscribe to the RSS feed or email list for alerts on new releases.
+"on a rolling basis." A public poller checks war.gov several times a day, and
+each new release is added here once its files are downloaded and verified.
+Subscribe to the RSS feed for alerts on new releases.

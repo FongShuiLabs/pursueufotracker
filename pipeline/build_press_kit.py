@@ -14,6 +14,7 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+from .build_drops import release_facts
 from .config import (
     MANIFEST_PATH, ROOT, GENERATED_DIR, TEMPLATES_DIR,
     SITE_NAME, SITE_URL, ensure_dirs,
@@ -51,6 +52,11 @@ def run() -> None:
         by_type[f["type"]] += 1
     redacted_count = sum(1 for f in files if f.get("redacted"))
     high = [f for f in files if (f.get("score") or {}).get("value", 0) >= 80]
+    # First/latest release and the release count come from drops.json, never from
+    # template text (the page said "Latest release: June 12 (Drop 03)" at Drop 05).
+    drops_path = ROOT / "data" / "drops.json"
+    drops = json.loads(drops_path.read_text(encoding="utf-8")).get("drops", []) if drops_path.exists() else []
+    facts = release_facts(drops)
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES_DIR)),
         autoescape=select_autoescape(["html"]),
@@ -68,6 +74,7 @@ def run() -> None:
         by_type=by_type,
         redacted_count=redacted_count,
         high_anomaly=high,
+        **facts,
         site_name=SITE_NAME,
         site_url=SITE_URL,
         sitemap_urls=_count_entries(ROOT / "sitemap.xml", "url"),

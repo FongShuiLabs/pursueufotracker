@@ -37,6 +37,12 @@ Three subcommands, run at three moments:
       sitemaps and drops.json (the 2026-08-08 incident: llms.txt was still
       describing the Drop-01 archive three drops later). A drop breaks all
       of them at once - see DROP_REACTION.md step 7b.
+      Also proves the stamp-counts stage ran: the homepage hero tiles,
+      /pursue-program stat row + agency headings, /timeline, the /uap-data-csv
+      row count + SHA-256, and the "Search All N Files"-style nav phrases on
+      ~550 pages must all equal the manifest (the 2026-09-20 Drop 06 finding:
+      three consecutive sweeps had missed bare-number tiles and a nav phrase
+      that sat 3 releases stale on 114 orphaned pages).
       Runs as a warning in post-ingest and a hard gate in pre-push.
 
 Exit code 0 = safe to proceed. Non-zero = stop and read the output.
@@ -62,7 +68,7 @@ REDIRECT_CEILING = 100       # observed effective rule cutoff (see memory notes)
 # 2026-07-16 Drop 04 incident: "four files tied at 72" was really eight, "78 at 66"
 # was really 92). When check-counts fails on a band, update BOTH the prose in the
 # files below AND the number here, together.
-EXPECTED_SCORE_BANDS = {72: 8, 70: 7, 66: 96, 65: 9}  # 70/66 grew in Drop 05
+EXPECTED_SCORE_BANDS = {72: 8, 70: 7, 66: 108, 65: 9}  # 70/66 grew in Drop 05; 66 grew again in Drop 06 (+12)
 _SCORE_BAND_PROSE = (
     "pipeline/build_site.py (_score_tier_phrase + _explain_witness_astronaut), "
     "generated/faq.html, generated/top-10.html, generated/glossary.html, "
@@ -512,6 +518,13 @@ def check_counts(warn_only: bool = False) -> None:
 
     # 4. llms.txt (the AI-assistant manifest) vs manifest + built artifacts.
     problems.extend(check_llms_txt())
+
+    # 5. Bare-number tiles in hand-authored pages (homepage hero tiles,
+    #    /pursue-program stat row + agency headings, /timeline). Three drop
+    #    sweeps missed these because they are numbers, not phrases; the
+    #    stamp-counts stage now rewrites them and this gate proves it.
+    from . import stamp_counts as _sc
+    problems.extend(_sc.stale())
 
     if problems:
         for p in problems:

@@ -161,7 +161,7 @@ def subscribe_html(variant: str = "page") -> str:
     else:  # placeholder - byte-equivalent to the launch-era block
         body = (
             ('<p style="color:#dfe6ef;margin:8px 0 16px;font-size:15px">Two free '
-             "options - both update within hours of any new war.gov release:</p>"
+             "options - both update when a new war.gov release is added to the archive:</p>"
              if variant == "homepage" else "")
             + '<div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;align-items:center">'
             + _RSS_LINK + "\n      " + _GH_LINK + "</div>"

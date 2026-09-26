@@ -1,43 +1,43 @@
 # PURSUE UFO Tracker
 
-> Independent rolling-release tracker of the Trump administration's PURSUE (Presidential Unsealings and Reporting System for UAP Encounters) declassification program. Every UFO/UAP file released by the U.S. Department of War at war.gov/UFO - 375 files across five releases as of August 7, 2026 - indexed, scored on a transparent rubric, and verified against the original source via SHA-256.
+> Independent rolling-release tracker of the Trump administration's PURSUE (Presidential Unsealings and Reporting System for UAP Encounters) declassification program. Every UFO/UAP file released by the U.S. Department of War at war.gov/UFO - 450 files across six releases as of September 18, 2026 (war.gov added three more Release 06 files to its list on September 24) - indexed, scored on a transparent rubric, and verified against the original source via SHA-256.
 
 The site exists because war.gov ships the PURSUE files as a flat list with no search, no change history, and no way to compare evidentiary weight across files. This site fixes that: full-text search, per-file evidentiary scoring, byte-level change tracking against the original releases, and a documented revision log of war.gov's own silent edits.
 
 All underlying files are U.S. Government works in the public domain under 17 U.S.C. § 105.
 
-## Current archive state (verified 2026-08-18)
+## Current archive state (verified 2026-09-26)
 
-- 375 files total: 211 PDF documents, 134 videos, 30 images
-- Five releases: Drop 01 (May 8, 2026, 158 files), Drop 02 (May 22, 2026, 64 files), Drop 03 (June 12, 2026, 72 files), Drop 04 (July 10, 2026, 40 files), Drop 05 (August 7, 2026, 41 files)
+- 450 files total: 270 PDF documents, 150 videos, 30 images
+- Six releases: Drop 01 (May 8, 2026, 158 files), Drop 02 (May 22, 2026, 64 files), Drop 03 (June 12, 2026, 72 files), Drop 04 (July 10, 2026, 40 files), Drop 05 (August 7, 2026, 41 files), Drop 06 (September 18, 2026, 75 files)
 - Every file is mirrored and SHA-256 verified against its war.gov original
 - Release history with per-drop breakdowns: https://pursueufotracker.com/drops
 
 ## Core data
 
-- [Sitemap](https://pursueufotracker.com/sitemap.xml): All 443 indexed URLs
-- [Video sitemap](https://pursueufotracker.com/video-sitemap.xml): All 134 video pages
+- [Sitemap](https://pursueufotracker.com/sitemap.xml): All 519 indexed URLs
+- [Video sitemap](https://pursueufotracker.com/video-sitemap.xml): All 150 video pages
 - [Scoring rubric (JSON)](https://pursueufotracker.com/data/scoring-rubric.json): Six-component evidentiary-weight rubric, weights sum to 1.00. This is the methodology used to rank every file.
 - [Verification manifest (JSON)](https://pursueufotracker.com/generated/verification-manifest.json): SHA-256 hash, file size, and original war.gov source URL for every file. Use to confirm any indexed file matches the official release byte-for-byte.
-- [Files API (JSON)](https://pursueufotracker.com/generated/api/files.json): Full structured data for all 375 files - title, agency, date, location, type, score, summary, source URL. Per-file detail at https://pursueufotracker.com/generated/api/files/{id}.json
+- [Files API (JSON)](https://pursueufotracker.com/generated/api/files.json): Full structured data for all 450 files - title, agency, date, location, type, score, summary, source URL. Per-file detail at https://pursueufotracker.com/generated/api/files/{id}.json
 - [Full-text search index (JSON)](https://pursueufotracker.com/generated/search-index.json): Lunr-compatible search index over extracted PDF text and available video transcripts.
 - [The war.gov CSV, mirrored](https://pursueufotracker.com/uap-data-csv): The canonical war.gov uap-data.csv, hash-verified, with a revision table covering every release.
-- [RSS feed](https://pursueufotracker.com/generated/feed.xml): Latest indexed files, updated within hours of any new war.gov release.
+- [RSS feed](https://pursueufotracker.com/generated/feed.xml): Latest indexed files, updated when each new war.gov release is added to the archive.
 
 ## Category indexes
 
-- [FBI UFO files](https://pursueufotracker.com/fbi-ufo-files/): 104 files. The 1947-1968 central case file 62-HQ-83894 (Roswell field office reporting, Oak Ridge incidents) plus modern investigations from 2021-2025, including FBI-authenticated eyewitness orb videos.
-- [Pentagon UAP files](https://pursueufotracker.com/military-uap-files/): 190 files. Department of War sensor videos, MISREPs, and AARO mission packets, 2017-2026. Middle East, East China Sea, and the 2023 Lake Huron shootdown.
+- [FBI UFO files](https://pursueufotracker.com/fbi-ufo-files/): 104 files. The 1947-1968 central case file 62-HQ-83894 (Roswell field office reporting, Oak Ridge incidents) plus modern investigations from 2021-2025, including FBI-authenticated eyewitness orb videos. Release 05 added 17 records: eight FD-302 interview reports on sightings from 2002 to 2026, eight FBI digital renderings prepared in 2026 as visual aids, and one thermal-imaging video.
+- [Pentagon UAP files](https://pursueufotracker.com/military-uap-files/): 257 files. Department of War sensor videos, MISREPs, and AARO mission packets, 2017-2026, plus historical Air Force and Project Blue Book files. Middle East, East China Sea, and the 2023 Lake Huron shootdown. Release 06 added 67 files: 44 records of the Advanced Aerospace Weapon System Applications Program (AAWSAP, active 2008-2012), five files on a July 2, 1952 film shot near Tremonton, Utah, a March 1952 presentation by Captain Edward J. Ruppelt (audio and transcript), four mission reports, and 12 unresolved UAP reports from Iraq, the Middle East, the Yellow Sea, and the East China Sea.
 - [NASA UFO records](https://pursueufotracker.com/nasa-ufo-photos/): 40 files. Mercury through STS-80: Gemini 7 astronaut audio (Frank Borman), Gordon Cooper interview, Apollo 12, 14, 16, and 17 mission photography and crew debriefings, Skylab crew observations, 1996 Space Shuttle STS-80 images.
 - [CIA UFO files](https://pursueufotracker.com/cia-ufo-files/): 23 files, 1955-2008. Cold War-era reports (1955 Budapest letter, 1968 Himalayan sightings, 1973 Sary Shagan) through the 2008 Harare airport case.
 - [State Department UAP cables](https://pursueufotracker.com/state-department-uap-cables/): 9 diplomatic cables, 1952-2004. 1985 Papua New Guinea, 1994 Tajikistan PanAm crew sighting, Kazakhstan, Turkmenistan, Georgia, Mexico, and two November 1963 cables on the Bahia, Brazil incident added in Release 05.
-- [Intelligence and DOE UAP files](https://pursueufotracker.com/intel-and-doe-uap-files/): 9 files from DOE, ODNI, the Intelligence Community, the U.S. Government, and - new in Release 05 - the Executive Office of the President, whose EOP-UAP-D001 is a National Aeronautics and Space Council inquiry into the November 13, 1963 Bahia, Brazil incident. Includes nuclear-facility incidents and the ODNI helicopter encounter.
-- [All videos](https://pursueufotracker.com/videos/): 134 DVIDS-hosted videos, all mirrored for direct playback.
+- [Intelligence and DOE UAP files](https://pursueufotracker.com/intel-and-doe-uap-files/): 17 files from DOE, ODNI, the Intelligence Community, the U.S. Government, the Executive Office of the President (new in Release 05: EOP-UAP-D001, a National Aeronautics and Space Council inquiry into the November 13, 1963 Bahia, Brazil incident), and Local Law Enforcement (new in Release 06: eight Colorado files - four videos from a commercially available cellular device's rear-facing camera, submitted to AARO by local law enforcement, and a transcript of each recording, whose audio AARO removed before release). Includes nuclear-facility incidents and the ODNI helicopter encounter.
+- [All videos](https://pursueufotracker.com/videos/): 150 DVIDS-hosted videos, all mirrored for direct playback.
 
 ## Analysis
 
 - [Deep-dive analysis hub](https://pursueufotracker.com/deep-dives): 35 long-form, source-quoted analyses of the most significant files, organized by agency. Every quote is transcribed verbatim from the released document and cited to its location.
-- [The honest verdict](https://pursueufotracker.com/verdict): What these 375 files do and do not prove. The position is: no claim that aliens exist, no claim they don't. The files don't answer that question, but they do prove the U.S. government has documented encounters it cannot explain after conventional review.
+- [The honest verdict](https://pursueufotracker.com/verdict): What these 450 files do and do not prove. The position is: no claim that aliens exist, no claim they don't. The files don't answer that question, but they do show the U.S. government has documented encounters it still lists as unresolved.
 - [Top 10 most anomalous](https://pursueufotracker.com/top-10): The highest-scoring files on the Anomalousness Index, ranked.
 - [War.gov revisions log](https://pursueufotracker.com/revisions): war.gov silently revises its own canonical file list; this page documents every revision with full diffs. First documented case: May 11, 2026, when the list went from 161 files to 158 (28 renames, 5 removals, 3 additions, 6 consolidations) with no announcement.
 - [Change tracking](https://pursueufotracker.com/changes): Byte-level integrity monitoring. war.gov has silently re-processed file bodies at unchanged URLs; this page tracks those events against archived originals.
@@ -55,11 +55,11 @@ The full ranked list is at [Top 10 most anomalous](https://pursueufotracker.com/
 
 ## File count clarification
 
-PURSUE file counts differ across the web because war.gov revises its own list. Drop 01 (May 8, 2026) originally contained 161 files; on May 11, 2026 war.gov silently revised it to 158. Subsequent releases brought the total to 375 as of Drop 05 (August 7, 2026). This site preserves stable URLs for every file it has ever indexed, including files war.gov later renamed or removed, and documents each revision at /revisions.
+PURSUE file counts differ across the web because war.gov revises its own list. Drop 01 (May 8, 2026) originally contained 161 files; on May 11, 2026 war.gov silently revised it to 158. Subsequent releases brought the total to 450 as of Drop 06 (September 18, 2026; war.gov added three of its files to the list on September 24). This site preserves stable URLs for every file it has ever indexed, including files war.gov later renamed or removed, and documents each revision at /revisions.
 
 ## Video transcripts: an honesty note
 
-15 of the 134 videos have transcripts - those with an audio track, mostly NASA records. The remaining videos are silent military sensor captures; no transcript exists or is possible for them. Any source claiming full transcripts of the Pentagon sensor videos is overstating what was released.
+15 of the 150 videos have transcripts on this site - those with an audio track, mostly NASA records. Most of the remaining videos are silent military sensor captures. Release 06 also brought official war.gov transcripts, published as separate PDFs: DOW-UAP-D154 for the 1952 Ruppelt presentation audio (DOW-UAP-PR160), and LLE-UAP-D001 to D004 for the four Colorado police videos, whose audio AARO removed before release. Any source claiming full transcripts of the Pentagon sensor videos is overstating what was released.
 
 ## What this site explicitly does NOT do
 

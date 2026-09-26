@@ -50,6 +50,8 @@ AGENCY_MAP = {
     "U.S. Government": "USG",
     # Drop 05 (2026-08-07) introduced this label; war.gov files it as EOP-UAP-D001.
     "Executive Office of the President": "EOP",
+    # Drop 06 (2026-09-18) introduced this label; war.gov files it as LLE-UAP-*.
+    "Local Law Enforcement": "LLE",
 }
 
 TYPE_MAP = {
@@ -66,7 +68,7 @@ TYPE_MAP = {
 # Agencies that share the "intel" category (intelligence-community + DOE
 # nuclear-program records, distinct from military mission reports). New in
 # Release 02 - 5 files in this category for the May 22 disclosure.
-INTEL_AGENCIES = {"CIA", "ODNI", "DOE", "ICA"}
+INTEL_AGENCIES = {"CIA", "ODNI", "DOE", "ICA", "USG", "EOP", "LLE"}
 
 
 def _slugify(s: str) -> str:
@@ -97,7 +99,13 @@ def _default_score(type_: str, agency: str, redacted: bool) -> dict:
     witness = {"FBI": "federal_agent", "DoD": "military_personnel",
                "NASA": "astronaut", "STATE": "civilian_credentialed",
                "CIA": "federal_agent", "ODNI": "federal_agent",
-               "DOE": "federal_agent"}.get(agency, "civilian_credentialed")
+               "DOE": "federal_agent", "LLE": "law_enforcement",
+               }.get(agency, "civilian_credentialed")
+    # A local-police officer's phone video is a consumer-camera capture, not a
+    # military sensor. Scoring it single_sensor_military (80) would overstate it
+    # against the published rubric, so it takes the photographic tier (55).
+    if agency == "LLE" and type_ == "video":
+        sensor = "photographic"
     return {
         "components": {
             "sensor_quality": sensor,

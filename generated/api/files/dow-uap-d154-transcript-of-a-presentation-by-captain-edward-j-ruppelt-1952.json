@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d154-transcript-of-a-presentation-by-captain-edward-j-ruppelt-1952",
+  "title": "DOW-UAP-D154, Transcript of a Presentation by Captain Edward J. Ruppelt, 1952",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "3/26/52",
+  "date_released": "2026-09-18",
+  "source_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D154_Transcript-of-a-Presentation-by-Captain-Edward-J-Ruppelt-1952.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d154-transcript-of-a-presentation-by-captain-edward-j-ruppelt-1952.pdf",
+  "size_bytes": 293205,
+  "sha256": "0c1c5adfd3ca9cebcc7e5183dbff32538376ce62f075b51756f9b822f8de9e55",
+  "redacted": false,
+  "summary": "This document is a transcript of a March 1952 presentation by Captain Edward J. Ruppelt outlining the U.S. Air Force’s reorganized investigation into unidentified flying objects (UFOs). The presentation previews prospective technical methodologies, such as diffraction-grating photography and radar-scope synchronization, that were subsequently incorporated into Project Blue Book, a U.S. Air Force program active from 1952 to 1969 that investigated the nature and origin of UFOs. Ruppelt explains that out of approximately 800 historical cases reviewed by the Air Force, approximately 20% remained unexplained after technical analysis. These unresolved reports were sourced from credible military personnel, commercial pilots, and other qualified technical observers. He highlights geographic report concentrations around sensitive national security and nuclear weapons installations (including Los Alamos, Albuquerque, and Oak Ridge National Laboratories) and notes recurring anomalous characteristics, including silent high-speed flight and radar detections indicating unconfirmed air speeds between 1,000 and 3,500 miles per hour. Emphasizing that the Air Force found no conclusive evidence regarding the nature or origin of the phenomena, Ruppelt underscores the national security need for a systematic physical data collection effort to better evaluate these sightings.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d154-transcript-of-a-presentation-by-captain-edward-j-ruppelt-1952.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d154-transcript-of-a-presentation-by-captain-edward-j-ruppelt-1952.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Boston, Massachusetts"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D154_Transcript-of-a-Presentation-by-Captain-Edward-J-Ruppelt-1952.jpg",
+  "csv_raw_title": "DOW-UAP-D154, Transcript of a Presentation by Captain Edward J. Ruppelt, 1952",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d154-transcript-of-a-presentation-by-captain-edward-j-ruppelt-1952.pdf",
+  "audience": {
+    "tldr": "Transcript of a March 1952 presentation by Captain Edward J. Ruppelt outlining the U.S. Air Force's reorganized investigation into unidentified flying objects.",
+    "what_we_know": [
+      "War.gov lists Boston, Massachusetts as the location and March 1952 as the date.",
+      "Ruppelt previews prospective technical methods, such as diffraction-grating photography and radar-scope synchronization, that were later incorporated into Project Blue Book, the Air Force program active from 1952 to 1969.",
+      "The audio recording of the presentation is released alongside as DOW-UAP-PR160."
+    ],
+    "what_we_dont": [
+      "War.gov describes the presentation as an outline of the reorganized investigation and its planned methods, not a report of a specific sighting.",
+      "Whether the previewed methods worked as described is not addressed in war.gov's summary.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "Not applicable: this is a briefing about investigation methods, not a report of a sighting.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "have",
+      "just",
+      "mean",
+      "reports",
+      "some",
+      "people",
+      "know",
+      "well"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d151-aawsap-dird-cognitive-limits-on-simultaneous-control-of-multiple-un",
+  "title": "DOW-UAP-D151, AAWSAP DIRD, Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft, December 2010",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "12/15/10",
+  "date_released": "2026-09-18",
+  "source_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D151_AAWSAP-DIRD-Cognitive-Limits-on-Simultaneous-Control-of-Multiple-Unmanned-Spacecraft-December-15-2010.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d151-aawsap-dird-cognitive-limits-on-simultaneous-control-of-multiple-un.pdf",
+  "size_bytes": 40463687,
+  "sha256": "7535e88d474d47ec980b7e35a394f532b297aafb1e32170e044bcc1a7b016402",
+  "redacted": true,
+  "summary": "This document is a Defense Intelligence Reference Document (DIRD), a technical reference format used by the Defense Intelligence Agency (DIA) to capture baseline knowledge on a specific topic for later analytic use. DIRDs are best understood as reference and synthesis products rather than as original research. It is one of 38 DIRDs produced under the Advanced Aerospace Weapon System Applications Program (AAWSAP) between 2009 and 2011. Because AAWSAP’s scope permitted a broad range of supporting topics, not every DIRD in the series directly concerns aerospace systems or future threat assessment. The following summary reflects the DIRD’s scope and framing at the time of writing and should not be read as implying current validation of the concepts discussed.\n\nThis DIRD examines how many unmanned spacecraft a single human operator could realistically supervise or control at once, using research from air traffic control and multi-vehicle remote piloting as rough analogs. The report argues that the practical limit depends heavily on task complexity: about 16 craft for simple monitoring or destination assignment, about 7 for moderately complex piloting or mission tasks, and about 4 for complex heterogeneous operations. It places particular emphasis on the operator’s ability to maintain a coherent mental “big picture” of multiple vehicles at once, and it suggests that automation and external displays can help by offloading working-memory demands, though not eliminating them. The document also highlights physiological workload measures as a possible way to detect or predict operator overload in real time. Overall, it presents multi-spacecraft control as a human-factors and systems-integration problem in which progress depends on managing cognitive limits through interface design, automation, and workload monitoring.",
+  "score": {
+    "value": 53,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d151-aawsap-dird-cognitive-limits-on-simultaneous-control-of-multiple-un.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d151-aawsap-dird-cognitive-limits-on-simultaneous-control-of-multiple-un.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Las Vegas, Nevada"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D151_AAWSAP-DIRD-Cognitive-Limits-on-Simultaneous-Control-of-Multiple-Unmanned-Spacecraft-December-15-2010.jpg",
+  "csv_raw_title": "DOW-UAP-D151, AAWSAP DIRD, Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft, December 2010",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d151-aawsap-dird-cognitive-limits-on-simultaneous-control-of-multiple-un.pdf",
+  "audience": {
+    "tldr": "Defense Intelligence Reference Document (DIRD) from the Defense Intelligence Agency's AAWSAP program: a technical reference paper, \"Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft\" (December 2010).",
+    "what_we_know": [
+      "Produced under AAWSAP (the Advanced Aerospace Weapon System Applications Program), a Defense Intelligence Agency program that war.gov says was active from 2008 to 2012.",
+      "War.gov describes DIRDs as reference and synthesis products rather than original research, and describes each as one of 38 DIRDs produced between 2009 and 2011. The CSV contains 37, all released together in Release 06.",
+      "War.gov notes that not every DIRD in the series directly concerns aerospace systems or future threat assessment."
+    ],
+    "what_we_dont": [
+      "This is a technical reference paper, not a report of a UAP encounter: it describes no sighting.",
+      "War.gov cautions that its summary reflects the paper's scope and framing at the time of writing and does not imply current validation of the concepts discussed.",
+      "Redacted portions may contain identifying or technical detail."
+    ],
+    "mundane_candidate": "Not applicable: this is a reference document, not an encounter report.",
+    "score_sentence": "Anomalousness Index 53/100 - the rubric default for a document that reports no encounter, not a finding about any event.",
+    "keywords": [
+      "task",
+      "workload",
+      "control",
+      "unclassified",
+      "performance",
+      "traffic",
+      "time",
+      "aircraft"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d104-final-personnel-record-for-newhouse-delbert-c-u-s-navy-1957",
+  "title": "DOW-UAP-D104, Final Personnel Record for Newhouse, Delbert C., U.S. Navy, 1957",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "5/2/57",
+  "date_released": "2026-09-18",
+  "source_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D104_Final-Personnel-Record-for-Newhouse-Delbert-C-US-Navy-1957.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d104-final-personnel-record-for-newhouse-delbert-c-u-s-navy-1957.pdf",
+  "size_bytes": 172869366,
+  "sha256": "640912a325f5c611ebecfe8f969a28689c32ea40031ad30bd6b9fd47c2abece7",
+  "redacted": false,
+  "summary": "This file contains the final personnel record of U.S. Navy Chief Warrant Officer Delbert C. Newhouse, who left naval service as a Chief Warrant Officer 4, then the highest Warrant Officer grade. In July 1952, Newhouse recorded 16mm motion-picture film near Tremonton, Utah; the film later became the subject of a Project Blue Book investigation. Project Blue Book was the U.S. Air Force program active from 1952 to 1969 that investigated the nature and origin of unidentified flying objects (UFOs). In addition to documenting routine assignments and training, the file records Newhouse’s career progression as a Photographer’s Mate, a Navy enlisted specialty responsible for photography and related imaging work. Project Blue Book investigators characterized Newhouse as an expert photographer based on his naval experience.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d104-final-personnel-record-for-newhouse-delbert-c-u-s-navy-1957.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d104-final-personnel-record-for-newhouse-delbert-c-u-s-navy-1957.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D104_Final-Personnel-Record-for-Newhouse-Delber-C-US-Navy-1957.jpg",
+  "csv_raw_title": "DOW-UAP-D104, Final Personnel Record for Newhouse, Delbert C., U.S. Navy, 1957",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d104-final-personnel-record-for-newhouse-delbert-c-u-s-navy-1957.pdf",
+  "audience": {
+    "tldr": "Final U.S. Navy personnel record of Chief Warrant Officer Delbert C. Newhouse, who filmed the objects near Tremonton, Utah in July 1952.",
+    "what_we_know": [
+      "He left naval service as a Chief Warrant Officer 4, then the highest Warrant Officer grade.",
+      "The record shows his career as a Photographer's Mate, a Navy enlisted specialty responsible for photography and related imaging work.",
+      "Project Blue Book investigators characterized him as an expert photographer based on his naval experience."
+    ],
+    "what_we_dont": [
+      "This is a personnel record, not a report of a sighting: it documents the witness's background, not the objects he filmed.",
+      "Photographic expertise bears on how reliable a witness is, not on what the objects were.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "Not applicable: this is a reference document, not an encounter report.",
+    "score_sentence": "Anomalousness Index 56/100 - the rubric default for a document that reports no encounter, not a finding about any event.",
+    "keywords": [
+      "officer",
+      "duty",
+      "naval",
+      "report",
+      "page",
+      "leave",
+      "date",
+      "name"
+    ]
+  }
+}

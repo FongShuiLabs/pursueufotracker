@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d110-aawsap-statement-of-objectives-july-2008",
+  "title": "DOW-UAP-D110, AAWSAP Statement of Objectives, July 2008",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "7/18/08",
+  "date_released": "2026-09-18",
+  "source_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D110_AAWSAP-Statement-of-Objectives-July-18-2008.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d110-aawsap-statement-of-objectives-july-2008.pdf",
+  "size_bytes": 887936,
+  "sha256": "e4f6eff0ec5c6a35e5832d4ae881ddad68c148650df77d447064c7180fafe056",
+  "redacted": true,
+  "summary": "This document is an administrative or programmatic record related to the Advanced Aerospace Weapon System Applications Program (AAWSAP), a Defense Intelligence Agency (DIA)-administered program active from 2008 to 2012. AAWSAP’s official scope of work identified 12 technical research areas relating to potential aerospace threats over a time horizon of more than 40 years. As an administrative record, the file documents how AAWSAP was scoped, organized, tasked, funded, or described at a particular point in time.\n\nThis July 2008 Statement of Objectives defines AAWSAP as a contractor-supported research effort intended to assess far-term foreign aerospace threats by understanding the physics and engineering of possible breakthrough technologies out to the year 2050 rather than extrapolating from then-current aerospace trends. It identifies 12 technical study areas, including lift, propulsion, control, power generation, spatial or temporal translation, materials, configuration and structure, signature reduction, human interface, human effects, armament, and related supporting topics. The document also sets out the program’s expected work structure, requiring monthly status reports, technical-area program management plans within 60 days, comprehensive research reports and briefings by the tenth month, and a final integrated threat assessment.",
+  "score": {
+    "value": 53,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d110-aawsap-statement-of-objectives-july-2008.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d110-aawsap-statement-of-objectives-july-2008.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Washington, D.C."
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/thumbs/DOW-UAP-D110_AAWSAP-Statement-of-Objectives-July-18-2008.jpg",
+  "csv_raw_title": "DOW-UAP-D110, AAWSAP Statement of Objectives, July 2008",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d110-aawsap-statement-of-objectives-july-2008.pdf",
+  "audience": {
+    "tldr": "Administrative record from the Defense Intelligence Agency's AAWSAP program: AAWSAP Statement of Objectives, July 2008.",
+    "what_we_know": [
+      "War.gov describes AAWSAP as a Defense Intelligence Agency-administered program active from 2008 to 2012.",
+      "Its official scope of work identified 12 technical research areas relating to potential aerospace threats over a time horizon of more than 40 years.",
+      "As an administrative record, the file documents how AAWSAP was scoped, organized, tasked, funded, or described at a particular point in time."
+    ],
+    "what_we_dont": [
+      "This is a contract or programmatic record, not a report of a UAP encounter: it describes no sighting.",
+      "It shows how the program was structured, not what its research found; the technical papers (DIRDs) are separate records in the same release.",
+      "Redacted portions may contain identifying or technical detail."
+    ],
+    "mundane_candidate": "Not applicable: this is a reference document, not an encounter report.",
+    "score_sentence": "Anomalousness Index 53/100 - the rubric default for a document that reports no encounter, not a finding about any event.",
+    "keywords": [
+      "government",
+      "shall",
+      "contractor",
+      "contract",
+      "will",
+      "technical",
+      "aerospace",
+      "property"
+    ]
+  }
+}
