@@ -1,36 +1,39 @@
 # PURSUE UFO Tracker - Action Queue
 
-> ## Next session: Drop 06 is ingested - post the Reddit draft, then the AAWSAP page
+> ## Next session: read `_scratch/HANDOFF-2026-10-12.md` first
 >
-> **State as of 2026-09-26:** Drop 06 (Release 06, Sept 18) ingested and pushed
-> (`189e0919`). 450 files, CSV SHA-256 `c3f8209e...`. war.gov amended the release on
-> Sept 24 (+3 transcripts, PR004 retitled, the LLE-UAP-D001 PDF swapped at the same URL);
-> all three are documented on /revisions. The site was 8 days late on this drop - see
-> "ship the verified core first" in DROP_REACTION.md.
+> **State as of 2026-10-12 (verified live):** Drop 06 is live (450 files, CSV SHA-256
+> `c3f8209e...`). No Release 07: war.gov is unchanged since the 2026-09-24 amendment
+> (24 days since Release 06; past gaps 14-42 days). The poller is healthy.
 >
 > ### Open items
-> 1. **Post `_scratch/reddit-drop06.md`** (Tremonton angle), Monday 9am-1pm ET, after
->    `verify-deploy.ps1` passes. `_scratch/reddit-drop05.md` was never posted either;
->    its FBI bullet has been corrected.
-> 2. **AAWSAP landing page** - 44 records, high search interest, no hub yet (a hub costs
->    one `_redirects` rule; 82/100 used). Option B in the Reddit draft notes 37 of 38 DIRDs
->    are in the release; the missing title is not yet checked against a sourced list.
-> 3. **Tremonton deep dive** (film + Blue Book files + the 1953 Navy analysis).
-> 4. /changes still describes only Releases 01-03; decide whether it should cover later
->    releases or point to the uap-data.csv revision table.
+> 1. **ntfy drop alerts are still not installed** (the live workflow is unchanged since
+>    2026-05-10). Steps are in the handoff. Under the 2026-10-10 global rule the topic also
+>    needs Anthony's approval and an entry in the Harvey golden-rules manifest.
+> 2. **Reddit:** `_scratch/reddit-drop06.md` - posting status unknown. Re-check the wording
+>    before posting (its title says "the newest release").
+> 3. **Review /verdict** (`data/verdict-stance.md` claims 2-3, restated in war.gov's own
+>    wording on 2026-09-26).
+> 4. **GSC re-pull** to see whether Drop 06 and the AAWSAP hub moved anything (baseline
+>    2026-09-20: 0 clicks / 113 impressions over 28 days).
+> 5. **Tremonton deep dive** (film + Blue Book files + the 1953 Navy analysis).
+> 6. /changes still describes only Releases 01-03; extend it or point it at the
+>    uap-data.csv revision table.
+>
+> Done since the last update: the AAWSAP hub is live at /aawsap-files/ (`ab3d8adf`).
 
-**Last updated: 2026-09-26** (Drop 06 ingested + pushed. Previous handoff: `_scratch/HANDOFF-2026-09-09.md`.)
+**Last updated: 2026-10-12** (handoff; no new drop. Previous handoff: `_scratch/HANDOFF-2026-09-09.md`.)
 
 ---
 
-## Current state (2026-09-26)
+## Current state (2026-10-12)
 
-- **Drop 06 pushed.** 450 files, CSV SHA-256 `c3f8209e...`; homepage release list,
-  counts and nav phrases now stamped automatically (stamp-counts). Run `.erify-deploy.ps1`
-  to confirm it is live.
+- **Drop 06 live.** 450 files, CSV SHA-256 `c3f8209e...`; `.\verify-deploy.ps1` passes. The
+  homepage release list, counts and nav phrases are stamped automatically (stamp-counts).
 - **Deploys unblocked.** Credential stored (`FongShuiLabs`); pushes work from a Claude session.
 - **Orphan consolidation** was completing as of 2026-09-08 (indexed 342 -> 307 while
-  "alternate page with proper canonical" rose 54 -> 90).
+  "alternate page with proper canonical" rose 54 -> 90). That is the duplicate problem
+  resolving, not coverage loss.
 
 ## The strategic read (re-confirmed by the 2026-09-08 GSC pull)
 
