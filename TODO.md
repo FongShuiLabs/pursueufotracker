@@ -17,8 +17,11 @@
 > 4. **GSC re-pull** to see whether Drop 06 and the AAWSAP hub moved anything (baseline
 >    2026-09-20: 0 clicks / 113 impressions over 28 days).
 > 5. **Tremonton deep dive** (film + Blue Book files + the 1953 Navy analysis).
-> 6. /changes still describes only Releases 01-03; extend it or point it at the
->    uap-data.csv revision table.
+> 6. ~~/changes covers only Releases 01-03~~ DONE 2026-10-13: now covers Releases 01-06 with a row-by-row
+>    diff of 03-06 (`pipeline/release_diff.py` -> `data/release-diff.json`). Still open on that page: the
+>    Sept 18/24 CSV states were never archived, so which rows arrived in which Release 06 revision is unknown.
+>    Whether to publish the LLE-UAP-D001 PDF-body swap (from the Sept 26 notes) is Anthony's call: the old
+>    bytes were not kept, so it cannot be reproduced.
 >
 > Done since the last update: the AAWSAP hub is live at /aawsap-files/ (`ab3d8adf`).
 

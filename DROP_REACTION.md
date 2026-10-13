@@ -251,6 +251,11 @@ these stale, some since Drop 04):
 - `generated/uap-data-csv.html`: a revision-table row for each new CSV version
   (move "current version" to it), and the "revised at least N times" count.
 - `generated/revisions.html` when war.gov edits rows it already released.
+- `generated/changes.html`: add the new release's commit to `SNAPSHOTS` in `pipeline/release_diff.py`, run
+  `python -m pipeline.release_diff`, and add a release card plus a timeline row built from its output and
+  from `data/poll-state.json`. If war.gov revises a release after publishing, **save every CSV state the
+  poller reports** (copy `_scratch/uap-csv.csv` aside each time the hash changes); the Release 06 states
+  at 446 and 447 rows were not kept, so that page cannot say what changed between them.
 - `llms.txt` (step 7b) and `_scratch/reddit-dropNN.md`.
 
 Every claim in those must come from the CSV or the file itself. Two Drop 05/06
