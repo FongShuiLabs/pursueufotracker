@@ -2,7 +2,7 @@
 
 > Independent rolling-release tracker of the Trump administration's PURSUE (Presidential Unsealings and Reporting System for UAP Encounters) declassification program. Every UFO/UAP file released by the U.S. Department of War at war.gov/UFO - 450 files across six releases as of September 18, 2026 (war.gov added three more Release 06 files to its list on September 24) - indexed, scored on a transparent rubric, and verified against the original source via SHA-256.
 
-The site exists because war.gov ships the PURSUE files as a flat list with no search, no change history, and no way to compare evidentiary weight across files. This site fixes that: full-text search, per-file evidentiary scoring, byte-level change tracking against the original releases, and a documented revision log of war.gov's own silent edits.
+The site exists because war.gov ships the PURSUE files as a flat list with no search, no change history, and no way to compare evidentiary weight across files. This site fixes that: search across titles, summaries, document text and transcripts, the text of each document on its file page, per-file evidentiary scoring, byte-level change tracking against the original releases, and a documented revision log of war.gov's own silent edits.
 
 All underlying files are U.S. Government works in the public domain under 17 U.S.C. § 105.
 

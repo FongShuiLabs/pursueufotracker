@@ -366,6 +366,8 @@ GLOBAL_RULES = [
     ("homepage 'Search all N files'", r"(<strong[^>]*>Search</strong> all )\d{3}( files)", "total"),
     ("'across all N Trump PURSUE UAP files'", r"(across all )\d{3}( Trump PURSUE UAP files)", "total"),
     ("'across all N PURSUE files'", r"(across all )\d{3}( PURSUE files)", "total"),
+    ("'Search all N Trump PURSUE UAP files'", r"(Search all )\d{3}( Trump PURSUE UAP files)", "total"),
+    ("/search lede 'across all <strong>N files</strong>'", r"(across all <strong>)\d{3}( files</strong>)", "total"),
     ("'browse all N files'", r"(browse all )\d{3}( files)", "total"),
     ("'Every one of the N Trump PURSUE UFO files'", r"(Every one of the )\d{3}( Trump PURSUE UFO files)", "total"),
     ("'It lists all N files'", r"(It lists all )\d{3}( files)", "total"),

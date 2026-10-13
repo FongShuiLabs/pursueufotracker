@@ -62,7 +62,7 @@
     {% elif f.type == 'image' %}"contentUrl": {{ (f.mirror_url or f.source_url) | tojson }},
     "thumbnailUrl": {{ og_image_abs | tojson }},
     "datePublished": "{{ f.date_released }}",
-    "dateModified": "{{ f.date_released }}",
+    "dateModified": "{{ page_modified or f.date_released }}",
     "creator": {"@type": "Organization", "name": "{% if f.agency == 'LLE' %}Local law enforcement (via AARO){% elif agency_label.startswith('U.S.') %}{{ agency_label }}{% else %}U.S. {{ agency_label }}{% endif %}", "url": "https://www.war.gov/"},
     "creditText": "{% if f.agency == 'LLE' %}Local law enforcement{% elif agency_label.startswith('U.S.') %}{{ agency_label }}{% else %}U.S. {{ agency_label }}{% endif %} (via war.gov PURSUE program)",
     "copyrightNotice": "Public domain. U.S. Government work, 17 U.S.C. § 105.",
@@ -70,7 +70,7 @@
     "representativeOfPage": true,
     {% else %}"image": {{ og_image_abs | tojson }},
     "datePublished": "{{ f.date_released }}",
-    "dateModified": "{{ f.date_released }}",
+    "dateModified": "{{ page_modified or f.date_released }}",
     {% endif %}"author": { "@type": "Organization", "name": "PURSUE UFO Tracker", "url": "{{ site_url }}/" },
     "publisher": {
       "@type": "Organization",
@@ -339,6 +339,19 @@
   {% else %}
   <p style="font-size:13px;color:#7a92b0;line-height:1.6;margin:8px 0 24px;font-style:italic">The summary above is sourced from the released file metadata as published to war.gov. The analysis sections below are original to this tracker.</p>
   {% endif %}
+  {% endif %}
+
+  {%- if doc_excerpt %}
+  <section class="doc-text" style="margin:8px 0 32px">
+    <h2 style="color:#fff;font-size:22px;margin:0 0 8px">Text of the document</h2>
+    <p style="color:#7a92b0;font-size:13px;line-height:1.6;margin:0 0 12px">Machine-extracted from the PDF war.gov published (its text layer or OCR), so expect errors, especially in names, numbers and handwriting; the PDF is the authoritative copy. Lines that did not extract as readable text are left out. Showing about {{ doc_excerpt.words_shown }} words{% if doc_excerpt.page_list %} from page{{ 's' if doc_excerpt.pages|length > 1 else '' }} {{ doc_excerpt.page_list }} of {{ doc_excerpt.total_pages }}{% endif %}.</p>
+    <div style="max-height:560px;overflow:auto;padding:18px 20px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.15);border-radius:8px;font-size:14px;line-height:1.65;color:#cfd8e3">
+      {% for p in doc_excerpt.pages %}
+      {% if p.n is not none %}<p style="margin:0 0 6px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;color:#7a92b0">PAGE {{ p.n }}</p>{% endif %}
+      <p style="margin:0 0 16px;white-space:pre-line">{{ p.text }}</p>
+      {% endfor %}
+    </div>
+  </section>
   {% endif %}
 
   {% set slot_id = "1234567890" %}{% set ad_format = "auto" %}

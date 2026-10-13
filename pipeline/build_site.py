@@ -608,6 +608,83 @@ def _seo_titles_map(all_files: list[dict]) -> dict[str, str]:
     return seo
 
 
+# Document text on PDF file pages. Search Console (2026-10-13) showed Google indexing
+# only 224 of ~520 sitemap URLs: 127 file pages crawled and rejected, 204 URLs never
+# crawled. A file page's own content was war.gov's description (published identically by
+# war.gov and every other tracker) plus rubric text shared with every other page, while
+# the document's own words, already extracted for search, never appeared. This puts a
+# clean excerpt of them on the page.
+_EXCERPT_WORDS = 1000
+# The day document text was added to file pages. A page that gained it is a substantively
+# changed page, so its sitemap lastmod and JSON-LD dateModified move to this date.
+DOC_TEXT_ADDED = "2026-10-13"
+_WORDISH = re.compile(r"[(\"'\[]*[A-Za-z][A-Za-z'\-]{1,20}[.,;:)\"'\]!?]*")
+_VOWEL = re.compile(r"[aeiouyAEIOUY]")
+_CTRL = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
+
+
+def _clean_line(line: str) -> str | None:
+    """Keep a line only if it reads as words (OCR noise from scans is mostly symbol soup)."""
+    toks = _CTRL.sub(" ", line).split()
+    if len(toks) < 2:
+        return None
+    good = sum(1 for t in toks if _WORDISH.fullmatch(t) and _VOWEL.search(t))
+    return " ".join(toks) if good / len(toks) >= 0.6 else None
+
+
+_excerpt_cache: dict[str, dict | None] = {}
+
+
+def _doc_excerpt(f: dict) -> dict | None:
+    """Memoized per file id: the file page and the sitemap both need it."""
+    if f["id"] not in _excerpt_cache:
+        _excerpt_cache[f["id"]] = _build_doc_excerpt(f)
+    return _excerpt_cache[f["id"]]
+
+
+def _page_modified(f: dict) -> str:
+    """A file page's dateModified: its release date, or DOC_TEXT_ADDED if it carries document
+    text and was released before that."""
+    released = f.get("date_released") or ""
+    if released and released < DOC_TEXT_ADDED and _doc_excerpt(f):
+        return DOC_TEXT_ADDED
+    return released
+
+
+def _build_doc_excerpt(f: dict) -> dict | None:
+    """Up to _EXCERPT_WORDS words of the cleanest pages of a PDF's extracted text, in order."""
+    if f.get("type") != "pdf":
+        return None
+    tp = (f.get("extracted") or {}).get("text_path")
+    if not tp or not (ROOT / tp).exists():
+        return None
+    raw = (ROOT / tp).read_text(encoding="utf-8", errors="replace")
+    parts = re.split(r"=== PAGE (\d+) ===", raw)
+    pages = ([(int(parts[i]), parts[i + 1]) for i in range(1, len(parts) - 1, 2)]
+             if len(parts) > 1 else [(None, raw)])
+    out, shown = [], 0
+    for n, text in pages:
+        lines = [c for c in (_clean_line(ln) for ln in text.splitlines()) if c]
+        if sum(len(ln.split()) for ln in lines) < 25:
+            continue
+        kept = []
+        for ln in lines:
+            w = len(ln.split())
+            if shown + w > _EXCERPT_WORDS:
+                break
+            kept.append(ln)
+            shown += w
+        if kept:
+            out.append({"n": n, "text": "\n".join(kept)})
+        if shown >= _EXCERPT_WORDS - 20:
+            break
+    if shown < 80:
+        return None
+    nums = [p["n"] for p in out if p["n"] is not None]
+    return {"pages": out, "words_shown": shown, "total_pages": len(pages),
+            "page_list": ", ".join(str(n) for n in nums)}
+
+
 def _transcript_text(f: dict) -> str | None:
     """Read the plain-text transcript at BUILD time so it can be embedded
     server-side in the file page HTML. The old template fetched the .vtt
@@ -694,6 +771,8 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
             "is_reference": is_reference,
             "agency_label": _agency_display(f),
             "transcript_text": _transcript_text(f),
+            "doc_excerpt": _doc_excerpt(f),
+            "page_modified": _page_modified(f),
         }
         out.write_text(tpl.render(**ctx), encoding="utf-8")
 
@@ -927,9 +1006,10 @@ def _build_sitemap(manifest: dict) -> None:
                 f"<lastmod>{lastmod}</lastmod>"
                 f"<priority>0.85</priority><changefreq>monthly</changefreq></url>"
             )
-    # File detail pages - lastmod = date_released (or today if missing)
+    # File detail pages - lastmod = date_released, or the day document text was added
+    # (see _page_modified); today if the release date is missing
     for f in manifest["files"]:
-        lastmod = f.get("date_released") or today
+        lastmod = _page_modified(f) or today
         parts.append(
             f"<url><loc>{SITE_URL}/files/{html.escape(f['id'])}</loc>"
             f"<lastmod>{lastmod}</lastmod>"

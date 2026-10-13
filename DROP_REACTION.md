@@ -199,7 +199,7 @@ https://pursueufotracker.com/files/[NEW_TOP_ID]
 Full Drop [DROP_N] diff: https://pursueufotracker.com/drops/[DROP_SLUG]
 Site: https://pursueufotracker.com
 
-Same methodology every drop: open six-axis scoring rubric anyone can recompute, no "probability of aliens" number (not honestly computable from these files), SHA-256 on every file so you can verify the mirror matches war.gov byte-for-byte, full-text search on the PDFs, and Whisper transcripts on the audio-bearing videos (most PURSUE videos are silent sensor/FLIR captures, so transcripts are on the NASA audio files).
+Same methodology every drop: open six-axis scoring rubric anyone can recompute, no "probability of aliens" number (not honestly computable from these files), SHA-256 on every file so you can verify the mirror matches war.gov byte-for-byte, search across the PDFs' text, the document text on each file page, and Whisper transcripts on the audio-bearing videos (most PURSUE videos are silent sensor/FLIR captures, so transcripts are on the NASA audio files).
 ```
 
 ### After posting
