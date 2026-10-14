@@ -38,12 +38,15 @@ from .config import DATA_DIR, ROOT
 OUT_PATH = DATA_DIR / "release-diff.json"
 POLL_STATE = DATA_DIR / "poll-state.json"
 
-# (label, Release Date value in the CSV, git commit holding data/uap-data.csv at that release)
+# (label, Release Date value in the CSV, ref) where ref is `archive:<first 12 hex of the CSV's SHA-256>`
+# (a byte-exact copy in data/csv-archive/) or a git commit holding data/uap-data.csv.
+# The git copies of Releases 03 and 04 (72463170, e25c27c1) predate the 2026-07-12 line-ending
+# fix, so their bytes differ from war.gov's; the archive copies hash to the poller's record.
 SNAPSHOTS = [
-    ("Release 03", "6/12/26", "72463170"),
-    ("Release 04", "7/10/26", "e25c27c1"),
-    ("Release 05", "8/7/26", "3db64f7a"),
-    ("Release 06", "9/18/26", "189e0919"),
+    ("Release 03", "6/12/26", "archive:48db08be3960"),
+    ("Release 04", "7/10/26", "archive:13e730c18d6e"),
+    ("Release 05", "8/7/26", "archive:5f5698f13224"),
+    ("Release 06", "9/18/26", "archive:c3f8209ef5f5"),
 ]
 
 FIELDS = [
@@ -142,16 +145,16 @@ def _diff(old: list[dict], new: list[dict]) -> dict:
 def build() -> dict:
     recorded = _recorded_hashes()
     snaps = []
-    for label, rel_date, commit in SNAPSHOTS:
-        raw = _git_show(commit)
+    for label, rel_date, ref in SNAPSHOTS:
+        raw = _git_show(ref)
         rows = _rows(raw)
         digest = hashlib.sha256(raw).hexdigest()
         snaps.append({
-            "label": label, "release_date": rel_date, "commit": commit, "rows": rows,
+            "label": label, "release_date": rel_date, "source": ref, "rows": rows,
             "meta": {
-                "label": label, "commit": commit, "rows": len(rows), "sha256_of_git_copy": digest,
-                # True when the committed bytes equal the bytes war.gov served (poller's record).
-                # False for copies committed before line endings were pinned (2026-07-12).
+                "label": label, "source": ref, "rows": len(rows), "sha256": digest,
+                # True when these bytes equal the bytes war.gov served (the poller's recorded hash).
+                # False for git copies committed before line endings were pinned (2026-07-12).
                 "byte_exact_vs_poll_state": digest in recorded,
                 "release_date_rows": sum(1 for r in rows if r.get("Release Date") == rel_date),
                 "featured_rows": len(_featured(rows)),
@@ -198,7 +201,7 @@ def main(argv: list[str]) -> int:
         return 0
     OUT_PATH.write_text(text, encoding="utf-8", newline="\n")
     for s in out["snapshots"]:
-        print(f"{s['label']}: {s['rows']} rows, commit {s['commit']}, "
+        print(f"{s['label']}: {s['rows']} rows, source {s['source']}, "
               f"byte-exact vs poll-state: {s['byte_exact_vs_poll_state']}, "
               f"flagged Featured: {s['featured_rows']}, duplicate ids: {s['duplicate_ids'] or 'none'}")
     for d in out["steps"]:

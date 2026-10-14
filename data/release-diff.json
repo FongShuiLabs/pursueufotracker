@@ -3,10 +3,10 @@
  "snapshots": [
   {
    "label": "Release 03",
-   "commit": "72463170",
+   "source": "archive:48db08be3960",
    "rows": 294,
-   "sha256_of_git_copy": "62f9788f1ec6737b499b4d4f4d149e89add99d24e49ae83cd31eb5cb758ceed3",
-   "byte_exact_vs_poll_state": false,
+   "sha256": "48db08be39605efd86e1d92fe6af3cda7730e1da6a4b5741d37a30712ebf5e04",
+   "byte_exact_vs_poll_state": true,
    "release_date_rows": 72,
    "featured_rows": 10,
    "featured_release_dates": [
@@ -16,10 +16,10 @@
   },
   {
    "label": "Release 04",
-   "commit": "e25c27c1",
+   "source": "archive:13e730c18d6e",
    "rows": 334,
-   "sha256_of_git_copy": "59ef538dfdcdd7a381ed39a9efd12a518641e9584b9dea2e140fecbc1603808a",
-   "byte_exact_vs_poll_state": false,
+   "sha256": "13e730c18d6ea586bcb9b58984481b093f3e4802c33b0f9281258ee786f8abd1",
+   "byte_exact_vs_poll_state": true,
    "release_date_rows": 40,
    "featured_rows": 10,
    "featured_release_dates": [
@@ -31,9 +31,9 @@
   },
   {
    "label": "Release 05",
-   "commit": "3db64f7a",
+   "source": "archive:5f5698f13224",
    "rows": 375,
-   "sha256_of_git_copy": "5f5698f132245115dd9d4a5197d2748847f281e466d8b660de036aa3c4b678c7",
+   "sha256": "5f5698f132245115dd9d4a5197d2748847f281e466d8b660de036aa3c4b678c7",
    "byte_exact_vs_poll_state": true,
    "release_date_rows": 41,
    "featured_rows": 9,
@@ -46,9 +46,9 @@
   },
   {
    "label": "Release 06",
-   "commit": "189e0919",
+   "source": "archive:c3f8209ef5f5",
    "rows": 450,
-   "sha256_of_git_copy": "c3f8209ef5f53a124bf3f30c4a36106ffaa63ea9770ad2d33e2ba5c4fec347c7",
+   "sha256": "c3f8209ef5f53a124bf3f30c4a36106ffaa63ea9770ad2d33e2ba5c4fec347c7",
    "byte_exact_vs_poll_state": true,
    "release_date_rows": 75,
    "featured_rows": 10,
