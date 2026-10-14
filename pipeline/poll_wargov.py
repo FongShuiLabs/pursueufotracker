@@ -23,7 +23,10 @@ Behavior:
     against /UFO/ first).
   - If all curl_cffi attempts fail, falls back to Playwright (headless
     Chromium, real Chrome fingerprint, real DOM rendering).
-  - If CSV obtained: hash + row-count, diff against state, decide.
+  - If CSV obtained: hash + row-count, diff against state, decide. Every
+    distinct state is also saved byte-exact to data/csv-archive/ (see
+    csv_archive.py) so revisions can be diffed row by row later; archiving
+    never blocks detection.
   - If CSV not obtained: increment failure counter, set new_drop=false,
     return 0. After 12 failures, set csv_stuck=true (workflow opens a
     one-time stuck issue).
@@ -46,6 +49,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from curl_cffi import requests
+
+from .csv_archive import archive as _archive_csv
 
 ROOT = Path(__file__).resolve().parent.parent
 LANDING_URL = "https://www.war.gov/UFO/"
@@ -197,6 +202,24 @@ def _fetch_csv() -> tuple[bytes, str] | None:
     return None
 
 
+def _archive(csv_bytes: bytes, seen_at: str | None) -> str | None:
+    """Keep the exact bytes of this CSV state in data/csv-archive/.
+
+    Returns the repo-relative path of the archived copy, or None if archiving
+    failed. Never raises: the archive is secondary to drop detection, and a disk
+    error here must not stop a NEW DROP from firing. Idempotent per distinct
+    state (see csv_archive), so it is safe to call on every poll.
+    """
+    try:
+        path, created = _archive_csv(csv_bytes, seen_at)
+        rel = path.relative_to(ROOT).as_posix()
+    except Exception as e:  # noqa: BLE001 - deliberately broad, see docstring
+        print(f"  WARNING: could not archive CSV state: {str(e)[:160]}", file=sys.stderr)
+        return None
+    print(f"  {'archived CSV state' if created else 'CSV state already archived'}: {rel}")
+    return rel
+
+
 def _emit_gh_output(**kwargs) -> None:
     gh_out = os.environ.get("GITHUB_OUTPUT")
     if not gh_out:
@@ -255,6 +278,10 @@ def main() -> int:
 
     if prev_hash == new_hash:
         print(f"NO CHANGE: rows={new_count} hash={new_hash[:12]}")
+        # Self-heal: if this state is not in the archive yet (it first appeared
+        # before the workflow learned to commit data/csv-archive, or a commit
+        # was lost), save it now. Dated by when the state was first seen.
+        _archive(csv_bytes, state.get("last_change_at"))
         _save_state(state)
         return 0
 
@@ -265,6 +292,7 @@ def main() -> int:
     state["csv_sha256"] = new_hash
     state["row_count"] = new_count
     state["last_change_at"] = _now_iso()
+    archive_path = _archive(csv_bytes, state["last_change_at"])
     state["history"] = (state.get("history") or [])[-19:] + [{
         "at": state["last_change_at"],
         "csv_sha256": new_hash,
@@ -281,6 +309,7 @@ def main() -> int:
         delta=str(delta),
         sha256=new_hash,
         source=source,
+        archive_path=archive_path or "",
     )
     return 10
 

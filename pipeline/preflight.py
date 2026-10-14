@@ -21,8 +21,11 @@ Three subcommands, run at three moments:
       BEFORE `git push`. Hard-fails if any file staged/committed at HEAD
       exceeds Cloudflare Pages' 25 MiB limit (the "No deployment available"
       incident), warns if _redirects is near the ~100-rule effective ceiling,
-      re-verifies the served CSV mirror blob is byte-exact vs poll-state, and
-      hard-fails on cluster/score-band count drift (see check-counts).
+      re-verifies the served CSV mirror blob is byte-exact vs poll-state,
+      hard-fails if any committed data/csv-archive/ file no longer hashes to
+      its own filename (warns if the current state is un-archived or the poller
+      workflow does not commit the archive), and hard-fails on cluster/score-band
+      count drift (see check-counts).
 
   python -m pipeline.preflight check-counts
       Recomputes every TOPIC_PAGES cluster size (vs its live match lambda) and
@@ -245,9 +248,48 @@ def pre_push() -> None:
                   "-text rule, or the mirror is stale vs the latest drop).")
         _ok("served CSV mirror blob is byte-exact vs poll-state")
 
+    check_csv_archive(state)
+
     # Hard gate: never push cluster/score-band counts that drifted from the manifest.
     check_counts()
     print("pre-push: safe to push")
+
+
+WORKFLOW = ROOT / ".github" / "workflows" / "poll-wargov.yml"
+
+
+def check_csv_archive(state: dict) -> None:
+    """data/csv-archive/ holds the exact bytes of every war.gov CSV state.
+
+    Hard-fails if a committed archive file does not hash to its own filename
+    (altered, truncated, or line endings converted, i.e. no longer byte-exact).
+    Only WARNS when the current state has no archived copy or the poller workflow
+    does not yet commit the archive: both depend on a manual workflow paste (the
+    PAT lacks `workflow` scope), so they must not block an unrelated push.
+    """
+    from .csv_archive import ARCHIVE_DIR, verify
+    rel = ARCHIVE_DIR.relative_to(ROOT).as_posix()
+    names = _git("ls-tree", "-r", "--name-only", "HEAD", "--", rel).splitlines()
+    blobs = [(Path(n).name,
+              subprocess.run(["git", "cat-file", "blob", f"HEAD:{n}"],
+                             capture_output=True, cwd=ROOT).stdout) for n in names]
+    problems = verify(blobs)
+    if problems:
+        print("\n".join("  " + p for p in problems))
+        _fail(f"{len(problems)} problem(s) in {rel}/. The archive is only useful if "
+              "each file is byte-exact; check the .gitattributes -text rule.")
+    _ok(f"{len(blobs)} archived CSV states, every committed blob byte-exact vs its filename hash")
+
+    cur = state.get("csv_sha256") or ""
+    if cur and not any(name.endswith(f"-{cur[:12]}.csv") for name, _ in blobs):
+        print(f"  WARNING: current war.gov state {cur[:12]} has no copy in {rel}/. "
+              "The poller saves it on its next run once the workflow commits the archive; "
+              "to keep it now: python -m pipeline.csv_archive add _scratch/uap-csv.csv")
+    if "csv-archive" not in WORKFLOW.read_text(encoding="utf-8", errors="replace"):
+        print("  WARNING: .github/workflows/poll-wargov.yml does not commit data/csv-archive yet, "
+              "so new CSV states are archived on the runner and then discarded. "
+              "Paste _scratch/poll-wargov-CSV-ARCHIVE-READY-TO-PASTE.yml via the GitHub web UI, "
+              "then `git pull --rebase`.")
 
 
 def _match(fn, f) -> bool:

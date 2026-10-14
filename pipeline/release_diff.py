@@ -17,6 +17,11 @@ why the file link is part of the key.
 
 When war.gov publishes Release 07, append one line to SNAPSHOTS (the commit that
 ingested it) and re-run. Nothing here fetches from war.gov or edits any CSV.
+
+A SNAPSHOTS ref is either a git commit or `archive:<12 hex>`, the first 12 digits
+of a CSV state's SHA-256, which reads data/csv-archive/<date>-<12 hex>.csv. The
+poller archives every state it sees, so a mid-release revision (a hash change
+that is not a new release) can be diffed against its neighbours the same way.
 """
 from __future__ import annotations
 
@@ -49,9 +54,17 @@ FIELDS = [
 ]
 
 
-def _git_show(commit: str) -> bytes:
+def _git_show(ref: str) -> bytes:
+    """CSV bytes for a SNAPSHOTS entry: `archive:<12 hex>` reads that state from
+    data/csv-archive/ (byte-exact copies the poller saves); anything else is a git
+    commit holding data/uap-data.csv."""
+    if ref.startswith("archive:"):
+        found = sorted((DATA_DIR / "csv-archive").glob(f"*-{ref[len('archive:'):]}.csv"))
+        if len(found) != 1:
+            raise SystemExit(f"{ref}: expected exactly one file in data/csv-archive/, found {len(found)}")
+        return found[0].read_bytes()
     return subprocess.run(
-        ["git", "show", f"{commit}:data/uap-data.csv"],
+        ["git", "show", f"{ref}:data/uap-data.csv"],
         cwd=ROOT, check=True, capture_output=True,
     ).stdout
 

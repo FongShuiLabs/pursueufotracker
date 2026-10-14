@@ -253,9 +253,17 @@ these stale, some since Drop 04):
 - `generated/revisions.html` when war.gov edits rows it already released.
 - `generated/changes.html`: add the new release's commit to `SNAPSHOTS` in `pipeline/release_diff.py`, run
   `python -m pipeline.release_diff`, and add a release card plus a timeline row built from its output and
-  from `data/poll-state.json`. If war.gov revises a release after publishing, **save every CSV state the
-  poller reports** (copy `_scratch/uap-csv.csv` aside each time the hash changes); the Release 06 states
-  at 446 and 447 rows were not kept, so that page cannot say what changed between them.
+  from `data/poll-state.json`. The poller now saves **every CSV state it sees**, byte-exact, as
+  `data/csv-archive/<UTC date first seen>-<first 12 of sha256>.csv` and commits it with the state file, so
+  there is nothing to copy aside by hand: after the `git pull --rebase` in step 1, the file for the new
+  state is already in the checkout. To diff a mid-release revision (a hash change that is not a new
+  release), find the two hashes in `data/poll-state.json` history and add them to `SNAPSHOTS` as
+  `archive:<first 12 of sha256>` instead of a commit hash. The archive starts at Release 03; seven earlier
+  states were never captured (the first 161-row state, both May 11 states, both June 9-10 states, and the
+  Release 06 states at 446 and 447 rows), so the page cannot say what changed between those. If
+  `preflight pre-push` warns that the current state has no archived copy (the poller workflow was not yet
+  updated to commit the archive), run `python -m pipeline.csv_archive add _scratch/uap-csv.csv` after
+  `pre-ingest` and commit the new file.
 - `llms.txt` (step 7b) and `_scratch/reddit-dropNN.md`.
 
 Every claim in those must come from the CSV or the file itself. Two Drop 05/06

@@ -1,3 +1,6 @@
 # war.gov mirror files must stay byte-exact (published SHA-256 must match served bytes).
 # -text disables all EOL conversion; git stores and serves the file verbatim.
 data/uap-data.csv -text
+# Archived war.gov CSV states (pipeline/csv_archive.py): the filename carries the
+# first 12 hex of the file's own SHA-256, so these must also stay byte-exact.
+data/csv-archive/*.csv -text
