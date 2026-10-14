@@ -288,7 +288,7 @@ def check_csv_archive(state: dict) -> None:
     if "csv-archive" not in WORKFLOW.read_text(encoding="utf-8", errors="replace"):
         print("  WARNING: .github/workflows/poll-wargov.yml does not commit data/csv-archive yet, "
               "so new CSV states are archived on the runner and then discarded. "
-              "Paste _scratch/poll-wargov-CSV-ARCHIVE-READY-TO-PASTE.yml via the GitHub web UI, "
+              "Paste _scratch/poll-wargov-COMBINED-READY-TO-PASTE.yml via the GitHub web UI, "
               "then `git pull --rebase`.")
 
 
