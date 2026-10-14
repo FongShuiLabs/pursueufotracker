@@ -258,9 +258,13 @@ these stale, some since Drop 04):
   there is nothing to copy aside by hand: after the `git pull --rebase` in step 1, the file for the new
   state is already in the checkout. To diff a mid-release revision (a hash change that is not a new
   release), find the two hashes in `data/poll-state.json` history and add them to `SNAPSHOTS` as
-  `archive:<first 12 of sha256>` instead of a commit hash. The archive starts at Release 03; seven earlier
-  states were never captured (the first 161-row state, both May 11 states, both June 9-10 states, and the
-  Release 06 states at 446 and 447 rows), so the page cannot say what changed between those. If
+  `archive:<first 12 of sha256>` instead of a commit hash. The archive holds eight states back to the
+  first 161-row CSV; the four before Release 03 and the Release 06 state at 447 rows were recovered from
+  the Internet Archive (each is byte-identical to a hash the poller recorded, and each has the recorded
+  row count). Three recorded states are still missing and could not be found there: the first May 11
+  state (f07601eb), the June 10 state (a62a7688) and the Release 06 state at 446 rows (8d4232f3), so the
+  page cannot say what changed into or out of those exact states. The Internet Archive also holds states
+  the poller never recorded; they are not in the archive because nothing recorded can vouch for them. If
   `preflight pre-push` warns that the current state has no archived copy (the poller workflow was not yet
   updated to commit the archive), run `python -m pipeline.csv_archive add _scratch/uap-csv.csv` after
   `pre-ingest` and commit the new file.

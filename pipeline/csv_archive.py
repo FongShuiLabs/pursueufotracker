@@ -3,8 +3,9 @@
 war.gov revises the CSV in place, sometimes twice in one day. The poller's state
 file (data/poll-state.json) records only a hash and a row count, so before this
 module existed the bytes behind most hashes were gone and what changed between
-two states could not be reproduced (Release 06 at 446 and 447 rows, the second
-May 11 state, June 10). Now every distinct state is kept:
+two states could not be reproduced (Release 06 at 446 rows, the first May 11
+state, June 10; four other lost states were later recovered from the Internet
+Archive, each byte-matched to a recorded hash). Now every distinct state is kept:
 
     data/csv-archive/<UTC date first seen>-<first 12 hex of sha256>.csv
 
