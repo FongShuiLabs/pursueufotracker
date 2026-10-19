@@ -1,10 +1,12 @@
 # PURSUE UFO Tracker - Action Queue
 
-> ## Next session: read `_scratch/HANDOFF-2026-10-12.md` first
+> ## Next session: read `_scratch/HANDOFF-2026-10-19.md` first
 >
-> **State as of 2026-10-12 (verified live):** Drop 06 is live (450 files, CSV SHA-256
-> `c3f8209e...`). No Release 07: war.gov is unchanged since the 2026-09-24 amendment
-> (24 days since Release 06; past gaps 14-42 days). The poller is healthy.
+> **State as of 2026-10-19 (verified against origin's poll-state):** Drop 06 is live (450 files, CSV
+> SHA-256 `c3f8209e...`). No Release 07: war.gov is unchanged since the 2026-09-24 amendment
+> (31 days since Release 06; past gaps 14-42 days). The poller is healthy.
+> Biggest structural gap: email capture is still not live (`ESP_PROVIDER = ""` in
+> `pipeline/config.py`); the provider choice is Anthony's.
 >
 > ### Open items
 > 1. **ntfy drop alerts are still not installed** (the live workflow is unchanged since
@@ -18,14 +20,15 @@
 >    2026-09-20: 0 clicks / 113 impressions over 28 days).
 > 5. **Tremonton deep dive** (film + Blue Book files + the 1953 Navy analysis).
 > 6. ~~/changes covers only Releases 01-03~~ DONE 2026-10-13: now covers Releases 01-06 with a row-by-row
->    diff of 03-06 (`pipeline/release_diff.py` -> `data/release-diff.json`). Still open on that page: the
->    Sept 18/24 CSV states were never archived, so which rows arrived in which Release 06 revision is unknown.
->    Whether to publish the LLE-UAP-D001 PDF-body swap (from the Sept 26 notes) is Anthony's call: the old
->    bytes were not kept, so it cannot be reproduced.
+>    diff of 03-06 (`pipeline/release_diff.py` -> `data/release-diff.json`). DONE 2026-10-19: the Sept 24
+>    amendment (447 -> 450 rows) is diffed row by row from the recovered 447-row state (`REVISIONS`).
+>    Still unknowable: the 446/447 split (8d4232f3 was never kept). Correction to the 10-12 note: the
+>    LLE-UAP-D001 PDF swap has been on /revisions since 2026-09-26, and the Sept 18 bytes ARE kept
+>    (`_scratch/replaced/`, SHA-256 79ac7b9e..., 143,812 bytes).
 >
 > Done since the last update: the AAWSAP hub is live at /aawsap-files/ (`ab3d8adf`).
 
-**Last updated: 2026-10-12** (handoff; no new drop. Previous handoff: `_scratch/HANDOFF-2026-09-09.md`.)
+**Last updated: 2026-10-19** (handoff; no new drop. Previous handoff: `_scratch/HANDOFF-2026-10-12.md`.)
 
 ---
 

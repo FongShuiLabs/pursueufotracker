@@ -1,5 +1,5 @@
 {
- "about": "Row-by-row diff of war.gov's PURSUE CSV between releases, computed by pipeline/release_diff.py from CSV copies in this repository's git history. Rows match on (ID, file link); see the module docstring.",
+ "about": "Row-by-row diff of war.gov's PURSUE CSV between releases, computed by pipeline/release_diff.py from byte-exact CSV copies in data/csv-archive/. Rows match on (ID, file link); see the module docstring.",
  "snapshots": [
   {
    "label": "Release 03",
@@ -1407,5 +1407,692 @@
    "previous_featured_cleared": 9
   }
  ],
- "first_release_rows_missing_from_latest": 0
+ "first_release_rows_missing_from_latest": 0,
+ "revisions": [
+  {
+   "label": "Release 05 to Release 06 as of 2026-09-18 16:58 UTC (447 rows)",
+   "from": {
+    "source": "archive:5f5698f13224",
+    "sha256": "5f5698f132245115dd9d4a5197d2748847f281e466d8b660de036aa3c4b678c7",
+    "byte_exact_vs_poll_state": true
+   },
+   "to": {
+    "source": "archive:19e6dd7a69d5",
+    "sha256": "19e6dd7a69d5c41c30bc3d9302462e922c6225cf18649298b329e68918e28a20",
+    "byte_exact_vs_poll_state": true
+   },
+   "rows_before": 375,
+   "rows_after": 447,
+   "added": [
+    {
+     "id": "DOW-UAP-D102",
+     "title": "DOW-UAP-D102, Project Blue Book File on Tremonton Film, Utah, 1952",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D103",
+     "title": "DOW-UAP-D103, Project Blue Book Photo File Relating to Tremonton Film, Utah, 1952",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D104",
+     "title": "DOW-UAP-D104, Final Personnel Record for Newhouse, Delbert C., U.S. Navy, 1957",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D105",
+     "title": "DOW-UAP-D105, U.S. Air Force Flying Discs File, 1952",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D106",
+     "title": "DOW-UAP-D106, Mission Report, Iraq, 2022",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D107",
+     "title": "DOW-UAP-D107, Mission Report, Middle East, 2025",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D108",
+     "title": "DOW-UAP-D108, Mission Report, Middle East, 2025",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D109",
+     "title": "DOW-UAP-D109, Mission Report, Middle East, 2022",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D110",
+     "title": "DOW-UAP-D110, AAWSAP Statement of Objectives, July 2008",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D111",
+     "title": "DOW-UAP-D111, AAWSAP Solicitation and Original Order, September 2008",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D112",
+     "title": "DOW-UAP-D112, AAWSAP Contract Modification P00001, September 2009",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D113",
+     "title": "DOW-UAP-D113, AAWSAP Contract Modification P00002, February 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D114",
+     "title": "DOW-UAP-D114, AAWSAP Contract Modification P00003, May 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D115",
+     "title": "DOW-UAP-D115, AAWSAP Contract Modification P00004, May 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D116",
+     "title": "DOW-UAP-D116, AAWSAP Contract Modification P00005, September 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D117",
+     "title": "DOW-UAP-D117, AAWSAP DIRD, Metallic Glasses for Aerospace Applications, December 2009",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D118",
+     "title": "DOW-UAP-D118, AAWSAP DIRD, Aerospace Applications of Programmable Matter, December 2009",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D119",
+     "title": "DOW-UAP-D119, AAWSAP DIRD, Biomaterials, January 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D120",
+     "title": "DOW-UAP-D120, AAWSAP DIRD, Materials for Advanced Aerospace Platforms, January 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D121",
+     "title": "DOW-UAP-D121, AAWSAP DIRD, Pulsed High-Power Microwave Source Technology, January 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D122",
+     "title": "DOW-UAP-D122, AAWSAP DIRD, Invisibility Cloaking Theory and Experiments, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D123",
+     "title": "DOW-UAP-D123, AAWSAP DIRD, Positron Aerospace Propulsion, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D124",
+     "title": "DOW-UAP-D124, AAWSAP DIRD, Space Access: Where We’ve Been and Where We Could Go, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D125",
+     "title": "DOW-UAP-D125, AAWSAP DIRD, Inertial Electrostatic Confinement Fusion, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D126",
+     "title": "DOW-UAP-D126, AAWSAP DIRD, Advanced Nuclear Propulsion for Manned Deep Space Missions, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D127",
+     "title": "DOW-UAP-D127, AAWSAP DIRD, An Introduction to the Statistical Drake Equation, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D128",
+     "title": "DOW-UAP-D128, AAWSAP DIRD, Anomalous Acute and Subacute Field Effects on Human Biological Tissues, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D129",
+     "title": "DOW-UAP-D129, AAWSAP DIRD, Metallic Spintronics, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D130",
+     "title": "DOW-UAP-D130, AAWSAP DIRD, Technological Approaches to Controlling External Devices, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D131",
+     "title": "DOW-UAP-D131, AAWSAP DIRD, The Role of Superconductors in Gravity Research, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D132",
+     "title": "DOW-UAP-D132, AAWSAP DIRD, Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D133",
+     "title": "DOW-UAP-D133, AAWSAP DIRD, The Space Communication Implications of Quantum Entanglement and Nonlocality, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D134",
+     "title": "DOW-UAP-D134, AAWSAP DIRD, Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D135",
+     "title": "DOW-UAP-D135, AAWSAP DIRD, Antigravity for Aerospace Applications, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D136",
+     "title": "DOW-UAP-D136, AAWSAP DIRD, Biosensors and BioMEMS: A Survey of the Present Field, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D137",
+     "title": "DOW-UAP-D137, AAWSAP DIRD, State of the Art and Evolution of High-Energy Lasers, March 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D138",
+     "title": "DOW-UAP-D138, AAWSAP DIRD, Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions, April 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D139",
+     "title": "DOW-UAP-D139, AAWSAP DIRD, Traversable Wormholes, Stargates, and Negative Energy, April 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D140",
+     "title": "DOW-UAP-D140, AAWSAP DIRD, High-Frequency Gravitational Wave Communications, April 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D141",
+     "title": "DOW-UAP-D141, AAWSAP DIRD, Metamaterials for Aerospace Applications, April 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D142",
+     "title": "DOW-UAP-D142, AAWSAP DIRD, Concepts for Extracting Energy from the Quantum Vacuum, April 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D143",
+     "title": "DOW-UAP-D143, AAWSAP DIRD, Laser Lightcraft Nanosatellites, November 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D144",
+     "title": "DOW-UAP-D144, AAWSAP DIRD, Cockpits in the Era of Breakthrough Flight, November 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D145",
+     "title": "DOW-UAP-D145, AAWSAP DIRD, Aneutronic Fusion Propulsion I, November 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D146",
+     "title": "DOW-UAP-D146, AAWSAP DIRD, Aneutronic Fusion Propulsion II, November 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D147",
+     "title": "DOW-UAP-D147, AAWSAP DIRD, Ultracapacitors as Energy and Power Storage Devices, November 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D148",
+     "title": "DOW-UAP-D148, AAWSAP DIRD, Detection and High-Resolution Tracking of Vehicles at Hypersonic Velocities, November 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D149",
+     "title": "DOW-UAP-D149, AAWSAP DIRD, MHD Air Breathing Propulsion and Power for Aerospace Applications, November 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D150",
+     "title": "DOW-UAP-D150, AAWSAP DIRD, Quantum Computing and Utilizing Organic Molecules in Automation Technology, December 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D151",
+     "title": "DOW-UAP-D151, AAWSAP DIRD, Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft, December 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D152",
+     "title": "DOW-UAP-D152, AAWSAP DIRD, Negative Mass Propulsion, January 2011",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D153",
+     "title": "DOW-UAP-D153, AAWSAP DIRD, Quantum Tomography of Negative Energy States in the Vacuum, January 2011",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D154",
+     "title": "DOW-UAP-D154, Transcript of a Presentation by Captain Edward J. Ruppelt, 1952",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR130",
+     "title": "DOW-UAP-PR130, Unresolved UAP Report, Iraq, 2022",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR131",
+     "title": "DOW-UAP-PR131, Unresolved UAP Report, Iraq, 2022",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR133",
+     "title": "DOW-UAP-PR133, Unresolved UAP Report, Middle East, 2025",
+     "type": "VID",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR135",
+     "title": "DOW-UAP-PR135, Unresolved UAP Report, Middle East, 2025",
+     "type": "VID",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR140",
+     "title": "DOW-UAP-PR140, Unresolved UAP Report, Middle East, 2022",
+     "type": "VID",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR141",
+     "title": "DOW-UAP-PR141, Unresolved UAP Report, Middle East, 2022",
+     "type": "VID",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR143",
+     "title": "DOW-UAP-PR143, Unresolved UAP Report, Yellow Sea, 2023",
+     "type": "VID",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR144",
+     "title": "DOW-UAP-PR144, Unresolved UAP Report, Yellow Sea, 2023",
+     "type": "VID",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR148",
+     "title": "DOW-UAP-PR148, Unresolved UAP Report, East China Sea, 2023",
+     "type": "VID",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR150",
+     "title": "DOW-UAP-PR150, Unresolved UAP Report, Yellow Sea, 2023",
+     "type": "VID",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR151",
+     "title": "DOW-UAP-PR151, Unresolved UAP Report, Yellow Sea, 2023",
+     "type": "VID",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR152",
+     "title": "DOW-UAP-PR152, Unresolved UAP Report, Yellow Sea, 2023",
+     "type": "VID",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR159",
+     "title": "DOW-UAP-PR159, Historical Film of Reported UFOs, Utah, 1952",
+     "type": "VID",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-PR160",
+     "title": "DOW-UAP-PR160, Presentation by Captain Edward J. Ruppelt, 1952",
+     "type": "AUD",
+     "agency": "Department of War"
+    },
+    {
+     "id": "LLE-UAP-D001",
+     "title": "LLE-UAP-D001, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+     "type": "PDF",
+     "agency": "Local Law Enforcement"
+    },
+    {
+     "id": "LLE-UAP-PR001",
+     "title": "LLE-UAP-PR001, Unresolved UAP Report, Colorado, 2023",
+     "type": "VID",
+     "agency": "Local Law Enforcement"
+    },
+    {
+     "id": "LLE-UAP-PR002",
+     "title": "LLE-UAP-PR002, Unresolved UAP Report, Colorado, October 2023",
+     "type": "VID",
+     "agency": "Local Law Enforcement"
+    },
+    {
+     "id": "LLE-UAP-PR003",
+     "title": "LLE-UAP-PR003, Unresolved UAP Report, Colorado, October 2023",
+     "type": "VID",
+     "agency": "Local Law Enforcement"
+    },
+    {
+     "id": "LLE-UAP-PR004",
+     "title": "LLE-UAP-PR004, Unresolved UAP Report, Colorado, October 2023",
+     "type": "VID",
+     "agency": "Local Law Enforcement"
+    }
+   ],
+   "added_by_agency_type": {
+    "Department of War | AUD": 1,
+    "Department of War | PDF": 55,
+    "Department of War | VID": 11,
+    "Local Law Enforcement | PDF": 1,
+    "Local Law Enforcement | VID": 4
+   },
+   "removed": [],
+   "relinked": [],
+   "edited": [
+    {
+     "id": "DOW-UAP-D098",
+     "title": "DOW-UAP-D098, Film Analysis of Unidentified Objects, 1953",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ],
+      "Video Pairing": [
+       "",
+       "DOW-UAP-PR159"
+      ],
+      "PDF Pairing": [
+       "",
+       "DOW-UAP-D103 | DOW-UAP-D104 | DOW-UAP-D105"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D025",
+     "title": "FBI-UAP-D025, Digital Rendering, “Airborne Triangle,” 2002",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D027",
+     "title": "FBI-UAP-D027, Digital Rendering, “Dark Translucent Triangle,” 2023",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D029",
+     "title": "FBI-UAP-D029, Digital Rendering, “Dark Triangle with Lights,” 2011",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D031",
+     "title": "FBI-UAP-D031, Digital Rendering, “Large Triangle with Red Lights,” 2023",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D038",
+     "title": "FBI-UAP-D038, Digital Rendering 1, “Multiple Red Lights,” 2026",
+     "fields": {
+      "Featured": [
+       "Yes",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D039",
+     "title": "FBI-UAP-D039, Digital Rendering 2, “Multiple Red Lights,” 2026",
+     "fields": {
+      "Featured": [
+       "Yes",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D041",
+     "title": "FBI-UAP-D041, Digital Rendering 1, “Multiple Red Lights,” 2026",
+     "fields": {
+      "Featured": [
+       "Yes",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D042",
+     "title": "FBI-UAP-D042, Digital Rendering 2, “Multiple Red Lights,” 2026",
+     "fields": {
+      "Featured": [
+       "Yes",
+       ""
+      ]
+     }
+    }
+   ],
+   "edited_field_counts": {
+    "Featured": 9,
+    "PDF Pairing": 1,
+    "Video Pairing": 1
+   },
+   "featured_cleared": 9,
+   "new_agency_labels": [
+    "Local Law Enforcement"
+   ]
+  },
+  {
+   "label": "Release 06 amendment: 2026-09-18 16:58 UTC (447 rows) to 2026-09-24 21:15 UTC (450 rows)",
+   "from": {
+    "source": "archive:19e6dd7a69d5",
+    "sha256": "19e6dd7a69d5c41c30bc3d9302462e922c6225cf18649298b329e68918e28a20",
+    "byte_exact_vs_poll_state": true
+   },
+   "to": {
+    "source": "archive:c3f8209ef5f5",
+    "sha256": "c3f8209ef5f53a124bf3f30c4a36106ffaa63ea9770ad2d33e2ba5c4fec347c7",
+    "byte_exact_vs_poll_state": true
+   },
+   "rows_before": 447,
+   "rows_after": 450,
+   "added": [
+    {
+     "id": "LLE-UAP-D002",
+     "title": "LLE-UAP-D002, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+     "type": "PDF",
+     "agency": "Local Law Enforcement"
+    },
+    {
+     "id": "LLE-UAP-D003",
+     "title": "LLE-UAP-D003, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+     "type": "PDF",
+     "agency": "Local Law Enforcement"
+    },
+    {
+     "id": "LLE-UAP-D004",
+     "title": "LLE-UAP-D004, Transcript of an Unresolved UAP Report, Colorado, January 2024",
+     "type": "PDF",
+     "agency": "Local Law Enforcement"
+    }
+   ],
+   "added_by_agency_type": {
+    "Local Law Enforcement | PDF": 3
+   },
+   "removed": [],
+   "relinked": [],
+   "edited": [
+    {
+     "id": "LLE-UAP-D001",
+     "title": "LLE-UAP-D001, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+     "fields": {
+      "Video Pairing": [
+       "LLE-UAP-PR004",
+       "LLE-UAP-PR001"
+      ],
+      "Description Blurb": [
+       "This document is a transcript from a UAP sighting by local law enforcement in Colorado.  The law enforcement officer narrates what is seen as the UAP is recorded on video.  To protect the identity of the source, as well as law enforcement activities, the transcript has been edited to remove potentially identifying information. ",
+       "This document is a transcript of a 1-minute, 19-second video recording contained in this collection under the title LLE-UAP-PR001, captured by a law enforcement officer in Colorado in October 2023. AARO removed the audio from the original recording to protect information whose release could reasonably be expected to affect the privacy or other protected interests of a U.S. person or commercial entity. This transcript is also redacted to protect the identity of the reporter and sensitive law enforcement information. \n\nAll descriptive and estimative language in this transcript reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics."
+      ],
+      "Image Alt Text": [
+       "Transcript Document",
+       "Transcript Document."
+      ],
+      "Image VIRIN": [
+       "260918-D-D0360-1146",
+       "260918-O-D0360-1165"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-PR001",
+     "title": "LLE-UAP-PR001, Unresolved UAP Report, Colorado, 2023",
+     "fields": {
+      "PDF Pairing": [
+       "",
+       "LLE-UAP-D001"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-PR002",
+     "title": "LLE-UAP-PR002, Unresolved UAP Report, Colorado, October 2023",
+     "fields": {
+      "PDF Pairing": [
+       "",
+       "LLE-UAP-D002"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-PR003",
+     "title": "LLE-UAP-PR003, Unresolved UAP Report, Colorado, October 2023",
+     "fields": {
+      "PDF Pairing": [
+       "",
+       "LLE-UAP-D003"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-PR004",
+     "title": "LLE-UAP-PR004, Unresolved UAP Report, Colorado, January 2024",
+     "fields": {
+      "Title": [
+       "LLE-UAP-PR004, Unresolved UAP Report, Colorado, October 2023",
+       "LLE-UAP-PR004, Unresolved UAP Report, Colorado, January 2024"
+      ],
+      "PDF Pairing": [
+       "LLE-UAP-D001",
+       "LLE-UAP-D004"
+      ]
+     }
+    }
+   ],
+   "edited_field_counts": {
+    "Description Blurb": 1,
+    "Image Alt Text": 1,
+    "Image VIRIN": 1,
+    "PDF Pairing": 4,
+    "Title": 1,
+    "Video Pairing": 1
+   },
+   "featured_cleared": 0,
+   "new_agency_labels": []
+  }
+ ]
 }

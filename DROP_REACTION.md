@@ -257,8 +257,9 @@ these stale, some since Drop 04):
   `data/csv-archive/<UTC date first seen>-<first 12 of sha256>.csv` and commits it with the state file, so
   there is nothing to copy aside by hand: after the `git pull --rebase` in step 1, the file for the new
   state is already in the checkout. To diff a mid-release revision (a hash change that is not a new
-  release), find the two hashes in `data/poll-state.json` history and add them to `SNAPSHOTS` as
-  `archive:<first 12 of sha256>` instead of a commit hash. The archive holds eight states back to the
+  release), find the two hashes in `data/poll-state.json` history and add the pair to `REVISIONS` in
+  `pipeline/release_diff.py` as `archive:<first 12 of sha256>` refs; its diff lands under `revisions` in the
+  JSON (the Release 06 amendment, 447 to 450 rows, is there as of 2026-10-19). The archive holds eight states back to the
   first 161-row CSV; the four before Release 03 and the Release 06 state at 447 rows were recovered from
   the Internet Archive (each is byte-identical to a hash the poller recorded, and each has the recorded
   row count). Three recorded states are still missing and could not be found there: the first May 11

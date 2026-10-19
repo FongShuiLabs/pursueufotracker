@@ -21,7 +21,8 @@ ingested it) and re-run. Nothing here fetches from war.gov or edits any CSV.
 A SNAPSHOTS ref is either a git commit or `archive:<12 hex>`, the first 12 digits
 of a CSV state's SHA-256, which reads data/csv-archive/<date>-<12 hex>.csv. The
 poller archives every state it sees, so a mid-release revision (a hash change
-that is not a new release) can be diffed against its neighbours the same way.
+that is not a new release) can be diffed against its neighbours the same way:
+list it in REVISIONS, and its diff lands under "revisions" in the JSON.
 """
 from __future__ import annotations
 
@@ -47,6 +48,16 @@ SNAPSHOTS = [
     ("Release 04", "7/10/26", "archive:13e730c18d6e"),
     ("Release 05", "8/7/26", "archive:5f5698f13224"),
     ("Release 06", "9/18/26", "archive:c3f8209ef5f5"),
+]
+
+# Mid-release states, diffed pair by pair: (label, older ref, newer ref). A pair belongs here only
+# when BOTH states are in data/csv-archive/. Release 06's first state (446 rows, 8d4232f3777f) was
+# never kept, so how its 75 rows split between the 446- and 447-row states cannot be reproduced.
+REVISIONS = [
+    ("Release 05 to Release 06 as of 2026-09-18 16:58 UTC (447 rows)",
+     "archive:5f5698f13224", "archive:19e6dd7a69d5"),
+    ("Release 06 amendment: 2026-09-18 16:58 UTC (447 rows) to 2026-09-24 21:15 UTC (450 rows)",
+     "archive:19e6dd7a69d5", "archive:c3f8209ef5f5"),
 ]
 
 FIELDS = [
@@ -173,15 +184,27 @@ def build() -> dict:
         d["previous_featured_cleared"] = sum(1 for k in prev_feat
                                              if k in newer and not (newer[k].get("Featured") or "").strip())
         steps.append(d)
+    revisions = []
+    for label, old_ref, new_ref in REVISIONS:
+        sides = []
+        for ref in (old_ref, new_ref):
+            raw = _git_show(ref)
+            digest = hashlib.sha256(raw).hexdigest()
+            sides.append((_rows(raw), {"source": ref, "sha256": digest,
+                                       "byte_exact_vs_poll_state": digest in recorded}))
+        d = _diff(sides[0][0], sides[1][0])
+        d = {"label": label, "from": sides[0][1], "to": sides[1][1], **d}
+        revisions.append(d)
     first, last = snaps[0], snaps[-1]
     missing = Counter(map(_key, first["rows"])) - Counter(map(_key, last["rows"]))
     return {
         "about": "Row-by-row diff of war.gov's PURSUE CSV between releases, computed by "
-                 "pipeline/release_diff.py from CSV copies in this repository's git history. "
+                 "pipeline/release_diff.py from byte-exact CSV copies in data/csv-archive/. "
                  "Rows match on (ID, file link); see the module docstring.",
         "snapshots": [s["meta"] for s in snaps],
         "steps": steps,
         "first_release_rows_missing_from_latest": sum(missing.values()),
+        "revisions": revisions,
     }
 
 
@@ -212,6 +235,11 @@ def main(argv: list[str]) -> int:
               f"new agency labels {d['new_agency_labels'] or 'none'}")
     print(f"{out['snapshots'][0]['label']} rows missing from {out['snapshots'][-1]['label']}: "
           f"{out['first_release_rows_missing_from_latest']}")
+    for d in out["revisions"]:
+        print(f"{d['label']}: {d['rows_before']} -> {d['rows_after']} rows | "
+              f"added {len(d['added'])} | removed {len(d['removed'])} | relinked {len(d['relinked'])} | "
+              f"edited {len(d['edited'])} {d['edited_field_counts']} | "
+              f"byte-exact vs poll-state: {d['from']['byte_exact_vs_poll_state']}/{d['to']['byte_exact_vs_poll_state']}")
     print(f"wrote {OUT_PATH.relative_to(ROOT)}")
     return 0
 
