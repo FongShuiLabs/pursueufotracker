@@ -25,7 +25,7 @@
   "description": "Documented changes to war.gov's PURSUE CSV: the May 11 revision (161 to 158 rows), Release 02 (+64), Release 03 (+72), and a row-by-row diff of Release 04 (+40), Release 05 (+41) and Release 06 (+75, 450 rows total), including the edits made to existing rows and Release 06's revisions on September 18 and 24. Every number is a direct count from the CSV.",
   "url": "https://pursueufotracker.com/changes",
   "datePublished": "2026-05-20",
-  "dateModified": "2026-10-19",
+  "dateModified": "2026-10-21",
   "creator": {"@type": "Organization", "name": "PURSUE UFO Tracker", "url": "https://pursueufotracker.com/"},
   "publisher": {"@type": "Organization", "name": "PURSUE UFO Tracker", "url": "https://pursueufotracker.com/"},
   "isBasedOn": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv",
@@ -39,7 +39,7 @@
   "description": "The verified change log across all six war.gov PURSUE CSV releases (450 rows): additions per release, the 31 existing rows edited after publication, and Release 06's revisions. None of the 294 rows in the Release 03 CSV has been removed.",
   "url": "https://pursueufotracker.com/changes",
   "datePublished": "2026-05-20T00:00:00Z",
-  "dateModified": "2026-10-19T00:00:00Z",
+  "dateModified": "2026-10-21T00:00:00Z",
   "image": "https://pursueufotracker.com/generated/og-cards/page-changes.png?v=2026-10-21",
   "author": {"@type": "Organization", "name": "PURSUE UFO Tracker", "url": "https://pursueufotracker.com/"},
   "publisher": {
@@ -120,7 +120,7 @@
   <div class="breadcrumb"><a href="/">PURSUE Tracker</a> &nbsp;/&nbsp; <a href="/revisions">Revisions</a> &nbsp;/&nbsp; Changes Log</div>
 
   <h1>PURSUE Changes Log</h1>
-  <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:24px">FIRST PUBLISHED 20 MAY 2026 · UPDATED 19 OCT 2026 · COUNTED FROM THE RAW CSV</p>
+  <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:24px">FIRST PUBLISHED 20 MAY 2026 · UPDATED 21 OCT 2026 · COUNTED FROM THE RAW CSV</p>
 
   <div class="alert">
     <p style="margin:0 0 8px 0"><strong>What this page contains.</strong> Every change to war.gov's PURSUE CSV that we can document, from the first release on May 8 to today's 450-row file (Release 06, revised September 18 and 24). It has a row-by-row diff of Releases 03 to 06 computed from the raw CSV rows, a row-by-row diff of Release 06's September 24 amendment, a timeline of every CSV state our poller recorded, one card per release, and the original May 11 comparison (161 to 158 rows) further down. Each claim on this page is a direct count. No interpretation of war.gov's intent: we say what changed, not why. No characterizations of "renames," "consolidations," or "reclassifications" - those would be inferences and are kept off this page. Where we cannot reproduce something, the page says so.</p>
@@ -231,7 +231,7 @@
 
   <div id="integrity-audit" style="background:linear-gradient(135deg,rgba(82,180,255,.07),rgba(82,255,180,.04));border:1px solid rgba(82,180,255,.35);border-radius:10px;padding:22px 26px;margin:0 0 24px 0">
     <p style="margin:0 0 8px 0;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#52b4ff;text-transform:uppercase">🔬 File-integrity audit · war.gov re-processed 62 documents · verified: no content removed</p>
-    <p style="margin:0 0 12px 0;color:#dfe6ef;font-size:16px;line-height:1.65">Sometime between our May 8-9 capture and June 10, war.gov silently replaced the <strong>file bodies</strong> of 62 Release-01 PDFs <strong>at the same URLs</strong> - same filenames, same CSV rows, same page count. The replacement files are about half the size (the audited corpus went from 2.49 GB to 1.25 GB). A CSV-row poller cannot see this, because the CSV did not change. This was first flagged publicly by a reader hashing every file daily; we independently verified it before publishing, and credit the catch. The natural worry - "they shrank the files, are they hiding something?" - is answerable here because <strong>we keep the original bytes</strong>.</p>
+    <p style="margin:0 0 12px 0;color:#dfe6ef;font-size:16px;line-height:1.65">Sometime between our May 8-9 capture and June 10, war.gov silently replaced the <strong>file bodies</strong> of 62 Release-01 PDFs <strong>at the same URLs</strong> - same filenames, same CSV rows, same page count. The replacement files are about half the size (the audited corpus went from 2.49 GB to 1.25 GB). Watching the CSV alone would not reveal this: the files kept the same URLs, so the change only shows up when you fetch the files themselves and compare their hashes or sizes. This was first flagged publicly by a reader hashing every file daily; we independently verified it before publishing, and credit the catch. The natural worry - "they shrank the files, are they hiding something?" - is answerable here because <strong>we keep the original bytes</strong>.</p>
     <p style="margin:0 0 12px 0;color:#dfe6ef;font-size:16px;line-height:1.65"><strong style="color:#52ffb4">What we verified, file by file, against our archived originals (all 62):</strong></p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 14px">
       <div style="background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.2);border-radius:6px;padding:12px 14px"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.5px;color:#7a92b0;text-transform:uppercase;display:block;margin-bottom:4px">Pages preserved</span><span style="color:#fff;font-size:15px;font-weight:600">62 / 62</span></div>
