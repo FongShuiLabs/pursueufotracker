@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d168-baass-project-management-plan-december-2008",
+  "title": "DOW-UAP-D168, BAASS Project Management Plan, December 2008",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "12/2/08",
+  "date_released": "2026-10-23",
+  "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D168-BAASS_Project_Management_Plan-December_2008.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d168-baass-project-management-plan-december-2008.pdf",
+  "size_bytes": 6670895,
+  "sha256": "f72a51b4199db2d1758ac9796a4c1b669ba6013a7fae10a609150eaf0293eefd",
+  "redacted": true,
+  "summary": "This document is an administrative, programmatic, or contractor-produced record related to the Advanced Aerospace Weapon System Applications Program (AAWSAP), a Defense Intelligence Agency (DIA)-administered program active from 2008 to 2012. AAWSAP’s official scope of work identified 12 technical research areas relating to potential aerospace threats over a time horizon of more than 40 years. As part of the broader program record, the file documents how AAWSAP was scoped, organized, tasked, funded, executed, or described at a particular point in time.\n\nThis December 2008 Bigelow Aerospace Advanced Space Studies (BAASS) Project Management Plan is an overview paper setting out the contractor’s proposed strategy, priorities, and milestones for executing contract HHM402-08-C-0072 (AAWSAP). The plan states that BAASS would address the program’s 12 technical areas through a smaller number of selected projects, including initiatives focused on physics research, project cooperation with government-held information, academic engagement, database development, oral-history interviewing, and collection or review of materials described as excluded from Project Blue Book. The plan argues that the most productive approach would be to study “craft” or events already believed by BAASS to demonstrate novel behavior across the 12 technical areas, rather than concentrating primarily on then-current academic or industrial state-of-the-art research.",
+  "score": {
+    "value": 53,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "unresolved_no_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "unresolved_no_review",
+        "value": 60,
+        "weight": 0.1,
+        "contribution": 6.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d168-baass-project-management-plan-december-2008.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d168-baass-project-management-plan-december-2008.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Las Vegas, Nevada"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D168-BAASS_Project_Management_Plan-December_2008.jpg",
+  "csv_raw_title": "DOW-UAP-D168, BAASS Project Management Plan, December 2008",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d168-baass-project-management-plan-december-2008.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (12/2/08) over Las Vegas, Nevada.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 12/2/08.",
+      "Reported location: Las Vegas, Nevada."
+    ],
+    "what_we_dont": [
+      "Redacted portions may contain identifying or technical detail.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 53/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "baass",
+      "page",
+      "will",
+      "information",
+      "project",
+      "advanced",
+      "have",
+      "aerospace"
+    ]
+  }
+}

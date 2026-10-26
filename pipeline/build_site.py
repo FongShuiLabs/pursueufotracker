@@ -400,7 +400,7 @@ TOPIC_PAGES = [
      "slug": "/fbi-2023-uap-investigation", "name": "FBI 2023 UAP Investigation", "size": 4,
      "anchor": "the 4-document FBI investigation cluster from September 2023 - three FD-302 witness interviews and an FBI Lab composite sketch of a bronze metallic cigar-shaped object at a US test site"},
     {"match": lambda f: f["id"].startswith("fbi-uap-"),
-     "slug": "/fbi-modern-uap-files", "name": "FBI Modern UAP Files", "size": 47,
+     "slug": "/fbi-modern-uap-files", "name": "FBI Modern UAP Files", "size": 48,
      "anchor": "the FBI's modern UAP files: the 2022 Colorado Springs interview and the FBI-authenticated northeastern orb videos"},
     {"match": lambda f: f["id"] == "odni-uap-d001-usper-narrative-senior-usic-official",
      "slug": "/odni-uap-d001-helicopter-encounter", "name": "ODNI-UAP-D001 Helicopter Encounter", "size": 1,

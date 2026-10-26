@@ -78,6 +78,15 @@ def _subscribe_block() -> str:
     return subscribe_html("page")
 
 
+def is_aawsap(f: dict) -> bool:
+    """AAWSAP hub membership. The Release 06 records carry "aawsap" in their id; the nine
+    Release 07 BAASS records do not, but war.gov's description of every AAWSAP record names
+    the program in full (verified 2026-10-26: this matches exactly the 53 rows war.gov tags
+    TAG:AAWSAP in the CSV's PDF Pairing column). preflight check-counts uses the same rule."""
+    return ("aawsap" in (f.get("id") or "")
+            or "Advanced Aerospace Weapon System Applications Program" in (f.get("summary") or ""))
+
+
 CATEGORIES = [
     {
         "slug": "fbi-ufo-files",
@@ -113,16 +122,17 @@ CATEGORIES = [
         "keywords": "FBI UFO files, FBI UFO declassified, 62-HQ-83894, FBI flying disc investigation, Oak Ridge UFO, FBI vault UFO, Trump FBI UFO release, PURSUE FBI",
     },
     # Before military-uap-files: the file-page breadcrumb takes the FIRST matching hub,
-    # so the 44 AAWSAP records link to this hub rather than the general Pentagon one.
+    # so the AAWSAP records link to this hub rather than the general Pentagon one.
     {
         "slug": "aawsap-files",
         "title": "AAWSAP Files & DIRDs: @@N@@ Released DIA Program Records",
         "h1": "AAWSAP Records and DIRDs",
-        "match": lambda f: "aawsap" in (f.get("id") or ""),
+        "match": is_aawsap,
         "intro": (
             "@@NWORD@@ records of the <strong>Advanced Aerospace Weapon System Applications Program "
             "(AAWSAP)</strong>, a Defense Intelligence Agency program that war.gov describes as active from "
-            "2008 to 2012, were released in PURSUE Release 06 (September 2026). They fall into two groups. "
+            "2008 to 2012, have been released in PURSUE: 44 in Release 06 (September 2026) and nine in "
+            "Release 07 (October 2026). They fall into three groups. "
             "The first is the program's administrative file: a "
             "<a href='/files/dow-uap-d110-aawsap-statement-of-objectives-july-2008'>July 2008 statement of "
             "objectives</a> that frames AAWSAP as a contractor-supported effort to assess far-term foreign "
@@ -134,14 +144,22 @@ CATEGORIES = [
             "than original research, notes that not every paper directly concerns aerospace systems or threat "
             "assessment, and cautions that its summaries should not be read as implying current validation of "
             "the concepts discussed. Its descriptions say 38 DIRDs were produced between 2009 and 2011; PURSUE "
-            "has released 37. None of these records reports a sighting, so each file's Anomalousness Index is "
-            "the rubric's default for a document that describes no event, not a finding. All are flagged as "
-            "redacted, and all are public domain U.S. Government works under 17 U.S.C. § 105."
+            "has released 37. The third group, added in Release 07, is nine records involving Bigelow Aerospace "
+            "Advanced Space Studies (BAASS): MUFON reports prepared for BAASS (November 2008), a December 2008 "
+            "data-warehouse proposal called Project Capella, the BAASS project management plan, four BAASS "
+            "monthly reports from 2009, an April 2010 investigation report on a Utah ranch, and a November 2010 "
+            "BAASS self-assessment of its UAP analysis capabilities. None of the Release 06 records reports a "
+            "sighting. At least one Release 07 record does describe reported events: the Utah ranch report "
+            "records residents' accounts of orbs of light and other phenomena. Every record here carries the "
+            "rubric's default Anomalousness Index for a document, so the score is not a finding about any "
+            "event a record describes. All are flagged as redacted, and all are public domain U.S. Government "
+            "works under 17 U.S.C. § 105."
         ),
         "meta_desc": (
             "All @@N@@ AAWSAP records in the Trump PURSUE disclosure: the Defense Intelligence Agency program's "
-            "2008 statement of objectives, solicitation and contract modifications, plus its Defense Intelligence "
-            "Reference Documents (DIRDs) on topics from metallic glasses to warp drives. Mirrored and SHA-256 verified."
+            "2008 statement of objectives, solicitation and contract modifications, its Defense Intelligence "
+            "Reference Documents (DIRDs) on topics from metallic glasses to warp drives, and BAASS reports and "
+            "plans. Mirrored and SHA-256 verified."
         ),
         "keywords": "AAWSAP, AAWSAP files, AAWSAP DIRD, DIRD list, Defense Intelligence Reference Documents, DIA AAWSAP, Advanced Aerospace Weapon System Applications Program, AAWSAP statement of objectives, PURSUE AAWSAP, war.gov AAWSAP",
     },

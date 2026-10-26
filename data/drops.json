@@ -187,11 +187,36 @@
       ],
       "press_coverage": [],
       "status": "verified"
+    },
+    {
+      "id": "drop-07-2026-10-23",
+      "number": 7,
+      "date": "2026-10-23",
+      "title": "Drop 07 - Cold War Air Force Reports, Nine More AAWSAP Records, and a 2026 AARO Memo",
+      "summary": "PURSUE Release 07 added 28 files to the archive, all of them PDF documents, bringing the total to 478. War.gov published them on October 23, 2026. The Department of War contributed 25. Ten are early Cold War Air Force reports from 1952 to 1957 (eight Air Intelligence Information Reports and two Flying Object Reports) from Saudi Arabia, Guam, Italy, Canada, Germany, Morocco, Alaska, Sweden and Indiana. Nine more are records of the Advanced Aerospace Weapon System Applications Program (AAWSAP), the Defense Intelligence Agency program active from 2008 to 2012: MUFON reports prepared for BAASS (November 2008), a file titled Project Capella (December 2008), the BAASS project management plan, four BAASS monthly reports from 2009, an April 2010 Utah ranch investigation report, and a November 2010 BAASS self-assessment of its UAP analysis capabilities. Four are Catalina Island, California files from 1949 to 1955, one is the final personnel record of U.S. Air Force Colonel Howard M. McCoy, and one is a 2026 AARO memorandum for record titled Triangular UAP, documenting a witness debrief about observations at a sensitive national security site in the western United States. The CSV pairs that memorandum with a new FBI file (FBI-UAP-D043), an FD-302 recording a 2026 interview with two Federal Special Agents. The last two files, which the CSV pairs with each other, are a May 1963 National Aeronautics and Space Council memorandum on interagency coordination for the recovery of foreign materiel (EOP-UAP-D002) and 1962-1964 interagency correspondence concerning space fragments (USG-UAP-D002). Eleven of the 28 files are flagged as redacted.",
+      "agencies": [
+        "DoD",
+        "EOP",
+        "FBI",
+        "USG"
+      ],
+      "file_count": 28,
+      "video_count": 0,
+      "doc_count": 28,
+      "image_count": 0,
+      "redacted_count": 11,
+      "headline_files": [
+        "dow-uap-d176-triangular-uap-aaro-memorandum-for-record-2026",
+        "eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-",
+        "dow-uap-d174-utah-ranch-investigation-report-april-2010"
+      ],
+      "press_coverage": [],
+      "status": "verified"
     }
   ],
   "expected_next": {
     "status": "monitoring",
-    "note": "The Department of War has said files will be added on a rolling basis, but no schedule has ever been announced. The six releases so far came 14, 21, 28, 28, and 42 days apart - Release 06 landed on September 18, 2026. We do not publish a predicted date. This tracker checks war.gov automatically, several times a day, and logs a release here whenever it lands.",
-    "as_of": "2026-09-26"
+    "note": "The Department of War has said files will be added on a rolling basis, but no schedule has ever been announced. The seven releases so far came 14, 21, 28, 28, 42, and 35 days apart - Release 07 landed on October 23, 2026. We do not publish a predicted date. This tracker checks war.gov automatically, several times a day, and logs a release here whenever it lands.",
+    "as_of": "2026-10-26"
   }
 }

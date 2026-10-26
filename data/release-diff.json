@@ -58,6 +58,21 @@
    "duplicate_ids": [
     "FBI-UAP-D014"
    ]
+  },
+  {
+   "label": "Release 07",
+   "source": "archive:096ef2c0058a",
+   "rows": 478,
+   "sha256": "096ef2c0058abd412a568d630df31cb836241c1c08c4f67bdc8cdb7e5c8418b9",
+   "byte_exact_vs_poll_state": true,
+   "release_date_rows": 28,
+   "featured_rows": 8,
+   "featured_release_dates": [
+    "10/23/26"
+   ],
+   "duplicate_ids": [
+    "FBI-UAP-D014"
+   ]
   }
  ],
  "steps": [
@@ -1405,9 +1420,799 @@
    "to": "Release 06",
    "previous_featured_rows": 9,
    "previous_featured_cleared": 9
+  },
+  {
+   "rows_before": 450,
+   "rows_after": 478,
+   "added": [
+    {
+     "id": "DOW-UAP-D155",
+     "title": "DOW-UAP-D155, Air Intelligence Information Report, Saudi Arabia, 1957",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D156",
+     "title": "DOW-UAP-D156, Air Intelligence Information Report, Guam, 1956",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D157",
+     "title": "DOW-UAP-D157, Air Intelligence Information Report, Italy, 1952",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D158",
+     "title": "DOW-UAP-D158, Flying Object Report, Canada, 1953",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D159",
+     "title": "DOW-UAP-D159, Air Intelligence Information Report, Germany, 1953",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D160",
+     "title": "DOW-UAP-D160, Air Intelligence Information Report, Morocco, 1953",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D161",
+     "title": "DOW-UAP-D161, Air Intelligence Information Report, Alaska, 1953",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D162",
+     "title": "DOW-UAP-D162, Air Intelligence Information Report, Alaska, 1953",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D163",
+     "title": "DOW-UAP-D163, Air Intelligence Information Report, Sweden, 1953",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D164",
+     "title": "DOW-UAP-D164, Flying Object Report, Indiana, 1953",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D166",
+     "title": "DOW-UAP-D166, MUFON Reports Prepared for BAASS, November 2008",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D167",
+     "title": "DOW-UAP-D167, Project Capella, December 2008",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D168",
+     "title": "DOW-UAP-D168, BAASS Project Management Plan, December 2008",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D169",
+     "title": "DOW-UAP-D169, BAASS Monthly Report, March 2009",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D170",
+     "title": "DOW-UAP-D170, BAASS Monthly Report, April 2009",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D171",
+     "title": "DOW-UAP-D171, BAASS Monthly Report, June 2009",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D173",
+     "title": "DOW-UAP-D173, BAASS Monthly Report, November 2009",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D174",
+     "title": "DOW-UAP-D174, Utah Ranch Investigation Report, April 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D175",
+     "title": "DOW-UAP-D175, BAASS Self-Assessment of UAP Analysis Capabilities, November 2010",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D176",
+     "title": "DOW-UAP-D176, Triangular UAP AARO Memorandum for Record, 2026",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D177",
+     "title": "DOW-UAP-D177, Unresolved UAP Report, Catalina Island, 1955",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D178",
+     "title": "DOW-UAP-D178, Unresolved UAP Report, Catalina Island, 1953",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D179",
+     "title": "DOW-UAP-D179, Air Intelligence Information Report, Catalina Island, 1952",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D180",
+     "title": "DOW-UAP-D180, Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "DOW-UAP-D181",
+     "title": "DOW-UAP-D181, Unresolved UAP Report, Catalina Island, 1949",
+     "type": "PDF",
+     "agency": "Department of War"
+    },
+    {
+     "id": "EOP-UAP-D002",
+     "title": "EOP-UAP-D002, Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963",
+     "type": "PDF",
+     "agency": "Executive Office of the President"
+    },
+    {
+     "id": "FBI-UAP-D043",
+     "title": "FBI-UAP-D043, FD-302, Unidentified Aerial Object Observation Report, 2026",
+     "type": "PDF",
+     "agency": "FBI"
+    },
+    {
+     "id": "USG-UAP-D002",
+     "title": "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964",
+     "type": "PDF",
+     "agency": "U.S. Government"
+    }
+   ],
+   "added_by_agency_type": {
+    "Department of War | PDF": 25,
+    "Executive Office of the President | PDF": 1,
+    "FBI | PDF": 1,
+    "U.S. Government | PDF": 1
+   },
+   "removed": [],
+   "relinked": [
+    {
+     "id": "DOW-UAP-D042",
+     "old_link": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d42-range-fouler-debrief-japan-2023.pdf",
+     "new_link": "https://www.war.gov/medialink/ufo/release_1/DOW-UAP-D042-Range-Fouler-Debrief-Arabian-Gulf-2023.pdf  "
+    }
+   ],
+   "edited": [
+    {
+     "id": "DOW-UAP-D044",
+     "title": "DOW-UAP-D044, Range Fouler Reporting Form, Gulf of Aden, October 2020",
+     "fields": {
+      "Video Pairing": [
+       "",
+       "DOW-UAP-PR040"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D102",
+     "title": "DOW-UAP-D102, Project Blue Book File on Tremonton Film, Utah, 1952",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D110",
+     "title": "DOW-UAP-D110, AAWSAP Statement of Objectives, July 2008",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ],
+      "PDF Pairing": [
+       "DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D111",
+     "title": "DOW-UAP-D111, AAWSAP Solicitation and Original Order, September 2008",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ],
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D112",
+     "title": "DOW-UAP-D112, AAWSAP Contract Modification P00001, September 2009",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D113",
+     "title": "DOW-UAP-D113, AAWSAP Contract Modification P00002, February 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D114",
+     "title": "DOW-UAP-D114, AAWSAP Contract Modification P00003, May 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D115",
+     "title": "DOW-UAP-D115, AAWSAP Contract Modification P00004, May 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D116",
+     "title": "DOW-UAP-D116, AAWSAP Contract Modification P00005, September 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D117",
+     "title": "DOW-UAP-D117, AAWSAP DIRD, Metallic Glasses for Aerospace Applications, December 2009",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ],
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 |  DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D118",
+     "title": "DOW-UAP-D118, AAWSAP DIRD, Aerospace Applications of Programmable Matter, December 2009",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D119",
+     "title": "DOW-UAP-D119, AAWSAP DIRD, Biomaterials, January 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D120",
+     "title": "DOW-UAP-D120, AAWSAP DIRD, Materials for Advanced Aerospace Platforms, January 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D121",
+     "title": "DOW-UAP-D121, AAWSAP DIRD, Pulsed High-Power Microwave Source Technology, January 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D122",
+     "title": "DOW-UAP-D122, AAWSAP DIRD, Invisibility Cloaking Theory and Experiments, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D123",
+     "title": "DOW-UAP-D123, AAWSAP DIRD, Positron Aerospace Propulsion, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D124",
+     "title": "DOW-UAP-D124, AAWSAP DIRD, Space Access: Where We’ve Been and Where We Could Go, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D125",
+     "title": "DOW-UAP-D125, AAWSAP DIRD, Inertial Electrostatic Confinement Fusion, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D126",
+     "title": "DOW-UAP-D126, AAWSAP DIRD, Advanced Nuclear Propulsion for Manned Deep Space Missions, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D127",
+     "title": "DOW-UAP-D127, AAWSAP DIRD, An Introduction to the Statistical Drake Equation, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D128",
+     "title": "DOW-UAP-D128, AAWSAP DIRD, Anomalous Acute and Subacute Field Effects on Human Biological Tissues, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D129",
+     "title": "DOW-UAP-D129, AAWSAP DIRD, Metallic Spintronics, March 2010",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ],
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D130",
+     "title": "DOW-UAP-D130, AAWSAP DIRD, Technological Approaches to Controlling External Devices, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D131",
+     "title": "DOW-UAP-D131, AAWSAP DIRD, The Role of Superconductors in Gravity Research, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D132",
+     "title": "DOW-UAP-D132, AAWSAP DIRD, Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D133",
+     "title": "DOW-UAP-D133, AAWSAP DIRD, The Space Communication Implications of Quantum Entanglement and Nonlocality, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D134",
+     "title": "DOW-UAP-D134, AAWSAP DIRD, Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D135",
+     "title": "DOW-UAP-D135, AAWSAP DIRD, Antigravity for Aerospace Applications, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D136",
+     "title": "DOW-UAP-D136, AAWSAP DIRD, Biosensors and BioMEMS: A Survey of the Present Field, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D137",
+     "title": "DOW-UAP-D137, AAWSAP DIRD, State of the Art and Evolution of High-Energy Lasers, March 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D138",
+     "title": "DOW-UAP-D138, AAWSAP DIRD, Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions, April 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D139",
+     "title": "DOW-UAP-D139, AAWSAP DIRD, Traversable Wormholes, Stargates, and Negative Energy, April 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D140",
+     "title": "DOW-UAP-D140, AAWSAP DIRD, High-Frequency Gravitational Wave Communications, April 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D141",
+     "title": "DOW-UAP-D141, AAWSAP DIRD, Metamaterials for Aerospace Applications, April 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D142",
+     "title": "DOW-UAP-D142, AAWSAP DIRD, Concepts for Extracting Energy from the Quantum Vacuum, April 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D143",
+     "title": "DOW-UAP-D143, AAWSAP DIRD, Laser Lightcraft Nanosatellites, November 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D144",
+     "title": "DOW-UAP-D144, AAWSAP DIRD, Cockpits in the Era of Breakthrough Flight, November 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D145",
+     "title": "DOW-UAP-D145, AAWSAP DIRD, Aneutronic Fusion Propulsion I, November 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D146",
+     "title": "DOW-UAP-D146, AAWSAP DIRD, Aneutronic Fusion Propulsion II, November 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D147",
+     "title": "DOW-UAP-D147, AAWSAP DIRD, Ultracapacitors as Energy and Power Storage Devices, November 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D148",
+     "title": "DOW-UAP-D148, AAWSAP DIRD, Detection and High-Resolution Tracking of Vehicles at Hypersonic Velocities, November 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D149",
+     "title": "DOW-UAP-D149, AAWSAP DIRD, MHD Air Breathing Propulsion and Power for Aerospace Applications, November 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D150",
+     "title": "DOW-UAP-D150, AAWSAP DIRD, Quantum Computing and Utilizing Organic Molecules in Automation Technology, December 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D151 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D151",
+     "title": "DOW-UAP-D151, AAWSAP DIRD, Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft, December 2010",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D152 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D152",
+     "title": "DOW-UAP-D152, AAWSAP DIRD, Negative Mass Propulsion, January 2011",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D153",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D153",
+     "title": "DOW-UAP-D153, AAWSAP DIRD, Quantum Tomography of Negative Energy States in the Vacuum, January 2011",
+     "fields": {
+      "PDF Pairing": [
+       "DOW-UAP-D110 | DOW-UAP-D111 | DOW-UAP-D112 | DOW-UAP-D113 | DOW-UAP-D114 | DOW-UAP-D115 | DOW-UAP-D116 | DOW-UAP-D117 | DOW-UAP-D118 | DOW-UAP-D119 | DOW-UAP-D120 | DOW-UAP-D121 | DOW-UAP-D122 | DOW-UAP-D123 | DOW-UAP-D124 | DOW-UAP-D125 | DOW-UAP-D126 | DOW-UAP-D127 | DOW-UAP-D128 | DOW-UAP-D129 | DOW-UAP-D130 | DOW-UAP-D131 | DOW-UAP-D132 | DOW-UAP-D133 | DOW-UAP-D134 | DOW-UAP-D135 | DOW-UAP-D136 | DOW-UAP-D137 | DOW-UAP-D138 | DOW-UAP-D139 | DOW-UAP-D140 | DOW-UAP-D141 | DOW-UAP-D142 | DOW-UAP-D143 | DOW-UAP-D144 | DOW-UAP-D145 | DOW-UAP-D146 | DOW-UAP-D147 | DOW-UAP-D148 | DOW-UAP-D149 | DOW-UAP-D150 | DOW-UAP-D151 | DOW-UAP-D152",
+       "TAG:AAWSAP"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D154",
+     "title": "DOW-UAP-D154, Transcript of a Presentation by Captain Edward J. Ruppelt, 1952",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR039",
+     "title": "DOW-UAP-PR039, Unresolved UAP Report, Middle East, 2020",
+     "fields": {
+      "Video Pairing": [
+       "",
+       "DOW-UAP-PR088 | DOW-UAP-PR089"
+      ],
+      "PDF Pairing": [
+       "",
+       "DOW-UAP-D042"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR040",
+     "title": "DOW-UAP-PR040, Unresolved UAP Report, Middle East, 2020",
+     "fields": {
+      "PDF Pairing": [
+       "",
+       "DOW-UAP-D044 "
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR088",
+     "title": "DOW-UAP-PR088, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP\"",
+     "fields": {
+      "Video Pairing": [
+       "",
+       "DOW-UAP-PR039 | DOW-UAP-PR089"
+      ],
+      "PDF Pairing": [
+       "",
+       "DOW-UAP-D042"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR089",
+     "title": "DOW-UAP-PR089, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP part2\"",
+     "fields": {
+      "Video Pairing": [
+       "",
+       "DOW-UAP-PR088 | DOW-UAP-PR039"
+      ],
+      "PDF Pairing": [
+       "",
+       "DOW-UAP-D042"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR159",
+     "title": "DOW-UAP-PR159, Historical Film of Reported UFOs, Utah, 1952",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR160",
+     "title": "DOW-UAP-PR160, Presentation by Captain Edward J. Ruppelt, 1952",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-D001",
+     "title": "LLE-UAP-D001, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+     "fields": {
+      "Description Blurb": [
+       "This document is a transcript of a 1-minute, 19-second video recording contained in this collection under the title LLE-UAP-PR001, captured by a law enforcement officer in Colorado in October 2023. AARO removed the audio from the original recording to protect information whose release could reasonably be expected to affect the privacy or other protected interests of a U.S. person or commercial entity. This transcript is also redacted to protect the identity of the reporter and sensitive law enforcement information. \n\nAll descriptive and estimative language in this transcript reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+       "This document is a transcript of a 1-minute, 19-second video recording contained in this collection under the title LLE-UAP-PR001, captured by a law enforcement officer in Colorado in October 2023. AARO removed the audio from the original recording to protect information whose release could reasonably be expected to affect the privacy or other protected interests of a U.S. person or commercial entity. This transcript is also redacted to protect the identity of the reporter and sensitive law enforcement information.\n\nAll descriptive and estimative language in this transcript reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics."
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-PR001",
+     "title": "LLE-UAP-PR001, Unresolved UAP Report, Colorado, 2023",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-PR002",
+     "title": "LLE-UAP-PR002, Unresolved UAP Report, Colorado, October 2023",
+     "fields": {
+      "Featured": [
+       "YES",
+       ""
+      ]
+     }
+    }
+   ],
+   "edited_field_counts": {
+    "Description Blurb": 1,
+    "Featured": 10,
+    "PDF Pairing": 48,
+    "Video Pairing": 4
+   },
+   "featured_cleared": 10,
+   "new_agency_labels": [],
+   "from": "Release 06",
+   "to": "Release 07",
+   "previous_featured_rows": 10,
+   "previous_featured_cleared": 10
   }
  ],
- "first_release_rows_missing_from_latest": 0,
+ "first_release_rows_missing_from_latest": 1,
  "revisions": [
   {
    "label": "Release 05 to Release 06 as of 2026-09-18 16:58 UTC (447 rows)",

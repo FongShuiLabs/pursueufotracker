@@ -1,0 +1,104 @@
+{
+  "id": "usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964",
+  "title": "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964",
+  "category": "intel",
+  "agency": "USG",
+  "type": "pdf",
+  "date_event": "1962-1964",
+  "date_released": "2026-10-23",
+  "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/USG-UAP-D002-Interagency_Correspondence_Concerning_Space_Fragments-1962_1964.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964.pdf",
+  "size_bytes": 38627899,
+  "sha256": "f34e073230ac81d460efcd7f45f04d0b21a81d61cd8e8a9a9b7a89088da88819",
+  "redacted": false,
+  "summary": "This file contains a series of memoranda and correspondence exchanged among senior Executive Branch officials between October 2, 1962, and May 26, 1964, concerning the development of a policy framework and communications strategy for the recovery, handling, analysis, and disposition of materials associated with U.S. and foreign activities in space.\n\nOver the course of multiple drafts and revisions spanning nearly two years, the file documents efforts to establish jurisdictional boundaries based on the suspected origin and character of recovered material. In general, the proposed framework contemplated that material associated with a U.S. Department of Defense mission or equipment would be received, analyzed, and disposed of by the Department; that foreign space material would be turned over to the Department of Defense or the National Aeronautics and Space Administration (NASA), depending on the circumstances; and that the Department of State would coordinate with foreign governments to secure access to such material when recovered abroad. The correspondence also reflects efforts to assign responsibility for hazardous or radioactive materials to the Atomic Energy Commission. Various drafts alternated between assigning responsibility for handling materials whose origin could not be readily determined to the Department of Defense or to NASA.\n\nThe correspondence also reflects concern with public perception regarding recovery activity and includes draft public statements describing the proposed framework. This public messaging included language designating NASA as the holding authority for foreign materials, while private correspondence described a parallel plan to exploit such materials for technical analysis. Ultimately, although these negotiations did not produce a settled policy framework, the correspondence illustrates interagency deliberations between senior officials in the context of the Space Race and the broader Cold War between the United States and the Soviet Union.",
+  "score": {
+    "value": 50,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Washington, D.C."
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release-07/thumbnails/USG-UAP-D002-Interagency_Correspondence_Concerning_Space_Fragments-1962_1964.jpg",
+  "csv_raw_title": "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964.pdf",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (1962-1964) over Washington, D.C..",
+    "what_we_know": [
+      "Document originates from USG.",
+      "Encounter dated 1962-1964.",
+      "Reported location: Washington, D.C.."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 50/100. Top drivers: corroboration (single_witness_instrument), witness credibility (civilian_credentialed).",
+    "keywords": [
+      "fragments",
+      "will",
+      "nasa",
+      "space",
+      "page",
+      "vehicles",
+      "national",
+      "foreign"
+    ]
+  }
+}

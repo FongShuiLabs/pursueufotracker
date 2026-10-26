@@ -589,10 +589,10 @@
   },
   {
     "id": "dow-uap-d042-range-fouler-debrief-japan-2023",
-    "title": "DOW-UAP-D042, Range Fouler Debrief, Japan, 2023",
-    "sha256": "d52431b354af55b1e86cb454e61fd61993af3b023a38f2d9e014a9c9d18d16b4",
-    "size_bytes": 295621,
-    "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d42-range-fouler-debrief-japan-2023.pdf"
+    "title": "DOW-UAP-D042, Range Fouler Debrief, Arabian Gulf, 2023",
+    "sha256": "ca9563779824e306f11393612fe6503f39877c6d5be03e77c875e928ee116b54",
+    "size_bytes": 301060,
+    "source_url": "https://www.war.gov/medialink/ufo/release_1/DOW-UAP-D042-Range-Fouler-Debrief-Arabian-Gulf-2023.pdf"
   },
   {
     "id": "dow-uap-d044-range-fouler-reporting-form-gulf-of-aden-october-2020",
@@ -1272,6 +1272,181 @@
     "sha256": "0c1c5adfd3ca9cebcc7e5183dbff32538376ce62f075b51756f9b822f8de9e55",
     "size_bytes": 293205,
     "source_url": "https://www.war.gov/medialink/ufo/sept-18/release-06/assets/DOW-UAP-D154_Transcript-of-a-Presentation-by-Captain-Edward-J-Ruppelt-1952.pdf"
+  },
+  {
+    "id": "dow-uap-d155-air-intelligence-information-report-saudi-arabia-1957",
+    "title": "DOW-UAP-D155, Air Intelligence Information Report, Saudi Arabia, 1957",
+    "sha256": "c7b784b889f0b4597445a8a134ca5ce11c4a142cae74ae15c45e3e4042bbc9fc",
+    "size_bytes": 1007345,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D155-Air_Intelligence_Information_Report_Saudi_Arabia-1957.pdf"
+  },
+  {
+    "id": "dow-uap-d156-air-intelligence-information-report-guam-1956",
+    "title": "DOW-UAP-D156, Air Intelligence Information Report, Guam, 1956",
+    "sha256": "7ae61c0cb7793b05f4a51ff36a2c93f1b0e5d3d6c80abcdc8883138f549ecaf3",
+    "size_bytes": 6437398,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D156-Air_Intelligence_Information_Report_Guam-1956.pdf"
+  },
+  {
+    "id": "dow-uap-d157-air-intelligence-information-report-italy-1952",
+    "title": "DOW-UAP-D157, Air Intelligence Information Report, Italy, 1952",
+    "sha256": "7bc569a26129217a43e068fee909baaaae4f7e88a0dc2509b08bafc9688bcd0f",
+    "size_bytes": 9593789,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D157-Air-Intelligence_Information-Report-Italy-1953.pdf"
+  },
+  {
+    "id": "dow-uap-d158-flying-object-report-canada-1953",
+    "title": "DOW-UAP-D158, Flying Object Report, Canada, 1953",
+    "sha256": "b6cf5228f8978e6bf2482aec642c6bf0e30729b255fce5bd9646c159d28f89f5",
+    "size_bytes": 432779,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D158-Flying_Object_Report_Canada-1953.pdf"
+  },
+  {
+    "id": "dow-uap-d159-air-intelligence-information-report-germany-1953",
+    "title": "DOW-UAP-D159, Air Intelligence Information Report, Germany, 1953",
+    "sha256": "b41c3592aaf9e333394cedc72af497496524856126360400f54e385836f482b0",
+    "size_bytes": 446929,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D159-Air_Intelligence_Information_Report_Germany-1953.pdf"
+  },
+  {
+    "id": "dow-uap-d160-air-intelligence-information-report-morocco-1953",
+    "title": "DOW-UAP-D160, Air Intelligence Information Report, Morocco, 1953",
+    "sha256": "788be6ef914b583a94b183ef2cc5e87a31400d7e68217e123045117f79641c52",
+    "size_bytes": 867067,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D160-Air_Intelligence_Information_Report_Morocco-1953.pdf"
+  },
+  {
+    "id": "dow-uap-d161-air-intelligence-information-report-alaska-1953",
+    "title": "DOW-UAP-D161, Air Intelligence Information Report, Alaska, 1953",
+    "sha256": "361fda5c1e66a49141e1dedd1e20d4362b2d91a603e38bb2efc8877b2a74f1b1",
+    "size_bytes": 923088,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D161-Air_Intelligence_Information_Report_Alaska-1953.pdf"
+  },
+  {
+    "id": "dow-uap-d162-air-intelligence-information-report-alaska-1953",
+    "title": "DOW-UAP-D162, Air Intelligence Information Report, Alaska, 1953",
+    "sha256": "57a508ffada8103a2a00c5525d8ed56866e550636d05fb667aeb138d9e1eab7e",
+    "size_bytes": 1162905,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D162-Air_Intelligence_Information_Report_Alaska-1953.pdf"
+  },
+  {
+    "id": "dow-uap-d163-air-intelligence-information-report-sweden-1953",
+    "title": "DOW-UAP-D163, Air Intelligence Information Report, Sweden, 1953",
+    "sha256": "cacc091d94b893c88a59f3bcc8c828bf83f21ec995fe2bddfce1a52b204a7534",
+    "size_bytes": 799883,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D163-Air_Intelligence_Information_Report_Sweden-1953.pdf"
+  },
+  {
+    "id": "dow-uap-d164-flying-object-report-indiana-1953",
+    "title": "DOW-UAP-D164, Flying Object Report, Indiana, 1953",
+    "sha256": "54875a9017040b50fe42e4869e5d6ceefd4e78d88edd5a70c7aa5c75066d6fdf",
+    "size_bytes": 952569,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D164-Flying_Object_Report_Indiana-1954.pdf"
+  },
+  {
+    "id": "dow-uap-d166-mufon-reports-prepared-for-baass-november-2008",
+    "title": "DOW-UAP-D166, MUFON Reports Prepared for BAASS, November 2008",
+    "sha256": "c7263ab15946e6b5407db19dc4e2abda7e11a670adb83c722a2f78d4c6650675",
+    "size_bytes": 9494587,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D166-MUFON-Reports_Prepared_for_BAASS-November_2008.pdf"
+  },
+  {
+    "id": "dow-uap-d167-project-capella-december-2008",
+    "title": "DOW-UAP-D167, Project Capella, December 2008",
+    "sha256": "695cd30d0925365d06e065210d2b94e2684839e8d1ea9a0c0a8773d160aadab5",
+    "size_bytes": 6732899,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D167-Project_Capella-December-2008.pdf"
+  },
+  {
+    "id": "dow-uap-d168-baass-project-management-plan-december-2008",
+    "title": "DOW-UAP-D168, BAASS Project Management Plan, December 2008",
+    "sha256": "f72a51b4199db2d1758ac9796a4c1b669ba6013a7fae10a609150eaf0293eefd",
+    "size_bytes": 6670895,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D168-BAASS_Project_Management_Plan-December_2008.pdf"
+  },
+  {
+    "id": "dow-uap-d169-baass-monthly-report-march-2009",
+    "title": "DOW-UAP-D169, BAASS Monthly Report, March 2009",
+    "sha256": "dc159ac90f0cc0f2e990bac1253840d78584c08bc8fbcf96c777cf30dfcae5f8",
+    "size_bytes": 5559966,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D169-BAASS_Monthly_Report-March_2009.pdf"
+  },
+  {
+    "id": "dow-uap-d170-baass-monthly-report-april-2009",
+    "title": "DOW-UAP-D170, BAASS Monthly Report, April 2009",
+    "sha256": "9e6d09b5b5559a11119f8e69634ccaeb02b62d079a3f294686dded2da8b56523",
+    "size_bytes": 7877622,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D170-BAASS_Montly_Report_April_2009.pdf"
+  },
+  {
+    "id": "dow-uap-d171-baass-monthly-report-june-2009",
+    "title": "DOW-UAP-D171, BAASS Monthly Report, June 2009",
+    "sha256": "f3a602858ee185380d6d5c985fa1bd8e89350336d8871842029eeacbdd683f20",
+    "size_bytes": 19315646,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D171-BAASS_Monthly_Report_June_2009.pdf"
+  },
+  {
+    "id": "dow-uap-d173-baass-monthly-report-november-2009",
+    "title": "DOW-UAP-D173, BAASS Monthly Report, November 2009",
+    "sha256": "2b895fa7bf2d714e09964595f0977f622002f442c7f5365dbaad579343d9dcfb",
+    "size_bytes": 80416296,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D173-BAASS_Monthly_Report_November_2009.pdf"
+  },
+  {
+    "id": "dow-uap-d174-utah-ranch-investigation-report-april-2010",
+    "title": "DOW-UAP-D174, Utah Ranch Investigation Report, April 2010",
+    "sha256": "dbf49c096d63a44c4514179cd8305177dd725978072d598bc50228f1b6b97dd1",
+    "size_bytes": 7530234,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D174-Utah_Ranch_Investigation_Report_April_2010.pdf"
+  },
+  {
+    "id": "dow-uap-d175-baass-self-assessment-of-uap-analysis-capabilities-november-2010",
+    "title": "DOW-UAP-D175, BAASS Self-Assessment of UAP Analysis Capabilities, November 2010",
+    "sha256": "ac7ee03104afa6db5f2a247c35896f21b4a496cdcdd5b1c8604e4a58e8eeaacb",
+    "size_bytes": 17324871,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D175-BAASS_Self-Assessment_of_UAP_Analysis_Capabilities_November_2010.pdf"
+  },
+  {
+    "id": "dow-uap-d176-triangular-uap-aaro-memorandum-for-record-2026",
+    "title": "DOW-UAP-D176, Triangular UAP AARO Memorandum for Record, 2026",
+    "sha256": "9c093e0985018e197b6c92c43d9c7a83455d4a2e7bc2365cc641774d32e48c31",
+    "size_bytes": 995806,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D176-Triangular_UAP_AARO_MFR_2026.pdf"
+  },
+  {
+    "id": "dow-uap-d177-unresolved-uap-report-catalina-island-1955",
+    "title": "DOW-UAP-D177, Unresolved UAP Report, Catalina Island, 1955",
+    "sha256": "dde62683bf5957c1c79890d352600c1c56518b6f0092f15b1b7fe56fbd143321",
+    "size_bytes": 594417,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D177_Unresolved_UAP_Report_Catalina_Island-1955.pdf"
+  },
+  {
+    "id": "dow-uap-d178-unresolved-uap-report-catalina-island-1953",
+    "title": "DOW-UAP-D178, Unresolved UAP Report, Catalina Island, 1953",
+    "sha256": "30163aa0db350a0216a9662573af4ccf8fe1c130cac3f01b0ed8769c8d71186e",
+    "size_bytes": 798058,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D178_Unresolved_UAP_Report_Catalina_Island-1953.pdf"
+  },
+  {
+    "id": "dow-uap-d179-air-intelligence-information-report-catalina-island-1952",
+    "title": "DOW-UAP-D179, Air Intelligence Information Report, Catalina Island, 1952",
+    "sha256": "51d174e00df3ac5b62c86bed61b7a22b487a39f777f081093ed1db83b614473f",
+    "size_bytes": 371801,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D179_Unresolved_UAP_Report_Catalina_Island-1952.pdf"
+  },
+  {
+    "id": "dow-uap-d180-final-personnel-record-for-mccoy-howard-m-u-s-air-force-1954",
+    "title": "DOW-UAP-D180, Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954",
+    "sha256": "4d999697347279bdc4738d2e5b2d56d8730eb1afed798d2a6ca3d6bf0ff9fc40",
+    "size_bytes": 94425425,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D180_Final-Personnel-Record-for-McCoy-Howard-M-US-Air-Force-1954.pdf"
+  },
+  {
+    "id": "dow-uap-d181-unresolved-uap-report-catalina-island-1949",
+    "title": "DOW-UAP-D181, Unresolved UAP Report, Catalina Island, 1949",
+    "sha256": "ef776d6b24b64d878ff3c3d2637e87121bfc1dcc152092ab81fc0f3391be6515",
+    "size_bytes": 369193,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D181_Unresolved_UAP_Report_Catalina_Island-1949.pdf"
   },
   {
     "id": "dow-uap-pr024-unresolved-uap-report-middle-east-2023",
@@ -1974,6 +2149,13 @@
     "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/EOP-UAP-D001_NASC-Inquiry-into-Bahia-Brazil-Incident_November-13-1963.pdf"
   },
   {
+    "id": "eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-",
+    "title": "EOP-UAP-D002, Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963",
+    "sha256": "11e232f70bf9544372420107c603bf86cd3ad5d58d09bd6e5e56d6479c068d45",
+    "size_bytes": 146335,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/EOP-UAP-D002-Memo_on_Interagency_Coordination_for_the_Recovery_of_Foreign_Materiel-May_1963.pdf"
+  },
+  {
     "id": "fbi-photo-a001",
     "title": "FBI Photo A001",
     "sha256": "6e05171abaf2e9652035f276b683dab78bf8d0964d66bbed5022be7425bacee3",
@@ -2506,6 +2688,13 @@
     "source_url": "https://www.war.gov/medialink/ufo/release_05/Aug_07/documents/FBI-UAP-D042_Digital-Rendering-2_Multiple-Red-Lights_2026.pdf"
   },
   {
+    "id": "fbi-uap-d043-fd-302-unidentified-aerial-object-observation-report-2026",
+    "title": "FBI-UAP-D043, FD-302, Unidentified Aerial Object Observation Report, 2026",
+    "sha256": "0c7430d1f1da11cecbcf476c4cdaf16c8ed5bceb4fce6e56b51ed93b4d386298",
+    "size_bytes": 5999698,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/FBI-UAP-D043-FD_302_Unidentified_Aerial_Object_Observation_Report-2026.pdf"
+  },
+  {
     "id": "fbi-uap-pr001-triangle-orbs-northeastern-united-states-2021",
     "title": "FBI-UAP-PR001, “Triangle Orbs,” Northeastern United States, 2021",
     "sha256": "de1c5acc0b6a3c93eb5625ee1239e169461240d9e3b10306391eb740485c54ef",
@@ -3013,14 +3202,14 @@
     "id": "unresolved-uap-report-greece-october-2023",
     "title": "Unresolved UAP Report, Greece, October 2023",
     "sha256": "7078d96f334dbf396e0e0a141f943009fe2191cd20842e16ee381bcbc2776c43",
-    "size_bytes": 897434,
+    "size_bytes": 198248609,
     "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d33-mission-report-greece-october-2023.pdf"
   },
   {
     "id": "unresolved-uap-report-greece-october-2023-2",
     "title": "Unresolved UAP Report, Greece, October 2023",
     "sha256": "b4f4f4ce6dc7687a543905990671f999cd6c5a9e579159bfda501bf6d04f4445",
-    "size_bytes": 1415369,
+    "size_bytes": 6625380,
     "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d35-mission-report-greece-october-2023.pdf"
   },
   {
@@ -3041,7 +3230,7 @@
     "id": "unresolved-uap-report-iraq-december-2022",
     "title": "Unresolved UAP Report, Iraq, December 2022",
     "sha256": "4752dd830144b21c3055a2fea8b44c551445b41622c27db64fb0fa07c2dcd93d",
-    "size_bytes": 3673697,
+    "size_bytes": 5300653,
     "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d18-mission-report-iraq-december-2022.pdf"
   },
   {
@@ -3055,7 +3244,7 @@
     "id": "unresolved-uap-report-iraq-may-2022-2",
     "title": "Unresolved UAP Report, Iraq, May 2022",
     "sha256": "1822564fbae08f152ad4541c8d067a6ec3b6014c4b4eb8209604e1facb5e1bb3",
-    "size_bytes": 7463660,
+    "size_bytes": 12752210,
     "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d14-mission-report-iraq-may-2022.pdf"
   },
   {
@@ -3069,14 +3258,14 @@
     "id": "unresolved-uap-report-middle-east-may-2020",
     "title": "Unresolved UAP Report, Middle East, May 2020",
     "sha256": "90b353682ba2181149054d0911b7553e58e959438dd4de531a06fc387a332f85",
-    "size_bytes": 342668,
+    "size_bytes": 142686223,
     "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d38-range-fouler-debrief-middle-east-may-2020.pdf"
   },
   {
     "id": "unresolved-uap-report-middle-east-may-2022",
     "title": "Unresolved UAP Report, Middle East, May 2022",
     "sha256": "f9deed9063306b0c45a5a0f6b754db6967f7dc3a0ed66097f154be4b0f033399",
-    "size_bytes": 663290,
+    "size_bytes": 6814452,
     "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d10-mission-report-middle-east-may-2022.pdf"
   },
   {
@@ -3090,7 +3279,7 @@
     "id": "unresolved-uap-report-syria-july-2022",
     "title": "Unresolved UAP Report, Syria, July 2022",
     "sha256": "b3b3f023d70bcce3178de9fe6a019ea6db5e5145bc7e28a49308442e190ef817",
-    "size_bytes": 6999240,
+    "size_bytes": 3990714,
     "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d16-mission-report-syria-july-2022.pdf"
   },
   {
@@ -3111,7 +3300,7 @@
     "id": "unresolved-uap-report-syria-october-2024-3",
     "title": "Unresolved UAP Report, Syria, October 2024",
     "sha256": "fd4deb1e48fcfa7fd2370b6459877882e6d6fdd0226ecaa881a45fba690172df",
-    "size_bytes": 651740,
+    "size_bytes": 426911,
     "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d32-mission-report,-syria-october-2024.pdf"
   },
   {
@@ -3125,7 +3314,7 @@
     "id": "unresolved-uap-report-united-arab-emirates-october-2023-2",
     "title": "Unresolved UAP Report, United Arab Emirates, October 2023",
     "sha256": "ea1cd5296143f378db533066b524c32c1ecfbfd43d74ec6be7d832c20fa271bb",
-    "size_bytes": 1324277,
+    "size_bytes": 155885289,
     "source_url": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d23-mission-report-united-arab-emirates-october-2023.pdf"
   },
   {
@@ -3134,6 +3323,13 @@
     "sha256": "3393d62c92d9a5ad76155535caddf39cf9e76f5f19716ebfc851ba2b86b0ae3a",
     "size_bytes": 15771408,
     "source_url": "https://www.war.gov/medialink/ufo/061226/release_03/documents/USG-UAP-D001_Congress-WhiteHouse-UFO-Correspondence_1998.pdf"
+  },
+  {
+    "id": "usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964",
+    "title": "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964",
+    "sha256": "f34e073230ac81d460efcd7f45f04d0b21a81d61cd8e8a9a9b7a89088da88819",
+    "size_bytes": 38627899,
+    "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/USG-UAP-D002-Interagency_Correspondence_Concerning_Space_Fragments-1962_1964.pdf"
   },
   {
     "id": "usper-statement-about-uap-sighting",

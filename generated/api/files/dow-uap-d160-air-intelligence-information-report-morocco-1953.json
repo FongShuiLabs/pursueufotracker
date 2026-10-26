@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d160-air-intelligence-information-report-morocco-1953",
+  "title": "DOW-UAP-D160, Air Intelligence Information Report, Morocco, 1953",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "12/16/53",
+  "date_released": "2026-10-23",
+  "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D160-Air_Intelligence_Information_Report_Morocco-1953.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d160-air-intelligence-information-report-morocco-1953.pdf",
+  "size_bytes": 867067,
+  "sha256": "788be6ef914b583a94b183ef2cc5e87a31400d7e68217e123045117f79641c52",
+  "redacted": false,
+  "summary": "This document is an Air Intelligence Information Report (AIIR), a standardized U.S. Air Force reporting form used to record raw information of potential intelligence value for later analysis. The form served as a primary vehicle for U.S. Air Force field intelligence collection throughout the early Cold War, until defense-wide reporting standards were established in the early 1960s.\n\nThis AIIR records a December 16, 1953, incident in northern French Morocco and the Mediterranean Sea area in which personnel of Detachment 2, 737th AC&W Squadron reported an unidentified radar return. The report states that the return varied in shape between “V,” “W,” and “M” configurations and faded after several minutes of observation. It further states that electronics personnel in the 316th Air Division believed the return might have been caused by anomalous propagation, ship-borne radar jamming, or geese or storks in flight, and concludes that one of those possibilities was the most likely explanation for the return.\n\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.\n\nAARO Comment: The 737th AC&W Squadron was a U.S. Air Force radar unit stationed in Saidia, Morocco, where it supported airborne early warning and air defense surveillance in coordination with French military forces.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d160-air-intelligence-information-report-morocco-1953.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d160-air-intelligence-information-report-morocco-1953.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Morocco"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D160_Air_Intelligence_Information_Report_Morocco-1953.jpg",
+  "csv_raw_title": "DOW-UAP-D160, Air Intelligence Information Report, Morocco, 1953",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d160-air-intelligence-information-report-morocco-1953.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (12/16/53) over Morocco.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 12/16/53.",
+      "Reported location: Morocco."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "report",
+      "information",
+      "intelligence",
+      "usaf",
+      "part",
+      "united",
+      "page",
+      "division"
+    ]
+  }
+}

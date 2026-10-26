@@ -18,6 +18,15 @@
     "url": "/files/dow-uap-d120-aawsap-dird-materials-for-advanced-aerospace-platforms-january-2010"
   },
   {
+    "id": "dow-uap-d155-air-intelligence-information-report-saudi-arabia-1957",
+    "title": "DOW-UAP-D155, Air Intelligence Information Report, Saudi Arabia, 1957",
+    "date": "1/18/57",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d155-air-intelligence-information-report-saudi-arabia-1957"
+  },
+  {
     "id": "state-department-uap-cable-001-papua-new-guinea-january-28-1985",
     "title": "State Department UAP Cable 001, Papua New Guinea, January 28, 1985",
     "date": "1/24/85",
@@ -198,6 +207,33 @@
     "url": "/files/dow-uap-d052-email-correspondence-na-august-2024"
   },
   {
+    "id": "dow-uap-d161-air-intelligence-information-report-alaska-1953",
+    "title": "DOW-UAP-D161, Air Intelligence Information Report, Alaska, 1953",
+    "date": "10/6/53",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d161-air-intelligence-information-report-alaska-1953"
+  },
+  {
+    "id": "dow-uap-d166-mufon-reports-prepared-for-baass-november-2008",
+    "title": "DOW-UAP-D166, MUFON Reports Prepared for BAASS, November 2008",
+    "date": "11/1/08",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d166-mufon-reports-prepared-for-baass-november-2008"
+  },
+  {
+    "id": "dow-uap-d173-baass-monthly-report-november-2009",
+    "title": "DOW-UAP-D173, BAASS Monthly Report, November 2009",
+    "date": "11/1/09",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d173-baass-monthly-report-november-2009"
+  },
+  {
     "id": "dow-uap-d143-aawsap-dird-laser-lightcraft-nanosatellites-november-2010",
     "title": "DOW-UAP-D143, AAWSAP DIRD, Laser Lightcraft Nanosatellites, November 2010",
     "date": "11/1/10",
@@ -243,6 +279,15 @@
     "url": "/files/dow-uap-d147-aawsap-dird-ultracapacitors-as-energy-and-power-storage-devices-nov"
   },
   {
+    "id": "dow-uap-d158-flying-object-report-canada-1953",
+    "title": "DOW-UAP-D158, Flying Object Report, Canada, 1953",
+    "date": "11/13/53",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d158-flying-object-report-canada-1953"
+  },
+  {
     "id": "eop-uap-d001-nasc-inquiry-into-bahia-brazil-incident-november-13-1963",
     "title": "EOP-UAP-D001, NASC Inquiry into Bahia, Brazil Incident, November 13, 1963",
     "date": "11/13/63",
@@ -259,6 +304,15 @@
     "agency": "STATE",
     "score": 50,
     "url": "/files/dos-uap-d001-diplomatic-cable-brazil-november-14-1963"
+  },
+  {
+    "id": "dow-uap-d178-unresolved-uap-report-catalina-island-1953",
+    "title": "DOW-UAP-D178, Unresolved UAP Report, Catalina Island, 1953",
+    "date": "11/16/53",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d178-unresolved-uap-report-catalina-island-1953"
   },
   {
     "id": "dow-uap-d055-mission-report-syria-november-2016",
@@ -306,6 +360,15 @@
     "url": "/files/dow-uap-d149-aawsap-dird-mhd-air-breathing-propulsion-and-power-for-aerospace-ap"
   },
   {
+    "id": "dow-uap-d175-baass-self-assessment-of-uap-analysis-capabilities-november-2010",
+    "title": "DOW-UAP-D175, BAASS Self-Assessment of UAP Analysis Capabilities, November 2010",
+    "date": "11/23/10",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d175-baass-self-assessment-of-uap-analysis-capabilities-november-2010"
+  },
+  {
     "id": "state-department-uap-cable-004-ashgabat-turkmenistan-november-5-2004",
     "title": "State Department UAP Cable 004, Ashgabat, Turkmenistan, November 5, 2004",
     "date": "11/5/04",
@@ -349,6 +412,33 @@
     "agency": "DoD",
     "score": 53,
     "url": "/files/dow-uap-d018-mission-report-iraq-december-2022"
+  },
+  {
+    "id": "dow-uap-d162-air-intelligence-information-report-alaska-1953",
+    "title": "DOW-UAP-D162, Air Intelligence Information Report, Alaska, 1953",
+    "date": "12/1/53",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d162-air-intelligence-information-report-alaska-1953"
+  },
+  {
+    "id": "dow-uap-d164-flying-object-report-indiana-1953",
+    "title": "DOW-UAP-D164, Flying Object Report, Indiana, 1953",
+    "date": "12/1/53",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d164-flying-object-report-indiana-1953"
+  },
+  {
+    "id": "dow-uap-d167-project-capella-december-2008",
+    "title": "DOW-UAP-D167, Project Capella, December 2008",
+    "date": "12/10/08",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d167-project-capella-december-2008"
   },
   {
     "id": "dow-uap-d150-aawsap-dird-quantum-computing-and-utilizing-organic-molecules-in-au",
@@ -396,6 +486,33 @@
     "url": "/files/dow-uap-d151-aawsap-dird-cognitive-limits-on-simultaneous-control-of-multiple-un"
   },
   {
+    "id": "dow-uap-d160-air-intelligence-information-report-morocco-1953",
+    "title": "DOW-UAP-D160, Air Intelligence Information Report, Morocco, 1953",
+    "date": "12/16/53",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d160-air-intelligence-information-report-morocco-1953"
+  },
+  {
+    "id": "dow-uap-d163-air-intelligence-information-report-sweden-1953",
+    "title": "DOW-UAP-D163, Air Intelligence Information Report, Sweden, 1953",
+    "date": "12/17/53",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d163-air-intelligence-information-report-sweden-1953"
+  },
+  {
+    "id": "dow-uap-d168-baass-project-management-plan-december-2008",
+    "title": "DOW-UAP-D168, BAASS Project Management Plan, December 2008",
+    "date": "12/2/08",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d168-baass-project-management-plan-december-2008"
+  },
+  {
     "id": "cia-uap-d001-intelligence-information-report-ussr-1973",
     "title": "CIA-UAP-D001, Intelligence Information Report, USSR, 1973",
     "date": "12/20/73",
@@ -430,6 +547,15 @@
     "agency": "DoD",
     "score": 56,
     "url": "/files/18-100754-general-1946-7-vol-2"
+  },
+  {
+    "id": "dow-uap-d156-air-intelligence-information-report-guam-1956",
+    "title": "DOW-UAP-D156, Air Intelligence Information Report, Guam, 1956",
+    "date": "12/31/56",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d156-air-intelligence-information-report-guam-1956"
   },
   {
     "id": "nasa-uap-d003-gemini-7-transcript-1965",
@@ -619,6 +745,15 @@
     "agency": "NASA",
     "score": 59,
     "url": "/files/nasa-uap-d015-astronaut-scientific-debriefings-1962-1963"
+  },
+  {
+    "id": "usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964",
+    "title": "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964",
+    "date": "1962-1964",
+    "category": "intel",
+    "agency": "USG",
+    "score": 50,
+    "url": "/files/usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964"
   },
   {
     "id": "cia-uap-016-sightings-of-unidentified-flying-objects-in-ladakh-nepal-sikkim-and-",
@@ -2592,6 +2727,15 @@
     "url": "/files/dow-uap-d128-aawsap-dird-anomalous-acute-and-subacute-field-effects-on-human-bio"
   },
   {
+    "id": "dow-uap-d177-unresolved-uap-report-catalina-island-1955",
+    "title": "DOW-UAP-D177, Unresolved UAP Report, Catalina Island, 1955",
+    "date": "3/15/55",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d177-unresolved-uap-report-catalina-island-1955"
+  },
+  {
     "id": "331-120752-numeric-files-1944-1945-37153-german-armament-equipment-documents",
     "title": "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents",
     "date": "3/18/45",
@@ -2754,6 +2898,24 @@
     "url": "/files/dow-uap-d124-aawsap-dird-space-access-where-we-ve-been-and-where-we-could-go-mar"
   },
   {
+    "id": "dow-uap-d170-baass-monthly-report-april-2009",
+    "title": "DOW-UAP-D170, BAASS Monthly Report, April 2009",
+    "date": "4/1/09",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d170-baass-monthly-report-april-2009"
+  },
+  {
+    "id": "dow-uap-d169-baass-monthly-report-march-2009",
+    "title": "DOW-UAP-D169, BAASS Monthly Report, March 2009",
+    "date": "4/10/09",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d169-baass-monthly-report-march-2009"
+  },
+  {
     "id": "dow-uap-d050-email-correspondence-indopacom-april-2025",
     "title": "DOW-UAP-D050, Email Correspondence, INDOPACOM, April 2025",
     "date": "4/10/2025-4/11/2025",
@@ -2797,6 +2959,15 @@
     "agency": "DoD",
     "score": 56,
     "url": "/files/dow-uap-d094-analysis-of-flying-object-incidents-in-the-united-states-1949"
+  },
+  {
+    "id": "dow-uap-d181-unresolved-uap-report-catalina-island-1949",
+    "title": "DOW-UAP-D181, Unresolved UAP Report, Catalina Island, 1949",
+    "date": "4/28/49",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d181-unresolved-uap-report-catalina-island-1949"
   },
   {
     "id": "dow-uap-d139-aawsap-dird-traversable-wormholes-stargates-and-negative-energy-apr",
@@ -2925,6 +3096,15 @@
     "url": "/files/dow-uap-d014-mission-report-iraq-may-2022"
   },
   {
+    "id": "eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-",
+    "title": "EOP-UAP-D002, Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963",
+    "date": "5/29/63",
+    "category": "intel",
+    "agency": "EOP",
+    "score": 50,
+    "url": "/files/eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-"
+  },
+  {
     "id": "dow-uap-d010-mission-report-middle-east-may-2022",
     "title": "DOW-UAP-D010, Mission Report, Middle East, May 2022",
     "date": "5/6/22",
@@ -2941,6 +3121,15 @@
     "agency": "DoD",
     "score": 56,
     "url": "/files/18-6369445-general-1948-vol-1"
+  },
+  {
+    "id": "dow-uap-d179-air-intelligence-information-report-catalina-island-1952",
+    "title": "DOW-UAP-D179, Air Intelligence Information Report, Catalina Island, 1952",
+    "date": "6/25/52",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d179-air-intelligence-information-report-catalina-island-1952"
   },
   {
     "id": "dow-uap-d027-mission-report-united-arab-emirates-october-2023",
@@ -3060,6 +3249,24 @@
     "url": "/files/dow-uap-d016-mission-report-syria-july-2022"
   },
   {
+    "id": "dow-uap-d171-baass-monthly-report-june-2009",
+    "title": "DOW-UAP-D171, BAASS Monthly Report, June 2009",
+    "date": "7/9/09",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d171-baass-monthly-report-june-2009"
+  },
+  {
+    "id": "dow-uap-d159-air-intelligence-information-report-germany-1953",
+    "title": "DOW-UAP-D159, Air Intelligence Information Report, Germany, 1953",
+    "date": "8/10/53",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d159-air-intelligence-information-report-germany-1953"
+  },
+  {
     "id": "dow-uap-d056-range-fouler-debrief-arabian-sea-august-2020",
     "title": "DOW-UAP-D056, Range Fouler Debrief, Arabian Sea, August 2020",
     "date": "8/24/20",
@@ -3078,13 +3285,31 @@
     "url": "/files/dow-uap-d061-mission-report-arabian-gulf-august-2020"
   },
   {
+    "id": "dow-uap-d157-air-intelligence-information-report-italy-1952",
+    "title": "DOW-UAP-D157, Air Intelligence Information Report, Italy, 1952",
+    "date": "8/27/52",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d157-air-intelligence-information-report-italy-1952"
+  },
+  {
     "id": "dow-uap-d042-range-fouler-debrief-japan-2023",
-    "title": "DOW-UAP-D042, Range Fouler Debrief, Japan, 2023",
+    "title": "DOW-UAP-D042, Range Fouler Debrief, Arabian Gulf, 2023",
     "date": "8/31/20",
     "category": "military",
     "agency": "DoD",
     "score": 53,
     "url": "/files/dow-uap-d042-range-fouler-debrief-japan-2023"
+  },
+  {
+    "id": "dow-uap-d180-final-personnel-record-for-mccoy-howard-m-u-s-air-force-1954",
+    "title": "DOW-UAP-D180, Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954",
+    "date": "8/31/54",
+    "category": "military",
+    "agency": "DoD",
+    "score": 56,
+    "url": "/files/dow-uap-d180-final-personnel-record-for-mccoy-howard-m-u-s-air-force-1954"
   },
   {
     "id": "dow-uap-d060-mission-report-arabian-gulf-august-2020",
@@ -3420,6 +3645,24 @@
     "url": "/files/nasa-uap-d018-gemini-4-experiment-debriefing-1967"
   },
   {
+    "id": "dow-uap-d176-triangular-uap-aaro-memorandum-for-record-2026",
+    "title": "DOW-UAP-D176, Triangular UAP AARO Memorandum for Record, 2026",
+    "date": "June, 2026",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d176-triangular-uap-aaro-memorandum-for-record-2026"
+  },
+  {
+    "id": "fbi-uap-d043-fd-302-unidentified-aerial-object-observation-report-2026",
+    "title": "FBI-UAP-D043, FD-302, Unidentified Aerial Object Observation Report, 2026",
+    "date": "June, 2026",
+    "category": "fbi",
+    "agency": "FBI",
+    "score": 55,
+    "url": "/files/fbi-uap-d043-fd-302-unidentified-aerial-object-observation-report-2026"
+  },
+  {
     "id": "fbi-photo-a001",
     "title": "FBI Photo A001",
     "date": "Late 2025",
@@ -3724,6 +3967,15 @@
     "agency": "FBI",
     "score": 70,
     "url": "/files/fbi-uap-pr002-red-orb-rotation-northeastern-united-states-2022"
+  },
+  {
+    "id": "dow-uap-d174-utah-ranch-investigation-report-april-2010",
+    "title": "DOW-UAP-D174, Utah Ranch Investigation Report, April 2010",
+    "date": "March, April 2010",
+    "category": "military",
+    "agency": "DoD",
+    "score": 53,
+    "url": "/files/dow-uap-d174-utah-ranch-investigation-report-april-2010"
   },
   {
     "id": "cia-uap-006-sighting-of-unconventional-aircraft",

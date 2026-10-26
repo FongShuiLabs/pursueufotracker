@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-09-26T08:44:42.431119+00:00",
-  "count": 450,
+  "generated_at": "2026-10-26T20:00:55.851882+00:00",
+  "count": 478,
   "files": [
     {
       "id": "18-100754-general-1946-7-vol-2",
@@ -929,7 +929,7 @@
     },
     {
       "id": "dow-uap-d042-range-fouler-debrief-japan-2023",
-      "title": "DOW-UAP-D042, Range Fouler Debrief, Japan, 2023",
+      "title": "DOW-UAP-D042, Range Fouler Debrief, Arabian Gulf, 2023",
       "agency": "DoD",
       "category": "military",
       "type": "pdf",
@@ -2004,6 +2004,281 @@
       "score": 56,
       "url": "https://pursueufotracker.com/files/dow-uap-d154-transcript-of-a-presentation-by-captain-edward-j-ruppelt-1952",
       "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d154-transcript-of-a-presentation-by-captain-edward-j-ruppelt-1952.json"
+    },
+    {
+      "id": "dow-uap-d155-air-intelligence-information-report-saudi-arabia-1957",
+      "title": "DOW-UAP-D155, Air Intelligence Information Report, Saudi Arabia, 1957",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "1/18/57",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d155-air-intelligence-information-report-saudi-arabia-1957",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d155-air-intelligence-information-report-saudi-arabia-1957.json"
+    },
+    {
+      "id": "dow-uap-d156-air-intelligence-information-report-guam-1956",
+      "title": "DOW-UAP-D156, Air Intelligence Information Report, Guam, 1956",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "12/31/56",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d156-air-intelligence-information-report-guam-1956",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d156-air-intelligence-information-report-guam-1956.json"
+    },
+    {
+      "id": "dow-uap-d157-air-intelligence-information-report-italy-1952",
+      "title": "DOW-UAP-D157, Air Intelligence Information Report, Italy, 1952",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "8/27/52",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d157-air-intelligence-information-report-italy-1952",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d157-air-intelligence-information-report-italy-1952.json"
+    },
+    {
+      "id": "dow-uap-d158-flying-object-report-canada-1953",
+      "title": "DOW-UAP-D158, Flying Object Report, Canada, 1953",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "11/13/53",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d158-flying-object-report-canada-1953",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d158-flying-object-report-canada-1953.json"
+    },
+    {
+      "id": "dow-uap-d159-air-intelligence-information-report-germany-1953",
+      "title": "DOW-UAP-D159, Air Intelligence Information Report, Germany, 1953",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "8/10/53",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d159-air-intelligence-information-report-germany-1953",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d159-air-intelligence-information-report-germany-1953.json"
+    },
+    {
+      "id": "dow-uap-d160-air-intelligence-information-report-morocco-1953",
+      "title": "DOW-UAP-D160, Air Intelligence Information Report, Morocco, 1953",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "12/16/53",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d160-air-intelligence-information-report-morocco-1953",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d160-air-intelligence-information-report-morocco-1953.json"
+    },
+    {
+      "id": "dow-uap-d161-air-intelligence-information-report-alaska-1953",
+      "title": "DOW-UAP-D161, Air Intelligence Information Report, Alaska, 1953",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "10/6/53",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d161-air-intelligence-information-report-alaska-1953",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d161-air-intelligence-information-report-alaska-1953.json"
+    },
+    {
+      "id": "dow-uap-d162-air-intelligence-information-report-alaska-1953",
+      "title": "DOW-UAP-D162, Air Intelligence Information Report, Alaska, 1953",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "12/1/53",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d162-air-intelligence-information-report-alaska-1953",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d162-air-intelligence-information-report-alaska-1953.json"
+    },
+    {
+      "id": "dow-uap-d163-air-intelligence-information-report-sweden-1953",
+      "title": "DOW-UAP-D163, Air Intelligence Information Report, Sweden, 1953",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "12/17/53",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d163-air-intelligence-information-report-sweden-1953",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d163-air-intelligence-information-report-sweden-1953.json"
+    },
+    {
+      "id": "dow-uap-d164-flying-object-report-indiana-1953",
+      "title": "DOW-UAP-D164, Flying Object Report, Indiana, 1953",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "12/1/53",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d164-flying-object-report-indiana-1953",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d164-flying-object-report-indiana-1953.json"
+    },
+    {
+      "id": "dow-uap-d166-mufon-reports-prepared-for-baass-november-2008",
+      "title": "DOW-UAP-D166, MUFON Reports Prepared for BAASS, November 2008",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "11/1/08",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d166-mufon-reports-prepared-for-baass-november-2008",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d166-mufon-reports-prepared-for-baass-november-2008.json"
+    },
+    {
+      "id": "dow-uap-d167-project-capella-december-2008",
+      "title": "DOW-UAP-D167, Project Capella, December 2008",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "12/10/08",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d167-project-capella-december-2008",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d167-project-capella-december-2008.json"
+    },
+    {
+      "id": "dow-uap-d168-baass-project-management-plan-december-2008",
+      "title": "DOW-UAP-D168, BAASS Project Management Plan, December 2008",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "12/2/08",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d168-baass-project-management-plan-december-2008",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d168-baass-project-management-plan-december-2008.json"
+    },
+    {
+      "id": "dow-uap-d169-baass-monthly-report-march-2009",
+      "title": "DOW-UAP-D169, BAASS Monthly Report, March 2009",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "4/10/09",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d169-baass-monthly-report-march-2009",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d169-baass-monthly-report-march-2009.json"
+    },
+    {
+      "id": "dow-uap-d170-baass-monthly-report-april-2009",
+      "title": "DOW-UAP-D170, BAASS Monthly Report, April 2009",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "4/1/09",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d170-baass-monthly-report-april-2009",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d170-baass-monthly-report-april-2009.json"
+    },
+    {
+      "id": "dow-uap-d171-baass-monthly-report-june-2009",
+      "title": "DOW-UAP-D171, BAASS Monthly Report, June 2009",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "7/9/09",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d171-baass-monthly-report-june-2009",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d171-baass-monthly-report-june-2009.json"
+    },
+    {
+      "id": "dow-uap-d173-baass-monthly-report-november-2009",
+      "title": "DOW-UAP-D173, BAASS Monthly Report, November 2009",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "11/1/09",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d173-baass-monthly-report-november-2009",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d173-baass-monthly-report-november-2009.json"
+    },
+    {
+      "id": "dow-uap-d174-utah-ranch-investigation-report-april-2010",
+      "title": "DOW-UAP-D174, Utah Ranch Investigation Report, April 2010",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "March, April 2010",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d174-utah-ranch-investigation-report-april-2010",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d174-utah-ranch-investigation-report-april-2010.json"
+    },
+    {
+      "id": "dow-uap-d175-baass-self-assessment-of-uap-analysis-capabilities-november-2010",
+      "title": "DOW-UAP-D175, BAASS Self-Assessment of UAP Analysis Capabilities, November 2010",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "11/23/10",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d175-baass-self-assessment-of-uap-analysis-capabilities-november-2010",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d175-baass-self-assessment-of-uap-analysis-capabilities-november-2010.json"
+    },
+    {
+      "id": "dow-uap-d176-triangular-uap-aaro-memorandum-for-record-2026",
+      "title": "DOW-UAP-D176, Triangular UAP AARO Memorandum for Record, 2026",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "June, 2026",
+      "score": 53,
+      "url": "https://pursueufotracker.com/files/dow-uap-d176-triangular-uap-aaro-memorandum-for-record-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d176-triangular-uap-aaro-memorandum-for-record-2026.json"
+    },
+    {
+      "id": "dow-uap-d177-unresolved-uap-report-catalina-island-1955",
+      "title": "DOW-UAP-D177, Unresolved UAP Report, Catalina Island, 1955",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "3/15/55",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d177-unresolved-uap-report-catalina-island-1955",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d177-unresolved-uap-report-catalina-island-1955.json"
+    },
+    {
+      "id": "dow-uap-d178-unresolved-uap-report-catalina-island-1953",
+      "title": "DOW-UAP-D178, Unresolved UAP Report, Catalina Island, 1953",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "11/16/53",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d178-unresolved-uap-report-catalina-island-1953",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d178-unresolved-uap-report-catalina-island-1953.json"
+    },
+    {
+      "id": "dow-uap-d179-air-intelligence-information-report-catalina-island-1952",
+      "title": "DOW-UAP-D179, Air Intelligence Information Report, Catalina Island, 1952",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "6/25/52",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d179-air-intelligence-information-report-catalina-island-1952",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d179-air-intelligence-information-report-catalina-island-1952.json"
+    },
+    {
+      "id": "dow-uap-d180-final-personnel-record-for-mccoy-howard-m-u-s-air-force-1954",
+      "title": "DOW-UAP-D180, Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "8/31/54",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d180-final-personnel-record-for-mccoy-howard-m-u-s-air-force-1954",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d180-final-personnel-record-for-mccoy-howard-m-u-s-air-force-1954.json"
+    },
+    {
+      "id": "dow-uap-d181-unresolved-uap-report-catalina-island-1949",
+      "title": "DOW-UAP-D181, Unresolved UAP Report, Catalina Island, 1949",
+      "agency": "DoD",
+      "category": "military",
+      "type": "pdf",
+      "date_event": "4/28/49",
+      "score": 56,
+      "url": "https://pursueufotracker.com/files/dow-uap-d181-unresolved-uap-report-catalina-island-1949",
+      "detail_api": "https://pursueufotracker.com/api/files/dow-uap-d181-unresolved-uap-report-catalina-island-1949.json"
     },
     {
       "id": "dow-uap-pr024-unresolved-uap-report-middle-east-2023",
@@ -3106,6 +3381,17 @@
       "detail_api": "https://pursueufotracker.com/api/files/eop-uap-d001-nasc-inquiry-into-bahia-brazil-incident-november-13-1963.json"
     },
     {
+      "id": "eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-",
+      "title": "EOP-UAP-D002, Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963",
+      "agency": "EOP",
+      "category": "intel",
+      "type": "pdf",
+      "date_event": "5/29/63",
+      "score": 50,
+      "url": "https://pursueufotracker.com/files/eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-",
+      "detail_api": "https://pursueufotracker.com/api/files/eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-.json"
+    },
+    {
       "id": "fbi-photo-a001",
       "title": "FBI Photo A001",
       "agency": "FBI",
@@ -3940,6 +4226,17 @@
       "score": 58,
       "url": "https://pursueufotracker.com/files/fbi-uap-d042-digital-rendering-2-multiple-red-lights-2026",
       "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d042-digital-rendering-2-multiple-red-lights-2026.json"
+    },
+    {
+      "id": "fbi-uap-d043-fd-302-unidentified-aerial-object-observation-report-2026",
+      "title": "FBI-UAP-D043, FD-302, Unidentified Aerial Object Observation Report, 2026",
+      "agency": "FBI",
+      "category": "fbi",
+      "type": "pdf",
+      "date_event": "June, 2026",
+      "score": 55,
+      "url": "https://pursueufotracker.com/files/fbi-uap-d043-fd-302-unidentified-aerial-object-observation-report-2026",
+      "detail_api": "https://pursueufotracker.com/api/files/fbi-uap-d043-fd-302-unidentified-aerial-object-observation-report-2026.json"
     },
     {
       "id": "fbi-uap-pr001-triangle-orbs-northeastern-united-states-2021",
@@ -4930,6 +5227,17 @@
       "score": 47,
       "url": "https://pursueufotracker.com/files/usg-uap-d001-congressional-white-house-ufo-related-constituent-correspondence-19",
       "detail_api": "https://pursueufotracker.com/api/files/usg-uap-d001-congressional-white-house-ufo-related-constituent-correspondence-19.json"
+    },
+    {
+      "id": "usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964",
+      "title": "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964",
+      "agency": "USG",
+      "category": "intel",
+      "type": "pdf",
+      "date_event": "1962-1964",
+      "score": 50,
+      "url": "https://pursueufotracker.com/files/usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964",
+      "detail_api": "https://pursueufotracker.com/api/files/usg-uap-d002-interagency-correspondence-concerning-space-fragments-1962-1964.json"
     },
     {
       "id": "usper-statement-about-uap-sighting",

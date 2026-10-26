@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d156-air-intelligence-information-report-guam-1956",
+  "title": "DOW-UAP-D156, Air Intelligence Information Report, Guam, 1956",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "12/31/56",
+  "date_released": "2026-10-23",
+  "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D156-Air_Intelligence_Information_Report_Guam-1956.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d156-air-intelligence-information-report-guam-1956.pdf",
+  "size_bytes": 6437398,
+  "sha256": "7ae61c0cb7793b05f4a51ff36a2c93f1b0e5d3d6c80abcdc8883138f549ecaf3",
+  "redacted": false,
+  "summary": "This document is an Air Intelligence Information Report (AIIR), a standardized U.S. Air Force reporting form used to record raw information of potential intelligence value for later analysis. The form served as a primary vehicle for U.S. Air Force field intelligence collection throughout the early Cold War, until defense-wide reporting standards were established in the early 1960s.\n\nThis AIIR records a December 31, 1956, incident in the vicinity of Guam in which the pilot of a U.S. Air Force F-86D aircraft reported observing an unidentified aerial blinking light. The report notes that a lighted weather balloon had been launched before the sighting and states that, if the balloon had malfunctioned and remained at a relatively low altitude, it could possibly explain the reported object. It also indicates that the preparing officer did not regard the balloon explanation as sufficient unless that condition applied.\n\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d156-air-intelligence-information-report-guam-1956.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d156-air-intelligence-information-report-guam-1956.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Guam"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D156_Air_Intelligence_Information_Report_Guam-1956.jpg",
+  "csv_raw_title": "DOW-UAP-D156, Air Intelligence Information Report, Guam, 1956",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d156-air-intelligence-information-report-guam-1956.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (12/31/56) over Guam.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 12/31/56.",
+      "Reported location: Guam."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "part",
+      "pilot",
+      "report",
+      "object",
+      "balloon",
+      "page",
+      "information",
+      "intelligence"
+    ]
+  }
+}

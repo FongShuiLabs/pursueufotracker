@@ -1,0 +1,104 @@
+{
+  "id": "eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-",
+  "title": "EOP-UAP-D002, Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963",
+  "category": "intel",
+  "agency": "EOP",
+  "type": "pdf",
+  "date_event": "5/29/63",
+  "date_released": "2026-10-23",
+  "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/EOP-UAP-D002-Memo_on_Interagency_Coordination_for_the_Recovery_of_Foreign_Materiel-May_1963.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-.pdf",
+  "size_bytes": 146335,
+  "sha256": "11e232f70bf9544372420107c603bf86cd3ad5d58d09bd6e5e56d6479c068d45",
+  "redacted": false,
+  "summary": "This document is an internal National Aeronautics and Space Council (NASC) memorandum from staff member R.W. Hale to Executive Secretary Edward C. Welsh. NASC was a 1958–1973 body within the Executive Office of the President responsible at the time for coordinating U.S. space policy. The memorandum records a May 28, 1963, meeting with Arnold Frutkin, Director of International Programs at the National Aeronautics and Space Administration (NASA), concerning the development of a coordinated interagency policy for recovering reentering U.S. and Soviet space debris and satellite fragments that might land on foreign soil. This memorandum is associated with a larger body of interagency correspondence included in this collection under the title “USG-UAP-D002.”\n\nThe memorandum highlights an interagency policy debate over organizational jurisdiction during the early Space Race. It states that the Department of State and Department of War sought to leverage NASA’s standing as a civilian scientific agency to help facilitate discreet recovery of sensitive space hardware while publicly returning non-sensitive components to the country of origin. As described in the memorandum, the proposed arrangement would have served several purposes: enabling access to adversary technologies, protecting U.S. technologies, preserving diplomatic goodwill, and obscuring the intelligence gathering dimension of technology recovery operations. The memorandum also presents Director Frutkin’s reaction to the proposed arrangement as “very negative.”",
+  "score": {
+    "value": 50,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "civilian_credentialed",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "civilian_credentialed",
+        "value": 50,
+        "weight": 0.2,
+        "contribution": 10.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Washington, D.C."
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release-07/thumbnails/EOP-UAP-D002-Memo_on_Interagency_Coordination_for_the_Recovery_of_Foreign_Materiel-May_1963.jpg",
+  "csv_raw_title": "EOP-UAP-D002, Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-.pdf",
+  "audience": {
+    "tldr": "Federal record documenting a UAP encounter (5/29/63) over Washington, D.C..",
+    "what_we_know": [
+      "Document originates from EOP.",
+      "Encounter dated 5/29/63.",
+      "Reported location: Washington, D.C.."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 50/100. Top drivers: corroboration (single_witness_instrument), witness credibility (civilian_credentialed).",
+    "keywords": [
+      "nasa",
+      "frutkin",
+      "because",
+      "public",
+      "announcement",
+      "like",
+      "have",
+      "anything"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d180-final-personnel-record-for-mccoy-howard-m-u-s-air-force-1954",
+  "title": "DOW-UAP-D180, Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "8/31/54",
+  "date_released": "2026-10-23",
+  "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D180_Final-Personnel-Record-for-McCoy-Howard-M-US-Air-Force-1954.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d180-final-personnel-record-for-mccoy-howard-m-u-s-air-force-1954.pdf",
+  "size_bytes": 94425425,
+  "sha256": "4d999697347279bdc4738d2e5b2d56d8730eb1afed798d2a6ca3d6bf0ff9fc40",
+  "redacted": false,
+  "summary": "This file contains the final personnel record of U.S. Air Force officer Howard M. McCoy, who left service as a Colonel, a senior field-grade officer responsible for significant operational and administrative duties. From December 1946 to August 1949, Colonel McCoy served as Deputy Commanding General for Intelligence (T-2), and later as Chief of the Intelligence Department, Headquarters, Air Materiel Command, at what is now known as Wright-Patterson Air Force Base. During his tenure, the Air Force initiated two significant studies centering on unidentified anomalous phenomena: Project SIGN and Project GRUDGE. He was among the senior Air Force intelligence officers involved in the early design, administration, and execution of those programs.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d180-final-personnel-record-for-mccoy-howard-m-u-s-air-force-1954.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d180-final-personnel-record-for-mccoy-howard-m-u-s-air-force-1954.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D180_Final-Personnel-Record-for-McCoy-Howard-M-US-Air-Force-1954.jpg",
+  "csv_raw_title": "DOW-UAP-D180, Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d180-final-personnel-record-for-mccoy-howard-m-u-s-air-force-1954.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (8/31/54).",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 8/31/54.",
+      "Document references: officer, duty, report, page, grade."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "officer",
+      "duty",
+      "report",
+      "page",
+      "grade",
+      "general",
+      "name",
+      "force"
+    ]
+  }
+}

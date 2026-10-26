@@ -48,6 +48,7 @@ SNAPSHOTS = [
     ("Release 04", "7/10/26", "archive:13e730c18d6e"),
     ("Release 05", "8/7/26", "archive:5f5698f13224"),
     ("Release 06", "9/18/26", "archive:c3f8209ef5f5"),
+    ("Release 07", "10/23/26", "archive:096ef2c0058a"),
 ]
 
 # Mid-release states, diffed pair by pair: (label, older ref, newer ref). A pair belongs here only

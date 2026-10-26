@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d164-flying-object-report-indiana-1953",
+  "title": "DOW-UAP-D164, Flying Object Report, Indiana, 1953",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "12/1/53",
+  "date_released": "2026-10-23",
+  "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D164-Flying_Object_Report_Indiana-1954.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d164-flying-object-report-indiana-1953.pdf",
+  "size_bytes": 952569,
+  "sha256": "54875a9017040b50fe42e4869e5d6ceefd4e78d88edd5a70c7aa5c75066d6fdf",
+  "redacted": false,
+  "summary": "This document is a Flying Objects Report prepared in accordance with Air Force Regulation 200-2, which established guidance for reporting unidentified flying objects. The report records an incident near Seymour, Indiana, in which two civilian reporters stated that they observed two airborne objects while traveling by car. The report does not identify an exact event date; its weather assessment addresses conditions during the period December 8–15, 1953.\n\nThe report describes the incident as consisting of a “brilliant moving light” and two large, white, cloudy or gaseous objects in a staggered formation. It further describes four bright points of light within each object and a bluish-white, vapor-like trail. The report describes the object kinematics as an in-line approach with a steady descent, a stationary interval of unreported duration, and a rapid departure along an abrupt upward angle toward the southwest. It records an estimated direct observation period of three to four minutes, with a total elapsed period of five to six minutes that included changes in the vehicle’s route.\n\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d164-flying-object-report-indiana-1953.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d164-flying-object-report-indiana-1953.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": null
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D164_Flying_Object_Report_Indiana-1954.jpg",
+  "csv_raw_title": "DOW-UAP-D164, Flying Object Report, Indiana, 1953",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d164-flying-object-report-indiana-1953.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (12/1/53).",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 12/1/53.",
+      "Document references: observers, time, jones, page, light."
+    ],
+    "what_we_dont": [
+      "Specific geographic coordinates are not disclosed.",
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "observers",
+      "time",
+      "jones",
+      "page",
+      "light",
+      "atterbury",
+      "columbus",
+      "flight"
+    ]
+  }
+}

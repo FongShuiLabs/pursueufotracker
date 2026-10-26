@@ -411,6 +411,7 @@ def check_llms_txt() -> list[str]:
     rest. A file whose entire audience is AI assistants quoting it is the
     worst possible place to hold stale numbers. Same contract as the
     deep-dive checks: a pattern that stops matching is itself a failure."""
+    from .build_categories import is_aawsap
     path = ROOT / "llms.txt"
     if not path.exists():
         return ["llms.txt: missing - AI assistants fall back to scraping"]
@@ -456,7 +457,7 @@ def check_llms_txt() -> list[str]:
          by_agency["STATE"], "State category"),
         (r"intel-and-doe-uap-files/\): (\d+) files", intel_doe, "intel/DOE category"),
         (r"videos/\): (\d+) DVIDS-hosted videos", by_type["video"], "videos category"),
-        (r"aawsap-files/\): (\d+) records", sum(1 for f in files if "aawsap" in (f.get("id") or "")),
+        (r"aawsap-files/\): (\d+) records", sum(1 for f in files if is_aawsap(f)),
          "AAWSAP category"),
         (r"deep-dives\): (\d+) long-form", dd_total, "deep-dive count"),
         (r"(\w+) files are tied at the top score of (\d+)/100",

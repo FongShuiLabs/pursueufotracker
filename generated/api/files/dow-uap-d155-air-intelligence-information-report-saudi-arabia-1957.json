@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d155-air-intelligence-information-report-saudi-arabia-1957",
+  "title": "DOW-UAP-D155, Air Intelligence Information Report, Saudi Arabia, 1957",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "1/18/57",
+  "date_released": "2026-10-23",
+  "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D155-Air_Intelligence_Information_Report_Saudi_Arabia-1957.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d155-air-intelligence-information-report-saudi-arabia-1957.pdf",
+  "size_bytes": 1007345,
+  "sha256": "c7b784b889f0b4597445a8a134ca5ce11c4a142cae74ae15c45e3e4042bbc9fc",
+  "redacted": false,
+  "summary": "This document is an Air Intelligence Information Report (AIIR), a standardized U.S. Air Force reporting form used to record raw information of potential intelligence value for later analysis. The form served as a primary vehicle for U.S. Air Force field intelligence collection throughout the early Cold War, until defense-wide reporting standards were established in the early 1960s.\n\nThis AIIR records a January 18, 1957, incident over Saudi Arabia in which the crew of a U.S. Air Force B-52 aircraft reported detecting an unidentified return on the aircraft’s gunnery scope for approximately five to seven minutes. The report characterizes the unidentified return as smaller than one produced by another B-52 operating in the area.\n\nAll descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d155-air-intelligence-information-report-saudi-arabia-1957.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d155-air-intelligence-information-report-saudi-arabia-1957.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Saudi Arabia"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D155_Air_Intelligence_Information_Report_Saudi_Arabia-1957.jpg",
+  "csv_raw_title": "DOW-UAP-D155, Air Intelligence Information Report, Saudi Arabia, 1957",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d155-air-intelligence-information-report-saudi-arabia-1957.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (1/18/57) over Saudi Arabia.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 1/18/57.",
+      "Reported location: Saudi Arabia."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "report",
+      "part",
+      "information",
+      "intelligence",
+      "united",
+      "states",
+      "page",
+      "scope"
+    ]
+  }
+}

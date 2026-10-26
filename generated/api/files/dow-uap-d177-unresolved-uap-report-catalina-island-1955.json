@@ -1,0 +1,104 @@
+{
+  "id": "dow-uap-d177-unresolved-uap-report-catalina-island-1955",
+  "title": "DOW-UAP-D177, Unresolved UAP Report, Catalina Island, 1955",
+  "category": "military",
+  "agency": "DoD",
+  "type": "pdf",
+  "date_event": "3/15/55",
+  "date_released": "2026-10-23",
+  "source_url": "https://www.war.gov/medialink/ufo/release-07/documents/DOW-UAP-D177_Unresolved_UAP_Report_Catalina_Island-1955.pdf",
+  "pending_verification": false,
+  "local_path": "downloads/pdf/dow-uap-d177-unresolved-uap-report-catalina-island-1955.pdf",
+  "size_bytes": 594417,
+  "sha256": "dde62683bf5957c1c79890d352600c1c56518b6f0092f15b1b7fe56fbd143321",
+  "redacted": false,
+  "summary": "The file contains a report by Paul J. Carr of Avalon, California, who reported observing a bright orange object, approximately the size of a nickel held at arm’s length, on the evening of March 15, 1955. The provisional assessment associated with the report includes a comment from the preparing officer that the sighting is possibly astronomical, and that the incident did not warrant further investigation.",
+  "score": {
+    "value": 56,
+    "components": {
+      "sensor_quality": "eyewitness_only",
+      "witness_credibility": "military_personnel",
+      "corroboration": "single_witness_instrument",
+      "kinematic_anomaly": "no_kinematic_data",
+      "mundane_explanation_available": "weak_mundane_candidate",
+      "official_disposition": "open_after_review"
+    },
+    "detail": {
+      "sensor_quality": {
+        "choice": "eyewitness_only",
+        "value": 30,
+        "weight": 0.25,
+        "contribution": 7.5
+      },
+      "witness_credibility": {
+        "choice": "military_personnel",
+        "value": 80,
+        "weight": 0.2,
+        "contribution": 16.0
+      },
+      "corroboration": {
+        "choice": "single_witness_instrument",
+        "value": 60,
+        "weight": 0.2,
+        "contribution": 12.0
+      },
+      "kinematic_anomaly": {
+        "choice": "no_kinematic_data",
+        "value": 30,
+        "weight": 0.15,
+        "contribution": 4.5
+      },
+      "mundane_explanation_available": {
+        "choice": "weak_mundane_candidate",
+        "value": 70,
+        "weight": 0.1,
+        "contribution": 7.0
+      },
+      "official_disposition": {
+        "choice": "open_after_review",
+        "value": 90,
+        "weight": 0.1,
+        "contribution": 9.0
+      }
+    },
+    "rubric_version": "1.0"
+  },
+  "extracted": {
+    "text_path": "extracted/pdf-text/dow-uap-d177-unresolved-uap-report-catalina-island-1955.txt",
+    "transcript_path": null,
+    "thumbnail_path": "extracted/thumbnails/dow-uap-d177-unresolved-uap-report-catalina-island-1955.jpg"
+  },
+  "geo": {
+    "lat": null,
+    "lng": null,
+    "place": "Catalina Island, California"
+  },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release-07/thumbnails/DOW-UAP-D177_Unresolved_UAP_Report_Catalina_Island-1955.jpg",
+  "csv_raw_title": "DOW-UAP-D177, Unresolved UAP Report, Catalina Island, 1955",
+  "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d177-unresolved-uap-report-catalina-island-1955.pdf",
+  "audience": {
+    "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (3/15/55) over Catalina Island, California.",
+    "what_we_know": [
+      "Document originates from DoD.",
+      "Encounter dated 3/15/55.",
+      "Reported location: Catalina Island, California."
+    ],
+    "what_we_dont": [
+      "No kinematic data (speed, altitude, maneuver) is attached.",
+      "No official conclusion has been issued classifying the object as conventional.",
+      "Independent corroboration from non-government sources has not been confirmed."
+    ],
+    "mundane_candidate": "A conventional explanation is technically possible but has not been demonstrated.",
+    "score_sentence": "Anomalousness Index 56/100. Top drivers: witness credibility (military_personnel), corroboration (single_witness_instrument).",
+    "keywords": [
+      "possibly",
+      "astronomical",
+      "page",
+      "aircraft",
+      "probably",
+      "date",
+      "balloon",
+      "catalina"
+    ]
+  }
+}

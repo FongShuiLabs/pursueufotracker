@@ -70,6 +70,16 @@ TYPE_MAP = {
 # Release 02 - 5 files in this category for the May 22 disclosure.
 INTEL_AGENCIES = {"CIA", "ODNI", "DOE", "ICA", "USG", "EOP", "LLE"}
 
+# Hard Rule #1: a published file page never changes URL. The id is a slug of the
+# title, so when war.gov retitles a row that is already live the id would move
+# (and post-ingest hard-fails on the vanished id). Pin the war.gov ID (first
+# token of the Title column) to the live page id. Keys must be IDs that appear
+# on exactly one CSV row (not FBI-UAP-D014, which war.gov uses twice).
+PINNED_IDS = {
+    # 2026-10-23: "Range Fouler Debrief, Japan, 2023" retitled "..., Arabian Gulf, 2023"
+    "DOW-UAP-D042": "dow-uap-d042-range-fouler-debrief-japan-2023",
+}
+
 
 def _slugify(s: str) -> str:
     s = s.lower()
@@ -227,6 +237,7 @@ def run() -> None:
         # ID: use video title for videos, file title for others
         title_for_id = (video_title or title).strip()
         base_id = _slugify(title_for_id) or _slugify(f"{agency}-{type_}-{len(files)}")
+        base_id = PINNED_IDS.get(title.split(",")[0].strip(), base_id)
         fid = base_id
         n = 1
         while fid in seen_ids:
@@ -318,7 +329,15 @@ def run() -> None:
         # sha256/local_path/size_bytes come from the download stage and parse-csv
         # sets them to None for EVERY row - losing sha256 would silently void the
         # site's whole "SHA-256 verified against war.gov" claim.
+        # Except when the row now points at a different file: then the old bytes,
+        # hash and size describe the wrong file, and the download stage would
+        # keep them (its cache check compares the local file with this size).
+        # Dropping them forces a fresh download and hash. (DOW-UAP-D042,
+        # 2026-10-23: new URL, different bytes, same page count and text.)
+        _relinked = (prev.get("source_url") or "") != (entry.get("source_url") or "")
         for _k in ("mirror_url", "audience", "sha256", "local_path", "size_bytes"):
+            if _relinked and _k in ("sha256", "local_path", "size_bytes"):
+                continue
             if entry.get(_k) is None and prev.get(_k) is not None:
                 entry[_k] = prev[_k]
         files.append(entry)
