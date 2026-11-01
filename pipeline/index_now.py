@@ -78,13 +78,16 @@ def main() -> int:
 
 
 def run() -> None:
-    """Pipeline-stage entry point - never raises, never blocks the build."""
-    try:
-        rc = main()
-        if rc != 0:
-            print("  (IndexNow non-zero exit; continuing build)")
-    except Exception as e:
-        print(f"  IndexNow unexpected error (ignored): {e}")
+    """Pipeline-stage entry point: python -m pipeline.run index-now.
+
+    Reads the sitemap directly, never sys.argv: under pipeline.run, argv holds the
+    stage name, so main() would submit "index-now" as the only URL. This stage runs
+    by name only (POST_DEPLOY in run.py), so a failed ping exits non-zero rather
+    than printing "done".
+    """
+    rc = submit(_urls_from_sitemap())
+    if rc != 0:
+        sys.exit(rc)
 
 
 if __name__ == "__main__":
