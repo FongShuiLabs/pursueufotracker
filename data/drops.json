@@ -210,7 +210,12 @@
         "eop-uap-d002-memorandum-on-interagency-coordination-for-the-recovery-of-foreign-",
         "dow-uap-d174-utah-ranch-investigation-report-april-2010"
       ],
-      "press_coverage": [],
+      "press_coverage": [
+        {
+          "outlet": "Los Angeles Magazine",
+          "url": "https://lamag.com/news/skinwalkers-and-a-silent-black-triangle-the-pentagons-latest-ufo-revelations/"
+        }
+      ],
       "status": "verified"
     }
   ],
