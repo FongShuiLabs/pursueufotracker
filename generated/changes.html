@@ -25,7 +25,7 @@
   "description": "Documented changes to war.gov's PURSUE CSV: the May 11 revision (161 to 158 rows), Release 02 (+64), Release 03 (+72), and a row-by-row diff of Release 04 (+40), Release 05 (+41) and Release 06 (+75, 450 rows total), including the edits made to existing rows and Release 06's revisions on September 18 and 24. Every number is a direct count from the CSV.",
   "url": "https://pursueufotracker.com/changes",
   "datePublished": "2026-05-20",
-  "dateModified": "2026-10-26",
+  "dateModified": "2026-11-01",
   "creator": {"@type": "Organization", "name": "PURSUE UFO Tracker", "url": "https://pursueufotracker.com/"},
   "publisher": {"@type": "Organization", "name": "PURSUE UFO Tracker", "url": "https://pursueufotracker.com/"},
   "isBasedOn": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv",
@@ -39,7 +39,7 @@
   "description": "The verified change log across war.gov PURSUE CSV Releases 01 to 06 (450 rows): additions per release, the 31 existing rows edited after publication, and Release 06's revisions. None of the 294 rows in the Release 03 CSV has been removed.",
   "url": "https://pursueufotracker.com/changes",
   "datePublished": "2026-05-20T00:00:00Z",
-  "dateModified": "2026-10-26T00:00:00Z",
+  "dateModified": "2026-11-01T00:00:00Z",
   "image": "https://pursueufotracker.com/generated/og-cards/page-changes.png?v=2026-10-21",
   "author": {"@type": "Organization", "name": "PURSUE UFO Tracker", "url": "https://pursueufotracker.com/"},
   "publisher": {
@@ -120,10 +120,10 @@
   <div class="breadcrumb"><a href="/">PURSUE Tracker</a> &nbsp;/&nbsp; <a href="/revisions">Revisions</a> &nbsp;/&nbsp; Changes Log</div>
 
   <h1>PURSUE Changes Log</h1>
-  <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:24px">FIRST PUBLISHED 20 MAY 2026 · UPDATED 26 OCT 2026 · COUNTED FROM THE RAW CSV</p>
+  <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:24px">FIRST PUBLISHED 20 MAY 2026 · UPDATED 1 NOV 2026 · COUNTED FROM THE RAW CSV</p>
 
   <div class="alert">
-    <p style="margin:0 0 8px 0"><strong>Update, October 26, 2026:</strong> war.gov published Release 07 on October 23, 2026, taking the CSV to 478 rows (SHA-256 <code>096ef2c0058a...</code>, archived byte-exact). Our row-by-row pass against Release 06: 28 rows added, 0 removed, and 56 existing rows edited (10 by clearing the Featured flag, 48 in the PDF Pairing column). One more row, DOW-UAP-D042, was retitled from "Range Fouler Debrief, Japan, 2023" to "Range Fouler Debrief, Arabian Gulf, 2023" and given a new file link. The sections below were written for the 450-row Release 06 file: where they say "today's" or "current" CSV, they mean Release 06. A full Release 07 section is being added; every Release 07 value is already in <a href="/data/release-diff.json" style="color:#52b4ff" rel="nofollow">data/release-diff.json</a>.</p>
+    <p style="margin:0 0 8px 0"><strong>Update, November 1, 2026:</strong> war.gov published Release 07 on October 23, 2026, taking the CSV to 478 rows (SHA-256 <code>096ef2c0058a...</code>, archived byte-exact). Our row-by-row pass against Release 06: 28 rows added, 0 removed, and 56 existing rows edited (10 by clearing the Featured flag, 48 in the PDF Pairing column). One more row, DOW-UAP-D042, was retitled from "Range Fouler Debrief, Japan, 2023" to "Range Fouler Debrief, Arabian Gulf, 2023" and given a new file link. On October 26 war.gov revised the file again at 478 rows (SHA-256 <code>92b3ec7dd872...</code>, also archived): it rewrote all 478 Release Date values and 159 Incident Date values with four-digit years and added a sentence to FBI-UAP-D043's description. One rewritten date is wrong in war.gov's file: NASA-UAP-D013 (Mercury Atlas 7, May 24, 1962) reads 5/24/2962. The sections below were written for the 450-row Release 06 file: where they say "today's" or "current" CSV, they mean Release 06. A full Release 07 section is being added; every Release 07 value is already in <a href="/data/release-diff.json" style="color:#52b4ff" rel="nofollow">data/release-diff.json</a>.</p>
     <p style="margin:0 0 8px 0"><strong>What this page contains.</strong> Every change to war.gov's PURSUE CSV that we can document, from the first release on May 8 to today's 450-row file (Release 06, revised September 18 and 24). It has a row-by-row diff of Releases 03 to 06 computed from the raw CSV rows, a row-by-row diff of Release 06's September 24 amendment, a timeline of every CSV state our poller recorded, one card per release, and the original May 11 comparison (161 to 158 rows) further down. Each claim on this page is a direct count. No interpretation of war.gov's intent: we say what changed, not why. No characterizations of "renames," "consolidations," or "reclassifications" - those would be inferences and are kept off this page. Where we cannot reproduce something, the page says so.</p>
     <p style="margin:0"><strong>Headline findings</strong>: (1) <strong>No row has been removed.</strong> In each of the three steps from Release 03 to Release 06, zero rows were removed, and none of the 294 rows in the Release 03 CSV is missing today. (2) <strong>War.gov does edit existing rows after publishing</strong>: 31 rows across those three steps, 29 of them by clearing the "Featured" flag. (3) <strong>Our poller first recorded Release 06's CSV at 446 rows in total (71 of them new), then at 447 four hours later, and at 450 six days later.</strong> The six-day step is diffed row by row: 3 transcripts added, 5 existing rows edited, none removed. (4) The May 11 revision, covered below, added and removed no files: zero PDFs and zero videos in either direction.</p>
   </div>
@@ -164,7 +164,8 @@
       <tr><td>2026-09-18 12:51</td><td>446</td><td>+71</td><td><code>8d4232f3777f</code></td><td>Release 06, first state the poller recorded.</td><td>No archived copy of this state</td></tr>
       <tr><td>2026-09-18 16:58</td><td>447</td><td>+1</td><td><code>19e6dd7a69d5</code></td><td>Release 06, four hours later: one more row.</td><td><strong>Row by row</strong> against Release 05 (+72) and against the 450-row state (Release 06 card, below). Copy recovered from the Internet Archive (SHA-256 matches)</td></tr>
       <tr><td>2026-09-24 21:15</td><td>450</td><td>+3</td><td><code>c3f8209ef5f5</code></td><td>Release 06 amendment.</td><td><strong>Row by row</strong> (R05 to R06, the three Release 06 states combined; and from the 447-row state)</td></tr>
-      <tr><td>2026-10-23 13:16</td><td>478</td><td>+28</td><td><code>096ef2c0058a</code></td><td>Release 07. This is the current CSV.</td><td><strong>Row by row</strong> (R06 to R07) in data/release-diff.json; section on this page to follow</td></tr>
+      <tr><td>2026-10-23 13:16</td><td>478</td><td>+28</td><td><code>096ef2c0058a</code></td><td>Release 07.</td><td><strong>Row by row</strong> (R06 to R07) in data/release-diff.json; section on this page to follow</td></tr>
+      <tr><td>2026-10-26 23:15</td><td>478</td><td>0</td><td><code>92b3ec7dd872</code></td><td>Release 07 revised: same row count, dates rewritten. This is the current CSV.</td><td><strong>Row by row</strong> in data/release-diff.json; section on this page to follow</td></tr>
     </tbody>
   </table>
 

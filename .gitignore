@@ -30,3 +30,5 @@ data/analytics/
 # pages, and only needed locally for manual social posting.
 generated/clips/
 .claude/
+# Questions and answers for Legal. This repo is public: never commit.
+Legal Desk/

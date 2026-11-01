@@ -2898,6 +2898,5454 @@
    },
    "featured_cleared": 0,
    "new_agency_labels": []
+  },
+  {
+   "label": "Release 07 revision: 2026-10-23 13:16 UTC to 2026-10-26 23:15 UTC (478 rows, no rows added or removed)",
+   "from": {
+    "source": "archive:096ef2c0058a",
+    "sha256": "096ef2c0058abd412a568d630df31cb836241c1c08c4f67bdc8cdb7e5c8418b9",
+    "byte_exact_vs_poll_state": true
+   },
+   "to": {
+    "source": "archive:92b3ec7dd872",
+    "sha256": "92b3ec7dd87286ea7092a33b476566b4416d3bb02970b02757b237d8322fe81a",
+    "byte_exact_vs_poll_state": true
+   },
+   "rows_before": 478,
+   "rows_after": 478,
+   "added": [],
+   "added_by_agency_type": {},
+   "removed": [],
+   "relinked": [],
+   "edited": [
+    {
+     "id": "18_100754_ General 1946-7_Vol_2",
+     "title": "18_100754_ General 1946-7_Vol_2",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "12/30/47",
+       "12/30/1947"
+      ]
+     }
+    },
+    {
+     "id": "18_6369445_General_1948_Vol_1",
+     "title": "18_6369445_General_1948_Vol_1",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "6/15/48",
+       "6/15/1948"
+      ]
+     }
+    },
+    {
+     "id": "255_413270_UFO's_and_Defense_What_Should_we_Prepare_For",
+     "title": "255_413270_UFO's_and_Defense_What_Should_we_Prepare_For",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents",
+     "title": "331_120752_Numeric_Files_1944–1945_37153_German_Armament_Equipment_Documents",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "3/18/45",
+       "3/18/1945"
+      ]
+     }
+    },
+    {
+     "id": "341_110448_Records_Relating_to_the_Collection_and_Dissemination_of_Intelligence_1948-1955-TS_CONT_No.2_2-5300-2-5399",
+     "title": "341_110448_Records_Relating_to_the_Collection_and_Dissemination_of_Intelligence_1948-1955-TS_CONT_No.2_2-5300-2-5399",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "11/8/48",
+       "11/8/1948"
+      ]
+     }
+    },
+    {
+     "id": "341_110677_Numerical_File",
+     "title": "341_110677_Numerical_File,_5-2500",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "10/14/55",
+       "10/14/1955"
+      ]
+     }
+    },
+    {
+     "id": "342_HS1-416511228_319.1 Flying Discs 1949",
+     "title": "342_HS1-416511228_319.1 Flying Discs 1949",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "1/9/50",
+       "1/9/1950"
+      ]
+     }
+    },
+    {
+     "id": "38_143685_box7_Incident_Summaries_1-100",
+     "title": "38_143685_box7_Incident_Summaries_1-100",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "38_143685_box_Incident_Summaries_101-172",
+     "title": "38_143685_box_Incident_Summaries_101-172",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "38_143685_box_Incident_Summaries_173-233",
+     "title": "38_143685_box_Incident_Summaries_173-233",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "59_214434_SP 16 [7.18.1963]",
+     "title": "59_214434_SP 16 [7.18.1963]",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "7/18/63",
+       "7/18/1963"
+      ]
+     }
+    },
+    {
+     "id": "59_64634_711.5612[7-2852",
+     "title": "59_64634_711.5612[7-2852",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "7/28/52",
+       "7/28/1952"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-101634279_100-DE-18221_Serial_844",
+     "title": "65_HS1-101634279_100-DE-18221_Serial_844",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "4/17/58",
+       "4/17/1958"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-101634279_100-DE-26505",
+     "title": "65_HS1-101634279_100-DE-26505",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "11/7/57",
+       "11/7/1957"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_SUB_A",
+     "title": "65_HS1-834228961_62-HQ-83894_SUB_A",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Section_001",
+     "title": "65_HS1-834228961_62-HQ-83894_Section_001",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Section_002",
+     "title": "65_HS1-834228961_62-HQ-83894_Section_002",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Section_003",
+     "title": "65_HS1-834228961_62-HQ-83894_Section_003",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Section_004",
+     "title": "65_HS1-834228961_62-HQ-83894_Section_004",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Section_005",
+     "title": "65_HS1-834228961_62-HQ-83894_Section_005",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Section_006",
+     "title": "65_HS1-834228961_62-HQ-83894_Section_006",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Section_007",
+     "title": "65_HS1-834228961_62-HQ-83894_Section_007",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Section_008",
+     "title": "65_HS1-834228961_62-HQ-83894_Section_008",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Section_009",
+     "title": "65_HS1-834228961_62-HQ-83894_Section_009",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Section_010",
+     "title": "65_HS1-834228961_62-HQ-83894_Section_010",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Serial_130",
+     "title": "65_HS1-834228961_62-HQ-83894_Serial_130",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Serial_153",
+     "title": "65_HS1-834228961_62-HQ-83894_Serial_153",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Serial_164",
+     "title": "65_HS1-834228961_62-HQ-83894_Serial_164",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Serial_220",
+     "title": "65_HS1-834228961_62-HQ-83894_Serial_220",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Serial_403",
+     "title": "65_HS1-834228961_62-HQ-83894_Serial_403",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Serial_438",
+     "title": "65_HS1-834228961_62-HQ-83894_Serial_438",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "65_HS1-834228961_62-HQ-83894_Serial_449",
+     "title": "65_HS1-834228961_62-HQ-83894_Serial_449",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-002",
+     "title": "CIA-UAP-002, Scientific Advisory Panel on Unidentified Flying Objects, Report, 1952-1953",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-003",
+     "title": "CIA-UAP-003, The Central Intelligence Agency and Overhead Reconnaissance; The U-2 and OXCART Programs, 1954-1974",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-004",
+     "title": "CIA-UAP-004, CASE 17708 (CLOSED) and DR. Leon Davidson",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-005",
+     "title": "CIA-UAP-005, German Scientist's Article on 'Flying Discs'",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-006",
+     "title": "CIA-UAP-006, Sighting Of Unconventional Aircraft",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-007",
+     "title": "CIA-UAP-007, Current Status Of Unidentified Flying Objects (UFO) Project.",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-008",
+     "title": "CIA-UAP-008, Speculative Paper By N Kardashev and A Sakharov on Charged Mass in Space at Conference on Origins Of Life, Armenia, 6-8 September 1971/Low Scientific Level Of Other Soviet Papers",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-009",
+     "title": "CIA-UAP-009, Unknown Flying Objects Observed Over Budapest",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-010",
+     "title": "CIA-UAP-010, Report on Conversations with Soviet Scientists on Subject of Unidentified Flying Objects in the USSR",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-011",
+     "title": "CIA-UAP-011, The Sary Shagan Weapons Testing Range",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-012",
+     "title": "CIA-UAP-012, Combating Fatigue In Crewmembers",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-013",
+     "title": "CIA-UAP-013, Report of Unusual Flying Object Sightings and Attendant Scientific Activity",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-014",
+     "title": "CIA-UAP-014, British activity in the Field of \"Unidentified Flying Objects\"",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-015",
+     "title": "CIA-UAP-015, Project Blue Book Special Report No. 14 (Analysis of Reports of Unidentified Aerial Objects)",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-016",
+     "title": "CIA-UAP-016, Sightings of Unidentified Flying Objects in Ladakh, Nepal, Sikkim and Bhutan",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-017",
+     "title": "CIA-UAP-017, Placement on High Alert Due to Perceived Aggressive Foreign Posturing",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-018",
+     "title": "CIA-UAP-018, Report of Unusual Flying Object Sightings and Attendant Scientific Activity",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-019",
+     "title": "CIA-UAP-019, Australian Dept of Defense Scientific and Intel Aspects of the UFO Problem",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-D001",
+     "title": "CIA-UAP-D001, Intelligence Information Report, USSR, 1973",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ],
+      "Incident Date": [
+       "12/20/73",
+       "12/20/1973"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-D020",
+     "title": "CIA-UAP-D020, Memorandum on Unconventional Aircraft Sightings, 1955",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-D021",
+     "title": "CIA-UAP-D021, Analysis of Unconventional Aircraft Sightings, 1955",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-D022",
+     "title": "CIA-UAP-D022, Unidentified Flying Object Reported near Puerto Rico, 1965",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "2/1/65",
+       "2/1/1965"
+      ]
+     }
+    },
+    {
+     "id": "CIA-UAP-D023",
+     "title": "CIA-UAP-D023, Briefing Notes for Mr. Walter Elder",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOE-UAP-D001",
+     "title": "DOE-UAP-D001, Enhanced PANTEX Imagery",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOE-UAP-D002",
+     "title": "DOE-UAP-D002, James Tuck Correspondence, 1970s",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOE-UAP-D003",
+     "title": "DOE-UAP-D003, Pajarito Astronomers Invitation, 1986",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ],
+      "Incident Date": [
+       "5/20/86",
+       "5/20/1986"
+      ]
+     }
+    },
+    {
+     "id": "DOE-UAP-D004",
+     "title": "DOE-UAP-D004, Los Alamos Conference on Aerial Phenomena, 1949",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ],
+      "Incident Date": [
+       "3/22/49",
+       "3/22/1949"
+      ]
+     }
+    },
+    {
+     "id": "DOE-UAP-D005",
+     "title": "DOE-UAP-D005, Pantex Unidentified Object Incident Report, 2015",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ],
+      "Incident Date": [
+       "9/1/15",
+       "9/1/2015"
+      ]
+     }
+    },
+    {
+     "id": "DOS-UAP-D001",
+     "title": "DOS-UAP-D001, Diplomatic Cable, Brazil, November 14, 1963",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "11/14/63",
+       "11/14/1963"
+      ]
+     }
+    },
+    {
+     "id": "DOS-UAP-D002",
+     "title": "DOS-UAP-D002, Diplomatic Cable, Brazil, November 20, 1963",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "11/20/63",
+       "11/20/1963"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D003",
+     "title": "DOW-UAP-D003, Mission Report, Arabian Gulf, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D004",
+     "title": "DOW-UAP-D004, Mission Report, Arabian Gulf, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D005",
+     "title": "DOW-UAP-D005, Mission Report, Arabian Gulf, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D006",
+     "title": "DOW-UAP-D006, Mission Report, Arabian Gulf, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D007",
+     "title": "DOW-UAP-D007, Mission Report, Arabian Gulf, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D008",
+     "title": "DOW-UAP-D008, Mission Report, Djibouti, 2025",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D010",
+     "title": "DOW-UAP-D010, Mission Report, Middle East, May 2022",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "5/6/22",
+       "5/6/2022"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D012",
+     "title": "DOW-UAP-D012, Mission Report, Iraq, May 2022",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "5/20/22",
+       "5/20/2022"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D014",
+     "title": "DOW-UAP-D014, Mission Report, Iraq, May 2022",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "5/29/22",
+       "5/29/2022"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D016",
+     "title": "DOW-UAP-D016, Mission Report, Syria, July 2022",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "7/31/22",
+       "7/31/2022"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D017",
+     "title": "DOW-UAP-D017, UAP Reported at Sandia Base, 1948-1950",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D018",
+     "title": "DOW-UAP-D018, Mission Report, Iraq, December 2022",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "12/1/22",
+       "12/1/2022"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D019",
+     "title": "DOW-UAP-D019, Mission Report, Syria, February 21, 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "2/21/23",
+       "2/21/2023"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D020",
+     "title": "DOW-UAP-D020, Mission Report, Iraq, 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "3/31/23",
+       "3/31/2023"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D023",
+     "title": "DOW-UAP-D023, Mission Report, United Arab Emirates, October 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "10/31/23",
+       "10/31/2023"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D025",
+     "title": "DOW-UAP-D025, Mission Report, Greece, January 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "1/25/24",
+       "1/25/2024"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D027",
+     "title": "DOW-UAP-D027, Mission Report, United Arab Emirates, October 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "6/7/24",
+       "6/7/2024"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D028",
+     "title": "DOW-UAP-D028, Mission Report, Iraq, September 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "9/20/24",
+       "9/20/2024"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D032",
+     "title": "DOW-UAP-D032, Mission Report, Syria, October 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "10/20/24",
+       "10/20/2024"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D033",
+     "title": "DOW-UAP-D033, Mission Report, Greece, October 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "10/27/23",
+       "10/27/2023"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D035",
+     "title": "DOW-UAP-D035, Mission Report, Greece, October 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "10/29/23",
+       "10/29/2023"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D038",
+     "title": "DOW-UAP-D038, Range Fouler Debrief, Middle East, May 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "5/14/20",
+       "5/14/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D042",
+     "title": "DOW-UAP-D042, Range Fouler Debrief, Arabian Gulf, 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "8/31/20",
+       "8/31/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D044",
+     "title": "DOW-UAP-D044, Range Fouler Reporting Form, Gulf of Aden, October 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "10/15/20",
+       "10/15/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D048",
+     "title": "DOW-UAP-D048, Department of the Air Force Report, 1996",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "9/10/96",
+       "9/10/1996"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D049",
+     "title": "DOW-UAP-D049, Launch Summary, Vandenberg AFB, 2000",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "2/3/00",
+       "2/3/2000"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D050",
+     "title": "DOW-UAP-D050, Email Correspondence, INDOPACOM, April 2025",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D051",
+     "title": "DOW-UAP-D051, Email Correspondence, Pacific Time Zone, March 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "3/23/26",
+       "3/23/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D052",
+     "title": "DOW-UAP-D052, Email Correspondence, NA, August 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "10/31/24",
+       "10/31/2024"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D054",
+     "title": "DOW-UAP-D054, Mission Report, Mediterranean Sea, NA",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D055",
+     "title": "DOW-UAP-D055, Mission Report, Syria, November 2016",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "11/18/16",
+       "11/18/2016"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D056",
+     "title": "DOW-UAP-D056, Range Fouler Debrief, Arabian Sea, August 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "8/24/20",
+       "8/24/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D057",
+     "title": "DOW-UAP-D057, Range Fouler Reporting Form, Gulf of Aden, September 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "9/4/20",
+       "9/4/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D058",
+     "title": "DOW-UAP-D058, Range Fouler Debrief, NA, October 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "10/27/20",
+       "10/27/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D060",
+     "title": "DOW-UAP-D060, Mission Report, Arabian Gulf, August 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "8/8/20",
+       "8/8/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D061",
+     "title": "DOW-UAP-D061, Mission Report, Arabian Gulf, August 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "8/27/20",
+       "8/27/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D062",
+     "title": "DOW-UAP-D062, Mission Report, Strait of Hormuz, September 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "9/16/20",
+       "9/16/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D063",
+     "title": "DOW-UAP-D063, Mission Report, Strait of Hormuz, October 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "10/1/20",
+       "10/1/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D064",
+     "title": "DOW-UAP-D064, Mission Report, Iran, November 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "11/2/20",
+       "11/2/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D065",
+     "title": "DOW-UAP-D065, Mission Report, Arabian Gulf, July 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "7/16/20",
+       "7/16/2020"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D074",
+     "title": "DOW-UAP-D074, Mission Report, Syria, November 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "11/9/23",
+       "11/9/2023"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D075",
+     "title": "DOW-UAP-D075, Mission Report, Gulf of Aden, July 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "7/14/24",
+       "7/14/2024"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D077",
+     "title": "DOW-UAP-D077, AARO Unresolved Case Analysis Update: Western United States Event",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D078",
+     "title": "DOW-UAP-D078, Notional Map: Western United States Event",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D079",
+     "title": "DOW-UAP-D079, Narrative Statement 1, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D080",
+     "title": "DOW-UAP-D080, Narrative Statement 2, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D081",
+     "title": "DOW-UAP-D081, Narrative Statement 3, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D082",
+     "title": "DOW-UAP-D082, Narrative Statement 4, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D083",
+     "title": "DOW-UAP-D083, Narrative Statement 5, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D084",
+     "title": "DOW-UAP-D084, US Army-Flying-Saucer-Study_1949",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953",
+     "title": "DOW-UAP-D085_Transmission-of-CIA-Scientific-Advisory-Panel-Rept_1953",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D086",
+     "title": "DOW-UAP-D086, USNavy-Report-of-Flying-Discs_1948",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D087",
+     "title": "DOW-UAP-D087, U.S. Air Force Analysis of Flying Objects in the United States, 1-100",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D088",
+     "title": "DOW-UAP-D088, U.S. Air Force Analysis of Flying Objects in the United States, 101-172",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D089",
+     "title": "DOW-UAP-D089, Range Fouler Debrief, Eastern United States, 2020",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D090",
+     "title": "DOW-UAP-D090, Range Fouler Debrief, Eastern United States, 2019",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D091",
+     "title": "DOW-UAP-D091, Range Fouler Debrief, Atlantic Ocean, 2020",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D092",
+     "title": "DOW-UAP-D092, Department of the Air Force Committee to Review Project Bluebook, 1966-1967",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ],
+      "Incident Date": [
+       "4/17/67",
+       "4/17/1967"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D093",
+     "title": "DOW-UAP-D093, Analysis of Flying Object Incidents in the United States, 1948",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ],
+      "Incident Date": [
+       "12/10/48",
+       "12/10/1948"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D094",
+     "title": "DOW-UAP-D094, Analysis of Flying Object Incidents in the United States, 1949",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ],
+      "Incident Date": [
+       "4/28/49",
+       "4/28/1949"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D095",
+     "title": "DOW-UAP-D095, Joint U.S.-Canadian Aviation Projects and UFO Sighting Reports, 1954-1955",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D096",
+     "title": "DOW-UAP-D096, Correspondence Relating to Project Blue Book, 1955",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D097",
+     "title": "DOW-UAP-D097, Project Sign Progress Report, 1948",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D098",
+     "title": "DOW-UAP-D098, Film Analysis of Unidentified Objects, 1953",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D099",
+     "title": "DOW-UAP-D099, Intelligence Review of “Ghost Rocket” Incidents, 1947",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "1/9/47",
+       "1/9/1947"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D100",
+     "title": "DOW-UAP-D100, Air Materiel Command Report on Unidentified Flying Objects, 1947-1948",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D101",
+     "title": "DOW-UAP-D101, Intelligence Information Report, Unresolved UAP Report, Gulf of Oman, 2021",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "9/8/21",
+       "9/8/2021"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D102",
+     "title": "DOW-UAP-D102, Project Blue Book File on Tremonton Film, Utah, 1952",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "7/2/52",
+       "7/2/1952"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D103",
+     "title": "DOW-UAP-D103, Project Blue Book Photo File Relating to Tremonton Film, Utah, 1952",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "7/2/52",
+       "7/2/1952"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D104",
+     "title": "DOW-UAP-D104, Final Personnel Record for Newhouse, Delbert C., U.S. Navy, 1957",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "5/2/57",
+       "5/2/1957"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D105",
+     "title": "DOW-UAP-D105, U.S. Air Force Flying Discs File, 1952",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D106",
+     "title": "DOW-UAP-D106, Mission Report, Iraq, 2022",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D107",
+     "title": "DOW-UAP-D107, Mission Report, Middle East, 2025",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D108",
+     "title": "DOW-UAP-D108, Mission Report, Middle East, 2025",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D109",
+     "title": "DOW-UAP-D109, Mission Report, Middle East, 2022",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D110",
+     "title": "DOW-UAP-D110, AAWSAP Statement of Objectives, July 2008",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "7/18/08",
+       "7/18/2008"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D111",
+     "title": "DOW-UAP-D111, AAWSAP Solicitation and Original Order, September 2008",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "9/22/08",
+       "9/22/2008"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D112",
+     "title": "DOW-UAP-D112, AAWSAP Contract Modification P00001, September 2009",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "9/2/09",
+       "9/2/2009"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D113",
+     "title": "DOW-UAP-D113, AAWSAP Contract Modification P00002, February 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "2/2/10",
+       "2/2/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D114",
+     "title": "DOW-UAP-D114, AAWSAP Contract Modification P00003, May 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "5/18/10",
+       "5/18/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D115",
+     "title": "DOW-UAP-D115, AAWSAP Contract Modification P00004, May 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "5/18/10",
+       "5/18/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D116",
+     "title": "DOW-UAP-D116, AAWSAP Contract Modification P00005, September 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "9/28/10",
+       "9/28/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D117",
+     "title": "DOW-UAP-D117, AAWSAP DIRD, Metallic Glasses for Aerospace Applications, December 2009",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "12/14/09",
+       "12/14/2009"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D118",
+     "title": "DOW-UAP-D118, AAWSAP DIRD, Aerospace Applications of Programmable Matter, December 2009",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "12/14/09",
+       "12/14/2009"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D119",
+     "title": "DOW-UAP-D119, AAWSAP DIRD, Biomaterials, January 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "1/7/10",
+       "1/7/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D120",
+     "title": "DOW-UAP-D120, AAWSAP DIRD, Materials for Advanced Aerospace Platforms, January 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "1/12/10",
+       "1/12/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D121",
+     "title": "DOW-UAP-D121, AAWSAP DIRD, Pulsed High-Power Microwave Source Technology, January 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "1/28/10",
+       "1/28/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D122",
+     "title": "DOW-UAP-D122, AAWSAP DIRD, Invisibility Cloaking Theory and Experiments, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/2/10",
+       "3/2/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D123",
+     "title": "DOW-UAP-D123, AAWSAP DIRD, Positron Aerospace Propulsion, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/2/10",
+       "3/2/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D124",
+     "title": "DOW-UAP-D124, AAWSAP DIRD, Space Access: Where We’ve Been and Where We Could Go, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/8/10",
+       "3/8/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D125",
+     "title": "DOW-UAP-D125, AAWSAP DIRD, Inertial Electrostatic Confinement Fusion, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/10/10",
+       "3/10/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D126",
+     "title": "DOW-UAP-D126, AAWSAP DIRD, Advanced Nuclear Propulsion for Manned Deep Space Missions, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/11/10",
+       "3/11/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D127",
+     "title": "DOW-UAP-D127, AAWSAP DIRD, An Introduction to the Statistical Drake Equation, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/11/10",
+       "3/11/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D128",
+     "title": "DOW-UAP-D128, AAWSAP DIRD, Anomalous Acute and Subacute Field Effects on Human Biological Tissues, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/11/10",
+       "3/11/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D129",
+     "title": "DOW-UAP-D129, AAWSAP DIRD, Metallic Spintronics, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/23/10",
+       "3/23/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D130",
+     "title": "DOW-UAP-D130, AAWSAP DIRD, Technological Approaches to Controlling External Devices, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/23/10",
+       "3/23/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D131",
+     "title": "DOW-UAP-D131, AAWSAP DIRD, The Role of Superconductors in Gravity Research, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/23/10",
+       "3/23/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D132",
+     "title": "DOW-UAP-D132, AAWSAP DIRD, Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/29/10",
+       "3/29/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D133",
+     "title": "DOW-UAP-D133, AAWSAP DIRD, The Space Communication Implications of Quantum Entanglement and Nonlocality, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/30/10",
+       "3/30/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D134",
+     "title": "DOW-UAP-D134, AAWSAP DIRD, Maverick Inventor Versus Corporate Inventor: Where Will the Next Major Innovations Arise, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/30/10",
+       "3/30/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D135",
+     "title": "DOW-UAP-D135, AAWSAP DIRD, Antigravity for Aerospace Applications, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/30/10",
+       "3/30/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D136",
+     "title": "DOW-UAP-D136, AAWSAP DIRD, Biosensors and BioMEMS: A Survey of the Present Field, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/31/10",
+       "3/31/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D137",
+     "title": "DOW-UAP-D137, AAWSAP DIRD, State of the Art and Evolution of High-Energy Lasers, March 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/31/10",
+       "3/31/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D138",
+     "title": "DOW-UAP-D138, AAWSAP DIRD, Warp Drive, Dark Energy, and the Manipulation of Extra Dimensions, April 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "4/2/10",
+       "4/2/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D139",
+     "title": "DOW-UAP-D139, AAWSAP DIRD, Traversable Wormholes, Stargates, and Negative Energy, April 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "4/6/10",
+       "4/6/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D140",
+     "title": "DOW-UAP-D140, AAWSAP DIRD, High-Frequency Gravitational Wave Communications, April 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "4/6/10",
+       "4/6/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D141",
+     "title": "DOW-UAP-D141, AAWSAP DIRD, Metamaterials for Aerospace Applications, April 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "4/6/10",
+       "4/6/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D142",
+     "title": "DOW-UAP-D142, AAWSAP DIRD, Concepts for Extracting Energy from the Quantum Vacuum, April 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "4/6/10",
+       "4/6/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D143",
+     "title": "DOW-UAP-D143, AAWSAP DIRD, Laser Lightcraft Nanosatellites, November 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "11/1/10",
+       "11/1/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D144",
+     "title": "DOW-UAP-D144, AAWSAP DIRD, Cockpits in the Era of Breakthrough Flight, November 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "11/1/10",
+       "11/1/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D145",
+     "title": "DOW-UAP-D145, AAWSAP DIRD, Aneutronic Fusion Propulsion I, November 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "11/1/10",
+       "11/1/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D146",
+     "title": "DOW-UAP-D146, AAWSAP DIRD, Aneutronic Fusion Propulsion II, November 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "11/1/10",
+       "11/1/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D147",
+     "title": "DOW-UAP-D147, AAWSAP DIRD, Ultracapacitors as Energy and Power Storage Devices, November 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "11/1/10",
+       "11/1/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D148",
+     "title": "DOW-UAP-D148, AAWSAP DIRD, Detection and High-Resolution Tracking of Vehicles at Hypersonic Velocities, November 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "11/20/10",
+       "11/20/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D149",
+     "title": "DOW-UAP-D149, AAWSAP DIRD, MHD Air Breathing Propulsion and Power for Aerospace Applications, November 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "11/21/10",
+       "11/21/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D150",
+     "title": "DOW-UAP-D150, AAWSAP DIRD, Quantum Computing and Utilizing Organic Molecules in Automation Technology, December 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "12/10/10",
+       "12/10/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D151",
+     "title": "DOW-UAP-D151, AAWSAP DIRD, Cognitive Limits on Simultaneous Control of Multiple Unmanned Spacecraft, December 2010",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "12/15/10",
+       "12/15/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D152",
+     "title": "DOW-UAP-D152, AAWSAP DIRD, Negative Mass Propulsion, January 2011",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "1/3/11",
+       "1/3/2011"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D153",
+     "title": "DOW-UAP-D153, AAWSAP DIRD, Quantum Tomography of Negative Energy States in the Vacuum, January 2011",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "1/11/11",
+       "1/11/2011"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D154",
+     "title": "DOW-UAP-D154, Transcript of a Presentation by Captain Edward J. Ruppelt, 1952",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/26/52",
+       "3/26/1952"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D155",
+     "title": "DOW-UAP-D155, Air Intelligence Information Report, Saudi Arabia, 1957",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "1/18/57",
+       "1/18/1957"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D156",
+     "title": "DOW-UAP-D156, Air Intelligence Information Report, Guam, 1956",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "12/31/56",
+       "12/31/1956"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D157",
+     "title": "DOW-UAP-D157, Air Intelligence Information Report, Italy, 1952",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "8/27/52",
+       "8/27/1952"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D158",
+     "title": "DOW-UAP-D158, Flying Object Report, Canada, 1953",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "11/13/53",
+       "11/13/1953"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D159",
+     "title": "DOW-UAP-D159, Air Intelligence Information Report, Germany, 1953",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "8/10/53",
+       "8/10/1953"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D160",
+     "title": "DOW-UAP-D160, Air Intelligence Information Report, Morocco, 1953",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "12/16/53",
+       "12/16/1953"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D161",
+     "title": "DOW-UAP-D161, Air Intelligence Information Report, Alaska, 1953",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "10/6/53",
+       "10/6/1953"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D162",
+     "title": "DOW-UAP-D162, Air Intelligence Information Report, Alaska, 1953",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "12/1/53",
+       "12/1/1953"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D163",
+     "title": "DOW-UAP-D163, Air Intelligence Information Report, Sweden, 1953",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "12/17/53",
+       "12/17/1953"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D164",
+     "title": "DOW-UAP-D164, Flying Object Report, Indiana, 1953",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "12/1/53",
+       "12/1/1953"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D166",
+     "title": "DOW-UAP-D166, MUFON Reports Prepared for BAASS, November 2008",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "11/1/08",
+       "11/1/2008"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D167",
+     "title": "DOW-UAP-D167, Project Capella, December 2008",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "12/10/08",
+       "12/10/2008"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D168",
+     "title": "DOW-UAP-D168, BAASS Project Management Plan, December 2008",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "12/2/08",
+       "12/2/2008"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D169",
+     "title": "DOW-UAP-D169, BAASS Monthly Report, March 2009",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "4/10/09",
+       "4/10/2009"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D170",
+     "title": "DOW-UAP-D170, BAASS Monthly Report, April 2009",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "4/1/09",
+       "4/1/2009"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D171",
+     "title": "DOW-UAP-D171, BAASS Monthly Report, June 2009",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "7/9/09",
+       "7/9/2009"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D173",
+     "title": "DOW-UAP-D173, BAASS Monthly Report, November 2009",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "11/1/09",
+       "11/1/2009"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D174",
+     "title": "DOW-UAP-D174, Utah Ranch Investigation Report, April 2010",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D175",
+     "title": "DOW-UAP-D175, BAASS Self-Assessment of UAP Analysis Capabilities, November 2010",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "11/23/10",
+       "11/23/2010"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D176",
+     "title": "DOW-UAP-D176, Triangular UAP AARO Memorandum for Record, 2026",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D177",
+     "title": "DOW-UAP-D177, Unresolved UAP Report, Catalina Island, 1955",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "3/15/55",
+       "3/15/1955"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D178",
+     "title": "DOW-UAP-D178, Unresolved UAP Report, Catalina Island, 1953",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "11/16/53",
+       "11/16/1953"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D179",
+     "title": "DOW-UAP-D179, Air Intelligence Information Report, Catalina Island, 1952",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "6/25/52",
+       "6/25/1952"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D180",
+     "title": "DOW-UAP-D180, Final Personnel Record for McCoy, Howard M., U.S. Air Force, 1954",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "8/31/54",
+       "8/31/1954"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-D181",
+     "title": "DOW-UAP-D181, Unresolved UAP Report, Catalina Island, 1949",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "4/28/49",
+       "4/28/1949"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR019",
+     "title": "DOW-UAP-PR019, Unresolved UAP Report, Middle East, May 2022",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR020",
+     "title": "DOW-UAP-PR020, Unresolved UAP Report, Kuwait, May 2022",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR021",
+     "title": "DOW-UAP-PR021, Unresolved UAP Report, Iraq, May 2022",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR022",
+     "title": "DOW-UAP-PR022, Unresolved UAP Report, Syria, July 2022",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR023",
+     "title": "DOW-UAP-PR023, Unresolved UAP Report, Iraq, December 2022",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR024",
+     "title": "DOW-UAP-PR024, Unresolved UAP Report, Middle East, 2023",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR026",
+     "title": "DOW-UAP-PR026, Unresolved UAP Report, United Arab Emirates, October 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR027",
+     "title": "DOW-UAP-PR027, Unresolved UAP Report, United Arab Emirates, October 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR028",
+     "title": "DOW-UAP-PR028, Unresolved UAP Report, Greece, January 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR029",
+     "title": "DOW-UAP-PR029, Unresolved UAP Report, United Arab Emirates, June 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR030",
+     "title": "DOW-UAP-PR030, Unresolved UAP Report, Middle East, 2023",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR031",
+     "title": "DOW-UAP-PR031, Unresolved UAP Report, Syria, October 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR032",
+     "title": "DOW-UAP-PR032, Unresolved UAP Report, Syria, October 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR033",
+     "title": "DOW-UAP-PR033, Unresolved UAP Report, Syria, October 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR034",
+     "title": "DOW-UAP-PR034, Unresolved UAP Report, Greece, October 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR035",
+     "title": "DOW-UAP-PR035, Unresolved UAP Report, Greece, October 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR036",
+     "title": "DOW-UAP-PR036, Unresolved UAP Report, Middle East, May 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR037",
+     "title": "DOW-UAP-PR037, Unresolved UAP Report, Middle East, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR038",
+     "title": "DOW-UAP-PR038, Unresolved UAP Report, Middle East, 2013",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR039",
+     "title": "DOW-UAP-PR039, Unresolved UAP Report, Middle East, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR040",
+     "title": "DOW-UAP-PR040, Unresolved UAP Report, Middle East, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR041",
+     "title": "DOW-UAP-PR041, Unresolved UAP Report, Middle East, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR042",
+     "title": "DOW-UAP-PR042, Unresolved UAP Report, Middle East, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR043",
+     "title": "DOW-UAP-PR043, Unresolved UAP Report, Africa, 2025",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR044",
+     "title": "DOW-UAP-PR044, Unresolved UAP Report, Middle East, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR045",
+     "title": "DOW-UAP-PR045, Unresolved UAP Report, Middle East, 2020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR046",
+     "title": "DOW-UAP-PR046, Unresolved UAP Report, INDOPACOM, 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR047",
+     "title": "DOW-UAP-PR047, Unresolved UAP Report, INDOPACOM, 2023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR048",
+     "title": "DOW-UAP-PR048, Unresolved UAP Report, INDOPACOM, 2024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR049",
+     "title": "DOW-UAP-PR049, Unresolved UAP Report, Department of the Army, 2026",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR050",
+     "title": "DOW-UAP-PR050, \"4 UAP Formation Iran 26 Aug 2022 over water [CALLSIGN]\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR051",
+     "title": "DOW-UAP-PR051, \"Syrian UAP instant acceleration\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR052",
+     "title": "DOW-UAP-PR052, \"UAP USO Formation [CALLSIGN] (Mission)\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR053",
+     "title": "DOW-UAP-PR053, \"Cigar Shaped or Fast Spherical UAP clip 15 OCT 22\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR054",
+     "title": "DOW-UAP-PR054, \"Spherical UAP Erratic movement [CALLSIGN] (Mission) 2022\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR055",
+     "title": "DOW-UAP-PR055, \"Spherical UAP over AFG in and out of clouds 23 Nov 2020\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR056",
+     "title": "DOW-UAP-PR056, \"Spherical UAP pulsing over water [CALLSIGN]\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR057a",
+     "title": "DOW-UAP-PR057a, \"Spherical UAP in clouds\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR057b",
+     "title": "DOW-UAP-PR057b, \"[Platform] Observes UAP in East China Sea 05 JAN 2023 INDOPACOM\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR058",
+     "title": "DOW-UAP-PR058, \"[CALLSIGN] (Mission) UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR059",
+     "title": "DOW-UAP-PR059, \"NAG UAP 1 Jun 20\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR060",
+     "title": "DOW-UAP-PR060, \"Spherical UAP [CALLSIGN] 2021/04/12 obj 2\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR061",
+     "title": "DOW-UAP-PR061, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 0\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR062",
+     "title": "DOW-UAP-PR062, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 1\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR063",
+     "title": "DOW-UAP-PR063, \"Spherical UAP [CALLSIGN] 2021/04/12 vid 2\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR064",
+     "title": "DOW-UAP-PR064, \"AFSOC Kabul UAP Jul 2017\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR065",
+     "title": "DOW-UAP-PR065, \"USCG C-144 Tyndall UAP 2 TIC TAC IR hot 24 April 2024\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR066",
+     "title": "DOW-UAP-PR066, \"USCG C-144 Tyndall UAP 1 TIC TAC IR hot 24 April 2024\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR067",
+     "title": "DOW-UAP-PR067, \"Multiple Spherical UAP USO near Sub. [CALLSIGN] 2022/03/25 in and out of water\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR068",
+     "title": "DOW-UAP-PR068, \"IIR 1 666 S0151 23/Video Footage of Unidentified Aerial Phenomenon (UAP) captured by fifth generation aircraft on 20 Jan 23\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR069",
+     "title": "DOW-UAP-PR069, \"F/A-18 FLIR UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR070",
+     "title": "DOW-UAP-PR070, \"IIR 1 655 S0301 23/Eglin AFB Aircrew Observed Unidentified Aerial Phenomena (UAP) on 13 Feb 23\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR071",
+     "title": "DOW-UAP-PR071, \"USAF ANG F-16C (callsign [CALLSIGN]) Shoots Down UAP over Lake Huron with [Weapon System], 12 Feb 2023\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR072",
+     "title": "DOW-UAP-PR072, \"ADMINISTRATIVE REVISION: IIR 1777 J0032 22 Kazakhstan - UAP in the vicinity of Karaganda International Airport\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR073",
+     "title": "DOW-UAP-PR073, IIR 1 655 S0053 23/Several Unidentified Aerial Phenomenon Encountered In The Vicinity of Columbus OH\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR074",
+     "title": "DOW-UAP-PR074, \"[CALLSIGN] (Mission)HD_20220613\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR075",
+     "title": "DOW-UAP-PR075, \"09JUN2021 [Platform] observed UAP in the ECS\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR076",
+     "title": "DOW-UAP-PR076, \"03 January 2021 [CALLSIGN] (Mission) observes UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR077",
+     "title": "DOW-UAP-PR077, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 1 of 2\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR078",
+     "title": "DOW-UAP-PR078, \"2 November 2020 [CALLSIGN] [CALLSIGN] Observes and tracks UAP 2 of 2\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR079",
+     "title": "DOW-UAP-PR079, \"29 October 2020 [CALLSIGN] (Mission) observes 3 fast moving UAP's\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR080",
+     "title": "DOW-UAP-PR080, \"20 October 2020 [CALLSIGN] [CALLSIGN] Observes UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR081",
+     "title": "DOW-UAP-PR081, \"18 Oct 2020 [CALLSIGN] observes UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR082",
+     "title": "DOW-UAP-PR082, \"16 OCT 2020 [CALLSIGN] views UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR083",
+     "title": "DOW-UAP-PR083, \"7 October 2020 [CALLSIGN] observes UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR084",
+     "title": "DOW-UAP-PR084, \"17 Sept 2020 [CALLSIGN] observes UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR085",
+     "title": "DOW-UAP-PR085, \"16 Sept 2020 [CALLSIGN] [CALLSIGN] observes UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR086",
+     "title": "DOW-UAP-PR086, \"UAP from Dec 2019 (East Coast)\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR087",
+     "title": "DOW-UAP-PR087, \"05 September 2020 [CALLSIGN] UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR088",
+     "title": "DOW-UAP-PR088, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR089",
+     "title": "DOW-UAP-PR089, \"31 AUG [CALLSIGN] [CALLSIGN] Observes UAP part2\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR090",
+     "title": "DOW-UAP-PR090, \"24 AUG 2020 [CALLSIGN] (Mission) Observes UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR091",
+     "title": "DOW-UAP-PR091, \"21 AUG [CALLSIGN] Observes UAP in Persian Gulf\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR092",
+     "title": "DOW-UAP-PR092, \"08 AUG 2020 [CALLSIGN] [CALLSIGN] UAP observation\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR093",
+     "title": "DOW-UAP-PR093, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR094",
+     "title": "DOW-UAP-PR094, \"[CALLSIGN] (Mission) - HD 2020-02-13\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR095",
+     "title": "DOW-UAP-PR095, \"May 05 2020 Gulf of Arabia [CALLSIGN] (Platform) Dual UAP\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR096",
+     "title": "DOW-UAP-PR096, \"HH11 03 July 2018 UAPs\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR097",
+     "title": "DOW-UAP-PR097, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 2135Z\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR098",
+     "title": "DOW-UAP-PR098, \"UFOs in formation over Persian Gulf?\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR099",
+     "title": "DOW-UAP-PR099, \"Hi-Res: [CALLSIGN] Observes UAP on 25SEP19 at 1715Z\"",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR100",
+     "title": "DOW-UAP-PR100, Unresolved UAP Report, Yellow Sea, 2023",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR101",
+     "title": "DOW-UAP-PR101, Unresolved UAP Report, South China Sea, 2024",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR102",
+     "title": "DOW-UAP-PR102, Unresolved UAP Report, East China Sea, 2024",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR103",
+     "title": "DOW-UAP-PR103, Unresolved UAP Report, East China Sea, 2024",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR104",
+     "title": "DOW-UAP-PR104, Unresolved UAP Report, Yellow Sea, 2025",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR105",
+     "title": "DOW-UAP-PR105, Unresolved UAP Report, East China Sea, 2025",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR106",
+     "title": "DOW-UAP-PR106, Unresolved UAP Report, Eastern United States, 2020",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR107",
+     "title": "DOW-UAP-PR107, Unresolved UAP Report, Eastern United States, 2020",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR108",
+     "title": "DOW-UAP-PR108, Unresolved UAP Report, Western United States, 2020",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR109",
+     "title": "DOW-UAP-PR109, Unresolved UAP Report, Eastern United States, 2015",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR110",
+     "title": "DOW-UAP-PR110, Unresolved UAP Report, Eastern United States, 2020",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR111",
+     "title": "DOW-UAP-PR111, Unresolved UAP Report, Eastern United States, 2020",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR112",
+     "title": "DOW-UAP-PR112, Unresolved UAP Report, Eastern United States, 2019",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR113",
+     "title": "DOW-UAP-PR113, Unresolved UAP Report, Western United States, 1996",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR114",
+     "title": "DOW-UAP-PR114, Unresolved UAP Report, Atlantic Ocean, 2016",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR115",
+     "title": "DOW-UAP-PR115, Unresolved UAP Report, Gulf of America, 2019",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR116",
+     "title": "DOW-UAP-PR116, Unresolved UAP Report, Atlantic Ocean, 2020",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR117",
+     "title": "DOW-UAP-PR117, Unresolved UAP Report, Gulf of Oman, 2021",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "9/8/21",
+       "9/8/2021"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR118",
+     "title": "DOW-UAP-PR118, Unresolved UAP Report, Gulf of Oman, 2021",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "9/8/21",
+       "9/8/2021"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR119",
+     "title": "DOW-UAP-PR119, Unresolved UAP Report, Gulf of Oman, 2021",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "9/8/21",
+       "9/8/2021"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR120",
+     "title": "DOW-UAP-PR120, Unresolved UAP Report, Gulf of Oman, 2021",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "9/8/21",
+       "9/8/2021"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR121",
+     "title": "DOW-UAP-PR121, Unresolved UAP Report, Gulf of Oman, 2021",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "9/8/21",
+       "9/8/2021"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR122",
+     "title": "DOW-UAP-PR122, Unresolved UAP Report, Gulf of Oman, 2021",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "9/8/21",
+       "9/8/2021"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR123",
+     "title": "DOW-UAP-PR123, Unresolved UAP Report, Pacific Ocean, 2019",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR124",
+     "title": "DOW-UAP-PR124, Unresolved UAP Report, Pacific Ocean, 2019",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR125",
+     "title": "DOW-UAP-PR125, Unresolved UAP Report, Pacific Ocean, 2019",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR126",
+     "title": "DOW-UAP-PR126, Unresolved UAP Report, Pacific Ocean, 2019",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR127",
+     "title": "DOW-UAP-PR127, Unresolved UAP Report, Pacific Ocean, 2019",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR130",
+     "title": "DOW-UAP-PR130, Unresolved UAP Report, Iraq, 2022",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR131",
+     "title": "DOW-UAP-PR131, Unresolved UAP Report, Iraq, 2022",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR133",
+     "title": "DOW-UAP-PR133, Unresolved UAP Report, Middle East, 2025",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR134",
+     "title": "DOW-UAP-PR134, Unresolved UAP Report, Middle East, 2025",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR135",
+     "title": "DOW-UAP-PR135, Unresolved UAP Report, Middle East, 2025",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR136",
+     "title": "DOW-UAP-PR136, Unresolved UAP Report, Middle East, 2023",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR140",
+     "title": "DOW-UAP-PR140, Unresolved UAP Report, Middle East, 2022",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR141",
+     "title": "DOW-UAP-PR141, Unresolved UAP Report, Middle East, 2022",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR142",
+     "title": "DOW-UAP-PR142, Unresolved UAP Report, Middle East, 2025",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR143",
+     "title": "DOW-UAP-PR143, Unresolved UAP Report, Yellow Sea, 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR144",
+     "title": "DOW-UAP-PR144, Unresolved UAP Report, Yellow Sea, 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR148",
+     "title": "DOW-UAP-PR148, Unresolved UAP Report, East China Sea, 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR149",
+     "title": "DOW-UAP-PR149, Unresolved UAP Report, Middle East, 2023",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR150",
+     "title": "DOW-UAP-PR150, Unresolved UAP Report, Yellow Sea, 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR151",
+     "title": "DOW-UAP-PR151, Unresolved UAP Report, Yellow Sea, 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR152",
+     "title": "DOW-UAP-PR152, Unresolved UAP Report, Yellow Sea, 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR159",
+     "title": "DOW-UAP-PR159, Historical Film of Reported UFOs, Utah, 1952",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "7/2/52",
+       "7/2/1952"
+      ]
+     }
+    },
+    {
+     "id": "DOW-UAP-PR160",
+     "title": "DOW-UAP-PR160, Presentation by Captain Edward J. Ruppelt, 1952",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ],
+      "Incident Date": [
+       "3/26/52",
+       "3/26/1952"
+      ]
+     }
+    },
+    {
+     "id": "EOP-UAP-D001",
+     "title": "EOP-UAP-D001, NASC Inquiry into Bahia, Brazil Incident, November 13, 1963",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ],
+      "Incident Date": [
+       "11/13/63",
+       "11/13/1963"
+      ]
+     }
+    },
+    {
+     "id": "EOP-UAP-D002",
+     "title": "EOP-UAP-D002, Memorandum on Interagency Coordination for the Recovery of Foreign Materiel, May 1963",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Incident Date": [
+       "5/29/63",
+       "5/29/1963"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo A001",
+     "title": "FBI Photo A001",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo A002",
+     "title": "FBI Photo A002",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo A003",
+     "title": "FBI Photo A003",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo A004",
+     "title": "FBI Photo A004",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo A005",
+     "title": "FBI Photo A005",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo A006",
+     "title": "FBI Photo A006",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo A007",
+     "title": "FBI Photo A007",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo A008",
+     "title": "FBI Photo A008",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B001",
+     "title": "FBI Photo B001",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B002",
+     "title": "FBI Photo B002",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B003",
+     "title": "FBI Photo B003",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B004",
+     "title": "FBI Photo B004",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B005",
+     "title": "FBI Photo B005",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B006",
+     "title": "FBI Photo B006",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B007",
+     "title": "FBI Photo B007",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B008",
+     "title": "FBI Photo B008",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B009",
+     "title": "FBI Photo B009",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B010",
+     "title": "FBI Photo B010",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B011",
+     "title": "FBI Photo B011",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B012",
+     "title": "FBI Photo B012",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B013",
+     "title": "FBI Photo B013",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B014",
+     "title": "FBI Photo B014",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B015",
+     "title": "FBI Photo B015",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B016",
+     "title": "FBI Photo B016",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B017",
+     "title": "FBI Photo B017",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B018",
+     "title": "FBI Photo B018",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B019",
+     "title": "FBI Photo B019",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B020",
+     "title": "FBI Photo B020",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B021",
+     "title": "FBI Photo B021",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B022",
+     "title": "FBI Photo B022",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B023",
+     "title": "FBI Photo B023",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI Photo B024",
+     "title": "FBI Photo B024",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI September 2023 Sighting - Composite Sketch",
+     "title": "FBI September 2023 Sighting - Composite Sketch",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "9/1/23",
+       "9/1/2023"
+      ]
+     }
+    },
+    {
+     "id": "FBI September 2023 Sighting - Serial 003",
+     "title": "FBI September 2023 Sighting - Serial 003",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "9/1/23",
+       "9/1/2023"
+      ]
+     }
+    },
+    {
+     "id": "FBI September 2023 Sighting - Serial 004",
+     "title": "FBI September 2023 Sighting - Serial 004",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "9/1/23",
+       "9/1/2023"
+      ]
+     }
+    },
+    {
+     "id": "FBI September 2023 Sighting - Serial 005",
+     "title": "FBI September 2023 Sighting - Serial 005",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "9/1/23",
+       "9/1/2023"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D001",
+     "title": "FBI-UAP-D001, FD-302, Unresolved UAP Report, Colorado Springs, 2022",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D002",
+     "title": "FBI-UAP-D002, FD-1057, Unresolved UAP Report, Colorado Springs, 2022",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D003",
+     "title": "FBI-UAP-D003, Digital Rendering, Unresolved UAP Report, Colorado Springs, 2022",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D004",
+     "title": "FBI-UAP-D004, FD-1057-02, Northeastern United States, 2024",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D005",
+     "title": "FBI-UAP-D005, FD-1057-04, Northeastern United States, 2024",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D006",
+     "title": "FBI-UAP-D006, FD-1057-05, Northeastern United States, 2024",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D007",
+     "title": "FBI-UAP-D007, FD-1057-06, Northeastern United States, 2024",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D008",
+     "title": "FBI-UAP-D008, FD-1057-07, Northeastern United States, 2024",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D009",
+     "title": "FBI-UAP-D009, FD-302-67, “Northeastern Orb Sighting,” 2026",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D010",
+     "title": "FBI-UAP-D010, FD-302-71, “Northeastern Orb Sighting,” 2026",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D011",
+     "title": "FBI-UAP-D011, D/FBI Correspondence Referral, 1949",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D012",
+     "title": "FBI-UAP-D012, Newark Field Office, 1952-1967",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D013",
+     "title": "FBI-UAP-D013, Washington State ‘UFO’ Investigation, 1952-1960",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D014",
+     "title": "FBI-UAP-D014, Digital Rendering, Narrative Statement 1-1, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D014",
+     "title": "FBI-UAP-D014, Correspondence Relating to UFO Sightings, 1967, 1974",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ],
+      "Incident Date": [
+       "10/10/74",
+       "10/10/1974"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D015",
+     "title": "FBI-UAP-D015, Digital Rendering, Narrative Statement 1-2, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D016",
+     "title": "FBI-UAP-D016, Digital Rendering, Narrative Statement 2-1, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D017",
+     "title": "FBI-UAP-D017, Digital Rendering, Narrative Statement 2-2, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D018",
+     "title": "FBI-UAP-D018, Digital Rendering, Narrative Statement 2-3, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D019",
+     "title": "FBI-UAP-D019, Digital Rendering, Narrative Statement 2-4, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D020",
+     "title": "FBI-UAP-D020, Digital Rendering, Narrative Statement 2-5, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D021",
+     "title": "FBI-UAP-D021, Digital Rendering, Narrative Statement 1-3, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D022",
+     "title": "FBI-UAP-D022, Digital Rendering, Narrative Statement 2-6, Western United States Event, 2026",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D023",
+     "title": "FBI-UAP-D023, Digital Rendering, Narrative Statement 2-7, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D024",
+     "title": "FBI-UAP-D024, FD-302, “Airborne Lights and Triangle,” 2002, 2023-2024",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D025",
+     "title": "FBI-UAP-D025, Digital Rendering, “Airborne Triangle,” 2002",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D026",
+     "title": "FBI-UAP-D026, FD-302, “Dark Translucent Triangle,” 2023",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D027",
+     "title": "FBI-UAP-D027, Digital Rendering, “Dark Translucent Triangle,” 2023",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D028",
+     "title": "FBI-UAP-D028, FD-302, “Dark Triangle with Lights,” 2011",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D029",
+     "title": "FBI-UAP-D029, Digital Rendering, “Dark Triangle with Lights,” 2011",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D030",
+     "title": "FBI-UAP-D030, FD-302, “Large Triangle with Red Lights,” 2023",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D031",
+     "title": "FBI-UAP-D031, Digital Rendering, “Large Triangle with Red Lights,” 2023",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D032",
+     "title": "FBI-UAP-D032, FD-302, “Slow-moving Objects,” 2026",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D033",
+     "title": "FBI-UAP-D033, FD-302, “Thermally Elevated Aerial Object,” 2026",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D037",
+     "title": "FBI-UAP-D037, FD-302, “Multiple Red Lights,” 2026",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D038",
+     "title": "FBI-UAP-D038, Digital Rendering 1, “Multiple Red Lights,” 2026",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D039",
+     "title": "FBI-UAP-D039, Digital Rendering 2, “Multiple Red Lights,” 2026",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D040",
+     "title": "FBI-UAP-D040, FD-302, “Multiple Red Lights,” 2026",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D041",
+     "title": "FBI-UAP-D041, Digital Rendering 1, “Multiple Red Lights,” 2026",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D042",
+     "title": "FBI-UAP-D042, Digital Rendering 2, “Multiple Red Lights,” 2026",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D043",
+     "title": "FBI-UAP-D043, FD-302, Unidentified Aerial Object Observation Report, 2026",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ],
+      "Description Blurb": [
+       "This document is an FBI FD-302, a form the Federal Bureau of Investigation (FBI) uses to record interviews. This FD-302 records a 2026 interview with two Federal Special Agents, in which the interviewees describe an incident reported as involving unidentified anomalous phenomena (UAP) at a national security site in 2026.",
+       "This document is an FBI FD-302, a form the Federal Bureau of Investigation (FBI) uses to record interviews. This FD-302 records a 2026 interview with two Federal Special Agents, in which the interviewees describe an incident reported as involving unidentified anomalous phenomena (UAP) at a national security site in 2026. The report is accompanied by 9 digitally rendered FBI forensic sketches depicting the primary incident, as confirmed by the Special Agents in their eyewitness account."
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-PR001",
+     "title": "FBI-UAP-PR001, “Triangle Orbs,” Northeastern United States, 2021",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-PR002",
+     "title": "FBI-UAP-PR002, “Red Orb Rotation,” Northeastern United States, 2022",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-PR003",
+     "title": "FBI-UAP-PR003, “Orbs Over the Pond,” 2024",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-PR004",
+     "title": "FBI-UAP-PR004, “Northeastern Orb Sighting,” 2025",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-PR005",
+     "title": "FBI-UAP-PR005, Digital Recreation, Narrative Statement 3-1, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-PR006",
+     "title": "FBI-UAP-PR006, Digital Recreation, Narrative Statement 3-2, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-PR007",
+     "title": "FBI-UAP-PR007, “Slow-moving Objects,” 2026",
+     "fields": {
+      "Release Date": [
+       "8/7/26",
+       "8/7/2026"
+      ]
+     }
+    },
+    {
+     "id": "ICA-UAP-D001",
+     "title": "ICA-UAP-D001, Analysis: Colorado Springs UAP Incident, 2022",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-D001",
+     "title": "LLE-UAP-D001, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-D002",
+     "title": "LLE-UAP-D002, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-D003",
+     "title": "LLE-UAP-D003, Transcript of an Unresolved UAP Report, Colorado, October 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-D004",
+     "title": "LLE-UAP-D004, Transcript of an Unresolved UAP Report, Colorado, January 2024",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-PR001",
+     "title": "LLE-UAP-PR001, Unresolved UAP Report, Colorado, 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-PR002",
+     "title": "LLE-UAP-PR002, Unresolved UAP Report, Colorado, October 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-PR003",
+     "title": "LLE-UAP-PR003, Unresolved UAP Report, Colorado, October 2023",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "LLE-UAP-PR004",
+     "title": "LLE-UAP-PR004, Unresolved UAP Report, Colorado, January 2024",
+     "fields": {
+      "Release Date": [
+       "9/18/26",
+       "9/18/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D001",
+     "title": "NASA-UAP-D001, Apollo 12 Transcript, 1969",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D002",
+     "title": "NASA-UAP-D002, Apollo 17 Transcript, 1972",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D003",
+     "title": "NASA-UAP-D003, Gemini 7 Transcript, 1965",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "12/5/65",
+       "12/5/1965"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D003A",
+     "title": "NASA-UAP-D003A, Gemini 7 Audio Excerpt, 1965",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "12/5/65",
+       "12/5/1965"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D004",
+     "title": "NASA-UAP-D004, Apollo 11 Technical Crew Debriefing, 1969",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D005",
+     "title": "NASA-UAP-D005, Apollo 17 Crew Debriefing for Science, 1973",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D006",
+     "title": "NASA-UAP-D006, Apollo 17 Technical Crew Debriefing, 1973",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D007",
+     "title": "NASA-UAP-D007, Skylab Technical Crew Debriefing 1973",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D008",
+     "title": "NASA-UAP-D008, Apollo 12 Medical Debriefing - Tape 12, 1969",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D009",
+     "title": "NASA-UAP-D009, Apollo 17 Audio Excerpt, December 7, 1972",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ],
+      "Incident Date": [
+       "12/7/72",
+       "12/7/1972"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D010",
+     "title": "NASA-UAP-D010, Mercury Atlas 9 Audio Excerpt, May 15, 1963",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ],
+      "Incident Date": [
+       "5/15/63",
+       "5/15/1963"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D011",
+     "title": "NASA-UAP-D011, Mercury Atlas 9 Audio Excerpt, May 15, 1963",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ],
+      "Incident Date": [
+       "5/15/63",
+       "5/15/1963"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D012",
+     "title": "NASA-UAP-D012, Mercury Atlas 8 Audio Excerpt, October 3, 1962",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ],
+      "Incident Date": [
+       "10/3/62",
+       "10/3/1962"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D013",
+     "title": "NASA-UAP-D013, Mercury Atlas 7, May 24, 1962",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ],
+      "Incident Date": [
+       "5/24/62",
+       "5/24/2962"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D014",
+     "title": "NASA-UAP-D014, Mercury-Redstone 4, July 21, 1961",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ],
+      "Incident Date": [
+       "7/21/61",
+       "7/21/1961"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D015",
+     "title": "NASA-UAP-D015, Astronaut Scientific Debriefings, 1962-1963",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D016",
+     "title": "NASA-UAP-D016, Preliminary Gemini 4 Crew Debriefing, Part I, 1965",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ],
+      "Incident Date": [
+       "6/9/65",
+       "6/9/1965"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D017",
+     "title": "NASA-UAP-D017, Preliminary Gemini 4 Crew Debriefing, Part II, 1965",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ],
+      "Incident Date": [
+       "6/9/65",
+       "6/9/1965"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D018",
+     "title": "NASA-UAP-D018, Gemini 4 Experiment Debriefing, 1967",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D019",
+     "title": "NASA-UAP-D019, Gemini 5 Technical Debriefing, Part I, 1965",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D020",
+     "title": "NASA-UAP-D020, Gemini 5 Technical Debriefing, Part II, 1965",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D021",
+     "title": "NASA-UAP-D021, Gemini 7 Technical Debriefing, 1965",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D022",
+     "title": "NASA-UAP-D022, Gemini 9 Debriefing, 1966",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D023",
+     "title": "NASA-UAP-D023, Interview Excerpt with Astronaut Gordon Cooper, 1962",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D024",
+     "title": "NASA-UAP-D024, “Apollo 16 Scientific Debriefing”",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D025",
+     "title": "NASA-UAP-D025, “Apollo 16 Scientific Debriefing”",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D026",
+     "title": "NASA-UAP-D026, Apollo 14 Debriefing, 1971",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ],
+      "Incident Date": [
+       "2/18/71",
+       "2/18/1971"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D027",
+     "title": "NASA-UAP-D027, Apollo 14 Debriefing (Continued), 1971",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ],
+      "Incident Date": [
+       "2/18/71",
+       "2/18/1971"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D028",
+     "title": "NASA-UAP-D028, Apollo 17 Crew Medical Debriefing, 1972",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ],
+      "Incident Date": [
+       "12/21/72",
+       "12/21/1972"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D029",
+     "title": "NASA-UAP-D029, Apollo 17 Crew Medical Debriefing (Continued), 1972",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ],
+      "Incident Date": [
+       "12/21/72",
+       "12/21/1972"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D030",
+     "title": "NASA-UAP-D030, STS-80 Unidentified Object Image 1, 1996",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D031",
+     "title": "NASA-UAP-D031, STS-80 Unidentified Object Image 2, 1996",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-D032",
+     "title": "NASA-UAP-D032, STS-80 Unidentified Object Image 3, 1996",
+     "fields": {
+      "Release Date": [
+       "7/10/26",
+       "7/10/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-VM001",
+     "title": "NASA-UAP-VM001, Apollo 12, 1969",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-VM002",
+     "title": "NASA-UAP-VM002, Apollo 12, 1969",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-VM003",
+     "title": "NASA-UAP-VM003, Apollo 12, 1969",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-VM004",
+     "title": "NASA-UAP-VM004, Apollo 12, 1969",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-VM005",
+     "title": "NASA-UAP-VM005, Apollo 12, 1969",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "NASA-UAP-VM006",
+     "title": "NASA-UAP-VM006, Apollo 17, 1972",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "ODNI-UAP-D001",
+     "title": "ODNI-UAP-D001, USPER Narrative, Senior USIC Official",
+     "fields": {
+      "Release Date": [
+       "5/22/26",
+       "5/22/2026"
+      ]
+     }
+    },
+    {
+     "id": "State Department UAP Cable 001",
+     "title": "State Department UAP Cable 001, Papua New Guinea, January 28, 1985",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "1/24/85",
+       "1/24/1985"
+      ]
+     }
+    },
+    {
+     "id": "State Department UAP Cable 002",
+     "title": "State Department UAP Cable 002, Kazakhstan, January 31, 1994",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "1/27/94",
+       "1/27/1994"
+      ]
+     }
+    },
+    {
+     "id": "State Department UAP Cable 003",
+     "title": "State Department UAP Cable 003, Tbilisi, Georgia, October 30, 2001",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "State Department UAP Cable 004",
+     "title": "State Department UAP Cable 004, Ashgabat, Turkmenistan, November 5, 2004",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "11/5/04",
+       "11/5/2004"
+      ]
+     }
+    },
+    {
+     "id": "State Department UAP Cable 005",
+     "title": "State Department UAP Cable 005, Mexico, September 16, 2003",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ],
+      "Incident Date": [
+       "9/12/03",
+       "9/12/2003"
+      ]
+     }
+    },
+    {
+     "id": "USG-UAP-D001",
+     "title": "USG-UAP-D001, Congressional, White House, UFO-related Constituent Correspondence, 1998",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
+      ]
+     }
+    },
+    {
+     "id": "USG-UAP-D002",
+     "title": "USG-UAP-D002, Interagency Correspondence Concerning Space Fragments, 1962-1964",
+     "fields": {
+      "Release Date": [
+       "10/23/26",
+       "10/23/2026"
+      ]
+     }
+    },
+    {
+     "id": "USPER Statement about UAP Sighting",
+     "title": "USPER Statement about UAP Sighting",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    },
+    {
+     "id": "Western US Event",
+     "title": "Western US Event",
+     "fields": {
+      "Release Date": [
+       "5/8/26",
+       "5/8/2026"
+      ]
+     }
+    }
+   ],
+   "edited_field_counts": {
+    "Description Blurb": 1,
+    "Incident Date": 159,
+    "Release Date": 478
+   },
+   "featured_cleared": 0,
+   "new_agency_labels": []
   }
  ]
 }

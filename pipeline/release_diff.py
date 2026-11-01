@@ -59,6 +59,8 @@ REVISIONS = [
      "archive:5f5698f13224", "archive:19e6dd7a69d5"),
     ("Release 06 amendment: 2026-09-18 16:58 UTC (447 rows) to 2026-09-24 21:15 UTC (450 rows)",
      "archive:19e6dd7a69d5", "archive:c3f8209ef5f5"),
+    ("Release 07 revision: 2026-10-23 13:16 UTC to 2026-10-26 23:15 UTC (478 rows, no rows added or removed)",
+     "archive:096ef2c0058a", "archive:92b3ec7dd872"),
 ]
 
 FIELDS = [

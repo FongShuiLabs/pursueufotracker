@@ -6,7 +6,7 @@ The site exists because war.gov ships the PURSUE files as a flat list with no se
 
 All underlying files are U.S. Government works in the public domain under 17 U.S.C. § 105.
 
-## Current archive state (verified 2026-10-26)
+## Current archive state (verified 2026-11-01)
 
 - 478 files total: 298 PDF documents, 150 videos, 30 images
 - Seven releases: Drop 01 (May 8, 2026, 158 files), Drop 02 (May 22, 2026, 64 files), Drop 03 (June 12, 2026, 72 files), Drop 04 (July 10, 2026, 40 files), Drop 05 (August 7, 2026, 41 files), Drop 06 (September 18, 2026, 75 files), Drop 07 (October 23, 2026, 28 files)

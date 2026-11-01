@@ -7,8 +7,9 @@ a new PURSUE drop, with every public number verified first.
 **This file applies to every drop** (it was `DROP02_REACTION.md` through July 2026;
 renamed because it is not Drop-02-specific). Fill the placeholders fresh each time.
 
-**Status (2026-09-26):** six releases so far - Drop 01 (May 8), 02 (May 22), 03
-(Jun 12), 04 (Jul 10), 05 (Aug 7), 06 (Sep 18). Gaps: +14/+21/+28/+28/+42 days. No
+**Status (2026-11-01):** seven releases so far - Drop 01 (May 8), 02 (May 22), 03
+(Jun 12), 04 (Jul 10), 05 (Aug 7), 06 (Sep 18), 07 (Oct 23). Gaps:
++14/+21/+28/+28/+42/+35 days. No
 schedule has ever been announced; nothing on a public page may imply a predicted date.
 The latest drafts are `_scratch/reddit-drop05.md` and `_scratch/reddit-drop06.md` -
 timing-neutral, source-quoted; adapt that format.
@@ -54,6 +55,16 @@ diff and a clean guard run.
      On Drop 06 war.gov swapped LLE-UAP-D001 for a different document six days
      after the drop. If the CSV diff shows a row whose description changed, re-fetch
      that file and compare hashes before trusting the mirror.
+   - **A retitled live row must not move its URL.** The id is a slug of the title, so
+     post-ingest hard-fails on the vanished id. Pin the war.gov ID in `PINNED_IDS`
+     (`pipeline/parse_csv.py`). DOW-UAP-D042, Oct 23: Japan -> Arabian Gulf, new URL.
+   - **A new file URL now forces a fresh download and hash** (parse-csv no longer carries
+     the old sha256/size across a source_url change). Keep the old bytes first, in
+     `_scratch/replaced/`, and compare them before saying what changed.
+   - **Check the CSV diff before the first push, and again before pushing.** Oct 26: war.gov
+     revised Release 07 hours after the ingest (+0 rows, every date rewritten, one typo
+     5/24/2962). `INCIDENT_DATE_CORRECTIONS` fixes a plainly wrong date on our pages; the
+     mirror stays byte-exact and the /uap-data-csv revision row discloses it.
    - **New CSV columns are safe** - `parse_csv` uses `csv.DictReader` and looks
      columns up by NAME (verified 2026-08-17), so additions like Drop 03's
      "Featured" cannot shift the parse.
@@ -259,7 +270,7 @@ these stale, some since Drop 04):
   state is already in the checkout. To diff a mid-release revision (a hash change that is not a new
   release), find the two hashes in `data/poll-state.json` history and add the pair to `REVISIONS` in
   `pipeline/release_diff.py` as `archive:<first 12 of sha256>` refs; its diff lands under `revisions` in the
-  JSON (the Release 06 amendment, 447 to 450 rows, is there as of 2026-10-19). The archive holds eight states back to the
+  JSON (the Release 06 amendment, 447 to 450 rows, is there as of 2026-10-19). The archive holds ten states back to the
   first 161-row CSV; the four before Release 03 and the Release 06 state at 447 rows were recovered from
   the Internet Archive (each is byte-identical to a hash the poller recorded, and each has the recorded
   row count). Three recorded states are still missing and could not be found there: the first May 11
@@ -318,6 +329,9 @@ automation - IndexNow + natural recrawl cover it if the button won't cooperate).
 ---
 
 ## Last updated
+
+2026-11-01 - Drop 07: pinned ids for retitled rows, relink forces re-download, date
+corrections, re-check before pushing.
 
 2026-09-26 - Drop 06: stamp-counts stage (runs last, generates the homepage release
 list from drops.json), index-now moved out of `all`, the same-URL file-swap check,

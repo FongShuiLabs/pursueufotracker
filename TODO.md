@@ -2,9 +2,11 @@
 
 > ## Next session: read `_scratch/HANDOFF-2026-10-19.md` first
 >
-> **State as of 2026-10-19 (verified against origin's poll-state):** Drop 06 is live (450 files, CSV
-> SHA-256 `c3f8209e...`). No Release 07: war.gov is unchanged since the 2026-09-24 amendment
-> (31 days since Release 06; past gaps 14-42 days). The poller is healthy.
+> **State as of 2026-11-01 (verified against origin's poll-state):** Drop 07 ingested (478 files, CSV
+> SHA-256 `92b3ec7d...`, the Oct 26 revision of Release 07). The poller is healthy.
+> Follow-ups from Drop 07: full Release 07 section on /changes and its title/meta, /revisions entries
+> (D042 retitle + new bytes, Oct 26 revision), Reddit draft. Legal questions wait in `Legal Desk/`
+> (gitignored, repo is public): the sitewide 17 U.S.C. 105 claim vs 37 DIRD copyright warnings.
 > Biggest structural gap: email capture is still not live (`ESP_PROVIDER = ""` in
 > `pipeline/config.py`); the provider choice is Anthony's.
 >
@@ -28,7 +30,7 @@
 >
 > Done since the last update: the AAWSAP hub is live at /aawsap-files/ (`ab3d8adf`).
 
-**Last updated: 2026-10-19** (handoff; no new drop. Previous handoff: `_scratch/HANDOFF-2026-10-12.md`.)
+**Last updated: 2026-11-01** (handoff; no new drop. Previous handoff: `_scratch/HANDOFF-2026-10-12.md`.)
 
 ---
 

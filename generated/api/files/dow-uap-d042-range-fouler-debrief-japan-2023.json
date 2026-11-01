@@ -4,9 +4,10 @@
   "category": "military",
   "agency": "DoD",
   "type": "pdf",
-  "date_event": "8/31/20",
+  "date_event": "8/31/2020",
   "date_released": "2026-05-08",
   "source_url": "https://www.war.gov/medialink/ufo/release_1/DOW-UAP-D042-Range-Fouler-Debrief-Arabian-Gulf-2023.pdf",
+  "pending_verification": false,
   "local_path": "downloads/pdf/dow-uap-d042-range-fouler-debrief-japan-2023.pdf",
   "size_bytes": 301060,
   "sha256": "ca9563779824e306f11393612fe6503f39877c6d5be03e77c875e928ee116b54",
@@ -72,6 +73,8 @@
     "lng": null,
     "place": "Arabian Gulf"
   },
+  "thumbnail_url": "https://www.war.gov/medialink/ufo/release_1/thumbnail/DOW-UAP-D042-Range-Fouler-Debrief-Arabian-Gulf-2023.jpg",
+  "csv_raw_title": "DOW-UAP-D042, Range Fouler Debrief, Arabian Gulf, 2023",
   "mirror_url": "https://pub-c14c36c6732148afa338874dcc751be7.r2.dev/pdf/dow-uap-d042-range-fouler-debrief-japan-2023.pdf",
   "audience": {
     "tldr": "Department of Defense record from a military encounter report documenting a UAP encounter (8/31/20) over Arabian Gulf.",

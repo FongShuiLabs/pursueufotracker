@@ -152,8 +152,7 @@ CATEGORIES = [
             "sighting. At least one Release 07 record does describe reported events: the Utah ranch report "
             "records residents' accounts of orbs of light and other phenomena. Every record here carries the "
             "rubric's default Anomalousness Index for a document, so the score is not a finding about any "
-            "event a record describes. All are flagged as redacted, and all are public domain U.S. Government "
-            "works under 17 U.S.C. § 105."
+            "event a record describes. All are flagged as redacted."
         ),
         "meta_desc": (
             "All @@N@@ AAWSAP records in the Trump PURSUE disclosure: the Defense Intelligence Agency program's "

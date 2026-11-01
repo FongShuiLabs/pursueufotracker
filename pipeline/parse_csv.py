@@ -80,6 +80,14 @@ PINNED_IDS = {
     "DOW-UAP-D042": "dow-uap-d042-range-fouler-debrief-japan-2023",
 }
 
+# A date war.gov's CSV gets plainly wrong, shown corrected on our pages. Keyed on the
+# exact bad value, so a fix on war.gov's side retires the entry. The CSV mirror stays
+# byte-exact and /uap-data-csv's revision table discloses each one.
+INCIDENT_DATE_CORRECTIONS = {
+    # 2026-10-26 reformat turned 5/24/62 into 5/24/2962; the row's title says May 24, 1962.
+    ("NASA-UAP-D013", "5/24/2962"): "5/24/1962",
+}
+
 
 def _slugify(s: str) -> str:
     s = s.lower()
@@ -224,6 +232,7 @@ def run() -> None:
         video_title = col("Video Title")
         agency_raw = col("Agency")
         incident_date = col("Incident Date")
+        incident_date = INCIDENT_DATE_CORRECTIONS.get((title.split(",")[0].strip(), incident_date), incident_date)
         incident_location = col("Incident Location")
         pdf_link = col("PDF | Image Link", "PDF/Image Link", "PDF Link")
         modal_image = col("Modal Image")
