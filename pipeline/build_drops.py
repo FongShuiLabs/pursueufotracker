@@ -11,14 +11,16 @@ and YouTube creators following the rolling release cadence.
 from __future__ import annotations
 import calendar
 import json
+import re
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+from .build_categories import CATEGORIES
 from .records import AGENCY_DISPLAY
 
 from .config import (
-    MANIFEST_PATH, ROOT, GENERATED_DIR, TEMPLATES_DIR,
+    GEN_OG, MANIFEST_PATH, ROOT, GENERATED_DIR, TEMPLATES_DIR,
     SITE_NAME, SITE_URL, ensure_dirs,
 )
 
@@ -29,6 +31,49 @@ _WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven",
 def _long_date(iso: str) -> str:
     y, m, d = (int(x) for x in iso.split("-"))
     return f"{calendar.month_name[m]} {d}, {y}"
+
+
+def _meta_desc(text: str, limit: int) -> str:
+    """Whole sentences up to `limit` characters, so a search snippet does not stop mid-word.
+    If that leaves too little, the text is cut at its last whole word instead."""
+    text = (text or "").strip()
+    out = ""
+    for sentence in re.split(r"(?<=[.!?])\s+", text):
+        candidate = f"{out} {sentence}".strip()
+        if len(candidate) > limit:
+            break
+        out = candidate
+    if len(out) < limit * 0.6 and len(text) > len(out):
+        out = text[:limit - 3].rsplit(" ", 1)[0] + "..."
+    return out
+
+
+def _release_files(files: list[dict], drop: dict) -> list[dict]:
+    """Every file with this drop's release date, grouped by agency, for the drop page's list."""
+    own = [f for f in files if f.get("date_released") == drop["date"]]
+    if len(own) != drop.get("file_count"):
+        print(f"  !! drop {drop['number']:02d}: drops.json says {drop.get('file_count')} files, "
+              f"the manifest has {len(own)} with release date {drop['date']}")
+    groups: dict[str, list[dict]] = {}
+    for f in sorted(own, key=lambda x: (x.get("csv_raw_title") or x["id"]).lower()):
+        code = f.get("agency") or "Other"
+        label = "Department of War" if code == "DoD" else AGENCY_DISPLAY.get(code, code)  # the CSV's own label
+        groups.setdefault(label, []).append(f)
+    return [{"agency": a, "files": fs} for a, fs in sorted(groups.items(), key=lambda kv: (-len(kv[1]), kv[0]))]
+
+
+def _share_cards(drops: list[dict]) -> None:
+    """PNG share cards. X, Facebook and Reddit do not render the SVG these pages used to name."""
+    try:
+        from .gen_og import _make_essay_card
+    except ImportError:
+        return
+    GEN_OG.mkdir(parents=True, exist_ok=True)
+    for d in drops:
+        _make_essay_card(GEN_OG / f"page-drop-{d['number']:02d}.png",
+                         f"PURSUE Release {d['number']:02d}: {d['file_count']} New UFO Files",
+                         _long_date(d["date"]))
+    _make_essay_card(GEN_OG / "page-drops.png", "When Is the Next UFO File Release?", "EVERY PURSUE RELEASE TRACKED")
 
 
 def release_facts(drops: list[dict]) -> dict:
@@ -95,15 +140,22 @@ def run() -> None:
     drops_sorted = sorted(drops_data.get("drops", []), key=lambda d: d["date"], reverse=True)
     facts = release_facts(drops_sorted)
     total_files = len(manifest["files"])
+    hub_counts = {c["slug"]: sum(1 for f in manifest["files"] if c["match"](f)) for c in CATEGORIES}
+    _share_cards(drops_sorted)
 
-    # Per-drop pages
-    for drop in drops_sorted:
+    # Per-drop pages (newest first, so the next index is the older release)
+    for i, drop in enumerate(drops_sorted):
         headline = [files_by_id[fid] for fid in drop.get("headline_files", []) if fid in files_by_id]
         out_path = out_dir / f"{drop['date']}-drop-{drop['number']:02d}.html"
         out_path.write_text(
             drop_tpl.render(
                 drop=drop, headline=headline, total_files=total_files, agency_labels=AGENCY_DISPLAY,
-                site_name=SITE_NAME, site_url=SITE_URL,
+                site_name=SITE_NAME, site_url=SITE_URL, hub_counts=hub_counts,
+                date_long=_long_date(drop["date"]),
+                meta_desc=_meta_desc(drop.get("summary"), 155), og_desc=_meta_desc(drop.get("summary"), 200),
+                release_files=_release_files(manifest["files"], drop),
+                newer=drops_sorted[i - 1] if i > 0 else None,
+                older=drops_sorted[i + 1] if i + 1 < len(drops_sorted) else None,
             ),
             encoding="utf-8",
         )

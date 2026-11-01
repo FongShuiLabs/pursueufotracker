@@ -12,6 +12,7 @@ from __future__ import annotations
 import html
 import json
 import re
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -618,6 +619,11 @@ _EXCERPT_WORDS = 1000
 # The day document text was added to file pages. A page that gained it is a substantively
 # changed page, so its sitemap lastmod and JSON-LD dateModified move to this date.
 DOC_TEXT_ADDED = "2026-10-13"
+# Pages whose main content changed after their release date (war.gov edited the row).
+PAGE_MODIFIED = {
+    "dow-uap-d042-range-fouler-debrief-japan-2023": "2026-10-23",  # retitled, new file
+    "fbi-uap-d043-fd-302-unidentified-aerial-object-observation-report-2026": "2026-10-26",  # description
+}
 _WORDISH = re.compile(r"[(\"'\[]*[A-Za-z][A-Za-z'\-]{1,20}[.,;:)\"'\]!?]*")
 _VOWEL = re.compile(r"[aeiouyAEIOUY]")
 _CTRL = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
@@ -646,9 +652,21 @@ def _page_modified(f: dict) -> str:
     """A file page's dateModified: its release date, or DOC_TEXT_ADDED if it carries document
     text and was released before that."""
     released = f.get("date_released") or ""
+    if f["id"] in PAGE_MODIFIED:
+        return PAGE_MODIFIED[f["id"]]
     if released and released < DOC_TEXT_ADDED and _doc_excerpt(f):
         return DOC_TEXT_ADDED
     return released
+
+
+def _release_links() -> dict[str, dict]:
+    """Release date -> that release's drop page, so a file page can link to its release."""
+    p = ROOT / "data" / "drops.json"
+    if not p.exists():
+        return {}
+    drops = json.loads(p.read_text(encoding="utf-8")).get("drops", [])
+    return {d["date"]: {"url": f"/drops/{d['date']}-drop-{d['number']:02d}", "num": f"{d['number']:02d}"}
+            for d in drops}
 
 
 def _build_doc_excerpt(f: dict) -> dict | None:
@@ -717,6 +735,7 @@ def _transcript_text(f: dict) -> str | None:
 
 def _render_file_pages(env: Environment, manifest: dict) -> None:
     tpl = env.get_template("file.html.j2")
+    release_links = _release_links()
     all_files = manifest["files"]
     seo_titles = _seo_titles_map(all_files)
     rank_by_id = _rank_map(all_files)
@@ -773,6 +792,7 @@ def _render_file_pages(env: Environment, manifest: dict) -> None:
             "transcript_text": _transcript_text(f),
             "doc_excerpt": _doc_excerpt(f),
             "page_modified": _page_modified(f),
+            "release_link": release_links.get(f.get("date_released")),
         }
         out.write_text(tpl.render(**ctx), encoding="utf-8")
 
@@ -903,6 +923,27 @@ def _build_video_sitemap(manifest: dict) -> None:
     print(f"  video sitemap: {n} video entries")
 
 
+def _source_lastmod(url_path: str, dirty: set[str], today: str) -> str:
+    """When a page's source file last really changed: today if it has uncommitted edits,
+    else its last commit date. Google uses lastmod only "if it's consistently and verifiably
+    accurate" (Search Central, build-sitemap), and these pages used to report the build date."""
+    slug = url_path.strip("/")
+    if not slug:
+        candidates = ["index.html"]
+    else:
+        candidates = [f"generated/{slug}.html", f"generated/categories/{slug}.html",
+                      f"generated/{slug}/index.html"]
+    for rel in candidates:
+        if not (ROOT / rel).exists():
+            continue
+        if rel in dirty:
+            return today
+        out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", rel], cwd=ROOT,
+                             capture_output=True, text=True).stdout.strip()
+        return out or today
+    return today
+
+
 def _build_sitemap_index() -> None:
     """Sitemap index lets us submit one URL that points to both sitemaps."""
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -918,10 +959,12 @@ def _build_sitemap(manifest: dict) -> None:
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    # Homepage - lastmod = today (rebuilt frequently)
-    parts.append(f"<url><loc>{SITE_URL}/</loc><lastmod>{today}</lastmod>"
+    status = subprocess.run(["git", "status", "--porcelain"], cwd=ROOT, capture_output=True, text=True).stdout
+    dirty = {line[3:].strip().strip('"') for line in status.splitlines()}
+    # Homepage
+    parts.append(f"<url><loc>{SITE_URL}/</loc><lastmod>{_source_lastmod('/', dirty, today)}</lastmod>"
                  f"<priority>1.0</priority><changefreq>daily</changefreq></url>")
-    # High-value editorial pages - lastmod = today (rebuilt with site).
+    # High-value editorial pages - lastmod = when the page's source last changed.
     # ALL URLs are extension-less canonical forms that serve 200 direct
     # (no redirect chains). The /pretty alias and /generated/X both serve
     # the same content; we choose the pretty form in the sitemap.
@@ -990,17 +1033,16 @@ def _build_sitemap(manifest: dict) -> None:
         ("/intel-and-doe-uap-files/", "0.9", "weekly"),
         ("/videos/", "0.9", "weekly"),
     ]:
-        parts.append(f"<url><loc>{SITE_URL}{path}</loc><lastmod>{today}</lastmod>"
+        parts.append(f"<url><loc>{SITE_URL}{path}</loc><lastmod>{_source_lastmod(path, dirty, today)}</lastmod>"
                      f"<priority>{prio}</priority><changefreq>{freq}</changefreq></url>")
-    # Drop detail pages - lastmod = drop date. Extension-less canonical.
+    # Drop detail pages - lastmod = when the page's source last changed. Extension-less canonical.
     drop_dir = ROOT / "generated" / "drops"
     if drop_dir.exists():
         for drop_html in sorted(drop_dir.glob("*.html")):
             if drop_html.name == "index.html":
                 continue
             stem = drop_html.stem  # filename without .html
-            m = re.match(r"(\d{4}-\d{2}-\d{2})", drop_html.name)
-            lastmod = m.group(1) if m else today
+            lastmod = _source_lastmod(f"drops/{stem}", dirty, today)
             parts.append(
                 f"<url><loc>{SITE_URL}/drops/{html.escape(stem)}</loc>"
                 f"<lastmod>{lastmod}</lastmod>"

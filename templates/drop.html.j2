@@ -3,25 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ drop.title }} - Trump PURSUE Drop {{ "%02d"|format(drop.number) }} | {{ site_name }}</title>
-<meta name="description" content="{{ drop.summary[:160] }}">
+<title>PURSUE Release {{ '%02d'|format(drop.number) }} ({{ date_long }}): {{ drop.file_count }} New UFO Files | {{ site_name }}</title>
+<meta name="description" content="{{ meta_desc }}">
 {% set drop_url = site_url ~ '/drops/' ~ drop.date ~ '-drop-' ~ '%02d'|format(drop.number) %}
 <link rel="canonical" href="{{ drop_url }}">
 
 <meta property="og:type" content="article">
-<meta property="og:title" content="{{ drop.title }} - Trump PURSUE Drop {{ '%02d'|format(drop.number) }}">
-<meta property="og:description" content="{{ drop.summary[:200] }}">
-<meta property="og:image" content="{{ site_url }}/og-cover.svg">
+<meta property="og:title" content="{{ drop.title }}">
+<meta property="og:description" content="{{ og_desc }}">
+<meta property="og:image" content="{{ site_url }}/generated/og-cards/page-drop-{{ '%02d'|format(drop.number) }}.png">
 <meta property="og:url" content="{{ drop_url }}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ site_url }}/og-cover.svg">
+<meta name="twitter:image" content="{{ site_url }}/generated/og-cards/page-drop-{{ '%02d'|format(drop.number) }}.png">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
-  "headline": {{ (drop.title ~ ' - Trump PURSUE Drop ' ~ ('%02d' % drop.number)) | tojson }},
+  "headline": {{ drop.title | tojson }},
+  "image": "{{ site_url }}/generated/og-cards/page-drop-{{ '%02d'|format(drop.number) }}.png",
   "datePublished": "{{ drop.date }}",
+  "author": { "@type": "Organization", "name": {{ site_name | tojson }}, "url": "{{ site_url }}/" },
   "description": {{ drop.summary | tojson }},
   "publisher": { "@type": "Organization", "name": {{ site_name | tojson }} }
 }
@@ -84,6 +86,24 @@
   </a>
   {% endfor %}
 
+  {% set n_listed = release_files | map(attribute='files') | map('length') | sum %}
+  <h2 id="all-files">All {{ n_listed }} file{{ '' if n_listed == 1 else 's' }} in this release</h2>
+  <p style="color:#a8b8cc;font-size:15px;line-height:1.6;margin-bottom:8px">Every file in war.gov's CSV with this release date, grouped by agency. Each page has the SHA-256 hash and a mirrored copy.</p>
+  {% for g in release_files %}
+  <h3 style="color:#fff;font-size:17px;margin:24px 0 8px">{{ g.agency }} ({{ g.files | length }})</h3>
+  <ul style="list-style:none;margin:0;padding:0">
+    {% for f in g.files %}
+    <li style="padding:7px 0;border-bottom:1px dashed rgba(82,180,255,.15);font-size:14px;line-height:1.45"><a href="/files/{{ f.id }}" style="color:#52b4ff;text-decoration:none">{{ f.title }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+  <p style="margin-top:32px;font-size:14px;line-height:1.6">
+    {% if older %}<a href="/drops/{{ older.date }}-drop-{{ '%02d'|format(older.number) }}" style="color:#52b4ff;text-decoration:none">&larr; Release {{ '%02d'|format(older.number) }} ({{ older.file_count }} files)</a>{% endif %}
+    {% if older and newer %} &nbsp;&middot;&nbsp; {% endif %}
+    {% if newer %}<a href="/drops/{{ newer.date }}-drop-{{ '%02d'|format(newer.number) }}" style="color:#52b4ff;text-decoration:none">Release {{ '%02d'|format(newer.number) }} ({{ newer.file_count }} files) &rarr;</a>{% endif %}
+  </p>
+
   {% if drop.press_coverage %}
   <h2>Press coverage</h2>
   <ul class="press-list">
@@ -93,7 +113,7 @@
   </ul>
   {% endif %}
 
-  {% set share_title = 'Trump PURSUE Drop ' ~ '%02d'|format(drop.number) ~ ': ' ~ drop.title %}
+  {% set share_title = 'Trump PURSUE ' ~ drop.title %}
   <div class="share">
     <a onclick="window.plausible&&plausible('Share',{props:{channel:'x',surface:'drop'}})" href="https://twitter.com/intent/tweet?text={{ share_title|urlencode }}%20-%20{{ drop_url|urlencode }}" target="_blank" rel="noopener">Share on X</a>
     <a onclick="window.plausible&&plausible('Share',{props:{channel:'reddit',surface:'drop'}})" href="https://reddit.com/submit?url={{ drop_url|urlencode }}&title={{ share_title|urlencode }}" target="_blank" rel="noopener">Post to Reddit</a>
@@ -131,12 +151,12 @@
     </a>
     <a href="/fbi-ufo-files/" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
       <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">CATEGORY</div>
-      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">FBI files (87)</strong>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">FBI files ({{ hub_counts['fbi-ufo-files'] }})</strong>
       <span style="color:#a8b8cc;font-size:13px;line-height:1.5">Case file 62-HQ-83894, the modern orb sightings, and Colorado Springs 2022.</span>
     </a>
     <a href="/military-uap-files/" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
       <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#52b4ff;letter-spacing:1.5px;margin-bottom:8px">CATEGORY</div>
-      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">Pentagon UAP (145)</strong>
+      <strong style="color:#fff;font-size:15px;display:block;margin-bottom:6px">Pentagon UAP ({{ hub_counts['military-uap-files'] }})</strong>
       <span style="color:#a8b8cc;font-size:13px;line-height:1.5">AARO Mission Reports and sensor videos. 2013 to 2026.</span>
     </a>
     <a href="/faq" style="display:block;padding:18px;background:rgba(0,0,0,.25);border:1px solid rgba(82,180,255,.18);border-radius:8px;text-decoration:none">
