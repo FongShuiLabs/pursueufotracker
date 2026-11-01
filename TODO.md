@@ -4,8 +4,8 @@
 >
 > **State as of 2026-11-01 (verified against origin's poll-state):** Drop 07 ingested (478 files, CSV
 > SHA-256 `92b3ec7d...`, the Oct 26 revision of Release 07). The poller is healthy.
-> Follow-ups from Drop 07: full Release 07 section on /changes and its title/meta, /revisions entries
-> (D042 retitle + new bytes, Oct 26 revision), Reddit draft. Legal questions wait in `Legal Desk/`
+> Drop 07 follow-ups done 2026-11-01: Release 07 card on /changes, /revisions section 4, the
+> `pipeline.run index-now` fix; Reddit draft in `_scratch/reddit-drop07.md`, held for email capture. Legal questions wait in `Legal Desk/`
 > (gitignored, repo is public): the sitewide 17 U.S.C. 105 claim vs 37 DIRD copyright warnings.
 > Biggest structural gap: email capture is still not live (`ESP_PROVIDER = ""` in
 > `pipeline/config.py`); the provider choice is Anthony's.

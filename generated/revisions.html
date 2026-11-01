@@ -22,7 +22,7 @@
   "@type": "NewsArticle",
   "headline": "uap-csv.csv to uap-data.csv: Download war.gov's UFO CSV and Every Revision Since May 2026",
   "datePublished": "2026-05-11",
-  "dateModified": "2026-06-16",
+  "dateModified": "2026-11-01",
   "author": {"@type": "Organization", "name": "PURSUE UFO Tracker", "url": "https://pursueufotracker.com/"},
   "publisher": {
     "@type": "Organization",
@@ -93,7 +93,7 @@
   <div class="breadcrumb"><a href="/">PURSUE Tracker</a> &nbsp;/&nbsp; Revisions</div>
 
   <h1>War.gov PURSUE Revisions</h1>
-  <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:24px">DETECTED 11 MAY 2026 18:04 UTC · AUTO-POLLER #2 + #3 · LAST AUDITED 14 JUN 2026</p>
+  <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;color:#52ffb4;margin-bottom:24px">DETECTED 11 MAY 2026 18:04 UTC · AUTO-POLLER #2 + #3 · LAST AUDITED 14 JUN 2026 · SECTION 4 UPDATED 1 NOV 2026</p>
 
   <div style="background:rgba(82,180,255,.07);border:1px solid rgba(82,180,255,.3);padding:18px 22px;border-radius:8px;margin:0 0 24px 0">
     <p style="margin:0 0 8px 0;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#52b4ff;text-transform:uppercase">Looking for the war.gov UAP CSV?</p>
@@ -152,7 +152,7 @@
     <li>Auto-poller continues running. Any future war.gov edit triggers a GitHub issue on the next scheduled check.</li>
   </ol>
 
-  <h2>4. Later edits to war.gov's list</h2>
+  <h2 id="later-edits">4. Later edits to war.gov's list</h2>
   <p>Every version of the CSV is logged with its SHA-256 hash on the <a href="/uap-data-csv" style="color:#52b4ff">uap-data.csv revision table</a>. Most versions add the files of a new release. The version war.gov published on September 24, 2026 also edited rows it had already released:</p>
   <ul style="color:#dfe6ef;line-height:1.85">
     <li><strong>Three files added to Release 06.</strong> Transcripts LLE-UAP-D002, D003 and D004, each dated to the September 18 release, took the CSV from 447 to 450 rows.</li>
@@ -161,9 +161,24 @@
     <li><strong>One pairing changed.</strong> Transcript LLE-UAP-D001 was re-paired from video PR004 to PR001, and its description now describes a transcript of PR001&rsquo;s 1-minute, 19-second recording.</li>
   </ul>
   <p>No URL on this site changed as a result: Release 06 had not yet been published here when war.gov made these edits, and PR004&rsquo;s page uses the corrected January 2024 title.</p>
+  <p>The version war.gov published on October 23, 2026 (Release 07) retitled a file that had been on the list since May 8:</p>
+  <ul style="color:#dfe6ef;line-height:1.85">
+    <li><strong>One title and file link changed.</strong> DOW-UAP-D042 went from &ldquo;Range Fouler Debrief, Japan, 2023&rdquo; to &ldquo;Range Fouler Debrief, Arabian Gulf, 2023&rdquo;, and its PDF moved from <code>dow-uap-d42-range-fouler-debrief-japan-2023.pdf</code> to <code>DOW-UAP-D042-Range-Fouler-Debrief-Arabian-Gulf-2023.pdf</code>. Its Incident Location column read Arabian Gulf in all eight earlier CSV states we hold, back to May 8. The title still says 2023; its Incident Date column and the date on the form say August 31, 2020. We do not know why war.gov made the change.</li>
+    <li><strong>The new PDF has different bytes and the same page.</strong> The old file (SHA-256 <code>d52431b354af55b1&hellip;</code>, 295,621 bytes) and the new one (<code>ca9563779824e306&hellip;</code>, 301,060 bytes) are each one page. We compared them on November 1, 2026: the embedded page image is byte-identical, the page renders pixel-identical at 300 dpi, and the extracted text layer is identical. What differs is the metadata inside the PDF: the old Title and Subject fields said Japan, the new Subject and Keywords fields say Arabian Gulf, the Author field now reads Department of War, and the modification date moved from May 7 to October 21, 2026. The page itself names neither place. Its location fields are redacted, and its partly redacted grid reference begins 39R, a military grid zone covering 48 to 54 degrees east and 24 to 32 degrees north, which takes in the Arabian Gulf and not Japan.</li>
+  </ul>
+  <p>Our page for this file keeps its original address, <a href="/files/dow-uap-d042-range-fouler-debrief-japan-2023" style="color:#52b4ff">/files/dow-uap-d042-range-fouler-debrief-japan-2023</a>, and shows the new title and the new file. We have kept a copy of the old version.</p>
+  <p>The version of October 26, 2026 added and removed no rows (478 before and after) but changed every row:</p>
+  <ul style="color:#dfe6ef;line-height:1.85">
+    <li><strong>Every Release Date rewritten, and 159 Incident Dates.</strong> All 478 Release Date values and 159 Incident Date values went from two-digit to four-digit years: 10/23/26 became 10/23/2026.</li>
+    <li><strong>One rewritten date is wrong in war.gov&rsquo;s file.</strong> NASA-UAP-D013 (Mercury Atlas 7, May 24, 1962) went from 5/24/62 to 5/24/2962. Our mirror of the CSV stays byte-exact, so it carries that value; our page for the file shows 1962.</li>
+    <li><strong>One description extended.</strong> FBI-UAP-D043 gained a sentence saying the report is accompanied by 9 digitally rendered FBI forensic sketches.</li>
+    <li><strong>One empty column dropped.</strong> An unnamed trailing column with no values is gone.</li>
+  </ul>
+  <p>On November 1 we re-fetched the 28 Release 07 PDFs and DOW-UAP-D042 from war.gov: all 29 match the SHA-256 values in our manifest, so those files did not change. We did not re-hash the rest of the archive for this check. The row-level detail for both versions is on <a href="/changes#release-07" style="color:#52b4ff">/changes</a>.</p>
 
   <h2>Change log for this page</h2>
   <ul style="color:#dfe6ef;line-height:1.85">
+    <li><strong>2026-11-01:</strong> Added to section 4 war.gov&rsquo;s October 23 retitle of DOW-UAP-D042, with a comparison of the old and new PDFs, and its October 26 revision of the CSV.</li>
     <li><strong>2026-09-26:</strong> Added section 4 on war.gov&rsquo;s September 24 edits to Release 06.</li>
     <li><strong>2026-05-20 (third audit):</strong> Removed all interpretive framings ("renames," "consolidation," "reclassification," "title reformat"). Replaced with verified URL-set comparison. Created companion page <a href="/changes" style="color:#52b4ff">/changes</a> with the full data tables.</li>
     <li><strong>2026-05-20 (second audit):</strong> Removed incorrect "5 true removals" and "3 true additions" framing; introduced "title reformat" framing which the third audit also corrected.</li>
