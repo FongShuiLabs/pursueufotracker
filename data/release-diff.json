@@ -7330,16 +7330,6 @@
     },
     {
      "id": "FBI-UAP-D014",
-     "title": "FBI-UAP-D014, Digital Rendering, Narrative Statement 1-1, Western United States Event, 2023",
-     "fields": {
-      "Release Date": [
-       "6/12/26",
-       "6/12/2026"
-      ]
-     }
-    },
-    {
-     "id": "FBI-UAP-D014",
      "title": "FBI-UAP-D014, Correspondence Relating to UFO Sightings, 1967, 1974",
      "fields": {
       "Release Date": [
@@ -7349,6 +7339,16 @@
       "Incident Date": [
        "10/10/74",
        "10/10/1974"
+      ]
+     }
+    },
+    {
+     "id": "FBI-UAP-D014",
+     "title": "FBI-UAP-D014, Digital Rendering, Narrative Statement 1-1, Western United States Event, 2023",
+     "fields": {
+      "Release Date": [
+       "6/12/26",
+       "6/12/2026"
       ]
      }
     },

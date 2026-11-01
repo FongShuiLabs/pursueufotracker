@@ -125,7 +125,11 @@ def _diff(old: list[dict], new: list[dict]) -> dict:
     added = [r for k, r in kn.items() if k not in ko]
     removed = [r for k, r in ko.items() if k not in kn]
     edited = []
-    for k in ko.keys() & kn.keys():
+    # CSV order, not a set: rows sharing an ID (FBI-UAP-D014) tie in the sort below, so a set's
+    # per-process hash order made the JSON, and --check, differ from run to run.
+    for k in ko:
+        if k not in kn:
+            continue
         changes = {f: [ko[k].get(f) or "", kn[k].get(f) or ""] for f in FIELDS
                    if (ko[k].get(f) or "") != (kn[k].get(f) or "")}
         if changes:
