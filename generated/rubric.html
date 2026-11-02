@@ -100,7 +100,7 @@
       <span class="weight-pill">Weight 0.25</span>
     </div>
     <p class="comp-key">JSON key: <code>sensor_quality</code></p>
-    <table>
+    <div class="table-scroll"><table>
       <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
       <tbody>
         <tr><td>Multi-sensor military</td><td><code>multi_sensor_military</code></td><td class="v">100</td></tr>
@@ -110,7 +110,7 @@
         <tr><td>Eyewitness only</td><td><code>eyewitness_only</code></td><td class="v">30</td></tr>
         <tr><td>Sketch only</td><td><code>sketch_only</code></td><td class="v">15</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
   <section class="comp">
     <div class="comp-head">
@@ -118,7 +118,7 @@
       <span class="weight-pill">Weight 0.2</span>
     </div>
     <p class="comp-key">JSON key: <code>witness_credibility</code></p>
-    <table>
+    <div class="table-scroll"><table>
       <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
       <tbody>
         <tr><td>Astronaut</td><td><code>astronaut</code></td><td class="v">95</td></tr>
@@ -129,7 +129,7 @@
         <tr><td>Credentialed civilian</td><td><code>civilian_credentialed</code></td><td class="v">50</td></tr>
         <tr><td>Anonymous civilian</td><td><code>civilian_anonymous</code></td><td class="v">25</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
   <section class="comp">
     <div class="comp-head">
@@ -137,7 +137,7 @@
       <span class="weight-pill">Weight 0.2</span>
     </div>
     <p class="comp-key">JSON key: <code>corroboration</code></p>
-    <table>
+    <div class="table-scroll"><table>
       <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
       <tbody>
         <tr><td>Multi-witness, multi-instrument</td><td><code>multi_witness_multi_instrument</code></td><td class="v">100</td></tr>
@@ -146,7 +146,7 @@
         <tr><td>Multi-witness, no instrument</td><td><code>multi_witness_no_instrument</code></td><td class="v">50</td></tr>
         <tr><td>Single witness only</td><td><code>single_witness_only</code></td><td class="v">25</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
   <section class="comp">
     <div class="comp-head">
@@ -154,7 +154,7 @@
       <span class="weight-pill">Weight 0.15</span>
     </div>
     <p class="comp-key">JSON key: <code>kinematic_anomaly</code></p>
-    <table>
+    <div class="table-scroll"><table>
       <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
       <tbody>
         <tr><td>Physically impossible for known craft</td><td><code>physically_impossible_for_known_craft</code></td><td class="v">100</td></tr>
@@ -163,7 +163,7 @@
         <tr><td>No kinematic data</td><td><code>no_kinematic_data</code></td><td class="v">30</td></tr>
         <tr><td>Consistent with known craft</td><td><code>consistent_with_known_craft</code></td><td class="v">10</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
   <section class="comp">
     <div class="comp-head">
@@ -171,7 +171,7 @@
       <span class="weight-pill">Weight 0.1</span>
     </div>
     <p class="comp-key">JSON key: <code>mundane_explanation_available</code></p>
-    <table>
+    <div class="table-scroll"><table>
       <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
       <tbody>
         <tr><td>No plausible mundane</td><td><code>no_plausible_mundane</code></td><td class="v">100</td></tr>
@@ -180,7 +180,7 @@
         <tr><td>Strong mundane candidate</td><td><code>strong_mundane_candidate</code></td><td class="v">15</td></tr>
         <tr><td>Resolved mundane</td><td><code>resolved_mundane</code></td><td class="v">0</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
   <section class="comp">
     <div class="comp-head">
@@ -188,7 +188,7 @@
       <span class="weight-pill">Weight 0.1</span>
     </div>
     <p class="comp-key">JSON key: <code>official_disposition</code></p>
-    <table>
+    <div class="table-scroll"><table>
       <thead><tr><th>Choice</th><th>Raw value (JSON)</th><th class="v">Score</th></tr></thead>
       <tbody>
         <tr><td>Open after review</td><td><code>open_after_review</code></td><td class="v">90</td></tr>
@@ -196,7 +196,7 @@
         <tr><td>Partial resolution</td><td><code>partial_resolution</code></td><td class="v">40</td></tr>
         <tr><td>Resolved conventional</td><td><code>resolved_conventional</code></td><td class="v">5</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
 
   <h2 style="color:#fff;font-size:24px;margin:48px 0 0">Worked examples (from <code>presets</code>)</h2>
@@ -204,7 +204,7 @@
 
   <section class="preset">
     <h3>Worked example: apollo 12 lunar anomalies</h3>
-    <table>
+    <div class="table-scroll"><table>
       <thead><tr><th>Component</th><th>Choice</th><th class="v">Score contribution</th></tr></thead>
       <tbody>
         <tr><td>Sensor quality</td><td>Photographic</td><td class="v">55 &times; 0.25 = <strong>13.75</strong></td></tr>
@@ -215,11 +215,11 @@
         <tr><td>Official disposition</td><td>Unresolved, no review</td><td class="v">60 &times; 0.1 = <strong>6.0</strong></td></tr>
         <tr class="total"><td colspan="2"><strong>Total</strong></td><td class="v"><strong>66</strong></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
   <section class="preset">
     <h3>Worked example: greece 2023 right angle</h3>
-    <table>
+    <div class="table-scroll"><table>
       <thead><tr><th>Component</th><th>Choice</th><th class="v">Score contribution</th></tr></thead>
       <tbody>
         <tr><td>Sensor quality</td><td>Single-sensor military</td><td class="v">80 &times; 0.25 = <strong>20.0</strong></td></tr>
@@ -230,7 +230,7 @@
         <tr><td>Official disposition</td><td>Open after review</td><td class="v">90 &times; 0.1 = <strong>9.0</strong></td></tr>
         <tr class="total"><td colspan="2"><strong>Total</strong></td><td class="v"><strong>86</strong></td></tr>
       </tbody>
-    </table>
+    </table></div>
   </section>
 
   <h2 style="color:#fff;font-size:24px;margin:48px 0 14px">Recompute every score yourself</h2>

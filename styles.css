@@ -9,6 +9,11 @@ body{
   overflow-x:hidden;
   min-height:100vh;
 }
+/* body hides overflow, so anything too wide is cut off with no way to scroll to it.
+   War.gov filenames used as titles have no break points; tables scroll inside .table-scroll. */
+html{overflow-wrap:break-word}
+h1,h2,h3,h4,a{overflow-wrap:anywhere}
+@media (max-width:768px){.table-scroll{overflow-x:auto}}
 
 /* ===== Background FX ===== */
 .starfield{
@@ -328,7 +333,7 @@ h1{
   margin:48px auto;
   padding:0 24px;
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+  grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr));
   gap:20px;
 }
 .card{
