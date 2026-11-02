@@ -304,7 +304,7 @@ because it fired before the push). Confirm the 200 in the log. On Drop 06 the fi
 full-sitemap submission, minutes after the deploy, returned HTTP 422 ("URLs are not
 related to your verified domain") and the identical retry a few minutes later returned
 200 - so retry once before debugging. Google: re-submit
-`sitemap-index.xml` in GSC, and optionally URL-inspect -> Request Indexing the new
+`sitemap.xml` itself in GSC (not only `sitemap-index.xml`: on Drop 07 GSC re-read the index on Nov 1 but left its child `sitemap.xml` at the Oct 24 read, 520 URLs, so the 29 new URLs never reached Google that way). Then open the index's drilldown and confirm `sitemap.xml`'s "Last read" is after the deploy and its URL count matches. Optionally URL-inspect -> Request Indexing the new
 `/drops/[DROP_SLUG]` and top new file page (the GSC inspect UI is flaky under
 automation - IndexNow + natural recrawl cover it if the button won't cooperate).
 
